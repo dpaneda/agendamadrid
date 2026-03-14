@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda Madrid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="/" class="logo">Agenda Madrid</a>
+      <nav class="header-nav"></nav>
+    </div>
+  </header>
+
+  <section class="month-bar">
+    <button id="prev-month" aria-label="Mes anterior">&larr;</button>
+    <span id="current-month"></span>
+    <button id="next-month" aria-label="Mes siguiente">&rarr;</button>
+  </section>
+
+  <section class="day-strip-wrapper">
+    <div class="day-strip" id="day-strip"></div>
+  </section>
+
+  <div class="filter-bar">
+    <div class="filter-bar-inner">
+      <select id="category-filter">
+        <option value="">Todos los tipos</option>
+      </select>
+      <select id="free-filter">
+        <option value="">Gratis o de pago</option>
+        <option value="gratis">Solo gratuitos</option>
+        <option value="pago">Solo de pago</option>
+      </select>
+    </div>
+  </div>
+
+  <main>
+    <div id="events-container"></div>
+  </main>
+
+  <footer>
+    <p>En algunos casos la programacion de ciertos eventos no se hace publica hasta pocos dias antes de que se celebren.</p>
+    <p>Los eventos se actualizan con frecuencia. Consulta la fuente original para confirmar detalles.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

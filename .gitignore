@@ -1,0 +1,9 @@
+# backend storage (not frontend/data/)
+/data/
+__pycache__/
+*.pyc
+.env
+venv/
+.venv/
+node_modules/
+.vercel/
