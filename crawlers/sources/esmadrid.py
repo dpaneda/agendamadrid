@@ -14,10 +14,52 @@ from crawlers.categories import normalize
 
 BASE_URL = "https://www.esmadrid.com"
 CRAWL_DELAY = 1  # seconds between requests
+MAX_RETRIES = 3
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
+
+DAY_NAMES = {
+    "lunes": 0, "martes": 1, "miércoles": 2, "miercoles": 2,
+    "jueves": 3, "viernes": 4, "sábado": 5, "sabado": 5,
+    "sábados": 5, "sabados": 5, "domingo": 6, "domingos": 6,
+    "lunes a viernes": [0, 1, 2, 3, 4],
+    "lunes a sábado": [0, 1, 2, 3, 4, 5],
+    "lunes a sábados": [0, 1, 2, 3, 4, 5],
+    "lunes a domingo": [0, 1, 2, 3, 4, 5, 6],
+    "lunes a domingos": [0, 1, 2, 3, 4, 5, 6],
+    "martes a sábado": [1, 2, 3, 4, 5],
+    "martes a sábados": [1, 2, 3, 4, 5],
+    "martes a domingo": [1, 2, 3, 4, 5, 6],
+    "martes a domingos": [1, 2, 3, 4, 5, 6],
+    "miércoles a domingo": [2, 3, 4, 5, 6],
+    "miércoles a domingos": [2, 3, 4, 5, 6],
+    "miercoles a domingo": [2, 3, 4, 5, 6],
+    "jueves a domingo": [3, 4, 5, 6],
+    "jueves a domingos": [3, 4, 5, 6],
+    "viernes a domingo": [4, 5, 6],
+    "viernes a domingos": [4, 5, 6],
+}
+
+
+def _parse_open_days(text):
+    """Extract which days of the week an event is open from schedule text."""
+    if not text:
+        return None
+    text_lower = text.lower()
+    # Try range patterns first (longer matches)
+    for pattern, days in sorted(DAY_NAMES.items(), key=lambda x: -len(x[0])):
+        if pattern in text_lower:
+            if isinstance(days, list):
+                return set(days)
+    # Try individual day names
+    found = set()
+    for name, day_num in DAY_NAMES.items():
+        if isinstance(day_num, int) and name in text_lower:
+            found.add(day_num)
+    return found if found else None
+
 
 CATEGORY_MAP = {
     "fiestas y eventos de la ciudad": "fiestas",
@@ -51,6 +93,21 @@ CATEGORY_MAP = {
 }
 
 
+def _fetch(url):
+    """GET with exponential backoff retries."""
+    for attempt in range(MAX_RETRIES):
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=30)
+            resp.raise_for_status()
+            return resp
+        except Exception as e:
+            if attempt == MAX_RETRIES - 1:
+                raise
+            wait = 2 ** (attempt + 1)
+            print(f"    Retry {attempt + 1}/{MAX_RETRIES} after {wait}s: {e}")
+            time.sleep(wait)
+
+
 def _search_url(date_str, page=0):
     """Build search URL for a given date (DD/MM/YYYY) and page number."""
     encoded_date = quote(date_str, safe="")
@@ -75,8 +132,7 @@ def _get_event_urls_for_date(date):
     while True:
         search_url = _search_url(date_str, page)
         try:
-            resp = requests.get(search_url, headers=HEADERS, timeout=30)
-            resp.raise_for_status()
+            resp = _fetch(search_url)
         except Exception as e:
             print(f"    Error fetching search page {page}: {e}")
             break
@@ -108,8 +164,7 @@ def _get_event_urls_for_date(date):
 
 def _parse_event_page(url):
     """Scrape a single event page for structured data."""
-    resp = requests.get(url, headers=HEADERS, timeout=30)
-    resp.raise_for_status()
+    resp = _fetch(url)
     html = resp.text
     soup = BeautifulSoup(html, "lxml")
 
@@ -190,6 +245,7 @@ def _parse_event_page(url):
         soup.find("div", class_="field-name-field-resumen-fechas-y-horarios")
         or soup.find("div", class_="field-name-field-horario")
     )
+    schedule_text = ""
     if schedule_el:
         schedule_text = schedule_el.get_text()
         times = re.findall(r"(\d{1,2}[:.]\d{2})", schedule_text)
@@ -197,6 +253,9 @@ def _parse_event_page(url):
             start_time = times[0].replace(".", ":") + ":00"
             if len(times) > 1:
                 end_time = times[1].replace(".", ":") + ":00"
+
+    # Parse open days from schedule text + description
+    open_days = _parse_open_days(schedule_text) or _parse_open_days(description)
 
     # Price / free
     is_free = False
@@ -265,6 +324,7 @@ def _parse_event_page(url):
         "source_url": url,
         "source": "esmadrid",
         "categories": normalize(categories),
+        "open_days": open_days,
     }
 
 
@@ -283,11 +343,12 @@ class EsMadridCrawler(BaseCrawler):
         for day_offset in range(days_ahead):
             date = today + timedelta(days=day_offset)
             date_str = date.strftime("%Y-%m-%d")
+            t0 = time.time()
             print(f"  [{date_str}] Fetching search results...")
 
             day_urls = _get_event_urls_for_date(date)
             new_urls = [u for u in day_urls if u not in known_urls]
-            print(f"  [{date_str}] {len(day_urls)} events, {len(new_urls)} new")
+            print(f"  [{date_str}] {len(day_urls)} events, {len(new_urls)} new ({time.time()-t0:.0f}s)")
 
             for url in new_urls:
                 # Use cached parse if we already scraped this URL for another day
@@ -303,14 +364,21 @@ class EsMadridCrawler(BaseCrawler):
                     seen_urls[url] = ev
 
                 if ev:
-                    # Create event for this specific date
+                    # Skip if event doesn't run on this day of the week
+                    open_days = ev.get("open_days")
+                    if open_days and date.weekday() not in open_days:
+                        continue
                     day_ev = {**ev, "start_date": date_str}
                     events.append(day_ev)
 
             # Also add events from known URLs that appear on this day
             for url in day_urls:
                 if url in known_urls and url in seen_urls and seen_urls[url]:
-                    day_ev = {**seen_urls[url], "start_date": date_str}
+                    ev = seen_urls[url]
+                    open_days = ev.get("open_days")
+                    if open_days and date.weekday() not in open_days:
+                        continue
+                    day_ev = {**ev, "start_date": date_str}
                     events.append(day_ev)
 
         print(f"  Total: {len(events)} events across {days_ahead} days, scraped {len(seen_urls)} unique pages")

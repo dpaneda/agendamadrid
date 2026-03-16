@@ -28,7 +28,6 @@ CAT_MAP = {
     "opera": "musica",
     "circo": "circo",
     "infantil": "infantil",
-    "familiar": "infantil",
     "festivales": "fiestas",
     "flamenco": "teatro",
     "performance": "teatro",
@@ -117,6 +116,7 @@ def _transform_event(ev):
         "latitude": LATITUDE,
         "longitude": LONGITUDE,
         "url": url,
+        "source_url": url,
         "source": "teatros_canal",
         "categories": mapped_cats,
     }

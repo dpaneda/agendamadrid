@@ -3,39 +3,42 @@ const MONTHS_ES = [
   "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"
 ];
 
-const DAYS_LONG = ["domingo", "lunes", "martes", "miercoles", "jueves", "viernes", "sabado"];
+const DAYS_LONG = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
 
 const CATEGORY_LABELS = {
-  "musica": "Musica y conciertos",
-  "teatro": "Teatro",
-  "danza": "Danza y baile",
-  "cine": "Cine",
-  "exposiciones": "Exposiciones",
-  "conferencias": "Conferencias",
-  "talleres": "Talleres",
-  "infantil": "Infantil y familiar",
-  "deportes": "Deportes",
-  "fiestas": "Fiestas",
-  "visitas guiadas": "Visitas guiadas",
-  "circo": "Circo y magia",
-  "literatura": "Literatura",
-  "fotografia": "Fotografia",
-  "mercados": "Mercados",
-  "gastronomia": "Gastronomia",
-  "otros": "Otros",
+  "musica": "música",
+  "teatro": "teatro",
+  "danza": "danza",
+  "cine": "cine",
+  "exposiciones": "exposiciones",
+  "conferencias": "conferencias",
+  "talleres": "talleres",
+  "infantil": "infantil y familiar",
+  "deportes": "deportes",
+  "fiestas": "fiestas",
+  "visitas guiadas": "visitas guiadas",
+  "circo": "circo",
+  "literatura": "literatura",
+  "fotografia": "fotografía",
+  "mercados": "mercados",
+  "gastronomia": "gastronomía",
+  "otros": "otros",
+  "gratis": "gratis",
 };
 
 const SOURCE_LABELS = {
-  "madrid_agenda": "Agenda general (datos.madrid.es)",
+  "madrid_agenda": "datos.madrid.es",
   "esmadrid": "esmadrid.com",
-  "centrocentro": "CentroCentro",
+  "teatros_canal": "teatroscanal.com",
 };
 
 let selectedDate = new Date();
 let allEvents = {};   // id -> event data
 let calendarData = {}; // date -> [{event_id, start_time, end_time}]
 let allData = [];      // flattened for backward compat (buildCategories)
-let activeCategory = "", activeFree = "", activeSource = "", activeSort = "hora";
+let activeTags = new Set();
+let activeLocation = "";
+let activeSource = "", activeSort = "hora";
 let currentView = "list";
 let map = null, markersLayer = null;
 let picker = null;
@@ -98,16 +101,6 @@ async function init() {
     picker.open();
   });
 
-  document.getElementById("category-filter").addEventListener("change", (e) => {
-    activeCategory = e.target.value;
-    e.target.classList.toggle("active-filter", !!activeCategory);
-    render();
-  });
-  document.getElementById("free-filter").addEventListener("change", (e) => {
-    activeFree = e.target.value;
-    e.target.classList.toggle("active-filter", !!activeFree);
-    render();
-  });
   document.getElementById("source-filter").addEventListener("change", (e) => {
     activeSource = e.target.value;
     e.target.classList.toggle("active-filter", !!activeSource);
@@ -245,19 +238,9 @@ async function loadData() {
 }
 
 function buildCategories() {
-  const cats = new Set();
   const individualSources = new Set();
   allData.forEach(ev => {
-    ev.categories.forEach(c => cats.add(c));
     (ev.source || "").split(",").forEach(s => { if (s) individualSources.add(s); });
-  });
-
-  const catSelect = document.getElementById("category-filter");
-  [...cats].filter(c => c !== "gratis").sort().forEach(c => {
-    const opt = document.createElement("option");
-    opt.value = c;
-    opt.textContent = CATEGORY_LABELS[c] || c.charAt(0).toUpperCase() + c.slice(1);
-    catSelect.appendChild(opt);
   });
 
   const srcSelect = document.getElementById("source-filter");
@@ -285,16 +268,15 @@ function getFilteredDayEvents() {
     };
   }).filter(Boolean);
 
-  if (activeCategory) {
+  if (activeTags.size > 0) {
     filtered = filtered.filter(ev =>
-      ev.categories.some(c => c.toLowerCase() === activeCategory.toLowerCase())
+      [...activeTags].every(tag => ev.categories.includes(tag))
     );
   }
 
-  if (activeFree === "gratis") {
-    filtered = filtered.filter(ev => ev.categories.includes("gratis"));
-  } else if (activeFree === "pago") {
-    filtered = filtered.filter(ev => !ev.categories.includes("gratis"));
+
+  if (activeLocation) {
+    filtered = filtered.filter(ev => (ev.location_name || ev.location || "") === activeLocation);
   }
 
   if (activeSource) {
@@ -372,7 +354,14 @@ function renderEvent(ev) {
     ? `<p class="event-desc">${esc(ev.description.length > 200 ? ev.description.slice(0, 200) + "..." : ev.description)}</p>`
     : "";
 
-  const catTags = ev.categories.map(c => `<span class="tag">${esc(c)}</span>`).join("");
+  const seenLabels = new Set();
+  const catTags = ev.categories.map(c => {
+    const label = CATEGORY_LABELS[c] || c;
+    if (seenLabels.has(label)) return "";
+    seenLabels.add(label);
+    const isActive = activeTags.has(c);
+    return `<span class="tag tag-clickable${isActive ? ' tag-active' : ''}" onclick="event.preventDefault(); event.stopPropagation(); toggleTag('${esc(c)}')">${esc(label)}</span>`;
+  }).join("");
   const sourceTags = (ev.source || "").split(",").filter(Boolean).map(s => {
     const label = SOURCE_LABELS[s] || s;
     const sourceUrl = ev.source_url || "";
@@ -386,8 +375,10 @@ function renderEvent(ev) {
   const address = ev.address || "";
   let locationHtml = "";
   if (location || address) {
-    const parts = [location, address].filter(Boolean);
-    locationHtml = `<div class="event-location"><span class="location-pin">📍</span> ${esc(parts.join(", "))}</div>`;
+    const isLocActive = activeLocation === location;
+    const locClass = location ? ` location-clickable${isLocActive ? ' location-active' : ''}` : '';
+    const locClick = location ? ` onclick="event.preventDefault(); event.stopPropagation(); toggleLocation('${esc(location)}')"` : '';
+    locationHtml = `<div class="event-location${locClass}"${locClick}><span class="location-pin">📍</span> ${esc([location, address].filter(Boolean).join(", "))}</div>`;
   }
 
   let distanceHtml = "";
@@ -416,6 +407,35 @@ function renderEvent(ev) {
     return `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="event-card event-card-link">${cardContent}</a>`;
   }
   return `<div class="event-card">${cardContent}</div>`;
+}
+
+function toggleTag(tag) {
+  if (activeTags.has(tag)) {
+    activeTags.delete(tag);
+  } else {
+    activeTags.add(tag);
+  }
+  renderActiveFilters();
+  render();
+}
+
+function toggleLocation(loc) {
+  activeLocation = activeLocation === loc ? "" : loc;
+  renderActiveFilters();
+  render();
+}
+
+function renderActiveFilters() {
+  const container = document.getElementById("active-filters");
+  const parts = [];
+  if (activeLocation) {
+    parts.push(`<span class="tag tag-active" onclick="toggleLocation('${esc(activeLocation)}')">📍 ${esc(activeLocation)} ✕</span>`);
+  }
+  [...activeTags].forEach(tag => {
+    const label = CATEGORY_LABELS[tag] || tag;
+    parts.push(`<span class="tag tag-active" onclick="toggleTag('${esc(tag)}')">${esc(label)} ✕</span>`);
+  });
+  container.innerHTML = parts.join("");
 }
 
 function esc(s) {

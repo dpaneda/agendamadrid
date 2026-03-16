@@ -122,7 +122,8 @@ def run():
                 # Build event data (without date-specific fields)
                 event_data = {k: v for k, v in ev.items()
                               if k not in ("start_date", "end_date", "start_time",
-                                           "end_time", "id", "created_at", "updated_at")}
+                                           "end_time", "id", "created_at", "updated_at",
+                                           "open_days")}
                 event_data["id"] = eid
                 event_data.setdefault("created_at", now)
                 event_data["updated_at"] = now

@@ -25,7 +25,6 @@ TAGS = {
     "gratis",
     "aire libre",
     "destacado",
-    "familiar",
     "accesible",
 }
 
@@ -33,5 +32,5 @@ ALL_VALID = CATEGORIES | TAGS
 
 
 def normalize(raw_categories: list[str]) -> list[str]:
-    """Filter to only valid categories/tags."""
-    return [c for c in raw_categories if c in ALL_VALID]
+    """Filter to only valid categories/tags, deduplicated."""
+    return list(dict.fromkeys(c for c in raw_categories if c in ALL_VALID))

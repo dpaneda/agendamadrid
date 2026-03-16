@@ -597,10 +597,11 @@
     "latitude": 40.41207900253883,
     "longitude": -3.7108161027466378,
     "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=f617690c5b499910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
+    "source": "esmadrid,madrid_agenda",
     "categories": [
       "exposiciones",
-      "gratis"
+      "gratis",
+      "fotografia"
     ],
     "id": "b9b2078109a8ab1d",
     "created_at": "2026-03-15T08:51:58.250024+00:00",
@@ -2155,9 +2156,10 @@
     "latitude": 40.414828532240946,
     "longitude": -3.700164949543688,
     "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=65d09517495c7910VgnVCM1000001d4a900aRCRD",
-    "source": "madrid_agenda",
+    "source": "esmadrid,madrid_agenda",
     "categories": [
-      "teatro"
+      "teatro",
+      "danza"
     ],
     "id": "373c937ee87d026a",
     "created_at": "2026-03-15T08:51:58.250024+00:00",
@@ -2278,9 +2280,11 @@
     "latitude": 40.4249721516942,
     "longitude": -3.689948085098791,
     "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=85370ad1e7919910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
+    "source": "esmadrid,madrid_agenda",
     "categories": [
-      "destacado"
+      "destacado",
+      "teatro",
+      "danza"
     ],
     "id": "734a10f446cd65c8",
     "created_at": "2026-03-15T08:51:58.250024+00:00",
@@ -2596,10 +2600,11 @@
     "latitude": 40.42741340671151,
     "longitude": -3.7095381101739444,
     "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=887ca73ac88bc910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
+    "source": "esmadrid,madrid_agenda",
     "categories": [
       "exposiciones",
-      "gratis"
+      "gratis",
+      "fotografia"
     ],
     "id": "4b0c988bcf3c9df3",
     "created_at": "2026-03-15T08:51:58.250024+00:00",
@@ -3298,9 +3303,11 @@
     "latitude": 40.4249721516942,
     "longitude": -3.689948085098791,
     "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=14c40ad1e7919910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
+    "source": "esmadrid,madrid_agenda",
     "categories": [
-      "destacado"
+      "destacado",
+      "teatro",
+      "danza"
     ],
     "id": "4dea5c7cb70f5032",
     "created_at": "2026-03-15T08:51:58.250024+00:00",
@@ -3387,9 +3394,12 @@
     "latitude": 40.39130985242181,
     "longitude": -3.6958028442054074,
     "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=00bbbf36b7b6c910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
+    "source": "esmadrid,madrid_agenda",
     "categories": [
-      "musica"
+      "musica",
+      "exposiciones",
+      "fotografia",
+      "gratis"
     ],
     "id": "afc36fd2adeeccd4",
     "created_at": "2026-03-15T08:51:58.250024+00:00",
@@ -4466,10 +4476,11 @@
     "latitude": 40.38493929920335,
     "longitude": -3.7641963952601154,
     "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=7d373c0a0ab6c910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
+    "source": "esmadrid,madrid_agenda",
     "categories": [
       "exposiciones",
-      "gratis"
+      "gratis",
+      "fotografia"
     ],
     "id": "a18dc167cb1eedc8",
     "created_at": "2026-03-15T08:51:58.250024+00:00",
@@ -6219,9 +6230,10 @@
     "latitude": 40.414828532240946,
     "longitude": -3.700164949543688,
     "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=f0709517495c7910VgnVCM1000001d4a900aRCRD",
-    "source": "madrid_agenda",
+    "source": "esmadrid,madrid_agenda",
     "categories": [
-      "teatro"
+      "teatro",
+      "danza"
     ],
     "id": "f2e660e117dafd37",
     "created_at": "2026-03-15T08:51:58.250024+00:00",
@@ -25760,5 +25772,1619 @@
     "id": "5afe4c239bbad8cc",
     "created_at": "2026-03-15T08:51:58.250024+00:00",
     "updated_at": "2026-03-15T08:51:58.250024+00:00"
+  },
+  "b5d317fbc1a86c8e": {
+    "title": "Miluca Sanz. Estratos. La inmortalidad de lo efímero",
+    "description": "Exposición que reúne en formato audiovisual una selección de los conocidos diarios de la artista (CentroCentro. 23 oct a 26 abr).",
+    "location_name": "CentroCentro",
+    "address": "de Cibeles, 1",
+    "district": null,
+    "latitude": 40.4069994,
+    "longitude": -3.6920903,
+    "url": "https://www.centrocentro.org/exposicion/miluca-sanz-estratos",
+    "price": "Entrada gratuita",
+    "source_url": "https://www.esmadrid.com/agenda/miluca-sanz-estratos-inmortalidad-lo-efimero-centrocentro",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "fotografia",
+      "gratis"
+    ],
+    "id": "b5d317fbc1a86c8e"
+  },
+  "2ba005f20f435e2b": {
+    "title": "Última planta",
+    "description": "Jose Warletta escribe y dirige una comedia que reflexiona sobre la fe, la identidad y los prejuicios (Teatro Lara - Sala Lola Membrives. Domingos).",
+    "location_name": "Teatro Lara - Sala Lola Membrives",
+    "address": "Baja de San Pablo, 15",
+    "district": null,
+    "latitude": 40.428541,
+    "longitude": -3.7044511,
+    "url": "https://teatrolara.com/programacion/ultima-planta",
+    "price": "General: 12-25 €",
+    "source_url": "https://www.esmadrid.com/agenda/ultima-planta-teatro-lara-sala-lola-membrives",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "danza"
+    ],
+    "id": "2ba005f20f435e2b"
+  },
+  "4c2a7689bf5c5090": {
+    "title": "Ester Partegàs. Arquitectura menor",
+    "description": "Amplia revisión del trabajo de la artista desarrollado durante las tres últimas décadas (Centro de Arte Dos de Mayo - CA2M. 14 feb a 14 jun)",
+    "location_name": "Centro de Arte Dos de Mayo (CA2M) / Móstoles",
+    "address": "de la Constitución , 23",
+    "district": null,
+    "latitude": 40.2455186,
+    "longitude": -3.863246,
+    "url": "https://ca2m.org/exposiciones/ester-partegas-arquitectura-menor",
+    "price": "Acceso gratuito",
+    "source_url": "https://www.esmadrid.com/agenda/ester-partegas-arquitectura-menor-centro-arte-dos-mayo-ca2m",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "id": "4c2a7689bf5c5090"
+  },
+  "2824c661c2c3225e": {
+    "title": "Los pilares de la Tierra, el musical",
+    "description": "Llega a Madrid el estreno mundial de un innovador musical basado en el best-seller de éxito mundial del escritor Ken Follett (Teatro Gran Vía. Mar-dom).",
+    "location_name": "Teatro Gran Vía",
+    "address": "de Gran Vía, 66",
+    "district": null,
+    "latitude": 40.4228955,
+    "longitude": -3.7089378,
+    "url": "https://www.beon-entertainment.com/los-pilares-de-la-tierra-musical/",
+    "price": "Desde 23 €",
+    "source_url": "https://www.esmadrid.com/agenda/pilares-tierra-musical-teatro-gran-via",
+    "source": "esmadrid",
+    "categories": [
+      "musica",
+      "teatro",
+      "danza"
+    ],
+    "id": "2824c661c2c3225e"
+  },
+  "f90a743018199efa": {
+    "title": "Visitas guiadas a la casa - Fundación Ramón Menéndez Pidal",
+    "description": "Un recorrido guiado por el jardín y el interior de la casa donde residió y trabajó la familia Menéndez Pidal-Goyri (Fundación Ramón Menéndez Pidal. Consultar fechas).",
+    "location_name": null,
+    "address": "de Menéndez Pidal, 5",
+    "district": null,
+    "latitude": 40.4314186,
+    "longitude": -3.6828006,
+    "url": "https://fundacionramonmenendezpidal.org/visitas/",
+    "price": "10 € por persona (pago en efectivo)\nReservar visita: visitasfundacionrmp@gmail.com / 913 59 47 24 (10:00 - 14:00 h)",
+    "source_url": "https://www.esmadrid.com/agenda/visitas-guiadas-casa-fundacion-ramon-menendez-pidal",
+    "source": "esmadrid",
+    "categories": [
+      "otros"
+    ],
+    "id": "f90a743018199efa"
+  },
+  "db07920ebe683a5b": {
+    "title": "The Animals",
+    "description": "Una selección de 22 retratos de la fotógrafa y activista Elena de Castro que combinan sensibilidad y compromiso (Matadero Madrid. Hasta Junio).",
+    "location_name": "Matadero Madrid",
+    "address": "de Legazpi, 8",
+    "district": null,
+    "latitude": 40.406323477313,
+    "longitude": -3.6963598,
+    "url": "https://www.mataderomadrid.org/programacion/animals",
+    "price": "Entrada libre y gratuita",
+    "source_url": "https://www.esmadrid.com/agenda/animals-matadero-madrid",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "fotografia",
+      "gratis"
+    ],
+    "id": "db07920ebe683a5b"
+  },
+  "52c7f5e79acf32f0": {
+    "title": "NMIXX",
+    "description": "El grupo femenino surcoreano de K-Pop visita Madrid como parte de su gira mundial NMIXX 1st World Tour  (Palacio Vistalegre Arena.",
+    "location_name": "Palacio Vistalegre Arena",
+    "address": "de Utebo , 1",
+    "district": null,
+    "latitude": 40.3686686,
+    "longitude": -3.7379452,
+    "url": "https://www.palaciovistalegre.com/event/nmixx-1st-world-tour/",
+    "price": "Desde 84 €",
+    "source_url": "https://www.esmadrid.com/agenda/nmixx-palacio-vistalegre-arena",
+    "source": "esmadrid",
+    "categories": [
+      "musica"
+    ],
+    "id": "52c7f5e79acf32f0"
+  },
+  "89b98a123674a7e2": {
+    "title": "Frida Kahlo: Experiencia Live Art y Muestra Gastronómica",
+    "description": "Una experiencia única en la que descubrir a la artista mexicana desde una perspectiva inédita y profunda (Paseo del Pintor Rosales, 30. Miér-dom).",
+    "location_name": null,
+    "address": "del Pintor Rosales, 30",
+    "district": null,
+    "latitude": 40.4219147,
+    "longitude": -3.7195871,
+    "url": "https://fridawomanexperience.com/madrid/",
+    "price": "Entrada general (+13 años): 15 €\nEntrada infantil (6 a 12 años): 12 €\nEntrada gratuita: 0 a 5 años",
+    "source_url": "https://www.esmadrid.com/agenda/frida-kahlo-experiencia-live-art-muestra-gastronomica-paseo-pintor-rosales-30",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "fotografia",
+      "gratis"
+    ],
+    "id": "89b98a123674a7e2"
+  },
+  "58a48d6cef5ea395": {
+    "title": "Cabaret, el musical en el Kit Kat Klub",
+    "description": "Una nueva producción del clásico musical, pero con un enfoque moderno e inmersivo (UMusic Hotel Teatro Albéniz. Martes a domingos).",
+    "location_name": "UMusic Hotel Teatro Albéniz",
+    "address": "de la Paz, 11",
+    "district": null,
+    "latitude": 40.4228955,
+    "longitude": -3.7041017,
+    "url": "https://www.kitkatklubcabaret.com/",
+    "price": "Desde 23,20 €",
+    "source_url": "https://www.esmadrid.com/agenda/cabaret-musical-kit-kat-klub-umusic-hotel-teatro-albeniz",
+    "source": "esmadrid",
+    "categories": [
+      "musica",
+      "teatro",
+      "danza"
+    ],
+    "id": "58a48d6cef5ea395"
+  },
+  "a2309d230b700123": {
+    "title": "El centro puede estar en todas partes. Quisqueya Henríquez",
+    "description": "Retrospectiva de la obra de la artista cubano-dominicana, una de las voces más potentes en la crítica de los discursos hegemónicos del arte contemporáneo (C Arte C. Hasta 26 abril).",
+    "location_name": "C Arte C",
+    "address": "de Juan de Herrera, 2",
+    "district": null,
+    "latitude": 40.4314186,
+    "longitude": -3.7289688,
+    "url": "https://www.ucm.es/cultura/exposicion-actual",
+    "price": "Entrada gratuita",
+    "source_url": "https://www.esmadrid.com/agenda/centro-puede-estar-todas-partes-quisqueya-henriquez-c-arte-c",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "fotografia",
+      "gratis"
+    ],
+    "id": "a2309d230b700123"
+  },
+  "3ed114af0fbb71ba": {
+    "title": "Ángel Cabrera, el naturalista infinito",
+    "description": "Una muestra que rinde tributo al máximo exponente de la mastozoología del siglo pasado (Museo Nacional de Ciencias Naturales. Hasta 12 abr).",
+    "location_name": "Museo Nacional de Ciencias Naturales",
+    "address": "de José Gutierrez Abascal, 2",
+    "district": null,
+    "latitude": 40.4314186,
+    "longitude": -3.6901373,
+    "url": "https://www.mncn.csic.es/es/visita-el-mncn/exposiciones/angel-cabrera-el-naturalista-infinito",
+    "price": "Entrada general: 7 €\nEntrada reducida: 3,50 €\nConsultar página oficial",
+    "source_url": "https://www.esmadrid.com/agenda/angel-cabrera-naturalista-infinito-museo-nacional-ciencias-naturales",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones"
+    ],
+    "id": "3ed114af0fbb71ba"
+  },
+  "8753afa479cb017d": {
+    "title": "Entre Oriente y Occidente. Chipre, la isla de Afrodita",
+    "description": "Selcción de piezas de la colección chipriota del MAN fuertemente ligada al Viaje a Oriente de la Fragata Arapiles (Museo Arqueológico Nacional.",
+    "location_name": "Museo Arqueológico Nacional",
+    "address": "de Serrano, 13",
+    "district": null,
+    "latitude": 40.4069994,
+    "longitude": -3.6889607,
+    "url": "https://www.man.es/man/exposicion/vitrina0/20260113-chipre.html",
+    "price": "Entrada general: 3 €\nEntrada reducida: 1,50 € (grupos de más de ocho personas previa solicitud con antelación de diez días y voluntariado cultural con acreditación)\nConsultar página oficial",
+    "source_url": "https://www.esmadrid.com/agenda/oriente-occidente-chipre-isla-afrodita-museo-arqueologico-nacional",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones"
+    ],
+    "id": "8753afa479cb017d"
+  },
+  "9c08fe00d56c9b76": {
+    "title": "Un Dios salvaje",
+    "description": "Luis Merlo, Natalia Millán, Juanan Lumbreras y Clara Sanchis protagonizan una versión de Jordi Galcerán de la obra de la dramaturga francesa Yasmina Reza (Teatro Alcázar. Miércoles a domingos).",
+    "location_name": "Teatro Alcázar",
+    "address": "de Alcalá, 20",
+    "district": null,
+    "latitude": 40.4228955,
+    "longitude": -3.6988372,
+    "url": "https://gruposmedia.com/cartelera/un-dios-salvaje/",
+    "price": "Desde 16 €",
+    "source_url": "https://www.esmadrid.com/agenda/un-dios-salvaje-teatro-alcazar",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "danza"
+    ],
+    "id": "9c08fe00d56c9b76"
+  },
+  "d53eea01f8d309fd": {
+    "title": "De Babel al último rey de Iraq: una civilización milenaria",
+    "description": "Las obras del artista iraquí Hanoos Hanoos reflexionan sobre el poder, la violencia y la fragilidad humana (Casa Árabe. Hasta 17 mayo).",
+    "location_name": "Casa Árabe",
+    "address": "de Alcalá, 62",
+    "district": null,
+    "latitude": 40.40729,
+    "longitude": -3.6818155,
+    "url": "https://casaarabe.es/eventos-arabes/show/de-babel-al-ultimo-rey-de-iraq-una-civilizacion-milenaria",
+    "price": "Entrada libre hasta completar aforo",
+    "source_url": "https://www.esmadrid.com/agenda/babel-ultimo-rey-iraq-civilizacion-milenaria-casa-arabe",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "id": "d53eea01f8d309fd"
+  },
+  "360c487f0c40f84e": {
+    "title": "Voices United",
+    "description": "Un recital que incluye las actuaciones de varios coros procedentes de Estados Unidos (Parroquia de Santa Cruz. 17 marzo).",
+    "location_name": "Parroquia de Santa Cruz",
+    "address": "de Atocha, 6",
+    "district": null,
+    "latitude": 40.4228955,
+    "longitude": -3.7051763,
+    "url": "https://www.nashvillesymphony.org/education/community-programs/we-are-nashville/we-are-nashville-2024/trey-jacobs/",
+    "price": "Entrada gratuita",
+    "source_url": "https://www.esmadrid.com/agenda/voices-united-parroquia-santa-cruz",
+    "source": "esmadrid",
+    "categories": [
+      "musica",
+      "gratis"
+    ],
+    "id": "360c487f0c40f84e"
+  },
+  "d405452aae38cb94": {
+    "title": "Alicia en el país de las maravillas - El Musical",
+    "description": "La compañía La Maquineta presenta la cuarta temporada de este musical para toda la familia basado en el clásico de Lewis Carroll (Teatro Lara - Sala Cándido Lara. 15 mar; 4 y 12",
+    "location_name": "Teatro Lara - Sala Cándido Lara",
+    "address": "Corredera Baja de San Pablo, 15",
+    "district": null,
+    "latitude": 40.428541,
+    "longitude": -3.7044511,
+    "url": "https://teatrolara.com/programacion/alicia-en-el-pais-de-las-maravillas",
+    "price": "Desde 22 €",
+    "source_url": "https://www.esmadrid.com/agenda/alicia-pais-maravillas-teatro-lara-sala-candido-lara",
+    "source": "esmadrid",
+    "categories": [
+      "musica",
+      "infantil",
+      "teatro",
+      "danza"
+    ],
+    "id": "d405452aae38cb94"
+  },
+  "38eab45b2ffb63fa": {
+    "title": "Mercedes-Benz Fashion Week Madrid (Edición marzo)",
+    "description": "Diseñadores consagrados y jóvenes estilistas en la primera cita de las dos anuales de esta prestigiosa pasarela (IFEMA MADRID - Pabellón 14.1. 17 a 22 marzo).",
+    "location_name": "IFEMA MADRID",
+    "address": "del Partenón, 5",
+    "district": null,
+    "latitude": 40.4864201,
+    "longitude": -3.616549993517,
+    "url": "http://www.ifema.es/mbfw-madrid",
+    "price": "Consultar página oficial",
+    "source_url": "https://www.esmadrid.com/agenda/mercedes-benz-fashion-week-madrid-marzo-ifema-madrid",
+    "source": "esmadrid",
+    "categories": [
+      "otros"
+    ],
+    "id": "38eab45b2ffb63fa"
+  },
+  "3d0f9e052f7ddef4": {
+    "title": "La quema",
+    "description": "Una retrospectiva de Elena del Rivero como parte del programa especial del 150º aniversario y del programa Visiones críticas (Museo Nacional de Antropología. 27 feb a 24 may).",
+    "location_name": "Museo Nacional de Antropología",
+    "address": "de Alfonso XII, 68",
+    "district": null,
+    "latitude": 40.4069994,
+    "longitude": -3.6890236,
+    "url": "https://www.cultura.gob.es/mnantropologia/en/actividades/agenda/2026/expotemporales2026/quema.html",
+    "price": "Entrada gratuita",
+    "source_url": "https://www.esmadrid.com/agenda/quema-museo-nacional-antropologia",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "fotografia",
+      "gratis"
+    ],
+    "id": "3d0f9e052f7ddef4"
+  },
+  "5ab920baeb488079": {
+    "title": "_mov (i) miento en.com (bate)",
+    "description": "Un montaje que genera una exploración de la creación artística en tiempo real (DT Espacio Escénico. Jueves a sábado).",
+    "location_name": "DT Espacio Escénico",
+    "address": "de la Reina, 9",
+    "district": null,
+    "latitude": 40.427005857836,
+    "longitude": -3.7002514,
+    "url": "https://dtespacioescenico.com/temporada-2025-2026/_mov-i-miento-en-com-bate/",
+    "price": "General: 14 €Descuento con carnés joven, de estudiante, de desempleado y de jubilado: 12 €",
+    "source_url": "https://www.esmadrid.com/agenda/mov-i-miento-encom-bate-dt-espacio-escenico",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "danza"
+    ],
+    "id": "5ab920baeb488079"
+  },
+  "638defef7af6ff83": {
+    "title": "Hansel y Gretel, la batalla final",
+    "description": "Musical familiar, ganador de 2 Premios OFF de Teatro Musical, donde la tecnología y la magia se entrelazan como nunca antes (Teatros Luchana. Sábados).",
+    "location_name": "Teatros Luchana",
+    "address": "de Luchana, 38",
+    "district": null,
+    "latitude": 40.4286632,
+    "longitude": -3.6981038,
+    "url": "https://teatrosluchana.es/producto/hansel-y-gretel/",
+    "price": "Desde 14,01 €",
+    "source_url": "https://www.esmadrid.com/agenda/hansel-gretel-batalla-final-teatros-luchana",
+    "source": "esmadrid",
+    "categories": [
+      "musica",
+      "infantil",
+      "teatro"
+    ],
+    "id": "638defef7af6ff83"
+  },
+  "9b03ebae1a63241a": {
+    "title": "Bailar en la Berlanga 2026",
+    "description": "Duodécima edición de esta muestra de danza contemporánea de la Fundación SGAE que incluye los espectáculos de seis compañías (Sala Berlanga. 17 a 21 marzo).",
+    "location_name": "Sala Berlanga",
+    "address": "de Andrés Mellado, 53",
+    "district": null,
+    "latitude": 40.4286632,
+    "longitude": -3.71446788311,
+    "url": "https://fundacionsgae.org/actividad/seis-companias-de-danza-contemporanea-protagonizan-bailar-en-la-berlanga-2026/",
+    "price": "Entradas: 3,50 €\nA la venta en taquilla y entradas.com (+g.g.)",
+    "source_url": "https://www.esmadrid.com/agenda/bailar-berlanga-sala-berlanga",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "danza"
+    ],
+    "id": "9b03ebae1a63241a"
+  },
+  "4544b8d53f58f4f7": {
+    "title": "Gomaespuma Pá Poquitos",
+    "description": "La Fundación Gomaespuma presenta un evento solidario que combina humor, magia y música en directo (PANGEA The Travel Store. 17 marzo).",
+    "location_name": "Pangea",
+    "address": "Príncipe de Vergara, 26",
+    "district": null,
+    "latitude": 40.4288205,
+    "longitude": -3.6796175,
+    "url": "https://www.fundaciongomaespuma.org/",
+    "price": "Entrada donativo: 75 €\nFILA 0\nAforo limitado",
+    "source_url": "https://www.esmadrid.com/agenda/gomaespuma-pa-poquitos-pangea-travel-store",
+    "source": "esmadrid",
+    "categories": [
+      "musica"
+    ],
+    "id": "4544b8d53f58f4f7"
+  },
+  "dd43540abba85ff0": {
+    "title": "Arte textil en Guatemala: diseño e identidad",
+    "description": "Muestra que reúne una selección de huipiles y piezas elaboradas mediante técnicas tradicionales como el telar de cintura o el brocado (Fernán Gómez Centro Cultural de la Villa.",
+    "location_name": "Fernán Gómez Centro Cultural de la Villa",
+    "address": "de Colón , 4",
+    "district": null,
+    "latitude": 40.4069994,
+    "longitude": -3.6898599,
+    "url": "https://madriddesignfestival.lafabrica.com/eventos/diseno-y-arte-textil/",
+    "price": "Entrada gratuita hasta completar aforo",
+    "source_url": "https://www.esmadrid.com/agenda/arte-textil-guatemala-diseno-e-identidad-fernan-gomez-centro-cultural-villa",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "id": "dd43540abba85ff0"
+  },
+  "e314c4c875756e0a": {
+    "title": "Rebeldías vanguardistas del Siglo XX. Obras de la colección Vicky y Marcos Micha Levy",
+    "description": "Recorrido por la historia del arte moderno en México y América Latina a través de las obras de algunos de sus más destacados artistas (Fundación Casa de México en España. Hasta 31 may).",
+    "location_name": "Fundación Casa de México en España",
+    "address": "de Alberto Aguilera, 20",
+    "district": null,
+    "latitude": 40.4286632,
+    "longitude": -3.7092035,
+    "url": "https://www.casademexico.es/exposicion/rebeldias-vanguardistas-del-siglo-xx-obras-de-la-coleccion-vicky-y-marcos-micha-levy/",
+    "price": "Entrada gratuita",
+    "source_url": "https://www.esmadrid.com/agenda/rebeldias-vanguardistas-siglo-xx-obras-coleccion-vicky-marcos-micha-levy-fundacion-casa",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "id": "e314c4c875756e0a"
+  },
+  "fa580c9233001a72": {
+    "title": "Rompientes",
+    "description": "José María Esbec presenta dos monólogos sobre la empatía, la ética y la felicidad (Teatro de La Abadía - Sala José Luis Alonso. Martes a domingos. Hasta 22 mar).",
+    "location_name": "Teatro de La Abadía",
+    "address": "de Fernández de los Ríos, 42",
+    "district": null,
+    "latitude": 40.4286632,
+    "longitude": -3.70943069458,
+    "url": "https://www.teatroabadia.com/espectaculo/rompientes/",
+    "price": "General: 19-25 €",
+    "source_url": "https://www.esmadrid.com/agenda/rompientes-teatro-abadia",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "danza"
+    ],
+    "id": "fa580c9233001a72"
+  },
+  "91adeda4eb1449a1": {
+    "title": "Teatro de Títeres de El Retiro",
+    "description": "Una selección de obras de títeres y marionetas pensadas para el disfrute de los más pequeños (Teatro de Títeres de El Retiro).",
+    "location_name": "Teatro de Títeres de El Retiro",
+    "address": "de México, 4",
+    "district": null,
+    "latitude": 40.40729,
+    "longitude": -3.68664264679,
+    "url": "https://teatrotiteresretiro.es",
+    "price": "Entrada gratuita. Necesaria descarga previa de la entrada en https://teatrotiteresretiro.es/\nLas entradas para la programación de temporada salen a la venta cada semana el viernes a las 10:00 h",
+    "source_url": "https://www.esmadrid.com/agenda/teatro-de-titeres-de-el-retiro",
+    "source": "esmadrid",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "id": "91adeda4eb1449a1"
+  },
+  "96909e1be2d5ea1c": {
+    "title": "40 años: El Madrid de Tierno",
+    "description": "Exposición que rinde homenaje al primer alcalde democrático de Madrid en el 40 aniversario de su fallecimiento (Conde Duque. 5 mar - 4 may).",
+    "location_name": "Conde Duque",
+    "address": "del Conde Duque, 11",
+    "district": null,
+    "latitude": 40.4274125071,
+    "longitude": -3.710802,
+    "url": "https://www.esmadrid.com/agenda/40-anos-madrid-tierno-conde-duque",
+    "price": "Gratuito",
+    "source_url": "https://www.esmadrid.com/agenda/40-anos-madrid-tierno-conde-duque",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "fotografia",
+      "gratis"
+    ],
+    "id": "96909e1be2d5ea1c"
+  },
+  "969856908154fa8a": {
+    "title": "El cómic belga",
+    "description": "La II Feria del Cómic de Madrid invita a conocer la riqueza y pluralidad de la bande déssinée creada en Bélgica (Casa del Lector. 11 mar - 9 abr).",
+    "location_name": "Casa del Lector (Matadero)",
+    "address": "de la Chopera, 14",
+    "district": null,
+    "latitude": 40.406323477313,
+    "longitude": -3.69743,
+    "url": "https://casalector.fundaciongsr.org/el-comic-belga/",
+    "price": "Gratuito",
+    "source_url": "https://www.esmadrid.com/agenda/comic-belga-casa-lector",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "id": "969856908154fa8a"
+  },
+  "e8f9f81ce6c269bd": {
+    "title": "Bambalina Teatre Practicable",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/caja-juguetes-bambalina-teatre-canal-teatralia-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "infantil",
+      "infantil",
+      "teatro"
+    ],
+    "id": "e8f9f81ce6c269bd",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "001e14289ab19228": {
+    "title": "Canal Teatralia",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/canal-teatralia-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "teatro"
+    ],
+    "id": "001e14289ab19228",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "da679576e6011f8d": {
+    "title": "Les Vélocimanes Associés",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/les-velocimanes-associes-der-lauf/",
+    "source": "teatros_canal",
+    "categories": [
+      "circo",
+      "fiestas",
+      "otros"
+    ],
+    "id": "da679576e6011f8d",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "929133acbc37d254": {
+    "title": "Carlos Mena &#038; Disfonik Orquesta",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/under-the-shadow-carlos-mena-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "otros",
+      "musica"
+    ],
+    "id": "929133acbc37d254",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "b96a12ff22ff1f06": {
+    "title": "Roberto Magro",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/roberto-magro-ponencia/",
+    "source": "teatros_canal",
+    "categories": [
+      "circo",
+      "fiestas",
+      "otros"
+    ],
+    "id": "b96a12ff22ff1f06",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "6ee1b2679fb030be": {
+    "title": "Romina Paula",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/sombras-por-supuesto-romina-paula-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "otros",
+      "teatro"
+    ],
+    "id": "6ee1b2679fb030be",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "59aa364c900a9829": {
+    "title": "DelsAltres",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/dels-altres-burstners-club/",
+    "source": "teatros_canal",
+    "categories": [
+      "circo",
+      "fiestas",
+      "teatro"
+    ],
+    "id": "59aa364c900a9829",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "ceadf0a3b0dac80f": {
+    "title": "Cirque La Compagnie",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/cirque-la-compagnie-pandax/",
+    "source": "teatros_canal",
+    "categories": [
+      "circo",
+      "fiestas",
+      "otros",
+      "musica",
+      "teatro"
+    ],
+    "id": "ceadf0a3b0dac80f",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "876187a78f0a8b90": {
+    "title": "Grand River &#038; Abul Mogard",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/abul-mogard-grand-river-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "otros",
+      "musica"
+    ],
+    "id": "876187a78f0a8b90",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "32d83f10f3df8ee0": {
+    "title": "Compañía Daniel Abreu",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/compania-daniel-abreu-capitulo-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "danza"
+    ],
+    "id": "32d83f10f3df8ee0",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "dac471a5ec3563c1": {
+    "title": "Cie Takakrôar",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/cie-takakroar-si-cest-sur/",
+    "source": "teatros_canal",
+    "categories": [
+      "circo",
+      "fiestas",
+      "otros",
+      "teatro"
+    ],
+    "id": "dac471a5ec3563c1",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "9e4a94d25f90124f": {
+    "title": "Collectif d’équilibristes",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/collectif-equilibristes-le-complexe/",
+    "source": "teatros_canal",
+    "categories": [
+      "circo",
+      "fiestas",
+      "otros"
+    ],
+    "id": "9e4a94d25f90124f",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "bb28538674665d1f": {
+    "title": "Petrotuning",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/petrotuning-cabosanroque-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "teatro"
+    ],
+    "id": "bb28538674665d1f",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "77040706dd91a55b": {
+    "title": "Amos Gitai",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/golem-amos-gitai-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "otros",
+      "teatro"
+    ],
+    "id": "77040706dd91a55b",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "d69f24bc60d5d6b0": {
+    "title": "TEATRALIA 2026",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/festival-teatralia-2026/",
+    "source": "teatros_canal",
+    "categories": [
+      "circo",
+      "infantil",
+      "fiestas",
+      "infantil",
+      "otros",
+      "musica",
+      "teatro"
+    ],
+    "id": "d69f24bc60d5d6b0",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "e683337c3ba4f8a4": {
+    "title": "Young Boy Dancing Group",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/young-boydancing-group-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "otros",
+      "teatro"
+    ],
+    "id": "e683337c3ba4f8a4",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "67246d1c0c78fd4a": {
+    "title": "Cabosanroque con El Niño de Elche",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/cabosanroque-con-el-nino-de-elche/",
+    "source": "teatros_canal",
+    "categories": [
+      "teatro"
+    ],
+    "id": "67246d1c0c78fd4a",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "1dc350c893311a68": {
+    "title": "Compañía Nacional de Danza",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/compania-nacional-de-danza-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "danza"
+    ],
+    "id": "1dc350c893311a68",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "d848af63c135b305": {
+    "title": "Martina Cabanas Collell",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/la-curva-del-tiempo-martina-cabanas-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "otros",
+      "teatro"
+    ],
+    "id": "d848af63c135b305",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "4698f4e60ce5977e": {
+    "title": "Luciana Acuña",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/bailarinas-incendiadas-luciana-acuna-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "danza",
+      "teatro",
+      "teatro"
+    ],
+    "id": "4698f4e60ce5977e",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "e3104bdaf3a43c5f": {
+    "title": "The Black Blues Brothers",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/the-black-blues-brothers/",
+    "source": "teatros_canal",
+    "categories": [
+      "circo",
+      "fiestas",
+      "otros"
+    ],
+    "id": "e3104bdaf3a43c5f",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "72823c4372917675": {
+    "title": "CICLO DRAMATURGIA EMERGENTE",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/adolfo-simon-ciclo-dramaturgia-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "teatro"
+    ],
+    "id": "72823c4372917675",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "7639ed56dc75c00e": {
+    "title": "El invitado, de Aurora Parrilla",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/lectura-dramatizada-dia-internacional-del-teatro-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "teatro"
+    ],
+    "id": "7639ed56dc75c00e",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "cd7ba602d87b0246": {
+    "title": "Semana del Teatro",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/semana-del-teatro-marzo-2026/",
+    "source": "teatros_canal",
+    "categories": [
+      "teatro"
+    ],
+    "id": "cd7ba602d87b0246",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "7e7f7a34f46499bb": {
+    "title": "Mariano Tenconi Blanco",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/la-vida-extraordinaria-mariano-tenconi-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "teatro"
+    ],
+    "id": "7e7f7a34f46499bb",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "4d839946b5947531": {
+    "title": "Les Ballets de Monte-Carlo",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/les-ballets-de-monte-carlo-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "danza",
+      "otros"
+    ],
+    "id": "4d839946b5947531",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "a077d1b12dbd4e43": {
+    "title": "Coro y orquesta de Les Arts Florissants",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/les-arts-florissants-misa-de-requiem/",
+    "source": "teatros_canal",
+    "categories": [
+      "fiestas",
+      "otros",
+      "musica"
+    ],
+    "id": "a077d1b12dbd4e43",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "a0cc839f9b1e40d7": {
+    "title": "Bromo",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/bromo-av-live-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "musica"
+    ],
+    "id": "a0cc839f9b1e40d7",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "20ce0916e9fef3c1": {
+    "title": "Conj. instr. de Les Arts Florissants",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/les-arts-florissants-lecciones-de-tinieblas/",
+    "source": "teatros_canal",
+    "categories": [
+      "fiestas",
+      "otros",
+      "musica"
+    ],
+    "id": "20ce0916e9fef3c1",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "6838ce66fdb4fc62": {
+    "title": "Compañía Lucas Escobedo",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/paura-cia-lucas-escobedo-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "circo",
+      "musica",
+      "teatro"
+    ],
+    "id": "6838ce66fdb4fc62",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "da830ab953d7e242": {
+    "title": "Christoph Marthaler / Théâtre Vidy-Lausanne",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/the-summit-christoph-marthaler-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "otros",
+      "musica",
+      "teatro"
+    ],
+    "id": "da830ab953d7e242",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "7ed681c8bfb1d6e1": {
+    "title": "Goblin Party",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/once-upon-a-time-goblin-party-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "danza",
+      "otros",
+      "teatro"
+    ],
+    "id": "7ed681c8bfb1d6e1",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "edbabfc5cf68bb93": {
+    "title": "Isabelle Huppert / Romeo Castellucci",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/berenice-isabelle-huppert-romeo-castellucci-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "otros",
+      "teatro"
+    ],
+    "id": "edbabfc5cf68bb93",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "376e253ae28adda6": {
+    "title": "Periferia Teatro",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/bobo-periferia-teatro-canal-teatralia-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "infantil",
+      "infantil",
+      "teatro"
+    ],
+    "id": "376e253ae28adda6",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "a63fe837c6793b5b": {
+    "title": "Mounia Nassangar",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/stuck-mounia-nassangar-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "danza",
+      "otros"
+    ],
+    "id": "a63fe837c6793b5b",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "75096f372cd516a5": {
+    "title": "Compagnie Accrorap",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/compagnie-accrorap-le-murmure-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "danza",
+      "teatro"
+    ],
+    "id": "75096f372cd516a5",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "02c0e5d5273ea5df": {
+    "title": "Abraham Cupeiro",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/loira-abraham-cupeiro-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "musica"
+    ],
+    "id": "02c0e5d5273ea5df",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "0ba6a67d8e083fc0": {
+    "title": "Mario Banushi",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/mami-mario-banushi-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "otros",
+      "teatro"
+    ],
+    "id": "0ba6a67d8e083fc0",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "91d926fd85090334": {
+    "title": "La Juan Gallery",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/accion-xm-la-juan-gallery-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "teatro"
+    ],
+    "id": "91d926fd85090334",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "2c36e1c6fc53c1eb": {
+    "title": "Aline Kuppenheim / De Teatro y Su Doble",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/feos-guillermo-calderon-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "otros",
+      "teatro"
+    ],
+    "id": "2c36e1c6fc53c1eb",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "4102b5d35f62df58": {
+    "title": "Taiat Dansa | Dir.: Meritxell Barberá &#038; Inma García",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/las-hijas-de-bernarda-taiat-dansa-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "danza"
+    ],
+    "id": "4102b5d35f62df58",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "ac18f52b52c65c23": {
+    "title": "Eurípides | Dir.: Declan Donnellan",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/medea-declan-donnellan-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "otros",
+      "teatro"
+    ],
+    "id": "ac18f52b52c65c23",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "92fd9f4e7a35c5d4": {
+    "title": "Jesús Campos García",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/jesus-campos-garcia/",
+    "source": "teatros_canal",
+    "categories": [
+      "teatro"
+    ],
+    "id": "92fd9f4e7a35c5d4",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "1fd6f215a9548d73": {
+    "title": "Joven Camerata de la Orcam",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/joven-camerata-de-la-orcam-2/",
+    "source": "teatros_canal",
+    "categories": [
+      "musica"
+    ],
+    "id": "1fd6f215a9548d73",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "4a86093132444942": {
+    "title": "Amaia Bono y Damián Montesdeoca",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/palabreria-pesada-amaia-bono-damian-montesdeoca-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "teatro"
+    ],
+    "id": "4a86093132444942",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "2e6243bb19c9f955": {
+    "title": "Lope de Vega | Dir.: Josep Maria Mestres",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/la-dama-boba-josep-maria-mestres-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "teatro"
+    ],
+    "id": "2e6243bb19c9f955",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "113f78f1e680c3ca": {
+    "title": "Alberto Velasco",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/alberto-velasco-sacresize-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "danza"
+    ],
+    "id": "113f78f1e680c3ca",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "9e37426fda4353b5": {
+    "title": "Farrés Brothers i Cia",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/la-madriguera-farres-brothers-canal-teatralia-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "infantil",
+      "infantil",
+      "teatro"
+    ],
+    "id": "9e37426fda4353b5",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "fbe64fc3f5d6561f": {
+    "title": "Nao Albet y Marcel Borràs",
+    "description": null,
+    "location_name": "Teatros del Canal",
+    "address": "C/ del Poeta Joan Maragall, s/n",
+    "district": null,
+    "latitude": 40.4365,
+    "longitude": -3.6969,
+    "url": "https://www.teatroscanal.com/espectaculo/los-estunmen-nao-albet-marcel-borras-tc2526/",
+    "source": "teatros_canal",
+    "categories": [
+      "musica",
+      "musica"
+    ],
+    "id": "fbe64fc3f5d6561f",
+    "created_at": "2026-03-16T15:18:40.347147",
+    "updated_at": "2026-03-16T15:18:40.347147"
+  },
+  "e3389e919c01a588": {
+    "title": "Kennesaw State University Chamber Singers",
+    "description": "La formación estadounidense procedente de Georgia ofrece un recital bajo la dirección del Dr. Ryan R. Fellman (Basílica Pontificia de San Miguel. 16 marzo).",
+    "location_name": "Basílica Pontificia de San Miguel",
+    "address": "de San Justo, 4",
+    "district": null,
+    "latitude": 40.419249,
+    "longitude": -3.7096793,
+    "url": "https://www.kennesaw.edu/arts/academics/music/ensembles/choirs.php",
+    "price": "Entrada gratuita",
+    "source_url": "https://www.esmadrid.com/agenda/kennesaw-state-university-chamber-singers-basilica-pontificia-san-miguel",
+    "source": "esmadrid",
+    "categories": [
+      "musica",
+      "gratis"
+    ],
+    "id": "e3389e919c01a588",
+    "created_at": "2026-03-16T15:29:43.138283+00:00",
+    "updated_at": "2026-03-16T15:29:43.138283+00:00"
+  },
+  "0ddfe4a2a13ec733": {
+    "title": "La curva del tiempo",
+    "description": "La dramaturga y directora Martina Cabanas dirige una comedia acerca de la soledad y la redención (Teatros del Canal - Sala Negra. 18 a 21 marzo).",
+    "location_name": "Teatros del Canal",
+    "address": "de Cea Bermúdez, 1",
+    "district": null,
+    "latitude": 40.4286632,
+    "longitude": -3.705182,
+    "url": "https://www.teatroscanal.com/espectaculo/la-curva-del-tiempo-martina-cabanas-tc2526/",
+    "price": "General: 20 €Familia numerosa, personas en ERTE, mayores de 65 años, desempleados, Carné Joven, menores de 25 años y diversidad funcional de grado 33%: 15 €Carné Bibliotecas CAM: 18 €",
+    "source_url": "https://www.esmadrid.com/agenda/curva-tiempo-teatros-canal",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "danza"
+    ],
+    "id": "0ddfe4a2a13ec733",
+    "created_at": "2026-03-16T15:29:43.138283+00:00",
+    "updated_at": "2026-03-16T15:29:43.138283+00:00"
+  },
+  "4621f393f5599b76": {
+    "title": "Bailarinas incendiadas. Luciana Acuña",
+    "description": "La actriz argentina lidera un espectáculo que recuerda los accidentes de bailarinas en escena (Teatros del Canal - Sala Verde. 18 a 21 marzo).",
+    "location_name": "Teatros del Canal",
+    "address": "de Cea Bermúdez, 1",
+    "district": null,
+    "latitude": 40.4286632,
+    "longitude": -3.705182,
+    "url": "https://www.teatroscanal.com/espectaculo/bailarinas-incendiadas-luciana-acuna-tc2526/",
+    "price": "Desde 25 €",
+    "source_url": "https://www.esmadrid.com/agenda/bailarinas-incendiadas-luciana-acuna-teatros-canal",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "danza"
+    ],
+    "id": "4621f393f5599b76",
+    "created_at": "2026-03-16T15:29:43.138283+00:00",
+    "updated_at": "2026-03-16T15:29:43.138283+00:00"
+  },
+  "5aa60b7c828525db": {
+    "title": "El Festival de las Estrellas 2026",
+    "description": "Pitingo, Café Quijano y Carmen Linares son algunos de los artistas que participan en la nueva edición de este ciclo (Teatro Circo Price. 18 a 22 marzo).",
+    "location_name": "Teatro Circo Price",
+    "address": "de Atocha, 35",
+    "district": null,
+    "latitude": 40.4100651,
+    "longitude": -3.6985795,
+    "url": "https://www.teatrocircoprice.es/ciclos/festival-de-las-estrellas-2026",
+    "price": "Desde 27 € (por espectáculo)\nConsultar programación",
+    "source_url": "https://www.esmadrid.com/agenda/festival-estrellas-teatro-circo-price",
+    "source": "esmadrid",
+    "categories": [
+      "musica"
+    ],
+    "id": "5aa60b7c828525db",
+    "created_at": "2026-03-16T15:29:43.138283+00:00",
+    "updated_at": "2026-03-16T15:29:43.138283+00:00"
+  },
+  "c60d77aa9f025553": {
+    "title": "Retail Forum 2026",
+    "description": "Decimocuarta edición de este foro internacional clave para conocer cómo crear una empresa centrada en el cliente (IFEMA MADRID. 18 marzo).",
+    "location_name": "IFEMA MADRID",
+    "address": "del Partenón, 5",
+    "district": null,
+    "latitude": 40.4864201,
+    "longitude": -3.616549993517,
+    "url": "https://www.retailforum.es/",
+    "price": "Consultar página oficial",
+    "source_url": "https://www.esmadrid.com/agenda/retail-forum-ifema-madrid",
+    "source": "esmadrid",
+    "categories": [
+      "otros"
+    ],
+    "id": "c60d77aa9f025553",
+    "created_at": "2026-03-16T15:29:43.138283+00:00",
+    "updated_at": "2026-03-16T15:29:43.138283+00:00"
+  },
+  "a5c1f4df5d65ccb6": {
+    "title": "Le Lac des cygnes (El lago de los cisnes)",
+    "description": "El conjunto francés L'Eolienne estrena una adaptación del clásico mediante ballet, danza y acrobacia (Teatros del Canal - Sala Roja Concha Velasco. 18 marzo).",
+    "location_name": "Teatros del Canal",
+    "address": "de Cea Bermúdez, 1",
+    "district": null,
+    "latitude": 40.4286632,
+    "longitude": -3.705182,
+    "url": "https://www.madrid.org/teatralia/2026/lelac.html",
+    "price": "Desde 7 €",
+    "source_url": "https://www.esmadrid.com/agenda/lac-cygnes-lago-cisnes-teatros-canal",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "danza",
+      "circo"
+    ],
+    "id": "a5c1f4df5d65ccb6",
+    "created_at": "2026-03-16T15:29:43.138283+00:00",
+    "updated_at": "2026-03-16T15:29:43.138283+00:00"
+  },
+  "8ce1e88873e1af2a": {
+    "title": "CNDM. Il Pomo d’Oro",
+    "description": "La orquesta italiana ofrece un recital dentro del ciclo Universo Barroco bajo la dirección de Francesco Corti (Auditorio Nacional de Música - Sala de Cámara. 18 marzo).",
+    "location_name": "Auditorio Nacional de Música",
+    "address": "del Príncipe de Vergara, 146",
+    "district": null,
+    "latitude": 40.4314186,
+    "longitude": -3.68,
+    "url": "https://auditorionacional.inaem.gob.es/es/programacion/cndm-il-pomo-d2019oro-1",
+    "price": "14-28 €",
+    "source_url": "https://www.esmadrid.com/agenda/cndm-il-pomo-doro-auditorio-nacional-musica",
+    "source": "esmadrid",
+    "categories": [
+      "musica"
+    ],
+    "id": "8ce1e88873e1af2a",
+    "created_at": "2026-03-16T15:29:43.138283+00:00",
+    "updated_at": "2026-03-16T15:29:43.138283+00:00"
+  },
+  "6566743ddb71a743": {
+    "title": "Ludovico Einaudi",
+    "description": "El veterano pianista italiano visita de nuevo el teatro madrileño para ofrecer dos veladas como parte de su gira Solo Piano (Teatro Real. 18 y 19 marzo).",
+    "location_name": "Teatro Real",
+    "address": "de Isabel II, s/n",
+    "district": null,
+    "latitude": 40.419249,
+    "longitude": -3.710589408875,
+    "url": "https://www.teatroreal.es/es/espectaculo/ludovico-einaudi-3",
+    "price": "48-150 €",
+    "source_url": "https://www.esmadrid.com/agenda/ludovico-einaudi-teatro-real",
+    "source": "esmadrid",
+    "categories": [
+      "musica"
+    ],
+    "id": "6566743ddb71a743",
+    "created_at": "2026-03-16T15:29:43.138283+00:00",
+    "updated_at": "2026-03-16T15:29:43.138283+00:00"
+  },
+  "d382c368cc555fa6": {
+    "title": "Flamenco Real",
+    "description": "Ciclo que presenta una vez al mes a grandes artistas del baile y del cante flamenco. Juan",
+    "location_name": "Salón de Baile del Teatro Real",
+    "address": "de Isabel II, s/n",
+    "district": null,
+    "latitude": 40.419249,
+    "longitude": -3.7093957,
+    "url": "https://www.teatroreal.es/es/temporada-actual/flamenco-real",
+    "price": "Consultar programación",
+    "source_url": "https://www.esmadrid.com/agenda/flamenco-real-salon-baile-teatro-real",
+    "source": "esmadrid",
+    "categories": [
+      "musica",
+      "teatro",
+      "danza"
+    ],
+    "id": "d382c368cc555fa6",
+    "created_at": "2026-03-16T15:29:43.138283+00:00",
+    "updated_at": "2026-03-16T15:29:43.138283+00:00"
+  },
+  "07c667257980f8ae": {
+    "title": "Flashback Show Europa",
+    "description": "Soraya Arnelas, Nerea Rodríguez, Diana Hoyos, Lorena Calero y Edgard Caroque repasan canciones icónicas de distintas décadas (Gran Teatro CaixaBank Príncipe Pío.",
+    "location_name": "Gran Teatro CaixaBank Príncipe Pío",
+    "address": "de San Vicente, 44",
+    "district": null,
+    "latitude": 40.4219147,
+    "longitude": -3.7187873,
+    "url": "https://laestacion.com/",
+    "price": "Desde 41,75 €",
+    "source_url": "https://www.esmadrid.com/agenda/flashback-show-europa-gran-teatro-caixabank-principe-pio",
+    "source": "esmadrid",
+    "categories": [
+      "musica"
+    ],
+    "id": "07c667257980f8ae",
+    "created_at": "2026-03-16T15:29:43.138283+00:00",
+    "updated_at": "2026-03-16T15:29:43.138283+00:00"
+  },
+  "a0c69567e78cbbc3": {
+    "title": "Programa de Visitas Guiadas Pasea Madrid",
+    "description": "Un programa de la DG de Patrimonio Cultural del Ayuntamiento de Madrid que difunde gratuitamente el diverso patrimonio histórico de Madrid (Nueva temporada 2026:",
+    "location_name": null,
+    "address": null,
+    "district": null,
+    "latitude": null,
+    "longitude": null,
+    "url": "https://paseamadrid.reservaspatrimonio.es/",
+    "price": "Todas las visitas son gratuitas // \nEl plazo de inscripción en la web oficial para las visitas guiadas de la primera temporada de 2026 comienza el miércoles 18 de marzo.",
+    "source_url": "https://www.esmadrid.com/agenda/programa-visitas-guiadas-pasea-madrid",
+    "source": "esmadrid",
+    "categories": [
+      "otros",
+      "gratis"
+    ],
+    "id": "a0c69567e78cbbc3",
+    "created_at": "2026-03-16T15:29:43.138283+00:00",
+    "updated_at": "2026-03-16T15:29:43.138283+00:00"
   }
 }

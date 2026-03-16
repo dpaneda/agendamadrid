@@ -82,6 +82,9 @@ header {
   padding: 0.3rem 0.5rem;
   border-radius: var(--radius);
   transition: background 0.15s, color 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .date-nav button:hover {
@@ -301,6 +304,23 @@ main {
   flex-shrink: 0;
 }
 
+.location-clickable {
+  cursor: pointer;
+  border-radius: var(--radius);
+  padding: 0.1rem 0.3rem;
+  transition: background 0.15s, color 0.15s;
+}
+
+.location-clickable:hover {
+  background: var(--tag-bg);
+  color: var(--primary);
+}
+
+.location-active {
+  background: var(--tag-bg);
+  color: var(--primary);
+}
+
 .event-desc {
   font-size: 0.88rem;
   color: #444;
@@ -337,6 +357,29 @@ main {
 .tag-source {
   background: #e8ecf1;
   color: var(--muted);
+}
+
+.tag-clickable {
+  cursor: pointer;
+}
+
+.tag-clickable:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.tag-active {
+  background: var(--primary);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-left: auto;
 }
 
 .tag-link {
