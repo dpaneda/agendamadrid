@@ -35,7 +35,7 @@ let selectedDate = new Date();
 let allEvents = {};   // id -> event data
 let calendarData = {}; // date -> [{event_id, start_time, end_time}]
 let allData = [];      // flattened for backward compat (buildCategories)
-let activeCategory = "", activeFree = "", activeSource = "";
+let activeCategory = "", activeFree = "", activeSource = "", activeSort = "hora";
 let currentView = "list";
 let map = null, markersLayer = null;
 let picker = null;
@@ -111,6 +111,10 @@ async function init() {
   document.getElementById("source-filter").addEventListener("change", (e) => {
     activeSource = e.target.value;
     e.target.classList.toggle("active-filter", !!activeSource);
+    render();
+  });
+  document.getElementById("sort-filter").addEventListener("change", (e) => {
+    activeSort = e.target.value;
     render();
   });
 
@@ -297,11 +301,35 @@ function getFilteredDayEvents() {
     filtered = filtered.filter(ev => (ev.source || "").split(",").includes(activeSource));
   }
 
-  filtered.sort((a, b) => {
-    const ta = a.start_time || "99:99";
-    const tb = b.start_time || "99:99";
-    return ta.localeCompare(tb);
-  });
+  if (activeSort === "precio") {
+    filtered.sort((a, b) => {
+      const aFree = a.categories.includes("gratis") ? 0 : 1;
+      const bFree = b.categories.includes("gratis") ? 0 : 1;
+      return aFree - bFree || (a.start_time || "99:99").localeCompare(b.start_time || "99:99");
+    });
+  } else if (activeSort === "distancia") {
+    filtered.sort((a, b) => {
+      const da = (userLatLng && a.latitude && a.longitude)
+        ? haversineDistance(userLatLng.lat, userLatLng.lng, parseFloat(a.latitude), parseFloat(a.longitude))
+        : 99999;
+      const db = (userLatLng && b.latitude && b.longitude)
+        ? haversineDistance(userLatLng.lat, userLatLng.lng, parseFloat(b.latitude), parseFloat(b.longitude))
+        : 99999;
+      return da - db;
+    });
+  } else if (activeSort === "descripcion") {
+    filtered.sort((a, b) => {
+      const aHas = a.description ? 0 : 1;
+      const bHas = b.description ? 0 : 1;
+      return aHas - bHas || (a.start_time || "99:99").localeCompare(b.start_time || "99:99");
+    });
+  } else {
+    filtered.sort((a, b) => {
+      const ta = a.start_time || "99:99";
+      const tb = b.start_time || "99:99";
+      return ta.localeCompare(tb);
+    });
+  }
   return filtered;
 }
 
@@ -328,8 +356,13 @@ function renderEvents() {
 }
 
 function renderEvent(ev) {
-  const time = ev.start_time ? ev.start_time.slice(0, 5) : "";
-  const endTime = ev.end_time ? ev.end_time.slice(0, 5) : "";
+  const fmtTime = (t) => {
+    if (!t) return "";
+    const parts = t.split(":");
+    return parts.length >= 2 ? parts[0].padStart(2, "0") + ":" + parts[1] : "";
+  };
+  const time = fmtTime(ev.start_time);
+  const endTime = fmtTime(ev.end_time);
   const timeStr = time ? (endTime ? `${time} - ${endTime}` : time) : "";
   const location = ev.location_name || ev.location || "";
 

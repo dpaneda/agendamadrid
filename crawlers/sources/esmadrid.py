@@ -200,10 +200,16 @@ def _parse_event_page(url):
 
     # Price / free
     is_free = False
+    price_text_raw = None
     price_el = soup.find("div", class_="field-name-field-price")
     if price_el:
-        price_text = price_el.get_text().lower()
-        if any(w in price_text for w in ("gratis", "gratuito", "gratuita", "entrada libre", "acceso libre", "acceso gratuito")):
+        # Remove the label "Precio" from the text
+        label = price_el.find("div", class_="field-label")
+        if label:
+            label.decompose()
+        price_text_raw = price_el.get_text().strip()
+        price_lower = price_text_raw.lower()
+        if any(w in price_lower for w in ("gratis", "gratuito", "gratuita", "entrada libre", "acceso libre", "acceso gratuito")):
             is_free = True
 
     # Categories from field-name-field-categoria
@@ -255,6 +261,7 @@ def _parse_event_page(url):
         "latitude": latitude,
         "longitude": longitude,
         "url": event_url or url,
+        "price": price_text_raw,
         "source_url": url,
         "source": "esmadrid",
         "categories": normalize(categories),
