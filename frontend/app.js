@@ -3,53 +3,219 @@ const MONTHS_ES = [
   "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"
 ];
 
-const DAYS_SHORT = ["dom", "lun", "mar", "mie", "jue", "vie", "sab"];
 const DAYS_LONG = ["domingo", "lunes", "martes", "miercoles", "jueves", "viernes", "sabado"];
 
 const CATEGORY_LABELS = {
-  "circo": "Circo y magia",
-  "conferencias": "Conferencias",
-  "danza": "Danza y baile",
-  "destacado": "Destacados",
-  "exposiciones": "Exposiciones",
-  "fiestas": "Fiestas",
-  "infantil": "Infantil",
   "musica": "Musica y conciertos",
-  "recitales": "Recitales",
   "teatro": "Teatro",
-  "talleres": "Talleres",
-  "visitas guiadas": "Visitas guiadas",
-  "bibliotecas": "Bibliotecas",
+  "danza": "Danza y baile",
   "cine": "Cine",
-  "campamentos": "Campamentos",
+  "exposiciones": "Exposiciones",
+  "conferencias": "Conferencias",
+  "talleres": "Talleres",
+  "infantil": "Infantil y familiar",
+  "deportes": "Deportes",
+  "fiestas": "Fiestas",
+  "visitas guiadas": "Visitas guiadas",
+  "circo": "Circo y magia",
+  "literatura": "Literatura",
+  "fotografia": "Fotografia",
+  "mercados": "Mercados",
+  "gastronomia": "Gastronomia",
   "otros": "Otros",
 };
 
-let currentYear, currentMonth, selectedDay;
-let allData = [];       // all events from JSON
-let monthEvents = [];   // filtered by current month
-let activeCategory = "", activeFree = "";
+const SOURCE_LABELS = {
+  "madrid_agenda": "Agenda general (datos.madrid.es)",
+  "esmadrid": "esmadrid.com",
+  "centrocentro": "CentroCentro",
+};
+
+let selectedDate = new Date();
+let allEvents = {};   // id -> event data
+let calendarData = {}; // date -> [{event_id, start_time, end_time}]
+let allData = [];      // flattened for backward compat (buildCategories)
+let activeCategory = "", activeFree = "", activeSource = "";
+let currentView = "list";
+let map = null, markersLayer = null;
+let picker = null;
+let userLatLng = null;
+
+function haversineDistance(lat1, lon1, lat2, lon2) {
+  const R = 6371;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLon = (lon2 - lon1) * Math.PI / 180;
+  const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+    Math.sin(dLon/2) * Math.sin(dLon/2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  return R * c;
+}
+
+function dateStr(d) {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${day}`;
+}
+
+function updateDateLabel(count) {
+  const month = MONTHS_ES[selectedDate.getMonth()];
+  const label = `${DAYS_LONG[selectedDate.getDay()]} ${selectedDate.getDate()} de ${month.charAt(0).toUpperCase() + month.slice(1)}`;
+  document.getElementById("current-date").textContent = label.charAt(0).toUpperCase() + label.slice(1);
+  const countText = count === 0 ? "Sin eventos" : count === 1 ? "1 evento" : `${count} eventos`;
+  document.getElementById("event-count").textContent = countText;
+}
+
+function changeDay(delta) {
+  selectedDate.setDate(selectedDate.getDate() + delta);
+  syncPicker();
+  render();
+}
+
+function syncPicker() {
+  if (picker) picker.setDate(selectedDate, false);
+}
 
 async function init() {
-  const now = new Date();
-  currentYear = now.getFullYear();
-  currentMonth = now.getMonth() + 1;
-  selectedDay = now.getDate();
+  picker = flatpickr("#date-input", {
+    locale: "es",
+    defaultDate: selectedDate,
+    dateFormat: "Y-m-d",
+    disableMobile: true,
+    onChange(dates) {
+      if (dates[0]) {
+        selectedDate = dates[0];
+        render();
+      }
+    },
+  });
 
-  document.getElementById("prev-month").addEventListener("click", () => changeMonth(-1));
-  document.getElementById("next-month").addEventListener("click", () => changeMonth(1));
+  document.getElementById("prev-day").addEventListener("click", () => changeDay(-1));
+  document.getElementById("next-day").addEventListener("click", () => changeDay(1));
+
+  document.getElementById("date-picker-btn").addEventListener("click", () => {
+    picker.open();
+  });
+
   document.getElementById("category-filter").addEventListener("change", (e) => {
     activeCategory = e.target.value;
     e.target.classList.toggle("active-filter", !!activeCategory);
-    renderEvents();
+    render();
   });
   document.getElementById("free-filter").addEventListener("change", (e) => {
     activeFree = e.target.value;
     e.target.classList.toggle("active-filter", !!activeFree);
-    renderEvents();
+    render();
+  });
+  document.getElementById("source-filter").addEventListener("change", (e) => {
+    activeSource = e.target.value;
+    e.target.classList.toggle("active-filter", !!activeSource);
+    render();
   });
 
+  document.getElementById("btn-list").addEventListener("click", () => setView("list"));
+  document.getElementById("btn-map").addEventListener("click", () => setView("map"));
+
+  syncPicker();
+  locateUser();
   await loadData();
+}
+
+function setView(view) {
+  currentView = view;
+  document.getElementById("btn-list").classList.toggle("active", view === "list");
+  document.getElementById("btn-map").classList.toggle("active", view === "map");
+  document.getElementById("events-container").hidden = view === "map";
+  document.getElementById("map-container").hidden = view === "list";
+
+  if (view === "map") {
+    if (!map) initMap();
+    setTimeout(() => map.invalidateSize(), 50);
+    renderMap();
+    locateUser();
+  }
+}
+
+function initMap() {
+  map = L.map("map").setView([40.4168, -3.7038], 13);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 19,
+  }).addTo(map);
+  markersLayer = L.layerGroup().addTo(map);
+
+  const locationIcon = L.divIcon({
+    className: "user-location",
+    iconSize: [16, 16],
+    iconAnchor: [8, 8]
+  });
+
+  if (userLatLng) {
+    L.marker([userLatLng.lat, userLatLng.lng], { icon: locationIcon }).addTo(map);
+    map.setView([userLatLng.lat, userLatLng.lng], 15);
+  }
+}
+
+function locateUser() {
+  if (!navigator.geolocation) return;
+  navigator.geolocation.getCurrentPosition(
+    (pos) => {
+      userLatLng = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+      render();
+    },
+    () => {}
+  );
+}
+
+function renderMap() {
+  if (!map || !markersLayer) return;
+  markersLayer.clearLayers();
+
+  const events = getFilteredDayEvents();
+  updateDateLabel(events.length);
+  const bounds = [];
+
+  events.forEach(ev => {
+    if (!ev.latitude || !ev.longitude) return;
+    const lat = parseFloat(ev.latitude);
+    const lng = parseFloat(ev.longitude);
+    if (isNaN(lat) || isNaN(lng)) return;
+
+    bounds.push([lat, lng]);
+
+    const time = ev.start_time ? ev.start_time.slice(0, 5) : "";
+    const location = ev.location_name || ev.location || "";
+    const titleHtml = ev.url
+      ? `<a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.title)}</a>`
+      : esc(ev.title);
+    const tags = ev.categories.map(c => `<span class="tag">${esc(c)}</span>`).join("");
+
+    const popup = `<div class="map-popup">
+      <div class="popup-title">${titleHtml}</div>
+      ${time ? `<div class="popup-meta">${esc(time)}</div>` : ""}
+      ${location ? `<div class="popup-location">${esc(location)}</div>` : ""}
+      ${tags ? `<div class="popup-tags">${tags}</div>` : ""}
+    </div>`;
+
+    let distanceLabel = "";
+    if (userLatLng) {
+      const dist = map.distance(userLatLng, [lat, lng]);
+      const distKm = (dist / 1000).toFixed(1);
+      distanceLabel = `${distKm} km`;
+    }
+
+    const marker = L.marker([lat, lng]).addTo(markersLayer);
+    marker.bindPopup(popup);
+  });
+
+  if (bounds.length > 1) {
+    map.fitBounds(bounds, { padding: [30, 30] });
+  } else if (bounds.length === 1) {
+    map.setView(bounds[0], 15);
+  } else {
+    map.setView([40.4168, -3.7038], 13);
+  }
 }
 
 async function loadData() {
@@ -57,11 +223,17 @@ async function loadData() {
   container.innerHTML = "<p class='empty-state'>Cargando...</p>";
 
   try {
-    const res = await fetch("data/events.json");
-    allData = await res.json();
-    allData.sort((a, b) => (a.start_date + (a.start_time || "")).localeCompare(b.start_date + (b.start_time || "")));
+    const [evRes, calRes] = await Promise.all([
+      fetch("data/events.json"),
+      fetch("data/calendar.json"),
+    ]);
+    allEvents = await evRes.json();
+    calendarData = await calRes.json();
+
+    // Build allData for categories (unique events)
+    allData = Object.values(allEvents);
     buildCategories();
-    applyMonth();
+    render();
   } catch (e) {
     container.innerHTML = "<p class='empty-state'>Error al cargar eventos.</p>";
     console.error(e);
@@ -70,126 +242,44 @@ async function loadData() {
 
 function buildCategories() {
   const cats = new Set();
-  allData.forEach(ev => ev.categories.forEach(c => cats.add(c)));
-  const select = document.getElementById("category-filter");
+  const individualSources = new Set();
+  allData.forEach(ev => {
+    ev.categories.forEach(c => cats.add(c));
+    (ev.source || "").split(",").forEach(s => { if (s) individualSources.add(s); });
+  });
+
+  const catSelect = document.getElementById("category-filter");
   [...cats].filter(c => c !== "gratis").sort().forEach(c => {
     const opt = document.createElement("option");
     opt.value = c;
     opt.textContent = CATEGORY_LABELS[c] || c.charAt(0).toUpperCase() + c.slice(1);
-    select.appendChild(opt);
+    catSelect.appendChild(opt);
+  });
+
+  const srcSelect = document.getElementById("source-filter");
+  [...individualSources].sort().forEach(s => {
+    const opt = document.createElement("option");
+    opt.value = s;
+    opt.textContent = SOURCE_LABELS[s] || s;
+    srcSelect.appendChild(opt);
   });
 }
 
-function changeMonth(delta) {
-  currentMonth += delta;
-  if (currentMonth > 12) { currentMonth = 1; currentYear++; }
-  if (currentMonth < 1) { currentMonth = 12; currentYear--; }
+function getFilteredDayEvents() {
+  const selectedDateStr = dateStr(selectedDate);
+  const dayEntries = calendarData[selectedDateStr] || [];
 
-  const now = new Date();
-  if (currentYear === now.getFullYear() && currentMonth === now.getMonth() + 1) {
-    selectedDay = now.getDate();
-  } else {
-    selectedDay = 1;
-  }
-  applyMonth();
-}
-
-function applyMonth() {
-  updateMonthLabel();
-  const prefix = monthStr();
-  monthEvents = allData.filter(ev => ev.start_date.startsWith(prefix));
-  buildDayStrip();
-  renderEvents();
-}
-
-function monthStr() {
-  return `${currentYear}-${String(currentMonth).padStart(2, "0")}`;
-}
-
-function updateMonthLabel() {
-  document.getElementById("current-month").textContent =
-    `${MONTHS_ES[currentMonth - 1]}, ${currentYear}`;
-}
-
-function daysInMonth(year, month) {
-  return new Date(year, month, 0).getDate();
-}
-
-function buildDayStrip() {
-  const strip = document.getElementById("day-strip");
-  const total = daysInMonth(currentYear, currentMonth);
-  const now = new Date();
-  const isCurrentMonth = currentYear === now.getFullYear() && currentMonth === now.getMonth() + 1;
-
-  const daysWithEvents = new Set();
-  monthEvents.forEach(ev => {
-    const day = parseInt(ev.start_date.slice(8, 10), 10);
-    daysWithEvents.add(day);
-  });
-
-  let html = "";
-  for (let d = 1; d <= total; d++) {
-    const dt = new Date(currentYear, currentMonth - 1, d);
-    const dayName = DAYS_SHORT[dt.getDay()];
-    const isToday = isCurrentMonth && d === now.getDate();
-    const isActive = d === selectedDay;
-    const hasEvents = daysWithEvents.has(d);
-
-    let cls = "day-btn";
-    if (isToday) cls += " today";
-    if (isActive) cls += " active";
-    if (hasEvents) cls += " has-events";
-
-    html += `<button class="${cls}" data-day="${d}">
-      <span class="day-name">${dayName}</span>
-      <span class="day-num">${d}</span>
-    </button>`;
-  }
-  strip.innerHTML = html;
-
-  strip.querySelectorAll(".day-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      selectedDay = parseInt(btn.dataset.day, 10);
-      renderDayStrip();
-      renderEvents();
-      scrollToActiveDay();
-    });
-  });
-
-  scrollToActiveDay();
-}
-
-function renderDayStrip() {
-  const strip = document.getElementById("day-strip");
-  const now = new Date();
-  const isCurrentMonth = currentYear === now.getFullYear() && currentMonth === now.getMonth() + 1;
-
-  const daysWithEvents = new Set();
-  monthEvents.forEach(ev => {
-    const day = parseInt(ev.start_date.slice(8, 10), 10);
-    daysWithEvents.add(day);
-  });
-
-  strip.querySelectorAll(".day-btn").forEach(btn => {
-    const d = parseInt(btn.dataset.day, 10);
-    btn.classList.toggle("active", d === selectedDay);
-    btn.classList.toggle("today", isCurrentMonth && d === now.getDate());
-    btn.classList.toggle("has-events", daysWithEvents.has(d));
-  });
-}
-
-function scrollToActiveDay() {
-  const strip = document.getElementById("day-strip");
-  const active = strip.querySelector(".day-btn.active");
-  if (active) {
-    active.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
-  }
-}
-
-function renderEvents() {
-  const container = document.getElementById("events-container");
-
-  let filtered = monthEvents;
+  // Join calendar entries with event data
+  let filtered = dayEntries.map(entry => {
+    const ev = allEvents[entry.event_id];
+    if (!ev) return null;
+    return {
+      ...ev,
+      start_date: selectedDateStr,
+      start_time: entry.start_time || ev.start_time || null,
+      end_time: entry.end_time || ev.end_time || null,
+    };
+  }).filter(Boolean);
 
   if (activeCategory) {
     filtered = filtered.filter(ev =>
@@ -203,63 +293,96 @@ function renderEvents() {
     filtered = filtered.filter(ev => !ev.categories.includes("gratis"));
   }
 
-  const selectedDateStr = `${currentYear}-${String(currentMonth).padStart(2, "0")}-${String(selectedDay).padStart(2, "0")}`;
-  const dayEvents = filtered.filter(ev => ev.start_date === selectedDateStr);
+  if (activeSource) {
+    filtered = filtered.filter(ev => (ev.source || "").split(",").includes(activeSource));
+  }
 
-  const d = new Date(selectedDateStr + "T00:00:00");
-  const label = `${DAYS_LONG[d.getDay()]} ${d.getDate()} de ${MONTHS_ES[d.getMonth()]}`;
-  const count = dayEvents.length;
-  const countText = count === 0 ? "No hay eventos" : count === 1 ? "1 evento" : `${count} eventos`;
+  filtered.sort((a, b) => {
+    const ta = a.start_time || "99:99";
+    const tb = b.start_time || "99:99";
+    return ta.localeCompare(tb);
+  });
+  return filtered;
+}
 
-  if (!count) {
-    container.innerHTML = `
-      <div class="day-section">
-        <div class="day-section-header">${label}</div>
-        <div class="event-count">${countText}</div>
-        <p class="empty-state">No hay eventos para este dia.</p>
-      </div>`;
+function render() {
+  if (currentView === "list") {
+    renderEvents();
+  } else {
+    renderMap();
+  }
+}
+
+function renderEvents() {
+  const container = document.getElementById("events-container");
+  const dayEvents = getFilteredDayEvents();
+
+  updateDateLabel(dayEvents.length);
+
+  if (!dayEvents.length) {
+    container.innerHTML = "<p class='empty-state'>No hay eventos para este dia.</p>";
     return;
   }
 
-  container.innerHTML = `
-    <div class="day-section">
-      <div class="day-section-header">${label}</div>
-      <div class="event-count">${countText}</div>
-      ${dayEvents.map(renderEvent).join("")}
-    </div>`;
+  container.innerHTML = dayEvents.map(renderEvent).join("");
 }
 
 function renderEvent(ev) {
   const time = ev.start_time ? ev.start_time.slice(0, 5) : "";
   const endTime = ev.end_time ? ev.end_time.slice(0, 5) : "";
   const timeStr = time ? (endTime ? `${time} - ${endTime}` : time) : "";
-  const location = ev.location || "";
+  const location = ev.location_name || ev.location || "";
 
-  const title = ev.url
-    ? `<a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.title)}</a>`
-    : esc(ev.title);
+  const title = esc(ev.title);
 
   const desc = ev.description
     ? `<p class="event-desc">${esc(ev.description.length > 200 ? ev.description.slice(0, 200) + "..." : ev.description)}</p>`
     : "";
 
-  const tags = ev.categories.map(c => `<span class="tag">${esc(c)}</span>`).join("");
+  const catTags = ev.categories.map(c => `<span class="tag">${esc(c)}</span>`).join("");
+  const sourceTags = (ev.source || "").split(",").filter(Boolean).map(s => {
+    const label = SOURCE_LABELS[s] || s;
+    const sourceUrl = ev.source_url || "";
+    if (sourceUrl) {
+      return `<span class="tag tag-source tag-link" onclick="event.preventDefault(); event.stopPropagation(); window.open('${esc(sourceUrl)}', '_blank')">${esc(label)}</span>`;
+    }
+    return `<span class="tag tag-source">${esc(label)}</span>`;
+  }).join("");
+  const tags = catTags + sourceTags;
 
-  let metaHtml = "";
-  if (timeStr || location) {
-    const items = [];
-    if (timeStr) items.push(`<span class="meta-item">${esc(timeStr)}</span>`);
-    if (location) items.push(`<span class="meta-item">${esc(location)}</span>`);
-    metaHtml = `<div class="event-meta">${items.join("")}</div>`;
+  const address = ev.address || "";
+  let locationHtml = "";
+  if (location || address) {
+    const parts = [location, address].filter(Boolean);
+    locationHtml = `<div class="event-location"><span class="location-pin">📍</span> ${esc(parts.join(", "))}</div>`;
   }
 
-  return `
-    <div class="event-card">
-      <div class="event-title">${title}</div>
-      ${metaHtml}
+  let distanceHtml = "";
+  if (userLatLng && ev.latitude && ev.longitude) {
+    const dist = haversineDistance(userLatLng.lat, userLatLng.lng, parseFloat(ev.latitude), parseFloat(ev.longitude));
+    distanceHtml = `<span class="event-distance">📍 ${dist.toFixed(1)} km</span>`;
+  }
+
+  const hasFooter = locationHtml || tags || distanceHtml;
+
+  const cardContent = `
+      <div class="event-header">
+        <span class="event-title-wrap">
+          ${timeStr ? `<span class="event-time">${esc(timeStr)}</span>` : ""}
+          <span class="event-title">${title}</span>
+        </span>
+        ${distanceHtml}
+      </div>
       ${desc}
-      ${tags ? `<div class="event-tags">${tags}</div>` : ""}
-    </div>`;
+      ${hasFooter ? `<div class="event-footer">
+        ${locationHtml}
+        ${tags ? `<div class="event-tags">${tags}</div>` : ""}
+      </div>` : ""}`;
+
+  if (ev.url) {
+    return `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="event-card event-card-link">${cardContent}</a>`;
+  }
+  return `<div class="event-card">${cardContent}</div>`;
 }
 
 function esc(s) {

@@ -1,116 +1,168 @@
-"""Crawler for datos.madrid.es cultural events (next 100 days)."""
+"""Crawlers for datos.madrid.es open data feeds.
+
+All datasets share the same JSON-LD structure, so we use a common parser.
+"""
 
 import re
-from datetime import datetime
 
 import requests
 
 from crawlers.base import BaseCrawler
+from crawlers.categories import normalize
 
-JSON_URL = "https://datos.madrid.es/dataset/206974-0-agenda-eventos-culturales-100/resource/206974-0-agenda-eventos-culturales-100-json/download/206974-0-agenda-eventos-culturales-100-json.json"
-
-# Map @type URIs to readable categories
+# Map @type URIs to our canonical categories
 TYPE_MAP = {
+    # Cultural
     "Exposiciones": "exposiciones",
     "ProgramacionDestacadaAgendaCultura": "destacado",
     "TeatroPerformance": "teatro",
     "Musica": "musica",
     "DanzaBaile": "danza",
     "CineCortometrajes": "cine",
+    "CineActividadesAudiovisuales": "cine",
+    "CineFiccion": "cine",
     "ConferenciasColoquios": "conferencias",
-    "Recitales": "recitales",
-    "ActividadesBibliotecas": "bibliotecas",
-    "CampamentosUrbanos": "campamentos",
-    "CuentacuentosTiteresMarionetas": "infantil",
-    "TalleresManualidades": "talleres",
-    "ItinerariosVisitasGuiadas": "visitas guiadas",
+    "Recitales": "musica",
     "CircoMagia": "circo",
+    # Bibliotecas / literatura
+    "ActividadesBibliotecas": "literatura",
+    "ClubesLectura": "literatura",
+    # Infantil / joven
+    "CampamentosUrbanos": "infantil",
+    "CuentacuentosTiteresMarionetas": "infantil",
+    "ActividadesEscolares": "infantil",
+    "JOBO": "infantil",
+    "Campamentos": "infantil",
+    # Talleres / cursos
+    "TalleresManualidades": "talleres",
+    "CursosTalleres": "talleres",
+    # Visitas / excursiones
+    "ItinerariosVisitasGuiadas": "visitas guiadas",
+    "ExcursionesItinerariosVisitas": "visitas guiadas",
+    "ItinerariosOtrasActividadesAmbientales": "visitas guiadas",
+    # Deportes
+    "ActividadesDeportivas": "deportes",
+    "CarrerasMaratones": "deportes",
+    "Ciclismo": "deportes",
+    "Natacion": "deportes",
+    # Fiestas / festivales
     "FiestasNavidad": "fiestas",
     "FiestasCarnaval": "fiestas",
     "FiestasSanIsidro": "fiestas",
+    "FiestasSemanaSanta": "fiestas",
+    "Fiestas": "fiestas",
+    "Festivales": "fiestas",
+    # Gastronomia
+    "Gastronomia": "gastronomia",
+    # Otros
+    "1ciudad21distritos": "otros",
+    "ActividadesCalleArteUrbano": "otros",
+    "ComemoracionesHomenajes": "otros",
+    "ConcursosCertamenes": "otros",
+    "EnLinea": "otros",
     "Otros": "otros",
 }
 
 
-class MadridDatosCrawler(BaseCrawler):
-    name = "madrid_datos"
+def parse_madrid_event(item: dict, source: str) -> dict | None:
+    title = (item.get("title") or "").strip()
+    if not title:
+        return None
+
+    dtstart = item.get("dtstart", "")
+    if not dtstart:
+        return None
+
+    start_date = dtstart[:10]
+    end_date = None
+    dtend = item.get("dtend", "")
+    if dtend:
+        end_date = dtend[:10]
+
+    start_time = None
+    end_time = None
+    time_str = (item.get("time") or "").strip()
+    if time_str:
+        times = re.findall(r"(\d{1,2}[:.]\d{2})", time_str)
+        if times:
+            start_time = times[0].replace(".", ":") + ":00"
+            if len(times) > 1:
+                end_time = times[1].replace(".", ":") + ":00"
+
+    location_name = (item.get("event-location") or "").strip() or None
+
+    address_data = item.get("address", {})
+    area = address_data.get("area", {})
+    street = (area.get("street-address") or "").strip()
+    district_id = address_data.get("district", {}).get("@id", "")
+    district = district_id.split("/")[-1] if "/" in district_id else None
+
+    address = street or None
+
+    loc = item.get("location", {})
+    latitude = loc.get("latitude") if loc else None
+    longitude = loc.get("longitude") if loc else None
+    if latitude == 0 and longitude == 0:
+        latitude = None
+        longitude = None
+
+    url = (item.get("link") or "").strip() or None
+
+    description = (item.get("description") or "").strip() or None
+    if description:
+        description = re.sub(r"<[^>]+>", "", description).strip()
+        if len(description) > 300:
+            description = description[:297] + "..."
+
+    categories = []
+    type_uri = item.get("@type", "") or ""
+    matched = False
+    for key, cat in TYPE_MAP.items():
+        if key in type_uri:
+            categories.append(cat)
+            matched = True
+            break
+    if not matched:
+        categories.append("otros")
+
+    is_free = item.get("free")
+    if is_free == 1 or is_free == "1":
+        categories.append("gratis")
+
+    return {
+        "title": title,
+        "description": description,
+        "start_date": start_date,
+        "end_date": end_date,
+        "start_time": start_time,
+        "end_time": end_time,
+        "location_name": location_name,
+        "address": address,
+        "district": district,
+        "latitude": latitude,
+        "longitude": longitude,
+        "url": url,
+        "source": source,
+        "categories": normalize(categories),
+    }
+
+
+class _MadridDatosBase(BaseCrawler):
+    """Base for datos.madrid.es JSON-LD feeds."""
+    json_url: str = ""
 
     def crawl(self) -> list[dict]:
-        resp = requests.get(JSON_URL, timeout=30)
+        resp = requests.get(self.json_url, timeout=30)
         resp.raise_for_status()
         data = resp.json()
-
-        items = data.get("@graph", [])
         events = []
-
-        for item in items:
-            ev = self._parse(item)
+        for item in data.get("@graph", []):
+            ev = parse_madrid_event(item, self.name)
             if ev:
                 events.append(ev)
-
         return events
 
-    def _parse(self, item: dict) -> dict | None:
-        title = (item.get("title") or "").strip()
-        if not title:
-            return None
 
-        dtstart = item.get("dtstart", "")
-        if not dtstart:
-            return None
-
-        start_date = dtstart[:10]
-        end_date = None
-        dtend = item.get("dtend", "")
-        if dtend:
-            end_date = dtend[:10]
-
-        start_time = None
-        end_time = None
-        time_str = (item.get("time") or "").strip()
-        if time_str:
-            times = re.findall(r"(\d{1,2}[:.]\d{2})", time_str)
-            if times:
-                start_time = times[0].replace(".", ":") + ":00"
-                if len(times) > 1:
-                    end_time = times[1].replace(".", ":") + ":00"
-
-        location = (item.get("event-location") or "").strip() or None
-
-        address = item.get("address", {})
-        area = address.get("area", {})
-        street = (area.get("street-address") or "").strip()
-        if street and location:
-            location = f"{location} ({street})"
-
-        url = (item.get("link") or "").strip() or None
-
-        description = (item.get("description") or "").strip() or None
-        if description:
-            description = re.sub(r"<[^>]+>", "", description).strip()
-            if len(description) > 300:
-                description = description[:297] + "..."
-
-        categories = []
-        type_uri = item.get("@type", "")
-        for key, cat in TYPE_MAP.items():
-            if key in type_uri:
-                categories.append(cat)
-                break
-
-        is_free = item.get("free")
-        if is_free == 1 or is_free == "1":
-            categories.append("gratis")
-
-        return {
-            "title": title,
-            "description": description,
-            "start_date": start_date,
-            "end_date": end_date,
-            "start_time": start_time,
-            "end_time": end_time,
-            "location": location,
-            "url": url,
-            "source": self.name,
-            "categories": categories,
-        }
+class MadridDatosAgendaGeneralCrawler(_MadridDatosBase):
+    name = "madrid_agenda"
+    json_url = "https://datos.madrid.es/egob/catalogo/300107-0-agenda-actividades-eventos.json"

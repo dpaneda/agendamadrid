@@ -3,29 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agenda Madrid</title>
+  <title>Agenda Madrid - Eventos y actividades en Madrid hoy</title>
+  <meta name="description" content="Agenda de eventos en Madrid actualizada a diario. Conciertos, exposiciones, teatro, talleres, visitas guiadas y mucho mas. Datos abiertos de datos.madrid.es, esmadrid.com y CentroCentro.">
+  <meta property="og:title" content="Agenda Madrid - Eventos y actividades en Madrid hoy">
+  <meta property="og:description" content="Agenda de eventos en Madrid actualizada a diario. Conciertos, exposiciones, teatro, talleres, visitas guiadas y mucho mas.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://agendamadrid.es/">
+  <meta property="og:image" content="https://agendamadrid.es/images/agendamadrid.png">
+  <link rel="icon" type="image/png" href="images/agendamadrid.png">
+  <link rel="canonical" href="https://agendamadrid.es/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="header-inner">
-      <a href="/" class="logo">Agenda Madrid</a>
-      <nav class="header-nav"></nav>
+      <a href="/" class="logo"><span class="logo-agenda">agenda</span><span class="logo-madrid">madrid</span></a>
+      <div class="date-nav">
+        <button id="prev-day" aria-label="Dia anterior">&larr;</button>
+        <button id="date-picker-btn" class="date-label">
+          <span id="current-date"></span>
+          <span id="event-count" class="event-count-badge"></span>
+        </button>
+        <button id="next-day" aria-label="Dia siguiente">&rarr;</button>
+        <input type="date" id="date-input" />
+      </div>
+      <nav class="header-nav">
+        <button class="view-toggle active" data-view="list" id="btn-list">Lista</button>
+        <button class="view-toggle" data-view="map" id="btn-map">Mapa</button>
+        <a href="/info.html" class="header-link">Info</a>
+      </nav>
     </div>
   </header>
-
-  <section class="month-bar">
-    <button id="prev-month" aria-label="Mes anterior">&larr;</button>
-    <span id="current-month"></span>
-    <button id="next-month" aria-label="Mes siguiente">&rarr;</button>
-  </section>
-
-  <section class="day-strip-wrapper">
-    <div class="day-strip" id="day-strip"></div>
-  </section>
 
   <div class="filter-bar">
     <div class="filter-bar-inner">
@@ -37,11 +50,17 @@
         <option value="gratis">Solo gratuitos</option>
         <option value="pago">Solo de pago</option>
       </select>
+      <select id="source-filter">
+        <option value="">Todas las fuentes</option>
+      </select>
     </div>
   </div>
 
   <main>
     <div id="events-container"></div>
+    <div id="map-container" hidden>
+      <div id="map"></div>
+    </div>
   </main>
 
   <footer>
@@ -49,6 +68,9 @@
     <p>Los eventos se actualizan con frecuencia. Consulta la fuente original para confirmar detalles.</p>
   </footer>
 
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/es.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

@@ -22,7 +22,7 @@ def discover_crawlers():
         mod = importlib.import_module(f"crawlers.sources.{name}")
         for attr in dir(mod):
             obj = getattr(mod, attr)
-            if isinstance(obj, type) and issubclass(obj, BaseCrawler) and obj is not BaseCrawler:
+            if isinstance(obj, type) and issubclass(obj, BaseCrawler) and obj is not BaseCrawler and not obj.__name__.startswith("_"):
                 crawlers.append(obj())
     return crawlers
 

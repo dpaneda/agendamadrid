@@ -1,0 +1,189 @@
+"""Crawler for Teatros del Canal events."""
+
+import json
+import requests
+from datetime import datetime, timedelta
+
+from crawlers.base import BaseCrawler
+from crawlers.categories import normalize
+
+BASE_URL = "https://www.teatroscanal.com"
+API_URL = f"{BASE_URL}/wp-json/tribe/events/v1/events"
+CRAWL_DELAY = 1
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0",
+    "Accept": "application/json",
+}
+
+LOCATION_NAME = "Teatros del Canal"
+ADDRESS = "C/ del Poeta Joan Maragall, s/n"
+LATITUDE = 40.4365
+LONGITUDE = -3.6969
+
+CAT_MAP = {
+    "teatro": "teatro",
+    "danza": "danza",
+    "musica": "musica",
+    "ópera": "musica",
+    "opera": "musica",
+    "circo": "circo",
+    "infantil": "infantil",
+    "familiar": "infantil",
+    "festivales": "fiestas",
+    "flamenco": "teatro",
+    "performance": "teatro",
+    "internacional": "otros",
+}
+
+
+def _map_categories(categories):
+    """Map API categories to our canonical categories."""
+    result = []
+    for cat in categories:
+        slug = cat.get("slug", "").lower()
+        name = cat.get("name", "").lower()
+        for key, val in CAT_MAP.items():
+            if key in slug or key in name:
+                result.append(val)
+                break
+    if not result:
+        result.append("teatro")
+    return normalize(result)
+
+
+def _fetch_events(page=1, per_page=50):
+    """Fetch events from the API."""
+    params = {
+        "page": page,
+        "per_page": per_page,
+        "start_date": (datetime.now() - timedelta(days=30)).strftime(
+            "%Y-%m-%d %H:%M:%S"
+        ),
+        "end_date": (datetime.now() + timedelta(days=90)).strftime("%Y-%m-%d %H:%M:%S"),
+        "status": "publish",
+    }
+    resp = requests.get(API_URL, params=params, headers=HEADERS, timeout=30)
+    resp.raise_for_status()
+    return resp.json()
+
+
+def _transform_event(ev):
+    """Transform an API event to our schema."""
+    title = ev.get("title", "").strip()
+    if not title:
+        return None
+
+    start_date = ev.get("start_date", "")[:10]
+    if not start_date:
+        return None
+
+    end_date = ev.get("end_date", "")[:10]
+    start_time = (
+        ev.get("start_date_details", {}).get("hour", "")
+        + ":"
+        + ev.get("start_date_details", {}).get("minutes", "")
+    )
+    if start_time == ":":
+        start_time = None
+
+    end_time = (
+        ev.get("end_date_details", {}).get("hour", "")
+        + ":"
+        + ev.get("end_date_details", {}).get("minutes", "")
+    )
+    if end_time == ":":
+        end_time = None
+
+    url = ev.get("url", "")
+    description = ev.get("description", "") or ""
+    if description:
+        description = (
+            description[:500] + "..." if len(description) > 500 else description
+        )
+
+    categories = ev.get("categories", [])
+    mapped_cats = _map_categories(categories)
+
+    return {
+        "title": title,
+        "description": description or None,
+        "start_date": start_date,
+        "end_date": end_date if end_date != start_date else None,
+        "start_time": start_time,
+        "end_time": end_time,
+        "location_name": LOCATION_NAME,
+        "address": ADDRESS,
+        "district": None,
+        "latitude": LATITUDE,
+        "longitude": LONGITUDE,
+        "url": url,
+        "source": "teatros_canal",
+        "categories": mapped_cats,
+    }
+
+
+class TeatrosCanalCrawler(BaseCrawler):
+    name = "teatros_canal"
+
+    def crawl(self) -> list[dict]:
+        return self.crawl_incremental(set())
+
+    def crawl_incremental(self, known_urls: set) -> list[dict]:
+        print("  Fetching events from API...")
+
+        all_events = []
+        page = 1
+        max_pages = 10
+
+        while page <= max_pages:
+            data = _fetch_events(page=page)
+            events = data.get("events", [])
+            if not events:
+                break
+
+            for ev in events:
+                url = ev.get("url", "")
+                if url and url not in known_urls:
+                    transformed = _transform_event(ev)
+                    if transformed:
+                        all_events.extend(_expand_event(transformed))
+
+            total_pages = data.get("total_pages", 1)
+            if page >= total_pages:
+                break
+            page += 1
+
+        print(f"  Got {len(all_events)} events")
+        return all_events
+
+
+def _expand_event(ev):
+    """Expand event to multiple dated events if it spans multiple days."""
+    start = ev["start_date"]
+    end = ev.get("end_date")
+
+    if not end or end == start:
+        return [ev]
+
+    try:
+        d_start = datetime.strptime(start, "%Y-%m-%d")
+        d_end = datetime.strptime(end, "%Y-%m-%d")
+    except ValueError:
+        return [ev]
+
+    max_days = 14
+    today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+    d_start = max(d_start, today)
+    d_end = min(d_end, today + timedelta(days=max_days))
+
+    if d_start > d_end:
+        return [ev]
+
+    events = []
+    d = d_start
+    while d <= d_end:
+        day_ev = {**ev, "start_date": d.strftime("%Y-%m-%d")}
+        events.append(day_ev)
+        d += timedelta(days=1)
+
+    return events if events else [ev]

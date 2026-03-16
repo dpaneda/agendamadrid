@@ -1,52 +1,156 @@
-"""Run all crawlers and write events directly to frontend/data/events.json."""
+"""Run all crawlers and write events.json + calendar.json."""
 
 import hashlib
 import json
 import os
 import sys
-from datetime import datetime
+from datetime import datetime, UTC
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
 from crawlers.runner import discover_crawlers
 
-OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "..", "frontend", "data", "events.json")
+DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "frontend", "data")
+EVENTS_PATH = os.path.join(DATA_DIR, "events.json")
+CALENDAR_PATH = os.path.join(DATA_DIR, "calendar.json")
+
+RICHNESS_FIELDS = ["description", "start_time", "end_time", "location_name", "address",
+                   "latitude", "longitude", "url", "district"]
 
 
-def make_id(source, title, start_date):
+def make_event_id(title):
+    """Generate a stable ID from the event title (date-independent)."""
     title_norm = title.strip().lower()
-    raw = f"{source}:{title_norm}:{start_date}"
-    return hashlib.sha256(raw.encode()).hexdigest()[:16]
+    return hashlib.sha256(title_norm.encode()).hexdigest()[:16]
+
+
+def richness(ev):
+    """Score how complete an event record is."""
+    return sum(1 for f in RICHNESS_FIELDS if ev.get(f))
+
+
+def merge_event(existing, new):
+    """Keep the richer record, merging categories and sources."""
+    if richness(new) > richness(existing):
+        base = {**new}
+    else:
+        base = {**existing}
+
+    cats = list(dict.fromkeys(existing.get("categories", []) + new.get("categories", [])))
+    base["categories"] = cats
+
+    sources = set()
+    for ev in [existing, new]:
+        s = ev.get("source", "")
+        if "," in s:
+            sources.update(s.split(","))
+        else:
+            sources.add(s)
+    base["source"] = ",".join(sorted(sources))
+
+    return base
+
+
+def load_existing():
+    """Load existing events.json and calendar.json."""
+    events = {}
+    calendar = {}
+    known_source_urls = set()
+
+    if os.path.exists(EVENTS_PATH):
+        try:
+            with open(EVENTS_PATH) as f:
+                events = json.load(f)
+            for ev in events.values():
+                url = ev.get("source_url") or ev.get("url")
+                if url:
+                    known_source_urls.add(url)
+        except (json.JSONDecodeError, OSError):
+            pass
+
+    if os.path.exists(CALENDAR_PATH):
+        try:
+            with open(CALENDAR_PATH) as f:
+                calendar = json.load(f)
+        except (json.JSONDecodeError, OSError):
+            pass
+
+    return events, calendar, known_source_urls
 
 
 def run():
     crawlers = discover_crawlers()
     print(f"Found {len(crawlers)} crawler(s)")
 
-    all_events = {}
-    now = datetime.utcnow().isoformat()
+    events, calendar, known_source_urls = load_existing()
+    if events:
+        print(f"Loaded {len(events)} existing events, {len(calendar)} calendar days")
+
+    now = datetime.now(UTC).isoformat()
 
     for crawler in crawlers:
         print(f"\nRunning: {crawler.name}")
         try:
-            raw_events = crawler.crawl()
-            print(f"  Got {len(raw_events)} events")
+            if hasattr(crawler, 'crawl_incremental'):
+                raw_events = crawler.crawl_incremental(known_source_urls)
+            else:
+                raw_events = crawler.crawl()
+
+            print(f"  Got {len(raw_events)} event entries")
             for ev in raw_events:
-                eid = make_id(ev.get("source", ""), ev.get("title", ""), ev.get("start_date", ""))
-                ev["id"] = eid
-                ev.setdefault("created_at", now)
-                ev["updated_at"] = now
-                all_events[eid] = ev
+                title = ev.get("title", "")
+                start_date = ev.get("start_date", "")
+                if not title or not start_date:
+                    continue
+
+                eid = make_event_id(title)
+
+                # Extract calendar entry
+                cal_entry = {"event_id": eid}
+                if ev.get("start_time"):
+                    cal_entry["start_time"] = ev["start_time"]
+                if ev.get("end_time"):
+                    cal_entry["end_time"] = ev["end_time"]
+
+                # Add to calendar
+                if start_date not in calendar:
+                    calendar[start_date] = []
+                # Avoid duplicate entries for same event on same day
+                if not any(e["event_id"] == eid for e in calendar[start_date]):
+                    calendar[start_date].append(cal_entry)
+
+                # Build event data (without date-specific fields)
+                event_data = {k: v for k, v in ev.items()
+                              if k not in ("start_date", "end_date", "start_time",
+                                           "end_time", "id", "created_at", "updated_at")}
+                event_data["id"] = eid
+                event_data.setdefault("created_at", now)
+                event_data["updated_at"] = now
+
+                if eid in events:
+                    events[eid] = merge_event(events[eid], event_data)
+                else:
+                    events[eid] = event_data
+
+                url = ev.get("source_url") or ev.get("url")
+                if url:
+                    known_source_urls.add(url)
+
         except Exception as e:
             print(f"  Error: {e}")
 
-    events_list = sorted(all_events.values(), key=lambda e: (e.get("start_date", ""), e.get("start_time") or ""))
+    # Sort calendar dates
+    calendar = dict(sorted(calendar.items()))
 
-    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
-    with open(OUTPUT_PATH, "w") as f:
-        json.dump(events_list, f, indent=2, ensure_ascii=False, default=str)
+    os.makedirs(DATA_DIR, exist_ok=True)
+    with open(EVENTS_PATH, "w") as f:
+        json.dump(events, f, indent=2, ensure_ascii=False, default=str)
 
-    print(f"\nWrote {len(events_list)} events to {OUTPUT_PATH}")
+    with open(CALENDAR_PATH, "w") as f:
+        json.dump(calendar, f, indent=2, ensure_ascii=False, default=str)
+
+    total_entries = sum(len(v) for v in calendar.values())
+    print(f"\nWrote {len(events)} events, {len(calendar)} days ({total_entries} calendar entries)")
 
 
 if __name__ == "__main__":

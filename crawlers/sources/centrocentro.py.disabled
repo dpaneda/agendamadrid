@@ -1,0 +1,352 @@
+"""Crawler for CentroCentro (Palacio de Cibeles) events."""
+
+import json
+import re
+import time
+from datetime import datetime, timedelta
+
+import requests
+from bs4 import BeautifulSoup
+
+from crawlers.base import BaseCrawler
+from crawlers.categories import normalize
+
+BASE_URL = "https://www.centrocentro.org"
+CRAWL_DELAY = 1
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+}
+
+# Fixed location for all events
+LOCATION_NAME = "CentroCentro (Palacio de Cibeles)"
+ADDRESS = "Plaza de Cibeles, 1"
+LATITUDE = 40.4188
+LONGITUDE = -3.6932
+
+LISTING_PAGES = [
+    "/exposiciones",
+    "/programa-publico",
+    "/musica",
+]
+
+MONTH_MAP = {
+    "enero": 1, "febrero": 2, "marzo": 3, "abril": 4,
+    "mayo": 5, "junio": 6, "julio": 7, "agosto": 8,
+    "septiembre": 9, "octubre": 10, "noviembre": 11, "diciembre": 12,
+}
+
+DAY_MAP = {
+    "lunes": 0, "martes": 1, "miércoles": 2, "miercoles": 2,
+    "jueves": 3, "viernes": 4, "sábado": 5, "sabado": 5,
+    "sábados": 5, "sabados": 5, "domingo": 6, "domingos": 6,
+    "lunes": 0, "martes": 1, "miércoles": 2, "jueves": 3,
+    "viernes": 4,
+}
+
+
+def _get_event_urls():
+    """Collect detail page URLs from listing pages."""
+    urls = set()
+    for path in LISTING_PAGES:
+        page = 0
+        while True:
+            url = f"{BASE_URL}{path}?page={page}"
+            try:
+                resp = requests.get(url, headers=HEADERS, timeout=30)
+                resp.raise_for_status()
+            except Exception:
+                break
+
+            soup = BeautifulSoup(resp.text, "lxml")
+            links = soup.find_all("a", href=re.compile(r"^/(exposicion|programa-publico|musica)/"))
+            new_urls = set()
+            for link in links:
+                href = link.get("href", "")
+                if href and not href.endswith(path):
+                    full = BASE_URL + href if href.startswith("/") else href
+                    new_urls.add(full)
+
+            if not new_urls - urls:
+                break
+
+            urls.update(new_urls)
+            page += 1
+            time.sleep(CRAWL_DELAY)
+
+            if page > 5:
+                break
+
+    return list(urls)
+
+
+def _extract_specific_dates(page_text, year=None):
+    """Extract specific dates from page text like '19 de febrero', '12 de marzo'."""
+    if year is None:
+        year = datetime.now().year
+
+    dates = []
+    # Match "20 de enero", "19 de febrero", etc.
+    for m in re.finditer(r'(\d{1,2})\s+de\s+(' + '|'.join(MONTH_MAP.keys()) + r')', page_text.lower()):
+        day = int(m.group(1))
+        month = MONTH_MAP[m.group(2)]
+        try:
+            d = datetime(year, month, day)
+            # If the date is far in the past, try next year
+            if d < datetime.now() - timedelta(days=60):
+                d = datetime(year + 1, month, day)
+            dates.append(d)
+        except ValueError:
+            pass
+
+    return sorted(set(dates))
+
+
+def _extract_recurring_days(page_text):
+    """Extract recurring weekday patterns like 'Jueves: 17:00 h', 'Martes a las 13:00'."""
+    recurring = []  # list of (weekday_number, time_str)
+
+    text_lower = page_text.lower()
+    # Match "Jueves: 17:00 h" or "Martes a las 13:00 h" or "Domingos: 10:30 h"
+    for m in re.finditer(
+        r'(' + '|'.join(DAY_MAP.keys()) + r')\s*(?::|a las)\s*(\d{1,2}[:.]\d{2})\s*h?',
+        text_lower
+    ):
+        day_name = m.group(1)
+        time_str = m.group(2).replace(".", ":")
+        if day_name in DAY_MAP:
+            recurring.append((DAY_MAP[day_name], time_str + ":00"))
+
+    return recurring
+
+
+def _expand_recurring(recurring, start_date, end_date, max_days=14):
+    """Generate specific dates from recurring weekday patterns."""
+    today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+    d_start = max(today, start_date)
+    d_end = min(end_date, today + timedelta(days=max_days))
+
+    if d_start > d_end:
+        return []
+
+    results = []
+    for weekday, time_str in recurring:
+        d = d_start
+        # Advance to first matching weekday
+        while d.weekday() != weekday and d <= d_end:
+            d += timedelta(days=1)
+        while d <= d_end:
+            results.append((d, time_str))
+            d += timedelta(days=7)
+
+    return results
+
+
+def _parse_event_page(url):
+    """Extract event data from a detail page."""
+    resp = requests.get(url, headers=HEADERS, timeout=30)
+    resp.raise_for_status()
+    html = resp.text
+    soup = BeautifulSoup(html, "lxml")
+
+    ld_script = soup.find("script", type="application/ld+json")
+    if not ld_script:
+        return []
+
+    try:
+        ld = json.loads(ld_script.string)
+    except (json.JSONDecodeError, TypeError):
+        return []
+
+    events_ld = []
+    if isinstance(ld, list):
+        events_ld = [item for item in ld if item.get("@type") in ("Event", "VisualArtsEvent")]
+    elif ld.get("@type") in ("Event", "VisualArtsEvent"):
+        events_ld = [ld]
+    else:
+        return []
+
+    # Detect category from URL
+    is_exposicion = "/exposicion/" in url
+    if is_exposicion:
+        category = "exposiciones"
+    elif "/musica/" in url:
+        category = "musica"
+    elif "/programa-publico/" in url:
+        category = "talleres"
+    else:
+        category = "otros"
+
+    # Check if free
+    is_free = False
+    page_text = soup.get_text()
+    page_text_lower = page_text.lower()
+    if "gratuita" in page_text_lower or "gratuito" in page_text_lower or "entrada libre" in page_text_lower:
+        is_free = True
+
+    results = []
+    for item in events_ld:
+        title = (item.get("name") or "").strip()
+        if not title:
+            continue
+
+        description = (item.get("description") or "").strip()
+        if description:
+            description = re.sub(r"<[^>]+>", "", description).strip()
+            if len(description) > 300:
+                description = description[:297] + "..."
+
+        start_raw = item.get("startDate", "")
+        end_raw = item.get("endDate", "")
+        start_date = start_raw[:10] if start_raw else None
+        end_date = end_raw[:10] if end_raw else None
+
+        if not start_date:
+            continue
+
+        event_url = item.get("url") or url
+
+        categories = [category]
+        if is_free:
+            categories.append("gratis")
+
+        base_event = {
+            "title": title,
+            "description": description or None,
+            "start_date": start_date,
+            "end_date": end_date,
+            "start_time": None,
+            "end_time": None,
+            "location_name": LOCATION_NAME,
+            "address": ADDRESS,
+            "district": None,
+            "latitude": LATITUDE,
+            "longitude": LONGITUDE,
+            "url": event_url,
+            "source": "centrocentro",
+            "categories": normalize(categories),
+            "_is_exposicion": is_exposicion,
+            "_page_text": page_text,
+        }
+
+        results.append(base_event)
+
+    return results
+
+
+def _expand_event(ev, max_days=14):
+    """Expand a single event into concrete dated events."""
+    is_exposicion = ev.pop("_is_exposicion", False)
+    page_text = ev.pop("_page_text", "")
+
+    start = ev["start_date"]
+    end = ev.get("end_date")
+
+    if not end or end == start:
+        # Single-day event, try to get time from page
+        time_matches = re.findall(r"(\d{1,2}[:.]\d{2})\s*h", page_text.lower())
+        if time_matches:
+            ev["start_time"] = time_matches[0].replace(".", ":") + ":00"
+        return [ev]
+
+    try:
+        d_start = datetime.strptime(start, "%Y-%m-%d")
+        d_end = datetime.strptime(end, "%Y-%m-%d")
+    except ValueError:
+        return [ev]
+
+    if is_exposicion:
+        # Expositions: expand daily with default opening hours
+        if not ev.get("start_time"):
+            ev["start_time"] = "10:00:00"
+        if not ev.get("end_time"):
+            ev["end_time"] = "20:00:00"
+        return _expand_daily(ev, d_start, d_end, max_days)
+
+    # For programa-publico / musica: try to find specific dates
+    specific_dates = _extract_specific_dates(page_text)
+    recurring = _extract_recurring_days(page_text)
+
+    events = []
+
+    # Add specific dates
+    today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+    for d in specific_dates:
+        if today <= d <= today + timedelta(days=max_days):
+            # Try to find a time near this date mention in the text
+            day_ev = {**ev, "start_date": d.strftime("%Y-%m-%d")}
+            events.append(day_ev)
+
+    # Add recurring weekday events
+    recurring_dates = _expand_recurring(recurring, d_start, d_end, max_days)
+    for d, time_str in recurring_dates:
+        day_ev = {**ev, "start_date": d.strftime("%Y-%m-%d"), "start_time": time_str}
+        events.append(day_ev)
+
+    # If we found nothing, fall back to a single event for today (if within range)
+    if not events:
+        if d_start <= today <= d_end:
+            time_matches = re.findall(r"(\d{1,2}[:.]\d{2})\s*h", page_text.lower())
+            if time_matches:
+                ev["start_time"] = time_matches[0].replace(".", ":") + ":00"
+            ev["start_date"] = today.strftime("%Y-%m-%d")
+            events = [ev]
+
+    # Deduplicate by date
+    seen = set()
+    unique = []
+    for e in events:
+        key = e["start_date"]
+        if key not in seen:
+            seen.add(key)
+            unique.append(e)
+
+    return unique
+
+
+def _expand_daily(ev, d_start, d_end, max_days=14):
+    """Expand into one entry per day (for expositions)."""
+    today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+    d_start = max(d_start, today)
+    d_end = min(d_end, today + timedelta(days=max_days))
+
+    if d_start > d_end:
+        return []
+
+    results = []
+    d = d_start
+    while d <= d_end:
+        day_ev = {**ev, "start_date": d.strftime("%Y-%m-%d")}
+        results.append(day_ev)
+        d += timedelta(days=1)
+
+    return results if results else [ev]
+
+
+class CentroCentroCrawler(BaseCrawler):
+    name = "centrocentro"
+
+    def crawl(self) -> list[dict]:
+        return self.crawl_incremental(set())
+
+    def crawl_incremental(self, known_urls: set) -> list[dict]:
+        print("  Fetching event URLs...")
+        urls = _get_event_urls()
+        new_urls = [u for u in urls if u not in known_urls]
+        print(f"  Found {len(urls)} URLs, {len(new_urls)} new to scrape")
+
+        events = []
+        for i, url in enumerate(new_urls):
+            try:
+                evs = _parse_event_page(url)
+                for ev in evs:
+                    events.extend(_expand_event(ev))
+            except Exception as e:
+                print(f"  Error scraping {url}: {e}")
+
+            if i > 0 and i % 20 == 0:
+                print(f"  Scraped {i}/{len(new_urls)}...")
+
+            time.sleep(CRAWL_DELAY)
+
+        return events
