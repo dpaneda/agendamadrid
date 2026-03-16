@@ -6,25 +6,23 @@ Web de eventos de Madrid. Inspirada en agendagijon.com.
 
 100% estatica, sin backend:
 - **Frontend**: HTML + CSS + JS vanilla en `frontend/`
-- **Datos**: `frontend/data/events.json` (generado por crawlers, commiteado al repo)
+- **Datos**: `frontend/data/events.json` + `frontend/data/calendar.json` (generados por crawlers, commiteados al repo)
 - **Crawlers**: Python en `crawlers/`, se ejecutan via GitHub Actions (1x/dia)
 - **Hosting**: GitHub Pages con dominio custom `agendamadrid.es`
 
 ## Como funciona
 
 1. GitHub Actions ejecuta `crawlers/build_data.py`
-2. Los crawlers descargan eventos de datos.madrid.es (JSON-LD) y esmadrid.com (scraping)
-3. Se deduplican por titulo+fecha, se mergea el registro mas completo
-4. Se genera `frontend/data/events.json`
+2. Los crawlers descargan eventos de esmadrid.com (scraping diario) y datos.madrid.es (JSON-LD)
+3. Se deduplican por titulo (hash SHA256), se mergea el registro mas completo
+4. Se generan `frontend/data/events.json` (dict por ID) y `frontend/data/calendar.json` (fecha -> refs)
 5. Se commitea y pushea -> GitHub Pages despliega
 
 ## Fuentes de datos
 
-- `madrid_bibliotecas`: Eventos en bibliotecas (datos.madrid.es, JSON-LD)
+- `esmadrid`: Agenda de esmadrid.com (scraping diario por busqueda + JSON-LD en cada pagina, 14 dias)
 - `madrid_agenda`: Agenda general de actividades (datos.madrid.es, JSON-LD)
-- `esmadrid`: Agenda de esmadrid.com (scraping via sitemap + JSON-LD en cada pagina)
-
-Nota: `madrid_cultura` se elimino porque estaba 100% contenido en `madrid_agenda`.
+- `teatros_canal`: Teatros del Canal (API REST WordPress, deshabilitado temporalmente)
 
 ## Categorias canonicas
 
@@ -48,7 +46,7 @@ cd frontend && python -m http.server 8000
 - Flatpickr para selector de fecha
 - Inter font (Google Fonts)
 - Paleta morada (#381d92)
-- Filtros: tipo de evento, gratis/pago, fuente
+- Filtros: tags clickables (categoria, gratis), localizacion clickable, fuente, ordenar por hora/precio/distancia
 - Vista lista + vista mapa
 - Selector de fecha con flechas prev/next dia
 
@@ -63,4 +61,4 @@ TXT de verificacion: `_github-pages-challenge-dpaneda`
 - Los crawlers no necesitan API key, todo es open data o scraping publico
 - ~1500+ eventos, ~1MB el JSON
 - 92% de eventos tienen coordenadas GPS
-- esmadrid.com crawler tarda ~20 min (1s delay entre requests, ~1200 paginas)
+- esmadrid.com crawler: busqueda diaria con reintentos (exponential backoff), ~270 eventos/dia, filtra por dias de la semana (open_days)
