@@ -32,7 +32,15 @@ const SOURCE_LABELS = {
   "teatros_canal": "teatroscanal.com",
 };
 
-let selectedDate = new Date();
+const _initParams = new URLSearchParams(window.location.search);
+let selectedDate = (function() {
+  const d = _initParams.get("date");
+  if (d && /^\d{4}-\d{2}-\d{2}$/.test(d)) {
+    const parsed = new Date(d + "T12:00:00");
+    if (!isNaN(parsed)) return parsed;
+  }
+  return new Date();
+})();
 let allEvents = {};   // id -> event data
 let calendarData = {}; // date -> [{event_id, start_time, end_time}]
 let allData = [];      // flattened for backward compat (buildCategories)
@@ -71,7 +79,11 @@ function updateDateLabel(count) {
 }
 
 function changeDay(delta) {
-  selectedDate.setDate(selectedDate.getDate() + delta);
+  if (currentView === "cal") {
+    selectedDate.setMonth(selectedDate.getMonth() + delta);
+  } else {
+    selectedDate.setDate(selectedDate.getDate() + delta);
+  }
   syncPicker();
   render();
 }
@@ -101,6 +113,16 @@ async function init() {
     picker.open();
   });
 
+  document.getElementById("category-filter").addEventListener("change", (e) => {
+    const val = e.target.value;
+    activeTags.clear();
+    if (val) {
+      activeTags.add(val);
+    }
+    renderActiveFilters();
+    render();
+  });
+
   document.getElementById("source-filter").addEventListener("change", (e) => {
     activeSource = e.target.value;
     e.target.classList.toggle("active-filter", !!activeSource);
@@ -113,24 +135,68 @@ async function init() {
 
   document.getElementById("btn-list").addEventListener("click", () => setView("list"));
   document.getElementById("btn-map").addEventListener("click", () => setView("map"));
+  document.getElementById("btn-cal").addEventListener("click", () => setView("cal"));
+
+  document.getElementById("btn-today").addEventListener("click", () => {
+    selectedDate = new Date();
+    syncPicker();
+    render();
+  });
+
 
   syncPicker();
   locateUser();
   await loadData();
+
+  // Restore filters from URL
+  const initCat = _initParams.get("cat");
+  if (initCat) {
+    activeTags.add(initCat);
+    document.getElementById("category-filter").value = initCat;
+    renderActiveFilters();
+  }
+  const initSource = _initParams.get("source");
+  if (initSource) {
+    activeSource = initSource;
+    document.getElementById("source-filter").value = initSource;
+    document.getElementById("source-filter").classList.add("active-filter");
+  }
+  const initSort = _initParams.get("sort");
+  if (initSort) {
+    activeSort = initSort;
+    document.getElementById("sort-filter").value = initSort;
+  }
+  const initLoc = _initParams.get("loc");
+  if (initLoc) {
+    activeLocation = initLoc;
+    renderActiveFilters();
+  }
+  const initView = _initParams.get("view");
+  if (initView && ["map", "cal"].includes(initView)) {
+    setView(initView);
+  } else {
+    render();
+  }
 }
 
 function setView(view) {
   currentView = view;
   document.getElementById("btn-list").classList.toggle("active", view === "list");
   document.getElementById("btn-map").classList.toggle("active", view === "map");
-  document.getElementById("events-container").hidden = view === "map";
-  document.getElementById("map-container").hidden = view === "list";
+  document.getElementById("btn-cal").classList.toggle("active", view === "cal");
+  document.getElementById("events-container").hidden = view !== "list";
+  document.getElementById("map-container").hidden = view !== "map";
+  document.getElementById("cal-container").hidden = view !== "cal";
 
-  if (view === "map") {
+  if (view === "list") {
+    renderEvents();
+  } else if (view === "map") {
     if (!map) initMap();
     setTimeout(() => map.invalidateSize(), 50);
     renderMap();
     locateUser();
+  } else if (view === "cal") {
+    renderCalendar();
   }
 }
 
@@ -230,7 +296,6 @@ async function loadData() {
     // Build allData for categories (unique events)
     allData = Object.values(allEvents);
     buildCategories();
-    render();
   } catch (e) {
     container.innerHTML = "<p class='empty-state'>Error al cargar eventos.</p>";
     console.error(e);
@@ -239,8 +304,18 @@ async function loadData() {
 
 function buildCategories() {
   const individualSources = new Set();
+  const allCats = new Set();
   allData.forEach(ev => {
     (ev.source || "").split(",").forEach(s => { if (s) individualSources.add(s); });
+    (ev.categories || []).forEach(c => { if (c) allCats.add(c); });
+  });
+
+  const catSelect = document.getElementById("category-filter");
+  [...allCats].sort((a, b) => (CATEGORY_LABELS[a] || a).localeCompare(CATEGORY_LABELS[b] || b)).forEach(c => {
+    const opt = document.createElement("option");
+    opt.value = c;
+    opt.textContent = CATEGORY_LABELS[c] || c;
+    catSelect.appendChild(opt);
   });
 
   const srcSelect = document.getElementById("source-filter");
@@ -315,11 +390,40 @@ function getFilteredDayEvents() {
   return filtered;
 }
 
+function updateURL() {
+  const ds = dateStr(selectedDate);
+  const today = dateStr(new Date());
+  const url = new URL(window.location);
+
+  if (ds === today) url.searchParams.delete("date");
+  else url.searchParams.set("date", ds);
+
+  if (activeTags.size === 1) url.searchParams.set("cat", [...activeTags][0]);
+  else url.searchParams.delete("cat");
+
+  if (activeSource) url.searchParams.set("source", activeSource);
+  else url.searchParams.delete("source");
+
+  if (activeSort !== "hora") url.searchParams.set("sort", activeSort);
+  else url.searchParams.delete("sort");
+
+  if (activeLocation) url.searchParams.set("loc", activeLocation);
+  else url.searchParams.delete("loc");
+
+  if (currentView !== "list") url.searchParams.set("view", currentView);
+  else url.searchParams.delete("view");
+
+  history.replaceState(null, "", url);
+}
+
 function render() {
+  updateURL();
   if (currentView === "list") {
     renderEvents();
-  } else {
+  } else if (currentView === "map") {
     renderMap();
+  } else if (currentView === "cal") {
+    renderCalendar();
   }
 }
 
@@ -413,8 +517,10 @@ function toggleTag(tag) {
   if (activeTags.has(tag)) {
     activeTags.delete(tag);
   } else {
+    activeTags.clear();
     activeTags.add(tag);
   }
+  document.getElementById("category-filter").value = activeTags.size === 1 ? [...activeTags][0] : "";
   renderActiveFilters();
   render();
 }
@@ -438,10 +544,90 @@ function renderActiveFilters() {
   container.innerHTML = parts.join("");
 }
 
+function getEventsForDate(ds) {
+  const dayEntries = calendarData[ds] || [];
+  let events = dayEntries.map(entry => {
+    const ev = allEvents[entry.event_id];
+    if (!ev) return null;
+    return { ...ev, start_date: ds, start_time: entry.start_time || ev.start_time || null };
+  }).filter(Boolean);
+
+  if (activeTags.size > 0) {
+    events = events.filter(ev => [...activeTags].every(tag => ev.categories.includes(tag)));
+  }
+  if (activeLocation) {
+    events = events.filter(ev => (ev.location_name || ev.location || "") === activeLocation);
+  }
+  if (activeSource) {
+    events = events.filter(ev => (ev.source || "").split(",").includes(activeSource));
+  }
+  return events;
+}
+
+function renderCalendar() {
+  const container = document.getElementById("cal-container");
+  const year = selectedDate.getFullYear();
+  const month = selectedDate.getMonth();
+  const monthName = MONTHS_ES[month];
+
+  // Update header to show month
+  document.getElementById("current-date").textContent =
+    `${monthName.charAt(0).toUpperCase() + monthName.slice(1)} ${year}`;
+  document.getElementById("event-count").textContent = "";
+  updateURL();
+
+  const firstDay = new Date(year, month, 1);
+  const lastDay = new Date(year, month + 1, 0);
+  // Monday = 0 in our grid
+  let startDow = firstDay.getDay() - 1;
+  if (startDow < 0) startDow = 6;
+
+  const todayStr = dateStr(new Date());
+  const selectedStr = dateStr(selectedDate);
+
+  const dayHeaders = ["Lu", "Ma", "Mi", "Ju", "Vi", "Sa", "Do"];
+  let html = `<div class="cal-grid">`;
+  html += dayHeaders.map(d => `<div class="cal-header">${d}</div>`).join("");
+
+  // Empty cells before first day
+  for (let i = 0; i < startDow; i++) {
+    html += `<div class="cal-cell cal-empty"></div>`;
+  }
+
+  for (let day = 1; day <= lastDay.getDate(); day++) {
+    const ds = `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+    const events = getEventsForDate(ds);
+    const count = events.length;
+    const isToday = ds === todayStr;
+    const isSelected = ds === selectedStr;
+
+    let classes = "cal-cell";
+    if (isToday) classes += " cal-today";
+    if (isSelected) classes += " cal-selected";
+    if (count === 0) classes += " cal-empty-day";
+
+    const intensity = count === 0 ? "" : count < 5 ? " cal-low" : count < 20 ? " cal-med" : count < 50 ? " cal-high" : " cal-max";
+
+    html += `<div class="${classes}${intensity}" onclick="calDayClick('${ds}')">
+      <span class="cal-day-num">${day}</span>
+      ${count > 0 ? `<span class="cal-count">${count}</span>` : ""}
+    </div>`;
+  }
+
+  html += `</div>`;
+  container.innerHTML = html;
+}
+
+function calDayClick(ds) {
+  selectedDate = new Date(ds + "T12:00:00");
+  syncPicker();
+  setView("list");
+}
+
 function esc(s) {
   const el = document.createElement("span");
   el.textContent = s;
-  return el.innerHTML;
+  return el.innerHTML.replace(/'/g, "&#39;");
 }
 
 init();

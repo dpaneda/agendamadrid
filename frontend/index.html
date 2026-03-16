@@ -30,11 +30,13 @@
           <span id="event-count" class="event-count-badge"></span>
         </button>
         <button id="next-day" aria-label="Dia siguiente"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+        <button id="btn-today" class="btn-today">Hoy</button>
         <input type="date" id="date-input" />
       </div>
       <nav class="header-nav">
         <button class="view-toggle active" data-view="list" id="btn-list">Lista</button>
         <button class="view-toggle" data-view="map" id="btn-map">Mapa</button>
+        <button class="view-toggle" data-view="cal" id="btn-cal">Mes</button>
         <a href="/info.html" class="header-link">Info</a>
       </nav>
     </div>
@@ -42,6 +44,9 @@
 
   <div class="filter-bar">
     <div class="filter-bar-inner">
+      <select id="category-filter">
+        <option value="">Todas las categorías</option>
+      </select>
       <select id="source-filter">
         <option value="">Todas las fuentes</option>
       </select>
@@ -59,6 +64,7 @@
     <div id="map-container" hidden>
       <div id="map"></div>
     </div>
+    <div id="cal-container" hidden></div>
   </main>
 
   <footer>
