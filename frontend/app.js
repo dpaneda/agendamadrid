@@ -526,8 +526,13 @@ const CAT_ICONS = {
 
 function categoryIcon(categories = []) {
   const cats = categories || [];
-  const PRIORITY = ["fotografia"];
-  const cat = PRIORITY.find(p => cats.includes(p)) || cats.find(c => c !== "gratis") || "otros";
+  const PRIORITY = [
+    "fotografia", "circo", "cine", "danza", "gastronomia",
+    "deportes", "infantil", "mercados", "fiestas",
+    "musica", "teatro", "talleres", "conferencias",
+    "literatura", "visitas guiadas", "exposiciones", "otros",
+  ];
+  const cat = PRIORITY.find(p => cats.includes(p)) || "otros";
   const { emoji, color } = CAT_ICONS[cat] || CAT_ICONS.otros;
   return L.divIcon({
     html: `<div class="map-cat-icon">${emoji}</div>`,
