@@ -742,19 +742,14 @@ footer p + p {
   }
 
   .view-toggle {
-    padding: 0.25rem 0.5rem;
-    font-size: 0.72rem;
-  }
-
-  .header-link {
-    padding: 0.25rem 0.4rem;
-    font-size: 0.72rem;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
   }
 
   .date-nav {
     order: 3;
-    width: 100%;
-    justify-content: center;
+    flex: 1;
+    justify-content: flex-start;
   }
 
   .date-nav > #prev-day,
@@ -777,6 +772,12 @@ footer p + p {
   .event-count-badge {
     font-size: 0.65rem;
     padding: 0.1rem 0.4rem;
+  }
+
+  .header-link {
+    order: 4;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.5rem;
   }
 
   .filter-bar-inner {

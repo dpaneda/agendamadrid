@@ -109,8 +109,33 @@ async function init() {
   document.getElementById("prev-day").addEventListener("click", () => changeDay(-1));
   document.getElementById("next-day").addEventListener("click", () => changeDay(1));
 
+  const dateInput = document.getElementById("date-input");
+  const isMobile = window.matchMedia("(max-width: 640px)").matches;
+
+  if (isMobile) {
+    dateInput.style.position = "absolute";
+    dateInput.style.opacity = "0";
+    dateInput.style.pointerEvents = "auto";
+    dateInput.style.width = "100%";
+    dateInput.style.height = "100%";
+    dateInput.style.top = "0";
+    dateInput.style.left = "0";
+    dateInput.value = selectedDate.toISOString().split("T")[0];
+    dateInput.addEventListener("change", (e) => {
+      if (e.target.value) {
+        selectedDate = new Date(e.target.value + "T12:00:00");
+        syncPicker();
+        render();
+      }
+    });
+  }
+
   document.getElementById("date-picker-btn").addEventListener("click", () => {
-    picker.open();
+    if (isMobile) {
+      dateInput.showPicker();
+    } else {
+      picker.open();
+    }
   });
 
   document.getElementById("category-filter").addEventListener("change", (e) => {
