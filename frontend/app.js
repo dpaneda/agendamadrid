@@ -508,7 +508,7 @@ const CAT_ICONS = {
   musica:          { emoji: "🎵", color: "#7C3AED" },
   teatro:          { emoji: "🎭", color: "#1D4ED8" },
   exposiciones:    { emoji: "🏛️", color: "#0891B2" },
-  infantil:        { emoji: "🎪", color: "#F59E0B" },
+  infantil:        { emoji: "🧸", color: "#F59E0B" },
   deportes:        { emoji: "⚽", color: "#16A34A" },
   danza:           { emoji: "💃", color: "#DB2777" },
   cine:            { emoji: "🎬", color: "#374151" },
