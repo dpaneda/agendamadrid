@@ -524,24 +524,6 @@ const CAT_ICONS = {
   otros:           { emoji: "📍", color: "#6B7280" },
 };
 
-function categoryIcon(categories = []) {
-  const cats = categories || [];
-  const PRIORITY = [
-    "fotografia", "circo", "cine", "danza", "gastronomia",
-    "deportes", "infantil", "mercados", "fiestas",
-    "musica", "teatro", "talleres", "conferencias",
-    "literatura", "visitas guiadas", "exposiciones", "otros",
-  ];
-  const cat = PRIORITY.find(p => cats.includes(p)) || "otros";
-  const { emoji, color } = CAT_ICONS[cat] || CAT_ICONS.otros;
-  return L.divIcon({
-    html: `<div class="map-cat-icon">${emoji}</div>`,
-    className: "",
-    iconSize: [24, 24],
-    iconAnchor: [12, 12],
-    popupAnchor: [0, -14],
-  });
-}
 
 function renderMap() {
   if (!map || !markersLayer) return;
@@ -551,43 +533,66 @@ function renderMap() {
   updateDateLabel(events.length);
   const bounds = [];
 
+  // Group events by location
+  const byLocation = new Map();
   events.forEach(ev => {
     if (!ev.latitude || !ev.longitude) return;
     const lat = parseFloat(ev.latitude);
     const lng = parseFloat(ev.longitude);
     if (isNaN(lat) || isNaN(lng)) return;
+    const key = `${lat.toFixed(5)},${lng.toFixed(5)}`;
+    if (!byLocation.has(key)) byLocation.set(key, { lat, lng, evs: [] });
+    byLocation.get(key).evs.push(ev);
+  });
 
+  const PRIORITY = [
+    "fotografia", "circo", "cine", "danza", "gastronomia",
+    "deportes", "infantil", "mercados", "fiestas",
+    "musica", "teatro", "talleres", "conferencias",
+    "literatura", "visitas guiadas", "exposiciones", "otros",
+  ];
+
+  byLocation.forEach(({ lat, lng, evs }) => {
     bounds.push([lat, lng]);
 
-    const time = ev.start_time ? ev.start_time.slice(0, 5) : "";
-    const location = ev.location_name || ev.location || "";
-    const titleHtml = ev.url
-      ? `<a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.title)}</a>`
-      : esc(ev.title);
-    const tags = ev.categories.map(c => `<span class="tag">${esc(c)}</span>`).join("");
+    // Best category across all events at this location
+    const allCats = evs.flatMap(ev => ev.categories || []);
+    const bestCat = PRIORITY.find(p => allCats.includes(p)) || "otros";
+    const location = evs[0].location_name || evs[0].location || "";
 
-    const mapFav = UserData.has("favorites", ev.id);
-    const mapSeen = UserData.has("seen", ev.id);
+    const evRows = evs.map(ev => {
+      const time = ev.start_time ? ev.start_time.slice(0, 5) : "";
+      const titleHtml = ev.url
+        ? `<a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.title)}</a>`
+        : esc(ev.title);
+      const mapFav = UserData.has("favorites", ev.id);
+      const mapSeen = UserData.has("seen", ev.id);
+      return `<div class="popup-event">
+        <div class="popup-title">${titleHtml}</div>
+        ${time ? `<div class="popup-meta">${esc(time)}</div>` : ""}
+        <div class="popup-actions">
+          <button class="ev-action ev-fav${mapFav ? ' active' : ''}" onclick="mapAction('fav','${esc(ev.id)}',this)" title="Favorito"><svg width="16" height="16" viewBox="0 0 24 24" fill="${mapFav ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <button class="ev-action ev-seen${mapSeen ? ' active' : ''}" onclick="mapAction('seen','${esc(ev.id)}',this)" title="Visto"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></button>
+          <button class="ev-action ev-dismiss" onclick="mapAction('dismiss','${esc(ev.id)}',this)" title="Ocultar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+        </div>
+      </div>`;
+    }).join("");
+
     const popup = `<div class="map-popup">
-      <div class="popup-title">${titleHtml}</div>
-      ${time ? `<div class="popup-meta">${esc(time)}</div>` : ""}
-      ${location ? `<div class="popup-location">${esc(location)}</div>` : ""}
-      ${tags ? `<div class="popup-tags">${tags}</div>` : ""}
-      <div class="popup-actions">
-        <button class="ev-action ev-fav${mapFav ? ' active' : ''}" onclick="mapAction('fav','${esc(ev.id)}',this)" title="Favorito"><svg width="16" height="16" viewBox="0 0 24 24" fill="${mapFav ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
-        <button class="ev-action ev-seen${mapSeen ? ' active' : ''}" onclick="mapAction('seen','${esc(ev.id)}',this)" title="Visto"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></button>
-        <button class="ev-action ev-dismiss" onclick="mapAction('dismiss','${esc(ev.id)}',this)" title="Ocultar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
-      </div>
+      ${location ? `<div class="popup-location popup-venue">${esc(location)}</div>` : ""}
+      ${evRows}
     </div>`;
 
-    let distanceLabel = "";
-    if (userLatLng) {
-      const dist = map.distance(userLatLng, [lat, lng]);
-      const distKm = (dist / 1000).toFixed(1);
-      distanceLabel = `${distKm} km`;
-    }
+    const { emoji } = CAT_ICONS[bestCat] || CAT_ICONS.otros;
+    const icon = L.divIcon({
+      html: `<div class="map-cat-icon">${emoji}</div>`,
+      className: "",
+      iconSize: [24, 24],
+      iconAnchor: [12, 12],
+      popupAnchor: [0, -14],
+    });
 
-    const marker = L.marker([lat, lng], { icon: categoryIcon(ev.categories) }).addTo(markersLayer);
+    const marker = L.marker([lat, lng], { icon }).addTo(markersLayer);
     marker.bindPopup(popup);
   });
 

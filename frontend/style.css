@@ -962,6 +962,26 @@ footer p + p {
   opacity: 1;
 }
 
+.popup-venue {
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.popup-event + .popup-event {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.map-popup {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
 /* Map popup actions */
 .popup-actions {
   display: flex;
