@@ -348,8 +348,12 @@ class EsMadridCrawler(BaseCrawler):
 
             day_urls = _get_event_urls_for_date(date)
             new_urls = [u for u in day_urls if u not in known_urls]
-            print(f"  [{date_str}] {len(day_urls)} events, {len(new_urls)} new ({time.time()-t0:.0f}s)")
+            known_count = len(day_urls) - len(new_urls)
+            print(f"  [{date_str}] {len(day_urls)} found, {len(new_urls)} new, {known_count} known ({time.time()-t0:.0f}s)")
 
+            scraped = 0
+            skipped_days = 0
+            errors = 0
             for url in new_urls:
                 # Use cached parse if we already scraped this URL for another day
                 if url in seen_urls:
@@ -359,32 +363,40 @@ class EsMadridCrawler(BaseCrawler):
                         ev = _parse_event_page(url)
                         time.sleep(CRAWL_DELAY)
                     except Exception as e:
-                        print(f"    Error scraping {url}: {e}")
+                        print(f"    Error: {url.split('/')[-1]}: {e}")
                         ev = None
+                        errors += 1
                     seen_urls[url] = ev
 
                 if ev:
                     # Skip if event doesn't run on this day of the week
                     open_days = ev.get("open_days")
                     if open_days and date.weekday() not in open_days:
+                        skipped_days += 1
                         continue
                     day_ev = {**ev, "start_date": date_str}
                     events.append(day_ev)
+                    scraped += 1
 
             # Also add events from known URLs that appear on this day
+            stubs = 0
+            cached = 0
             for url in day_urls:
                 if url in known_urls:
                     if url in seen_urls and seen_urls[url]:
                         ev = seen_urls[url]
                         open_days = ev.get("open_days")
                         if open_days and date.weekday() not in open_days:
+                            skipped_days += 1
                             continue
                         day_ev = {**ev, "start_date": date_str}
                         events.append(day_ev)
+                        cached += 1
                     else:
-                        # Event exists in DB but wasn't scraped this session;
-                        # emit a stub so build_data creates the calendar entry
                         events.append({"_known_url": url, "start_date": date_str})
+                        stubs += 1
+
+            print(f"  [{date_str}] +{scraped} scraped, +{cached} cached, +{stubs} stubs, -{skipped_days} wrong day, {errors} errors")
 
         print(f"  Total: {len(events)} events across {days_ahead} days, scraped {len(seen_urls)} unique pages")
         return events
