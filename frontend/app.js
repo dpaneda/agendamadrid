@@ -466,8 +466,8 @@ function setView(view) {
 
 function initMap() {
   map = L.map("map").setView([40.4168, -3.7038], 13);
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a>',
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+    attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
     maxZoom: 19,
   }).addTo(map);
   markersLayer = L.layerGroup().addTo(map);
