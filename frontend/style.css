@@ -18,6 +18,11 @@
   align-items: center;
   letter-spacing: -0.02em;
   flex-shrink: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
 }
 
 .logo-agenda {
@@ -126,13 +131,6 @@ header {
 
 .mobile-only { display: none; }
 
-.btn-today {
-  font-family: inherit;
-  font-size: 0.72rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
 
 #date-input {
   position: absolute;
@@ -790,8 +788,7 @@ footer p + p {
   }
 
   .date-nav > #prev-day,
-  .date-nav > #next-day,
-  .date-nav > .btn-today {
+  .date-nav > #next-day {
     display: none;
   }
 
