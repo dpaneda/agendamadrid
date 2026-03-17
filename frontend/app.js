@@ -504,6 +504,38 @@ function locateUser() {
   );
 }
 
+const CAT_ICONS = {
+  musica:          { emoji: "🎵", color: "#7C3AED" },
+  teatro:          { emoji: "🎭", color: "#1D4ED8" },
+  exposiciones:    { emoji: "🖼️", color: "#0891B2" },
+  infantil:        { emoji: "🎪", color: "#F59E0B" },
+  deportes:        { emoji: "⚽", color: "#16A34A" },
+  danza:           { emoji: "💃", color: "#DB2777" },
+  cine:            { emoji: "🎬", color: "#374151" },
+  gastronomia:     { emoji: "🍽️", color: "#EA580C" },
+  fiestas:         { emoji: "🎉", color: "#DC2626" },
+  talleres:        { emoji: "🔨", color: "#92400E" },
+  mercados:        { emoji: "🛒", color: "#15803D" },
+  "visitas guiadas": { emoji: "🗺️", color: "#1E40AF" },
+  conferencias:    { emoji: "🎤", color: "#4338CA" },
+  fotografia:      { emoji: "📷", color: "#6B7280" },
+  literatura:      { emoji: "📖", color: "#7C2D12" },
+  circo:           { emoji: "🤹", color: "#BE185D" },
+  otros:           { emoji: "📍", color: "#6B7280" },
+};
+
+function categoryIcon(categories = []) {
+  const cat = (categories || []).find(c => c !== "gratis") || "otros";
+  const { emoji, color } = CAT_ICONS[cat] || CAT_ICONS.otros;
+  return L.divIcon({
+    html: `<div class="map-cat-icon" style="background:${color}"><span>${emoji}</span></div>`,
+    className: "",
+    iconSize: [32, 32],
+    iconAnchor: [16, 32],
+    popupAnchor: [0, -34],
+  });
+}
+
 function renderMap() {
   if (!map || !markersLayer) return;
   markersLayer.clearLayers();
@@ -548,7 +580,7 @@ function renderMap() {
       distanceLabel = `${distKm} km`;
     }
 
-    const marker = L.marker([lat, lng]).addTo(markersLayer);
+    const marker = L.marker([lat, lng], { icon: categoryIcon(ev.categories) }).addTo(markersLayer);
     marker.bindPopup(popup);
   });
 
