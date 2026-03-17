@@ -528,11 +528,11 @@ function categoryIcon(categories = []) {
   const cat = (categories || []).find(c => c !== "gratis") || "otros";
   const { emoji, color } = CAT_ICONS[cat] || CAT_ICONS.otros;
   return L.divIcon({
-    html: `<div class="map-cat-icon" style="background:${color}"><span>${emoji}</span></div>`,
+    html: `<div class="map-cat-icon" style="background:${color}"></div>`,
     className: "",
-    iconSize: [32, 32],
-    iconAnchor: [16, 32],
-    popupAnchor: [0, -34],
+    iconSize: [14, 14],
+    iconAnchor: [7, 7],
+    popupAnchor: [0, -10],
   });
 }
 
