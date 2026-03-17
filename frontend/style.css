@@ -753,6 +753,7 @@ footer p + p {
     flex: 1;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
 
   .date-nav > #prev-day,
@@ -776,6 +777,11 @@ footer p + p {
   .event-count-badge {
     font-size: 0.65rem;
     padding: 0.1rem 0.4rem;
+  }
+
+  .mobile-only.event-count-badge {
+    flex: 1;
+    text-align: center;
   }
 
   .desktop-only { display: none; }
