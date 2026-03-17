@@ -177,6 +177,21 @@ async function init() {
   } else {
     render();
   }
+
+  // Swipe to change day on touch devices
+  let touchStartX = 0, touchStartY = 0;
+  const mainEl = document.querySelector("main");
+  mainEl.addEventListener("touchstart", (e) => {
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+  }, { passive: true });
+  mainEl.addEventListener("touchend", (e) => {
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    const dy = e.changedTouches[0].clientY - touchStartY;
+    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+      changeDay(dx < 0 ? 1 : -1);
+    }
+  }, { passive: true });
 }
 
 function setView(view) {
