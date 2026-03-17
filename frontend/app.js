@@ -450,6 +450,7 @@ function setView(view) {
   document.getElementById("events-container").hidden = view !== "list";
   document.getElementById("map-container").hidden = view !== "map";
   document.getElementById("cal-container").hidden = view !== "cal";
+  updateURL();
 
   if (view === "list") {
     renderEvents();
@@ -709,6 +710,12 @@ function updateURL() {
   if (currentView !== "list") url.searchParams.set("view", currentView);
   else url.searchParams.delete("view");
 
+  if (currentView !== "map") {
+    url.searchParams.delete("mlat");
+    url.searchParams.delete("mlng");
+    url.searchParams.delete("mz");
+  }
+
   history.replaceState(null, "", url);
 }
 
@@ -890,7 +897,6 @@ function renderCalendar() {
   // Update header to show month
   document.getElementById("current-date").textContent =
     `${monthName.charAt(0).toUpperCase() + monthName.slice(1)} ${year}`;
-  updateURL();
 
   const firstDay = new Date(year, month, 1);
   const lastDay = new Date(year, month + 1, 0);
