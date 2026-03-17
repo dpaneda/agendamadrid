@@ -507,7 +507,7 @@ function locateUser() {
 const CAT_ICONS = {
   musica:          { emoji: "🎵", color: "#7C3AED" },
   teatro:          { emoji: "🎭", color: "#1D4ED8" },
-  exposiciones:    { emoji: "🖼️", color: "#0891B2" },
+  exposiciones:    { emoji: "🏛️", color: "#0891B2" },
   infantil:        { emoji: "🎪", color: "#F59E0B" },
   deportes:        { emoji: "⚽", color: "#16A34A" },
   danza:           { emoji: "💃", color: "#DB2777" },
@@ -525,7 +525,9 @@ const CAT_ICONS = {
 };
 
 function categoryIcon(categories = []) {
-  const cat = (categories || []).find(c => c !== "gratis") || "otros";
+  const cats = categories || [];
+  const PRIORITY = ["fotografia"];
+  const cat = PRIORITY.find(p => cats.includes(p)) || cats.find(c => c !== "gratis") || "otros";
   const { emoji, color } = CAT_ICONS[cat] || CAT_ICONS.otros;
   return L.divIcon({
     html: `<div class="map-cat-icon">${emoji}</div>`,
