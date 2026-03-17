@@ -25,6 +25,12 @@ jobs:
 
       - uses: actions/configure-pages@v5
 
+      - name: Cache-bust assets
+        run: |
+          HASH=$(git rev-parse --short HEAD)
+          sed -i "s/style\.css/style.css?v=$HASH/" frontend/index.html
+          sed -i "s/app\.js/app.js?v=$HASH/" frontend/index.html
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: frontend
