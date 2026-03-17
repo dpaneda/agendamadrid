@@ -68,13 +68,30 @@ const FirebaseSync = (() => {
     }
   }
 
-  async function login() {
+  const GOOGLE_CLIENT_ID = "1050271939703-1o3r44v8k4hqobbfo9b4rf17qa8gqqst.apps.googleusercontent.com";
+
+  function login() {
     if (!auth) return;
-    const provider = new firebase.auth.GoogleAuthProvider();
-    try {
-      await auth.signInWithPopup(provider);
-    } catch (e) {
-      if (e.code !== "auth/popup-closed-by-user") console.error("Login error:", e);
+    if (typeof google !== "undefined" && google.accounts) {
+      google.accounts.id.initialize({
+        client_id: GOOGLE_CLIENT_ID,
+        callback: async (response) => {
+          try {
+            const credential = firebase.auth.GoogleAuthProvider.credential(response.credential);
+            await auth.signInWithCredential(credential);
+          } catch (e) {
+            console.error("Login error:", e);
+          }
+        },
+        cancel_on_tap_outside: true,
+      });
+      google.accounts.id.prompt();
+    } else {
+      // fallback
+      const provider = new firebase.auth.GoogleAuthProvider();
+      auth.signInWithPopup(provider).catch((e) => {
+        if (e.code !== "auth/popup-closed-by-user") console.error("Login error:", e);
+      });
     }
   }
 
