@@ -373,13 +373,18 @@ class EsMadridCrawler(BaseCrawler):
 
             # Also add events from known URLs that appear on this day
             for url in day_urls:
-                if url in known_urls and url in seen_urls and seen_urls[url]:
-                    ev = seen_urls[url]
-                    open_days = ev.get("open_days")
-                    if open_days and date.weekday() not in open_days:
-                        continue
-                    day_ev = {**ev, "start_date": date_str}
-                    events.append(day_ev)
+                if url in known_urls:
+                    if url in seen_urls and seen_urls[url]:
+                        ev = seen_urls[url]
+                        open_days = ev.get("open_days")
+                        if open_days and date.weekday() not in open_days:
+                            continue
+                        day_ev = {**ev, "start_date": date_str}
+                        events.append(day_ev)
+                    else:
+                        # Event exists in DB but wasn't scraped this session;
+                        # emit a stub so build_data creates the calendar entry
+                        events.append({"_known_url": url, "start_date": date_str})
 
         print(f"  Total: {len(events)} events across {days_ahead} days, scraped {len(seen_urls)} unique pages")
         return events

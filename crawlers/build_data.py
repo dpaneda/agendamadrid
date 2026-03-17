@@ -88,6 +88,13 @@ def run():
 
     now = datetime.now(UTC).isoformat()
 
+    # Build URL -> event_id index for fast lookup
+    url_to_eid = {}
+    for eid, ev in events.items():
+        url = ev.get("source_url") or ev.get("url")
+        if url:
+            url_to_eid[url] = eid
+
     for crawler in crawlers:
         print(f"\nRunning: {crawler.name}")
         try:
@@ -98,6 +105,23 @@ def run():
 
             print(f"  Got {len(raw_events)} event entries")
             for ev in raw_events:
+                # Handle stubs from known URLs (event already in DB)
+                if "_known_url" in ev:
+                    known_url = ev["_known_url"]
+                    start_date = ev.get("start_date", "")
+                    eid = url_to_eid.get(known_url)
+                    if start_date and eid:
+                        if start_date not in calendar:
+                            calendar[start_date] = []
+                        if not any(e["event_id"] == eid for e in calendar[start_date]):
+                            cal_entry = {"event_id": eid}
+                            if events[eid].get("start_time"):
+                                cal_entry["start_time"] = events[eid]["start_time"]
+                            if events[eid].get("end_time"):
+                                cal_entry["end_time"] = events[eid]["end_time"]
+                            calendar[start_date].append(cal_entry)
+                    continue
+
                 title = ev.get("title", "")
                 start_date = ev.get("start_date", "")
                 if not title or not start_date:
@@ -136,6 +160,7 @@ def run():
                 url = ev.get("source_url") or ev.get("url")
                 if url:
                     known_source_urls.add(url)
+                    url_to_eid[url] = eid
 
         except Exception as e:
             print(f"  Error: {e}")
