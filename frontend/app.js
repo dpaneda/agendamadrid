@@ -75,7 +75,8 @@ function updateDateLabel(count) {
   const label = `${DAYS_LONG[selectedDate.getDay()]} ${selectedDate.getDate()} de ${month.charAt(0).toUpperCase() + month.slice(1)}`;
   document.getElementById("current-date").textContent = label.charAt(0).toUpperCase() + label.slice(1);
   const countText = count === 0 ? "Sin eventos" : count === 1 ? "1 evento" : `${count} eventos`;
-  document.getElementById("event-count").textContent = countText;
+  document.getElementById("event-count-desktop").textContent = countText;
+  document.getElementById("event-count-mobile").textContent = countText;
 }
 
 function changeDay(delta) {
@@ -614,7 +615,8 @@ function renderCalendar() {
   // Update header to show month
   document.getElementById("current-date").textContent =
     `${monthName.charAt(0).toUpperCase() + monthName.slice(1)} ${year}`;
-  document.getElementById("event-count").textContent = "";
+  document.getElementById("event-count-desktop").textContent = "";
+  document.getElementById("event-count-mobile").textContent = "";
   updateURL();
 
   const firstDay = new Date(year, month, 1);
