@@ -652,6 +652,39 @@ span.flatpickr-weekday {
   background: rgba(255, 255, 255, 0.1);
 }
 
+/* Sync button */
+.btn-sync {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 500;
+  border-radius: var(--radius);
+  padding: 0.3rem 0.6rem;
+  transition: all 0.15s;
+}
+
+.btn-sync:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+}
+
+.btn-sync.logged-in {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: var(--white);
+}
+
+.sync-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
 /* Info page */
 .info-page {
   max-width: 40rem;
@@ -778,6 +811,17 @@ footer p + p {
   }
 
   .mobile-only { display: none; }
+
+  .btn-sync {
+    order: 5;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.75rem;
+  }
+
+  .btn-sync #sync-icon {
+    width: 14px;
+    height: 14px;
+  }
 
   .header-link {
     order: 4;

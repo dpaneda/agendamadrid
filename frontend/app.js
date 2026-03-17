@@ -15,6 +15,7 @@ const UserData = (() => {
 
   function _save(data) {
     localStorage.setItem(KEY, JSON.stringify(data));
+    FirebaseSync.push(data);
   }
 
   return {
@@ -33,6 +34,124 @@ const UserData = (() => {
     getAll(collection) {
       return _load()[collection] || {};
     },
+  };
+})();
+
+// Firebase sync (optional — works without login)
+const FirebaseSync = (() => {
+  const config = {
+    apiKey: "AIzaSyD0aC_Nk9Yc8dEJ5ASEaFIvtu0fLArjslw",
+    authDomain: "agenda-madrid.firebaseapp.com",
+    projectId: "agenda-madrid",
+    storageBucket: "agenda-madrid.firebasestorage.app",
+    messagingSenderId: "1050271939703",
+    appId: "1:1050271939703:web:c070e09d892608036a9a72",
+  };
+
+  let db = null, auth = null, user = null;
+  let writeTimer = null;
+
+  function init() {
+    if (typeof firebase === "undefined") return;
+    try {
+      firebase.initializeApp(config);
+      auth = firebase.auth();
+      db = firebase.firestore();
+      db.enablePersistence({ synchronizeTabs: true }).catch(() => {});
+      auth.onAuthStateChanged((u) => {
+        user = u;
+        _updateButton(u);
+        if (u) _pullAndMerge();
+      });
+    } catch (e) {
+      console.error("Firebase init error:", e);
+    }
+  }
+
+  async function login() {
+    if (!auth) return;
+    const provider = new firebase.auth.GoogleAuthProvider();
+    try {
+      await auth.signInWithPopup(provider);
+    } catch (e) {
+      if (e.code !== "auth/popup-closed-by-user") console.error("Login error:", e);
+    }
+  }
+
+  async function logout() {
+    if (!auth) return;
+    await auth.signOut();
+    _updateButton(null);
+  }
+
+  async function _pullAndMerge() {
+    if (!user || !db) return;
+    try {
+      const doc = await db.collection("users").doc(user.uid).get();
+      const remote = doc.exists ? doc.data() : {};
+      const local = JSON.parse(localStorage.getItem("agendamadrid_user") || "{}");
+
+      const merged = { version: 1, favorites: {}, seen: {}, dismissed: {} };
+      for (const col of ["favorites", "seen", "dismissed"]) {
+        const l = local[col] || {};
+        const r = remote[col] || {};
+        const allKeys = new Set([...Object.keys(l), ...Object.keys(r)]);
+        for (const key of allKeys) {
+          merged[col][key] = Math.max(l[key] || 0, r[key] || 0);
+        }
+      }
+
+      localStorage.setItem("agendamadrid_user", JSON.stringify(merged));
+      await db.collection("users").doc(user.uid).set(merged);
+      if (typeof render === "function") render();
+    } catch (e) {
+      console.error("Sync error:", e);
+    }
+  }
+
+  function push(data) {
+    if (!user || !db) return;
+    clearTimeout(writeTimer);
+    writeTimer = setTimeout(() => {
+      db.collection("users").doc(user.uid).set(data).catch(() => {});
+    }, 1000);
+  }
+
+  function _updateButton(u) {
+    const btn = document.getElementById("btn-sync");
+    const label = document.getElementById("sync-label");
+    const icon = document.getElementById("sync-icon");
+    if (!btn) return;
+    if (u) {
+      btn.classList.add("logged-in");
+      label.textContent = u.displayName ? u.displayName.split(" ")[0] : "Sync";
+      if (u.photoURL) {
+        let img = btn.querySelector(".sync-avatar");
+        if (!img) {
+          img = document.createElement("img");
+          img.className = "sync-avatar";
+          img.referrerPolicy = "no-referrer";
+          btn.prepend(img);
+        }
+        img.src = u.photoURL;
+        if (icon) icon.style.display = "none";
+      }
+    } else {
+      btn.classList.remove("logged-in");
+      label.textContent = "Sync";
+      const avatar = btn.querySelector(".sync-avatar");
+      if (avatar) avatar.remove();
+      if (icon) icon.style.display = "";
+    }
+  }
+
+  return {
+    init,
+    login,
+    logout,
+    push,
+    sync: _pullAndMerge,
+    isLoggedIn: () => !!user,
   };
 })();
 
@@ -240,6 +359,15 @@ async function init() {
       }
     }
   });
+
+  document.getElementById("btn-sync").addEventListener("click", () => {
+    if (FirebaseSync.isLoggedIn()) {
+      FirebaseSync.sync();
+    } else {
+      FirebaseSync.login();
+    }
+  });
+  FirebaseSync.init();
 
   syncPicker();
   locateUser();
