@@ -3,6 +3,7 @@
 import json
 import re
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta
 from urllib.parse import quote
 
@@ -357,20 +358,25 @@ class EsMadridCrawler(BaseCrawler):
             scraped = 0
             skipped_days = 0
             errors = 0
-            for url in new_urls:
-                # Use cached parse if we already scraped this URL for another day
-                if url in seen_urls:
-                    ev = seen_urls[url]
-                else:
-                    try:
-                        ev = _parse_event_page(url)
-                        time.sleep(CRAWL_DELAY)
-                    except Exception as e:
-                        print(f"    Error: {url.split('/')[-1]}: {e}")
-                        ev = None
-                        errors += 1
+
+            # Split into cached and uncached
+            urls_to_fetch = [u for u in new_urls if u not in seen_urls]
+
+            def fetch_one(url):
+                try:
+                    ev = _parse_event_page(url)
+                    time.sleep(CRAWL_DELAY)
+                    return url, ev
+                except Exception as e:
+                    print(f"    Error: {url.split('/')[-1]}: {e}")
+                    return url, None
+
+            with ThreadPoolExecutor(max_workers=10) as executor:
+                for url, ev in executor.map(fetch_one, urls_to_fetch):
                     seen_urls[url] = ev
 
+            for url in new_urls:
+                ev = seen_urls.get(url)
                 if ev:
                     # Skip if event doesn't run on this day of the week
                     open_days = ev.get("open_days")
