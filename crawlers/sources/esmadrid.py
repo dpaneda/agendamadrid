@@ -221,22 +221,25 @@ def _parse_event_page(url):
         if isinstance(addr, dict):
             address = (addr.get("streetAddress") or "").strip() or None
 
-    # GPS from Drupal JS (formatter_calcule_route)
+    # GPS from Drupal.settings JSON
     latitude = None
     longitude = None
-    route_match = re.search(
-        r'formatter_calcule_route.*?lat["\']?\s*:\s*["\']?(-?\d+\.\d+).*?long["\']?\s*:\s*["\']?(-?\d+\.\d+)',
+    drupal_match = re.search(
+        r'jQuery\.extend\(Drupal\.settings\s*,\s*(\{.*?\})\s*\)\s*;',
         html, re.DOTALL
     )
-    if route_match:
+    if drupal_match:
         try:
-            latitude = float(route_match.group(1))
-            longitude = float(route_match.group(2))
-            if latitude == 0 and longitude == 0:
-                latitude = None
-                longitude = None
-        except ValueError:
+            settings = json.loads(drupal_match.group(1))
+            route = settings.get("formatter_calcule_route", {})
+            if route.get("lat") and route.get("long"):
+                latitude = float(route["lat"])
+                longitude = float(route["long"])
+        except (json.JSONDecodeError, ValueError, TypeError):
             pass
+    if latitude and longitude and latitude == 0 and longitude == 0:
+        latitude = None
+        longitude = None
 
     # Schedule/time from page
     start_time = None

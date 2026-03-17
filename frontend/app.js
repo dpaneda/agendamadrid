@@ -1,3 +1,41 @@
+// User data management (localStorage)
+const UserData = (() => {
+  const KEY = "agendamadrid_user";
+
+  function _load() {
+    try {
+      const raw = localStorage.getItem(KEY);
+      if (raw) {
+        const data = JSON.parse(raw);
+        if (data.version === 1) return data;
+      }
+    } catch (e) {}
+    return { version: 1, favorites: {}, seen: {}, dismissed: {} };
+  }
+
+  function _save(data) {
+    localStorage.setItem(KEY, JSON.stringify(data));
+  }
+
+  return {
+    toggle(collection, id) {
+      const data = _load();
+      if (data[collection][id]) {
+        delete data[collection][id];
+      } else {
+        data[collection][id] = Date.now();
+      }
+      _save(data);
+    },
+    has(collection, id) {
+      return !!_load()[collection][id];
+    },
+    getAll(collection) {
+      return _load()[collection] || {};
+    },
+  };
+})();
+
 const MONTHS_ES = [
   "enero", "febrero", "marzo", "abril", "mayo", "junio",
   "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"
@@ -47,6 +85,7 @@ let allData = [];      // flattened for backward compat (buildCategories)
 let activeTags = new Set();
 let activeLocation = "";
 let activeSource = "", activeSort = "hora";
+let activeUserFilter = "";
 let currentView = "list";
 let map = null, markersLayer = null;
 let picker = null;
@@ -170,6 +209,37 @@ async function init() {
     render();
   });
 
+  document.getElementById("user-filter").addEventListener("change", (e) => {
+    activeUserFilter = e.target.value;
+    e.target.classList.toggle("active-filter", !!activeUserFilter);
+    render();
+  });
+
+  // Event delegation for action buttons
+  document.getElementById("events-container").addEventListener("click", (e) => {
+    const btn = e.target.closest(".ev-action");
+    if (!btn) return;
+    e.preventDefault();
+    e.stopPropagation();
+    const id = btn.dataset.id;
+    const action = btn.dataset.action;
+    if (action === "fav") {
+      UserData.toggle("favorites", id);
+      btn.classList.toggle("active", UserData.has("favorites", id));
+    } else if (action === "seen" || action === "dismiss") {
+      const collection = action === "seen" ? "seen" : "dismissed";
+      UserData.toggle(collection, id);
+      const card = btn.closest(".event-card");
+      if (card && !activeUserFilter) {
+        card.style.transition = "opacity 0.2s, transform 0.2s";
+        card.style.opacity = "0";
+        card.style.transform = "translateX(30px)";
+        card.addEventListener("transitionend", () => render(), { once: true });
+      } else {
+        render();
+      }
+    }
+  });
 
   syncPicker();
   locateUser();
@@ -192,6 +262,12 @@ async function init() {
   if (initSort) {
     activeSort = initSort;
     document.getElementById("sort-filter").value = initSort;
+  }
+  const initUserFilter = _initParams.get("uf");
+  if (initUserFilter) {
+    activeUserFilter = initUserFilter;
+    document.getElementById("user-filter").value = initUserFilter;
+    document.getElementById("user-filter").classList.add("active-filter");
   }
   const initLoc = _initParams.get("loc");
   if (initLoc) {
@@ -250,6 +326,15 @@ function initMap() {
   }).addTo(map);
   markersLayer = L.layerGroup().addTo(map);
 
+  map.on("moveend", () => {
+    const c = map.getCenter();
+    const url = new URL(window.location);
+    url.searchParams.set("mlat", c.lat.toFixed(5));
+    url.searchParams.set("mlng", c.lng.toFixed(5));
+    url.searchParams.set("mz", map.getZoom());
+    history.replaceState(null, "", url);
+  });
+
   const locationIcon = L.divIcon({
     className: "user-location",
     iconSize: [16, 16],
@@ -296,11 +381,18 @@ function renderMap() {
       : esc(ev.title);
     const tags = ev.categories.map(c => `<span class="tag">${esc(c)}</span>`).join("");
 
+    const mapFav = UserData.has("favorites", ev.id);
+    const mapSeen = UserData.has("seen", ev.id);
     const popup = `<div class="map-popup">
       <div class="popup-title">${titleHtml}</div>
       ${time ? `<div class="popup-meta">${esc(time)}</div>` : ""}
       ${location ? `<div class="popup-location">${esc(location)}</div>` : ""}
       ${tags ? `<div class="popup-tags">${tags}</div>` : ""}
+      <div class="popup-actions">
+        <button class="ev-action ev-fav${mapFav ? ' active' : ''}" onclick="mapAction('fav','${esc(ev.id)}',this)" title="Favorito"><svg width="16" height="16" viewBox="0 0 24 24" fill="${mapFav ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+        <button class="ev-action ev-seen${mapSeen ? ' active' : ''}" onclick="mapAction('seen','${esc(ev.id)}',this)" title="Visto"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></button>
+        <button class="ev-action ev-dismiss" onclick="mapAction('dismiss','${esc(ev.id)}',this)" title="Ocultar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      </div>
     </div>`;
 
     let distanceLabel = "";
@@ -314,7 +406,11 @@ function renderMap() {
     marker.bindPopup(popup);
   });
 
-  if (bounds.length > 1) {
+  const urlParams = new URLSearchParams(window.location.search);
+  const mlat = urlParams.get("mlat"), mlng = urlParams.get("mlng"), mz = urlParams.get("mz");
+  if (mlat && mlng && mz) {
+    map.setView([parseFloat(mlat), parseFloat(mlng)], parseInt(mz));
+  } else if (bounds.length > 1) {
     map.fitBounds(bounds, { padding: [30, 30] });
   } else if (bounds.length === 1) {
     map.setView(bounds[0], 15);
@@ -385,6 +481,16 @@ function getFilteredDayEvents() {
     };
   }).filter(Boolean);
 
+  if (activeUserFilter === "favorites") {
+    filtered = filtered.filter(ev => UserData.has("favorites", ev.id));
+  } else if (activeUserFilter === "seen") {
+    filtered = filtered.filter(ev => UserData.has("seen", ev.id));
+  } else if (activeUserFilter === "dismissed") {
+    filtered = filtered.filter(ev => UserData.has("dismissed", ev.id));
+  } else {
+    filtered = filtered.filter(ev => !UserData.has("dismissed", ev.id) && !UserData.has("seen", ev.id));
+  }
+
   if (activeTags.size > 0) {
     filtered = filtered.filter(ev =>
       [...activeTags].every(tag => ev.categories.includes(tag))
@@ -451,6 +557,9 @@ function updateURL() {
 
   if (activeLocation) url.searchParams.set("loc", activeLocation);
   else url.searchParams.delete("loc");
+
+  if (activeUserFilter) url.searchParams.set("uf", activeUserFilter);
+  else url.searchParams.delete("uf");
 
   if (currentView !== "list") url.searchParams.set("view", currentView);
   else url.searchParams.delete("view");
@@ -535,6 +644,16 @@ function renderEvent(ev) {
 
   const hasFooter = locationHtml || tags || distanceHtml;
 
+  const isFav = UserData.has("favorites", ev.id);
+  const isSeen = UserData.has("seen", ev.id);
+  const isDismissed = UserData.has("dismissed", ev.id);
+
+  const actionsHtml = `<span class="event-actions">
+    <button class="ev-action ev-fav${isFav ? ' active' : ''}" data-id="${esc(ev.id)}" data-action="fav" title="Favorito"><svg width="18" height="18" viewBox="0 0 24 24" fill="${isFav ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button class="ev-action ev-seen${isSeen ? ' active' : ''}" data-id="${esc(ev.id)}" data-action="seen" title="Visto"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></button>
+    <button class="ev-action ev-dismiss${isDismissed ? ' active' : ''}" data-id="${esc(ev.id)}" data-action="dismiss" title="Ocultar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  </span>`;
+
   const cardContent = `
       <div class="event-header">
         <span class="event-title-wrap">
@@ -542,6 +661,7 @@ function renderEvent(ev) {
           <span class="event-title">${title}</span>
         </span>
         ${distanceHtml}
+        ${actionsHtml}
       </div>
       ${desc}
       ${hasFooter ? `<div class="event-footer">
@@ -593,6 +713,16 @@ function getEventsForDate(ds) {
     if (!ev) return null;
     return { ...ev, start_date: ds, start_time: entry.start_time || ev.start_time || null };
   }).filter(Boolean);
+
+  if (activeUserFilter === "favorites") {
+    events = events.filter(ev => UserData.has("favorites", ev.id));
+  } else if (activeUserFilter === "seen") {
+    events = events.filter(ev => UserData.has("seen", ev.id));
+  } else if (activeUserFilter === "dismissed") {
+    events = events.filter(ev => UserData.has("dismissed", ev.id));
+  } else {
+    events = events.filter(ev => !UserData.has("dismissed", ev.id) && !UserData.has("seen", ev.id));
+  }
 
   if (activeTags.size > 0) {
     events = events.filter(ev => [...activeTags].every(tag => ev.categories.includes(tag)));
@@ -671,9 +801,30 @@ function calDayClick(ds) {
   setView("list");
 }
 
+function mapAction(action, id, btn) {
+  if (action === "fav") {
+    UserData.toggle("favorites", id);
+    btn.classList.toggle("active", UserData.has("favorites", id));
+    const svg = btn.querySelector("svg path");
+    if (svg) svg.setAttribute("fill", UserData.has("favorites", id) ? "currentColor" : "none");
+  } else if (action === "seen") {
+    UserData.toggle("seen", id);
+    btn.classList.toggle("active", UserData.has("seen", id));
+  } else if (action === "dismiss") {
+    UserData.toggle("dismissed", id);
+    renderMap();
+  }
+}
+
+function decodeEntities(s) {
+  const el = document.createElement("textarea");
+  el.innerHTML = s;
+  return el.value;
+}
+
 function esc(s) {
   const el = document.createElement("span");
-  el.textContent = s;
+  el.textContent = decodeEntities(s);
   return el.innerHTML.replace(/'/g, "&#39;");
 }
 

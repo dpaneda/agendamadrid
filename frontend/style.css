@@ -848,6 +848,89 @@ footer p + p {
   .cal-count {
     font-size: 0.6rem;
   }
+
+  .ev-action {
+    opacity: 0.5;
+  }
+
+  .ev-action.active {
+    opacity: 1;
+  }
+}
+
+/* Event action buttons */
+.event-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.ev-action {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.2rem;
+  border-radius: var(--radius);
+  color: var(--muted);
+  opacity: 0.3;
+  transition: opacity 0.15s, color 0.15s, background 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.ev-action:hover {
+  opacity: 1;
+  background: var(--tag-bg);
+}
+
+.ev-action.active {
+  opacity: 1;
+}
+
+.ev-fav.active {
+  color: #e63228;
+}
+
+.ev-seen.active {
+  color: #16a34a;
+}
+
+.ev-dismiss:hover {
+  color: var(--muted);
+}
+
+.event-card:hover .ev-action {
+  opacity: 0.6;
+}
+
+.event-card:hover .ev-action.active {
+  opacity: 1;
+}
+
+.event-card:hover .ev-action:hover {
+  opacity: 1;
+}
+
+/* Map popup actions */
+.popup-actions {
+  display: flex;
+  gap: 0.25rem;
+  margin-top: 0.4rem;
+  padding-top: 0.3rem;
+  border-top: 1px solid var(--border);
+}
+
+.popup-actions .ev-action {
+  opacity: 0.5;
+}
+
+.popup-actions .ev-action.active,
+.popup-actions .ev-action:hover {
+  opacity: 1;
 }
 
 .user-location {
