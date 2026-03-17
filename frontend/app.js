@@ -41,7 +41,7 @@ const UserData = (() => {
 const FirebaseSync = (() => {
   const config = {
     apiKey: "AIzaSyD0aC_Nk9Yc8dEJ5ASEaFIvtu0fLArjslw",
-    authDomain: "agendamadrid.es",
+    authDomain: "agenda-madrid.firebaseapp.com",
     projectId: "agenda-madrid",
     storageBucket: "agenda-madrid.firebasestorage.app",
     messagingSenderId: "1050271939703",
