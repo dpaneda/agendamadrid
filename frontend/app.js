@@ -90,45 +90,46 @@ function changeDay(delta) {
 
 function syncPicker() {
   if (picker) picker.setDate(selectedDate, false);
+  const di = document.getElementById("date-input");
+  if (di) di.value = selectedDate.toISOString().split("T")[0];
 }
 
 async function init() {
-  picker = flatpickr("#date-input", {
-    locale: "es",
-    defaultDate: selectedDate,
-    dateFormat: "Y-m-d",
-    disableMobile: true,
-    onChange(dates) {
-      if (dates[0]) {
-        selectedDate = dates[0];
-        render();
-      }
-    },
-  });
-
-  document.getElementById("prev-day").addEventListener("click", () => changeDay(-1));
-  document.getElementById("next-day").addEventListener("click", () => changeDay(1));
-
   const dateInput = document.getElementById("date-input");
   const isMobile = window.matchMedia("(max-width: 640px)").matches;
 
-  if (isMobile) {
+  if (!isMobile) {
+    picker = flatpickr("#date-input", {
+      locale: "es",
+      defaultDate: selectedDate,
+      dateFormat: "Y-m-d",
+      disableMobile: true,
+      onChange(dates) {
+        if (dates[0]) {
+          selectedDate = dates[0];
+          render();
+        }
+      },
+    });
+  } else {
+    dateInput.type = "date";
+    dateInput.value = selectedDate.toISOString().split("T")[0];
     dateInput.style.position = "absolute";
     dateInput.style.opacity = "0";
-    dateInput.style.pointerEvents = "auto";
     dateInput.style.width = "100%";
     dateInput.style.height = "100%";
     dateInput.style.top = "0";
     dateInput.style.left = "0";
-    dateInput.value = selectedDate.toISOString().split("T")[0];
     dateInput.addEventListener("change", (e) => {
       if (e.target.value) {
         selectedDate = new Date(e.target.value + "T12:00:00");
-        syncPicker();
         render();
       }
     });
   }
+
+  document.getElementById("prev-day").addEventListener("click", () => changeDay(-1));
+  document.getElementById("next-day").addEventListener("click", () => changeDay(1));
 
   document.getElementById("date-picker-btn").addEventListener("click", () => {
     if (isMobile) {
