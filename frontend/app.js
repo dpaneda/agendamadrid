@@ -615,8 +615,6 @@ function renderCalendar() {
   // Update header to show month
   document.getElementById("current-date").textContent =
     `${monthName.charAt(0).toUpperCase() + monthName.slice(1)} ${year}`;
-  document.getElementById("event-count-desktop").textContent = "";
-  document.getElementById("event-count-mobile").textContent = "";
   updateURL();
 
   const firstDay = new Date(year, month, 1);
@@ -637,10 +635,12 @@ function renderCalendar() {
     html += `<div class="cal-cell cal-empty"></div>`;
   }
 
+  let monthTotal = 0;
   for (let day = 1; day <= lastDay.getDate(); day++) {
     const ds = `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
     const events = getEventsForDate(ds);
     const count = events.length;
+    monthTotal += count;
     const isToday = ds === todayStr;
     const isSelected = ds === selectedStr;
 
@@ -659,6 +659,10 @@ function renderCalendar() {
 
   html += `</div>`;
   container.innerHTML = html;
+
+  const countText = monthTotal === 0 ? "Sin eventos" : `${monthTotal} eventos`;
+  document.getElementById("event-count-desktop").textContent = countText;
+  document.getElementById("event-count-mobile").textContent = countText;
 }
 
 function calDayClick(ds) {
