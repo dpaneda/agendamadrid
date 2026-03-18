@@ -229,18 +229,19 @@ def run():
     with open(INDEX_PATH, "w") as f:
         f.write(today_html)
 
-    # Clean up date directories older than yesterday
-    yesterday_str = (today - timedelta(days=1)).isoformat()
-    for entry in os.listdir(FRONTEND_DIR):
-        if re.match(r"^\d{4}-\d{2}-\d{2}$", entry) and entry < yesterday_str:
-            shutil.rmtree(os.path.join(FRONTEND_DIR, entry), ignore_errors=True)
-            print(f"  Removed old page: {entry}/")
-
-    # Generate per-day pages for dates with events (skip today, already in index.html)
+    # Generate per-day pages for the next 60 days only
+    max_date_str = (today + timedelta(days=60)).isoformat()
     future_dates = sorted(
         ds for ds in calendar
-        if ds > today_str and len(calendar[ds]) > 0
+        if today_str < ds <= max_date_str and len(calendar[ds]) > 0
     )
+
+    # Clean up date directories outside the valid window (past or too far future)
+    for entry in os.listdir(FRONTEND_DIR):
+        if re.match(r"^\d{4}-\d{2}-\d{2}$", entry):
+            if entry < today_str or entry > max_date_str:
+                shutil.rmtree(os.path.join(FRONTEND_DIR, entry), ignore_errors=True)
+                print(f"  Removed: {entry}/")
     for ds in future_dates:
         n = _make_day_page(template, events, calendar, ds)
 
