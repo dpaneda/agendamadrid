@@ -475,7 +475,7 @@ function initMap() {
   const initZoom = savedZ || 13;
   mapAutofit = !(savedLat && savedLng && savedZ);
   map = L.map("map").setView(initCenter, initZoom);
-  const tileKey = Settings.get("mapTile", "light");
+  const tileKey = Settings.get("mapTile", "voyager");
   tileLayer = L.tileLayer(MAP_TILES[tileKey]?.url || MAP_TILES.light.url, {
     attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
     maxZoom: 19,
@@ -1000,7 +1000,7 @@ function calDayClick(ds) {
 
 function renderUserView() {
   const user = FirebaseSync.getUser();
-  const currentTile = Settings.get("mapTile", "light");
+  const currentTile = Settings.get("mapTile", "voyager");
   const hidePast = Settings.get("hidePast", true);
 
   const tilesHtml = Object.entries(MAP_TILES).map(([key, t]) =>
