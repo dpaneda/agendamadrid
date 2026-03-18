@@ -45,10 +45,9 @@ const Settings = {
 };
 
 const MAP_TILES = {
-  light:   { label: "Claro",         url: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" },
-  dark:    { label: "Oscuro",        url: "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png" },
-  voyager: { label: "Voyager",       url: "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png" },
-  osm:     { label: "OpenStreetMap", url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" },
+  light:   { label: "Claro",   url: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" },
+  dark:    { label: "Oscuro",  url: "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png" },
+  voyager: { label: "Voyager", url: "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png" },
 };
 
 // Firebase sync (optional — works without login)
@@ -151,11 +150,10 @@ const FirebaseSync = (() => {
   function _updateButton(u) {
     const btn = document.getElementById("btn-sync");
     const label = document.getElementById("sync-label");
-    const icon = document.getElementById("sync-icon");
     if (!btn) return;
     if (u) {
       btn.classList.add("logged-in");
-      label.textContent = u.displayName ? u.displayName.split(" ")[0] : "Sync";
+      label.textContent = u.displayName ? u.displayName.split(" ")[0] : "Login";
       if (u.photoURL) {
         let img = btn.querySelector(".sync-avatar");
         if (!img) {
@@ -165,14 +163,12 @@ const FirebaseSync = (() => {
           btn.prepend(img);
         }
         img.src = u.photoURL;
-        if (icon) icon.style.display = "none";
       }
     } else {
       btn.classList.remove("logged-in");
       label.textContent = "Login";
       const avatar = btn.querySelector(".sync-avatar");
       if (avatar) avatar.remove();
-      if (icon) icon.style.display = "";
     }
   }
 
@@ -437,6 +433,8 @@ async function init() {
   const initView = _initParams.get("view");
   if (initView && ["map", "cal"].includes(initView)) {
     setView(initView);
+  } else if (initView === "user" && FirebaseSync.isLoggedIn()) {
+    setView("user");
   } else {
     render();
   }
@@ -467,7 +465,7 @@ function setView(view) {
   document.getElementById("map-container").hidden = view !== "map";
   document.getElementById("cal-container").hidden = view !== "cal";
   document.getElementById("user-container").hidden = view !== "user";
-  if (view !== "user") updateURL();
+  updateURL();
 
   if (view === "list") {
     renderEvents();
@@ -778,6 +776,7 @@ function updateURL() {
 
   if (currentView !== "list") url.searchParams.set("view", currentView);
   else url.searchParams.delete("view");
+
 
   if (currentView !== "map") {
     url.searchParams.delete("mlat");
