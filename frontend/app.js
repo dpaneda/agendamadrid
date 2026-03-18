@@ -419,8 +419,9 @@ async function init() {
     activeLocation = initLoc;
     renderActiveFilters();
   }
+  const isMobile = window.innerWidth <= 640;
   const initView = _initParams.get("view");
-  if (initView && ["map", "cal"].includes(initView)) {
+  if (initView && ["map", "cal"].includes(initView) && !(initView === "map" && isMobile)) {
     setView(initView);
   } else {
     render();
