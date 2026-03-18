@@ -223,7 +223,7 @@ let activeLocation = "";
 let activeSource = "", activeSort = "hora";
 let activeUserFilter = "";
 let currentView = "list";
-let map = null, markersLayer = null;
+let map = null, markersLayer = null, mapAutofit = false;
 let picker = null;
 let userLatLng = null;
 
@@ -465,7 +465,13 @@ function setView(view) {
 }
 
 function initMap() {
-  map = L.map("map").setView([40.4168, -3.7038], 13);
+  const savedLat = parseFloat(_initParams.get("mlat"));
+  const savedLng = parseFloat(_initParams.get("mlng"));
+  const savedZ = parseInt(_initParams.get("mz"));
+  const initCenter = (savedLat && savedLng && savedZ) ? [savedLat, savedLng] : [40.4168, -3.7038];
+  const initZoom = savedZ || 13;
+  mapAutofit = !(savedLat && savedLng && savedZ);
+  map = L.map("map").setView(initCenter, initZoom);
   L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
     attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
     maxZoom: 19,
@@ -596,16 +602,15 @@ function renderMap() {
     marker.bindPopup(popup);
   });
 
-  const urlParams = new URLSearchParams(window.location.search);
-  const mlat = urlParams.get("mlat"), mlng = urlParams.get("mlng"), mz = urlParams.get("mz");
-  if (mlat && mlng && mz) {
-    map.setView([parseFloat(mlat), parseFloat(mlng)], parseInt(mz));
-  } else if (bounds.length > 1) {
-    map.fitBounds(bounds, { padding: [30, 30] });
-  } else if (bounds.length === 1) {
-    map.setView(bounds[0], 15);
-  } else {
-    map.setView([40.4168, -3.7038], 13);
+  if (mapAutofit) {
+    mapAutofit = false;
+    if (bounds.length > 1) {
+      map.fitBounds(bounds, { padding: [30, 30] });
+    } else if (bounds.length === 1) {
+      map.setView(bounds[0], 15);
+    } else {
+      map.setView([40.4168, -3.7038], 13);
+    }
   }
 }
 
@@ -1004,7 +1009,7 @@ function mapAction(action, id, btn) {
     if (svg) svg.setAttribute("fill", UserData.has("favorites", id) ? "currentColor" : "none");
   } else if (action === "seen") {
     UserData.toggle("seen", id);
-    btn.classList.toggle("active", UserData.has("seen", id));
+    renderMap();
   } else if (action === "dismiss") {
     UserData.toggle("dismissed", id);
     renderMap();
