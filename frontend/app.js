@@ -74,7 +74,10 @@ const FirebaseSync = (() => {
       auth.onAuthStateChanged((u) => {
         user = u;
         _updateButton(u);
-        if (u) _pullAndMerge();
+        if (u) {
+          _pullAndMerge();
+          if (typeof currentView !== "undefined" && currentView === "user") renderUserView();
+        }
       });
     } catch (e) {
       console.error("Firebase init error:", e);
@@ -389,7 +392,11 @@ async function init() {
   });
 
   document.getElementById("btn-sync").addEventListener("click", () => {
-    setView("user");
+    if (FirebaseSync.isLoggedIn()) {
+      setView("user");
+    } else {
+      FirebaseSync.login();
+    }
   });
   FirebaseSync.init();
 
