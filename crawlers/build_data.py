@@ -9,6 +9,7 @@ from datetime import datetime, UTC
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
 from crawlers.runner import discover_crawlers
+from crawlers.generate_seo import run as generate_seo
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "frontend", "data")
 EVENTS_PATH = os.path.join(DATA_DIR, "events.json")
@@ -177,6 +178,8 @@ def run():
 
     total_entries = sum(len(v) for v in calendar.values())
     print(f"\nWrote {len(events)} events, {len(calendar)} days ({total_entries} calendar entries)")
+
+    generate_seo()
 
 
 if __name__ == "__main__":
