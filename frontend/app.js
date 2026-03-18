@@ -222,16 +222,9 @@ const SOURCE_LABELS = {
 
 const _initParams = new URLSearchParams(window.location.search);
 let selectedDate = (function() {
-  // Check URL path for pre-generated date pages (e.g. /2026-03-20/)
   const pathMatch = window.location.pathname.match(/\/(\d{4}-\d{2}-\d{2})\/?$/);
   if (pathMatch) {
     const parsed = new Date(pathMatch[1] + "T12:00:00");
-    if (!isNaN(parsed)) return parsed;
-  }
-  // Fall back to ?date= query param
-  const d = _initParams.get("date");
-  if (d && /^\d{4}-\d{2}-\d{2}$/.test(d)) {
-    const parsed = new Date(d + "T12:00:00");
     if (!isNaN(parsed)) return parsed;
   }
   return new Date();
