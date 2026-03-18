@@ -743,10 +743,8 @@ function getFilteredDayEvents() {
 function updateURL() {
   const ds = dateStr(selectedDate);
   const today = dateStr(new Date());
-  const url = new URL(window.location.origin + "/");
-
-  if (ds === today) url.searchParams.delete("date");
-  else url.searchParams.set("date", ds);
+  const basePath = ds === today ? "/" : `/${ds}/`;
+  const url = new URL(window.location.origin + basePath);
 
   if (activeTags.size === 1) url.searchParams.set("cat", [...activeTags][0]);
   else url.searchParams.delete("cat");
