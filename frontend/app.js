@@ -37,6 +37,20 @@ const UserData = (() => {
   };
 })();
 
+const Settings = {
+  _key: "agendamadrid_settings",
+  get(k, def) { try { return (JSON.parse(localStorage.getItem(this._key)) || {})[k] ?? def; } catch { return def; } },
+  set(k, v) { const s = this.getAll(); s[k] = v; localStorage.setItem(this._key, JSON.stringify(s)); },
+  getAll() { try { return JSON.parse(localStorage.getItem(this._key)) || {}; } catch { return {}; } }
+};
+
+const MAP_TILES = {
+  light:   { label: "Claro",         url: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" },
+  dark:    { label: "Oscuro",        url: "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png" },
+  voyager: { label: "Voyager",       url: "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png" },
+  osm:     { label: "OpenStreetMap", url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" },
+};
+
 // Firebase sync (optional — works without login)
 const FirebaseSync = (() => {
   const config = {
@@ -155,7 +169,7 @@ const FirebaseSync = (() => {
       }
     } else {
       btn.classList.remove("logged-in");
-      label.textContent = "Sync";
+      label.textContent = "Login";
       const avatar = btn.querySelector(".sync-avatar");
       if (avatar) avatar.remove();
       if (icon) icon.style.display = "";
@@ -169,6 +183,7 @@ const FirebaseSync = (() => {
     push,
     sync: _pullAndMerge,
     isLoggedIn: () => !!user,
+    getUser: () => user,
   };
 })();
 
@@ -223,7 +238,7 @@ let activeLocation = "";
 let activeSource = "", activeSort = "hora";
 let activeUserFilter = "";
 let currentView = "list";
-let map = null, markersLayer = null, mapAutofit = false;
+let map = null, markersLayer = null, mapAutofit = false, tileLayer = null;
 let picker = null;
 let userLatLng = null;
 
@@ -379,7 +394,7 @@ async function init() {
 
   document.getElementById("btn-sync").addEventListener("click", () => {
     if (FirebaseSync.isLoggedIn()) {
-      FirebaseSync.sync();
+      setView("user");
     } else {
       FirebaseSync.login();
     }
@@ -451,7 +466,8 @@ function setView(view) {
   document.getElementById("events-container").hidden = view !== "list";
   document.getElementById("map-container").hidden = view !== "map";
   document.getElementById("cal-container").hidden = view !== "cal";
-  updateURL();
+  document.getElementById("user-container").hidden = view !== "user";
+  if (view !== "user") updateURL();
 
   if (view === "list") {
     renderEvents();
@@ -462,6 +478,8 @@ function setView(view) {
     locateUser();
   } else if (view === "cal") {
     renderCalendar();
+  } else if (view === "user") {
+    renderUserView();
   }
 }
 
@@ -473,7 +491,8 @@ function initMap() {
   const initZoom = savedZ || 13;
   mapAutofit = !(savedLat && savedLng && savedZ);
   map = L.map("map").setView(initCenter, initZoom);
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+  const tileKey = Settings.get("mapTile", "light");
+  tileLayer = L.tileLayer(MAP_TILES[tileKey]?.url || MAP_TILES.light.url, {
     attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
     maxZoom: 19,
   }).addTo(map);
@@ -1000,6 +1019,62 @@ function calDayClick(ds) {
   selectedDate = new Date(ds + "T12:00:00");
   syncPicker();
   setView("list");
+}
+
+function renderUserView() {
+  const user = FirebaseSync.getUser();
+  const favs = Object.keys(UserData.getAll("favorites")).length;
+  const seen = Object.keys(UserData.getAll("seen")).length;
+  const dismissed = Object.keys(UserData.getAll("dismissed")).length;
+  const currentTile = Settings.get("mapTile", "light");
+
+  const tilesHtml = Object.entries(MAP_TILES).map(([key, t]) =>
+    `<button class="map-tile-btn${key === currentTile ? ' active' : ''}" onclick="applyMapTile('${key}')">${t.label}</button>`
+  ).join("");
+
+  document.getElementById("user-container").innerHTML = `
+    <div class="user-page">
+      <div class="user-header">
+        <img src="${user.photoURL || ''}" class="user-avatar-large" alt="">
+        <div>
+          <div class="user-name">${user.displayName || ''}</div>
+          <div class="user-email">${user.email || ''}</div>
+        </div>
+      </div>
+      <div class="user-stats">
+        <button class="stat-card" onclick="goToUserFilter('favorites')">
+          <span class="stat-num">${favs}</span>
+          <span class="stat-label">Favoritos ♥</span>
+        </button>
+        <button class="stat-card" onclick="goToUserFilter('seen')">
+          <span class="stat-num">${seen}</span>
+          <span class="stat-label">Vistos ✓</span>
+        </button>
+        <button class="stat-card" onclick="goToUserFilter('dismissed')">
+          <span class="stat-num">${dismissed}</span>
+          <span class="stat-label">Ocultos ✕</span>
+        </button>
+      </div>
+      <section class="user-settings">
+        <h3>Estilo del mapa</h3>
+        <div class="map-tile-options">${tilesHtml}</div>
+      </section>
+      <button class="btn-logout" onclick="FirebaseSync.logout(); setView('list')">Cerrar sesión</button>
+    </div>
+  `;
+}
+
+function goToUserFilter(filter) {
+  activeUserFilter = filter;
+  document.getElementById("user-filter").value = filter;
+  document.getElementById("user-filter").classList.add("active-filter");
+  setView("list");
+}
+
+function applyMapTile(key) {
+  Settings.set("mapTile", key);
+  if (tileLayer) tileLayer.setUrl(MAP_TILES[key].url);
+  renderUserView();
 }
 
 function mapAction(action, id, btn) {
