@@ -474,7 +474,7 @@ function initMap() {
   const initCenter = (savedLat && savedLng && savedZ) ? [savedLat, savedLng] : [40.4168, -3.7038];
   const initZoom = savedZ || 13;
   mapAutofit = !(savedLat && savedLng && savedZ);
-  map = L.map("map").setView(initCenter, initZoom);
+  map = L.map("map", { zoomSnap: 0.5, zoomDelta: 0.5 }).setView(initCenter, initZoom);
   const tileKey = Settings.get("mapTile", "voyager");
   tileLayer = L.tileLayer(MAP_TILES[tileKey]?.url || MAP_TILES.light.url, {
     attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
