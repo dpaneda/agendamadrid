@@ -419,9 +419,8 @@ async function init() {
     activeLocation = initLoc;
     renderActiveFilters();
   }
-  const isMobile = window.innerWidth <= 640;
   const initView = _initParams.get("view");
-  if (initView && ["map", "cal"].includes(initView) && !(initView === "map" && isMobile)) {
+  if (initView && ["map", "cal"].includes(initView)) {
     setView(initView);
   } else {
     render();
@@ -435,6 +434,7 @@ async function init() {
     touchStartY = e.touches[0].clientY;
   }, { passive: true });
   mainEl.addEventListener("touchend", (e) => {
+    if (currentView === "map") return;
     const dx = e.changedTouches[0].clientX - touchStartX;
     const dy = e.changedTouches[0].clientY - touchStartY;
     if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) {

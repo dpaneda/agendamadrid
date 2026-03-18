@@ -765,10 +765,6 @@ footer p + p {
 
 /* Mobile */
 @media (max-width: 640px) {
-  #btn-map {
-    display: none;
-  }
-
   .header-inner {
     padding: 0.5rem 0.8rem;
     flex-wrap: wrap;
