@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página no encontrada - Agenda Madrid</title>
+  <link rel="icon" type="image/png" href="/images/favicon.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #381d92;
+      --primary-dark: #1C0A63;
+      --bg: #F2F2FA;
+      --white: #ffffff;
+      --muted: #6b6b8a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Inter, sans-serif; background: var(--bg); color: #0B0620; min-height: 100vh; display: flex; flex-direction: column; }
+    header { background: var(--primary-dark); padding: 0.75rem 1rem; }
+    .logo { text-decoration: none; font-weight: 700; font-size: 2rem; letter-spacing: -0.02em; }
+    .logo-agenda { color: #e63228; }
+    .logo-madrid { color: var(--white); }
+    main { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; padding: 2rem; text-align: center; }
+    .code { font-size: 5rem; font-weight: 700; color: var(--primary); line-height: 1; }
+    .msg { font-size: 1.1rem; color: var(--muted); }
+    a.btn { display: inline-block; margin-top: 0.5rem; padding: 0.6rem 1.5rem; background: var(--primary); color: var(--white); border-radius: 0.5rem; text-decoration: none; font-weight: 600; }
+    a.btn:hover { background: var(--primary-dark); }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/" class="logo"><span class="logo-agenda">agenda</span><span class="logo-madrid">madrid</span></a>
+  </header>
+  <main>
+    <div class="code">404</div>
+    <p class="msg">Esta página no existe</p>
+    <a href="/" class="btn">Ver eventos de hoy</a>
+  </main>
+</body>
+</html>
