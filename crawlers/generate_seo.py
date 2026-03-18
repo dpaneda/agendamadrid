@@ -230,7 +230,7 @@ def run():
         f.write(today_html)
 
     # Generate per-day pages for the next 60 days only
-    max_date_str = (today + timedelta(days=60)).isoformat()
+    max_date_str = (today + timedelta(days=14)).isoformat()
     future_dates = sorted(
         ds for ds in calendar
         if today_str < ds <= max_date_str and len(calendar[ds]) > 0
