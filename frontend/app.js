@@ -231,7 +231,8 @@ let calendarData = {}; // date -> [{event_id, start_time, end_time}]
 let allData = [];      // flattened for backward compat (buildCategories)
 let activeTags = new Set();
 let activeLocation = "";
-let activeSource = "", activeSort = "hora";
+let activeSource = "";
+let activeSort = Settings.get("sort", "hora");
 let activeUserFilter = "";
 let currentView = "list";
 let map = null, markersLayer = null, mapAutofit = false, tileLayer = null;
@@ -336,15 +337,7 @@ async function init() {
     render();
   });
 
-  document.getElementById("source-filter").addEventListener("change", (e) => {
-    activeSource = e.target.value;
-    e.target.classList.toggle("active-filter", !!activeSource);
-    render();
-  });
-  document.getElementById("sort-filter").addEventListener("change", (e) => {
-    activeSort = e.target.value;
-    render();
-  });
+
 
   document.getElementById("btn-list").addEventListener("click", () => setView("list"));
   document.getElementById("btn-map").addEventListener("click", () => setView("map"));
@@ -389,11 +382,7 @@ async function init() {
   });
 
   document.getElementById("btn-sync").addEventListener("click", () => {
-    if (FirebaseSync.isLoggedIn()) {
-      setView("user");
-    } else {
-      FirebaseSync.login();
-    }
+    setView("user");
   });
   FirebaseSync.init();
 
@@ -408,17 +397,7 @@ async function init() {
     document.getElementById("category-filter").value = initCat;
     renderActiveFilters();
   }
-  const initSource = _initParams.get("source");
-  if (initSource) {
-    activeSource = initSource;
-    document.getElementById("source-filter").value = initSource;
-    document.getElementById("source-filter").classList.add("active-filter");
-  }
-  const initSort = _initParams.get("sort");
-  if (initSort) {
-    activeSort = initSort;
-    document.getElementById("sort-filter").value = initSort;
-  }
+
   const initUserFilter = _initParams.get("uf");
   if (initUserFilter) {
     activeUserFilter = initUserFilter;
@@ -654,10 +633,8 @@ async function loadData() {
 }
 
 function buildCategories() {
-  const individualSources = new Set();
   const allCats = new Set();
   allData.forEach(ev => {
-    (ev.source || "").split(",").forEach(s => { if (s) individualSources.add(s); });
     (ev.categories || []).forEach(c => { if (c) allCats.add(c); });
   });
 
@@ -667,14 +644,6 @@ function buildCategories() {
     opt.value = c;
     opt.textContent = CATEGORY_LABELS[c] || c;
     catSelect.appendChild(opt);
-  });
-
-  const srcSelect = document.getElementById("source-filter");
-  [...individualSources].sort().forEach(s => {
-    const opt = document.createElement("option");
-    opt.value = s;
-    opt.textContent = SOURCE_LABELS[s] || s;
-    srcSelect.appendChild(opt);
   });
 }
 
@@ -717,6 +686,12 @@ function getFilteredDayEvents() {
 
   if (activeSource) {
     filtered = filtered.filter(ev => (ev.source || "").split(",").includes(activeSource));
+  }
+
+  if (Settings.get("hidePast", true) && dateStr(selectedDate) === dateStr(new Date())) {
+    const now = new Date();
+    const nowTime = now.getHours().toString().padStart(2, "0") + ":" + now.getMinutes().toString().padStart(2, "0");
+    filtered = filtered.filter(ev => !ev.start_time || ev.start_time >= nowTime);
   }
 
   if (activeSort === "precio") {
@@ -765,8 +740,6 @@ function updateURL() {
   if (activeSource) url.searchParams.set("source", activeSource);
   else url.searchParams.delete("source");
 
-  if (activeSort !== "hora") url.searchParams.set("sort", activeSort);
-  else url.searchParams.delete("sort");
 
   if (activeLocation) url.searchParams.set("loc", activeLocation);
   else url.searchParams.delete("loc");
@@ -1022,43 +995,69 @@ function calDayClick(ds) {
 
 function renderUserView() {
   const user = FirebaseSync.getUser();
-  const favs = Object.keys(UserData.getAll("favorites")).length;
-  const seen = Object.keys(UserData.getAll("seen")).length;
-  const dismissed = Object.keys(UserData.getAll("dismissed")).length;
   const currentTile = Settings.get("mapTile", "light");
+  const hidePast = Settings.get("hidePast", true);
 
   const tilesHtml = Object.entries(MAP_TILES).map(([key, t]) =>
     `<button class="map-tile-btn${key === currentTile ? ' active' : ''}" onclick="applyMapTile('${key}')">${t.label}</button>`
   ).join("");
 
+  const sources = [...new Set(allData.flatMap(ev => (ev.source || "").split(",").filter(Boolean)))].sort();
+  const sourcesHtml = sources.length > 1 ? `
+    <label class="setting-row">
+      <span>Fuente <small>(debug)</small></span>
+      <select onchange="applySource(this.value)">
+        <option value="">Todas</option>
+        ${sources.map(s => `<option value="${s}"${activeSource === s ? " selected" : ""}>${SOURCE_LABELS[s] || s}</option>`).join("")}
+      </select>
+    </label>` : "";
+
+  const profileHtml = user ? `
+    <div class="user-header">
+      <img src="${user.photoURL || ''}" class="user-avatar-large" alt="">
+      <div>
+        <div class="user-name">${user.displayName || ''}</div>
+        <div class="user-email">${user.email || ''}</div>
+      </div>
+    </div>
+    <div class="user-stats">
+      <button class="stat-card" onclick="goToUserFilter('favorites')">
+        <span class="stat-num">${Object.keys(UserData.getAll("favorites")).length}</span>
+        <span class="stat-label">Favoritos ♥</span>
+      </button>
+      <button class="stat-card" onclick="goToUserFilter('seen')">
+        <span class="stat-num">${Object.keys(UserData.getAll("seen")).length}</span>
+        <span class="stat-label">Vistos ✓</span>
+      </button>
+      <button class="stat-card" onclick="goToUserFilter('dismissed')">
+        <span class="stat-num">${Object.keys(UserData.getAll("dismissed")).length}</span>
+        <span class="stat-label">Ocultos ✕</span>
+      </button>
+    </div>` : `
+    <button class="btn-login" onclick="FirebaseSync.login()">Iniciar sesión con Google</button>`;
+
   document.getElementById("user-container").innerHTML = `
     <div class="user-page">
-      <div class="user-header">
-        <img src="${user.photoURL || ''}" class="user-avatar-large" alt="">
-        <div>
-          <div class="user-name">${user.displayName || ''}</div>
-          <div class="user-email">${user.email || ''}</div>
-        </div>
-      </div>
-      <div class="user-stats">
-        <button class="stat-card" onclick="goToUserFilter('favorites')">
-          <span class="stat-num">${favs}</span>
-          <span class="stat-label">Favoritos ♥</span>
-        </button>
-        <button class="stat-card" onclick="goToUserFilter('seen')">
-          <span class="stat-num">${seen}</span>
-          <span class="stat-label">Vistos ✓</span>
-        </button>
-        <button class="stat-card" onclick="goToUserFilter('dismissed')">
-          <span class="stat-num">${dismissed}</span>
-          <span class="stat-label">Ocultos ✕</span>
-        </button>
-      </div>
+      ${profileHtml}
       <section class="user-settings">
+        <h3>Preferencias</h3>
+        <label class="setting-row">
+          <span>Ocultar eventos pasados</span>
+          <input type="checkbox" ${hidePast ? "checked" : ""} onchange="applyHidePast(this.checked)">
+        </label>
+        <label class="setting-row">
+          <span>Ordenar por</span>
+          <select onchange="applySort(this.value)">
+            <option value="hora"${activeSort === "hora" ? " selected" : ""}>Hora</option>
+            <option value="precio"${activeSort === "precio" ? " selected" : ""}>Precio</option>
+            <option value="distancia"${activeSort === "distancia" ? " selected" : ""}>Distancia</option>
+          </select>
+        </label>
+        ${sourcesHtml}
         <h3>Estilo del mapa</h3>
         <div class="map-tile-options">${tilesHtml}</div>
       </section>
-      <button class="btn-logout" onclick="FirebaseSync.logout(); setView('list')">Cerrar sesión</button>
+      ${user ? `<button class="btn-logout" onclick="FirebaseSync.logout(); setView('list')">Cerrar sesión</button>` : ""}
     </div>
   `;
 }
@@ -1073,6 +1072,22 @@ function goToUserFilter(filter) {
 function applyMapTile(key) {
   Settings.set("mapTile", key);
   if (tileLayer) tileLayer.setUrl(MAP_TILES[key].url);
+  renderUserView();
+}
+
+function applySource(val) {
+  activeSource = val;
+  renderUserView();
+}
+
+function applySort(val) {
+  activeSort = val;
+  Settings.set("sort", val);
+  renderUserView();
+}
+
+function applyHidePast(val) {
+  Settings.set("hidePast", val);
   renderUserView();
 }
 
