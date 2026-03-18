@@ -495,7 +495,7 @@ function initMap() {
 
   if (userLatLng) {
     L.marker([userLatLng.lat, userLatLng.lng], { icon: locationIcon }).addTo(map);
-    map.setView([userLatLng.lat, userLatLng.lng], 15);
+    if (mapAutofit) map.setView([userLatLng.lat, userLatLng.lng], 15);
   }
 }
 
