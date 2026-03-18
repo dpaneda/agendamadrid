@@ -34,8 +34,3 @@ jobs:
           git pull --rebase
           git push
 
-      - name: Trigger deploy
-        if: success()
-        run: gh workflow run pages.yml
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
