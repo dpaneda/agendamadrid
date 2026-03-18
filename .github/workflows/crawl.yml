@@ -28,7 +28,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add frontend/data/events.json frontend/data/calendar.json frontend/index.html
+          git add frontend/data/events.json frontend/data/calendar.json frontend/index.html frontend/sitemap.xml frontend/robots.txt
+          git add frontend/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]/index.html 2>/dev/null || true
           git diff --staged --quiet && exit 0
           git commit -m "Update events data"
           git pull --rebase
