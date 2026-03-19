@@ -345,6 +345,7 @@ async function init() {
   document.getElementById("btn-list").addEventListener("click", () => setView("list"));
   document.getElementById("btn-map").addEventListener("click", () => setView("map"));
   document.getElementById("btn-cal").addEventListener("click", () => setView("cal"));
+  document.getElementById("btn-swipe").addEventListener("click", () => setView("swipe"));
 
   document.getElementById("btn-today").addEventListener("click", () => {
     selectedDate = new Date();
@@ -447,10 +448,12 @@ function setView(view) {
   document.getElementById("btn-list").classList.toggle("active", view === "list");
   document.getElementById("btn-map").classList.toggle("active", view === "map");
   document.getElementById("btn-cal").classList.toggle("active", view === "cal");
+  document.getElementById("btn-swipe").classList.toggle("active", view === "swipe");
   document.getElementById("events-container").hidden = view !== "list";
   document.getElementById("map-container").hidden = view !== "map";
   document.getElementById("cal-container").hidden = view !== "cal";
   document.getElementById("user-container").hidden = view !== "user";
+  document.getElementById("swipe-container").hidden = view !== "swipe";
   updateURL();
 
   if (view === "list") {
@@ -464,6 +467,8 @@ function setView(view) {
     renderCalendar();
   } else if (view === "user") {
     renderUserView();
+  } else if (view === "swipe") {
+    renderSwipeView();
   }
 }
 
@@ -773,6 +778,8 @@ function render() {
     renderMap();
   } else if (currentView === "cal") {
     renderCalendar();
+  } else if (currentView === "swipe") {
+    renderSwipeView();
   }
 }
 
@@ -1124,3 +1131,242 @@ function esc(s) {
 }
 
 init();
+
+// ==============================
+// SWIPE VIEW (Mix / Tinder mode)
+// ==============================
+
+let swipeQueue = [];
+let swipeIndex = 0;
+let swipeActive = false;
+
+function renderSwipeView() {
+  swipeQueue = getFilteredDayEvents();
+  swipeIndex = 0;
+  swipeActive = false;
+  updateDateLabel(swipeQueue.length);
+  _buildSwipeDeck();
+}
+
+function _buildSwipeDeck() {
+  const container = document.getElementById("swipe-container");
+  if (!container) return;
+  container.innerHTML = "";
+
+  const remaining = swipeQueue.slice(swipeIndex);
+
+  if (!remaining.length) {
+    const done = swipeQueue.length;
+    container.innerHTML = `
+      <div class="swipe-empty">
+        <div class="swipe-empty-icon">✨</div>
+        <div class="swipe-empty-title">¡Ya los has visto todos!</div>
+        <p>${done} evento${done !== 1 ? "s" : ""} para hoy</p>
+        <button onclick="setView('list')">Ver lista completa</button>
+      </div>`;
+    return;
+  }
+
+  // Render up to 3 cards; top card is last in DOM (highest z-index)
+  const visible = remaining.slice(0, 3).reverse();
+  visible.forEach((ev, i) => {
+    const stackPos = visible.length - 1 - i; // 0 = top
+    const el = document.createElement("div");
+    el.className = "swipe-card" + (stackPos === 0 ? " swipe-card-top" : "");
+    el.dataset.id = ev.id;
+    el.innerHTML = _swipeCardInner(ev);
+    if (stackPos === 1) el.style.cssText = "transform: translateX(-50%) scale(0.96) translateY(14px); z-index: 3;";
+    if (stackPos === 2) el.style.cssText = "transform: translateX(-50%) scale(0.92) translateY(28px); z-index: 2;";
+    container.appendChild(el);
+  });
+
+  // Counter
+  const counter = document.createElement("div");
+  counter.className = "swipe-counter";
+  counter.textContent = `${swipeIndex + 1} / ${swipeQueue.length}`;
+  container.appendChild(counter);
+
+  // Action buttons + legend
+  container.insertAdjacentHTML("beforeend", `
+    <div class="swipe-actions-bar">
+      <button class="swipe-btn swipe-btn-dismiss" onclick="triggerSwipe('left')" title="Ocultar">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <button class="swipe-btn swipe-btn-seen" onclick="triggerSwipe('up')" title="Ya lo sé">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </button>
+      <button class="swipe-btn swipe-btn-fav" onclick="triggerSwipe('right')" title="Favorito">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </button>
+    </div>
+    <div class="swipe-legend">
+      <span>← Ocultar</span>
+      <span>↑ Visto</span>
+      <span>Fav →</span>
+    </div>`);
+
+  _initSwipeDrag();
+}
+
+function _swipeCardInner(ev) {
+  const cat = ev.categories?.[0] || "otros";
+  const catInfo = CAT_ICONS[cat] || { emoji: "📍", color: "#6B7280" };
+  const color = catInfo.color;
+
+  const fmtTime = (t) => {
+    if (!t) return "";
+    const p = t.split(":");
+    return p.length >= 2 ? p[0].padStart(2, "0") + ":" + p[1] : "";
+  };
+  const timeStr = (() => {
+    const s = fmtTime(ev.start_time), e = fmtTime(ev.end_time);
+    return s ? (e ? `${s} – ${e}` : s) : "";
+  })();
+
+  const price = ev.price || "";
+  const isFree = !price || price === "0" || price === "0.00" ||
+    price.toLowerCase().includes("gratis") || price.toLowerCase().includes("gratuito");
+  const isFav = UserData.has("favorites", ev.id);
+
+  const catTags = [...new Set(ev.categories)].map(c => {
+    const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
+    return `<span class="swipe-tag" style="background:${info.color}1a;color:${info.color}">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</span>`;
+  }).join("");
+
+  const distanceHtml = (() => {
+    if (!userLatLng || !ev.latitude || !ev.longitude) return "";
+    const d = haversineDistance(userLatLng.lat, userLatLng.lng, parseFloat(ev.latitude), parseFloat(ev.longitude));
+    return `<span class="swipe-badge" style="background:#f0f4ff;color:#3b82f6">📍 ${d.toFixed(1)} km</span>`;
+  })();
+
+  return `
+    <div class="swipe-card-bg" style="background:linear-gradient(150deg,${color}20 0%,${color}08 60%,transparent 100%)"></div>
+    <div class="swipe-card-inner">
+      <div class="swipe-card-top-row">
+        <span class="swipe-cat-emoji">${catInfo.emoji}</span>
+        <div class="swipe-badges">
+          ${isFree ? '<span class="swipe-badge swipe-badge-free">Gratis</span>' : (price ? `<span class="swipe-badge swipe-badge-price">${esc(price)}</span>` : "")}
+          ${distanceHtml}
+          ${isFav ? '<span class="swipe-badge swipe-badge-fav">❤️ Guardado</span>' : ""}
+        </div>
+      </div>
+      <div class="swipe-card-content">
+        ${timeStr ? `<div class="swipe-time">⏰ ${esc(timeStr)}</div>` : ""}
+        <h2 class="swipe-title">${esc(ev.title)}</h2>
+        ${ev.location_name ? `<div class="swipe-location">📍 ${esc(ev.location_name)}${ev.address ? `, ${esc(ev.address)}` : ""}</div>` : ""}
+        ${ev.description ? `<p class="swipe-desc">${esc(ev.description)}</p>` : ""}
+        <div class="swipe-tags">${catTags}</div>
+        ${ev.url ? `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="swipe-link" onclick="event.stopPropagation()">Ver más info →</a>` : ""}
+      </div>
+    </div>
+    <div class="swipe-overlay swipe-overlay-right"><span>❤️</span><span>Favorito</span></div>
+    <div class="swipe-overlay swipe-overlay-left"><span>✕</span><span>Ocultar</span></div>
+    <div class="swipe-overlay swipe-overlay-up"><span>✓</span><span>Visto</span></div>`;
+}
+
+function triggerSwipe(dir) {
+  const card = document.querySelector(".swipe-card-top");
+  if (!card || swipeActive) return;
+  swipeActive = true;
+
+  const id = card.dataset.id;
+  let tx = 0, ty = 0, rot = 0;
+  if (dir === "right") { tx = window.innerWidth + 200; ty = -60; rot = 22; }
+  else if (dir === "left") { tx = -(window.innerWidth + 200); ty = -60; rot = -22; }
+  else { ty = -(window.innerHeight + 200); }
+
+  card.style.transition = "transform 0.38s ease, opacity 0.28s ease";
+  card.style.transform = `translateX(calc(-50% + ${tx}px)) translateY(${ty}px) rotate(${rot}deg)`;
+  card.style.opacity = "0";
+
+  if (dir === "right" && !UserData.has("favorites", id)) UserData.toggle("favorites", id);
+  else if (dir === "left" && !UserData.has("dismissed", id)) UserData.toggle("dismissed", id);
+  else if (dir === "up" && !UserData.has("seen", id)) UserData.toggle("seen", id);
+
+  setTimeout(() => {
+    swipeIndex++;
+    swipeActive = false;
+    _buildSwipeDeck();
+  }, 360);
+}
+
+function _initSwipeDrag() {
+  const card = document.querySelector(".swipe-card-top");
+  if (!card) return;
+
+  let startX = 0, startY = 0, dx = 0, dy = 0;
+  let dragging = false, lockDir = null;
+
+  const oRight = card.querySelector(".swipe-overlay-right");
+  const oLeft  = card.querySelector(".swipe-overlay-left");
+  const oUp    = card.querySelector(".swipe-overlay-up");
+
+  function start(x, y) {
+    if (swipeActive) return;
+    startX = x; startY = y; dx = 0; dy = 0;
+    dragging = true; lockDir = null;
+    card.style.transition = "none";
+  }
+
+  function move(x, y) {
+    if (!dragging) return;
+    dx = x - startX;
+    dy = y - startY;
+    if (!lockDir && (Math.abs(dx) > 8 || Math.abs(dy) > 8)) {
+      lockDir = Math.abs(dx) >= Math.abs(dy) ? "h" : "v";
+    }
+    if (lockDir === "v") return;
+
+    const rot = dx * 0.07;
+    card.style.transform = `translateX(calc(-50% + ${dx}px)) translateY(${dy}px) rotate(${rot}deg)`;
+
+    const T = 60;
+    const isUp = dy < -T && Math.abs(dy) > Math.abs(dx);
+    if (dx > T && !isUp) {
+      oRight.style.opacity = Math.min((dx - T) / 80, 1);
+      oLeft.style.opacity = 0; oUp.style.opacity = 0;
+    } else if (dx < -T && !isUp) {
+      oLeft.style.opacity = Math.min((-dx - T) / 80, 1);
+      oRight.style.opacity = 0; oUp.style.opacity = 0;
+    } else if (isUp) {
+      oUp.style.opacity = Math.min((-dy - T) / 80, 1);
+      oRight.style.opacity = 0; oLeft.style.opacity = 0;
+    } else {
+      oRight.style.opacity = 0; oLeft.style.opacity = 0; oUp.style.opacity = 0;
+    }
+  }
+
+  function end() {
+    if (!dragging) return;
+    dragging = false;
+    if (lockDir === "v") return;
+
+    const T = 90;
+    const isUp = dy < -T && Math.abs(dy) > Math.abs(dx);
+    if (dx > T && !isUp) triggerSwipe("right");
+    else if (dx < -T && !isUp) triggerSwipe("left");
+    else if (isUp) triggerSwipe("up");
+    else {
+      card.style.transition = "transform 0.32s cubic-bezier(0.175,0.885,0.32,1.275)";
+      card.style.transform = "translateX(-50%)";
+      oRight.style.opacity = 0; oLeft.style.opacity = 0; oUp.style.opacity = 0;
+    }
+  }
+
+  // Touch
+  card.addEventListener("touchstart", e => {
+    const t = e.touches[0]; start(t.clientX, t.clientY);
+  }, { passive: true });
+
+  card.addEventListener("touchmove", e => {
+    const t = e.touches[0]; move(t.clientX, t.clientY);
+    if (lockDir === "h") e.preventDefault();
+  }, { passive: false });
+
+  card.addEventListener("touchend", end, { passive: true });
+
+  // Mouse (for desktop testing)
+  card.addEventListener("mousedown", e => { start(e.clientX, e.clientY); e.preventDefault(); });
+  document.addEventListener("mousemove", e => { if (dragging) move(e.clientX, e.clientY); });
+  document.addEventListener("mouseup", () => { if (dragging) end(); });
+}

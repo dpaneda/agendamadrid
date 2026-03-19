@@ -1033,3 +1033,283 @@ footer p + p {
 .setting-row input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--primary); cursor: pointer; flex-shrink: 0; }
 .btn-login { width: 100%; padding: 0.75rem; border: 1px solid var(--primary); color: var(--primary); border-radius: var(--radius); background: none; cursor: pointer; font-size: 0.95rem; font-weight: 600; }
 .btn-login:hover { background: var(--tag-bg); }
+
+/* =====================
+   SWIPE VIEW (Mix mode)
+   ===================== */
+
+/* Hide swipe button on desktop, show only on mobile */
+.view-toggle-swipe { display: none !important; }
+@media (max-width: 640px) {
+  .view-toggle-swipe { display: inline-flex !important; }
+}
+
+#swipe-container {
+  position: relative;
+  height: calc(100dvh - 108px);
+  overflow: hidden;
+  background: var(--bg);
+  touch-action: pan-y;
+}
+
+.swipe-card {
+  position: absolute;
+  top: 0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 1.5rem);
+  max-width: 440px;
+  height: calc(100% - 96px);
+  background: var(--white);
+  border-radius: 1.25rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  will-change: transform;
+  z-index: 2;
+}
+
+.swipe-card-top {
+  cursor: grab;
+  z-index: 4;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+}
+
+.swipe-card-top:active { cursor: grabbing; }
+
+.swipe-card-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 90px;
+  pointer-events: none;
+}
+
+.swipe-card-inner {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.swipe-card-top-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem 1.1rem 0.5rem;
+  flex-shrink: 0;
+}
+
+.swipe-cat-emoji { font-size: 2.2rem; line-height: 1; }
+
+.swipe-badges {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex: 1;
+  padding-left: 0.5rem;
+  padding-top: 0.1rem;
+}
+
+.swipe-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+}
+
+.swipe-badge-free { background: #dcfce7; color: #166534; }
+.swipe-badge-price { background: var(--tag-bg); color: var(--primary); }
+.swipe-badge-fav { background: #fce7f3; color: #9d174d; }
+
+.swipe-card-content {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.5rem 1.1rem 0.75rem;
+}
+
+.swipe-time {
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-weight: 500;
+  margin-bottom: 0.35rem;
+}
+
+.swipe-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--fg);
+  line-height: 1.3;
+  margin: 0 0 0.5rem;
+}
+
+.swipe-location {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+
+.swipe-desc {
+  font-size: 0.88rem;
+  color: var(--fg);
+  line-height: 1.65;
+  margin: 0 0 0.6rem;
+}
+
+.swipe-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.swipe-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 0.18rem 0.5rem;
+  border-radius: 999px;
+}
+
+.swipe-link {
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  padding: 0.45rem 0.9rem;
+  border: 2px solid var(--primary);
+  border-radius: var(--radius);
+}
+
+/* Swipe direction overlays */
+.swipe-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 1.25rem;
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: opacity 0.06s;
+}
+
+.swipe-overlay span:first-child { font-size: 3rem; }
+
+.swipe-overlay-right {
+  background: rgba(22, 163, 74, 0.1);
+  color: #16a34a;
+  border: 4px solid #16a34a;
+}
+
+.swipe-overlay-left {
+  background: rgba(220, 38, 38, 0.1);
+  color: #dc2626;
+  border: 4px solid #dc2626;
+}
+
+.swipe-overlay-up {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+  border: 4px solid #3b82f6;
+}
+
+/* Action buttons bar */
+.swipe-actions-bar {
+  position: absolute;
+  bottom: 2.25rem;
+  left: 0; right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  z-index: 10;
+}
+
+.swipe-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  transition: transform 0.1s, box-shadow 0.1s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.swipe-btn:active { transform: scale(0.88); box-shadow: 0 2px 6px rgba(0,0,0,0.16); }
+.swipe-btn-dismiss { color: #dc2626; }
+.swipe-btn-seen { width: 46px; height: 46px; color: #3b82f6; }
+.swipe-btn-fav { color: #e63228; }
+
+.swipe-legend {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0; right: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 2.5rem;
+  font-size: 0.65rem;
+  color: var(--muted);
+  z-index: 10;
+}
+
+.swipe-counter {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-weight: 600;
+  z-index: 10;
+  background: rgba(255,255,255,0.85);
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+}
+
+.swipe-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 2rem;
+  color: var(--muted);
+}
+
+.swipe-empty-icon { font-size: 3.5rem; margin-bottom: 0.6rem; }
+
+.swipe-empty-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--fg);
+  margin-bottom: 0.4rem;
+}
+
+.swipe-empty p { margin-bottom: 1.25rem; font-size: 0.9rem; }
+
+.swipe-empty button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
