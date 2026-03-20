@@ -824,7 +824,7 @@ function renderEvent(ev) {
   };
   const time = fmtTime(ev.start_time);
   const endTime = fmtTime(ev.end_time);
-  const timeStr = time ? (endTime ? `${time} - ${endTime}` : time) : "";
+  const timeStr = time ? (endTime && endTime > time ? `${time} - ${endTime}` : time) : "";
   const location = ev.location_name || ev.location || "";
 
   const title = esc(ev.title);
@@ -1296,7 +1296,7 @@ function _swipeCardInner(ev) {
   };
   const timeStr = (() => {
     const s = fmtTime(ev.start_time), e = fmtTime(ev.end_time);
-    return s ? (e ? `${s} – ${e}` : s) : "";
+    return s ? (e && e > s ? `${s} – ${e}` : s) : "";
   })();
 
   const price = ev.price || "";
