@@ -1,16 +1,28 @@
-// User data management (localStorage)
+// User data management (localStorage) — single store for everything
 const UserData = (() => {
   const KEY = "agendamadrid_user";
 
   function _load() {
+    let data;
     try {
       const raw = localStorage.getItem(KEY);
       if (raw) {
-        const data = JSON.parse(raw);
-        if (data.version === 1) return data;
+        data = JSON.parse(raw);
+        if (data.version !== 1) data = null;
       }
     } catch (e) {}
-    return { version: 1, favorites: {}, seen: {}, dismissed: {} };
+    if (!data) data = { version: 1, favorites: {}, seen: {}, dismissed: {} };
+    // Migrate old separate settings store
+    if (!data.settings) {
+      data.settings = {};
+      try {
+        const old = JSON.parse(localStorage.getItem("agendamadrid_settings") || "null");
+        if (old) { const { _ts, ...rest } = old; data.settings = rest; }
+      } catch (e) {}
+      localStorage.removeItem("agendamadrid_settings");
+      localStorage.setItem(KEY, JSON.stringify(data));
+    }
+    return data;
   }
 
   function _save(data) {
@@ -21,6 +33,7 @@ const UserData = (() => {
   return {
     toggle(collection, id) {
       const data = _load();
+      if (!data[collection]) data[collection] = {};
       if (data[collection][id]) {
         delete data[collection][id];
       } else {
@@ -29,19 +42,26 @@ const UserData = (() => {
       _save(data);
     },
     has(collection, id) {
-      return !!_load()[collection][id];
+      return !!((_load()[collection] || {})[id]);
     },
     getAll(collection) {
       return _load()[collection] || {};
     },
+    raw() { return _load(); },
   };
 })();
 
 const Settings = {
-  _key: "agendamadrid_settings",
-  get(k, def) { try { return (JSON.parse(localStorage.getItem(this._key)) || {})[k] ?? def; } catch { return def; } },
-  set(k, v) { const s = this.getAll(); s[k] = v; s._ts = Date.now(); localStorage.setItem(this._key, JSON.stringify(s)); FirebaseSync.pushSettings(s); },
-  getAll() { try { return JSON.parse(localStorage.getItem(this._key)) || {}; } catch { return {}; } }
+  get(k, def) { return (UserData.raw().settings || {})[k] ?? def; },
+  set(k, v) {
+    const data = UserData.raw();
+    if (!data.settings) data.settings = {};
+    data.settings[k] = v;
+    data.settings._ts = Date.now();
+    localStorage.setItem("agendamadrid_user", JSON.stringify(data));
+    FirebaseSync.push(data);
+  },
+  getAll() { return UserData.raw().settings || {}; },
 };
 
 const MAP_TILES = {
@@ -125,7 +145,7 @@ const FirebaseSync = (() => {
       const local = JSON.parse(localStorage.getItem("agendamadrid_user") || "{}");
 
       // Merge favorites/seen/dismissed by max timestamp
-      const merged = { version: 1, favorites: {}, seen: {}, dismissed: {} };
+      const merged = { version: 1, favorites: {}, seen: {}, dismissed: {}, settings: local.settings || {} };
       for (const col of ["favorites", "seen", "dismissed"]) {
         const l = local[col] || {};
         const r = remote[col] || {};
@@ -134,19 +154,15 @@ const FirebaseSync = (() => {
           merged[col][key] = Math.max(l[key] || 0, r[key] || 0);
         }
       }
-      localStorage.setItem("agendamadrid_user", JSON.stringify(merged));
-
-      // Merge settings: remote wins if newer
-      const localSettings = JSON.parse(localStorage.getItem("agendamadrid_settings") || "{}");
-      const remoteSettings = remote.settings || null;
-      const localTs = localSettings._ts || 0;
-      const remoteTs = remote.settings_ts || 0;
-      if (remoteSettings && remoteTs >= localTs) {
-        const { _ts, ...cleanSettings } = remoteSettings;
-        localStorage.setItem("agendamadrid_settings", JSON.stringify({ ...cleanSettings, _ts: remoteTs }));
+      // Settings: remote wins if newer (settings_ts is old Firestore format)
+      const localTs = (local.settings || {})._ts || 0;
+      const remoteTs = (remote.settings || {})._ts || remote.settings_ts || 0;
+      if (remote.settings && remoteTs >= localTs) {
+        merged.settings = remote.settings;
       }
 
-      await db.collection("users").doc(user.uid).set({ ...merged, settings: localSettings, settings_ts: Math.max(localTs, remoteTs) });
+      localStorage.setItem("agendamadrid_user", JSON.stringify(merged));
+      await db.collection("users").doc(user.uid).set(merged);
       if (typeof render === "function") render();
       if (typeof renderUserView === "function" && typeof currentView !== "undefined" && currentView === "user") renderUserView();
     } catch (e) {
@@ -159,14 +175,6 @@ const FirebaseSync = (() => {
     clearTimeout(writeTimer);
     writeTimer = setTimeout(() => {
       db.collection("users").doc(user.uid).set(data).catch(() => {});
-    }, 1000);
-  }
-
-  function pushSettings(settings) {
-    if (!user || !db) return;
-    clearTimeout(writeTimer);
-    writeTimer = setTimeout(() => {
-      db.collection("users").doc(user.uid).update({ settings, settings_ts: Date.now() }).catch(() => {});
     }, 1000);
   }
 
@@ -200,7 +208,6 @@ const FirebaseSync = (() => {
     login,
     logout,
     push,
-    pushSettings,
     sync: _pullAndMerge,
     isLoggedIn: () => !!user,
     getUser: () => user,
