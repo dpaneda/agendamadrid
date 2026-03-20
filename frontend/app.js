@@ -794,7 +794,7 @@ function updateURL() {
   if (activeUserFilter) url.searchParams.set("uf", activeUserFilter);
   else url.searchParams.delete("uf");
 
-  if (currentView !== "list") url.searchParams.set("view", currentView);
+  if (currentView === "map" || currentView === "cal") url.searchParams.set("view", currentView);
   else url.searchParams.delete("view");
 
 
