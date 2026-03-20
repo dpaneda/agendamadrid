@@ -930,6 +930,10 @@ function toggleLocation(loc) {
 function renderActiveFilters() {
   const container = document.getElementById("active-filters");
   const parts = [];
+  if (activeUserFilter) {
+    const labels = { favorites: "Favoritos ♥", seen: "Vistos ✓", dismissed: "Ocultos ✕" };
+    parts.push(`<span class="tag tag-active" onclick="goToUserFilter('')">${labels[activeUserFilter] || activeUserFilter} ✕</span>`);
+  }
   if (activeLocation) {
     parts.push(`<span class="tag tag-active" onclick="toggleLocation('${esc(activeLocation)}')">📍 ${esc(activeLocation)} ✕</span>`);
   }
@@ -1124,6 +1128,7 @@ function renderUserView() {
 
 function goToUserFilter(filter) {
   activeUserFilter = filter;
+  renderActiveFilters();
   setView("list");
 }
 
