@@ -1211,7 +1211,6 @@ function _getSwipeEvents() {
       return { ...ev, start_date: ds, start_time: entry.start_time || ev.start_time || null, end_time: entry.end_time || ev.end_time || null };
     })
     .filter(Boolean)
-    .filter(ev => !UserData.has("favorites", ev.id) && !UserData.has("seen", ev.id) && !UserData.has("dismissed", ev.id))
     .filter(ev => _applyCatFilter([ev]).length > 0)
     .sort((a, b) => (a.start_time || "99:99").localeCompare(b.start_time || "99:99"));
 }
@@ -1246,13 +1245,11 @@ function _buildSwipeDeck() {
     </div>`);
 
   if (!remaining.length) {
-    const done = swipeQueue.length;
     container.insertAdjacentHTML("afterbegin", `
       <div class="swipe-empty">
-        <div class="swipe-empty-icon">✨</div>
-        <div class="swipe-empty-title">¡Ya los has visto todos!</div>
-        <p>${done} evento${done !== 1 ? "s" : ""} para hoy</p>
-        <button onclick="setView('list')">Ver lista completa</button>
+        <div class="swipe-empty-icon">📭</div>
+        <div class="swipe-empty-title">Sin eventos para este día</div>
+        <button onclick="setView('list')">Ver lista</button>
       </div>`);
     return;
   }
@@ -1301,6 +1298,8 @@ function _swipeCardInner(ev) {
   const isFree = !price || price === "0" || price === "0.00" ||
     price.toLowerCase().includes("gratis") || price.toLowerCase().includes("gratuito");
   const isFav = UserData.has("favorites", ev.id);
+  const isSeen = UserData.has("seen", ev.id);
+  const isDismissed = UserData.has("dismissed", ev.id);
 
   const catBadges = [...new Set(ev.categories)].map(c => {
     const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
@@ -1322,7 +1321,9 @@ function _swipeCardInner(ev) {
       <div class="swipe-info-badges">
         ${isFree ? '<span class="swipe-info-badge swipe-info-badge-free">Gratis</span>' : (price ? `<span class="swipe-info-badge swipe-info-badge-price">${esc(price)}</span>` : "")}
         ${distBadge}
-        ${isFav ? '<span class="swipe-info-badge swipe-info-badge-fav">❤️ Guardado</span>' : ""}
+        ${isFav ? '<span class="swipe-info-badge swipe-info-badge-fav">❤️ Favorito</span>' : ""}
+        ${isSeen ? '<span class="swipe-info-badge swipe-info-badge-seen">✓ Visto</span>' : ""}
+        ${isDismissed ? '<span class="swipe-info-badge swipe-info-badge-dismissed">✕ Oculto</span>' : ""}
         ${catBadges}
       </div>
       <div class="swipe-info-title">${esc(ev.title)}</div>
