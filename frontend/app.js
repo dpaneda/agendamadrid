@@ -1089,9 +1089,14 @@ function renderUserView() {
   const prefCats = Settings.get("cats", []);
   const catGridHtml = `
     <div class="cat-grid">
-      ${allCats.map(c => `<button class="cat-pill${prefCats.includes(c) ? " active" : ""}" onclick="toggleCatPref('${esc(c)}')">${esc(CATEGORY_LABELS[c] || c)}</button>`).join("")}
+      ${allCats.map(c => {
+        const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
+        const active = prefCats.includes(c);
+        const style = active ? `style="--cat-color:${info.color};border-color:${info.color};background:${info.color};"` : "";
+        return `<button class="cat-pill${active ? " active" : ""}" ${style} onclick="toggleCatPref('${esc(c)}')">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</button>`;
+      }).join("")}
     </div>
-    ${prefCats.length ? `<p class="setting-hint">${prefCats.length} seleccionadas — el resto no se muestra</p>` : `<p class="setting-hint">Sin selección = todas visibles</p>`}
+    <p class="setting-hint">${prefCats.length ? `${prefCats.length} seleccionadas — el resto no se muestra` : "Sin selección = todas visibles"}</p>
   `;
 
   const statsHtml = `
