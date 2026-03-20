@@ -221,9 +221,15 @@ const SOURCE_LABELS = {
 
 const _initParams = new URLSearchParams(window.location.search);
 let selectedDate = (function() {
+  // On initial load, prefer URL path (SEO entry point), then sessionStorage, then today
   const pathMatch = window.location.pathname.match(/\/(\d{4}-\d{2}-\d{2})\/?$/);
   if (pathMatch) {
     const parsed = new Date(pathMatch[1] + "T12:00:00");
+    if (!isNaN(parsed)) return parsed;
+  }
+  const stored = sessionStorage.getItem("selectedDate");
+  if (stored) {
+    const parsed = new Date(stored + "T12:00:00");
     if (!isNaN(parsed)) return parsed;
   }
   return new Date();
@@ -401,33 +407,7 @@ async function init() {
   locateUser();
   await loadData();
 
-  // Restore filters from URL
-  const initCat = _initParams.get("cat");
-  if (initCat) {
-    activeTags.add(initCat);
-    document.getElementById("category-filter").value = initCat;
-    renderActiveFilters();
-  }
-
-  const initUserFilter = _initParams.get("uf");
-  if (initUserFilter) {
-    activeUserFilter = initUserFilter;
-    document.getElementById("user-filter").value = initUserFilter;
-    document.getElementById("user-filter").classList.add("active-filter");
-  }
-  const initLoc = _initParams.get("loc");
-  if (initLoc) {
-    activeLocation = initLoc;
-    renderActiveFilters();
-  }
-  const initView = _initParams.get("view");
-  if (initView && ["map", "cal"].includes(initView)) {
-    setView(initView);
-  } else if (initView === "user" && FirebaseSync.isLoggedIn()) {
-    setView("user");
-  } else {
-    render();
-  }
+  render();
 
   // Swipe to change day on touch devices
   let touchStartX = 0, touchStartY = 0;
@@ -481,9 +461,9 @@ function setView(view) {
 }
 
 function initMap() {
-  const savedLat = parseFloat(_initParams.get("mlat"));
-  const savedLng = parseFloat(_initParams.get("mlng"));
-  const savedZ = parseInt(_initParams.get("mz"));
+  const savedLat = parseFloat(sessionStorage.getItem("mlat"));
+  const savedLng = parseFloat(sessionStorage.getItem("mlng"));
+  const savedZ = parseInt(sessionStorage.getItem("mz"));
   const initCenter = (savedLat && savedLng && savedZ) ? [savedLat, savedLng] : [40.4168, -3.7038];
   const initZoom = savedZ || 13;
   mapAutofit = !(savedLat && savedLng && savedZ);
@@ -517,11 +497,9 @@ function initMap() {
 
   map.on("moveend", () => {
     const c = map.getCenter();
-    const url = new URL(window.location);
-    url.searchParams.set("mlat", c.lat.toFixed(5));
-    url.searchParams.set("mlng", c.lng.toFixed(5));
-    url.searchParams.set("mz", map.getZoom());
-    history.replaceState(null, "", url);
+    sessionStorage.setItem("mlat", c.lat.toFixed(5));
+    sessionStorage.setItem("mlng", c.lng.toFixed(5));
+    sessionStorage.setItem("mz", map.getZoom());
   });
 
   const locationIcon = L.divIcon({
@@ -776,35 +754,7 @@ function getFilteredDayEvents() {
 }
 
 function updateURL() {
-  const ds = dateStr(selectedDate);
-  const today = dateStr(new Date());
-  const basePath = ds === today ? "/" : `/${ds}/`;
-  const url = new URL(window.location.origin + basePath);
-
-  if (activeTags.size === 1) url.searchParams.set("cat", [...activeTags][0]);
-  else url.searchParams.delete("cat");
-
-  if (activeSource) url.searchParams.set("source", activeSource);
-  else url.searchParams.delete("source");
-
-
-  if (activeLocation) url.searchParams.set("loc", activeLocation);
-  else url.searchParams.delete("loc");
-
-  if (activeUserFilter) url.searchParams.set("uf", activeUserFilter);
-  else url.searchParams.delete("uf");
-
-  if (currentView === "map" || currentView === "cal") url.searchParams.set("view", currentView);
-  else url.searchParams.delete("view");
-
-
-  if (currentView !== "map") {
-    url.searchParams.delete("mlat");
-    url.searchParams.delete("mlng");
-    url.searchParams.delete("mz");
-  }
-
-  history.replaceState(null, "", url);
+  sessionStorage.setItem("selectedDate", dateStr(selectedDate));
 }
 
 function render() {
