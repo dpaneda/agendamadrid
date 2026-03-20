@@ -1087,16 +1087,15 @@ function renderUserView() {
     .filter(c => !EXCLUDED_TAGS.has(c))
     .sort((a, b) => (CATEGORY_LABELS[a] || a).localeCompare(CATEGORY_LABELS[b] || b));
   const prefCats = Settings.get("cats", []);
+  const effectivePrefCats = prefCats.length === 0 ? allCats : prefCats;
   const catGridHtml = `
     <div class="cat-grid">
       ${allCats.map(c => {
         const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
-        const active = prefCats.includes(c);
-        const style = active ? `style="--cat-color:${info.color};border-color:${info.color};background:${info.color};"` : "";
-        return `<button class="cat-pill${active ? " active" : ""}" ${style} onclick="toggleCatPref('${esc(c)}')">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</button>`;
+        const active = effectivePrefCats.includes(c);
+        return `<button class="cat-pill${active ? " active" : ""}" onclick="toggleCatPref('${esc(c)}')">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</button>`;
       }).join("")}
     </div>
-    <p class="setting-hint">${prefCats.length ? `${prefCats.length} seleccionadas — el resto no se muestra` : "Sin selección = todas visibles"}</p>
   `;
 
   const statsHtml = `
@@ -1120,7 +1119,7 @@ function renderUserView() {
       ${profileHtml}
       ${statsHtml}
       <section class="user-settings">
-        <h3>Categorías</h3>
+        <h3>Categorías visibles</h3>
         ${catGridHtml}
         <h3>Preferencias</h3>
         <div class="setting-row">
@@ -1179,8 +1178,13 @@ function applyCategory(val) {
 }
 
 function toggleCatPref(cat) {
+  const EXCLUDED = new Set(["gratis", "destacado", "aire libre", "accesible"]);
+  const allAvail = [...new Set(allData.flatMap(ev => ev.categories || []))]
+    .filter(c => !EXCLUDED.has(c));
   let cats = Settings.get("cats", []);
+  if (cats.length === 0) cats = [...allAvail]; // expand "all" before modifying
   cats = cats.includes(cat) ? cats.filter(c => c !== cat) : [...cats, cat];
+  if (cats.length === allAvail.length) cats = []; // back to "all" = empty
   Settings.set("cats", cats);
   render();
   renderUserView();

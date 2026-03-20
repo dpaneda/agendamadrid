@@ -1135,7 +1135,7 @@ footer p + p {
 .cat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.4rem; padding: 0.25rem 0 0.5rem; }
 .cat-pill { padding: 0.28rem 0.7rem; border-radius: 2rem; border: 1.5px solid var(--border); background: var(--white); color: var(--fg); font-size: 0.82rem; cursor: pointer; transition: all 0.15s; display: inline-flex; align-items: center; gap: 0.3rem; }
 .cat-pill:hover { border-color: var(--primary); background: var(--tag-bg); }
-.cat-pill.active { color: var(--white); font-weight: 500; }
+.cat-pill.active { border-color: var(--primary); background: var(--primary); color: var(--white); font-weight: 500; }
 .setting-hint { font-size: 0.78rem; color: var(--muted); margin-bottom: 0.75rem; }
 .map-tile-options { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .map-tile-btn { padding: 0.4rem 1rem; border: 1px solid var(--border); border-radius: 2rem; background: var(--white); cursor: pointer; font-size: 0.875rem; }
