@@ -437,6 +437,22 @@ main {
   border: 1px solid var(--border);
 }
 
+body[data-view="map"] #map-container {
+  border-radius: 0;
+  border: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+}
+
+body[data-view="map"] #map {
+  height: 100%;
+}
+
+body[data-view="map"] main {
+  padding: 0;
+}
+
 #map {
   height: 70vh;
   width: 100%;
@@ -946,15 +962,8 @@ footer p + p {
   }
 
   /* Map full-screen on mobile */
-  body[data-view="map"] main {
-    padding: 0;
-  }
   body[data-view="map"] #map-container {
-    border-radius: 0;
-    border: none;
-  }
-  body[data-view="map"] #map {
-    height: calc(100dvh - 48px - 58px - env(safe-area-inset-bottom, 0px));
+    bottom: calc(58px + env(safe-area-inset-bottom, 0px));
   }
 }
 
