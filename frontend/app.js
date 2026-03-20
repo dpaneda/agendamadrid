@@ -488,7 +488,27 @@ function initMap() {
   const initCenter = (savedLat && savedLng && savedZ) ? [savedLat, savedLng] : [40.4168, -3.7038];
   const initZoom = savedZ || 13;
   mapAutofit = !(savedLat && savedLng && savedZ);
-  map = L.map("map", { zoomSnap: 0.1, zoomDelta: 0.1 }).setView(initCenter, initZoom);
+  map = L.map("map", { zoomSnap: 0.1, zoomDelta: 0.1, zoomControl: false }).setView(initCenter, initZoom);
+  L.control.zoom({ position: "bottomright" }).addTo(map);
+  const LocateCtrl = L.Control.extend({
+    options: { position: "bottomright" },
+    onAdd() {
+      const btn = L.DomUtil.create("button", "map-locate-btn");
+      btn.title = "Mi ubicación";
+      btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>`;
+      L.DomEvent.on(btn, "click", (e) => {
+        L.DomEvent.stopPropagation(e);
+        if (!navigator.geolocation) return;
+        navigator.geolocation.getCurrentPosition((pos) => {
+          userLatLng = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+          map.setView([userLatLng.lat, userLatLng.lng], 15);
+          render();
+        }, () => {});
+      });
+      return btn;
+    }
+  });
+  new LocateCtrl().addTo(map);
   const tileKey = Settings.get("mapTile", "voyager");
   tileLayer = L.tileLayer(MAP_TILES[tileKey]?.url || MAP_TILES.light.url, {
     attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
