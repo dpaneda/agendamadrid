@@ -21,43 +21,87 @@ HEADERS = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
 
-DAY_NAMES = {
-    "lunes": 0, "martes": 1, "miércoles": 2, "miercoles": 2,
-    "jueves": 3, "viernes": 4, "sábado": 5, "sabado": 5,
-    "sábados": 5, "sabados": 5, "domingo": 6, "domingos": 6,
-    "lunes a viernes": [0, 1, 2, 3, 4],
-    "lunes a sábado": [0, 1, 2, 3, 4, 5],
-    "lunes a sábados": [0, 1, 2, 3, 4, 5],
-    "lunes a domingo": [0, 1, 2, 3, 4, 5, 6],
-    "lunes a domingos": [0, 1, 2, 3, 4, 5, 6],
-    "martes a sábado": [1, 2, 3, 4, 5],
-    "martes a sábados": [1, 2, 3, 4, 5],
-    "martes a domingo": [1, 2, 3, 4, 5, 6],
-    "martes a domingos": [1, 2, 3, 4, 5, 6],
-    "miércoles a domingo": [2, 3, 4, 5, 6],
-    "miércoles a domingos": [2, 3, 4, 5, 6],
-    "miercoles a domingo": [2, 3, 4, 5, 6],
-    "jueves a domingo": [3, 4, 5, 6],
-    "jueves a domingos": [3, 4, 5, 6],
-    "viernes a domingo": [4, 5, 6],
-    "viernes a domingos": [4, 5, 6],
+_DAY_TO_INT = {
+    "lunes": 0, "martes": 1,
+    "miércoles": 2, "miercoles": 2,
+    "jueves": 3, "viernes": 4,
+    "sábado": 5, "sabado": 5, "sábados": 5, "sabados": 5,
+    "domingo": 6, "domingos": 6,
 }
+
+# Keep for backward compat (open_days fallback)
+DAY_NAMES = {**_DAY_TO_INT,
+    "lunes a viernes": [0, 1, 2, 3, 4],
+    "lunes a sábado": [0, 1, 2, 3, 4, 5], "lunes a sábados": [0, 1, 2, 3, 4, 5],
+    "lunes a domingo": [0, 1, 2, 3, 4, 5, 6], "lunes a domingos": [0, 1, 2, 3, 4, 5, 6],
+    "martes a sábado": [1, 2, 3, 4, 5], "martes a sábados": [1, 2, 3, 4, 5],
+    "martes a domingo": [1, 2, 3, 4, 5, 6], "martes a domingos": [1, 2, 3, 4, 5, 6],
+    "miércoles a domingo": [2, 3, 4, 5, 6], "miércoles a domingos": [2, 3, 4, 5, 6],
+    "miercoles a domingo": [2, 3, 4, 5, 6],
+    "jueves a domingo": [3, 4, 5, 6], "jueves a domingos": [3, 4, 5, 6],
+    "viernes a domingo": [4, 5, 6], "viernes a domingos": [4, 5, 6],
+}
+
+_DAY_PATTERN = r'(lunes|martes|mi[eé]rcoles|jueves|viernes|s[aá]bados?|domingos?)'
+
+
+def _days_from_line(line):
+    """Return set of weekday ints mentioned in a single schedule line."""
+    t = line.lower()
+    # All-days shorthand
+    if any(s in t for s in ("todos los días", "todos los dias", "diariamente", "cada día", "cada dia")):
+        return set(range(7))
+    days = set()
+    # Dynamic range: "X a Y"
+    for m in re.finditer(_DAY_PATTERN + r'\s+a\s+' + _DAY_PATTERN, t):
+        d1 = _DAY_TO_INT.get(m.group(1))
+        d2 = _DAY_TO_INT.get(m.group(2))
+        if d1 is not None and d2 is not None:
+            days.update(range(d1, d2 + 1) if d2 >= d1 else list(range(d1, 7)) + list(range(0, d2 + 1)))
+    # Individual day names
+    for name, val in _DAY_TO_INT.items():
+        if name in t:
+            days.add(val)
+    return days
+
+
+def _parse_schedule(text):
+    """Parse schedule text into {weekday_int: ['HH:MM:SS', ...]} or None."""
+    if not text:
+        return None
+    result = {}
+    for line in text.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        times = [t.replace('.', ':') + ':00' for t in re.findall(r'\b(\d{1,2}[:.]\d{2})\b', line)]
+        if not times:
+            continue
+        days = _days_from_line(line)
+        for day in days:
+            if day not in result:
+                result[day] = []
+            for t in times:
+                if t not in result[day]:
+                    result[day].append(t)
+    return result if result else None
 
 
 def _parse_open_days(text):
     """Extract which days of the week an event is open from schedule text."""
     if not text:
         return None
+    schedule = _parse_schedule(text)
+    if schedule:
+        return set(schedule.keys())
+    # Fallback: scan for day names without associated times
     text_lower = text.lower()
-    # Try range patterns first (longer matches)
     for pattern, days in sorted(DAY_NAMES.items(), key=lambda x: -len(x[0])):
-        if pattern in text_lower:
-            if isinstance(days, list):
-                return set(days)
-    # Try individual day names
+        if pattern in text_lower and isinstance(days, list):
+            return set(days)
     found = set()
-    for name, day_num in DAY_NAMES.items():
-        if isinstance(day_num, int) and name in text_lower:
+    for name, day_num in _DAY_TO_INT.items():
+        if name in text_lower:
             found.add(day_num)
     return found if found else None
 
@@ -243,23 +287,27 @@ def _parse_event_page(url):
         longitude = None
 
     # Schedule/time from page
-    start_time = None
-    end_time = None
     schedule_el = (
         soup.find("div", class_="field-name-field-resumen-fechas-y-horarios")
         or soup.find("div", class_="field-name-field-horario")
     )
-    schedule_text = ""
-    if schedule_el:
-        schedule_text = schedule_el.get_text()
+    schedule_text = schedule_el.get_text() if schedule_el else ""
+
+    schedule = _parse_schedule(schedule_text) or _parse_schedule(description)
+    open_days = set(schedule.keys()) if schedule else (_parse_open_days(schedule_text) or _parse_open_days(description))
+
+    # Fallback start_time from first time found (for backward compat / single-time events)
+    start_time = None
+    end_time = None
+    if schedule:
+        # Use the most common time across all days as the generic start_time
+        all_times = [t for times in schedule.values() for t in times]
+        if all_times:
+            start_time = all_times[0]
+    else:
         times = re.findall(r"(\d{1,2}[:.]\d{2})", schedule_text)
         if times:
             start_time = times[0].replace(".", ":") + ":00"
-            if len(times) > 1:
-                end_time = times[1].replace(".", ":") + ":00"
-
-    # Parse open days from schedule text + description
-    open_days = _parse_open_days(schedule_text) or _parse_open_days(description)
 
     # Price / free
     is_free = False
@@ -329,6 +377,7 @@ def _parse_event_page(url):
         "source": "esmadrid",
         "categories": normalize(categories),
         "open_days": open_days,
+        "schedule": schedule,
     }
 
 

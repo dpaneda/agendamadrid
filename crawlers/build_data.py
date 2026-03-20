@@ -4,7 +4,7 @@ import hashlib
 import json
 import os
 import sys
-from datetime import datetime, UTC
+from datetime import datetime, date as date_type, UTC
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
@@ -17,6 +17,24 @@ CALENDAR_PATH = os.path.join(DATA_DIR, "calendar.json")
 
 RICHNESS_FIELDS = ["description", "start_time", "end_time", "location_name", "address",
                    "latitude", "longitude", "url", "district"]
+
+
+def cal_entries_for_date(ev, eid, ds):
+    """Return list of calendar entries for event ev on date string ds."""
+    schedule = ev.get("schedule") or {}
+    try:
+        weekday = datetime.strptime(ds, "%Y-%m-%d").weekday()
+    except ValueError:
+        weekday = None
+    day_times = schedule.get(weekday, []) if weekday is not None else []
+    if day_times:
+        return [{"event_id": eid, "start_time": t} for t in day_times]
+    entry = {"event_id": eid}
+    if ev.get("start_time"):
+        entry["start_time"] = ev["start_time"]
+    if ev.get("end_time"):
+        entry["end_time"] = ev["end_time"]
+    return [entry]
 
 
 def make_event_id(title):
@@ -114,13 +132,9 @@ def run():
                     if start_date and eid:
                         if start_date not in calendar:
                             calendar[start_date] = []
-                        if not any(e["event_id"] == eid for e in calendar[start_date]):
-                            cal_entry = {"event_id": eid}
-                            if events[eid].get("start_time"):
-                                cal_entry["start_time"] = events[eid]["start_time"]
-                            if events[eid].get("end_time"):
-                                cal_entry["end_time"] = events[eid]["end_time"]
-                            calendar[start_date].append(cal_entry)
+                        for new_entry in cal_entries_for_date(events[eid], eid, start_date):
+                            if not any(e["event_id"] == eid and e.get("start_time") == new_entry.get("start_time") for e in calendar[start_date]):
+                                calendar[start_date].append(new_entry)
                     continue
 
                 title = ev.get("title", "")
@@ -130,19 +144,12 @@ def run():
 
                 eid = make_event_id(title)
 
-                # Extract calendar entry
-                cal_entry = {"event_id": eid}
-                if ev.get("start_time"):
-                    cal_entry["start_time"] = ev["start_time"]
-                if ev.get("end_time"):
-                    cal_entry["end_time"] = ev["end_time"]
-
-                # Add to calendar
+                # Add to calendar (one entry per time slot)
                 if start_date not in calendar:
                     calendar[start_date] = []
-                # Avoid duplicate entries for same event on same day
-                if not any(e["event_id"] == eid for e in calendar[start_date]):
-                    calendar[start_date].append(cal_entry)
+                for new_entry in cal_entries_for_date(ev, eid, start_date):
+                    if not any(e["event_id"] == eid and e.get("start_time") == new_entry.get("start_time") for e in calendar[start_date]):
+                        calendar[start_date].append(new_entry)
 
                 # Build event data (without date-specific fields)
                 event_data = {k: v for k, v in ev.items()
