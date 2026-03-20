@@ -58,6 +58,10 @@ def merge_event(existing, new):
     cats = list(dict.fromkeys(existing.get("categories", []) + new.get("categories", [])))
     base["categories"] = cats
 
+    # Always take the newer schedule if present (existing may predate schedule parsing)
+    if new.get("schedule"):
+        base["schedule"] = new["schedule"]
+
     sources = set()
     for ev in [existing, new]:
         s = ev.get("source", "")
@@ -97,13 +101,22 @@ def load_existing():
     return events, calendar, known_source_urls
 
 
-def run():
+def run(only=None, force=False):
     crawlers = discover_crawlers()
+    if only:
+        crawlers = [c for c in crawlers if c.name == only]
     print(f"Found {len(crawlers)} crawler(s)")
 
     events, calendar, known_source_urls = load_existing()
     if events:
         print(f"Loaded {len(events)} existing events, {len(calendar)} calendar days")
+
+    if force and only:
+        # Remove known URLs belonging to the forced crawler so they get re-scraped
+        forced_eids = {eid for eid, ev in events.items() if only in (ev.get("source") or "")}
+        forced_urls = {ev.get("source_url") or ev.get("url") for eid, ev in events.items() if eid in forced_eids}
+        known_source_urls -= forced_urls
+        print(f"  Force mode: cleared {len(forced_urls)} known URLs for '{only}'")
 
     now = datetime.now(UTC).isoformat()
 
@@ -190,4 +203,9 @@ def run():
 
 
 if __name__ == "__main__":
-    run()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--only", help="Run only this crawler (e.g. esmadrid)")
+    parser.add_argument("--force", action="store_true", help="Force re-scrape of known events")
+    args = parser.parse_args()
+    run(only=args.only, force=args.force)

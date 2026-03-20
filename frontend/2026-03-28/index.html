@@ -5,16 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eventos en Madrid el sábado 28 de marzo de 2026 - Agenda Madrid</title>
-  <meta name="description" content="338 eventos en Madrid el sábado 28 de marzo de 2026. Conciertos, exposiciones, teatro, talleres y mucho más.">
+  <meta name="description" content="746 eventos en Madrid el sábado 28 de marzo de 2026. Conciertos, exposiciones, teatro, talleres y mucho más.">
   <meta property="og:title" content="Eventos en Madrid el sábado 28 de marzo de 2026 - Agenda Madrid">
-  <meta property="og:description" content="338 eventos en Madrid el sábado 28 de marzo de 2026. Conciertos, exposiciones, teatro, talleres y mucho más.">
+  <meta property="og:description" content="746 eventos en Madrid el sábado 28 de marzo de 2026. Conciertos, exposiciones, teatro, talleres y mucho más.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://agendamadrid.es/2026-03-28/">
   <meta property="og:image" content="https://agendamadrid.es/images/og-image.png">
-  <link rel="icon" type="image/png" href="images/favicon.jpeg">
+  <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#1C0A63">
+  <meta name="theme-color" content="#2D0D6B">
   <link rel="canonical" href="https://agendamadrid.es/2026-03-28/">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -509,6 +509,36 @@
       "endDate": "2026-03-28T15:00:00:00",
       "url": "https://www.museolazarogaldiano.es/actividades/once-again-statues-never-die-2022-videoinstalacion-de-isaac-julien",
       "description": "El cineasta británico Isaac Julien reflexiona sobre el valor del arte africano en las vanguardias artísticas de principios del siglo XX a través de esta videoinstalación (Museo Lázaro Galdiano.",
+      "keywords": "Exposiciones",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Event",
+      "name": "Ukiyo-e. El ferrocarril en el mundo flotante",
+      "startDate": "2026-03-28T09:30:00:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Museo del Ferrocarril",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Madrid",
+          "addressCountry": "ES"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 40.398749783694,
+          "longitude": -3.691465258598
+        }
+      },
+      "url": "https://www.museodelferrocarril.org/comunicacion/noticia.asp?item=798",
+      "description": "Un acercamiento al arte japonés y su representación del ferrocarril a través de los grabados conocidos con el nombre de ukiyo-e (Museo del Ferrocarril. Hasta 7 junio).",
       "keywords": "Exposiciones",
       "offers": {
         "@type": "Offer",
@@ -1849,37 +1879,6 @@
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock"
       }
-    },
-    {
-      "@type": "Event",
-      "name": "40 años: El Madrid de Tierno",
-      "startDate": "2026-03-28T10:00:00:00",
-      "eventStatus": "https://schema.org/EventScheduled",
-      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-      "location": {
-        "@type": "Place",
-        "name": "Conde Duque",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Madrid",
-          "addressCountry": "ES"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 40.427887,
-          "longitude": -3.710802
-        }
-      },
-      "endDate": "2026-03-28T14:00:00:00",
-      "url": "https://www.condeduquemadrid.es/",
-      "description": "Exposición que rinde homenaje al primer alcalde democrático de Madrid en el 40 aniversario de su fallecimiento (Conde Duque - Archivo de la Villa. Hasta 4 mayo).",
-      "keywords": "Exposiciones, Fotografía",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "EUR",
-        "availability": "https://schema.org/InStock"
-      }
     }
   ]
 }
@@ -1903,6 +1902,7 @@
         <button class="view-toggle active" data-view="list" id="btn-list">Lista</button>
         <button class="view-toggle" data-view="map" id="btn-map">Mapa</button>
         <button class="view-toggle" data-view="cal" id="btn-cal">Mes</button>
+        <button class="view-toggle view-toggle-swipe" data-view="swipe" id="btn-swipe">✨ Mix</button>
       </nav>
       <button id="btn-sync" class="btn-sync" title="Iniciar sesión">
         <span id="sync-label">Login</span>
@@ -1915,7 +1915,7 @@
       <select id="category-filter">
         <option value="">Todas las categorías</option>
       </select>
-      <select id="user-filter">
+      <select id="user-filter" style="display:none">
         <option value="">Mis eventos</option>
         <option value="favorites">Favoritos</option>
         <option value="seen">Vistos</option>
@@ -2005,6 +2005,11 @@
     <h2><a href="https://www.museolazarogaldiano.es/actividades/once-again-statues-never-die-2022-videoinstalacion-de-isaac-julien">Once Again... (Statues Never Die)</a></h2>
     <p><time datetime="2026-03-28T09:30:00:00">09:30:00</time> · Museo Lázaro Galdiano · Gratis · Exposiciones</p>
     <p>El cineasta británico Isaac Julien reflexiona sobre el valor del arte africano en las vanguardias artísticas de principios del siglo XX a través de esta videoinstalación (Museo Lázaro Galdiano.</p>
+  </article>
+  <article>
+    <h2><a href="https://www.museodelferrocarril.org/comunicacion/noticia.asp?item=798">Ukiyo-e. El ferrocarril en el mundo flotante</a></h2>
+    <p><time datetime="2026-03-28T09:30:00:00">09:30:00</time> · Museo del Ferrocarril · Gratis · Exposiciones</p>
+    <p>Un acercamiento al arte japonés y su representación del ferrocarril a través de los grabados conocidos con el nombre de ukiyo-e (Museo del Ferrocarril. Hasta 7 junio).</p>
   </article>
   <article>
     <h2><a href="https://150aniversario.museomisionessalesianas.org/">La aventura valdrá la pena. 150 años de las misiones salesianas</a></h2>
@@ -2120,18 +2125,33 @@
     <h2><a href="https://www.museoreinasofia.es/exposicion/oliver-laxe">Oliver Laxe. HU/هُوَ. Bailad como si nadie os viera</a></h2>
     <p><time datetime="2026-03-28T10:00:00:00">10:00:00</time> · Museo Reina Sofía · Exposiciones</p>
     <p>Uno de los cineastas contemporáneos con mayor proyección internacional presenta su nueva pieza que tiene objeto fundamental su última película Sirat (Museo Reina Sofía.</p>
-  </article>
-  <article>
-    <h2><a href="https://www.museoreinasofia.es/prensa/nota-de-prensa/juan-usle">Juan Uslé. Ese barco en la montaña</a></h2>
-    <p><time datetime="2026-03-28T10:00:00:00">10:00:00</time> · Museo Reina Sofía · Exposiciones</p>
-    <p>Gran muestra antológica que profundiza en los más de cuarenta años de trayectoria artística del artista (Museo Reina Sofía. Hasta 20 abril).</p>
   </article><!-- SEO:PRERENDER:END --></div>
     <div id="map-container" hidden>
       <div id="map"></div>
     </div>
     <div id="cal-container" hidden></div>
     <div id="user-container" hidden></div>
+    <div id="swipe-container" hidden></div>
   </main>
+
+  <nav class="bottom-nav">
+    <button class="bottom-tab active" id="btn-list-tab" data-view="list">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+      <span>Lista</span>
+    </button>
+    <button class="bottom-tab" id="btn-map-tab" data-view="map">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+      <span>Mapa</span>
+    </button>
+    <button class="bottom-tab" id="btn-cal-tab" data-view="cal">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <span>Mes</span>
+    </button>
+    <button class="bottom-tab" id="btn-swipe-tab" data-view="swipe">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      <span>Mix</span>
+    </button>
+  </nav>
 
   <footer>
     <p>En algunos casos la programacion de ciertos eventos no se hace publica hasta pocos dias antes de que se celebren.</p>
