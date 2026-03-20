@@ -262,8 +262,8 @@ let activeTags = new Set();
 let activeLocation = "";
 let activeSource = "";
 let activeSort = Settings.get("sort", "hora");
-let activeUserFilter = "";
-let currentView = "list";
+let activeUserFilter = sessionStorage.getItem("activeUserFilter") || "";
+let currentView = sessionStorage.getItem("currentView") || "list";
 let map = null, markersLayer = null, mapAutofit = false, tileLayer = null;
 let picker = null;
 let userLatLng = null;
@@ -428,7 +428,7 @@ async function init() {
   locateUser();
   await loadData();
 
-  render();
+  setView(currentView);
 
   // Swipe to change day on touch devices
   let touchStartX = 0, touchStartY = 0;
@@ -734,13 +734,6 @@ function getFilteredDayEvents() {
     filtered = filtered.filter(ev => !UserData.has("dismissed", ev.id) && !UserData.has("seen", ev.id));
   }
 
-  if (activeTags.size > 0) {
-    filtered = filtered.filter(ev =>
-      [...activeTags].every(tag => ev.categories.includes(tag))
-    );
-  }
-
-
   if (activeLocation) {
     filtered = filtered.filter(ev => (ev.location_name || ev.location || "") === activeLocation);
   }
@@ -785,6 +778,12 @@ function getFilteredDayEvents() {
 
 function updateURL() {
   sessionStorage.setItem("selectedDate", dateStr(selectedDate));
+  sessionStorage.setItem("currentView", currentView);
+  if (activeUserFilter) {
+    sessionStorage.setItem("activeUserFilter", activeUserFilter);
+  } else {
+    sessionStorage.removeItem("activeUserFilter");
+  }
 }
 
 function render() {
@@ -843,8 +842,7 @@ function renderEvent(ev) {
     const label = CATEGORY_LABELS[c] || c;
     if (seenLabels.has(label)) return "";
     seenLabels.add(label);
-    const isActive = activeTags.has(c);
-    return `<span class="tag tag-clickable${isActive ? ' tag-active' : ''}" onclick="event.preventDefault(); event.stopPropagation(); toggleTag('${esc(c)}')">${esc(label)}</span>`;
+    return `<span class="tag">${esc(label)}</span>`;
   }).join("");
   const sourceTags = (ev.source || "").split(",").filter(Boolean).map(s => {
     const label = SOURCE_LABELS[s] || s;
@@ -932,10 +930,6 @@ function renderActiveFilters() {
   if (activeLocation) {
     parts.push(`<span class="tag tag-active" onclick="toggleLocation('${esc(activeLocation)}')">📍 ${esc(activeLocation)} ✕</span>`);
   }
-  [...activeTags].forEach(tag => {
-    const label = CATEGORY_LABELS[tag] || tag;
-    parts.push(`<span class="tag tag-active" onclick="toggleTag('${esc(tag)}')">${esc(label)} ✕</span>`);
-  });
   container.innerHTML = parts.join("");
 }
 
@@ -960,9 +954,6 @@ function getEventsForDate(ds) {
     events = events.filter(ev => !UserData.has("dismissed", ev.id) && !UserData.has("seen", ev.id));
   }
 
-  if (activeTags.size > 0) {
-    events = events.filter(ev => [...activeTags].every(tag => ev.categories.includes(tag)));
-  }
   if (activeLocation) {
     events = events.filter(ev => (ev.location_name || ev.location || "") === activeLocation);
   }
