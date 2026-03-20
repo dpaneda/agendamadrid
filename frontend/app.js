@@ -817,6 +817,8 @@ function render() {
     renderCalendar();
   } else if (currentView === "swipe") {
     renderSwipeView();
+  } else if (currentView === "user") {
+    renderUserView();
   }
 }
 
@@ -1054,6 +1056,7 @@ function calDayClick(ds) {
 }
 
 function renderUserView() {
+  updateDateLabel(getFilteredDayEvents().length);
   const user = FirebaseSync.getUser();
   const currentTile = Settings.get("mapTile", "voyager");
   const hidePast = Settings.get("hidePast", true);
