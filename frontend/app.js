@@ -346,6 +346,10 @@ async function init() {
   document.getElementById("btn-map").addEventListener("click", () => setView("map"));
   document.getElementById("btn-cal").addEventListener("click", () => setView("cal"));
   document.getElementById("btn-swipe").addEventListener("click", () => setView("swipe"));
+  document.getElementById("btn-list-tab").addEventListener("click", () => setView("list"));
+  document.getElementById("btn-map-tab").addEventListener("click", () => setView("map"));
+  document.getElementById("btn-cal-tab").addEventListener("click", () => setView("cal"));
+  document.getElementById("btn-swipe-tab").addEventListener("click", () => setView("swipe"));
 
   document.getElementById("btn-today").addEventListener("click", () => {
     selectedDate = new Date();
@@ -449,6 +453,10 @@ function setView(view) {
   document.getElementById("btn-map").classList.toggle("active", view === "map");
   document.getElementById("btn-cal").classList.toggle("active", view === "cal");
   document.getElementById("btn-swipe").classList.toggle("active", view === "swipe");
+  document.getElementById("btn-list-tab").classList.toggle("active", view === "list");
+  document.getElementById("btn-map-tab").classList.toggle("active", view === "map");
+  document.getElementById("btn-cal-tab").classList.toggle("active", view === "cal");
+  document.getElementById("btn-swipe-tab").classList.toggle("active", view === "swipe");
   document.getElementById("events-container").hidden = view !== "list";
   document.getElementById("map-container").hidden = view !== "map";
   document.getElementById("cal-container").hidden = view !== "cal";
