@@ -26,7 +26,7 @@ def cal_entries_for_date(ev, eid, ds):
         weekday = datetime.strptime(ds, "%Y-%m-%d").weekday()
     except ValueError:
         weekday = None
-    day_times = schedule.get(weekday, []) if weekday is not None else []
+    day_times = (schedule.get(weekday) or schedule.get(str(weekday)) or []) if weekday is not None else []
     if day_times:
         return [{"event_id": eid, "start_time": t} for t in day_times]
     entry = {"event_id": eid}
@@ -145,9 +145,8 @@ def run(only=None, force=False):
                     if start_date and eid:
                         if start_date not in calendar:
                             calendar[start_date] = []
-                        for new_entry in cal_entries_for_date(events[eid], eid, start_date):
-                            if not any(e["event_id"] == eid and e.get("start_time") == new_entry.get("start_time") for e in calendar[start_date]):
-                                calendar[start_date].append(new_entry)
+                        calendar[start_date] = [e for e in calendar[start_date] if e["event_id"] != eid]
+                        calendar[start_date].extend(cal_entries_for_date(events[eid], eid, start_date))
                     continue
 
                 title = ev.get("title", "")
@@ -157,12 +156,11 @@ def run(only=None, force=False):
 
                 eid = make_event_id(title)
 
-                # Add to calendar (one entry per time slot)
+                # Add to calendar (one entry per time slot, replacing old entries)
                 if start_date not in calendar:
                     calendar[start_date] = []
-                for new_entry in cal_entries_for_date(ev, eid, start_date):
-                    if not any(e["event_id"] == eid and e.get("start_time") == new_entry.get("start_time") for e in calendar[start_date]):
-                        calendar[start_date].append(new_entry)
+                calendar[start_date] = [e for e in calendar[start_date] if e["event_id"] != eid]
+                calendar[start_date].extend(cal_entries_for_date(ev, eid, start_date))
 
                 # Build event data (without date-specific fields)
                 event_data = {k: v for k, v in ev.items()
