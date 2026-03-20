@@ -1155,15 +1155,29 @@ function _buildSwipeDeck() {
 
   const remaining = swipeQueue.slice(swipeIndex);
 
+  // Action bar (always present)
+  container.insertAdjacentHTML("beforeend", `
+    <div class="swipe-actions-bar">
+      <button class="swipe-btn swipe-btn-dismiss" onclick="triggerSwipe('left')" title="Ocultar">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <button class="swipe-btn swipe-btn-seen" onclick="triggerSwipe('up')" title="Visto">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </button>
+      <button class="swipe-btn swipe-btn-fav" onclick="triggerSwipe('right')" title="Favorito">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </button>
+    </div>`);
+
   if (!remaining.length) {
     const done = swipeQueue.length;
-    container.innerHTML = `
+    container.insertAdjacentHTML("afterbegin", `
       <div class="swipe-empty">
         <div class="swipe-empty-icon">✨</div>
         <div class="swipe-empty-title">¡Ya los has visto todos!</div>
         <p>${done} evento${done !== 1 ? "s" : ""} para hoy</p>
         <button onclick="setView('list')">Ver lista completa</button>
-      </div>`;
+      </div>`);
     return;
   }
 
@@ -1175,34 +1189,18 @@ function _buildSwipeDeck() {
     el.className = "swipe-card" + (stackPos === 0 ? " swipe-card-top" : "");
     el.dataset.id = ev.id;
     el.innerHTML = _swipeCardInner(ev);
-    if (stackPos === 1) el.style.cssText = "transform: translateX(-50%) scale(0.96) translateY(14px); z-index: 3;";
-    if (stackPos === 2) el.style.cssText = "transform: translateX(-50%) scale(0.92) translateY(28px); z-index: 2;";
+    if (stackPos === 1) el.style.cssText = "transform: scale(0.95) translateY(16px); z-index: 3;";
+    if (stackPos === 2) el.style.cssText = "transform: scale(0.90) translateY(32px); z-index: 2;";
     container.appendChild(el);
   });
 
-  // Counter
-  const counter = document.createElement("div");
-  counter.className = "swipe-counter";
-  counter.textContent = `${swipeIndex + 1} / ${swipeQueue.length}`;
-  container.appendChild(counter);
-
-  // Action buttons + legend
+  // Top bar (back + counter) — above cards
   container.insertAdjacentHTML("beforeend", `
-    <div class="swipe-actions-bar">
-      <button class="swipe-btn swipe-btn-dismiss" onclick="triggerSwipe('left')" title="Ocultar">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    <div class="swipe-top-bar">
+      <button class="swipe-back-btn" onclick="setView('list')" title="Volver">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
       </button>
-      <button class="swipe-btn swipe-btn-seen" onclick="triggerSwipe('up')" title="Ya lo sé">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-      </button>
-      <button class="swipe-btn swipe-btn-fav" onclick="triggerSwipe('right')" title="Favorito">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-      </button>
-    </div>
-    <div class="swipe-legend">
-      <span>← Ocultar</span>
-      <span>↑ Visto</span>
-      <span>Fav →</span>
+      <span class="swipe-counter">${swipeIndex + 1} / ${swipeQueue.length}</span>
     </div>`);
 
   _initSwipeDrag();
@@ -1228,36 +1226,36 @@ function _swipeCardInner(ev) {
     price.toLowerCase().includes("gratis") || price.toLowerCase().includes("gratuito");
   const isFav = UserData.has("favorites", ev.id);
 
-  const catTags = [...new Set(ev.categories)].map(c => {
+  const catBadges = [...new Set(ev.categories)].map(c => {
     const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
-    return `<span class="swipe-tag" style="background:${info.color}1a;color:${info.color}">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</span>`;
+    return `<span class="swipe-info-badge swipe-info-badge-cat">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</span>`;
   }).join("");
 
-  const distanceHtml = (() => {
+  const distBadge = (() => {
     if (!userLatLng || !ev.latitude || !ev.longitude) return "";
     const d = haversineDistance(userLatLng.lat, userLatLng.lng, parseFloat(ev.latitude), parseFloat(ev.longitude));
-    return `<span class="swipe-badge" style="background:#f0f4ff;color:#3b82f6">📍 ${d.toFixed(1)} km</span>`;
+    return `<span class="swipe-info-badge swipe-info-badge-dist">📍 ${d.toFixed(1)} km</span>`;
   })();
 
   return `
-    <div class="swipe-card-bg" style="background:linear-gradient(150deg,${color}20 0%,${color}08 60%,transparent 100%)"></div>
-    <div class="swipe-card-inner">
-      <div class="swipe-card-top-row">
-        <span class="swipe-cat-emoji">${catInfo.emoji}</span>
-        <div class="swipe-badges">
-          ${isFree ? '<span class="swipe-badge swipe-badge-free">Gratis</span>' : (price ? `<span class="swipe-badge swipe-badge-price">${esc(price)}</span>` : "")}
-          ${distanceHtml}
-          ${isFav ? '<span class="swipe-badge swipe-badge-fav">❤️ Guardado</span>' : ""}
-        </div>
+    <div class="swipe-card-bg" style="background:linear-gradient(160deg,${color}cc 0%,${color}66 45%,${color}22 75%,#1a1a2e 100%)"></div>
+    <div class="swipe-emoji-area">
+      <span class="swipe-emoji-big">${catInfo.emoji}</span>
+    </div>
+    <div class="swipe-info">
+      <div class="swipe-info-badges">
+        ${isFree ? '<span class="swipe-info-badge swipe-info-badge-free">Gratis</span>' : (price ? `<span class="swipe-info-badge swipe-info-badge-price">${esc(price)}</span>` : "")}
+        ${distBadge}
+        ${isFav ? '<span class="swipe-info-badge swipe-info-badge-fav">❤️ Guardado</span>' : ""}
+        ${catBadges}
       </div>
-      <div class="swipe-card-content">
-        ${timeStr ? `<div class="swipe-time">⏰ ${esc(timeStr)}</div>` : ""}
-        <h2 class="swipe-title">${esc(ev.title)}</h2>
-        ${ev.location_name ? `<div class="swipe-location">📍 ${esc(ev.location_name)}${ev.address ? `, ${esc(ev.address)}` : ""}</div>` : ""}
-        ${ev.description ? `<p class="swipe-desc">${esc(ev.description)}</p>` : ""}
-        <div class="swipe-tags">${catTags}</div>
-        ${ev.url ? `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="swipe-link" onclick="event.stopPropagation()">Ver más info →</a>` : ""}
+      <div class="swipe-info-title">${esc(ev.title)}</div>
+      <div class="swipe-info-meta">
+        ${timeStr ? `<span>⏰ ${esc(timeStr)}</span>` : ""}
+        ${ev.location_name ? `<span>📍 ${esc(ev.location_name)}${ev.address ? `, ${esc(ev.address)}` : ""}</span>` : ""}
       </div>
+      ${ev.description ? `<p class="swipe-info-desc">${esc(ev.description)}</p>` : ""}
+      ${ev.url ? `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="swipe-info-link" onclick="event.stopPropagation()">Ver más info →</a>` : ""}
     </div>
     <div class="swipe-overlay swipe-overlay-right"><span>❤️</span><span>Favorito</span></div>
     <div class="swipe-overlay swipe-overlay-left"><span>✕</span><span>Ocultar</span></div>
@@ -1271,12 +1269,12 @@ function triggerSwipe(dir) {
 
   const id = card.dataset.id;
   let tx = 0, ty = 0, rot = 0;
-  if (dir === "right") { tx = window.innerWidth + 200; ty = -60; rot = 22; }
-  else if (dir === "left") { tx = -(window.innerWidth + 200); ty = -60; rot = -22; }
+  if (dir === "right") { tx = window.innerWidth + 200; ty = -50; rot = 20; }
+  else if (dir === "left") { tx = -(window.innerWidth + 200); ty = -50; rot = -20; }
   else { ty = -(window.innerHeight + 200); }
 
   card.style.transition = "transform 0.38s ease, opacity 0.28s ease";
-  card.style.transform = `translateX(calc(-50% + ${tx}px)) translateY(${ty}px) rotate(${rot}deg)`;
+  card.style.transform = `translateX(${tx}px) translateY(${ty}px) rotate(${rot}deg)`;
   card.style.opacity = "0";
 
   if (dir === "right" && !UserData.has("favorites", id)) UserData.toggle("favorites", id);
@@ -1317,8 +1315,8 @@ function _initSwipeDrag() {
     }
     if (lockDir === "v") return;
 
-    const rot = dx * 0.07;
-    card.style.transform = `translateX(calc(-50% + ${dx}px)) translateY(${dy}px) rotate(${rot}deg)`;
+    const rot = dx * 0.06;
+    card.style.transform = `translateX(${dx}px) translateY(${dy}px) rotate(${rot}deg)`;
 
     const T = 60;
     const isUp = dy < -T && Math.abs(dy) > Math.abs(dx);
@@ -1348,7 +1346,7 @@ function _initSwipeDrag() {
     else if (isUp) triggerSwipe("up");
     else {
       card.style.transition = "transform 0.32s cubic-bezier(0.175,0.885,0.32,1.275)";
-      card.style.transform = "translateX(-50%)";
+      card.style.transform = "";
       oRight.style.opacity = 0; oLeft.style.opacity = 0; oUp.style.opacity = 0;
     }
   }
