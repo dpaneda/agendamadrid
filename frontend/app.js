@@ -693,6 +693,16 @@ function _applyCatFilter(events) {
   return events.filter(ev => (ev.categories || []).some(c => cats.includes(c)));
 }
 
+function _mergeEntryTimes(ev, entry) {
+  // If the calendar entry has its own start_time, only use entry's end_time (not the event's),
+  // since the event's end_time belongs to a different time context (e.g. exhibition closing hour).
+  const start_time = entry.start_time || ev.start_time || null;
+  const end_time = entry.start_time
+    ? (entry.end_time || null)
+    : (entry.end_time || ev.end_time || null);
+  return { ...ev, start_time, end_time };
+}
+
 function _applyHidePast(events, ds) {
   if (!Settings.get("hidePast", true)) return events;
   if (ds !== dateStr(new Date())) return events;
@@ -709,12 +719,7 @@ function getFilteredDayEvents() {
   let filtered = dayEntries.map(entry => {
     const ev = allEvents[entry.event_id];
     if (!ev) return null;
-    return {
-      ...ev,
-      start_date: selectedDateStr,
-      start_time: entry.start_time || ev.start_time || null,
-      end_time: entry.end_time || ev.end_time || null,
-    };
+    return { ..._mergeEntryTimes(ev, entry), start_date: selectedDateStr };
   }).filter(Boolean);
 
   filtered = _applyCatFilter(filtered);
@@ -939,7 +944,7 @@ function getEventsForDate(ds) {
   let events = dayEntries.map(entry => {
     const ev = allEvents[entry.event_id];
     if (!ev) return null;
-    return { ...ev, start_date: ds, start_time: entry.start_time || ev.start_time || null };
+    return { ..._mergeEntryTimes(ev, entry), start_date: ds };
   }).filter(Boolean);
 
   events = _applyCatFilter(events);
@@ -1212,7 +1217,7 @@ function _getSwipeEvents() {
   let events = dayEntries.map(entry => {
     const ev = allEvents[entry.event_id];
     if (!ev) return null;
-    return { ...ev, start_date: ds, start_time: entry.start_time || ev.start_time || null, end_time: entry.end_time || ev.end_time || null };
+    return { ..._mergeEntryTimes(ev, entry), start_date: ds };
   }).filter(Boolean);
   events = _applyCatFilter(events);
   events = _applyHidePast(events, ds);
