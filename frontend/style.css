@@ -1143,8 +1143,7 @@ footer p + p {
 .btn-logout { padding: 0.6rem 1.5rem; border: 1px solid #dc2626; color: #dc2626; border-radius: var(--radius); background: none; cursor: pointer; font-size: 0.9rem; }
 .btn-logout:hover { background: #fef2f2; }
 
-.setting-row { display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--border); gap: 1rem; cursor: default; }
-.setting-row:last-child { border-bottom: none; }
+.setting-row { display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 0; gap: 1rem; cursor: default; }
 .setting-row span { font-size: 0.9rem; color: var(--text); }
 .setting-row small { color: var(--muted); }
 .setting-row select { font-size: 0.875rem; border: 1px solid var(--border); border-radius: var(--radius); padding: 0.25rem 0.5rem; background: var(--white); }

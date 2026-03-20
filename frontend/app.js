@@ -1058,9 +1058,9 @@ function renderUserView() {
   const currentTile = Settings.get("mapTile", "voyager");
   const hidePast = Settings.get("hidePast", true);
 
-  const tilesHtml = Object.entries(MAP_TILES).map(([key, t]) =>
-    `<button class="map-tile-btn${key === currentTile ? ' active' : ''}" onclick="applyMapTile('${key}')">${t.label}</button>`
-  ).join("");
+  const tilesHtml = `<select onchange="applyMapTile(this.value)">
+    ${Object.entries(MAP_TILES).map(([key, t]) => `<option value="${key}"${key === currentTile ? " selected" : ""}>${t.label}</option>`).join("")}
+  </select>`;
 
   const sources = [...new Set(allData.flatMap(ev => (ev.source || "").split(",").filter(Boolean)))].sort();
   const sourcesHtml = sources.length > 1 ? `
@@ -1131,8 +1131,10 @@ function renderUserView() {
           </select>
         </label>
         ${sourcesHtml}
-        <h3>Estilo del mapa</h3>
-        <div class="map-tile-options">${tilesHtml}</div>
+        <label class="setting-row">
+          <span>Estilo del mapa</span>
+          ${tilesHtml}
+        </label>
       </section>
       ${user ? `<button class="btn-logout" onclick="FirebaseSync.logout(); setView('list')">Cerrar sesión</button>` : ""}
     </div>
