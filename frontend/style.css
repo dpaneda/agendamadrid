@@ -770,6 +770,7 @@ footer p + p {
 }
 
 @media (max-width: 640px) {
+  /* Bottom tab bar */
   .bottom-nav {
     display: flex;
     position: fixed;
@@ -777,7 +778,10 @@ footer p + p {
     z-index: 150;
     background: var(--primary-dark);
     border-top: 1px solid rgba(255,255,255,0.12);
-    padding-bottom: env(safe-area-inset-bottom, 0);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    /* Force GPU layer so it's always visible regardless of scroll */
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
   }
 
   .bottom-tab {
@@ -808,9 +812,8 @@ footer p + p {
     height: 22px;
     flex-shrink: 0;
   }
-}
 
-@media (max-width: 640px) {
+  /* Header: solo fecha + login */
   .header-inner {
     padding: 0.45rem 0.9rem;
     flex-wrap: nowrap;
@@ -818,7 +821,7 @@ footer p + p {
   }
 
   .logo {
-    font-size: 1.25rem;
+    display: none;
   }
 
   /* Hide view toggles from header on mobile — bottom nav takes over */
@@ -832,18 +835,20 @@ footer p + p {
     position: relative;
   }
 
+  /* Hide prev/next arrows */
   .date-nav > #prev-day,
   .date-nav > #next-day {
-    display: flex;
+    display: none;
   }
 
   .date-label {
-    padding: 0.3rem 0.6rem !important;
-    gap: 0.35rem !important;
+    flex: 1;
+    justify-content: center;
+    padding: 0.35rem 0.8rem !important;
   }
 
   #current-date {
-    font-size: 0.82rem;
+    font-size: 0.85rem;
   }
 
   .event-count-badge {
