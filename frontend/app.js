@@ -818,12 +818,17 @@ function renderEvents() {
 
   updateDateLabel(dayEvents.length);
 
+  const filterLabels = { favorites: "Favoritos ♥", seen: "Vistos ✓", dismissed: "Ocultos ✕" };
+  const filterChip = activeUserFilter
+    ? `<div class="active-filter-banner">${filterLabels[activeUserFilter]} <button onclick="goToUserFilter('')">✕</button></div>`
+    : "";
+
   if (!dayEvents.length) {
-    container.innerHTML = "<p class='empty-state'>No hay eventos para este dia.</p>";
+    container.innerHTML = filterChip + "<p class='empty-state'>No hay eventos para este dia.</p>";
     return;
   }
 
-  container.innerHTML = dayEvents.map(renderEvent).join("");
+  container.innerHTML = filterChip + dayEvents.map(renderEvent).join("");
 }
 
 function renderEvent(ev) {
@@ -1128,7 +1133,6 @@ function renderUserView() {
 
 function goToUserFilter(filter) {
   activeUserFilter = filter;
-  renderActiveFilters();
   setView("list");
 }
 
