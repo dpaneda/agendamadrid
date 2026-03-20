@@ -945,6 +945,23 @@ footer p + p {
   .ev-action.active {
     opacity: 1;
   }
+
+  /* Hide filter bar on mobile */
+  .filter-bar {
+    display: none;
+  }
+
+  /* Map full-screen on mobile */
+  body[data-view="map"] main {
+    padding: 0;
+  }
+  body[data-view="map"] #map-container {
+    border-radius: 0;
+    border: none;
+  }
+  body[data-view="map"] #map {
+    height: calc(100dvh - 48px - 58px - env(safe-area-inset-bottom, 0px));
+  }
 }
 
 /* Event action buttons */

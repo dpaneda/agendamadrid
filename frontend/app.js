@@ -449,6 +449,7 @@ async function init() {
 
 function setView(view) {
   currentView = view;
+  document.body.dataset.view = view;
   document.getElementById("btn-list").classList.toggle("active", view === "list");
   document.getElementById("btn-map").classList.toggle("active", view === "map");
   document.getElementById("btn-cal").classList.toggle("active", view === "cal");
@@ -1039,7 +1040,18 @@ function renderUserView() {
         <div class="user-name">${user.displayName || ''}</div>
         <div class="user-email">${user.email || ''}</div>
       </div>
-    </div>
+    </div>` : `
+    <button class="btn-login" onclick="FirebaseSync.login()">Iniciar sesión con Google</button>`;
+
+  const allCats = [...new Set(allData.flatMap(ev => ev.categories || []))].sort(
+    (a, b) => (CATEGORY_LABELS[a] || a).localeCompare(CATEGORY_LABELS[b] || b)
+  );
+  const catActive = activeTags.size === 1 ? [...activeTags][0] : "";
+  const catOptions = allCats.map(c =>
+    `<option value="${esc(c)}"${catActive === c ? " selected" : ""}>${esc(CATEGORY_LABELS[c] || c)}</option>`
+  ).join("");
+
+  const statsHtml = `
     <div class="user-stats">
       <button class="stat-card" onclick="goToUserFilter('favorites')">
         <span class="stat-num">${Object.keys(UserData.getAll("favorites")).length}</span>
@@ -1053,13 +1065,21 @@ function renderUserView() {
         <span class="stat-num">${Object.keys(UserData.getAll("dismissed")).length}</span>
         <span class="stat-label">Ocultos ✕</span>
       </button>
-    </div>` : `
-    <button class="btn-login" onclick="FirebaseSync.login()">Iniciar sesión con Google</button>`;
+    </div>`;
 
   document.getElementById("user-container").innerHTML = `
     <div class="user-page">
       ${profileHtml}
+      ${statsHtml}
       <section class="user-settings">
+        <h3>Filtros</h3>
+        <label class="setting-row">
+          <span>Categoría</span>
+          <select onchange="applyCategory(this.value)">
+            <option value="">Todas</option>
+            ${catOptions}
+          </select>
+        </label>
         <h3>Preferencias</h3>
         <label class="setting-row">
           <span>Ocultar eventos pasados</span>
@@ -1084,8 +1104,6 @@ function renderUserView() {
 
 function goToUserFilter(filter) {
   activeUserFilter = filter;
-  document.getElementById("user-filter").value = filter;
-  document.getElementById("user-filter").classList.add("active-filter");
   setView("list");
 }
 
@@ -1109,6 +1127,11 @@ function applySort(val) {
 function applyHidePast(val) {
   Settings.set("hidePast", val);
   renderUserView();
+}
+
+function applyCategory(val) {
+  activeTags = val ? new Set([val]) : new Set();
+  setView("list");
 }
 
 function mapAction(action, id, btn) {
@@ -1148,8 +1171,22 @@ let swipeQueue = [];
 let swipeIndex = 0;
 let swipeActive = false;
 
+function _getSwipeEvents() {
+  const ds = dateStr(selectedDate);
+  const dayEntries = calendarData[ds] || [];
+  return dayEntries
+    .map(entry => {
+      const ev = allEvents[entry.event_id];
+      if (!ev) return null;
+      return { ...ev, start_date: ds, start_time: entry.start_time || ev.start_time || null, end_time: entry.end_time || ev.end_time || null };
+    })
+    .filter(Boolean)
+    .filter(ev => !UserData.has("favorites", ev.id) && !UserData.has("seen", ev.id) && !UserData.has("dismissed", ev.id))
+    .sort((a, b) => (a.start_time || "99:99").localeCompare(b.start_time || "99:99"));
+}
+
 function renderSwipeView() {
-  swipeQueue = getFilteredDayEvents();
+  swipeQueue = _getSwipeEvents();
   swipeIndex = 0;
   swipeActive = false;
   updateDateLabel(swipeQueue.length);
