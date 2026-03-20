@@ -90,7 +90,6 @@ const FirebaseSync = (() => {
       firebase.initializeApp(config);
       auth = firebase.auth();
       db = firebase.firestore();
-      db.enablePersistence({ synchronizeTabs: true }).catch(() => {});
       auth.onAuthStateChanged((u) => {
         user = u;
         _updateButton(u);
