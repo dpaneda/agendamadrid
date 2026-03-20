@@ -211,7 +211,6 @@ const CATEGORY_LABELS = {
   "mercados": "mercados",
   "gastronomia": "gastronomía",
   "otros": "otros",
-  "gratis": "gratis",
 };
 
 const SOURCE_LABELS = {
@@ -674,9 +673,10 @@ async function loadData() {
 }
 
 function buildCategories() {
+  const EXCLUDED = new Set(["gratis", "destacado", "aire libre", "accesible"]);
   const allCats = new Set();
   allData.forEach(ev => {
-    (ev.categories || []).forEach(c => { if (c) allCats.add(c); });
+    (ev.categories || []).forEach(c => { if (c && !EXCLUDED.has(c)) allCats.add(c); });
   });
 
   const catSelect = document.getElementById("category-filter");
@@ -686,6 +686,12 @@ function buildCategories() {
     opt.textContent = CATEGORY_LABELS[c] || c;
     catSelect.appendChild(opt);
   });
+}
+
+function _applyCatFilter(events) {
+  const cats = Settings.get("cats", []);
+  if (!cats.length) return events;
+  return events.filter(ev => (ev.categories || []).some(c => cats.includes(c)));
 }
 
 function getFilteredDayEvents() {
@@ -703,6 +709,8 @@ function getFilteredDayEvents() {
       end_time: entry.end_time || ev.end_time || null,
     };
   }).filter(Boolean);
+
+  filtered = _applyCatFilter(filtered);
 
   if (activeUserFilter === "favorites") {
     filtered = filtered.filter(ev => UserData.has("favorites", ev.id));
@@ -957,6 +965,8 @@ function getEventsForDate(ds) {
     return { ...ev, start_date: ds, start_time: entry.start_time || ev.start_time || null };
   }).filter(Boolean);
 
+  events = _applyCatFilter(events);
+
   if (activeUserFilter === "favorites") {
     events = events.filter(ev => UserData.has("favorites", ev.id));
   } else if (activeUserFilter === "seen") {
@@ -1072,13 +1082,17 @@ function renderUserView() {
     </div>` : `
     <button class="btn-login" onclick="FirebaseSync.login()">Iniciar sesión con Google</button>`;
 
-  const allCats = [...new Set(allData.flatMap(ev => ev.categories || []))].sort(
-    (a, b) => (CATEGORY_LABELS[a] || a).localeCompare(CATEGORY_LABELS[b] || b)
-  );
-  const catActive = activeTags.size === 1 ? [...activeTags][0] : "";
-  const catOptions = allCats.map(c =>
-    `<option value="${esc(c)}"${catActive === c ? " selected" : ""}>${esc(CATEGORY_LABELS[c] || c)}</option>`
-  ).join("");
+  const EXCLUDED_TAGS = new Set(["gratis", "destacado", "aire libre", "accesible"]);
+  const allCats = [...new Set(allData.flatMap(ev => ev.categories || []))]
+    .filter(c => !EXCLUDED_TAGS.has(c))
+    .sort((a, b) => (CATEGORY_LABELS[a] || a).localeCompare(CATEGORY_LABELS[b] || b));
+  const prefCats = Settings.get("cats", []);
+  const catGridHtml = `
+    <div class="cat-grid">
+      ${allCats.map(c => `<button class="cat-pill${prefCats.includes(c) ? " active" : ""}" onclick="toggleCatPref('${esc(c)}')">${esc(CATEGORY_LABELS[c] || c)}</button>`).join("")}
+    </div>
+    ${prefCats.length ? `<p class="setting-hint">${prefCats.length} seleccionadas — el resto no se muestra</p>` : `<p class="setting-hint">Sin selección = todas visibles</p>`}
+  `;
 
   const statsHtml = `
     <div class="user-stats">
@@ -1101,14 +1115,8 @@ function renderUserView() {
       ${profileHtml}
       ${statsHtml}
       <section class="user-settings">
-        <h3>Filtros</h3>
-        <label class="setting-row">
-          <span>Categoría</span>
-          <select onchange="applyCategory(this.value)">
-            <option value="">Todas</option>
-            ${catOptions}
-          </select>
-        </label>
+        <h3>Categorías</h3>
+        ${catGridHtml}
         <h3>Preferencias</h3>
         <label class="setting-row">
           <span>Ocultar eventos pasados</span>
@@ -1163,6 +1171,14 @@ function applyCategory(val) {
   setView("list");
 }
 
+function toggleCatPref(cat) {
+  let cats = Settings.get("cats", []);
+  cats = cats.includes(cat) ? cats.filter(c => c !== cat) : [...cats, cat];
+  Settings.set("cats", cats);
+  render();
+  renderUserView();
+}
+
 function mapAction(action, id, btn) {
   if (action === "fav") {
     UserData.toggle("favorites", id);
@@ -1211,6 +1227,7 @@ function _getSwipeEvents() {
     })
     .filter(Boolean)
     .filter(ev => !UserData.has("favorites", ev.id) && !UserData.has("seen", ev.id) && !UserData.has("dismissed", ev.id))
+    .filter(ev => _applyCatFilter([ev]).length > 0)
     .sort((a, b) => (a.start_time || "99:99").localeCompare(b.start_time || "99:99"));
 }
 

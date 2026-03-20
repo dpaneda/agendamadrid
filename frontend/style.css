@@ -1132,6 +1132,11 @@ footer p + p {
 .stat-num { font-size: 1.8rem; font-weight: 700; color: var(--primary); }
 .stat-label { font-size: 0.8rem; color: var(--muted); }
 .user-settings h3 { font-size: 0.9rem; font-weight: 600; color: var(--muted); margin-bottom: 0.75rem; }
+.cat-grid { display: flex; flex-wrap: wrap; gap: 0.4rem; padding: 0.25rem 0 0.5rem; }
+.cat-pill { padding: 0.3rem 0.8rem; border-radius: 2rem; border: 1.5px solid var(--border); background: var(--white); color: var(--muted); font-size: 0.82rem; cursor: pointer; transition: all 0.15s; }
+.cat-pill:hover { border-color: var(--primary); color: var(--primary); }
+.cat-pill.active { border-color: var(--primary); background: var(--primary); color: var(--white); }
+.setting-hint { font-size: 0.78rem; color: var(--muted); margin-bottom: 0.75rem; }
 .map-tile-options { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .map-tile-btn { padding: 0.4rem 1rem; border: 1px solid var(--border); border-radius: 2rem; background: var(--white); cursor: pointer; font-size: 0.875rem; }
 .map-tile-btn.active { border-color: var(--primary); background: var(--tag-bg); color: var(--primary); font-weight: 600; }
