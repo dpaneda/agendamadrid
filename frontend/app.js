@@ -1212,6 +1212,7 @@ function _getSwipeEvents() {
     })
     .filter(Boolean)
     .filter(ev => _applyCatFilter([ev]).length > 0)
+    .filter(ev => UserData.has("favorites", ev.id) || UserData.has("seen", ev.id) || UserData.has("dismissed", ev.id))
     .sort((a, b) => (a.start_time || "99:99").localeCompare(b.start_time || "99:99"));
 }
 
