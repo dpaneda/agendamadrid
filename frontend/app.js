@@ -693,6 +693,14 @@ function _applyCatFilter(events) {
   return events.filter(ev => (ev.categories || []).some(c => cats.includes(c)));
 }
 
+function _applyHidePast(events, ds) {
+  if (!Settings.get("hidePast", true)) return events;
+  if (ds !== dateStr(new Date())) return events;
+  const now = new Date();
+  const nowTime = now.getHours().toString().padStart(2, "0") + ":" + now.getMinutes().toString().padStart(2, "0");
+  return events.filter(ev => !ev.start_time || ev.start_time >= nowTime);
+}
+
 function getFilteredDayEvents() {
   const selectedDateStr = dateStr(selectedDate);
   const dayEntries = calendarData[selectedDateStr] || [];
@@ -736,11 +744,7 @@ function getFilteredDayEvents() {
     filtered = filtered.filter(ev => (ev.source || "").split(",").includes(activeSource));
   }
 
-  if (Settings.get("hidePast", true) && dateStr(selectedDate) === dateStr(new Date())) {
-    const now = new Date();
-    const nowTime = now.getHours().toString().padStart(2, "0") + ":" + now.getMinutes().toString().padStart(2, "0");
-    filtered = filtered.filter(ev => !ev.start_time || ev.start_time >= nowTime);
-  }
+  filtered = _applyHidePast(filtered, selectedDateStr);
 
   if (activeSort === "precio") {
     filtered.sort((a, b) => {
@@ -939,6 +943,7 @@ function getEventsForDate(ds) {
   }).filter(Boolean);
 
   events = _applyCatFilter(events);
+  events = _applyHidePast(events, ds);
 
   if (activeUserFilter === "favorites") {
     events = events.filter(ev => UserData.has("favorites", ev.id));
@@ -1204,16 +1209,15 @@ let swipeActive = false;
 function _getSwipeEvents() {
   const ds = dateStr(selectedDate);
   const dayEntries = calendarData[ds] || [];
-  return dayEntries
-    .map(entry => {
-      const ev = allEvents[entry.event_id];
-      if (!ev) return null;
-      return { ...ev, start_date: ds, start_time: entry.start_time || ev.start_time || null, end_time: entry.end_time || ev.end_time || null };
-    })
-    .filter(Boolean)
-    .filter(ev => _applyCatFilter([ev]).length > 0)
-    .filter(ev => UserData.has("favorites", ev.id) || UserData.has("seen", ev.id) || UserData.has("dismissed", ev.id))
-    .sort((a, b) => (a.start_time || "99:99").localeCompare(b.start_time || "99:99"));
+  let events = dayEntries.map(entry => {
+    const ev = allEvents[entry.event_id];
+    if (!ev) return null;
+    return { ...ev, start_date: ds, start_time: entry.start_time || ev.start_time || null, end_time: entry.end_time || ev.end_time || null };
+  }).filter(Boolean);
+  events = _applyCatFilter(events);
+  events = _applyHidePast(events, ds);
+  events = events.filter(ev => UserData.has("favorites", ev.id) || UserData.has("seen", ev.id) || UserData.has("dismissed", ev.id));
+  return events.sort((a, b) => (a.start_time || "99:99").localeCompare(b.start_time || "99:99"));
 }
 
 function renderSwipeView() {
