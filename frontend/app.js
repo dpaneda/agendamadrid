@@ -1118,10 +1118,10 @@ function renderUserView() {
         <h3>Categorías</h3>
         ${catGridHtml}
         <h3>Preferencias</h3>
-        <label class="setting-row">
+        <div class="setting-row">
           <span>Ocultar eventos pasados</span>
           <input type="checkbox" ${hidePast ? "checked" : ""} onchange="applyHidePast(this.checked)">
-        </label>
+        </div>
         <label class="setting-row">
           <span>Ordenar por</span>
           <select onchange="applySort(this.value)">
