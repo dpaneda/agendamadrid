@@ -40,7 +40,7 @@ const UserData = (() => {
 const Settings = {
   _key: "agendamadrid_settings",
   get(k, def) { try { return (JSON.parse(localStorage.getItem(this._key)) || {})[k] ?? def; } catch { return def; } },
-  set(k, v) { const s = this.getAll(); s[k] = v; localStorage.setItem(this._key, JSON.stringify(s)); },
+  set(k, v) { const s = this.getAll(); s[k] = v; s._ts = Date.now(); localStorage.setItem(this._key, JSON.stringify(s)); FirebaseSync.pushSettings(s); },
   getAll() { try { return JSON.parse(localStorage.getItem(this._key)) || {}; } catch { return {}; } }
 };
 
@@ -124,6 +124,7 @@ const FirebaseSync = (() => {
       const remote = doc.exists ? doc.data() : {};
       const local = JSON.parse(localStorage.getItem("agendamadrid_user") || "{}");
 
+      // Merge favorites/seen/dismissed by max timestamp
       const merged = { version: 1, favorites: {}, seen: {}, dismissed: {} };
       for (const col of ["favorites", "seen", "dismissed"]) {
         const l = local[col] || {};
@@ -133,10 +134,21 @@ const FirebaseSync = (() => {
           merged[col][key] = Math.max(l[key] || 0, r[key] || 0);
         }
       }
-
       localStorage.setItem("agendamadrid_user", JSON.stringify(merged));
-      await db.collection("users").doc(user.uid).set(merged);
+
+      // Merge settings: remote wins if newer
+      const localSettings = JSON.parse(localStorage.getItem("agendamadrid_settings") || "{}");
+      const remoteSettings = remote.settings || null;
+      const localTs = localSettings._ts || 0;
+      const remoteTs = remote.settings_ts || 0;
+      if (remoteSettings && remoteTs >= localTs) {
+        const { _ts, ...cleanSettings } = remoteSettings;
+        localStorage.setItem("agendamadrid_settings", JSON.stringify({ ...cleanSettings, _ts: remoteTs }));
+      }
+
+      await db.collection("users").doc(user.uid).set({ ...merged, settings: localSettings, settings_ts: Math.max(localTs, remoteTs) });
       if (typeof render === "function") render();
+      if (typeof renderUserView === "function" && typeof currentView !== "undefined" && currentView === "user") renderUserView();
     } catch (e) {
       console.error("Sync error:", e);
     }
@@ -147,6 +159,14 @@ const FirebaseSync = (() => {
     clearTimeout(writeTimer);
     writeTimer = setTimeout(() => {
       db.collection("users").doc(user.uid).set(data).catch(() => {});
+    }, 1000);
+  }
+
+  function pushSettings(settings) {
+    if (!user || !db) return;
+    clearTimeout(writeTimer);
+    writeTimer = setTimeout(() => {
+      db.collection("users").doc(user.uid).update({ settings, settings_ts: Date.now() }).catch(() => {});
     }, 1000);
   }
 
@@ -180,6 +200,7 @@ const FirebaseSync = (() => {
     login,
     logout,
     push,
+    pushSettings,
     sync: _pullAndMerge,
     isLoggedIn: () => !!user,
     getUser: () => user,
