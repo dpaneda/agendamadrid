@@ -1128,13 +1128,13 @@ footer p + p {
 }
 
 /* User profile view */
-.user-page { max-width: 480px; margin: 0 auto; padding: 1.5rem 1rem; display: flex; flex-direction: column; gap: 2rem; }
+.user-page { max-width: 480px; margin: 0 auto; padding: 0.75rem 1rem; display: flex; flex-direction: column; gap: 1.25rem; }
 .user-header { display: flex; align-items: center; gap: 1rem; }
 .user-avatar-large { width: 64px; height: 64px; border-radius: 50%; }
 .user-name { font-weight: 700; font-size: 1.1rem; }
 .user-email { color: var(--muted); font-size: 0.85rem; }
 .user-stats { display: flex; gap: 1rem; justify-content: center; }
-.stat-card { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 0.3rem; padding: 1rem 0.5rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--white); cursor: pointer; }
+.stat-card { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 0.2rem; padding: 0.6rem 0.5rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--white); cursor: pointer; }
 .stat-card:hover { border-color: var(--primary); }
 .stat-num { font-size: 1.8rem; font-weight: 700; color: var(--primary); }
 .stat-label { font-size: 0.8rem; color: var(--muted); }
