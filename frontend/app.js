@@ -843,8 +843,9 @@ function renderEvent(ev) {
     ? `<p class="event-desc">${esc(ev.description.length > 200 ? ev.description.slice(0, 200) + "..." : ev.description)}</p>`
     : "";
 
+  const EXCLUDED_CATS = new Set(["gratis", "destacado", "aire libre", "accesible"]);
   const seenLabels = new Set();
-  const catTags = ev.categories.map(c => {
+  const catTags = ev.categories.filter(c => !EXCLUDED_CATS.has(c)).map(c => {
     const label = CATEGORY_LABELS[c] || c;
     if (seenLabels.has(label)) return "";
     seenLabels.add(label);
@@ -1308,7 +1309,8 @@ function _swipeCardInner(ev) {
   const price = ev.price || "";
   const isFree = !price || price === "0" || price === "0.00" ||
     price.toLowerCase().includes("gratis") || price.toLowerCase().includes("gratuito");
-  const catBadges = [...new Set(ev.categories)].map(c => {
+  const EXCLUDED_CATS = new Set(["gratis", "destacado", "aire libre", "accesible"]);
+  const catBadges = [...new Set(ev.categories)].filter(c => !EXCLUDED_CATS.has(c)).map(c => {
     const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
     return `<span class="swipe-info-badge swipe-info-badge-cat">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</span>`;
   }).join("");
