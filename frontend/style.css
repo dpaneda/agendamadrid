@@ -933,8 +933,8 @@ footer p + p {
   }
 
   main {
-    padding: 0.8rem;
-    padding-bottom: calc(0.8rem + 58px + env(safe-area-inset-bottom, 0px));
+    padding: 0.5rem;
+    padding-bottom: calc(0.5rem + 58px + env(safe-area-inset-bottom, 0px));
   }
 
   .event-card {
