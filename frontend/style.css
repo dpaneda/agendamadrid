@@ -437,6 +437,8 @@ main {
   border: 1px solid var(--border);
 }
 
+body:not([data-view="list"]) footer { display: none; }
+
 body[data-view="map"] #map-container {
   border-radius: 0;
   border: none;
@@ -933,8 +935,8 @@ footer p + p {
   }
 
   main {
-    padding: 0.25rem;
-    padding-bottom: calc(0.25rem + 58px + env(safe-area-inset-bottom, 0px));
+    padding: 0.1rem;
+    padding-bottom: calc(0.1rem + 58px + env(safe-area-inset-bottom, 0px));
   }
 
   .event-card {
