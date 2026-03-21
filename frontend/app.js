@@ -435,6 +435,7 @@ async function init() {
   await loadData();
 
   setView(currentView);
+  document.body.classList.add("ready");
 
   // Swipe to change day on touch devices
   let touchStartX = 0, touchStartY = 0;
