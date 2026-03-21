@@ -1308,8 +1308,15 @@ function _swipeCardInner(ev) {
   })();
 
   const price = ev.price || "";
+  const priceLower = price.toLowerCase();
   const isFree = !price || price === "0" || price === "0.00" ||
-    price.toLowerCase().includes("gratis") || price.toLowerCase().includes("gratuito");
+    priceLower.includes("gratis") || priceLower.includes("gratuito") || priceLower.includes("entrada libre");
+  const shortPrice = (() => {
+    if (isFree || !price) return "";
+    if (price.length <= 30) return price;
+    const m = price.match(/(\d+[\.,]?\d*)\s*€/);
+    return m ? `Desde ${m[1]} €` : "De pago";
+  })();
   const EXCLUDED_CATS = new Set(["gratis", "destacado", "aire libre", "accesible"]);
   const catBadges = [...new Set(ev.categories)].filter(c => !EXCLUDED_CATS.has(c)).map(c => {
     const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
@@ -1329,7 +1336,7 @@ function _swipeCardInner(ev) {
     </div>
     <div class="swipe-info">
       <div class="swipe-info-badges">
-        ${isFree ? '<span class="swipe-info-badge swipe-info-badge-free">Gratis</span>' : (price ? `<span class="swipe-info-badge swipe-info-badge-price">${esc(price)}</span>` : "")}
+        ${isFree ? '<span class="swipe-info-badge swipe-info-badge-free">Gratis</span>' : (shortPrice ? `<span class="swipe-info-badge swipe-info-badge-price">${esc(shortPrice)}</span>` : "")}
         ${distBadge}
         ${catBadges}
       </div>
