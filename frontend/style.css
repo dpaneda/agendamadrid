@@ -1128,7 +1128,7 @@ footer p + p {
 }
 
 /* User profile view */
-.user-page { max-width: 480px; margin: 0 auto; padding: 0.75rem 1rem; display: flex; flex-direction: column; gap: 1.25rem; }
+.user-page { max-width: 480px; margin: 0 auto; padding: 0.75rem 1rem; display: flex; flex-direction: column; gap: 0.75rem; }
 .user-header { display: flex; align-items: center; gap: 1rem; }
 .user-avatar-large { width: 64px; height: 64px; border-radius: 50%; }
 .user-name { font-weight: 700; font-size: 1.1rem; }
@@ -1139,7 +1139,7 @@ footer p + p {
 .stat-num { font-size: 1.8rem; font-weight: 700; color: var(--primary); }
 .stat-label { font-size: 0.8rem; color: var(--muted); }
 .user-settings { display: flex; flex-direction: column; gap: 0.1rem; }
-.user-settings h3 { font-size: 1.1rem; font-weight: 700; color: var(--fg); margin-bottom: -0.5rem; }
+.user-settings h3 { font-size: 1.1rem; font-weight: 700; color: var(--fg); margin-bottom: 0.25rem; }
 .cat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.4rem; padding: 0.25rem 0 0.5rem; }
 .cat-pill { padding: 0.28rem 0.7rem; border-radius: 2rem; border: 1.5px solid var(--border); background: var(--white); color: var(--fg); font-size: 0.82rem; cursor: pointer; transition: all 0.15s; display: inline-flex; align-items: center; gap: 0.3rem; }
 .cat-pill:hover { border-color: var(--primary); background: var(--tag-bg); }
