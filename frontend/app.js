@@ -1218,7 +1218,7 @@ function _getSwipeEvents() {
   }).filter(Boolean);
   events = _applyCatFilter(events);
   events = _applyHidePast(events, ds);
-  events = events.filter(ev => UserData.has("favorites", ev.id) || UserData.has("seen", ev.id) || UserData.has("dismissed", ev.id));
+  events = events.filter(ev => !UserData.has("favorites", ev.id) && !UserData.has("seen", ev.id) && !UserData.has("dismissed", ev.id));
   return events.sort((a, b) => (a.start_time || "99:99").localeCompare(b.start_time || "99:99"));
 }
 
@@ -1243,8 +1243,8 @@ function _buildSwipeDeck() {
       <button class="swipe-btn swipe-btn-dismiss" onclick="triggerSwipe('left')" title="Ocultar">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
-      <button class="swipe-btn swipe-btn-seen" onclick="triggerSwipe('up')" title="Visto">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+      <button class="swipe-btn swipe-btn-skip" onclick="triggerSwipe('up')" title="Saltar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"><polyline points="7 20 17 12 7 4"/></svg>
       </button>
       <button class="swipe-btn swipe-btn-fav" onclick="triggerSwipe('right')" title="Favorito">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
@@ -1254,9 +1254,13 @@ function _buildSwipeDeck() {
   if (!remaining.length) {
     container.insertAdjacentHTML("afterbegin", `
       <div class="swipe-empty">
-        <div class="swipe-empty-icon">📭</div>
-        <div class="swipe-empty-title">Sin eventos para este día</div>
-        <button onclick="setView('list')">Ver lista</button>
+        <div class="swipe-empty-icon">✅</div>
+        <div class="swipe-empty-title">¡Todo clasificado!</div>
+        <p>No quedan eventos por revisar</p>
+        <div class="swipe-empty-actions">
+          <button onclick="setView('list')">Ver lista</button>
+          <button onclick="changeDay(1); renderSwipeView()">Siguiente día →</button>
+        </div>
       </div>`);
     return;
   }
@@ -1304,10 +1308,6 @@ function _swipeCardInner(ev) {
   const price = ev.price || "";
   const isFree = !price || price === "0" || price === "0.00" ||
     price.toLowerCase().includes("gratis") || price.toLowerCase().includes("gratuito");
-  const isFav = UserData.has("favorites", ev.id);
-  const isSeen = UserData.has("seen", ev.id);
-  const isDismissed = UserData.has("dismissed", ev.id);
-
   const catBadges = [...new Set(ev.categories)].map(c => {
     const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
     return `<span class="swipe-info-badge swipe-info-badge-cat">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</span>`;
@@ -1328,9 +1328,6 @@ function _swipeCardInner(ev) {
       <div class="swipe-info-badges">
         ${isFree ? '<span class="swipe-info-badge swipe-info-badge-free">Gratis</span>' : (price ? `<span class="swipe-info-badge swipe-info-badge-price">${esc(price)}</span>` : "")}
         ${distBadge}
-        ${isFav ? '<span class="swipe-info-badge swipe-info-badge-fav">❤️ Favorito</span>' : ""}
-        ${isSeen ? '<span class="swipe-info-badge swipe-info-badge-seen">✓ Visto</span>' : ""}
-        ${isDismissed ? '<span class="swipe-info-badge swipe-info-badge-dismissed">✕ Oculto</span>' : ""}
         ${catBadges}
       </div>
       <div class="swipe-info-title">${esc(ev.title)}</div>
@@ -1343,7 +1340,7 @@ function _swipeCardInner(ev) {
     </div>
     <div class="swipe-overlay swipe-overlay-right"><span>❤️</span><span>Favorito</span></div>
     <div class="swipe-overlay swipe-overlay-left"><span>✕</span><span>Ocultar</span></div>
-    <div class="swipe-overlay swipe-overlay-up"><span>✓</span><span>Visto</span></div>`;
+    <div class="swipe-overlay swipe-overlay-up"><span>→</span><span>Saltar</span></div>`;
 }
 
 function triggerSwipe(dir) {
@@ -1363,7 +1360,7 @@ function triggerSwipe(dir) {
 
   if (dir === "right" && !UserData.has("favorites", id)) UserData.toggle("favorites", id);
   else if (dir === "left" && !UserData.has("dismissed", id)) UserData.toggle("dismissed", id);
-  else if (dir === "up" && !UserData.has("seen", id)) UserData.toggle("seen", id);
+  // up = skip (no classification)
 
   setTimeout(() => {
     swipeIndex++;
@@ -1397,10 +1394,11 @@ function _initSwipeDrag() {
     if (!lockDir && (Math.abs(dx) > 8 || Math.abs(dy) > 8)) {
       lockDir = Math.abs(dx) >= Math.abs(dy) ? "h" : "v";
     }
-    if (lockDir === "v") return;
+    // Allow both horizontal drags and upward drags (skip)
+    if (lockDir === "v" && dy >= 0) return; // only block downward scrolls
 
-    const rot = dx * 0.06;
-    card.style.transform = `translateX(${dx}px) translateY(${dy}px) rotate(${rot}deg)`;
+    const rot = lockDir === "v" ? 0 : dx * 0.06;
+    card.style.transform = `translateX(${dx}px) translateY(${dy < 0 ? dy : 0}px) rotate(${rot}deg)`;
 
     const T = 60;
     const isUp = dy < -T && Math.abs(dy) > Math.abs(dx);
@@ -1421,7 +1419,7 @@ function _initSwipeDrag() {
   function end() {
     if (!dragging) return;
     dragging = false;
-    if (lockDir === "v") return;
+    if (lockDir === "v" && dy >= 0) return;
 
     const T = 90;
     const isUp = dy < -T && Math.abs(dy) > Math.abs(dx);
@@ -1442,7 +1440,7 @@ function _initSwipeDrag() {
 
   card.addEventListener("touchmove", e => {
     const t = e.touches[0]; move(t.clientX, t.clientY);
-    if (lockDir === "h") e.preventDefault();
+    if (lockDir === "h" || (lockDir === "v" && dy < 0)) e.preventDefault();
   }, { passive: false });
 
   card.addEventListener("touchend", end, { passive: true });

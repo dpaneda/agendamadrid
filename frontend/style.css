@@ -1253,26 +1253,26 @@ footer p + p {
 }
 
 .swipe-info-meta {
-  font-size: 0.85rem;
-  opacity: 0.85;
+  font-size: 1rem;
+  opacity: 0.9;
   margin-bottom: 0.5rem;
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  gap: 0.2rem;
 }
 
 .swipe-info-desc {
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   line-height: 1.55;
-  opacity: 0.8;
+  opacity: 0.85;
   margin-top: 0.4rem;
 }
 
 .swipe-info-link {
   display: inline-block;
   margin-top: 0.6rem;
-  color: rgba(255,255,255,0.75);
-  font-size: 0.8rem;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.95rem;
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -1310,9 +1310,9 @@ footer p + p {
 .swipe-counter {
   background: rgba(0,0,0,0.35);
   color: rgba(255,255,255,0.9);
-  font-size: 0.72rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  padding: 0.2rem 0.6rem;
+  padding: 0.3rem 0.8rem;
   border-radius: 999px;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
@@ -1386,11 +1386,11 @@ footer p + p {
 .swipe-btn-dismiss { border-color: #ef4444; color: #ef4444; }
 .swipe-btn-dismiss:active { background: rgba(239,68,68,0.12); }
 
-.swipe-btn-seen {
+.swipe-btn-skip {
   border-color: #3b82f6; color: #3b82f6;
   width: 46px; height: 46px;
 }
-.swipe-btn-seen:active { background: rgba(59,130,246,0.12); }
+.swipe-btn-skip:active { background: rgba(59,130,246,0.12); }
 
 .swipe-btn-fav { border-color: #22c55e; color: #22c55e; }
 .swipe-btn-fav:active { background: rgba(34,197,94,0.12); }
@@ -1412,6 +1412,10 @@ footer p + p {
 .swipe-empty-icon { font-size: 4rem; margin-bottom: 0.75rem; }
 .swipe-empty-title { font-size: 1.2rem; font-weight: 700; color: white; margin-bottom: 0.4rem; }
 .swipe-empty p { margin-bottom: 1.5rem; font-size: 0.9rem; }
+.swipe-empty-actions {
+  display: flex;
+  gap: 0.75rem;
+}
 .swipe-empty button {
   background: white;
   color: #111;
