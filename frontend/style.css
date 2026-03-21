@@ -1197,15 +1197,17 @@ footer p + p {
 /* Large emoji centered in upper portion */
 .swipe-emoji-area {
   position: absolute;
-  inset: 0;
-  bottom: 42%;
+  top: 15%;
+  left: 0; right: 0;
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: none;
 }
 
 .swipe-emoji-big {
-  font-size: 7rem;
+  font-size: 5rem;
   filter: drop-shadow(0 8px 24px rgba(0,0,0,0.35));
   line-height: 1;
 }
