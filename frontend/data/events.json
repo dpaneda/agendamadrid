@@ -19046,21 +19046,22 @@
   },
   "c66f295e6e9c971a": {
     "title": "Escribe y dibuja. I Muestra de relato breve y cómic",
-    "description": null,
-    "location_name": null,
-    "address": null,
-    "district": null,
-    "latitude": null,
-    "longitude": null,
-    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=ae000e36396fc910VgnVCM100000891ecb1aRCRD",
+    "description": "De 17:30 a 20 horas. No te piercas la entrega de premios y a continuación el taller de cómic y concierto. Espacio de ocio saludable. Libre de consumos.",
+    "location_name": "Junta Municipal del Distrito de Usera",
+    "address": "AVENIDA RAFAELA YBARRA 41",
+    "district": "Usera",
+    "latitude": 40.3823867401053,
+    "longitude": -3.710861696949648,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=5820b3f15550d910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "otros",
-      "gratis"
+      "gratis",
+      "talleres"
     ],
     "id": "c66f295e6e9c971a",
-    "created_at": "2026-03-17T20:37:06.498345+00:00",
-    "updated_at": "2026-03-17T20:37:06.498345+00:00"
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
   },
   "5d26a25917f824dc": {
     "title": "Escribir con IA. Taller de la palabra e imagen",
@@ -28897,12 +28898,12 @@
   },
   "fe33f630e2fd9597": {
     "title": "Taller de comic. Día del libro",
-    "description": "Edades: de 14 a 30 años. De 17 a 19 horas en la plaza del Pueblo (Orcasur)",
-    "location_name": null,
-    "address": null,
-    "district": null,
-    "latitude": null,
-    "longitude": null,
+    "description": "Edades: de 14 a 30 años. De 18 a 20 horas.",
+    "location_name": "Junta Municipal del Distrito de Usera",
+    "address": "AVENIDA RAFAELA YBARRA 41",
+    "district": "Usera",
+    "latitude": 40.3823867401053,
+    "longitude": -3.710861696949648,
     "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=bd1a207299aeb910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
@@ -28910,8 +28911,8 @@
       "gratis"
     ],
     "id": "fe33f630e2fd9597",
-    "created_at": "2026-03-17T20:37:06.498345+00:00",
-    "updated_at": "2026-03-17T20:37:06.498345+00:00"
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
   },
   "c4ba603b7f3f6830": {
     "title": "Taller de Construcción Casas de Pájaros en el Huerto La Rosa Fuera del Tiesto: sábado 21 de marzo a las 12:00 h",
@@ -35639,5 +35640,1620 @@
     "id": "88687e593a59eaeb",
     "created_at": "2026-03-20T18:49:46.273918+00:00",
     "updated_at": "2026-03-20T18:49:46.273918+00:00"
+  },
+  "e6915358929b931d": {
+    "title": "Difícil de explicar",
+    "description": "Julia Zac crea una performance que explora el sentir y lo que no se puede explicar (DT Espacio Escénico. 26 a 28 marzo).",
+    "location_name": "DT Espacio Escénico",
+    "address": "de la Reina, 9",
+    "district": null,
+    "latitude": 40.4205184,
+    "longitude": -3.7002514,
+    "url": "https://dtespacioescenico.com/temporada-2025-2026/dificil-de-explicar/",
+    "price": "General: 14 €Descuento con carnés joven, de estudiante, de desempleado y de jubilado: 12 €",
+    "source_url": "https://www.esmadrid.com/agenda/dificil-explicar-dt-espacio-escenico",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "danza"
+    ],
+    "schedule": null,
+    "id": "e6915358929b931d",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "8f72567cf7899ec3": {
+    "title": "Homo Sapiens",
+    "description": "Un montaje de humor ácido que reflexiona sobre las contradicciones de la vida moderna (Salto Escénico. 27 mar a 8 may).",
+    "location_name": "Salto Escénico",
+    "address": "de Granada, 10",
+    "district": null,
+    "latitude": 40.4048908,
+    "longitude": -3.6799369,
+    "url": "https://www.saltoescenico.es/es/catalogo/c/14-improrisa.html",
+    "price": "General: 15 €",
+    "source_url": "https://www.esmadrid.com/agenda/homo-sapiens-salto-escenico",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "danza"
+    ],
+    "schedule": null,
+    "id": "8f72567cf7899ec3",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "b9b95d6e7773345b": {
+    "title": "The Magical Music of Harry Potter - Live in Concert",
+    "description": "Una velada única para los fans de Harry Potter con las canciones de sus películas (Palacio Vistalegre Arena. 3 abril).",
+    "location_name": "Palacio Vistalegre Arena",
+    "address": "de Utebo , 1",
+    "district": null,
+    "latitude": 40.3862011,
+    "longitude": -3.7379452,
+    "url": "https://www.palaciovistalegre.com/event/la-musica-magica-de-harry-potter-en-concierto/",
+    "price": "Desde 39 €",
+    "source_url": "https://www.esmadrid.com/agenda/magical-music-harry-potter-live-concert-palacio-vistalegre-arena",
+    "source": "esmadrid",
+    "categories": [
+      "musica"
+    ],
+    "schedule": null,
+    "id": "b9b95d6e7773345b",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "bfa45894a5903f7f": {
+    "title": "The Dark Side of the Moon",
+    "description": "The Dark Side of the Moon, el álbum más vendido de Pink Floyd en directo con los miembros originales de la gira (Palacio Vistalegre Arena. 3 abril).",
+    "location_name": "Palacio Vistalegre Arena",
+    "address": "de Utebo , 1",
+    "district": null,
+    "latitude": 40.386027002165,
+    "longitude": -3.738570213318,
+    "url": "https://www.palaciovistalegre.com/event/the-dark-side-of-the-moon-en-concierto/",
+    "price": "Desde 39€",
+    "source_url": "https://www.esmadrid.com/agenda/dark-side-moon-palacio-vistalegre-arena",
+    "source": "esmadrid",
+    "categories": [
+      "musica"
+    ],
+    "schedule": null,
+    "id": "bfa45894a5903f7f",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "c1048cab5e69b2b7": {
+    "title": "Greenpiss - Yllana",
+    "description": "El prestigioso grupo cómico presenta una divertida sátira sobre la ecología y el futuro del planeta y el ser humano (Gran Teatro Pavón. Miércoles a domingos. 3 a 26 abril).",
+    "location_name": "Gran Teatro Pavón",
+    "address": "de Embajadores, 9",
+    "district": null,
+    "latitude": 40.4099859,
+    "longitude": -3.7061463,
+    "url": "https://tickets.oneboxtds.com/tpavon/events/52492",
+    "price": "Desde 21,50 €",
+    "source_url": "https://www.esmadrid.com/agenda/greenpiss-yllana-gran-teatro-pavon",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "danza"
+    ],
+    "schedule": {
+      "2": [
+        "20:00:00"
+      ],
+      "3": [
+        "20:00:00"
+      ],
+      "4": [
+        "19:00:00",
+        "21:30:00"
+      ],
+      "5": [
+        "19:00:00",
+        "21:30:00"
+      ],
+      "6": [
+        "17:30:00",
+        "20:00:00"
+      ]
+    },
+    "id": "c1048cab5e69b2b7",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "064dc63942a84550": {
+    "title": "Rayo Vallecano - Elche CF (LALIGA EA SPORTS)",
+    "description": "Los rayistas reciben en casa al conjunto valenciano que en la primera vuelta se alzó con la victoria por 4 goles a 0 (Estadio de Vallecas. 3 abril).",
+    "location_name": "Campo de Fútbol de Vallecas",
+    "address": "del Payaso Fofó, s/n",
+    "district": null,
+    "latitude": 40.392239566217,
+    "longitude": -3.658685982227,
+    "url": "https://www.rayovallecano.es/partidos/temporada-2025-2026-laliga-ea-sports-30-rayo-vallecano-vs-elche-cf",
+    "price": "Consultar página oficial",
+    "source_url": "https://www.esmadrid.com/agenda/rayo-vallecano-elche-cf-laliga-ea-sports-estadio-vallecas",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "schedule": null,
+    "id": "064dc63942a84550",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "bdc415c696c18d6c": {
+    "title": "A por la Plata",
+    "description": "COMPAÑÍA: Cía. Materia NerviosaGÉNERO: Teatro gestual, títeres, teatro de sombras.PÚBLICO: Público Familiar  ¿Preparados para embarcaros en la mayor aventura pirata, sin tener que salir de la butaca?¡A por la plata! es una comedia familiar cargada de imaginación, acción y mucho humor, donde el pú...",
+    "location_name": "Centro Cultural Nicolás Salmerón (Chamartín)",
+    "address": "CALLE MANTUANO 51",
+    "district": "Chamartin",
+    "latitude": 40.44834125150792,
+    "longitude": -3.6761992414203526,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=190e74520fa0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "id": "bdc415c696c18d6c",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "31fb8f01ec839923": {
+    "title": "Alfredo García",
+    "description": "El madrileño Alfredo García (antes Alfa, Le Punk y Buenas Noches Rose) se presenta con sus canciones, una guitarra acústica y un micro, como únicos argumentos. Y es que no se necesita mucho más cuando se es uno de los grandes compositores del rock español. En esta ocasión especial, Alfredo repasa...",
+    "location_name": "Centro Cultural Buenavista (Salamanca)",
+    "address": "AVENIDA TOREROS 5",
+    "district": "Salamanca",
+    "latitude": 40.43200001609297,
+    "longitude": -3.670904677285496,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=f157a01714b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "musica",
+      "gratis"
+    ],
+    "id": "31fb8f01ec839923",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "7238015176638673": {
+    "title": "Arantza Martin &amp; Marie Anne Dasques",
+    "description": "Acuarela / Pintura.",
+    "location_name": "Centro Cultural Buenavista (Salamanca)",
+    "address": "AVENIDA TOREROS 5",
+    "district": "Salamanca",
+    "latitude": 40.43200001609297,
+    "longitude": -3.670904677285496,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=d275a01714b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "id": "7238015176638673",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "ee88cbd679753194": {
+    "title": "Atardecer en la Dehesa: un viaje a través de la historia de Madrid",
+    "description": null,
+    "location_name": "Centro de Información y Educación Ambiental de Dehesa de la Villa",
+    "address": null,
+    "district": "Moncloa-Aravaca",
+    "latitude": 40.45914104116349,
+    "longitude": -3.718270563679269,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=edf85713f2b0d910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "id": "ee88cbd679753194",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "150695ad9c2546f4": {
+    "title": "Bibliotecario por un día",
+    "description": null,
+    "location_name": "Biblioteca Pública Municipal Canillejas (San Blas-Canillejas)",
+    "address": "CALLE BOLTAÑA 23",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.44640229188281,
+    "longitude": -3.6117933204271098,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=0082419ec8b0d910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "id": "150695ad9c2546f4",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "8a0edcd0bfe8490d": {
+    "title": "Cantautores Míticos Revisitados",
+    "description": "De 12 a 13 horas.  Edad: Todos los públicos (menores acompañados con un adulto).  Sinopsis: El trio formado por el contrabajista Bas Kisjes, el guitarrista Carlos Gutiérrez y el cantante Miguel Rubio propone un repertorio ecléctico que trae a la sonoridad del world music jazz las canciones de can...",
+    "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
+    "address": "CALLE DOCTOR TOLOSA LATOUR 16",
+    "district": "Usera",
+    "latitude": 40.374166248648216,
+    "longitude": -3.7032220308808577,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=261c9c046160d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "musica",
+      "gratis"
+    ],
+    "id": "8a0edcd0bfe8490d",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "624e1d38e3493ac4": {
+    "title": "Completando las Sevillanas (La 3.ª y la 4.ª)",
+    "description": "De 12 a 13:30 horas. Juan Carlos ‘El Niño’.  Edad: Todos los públicos, a partir de 6 años (menores acompañados con un adulto).  Sinopsis: En esta segunda sesión abordaremos las sevillanas 3 y 4, dando continuidad a lo aprendido el día anterior. Se trabajarán las transiciones, la fluidez y la inte...",
+    "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
+    "address": "CALLE DOCTOR TOLOSA LATOUR 16",
+    "district": "Usera",
+    "latitude": 40.374166248648216,
+    "longitude": -3.7032220308808577,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=8e89483d1260d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "danza",
+      "gratis"
+    ],
+    "id": "624e1d38e3493ac4",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "a7be91c2ffc5cf19": {
+    "title": "Conferencia: La interpretación de los sueños",
+    "description": null,
+    "location_name": "Biblioteca Pública Municipal San Blas (San Blas-Canillejas)",
+    "address": "CALLE SAN ROMAN DEL VALLE 8",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.420231627534996,
+    "longitude": -3.6218113860909074,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=4619e98399a0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conferencias",
+      "gratis"
+    ],
+    "id": "a7be91c2ffc5cf19",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "e1651571cb92f6a0": {
+    "title": "Conoce el mundo de los murciélagos",
+    "description": "De 10:30 a 11:30 horas.  Edad: Público infantil, a partir de 5 años (menores acompañados con un adulto).  Sinopsis: Ven a descubrir con nosotros los secretos de estos fascinantes mamíferos voladores. En este dinámico taller aprenderás sobre su ecolocalización, alimentación y beneficios para la ci...",
+    "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
+    "address": "CALLE DOCTOR TOLOSA LATOUR 16",
+    "district": "Usera",
+    "latitude": 40.374166248648216,
+    "longitude": -3.7032220308808577,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=4f9e9c046160d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "id": "e1651571cb92f6a0",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "19e378f0e8fc753c": {
+    "title": "Conoce la Dehesa de la Villa: ruta por su historia y naturaleza",
+    "description": null,
+    "location_name": "Centro de Información y Educación Ambiental de Dehesa de la Villa",
+    "address": null,
+    "district": "Moncloa-Aravaca",
+    "latitude": 40.45914104116349,
+    "longitude": -3.718270563679269,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=455cd3783ea0d910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "id": "19e378f0e8fc753c",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "ba92242f6c7d9456": {
+    "title": "Conoce las aves de la Dehesa: ruta ornitológica",
+    "description": null,
+    "location_name": "Centro de Información y Educación Ambiental de Dehesa de la Villa",
+    "address": null,
+    "district": "Moncloa-Aravaca",
+    "latitude": 40.45914104116349,
+    "longitude": -3.718270563679269,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=317ad0e249a0d910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "id": "ba92242f6c7d9456",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "290debee48a26b74": {
+    "title": "Cosmética natural",
+    "description": "De 14:30 a 19 horas.   Productos sanos y ecológicos para mejorar nuestro aspecto sin afectar a nuestra salud.   Edad: Público familiar, a partir de 12 años (menores acompañados con un adulto). Imprescindible reserva previa.  Sinopsis: Cuidar nuestra imagen sin tóxicos es posible. Ven a este talle...",
+    "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
+    "address": "CALLE DOCTOR TOLOSA LATOUR 16",
+    "district": "Usera",
+    "latitude": 40.374166248648216,
+    "longitude": -3.7032220308808577,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=20f5f83f6060d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "id": "290debee48a26b74",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "c4d83ce0e115b3c9": {
+    "title": "Creduto Morto",
+    "description": "Compañía. Disparate Pomodoro  Con Creduto Morto, el público podrá acercarse a este género clásico del teatro italiano desde una perspectiva actual, pero manteniendo el canon clásico. Disparate Pomodoro Cía le ha dado una vuelta de tuerca a un canovaccio clásico manteniendo los enredos y malentend...",
+    "location_name": "Centro Cultural Buenavista (Salamanca)",
+    "address": "AVENIDA TOREROS 5",
+    "district": "Salamanca",
+    "latitude": 40.43200001609297,
+    "longitude": -3.670904677285496,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=00e93bd055b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "gratis"
+    ],
+    "id": "c4d83ce0e115b3c9",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "5a12fc621047cfb9": {
+    "title": "Descubrir jugando",
+    "description": null,
+    "location_name": "Espacio de Igualdad Lourdes Hernández. Carabanchel",
+    "address": "CALLE COMANDANTE FONTANES 8",
+    "district": "Carabanchel",
+    "latitude": 40.395326406887946,
+    "longitude": -3.721622686264932,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=79025c797f50d910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "id": "5a12fc621047cfb9",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "5eea22c067fe8cbd": {
+    "title": "Dibujando con letras Parte III",
+    "description": "Niños de 4 a 12 años   En este taller divertido y creativo, los niños de 4 a 12 años aprenderán a dibujar utilizando las letras como base. Los niños descubrirán cómo las letras pueden ser utilizados para crear animales y objetos interesantes. Deseamos desarrollar la creatividad, la imaginación y ...",
+    "location_name": "Centro Cultural Nicolás Salmerón (Chamartín)",
+    "address": "CALLE MANTUANO 51",
+    "district": "Chamartin",
+    "latitude": 40.44834125150792,
+    "longitude": -3.6761992414203526,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=576ec03201b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "id": "5eea22c067fe8cbd",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "3f726bfa548ed0a4": {
+    "title": "Dúo Lírico: El Género en el Canto",
+    "description": "De 12 a 13 horas. Javier Blanco y Eva del Moral.  Edad: Todos los públicos, a partir de 10 años (menores acompañados con un adulto). Imprescindible reserva previa.  Sinopsis: El concierto hace un recorrido por los distintos géneros que han existido durante toda la historia del Canto. Ópera, Zarzu...",
+    "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
+    "address": "CALLE DOCTOR TOLOSA LATOUR 16",
+    "district": "Usera",
+    "latitude": 40.374166248648216,
+    "longitude": -3.7032220308808577,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=98419c046160d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "musica",
+      "gratis"
+    ],
+    "id": "3f726bfa548ed0a4",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "69cd97b49d68a77a": {
+    "title": "El cine radical de Gus Van Sant",
+    "description": null,
+    "location_name": "Matadero Madrid",
+    "address": "PLAZA LEGAZPI 8",
+    "district": "Arganzuela",
+    "latitude": 40.39130985242181,
+    "longitude": -3.6958028442054074,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=31d8166d82b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "destacado"
+    ],
+    "id": "69cd97b49d68a77a",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "d8369556a047e8bd": {
+    "title": "El cuento mezclado",
+    "description": "Compañía.. Tanalborde  A Dorita se le han caído todos los libros, quería cargar con todos y se han caído... Y se han mezclado... ¡todos los cuentos estan mezclados... ¿quién tiene la bota del gato con botas? ¿Y la cestita de caperucita? El lobo está perdido, ha aparecido en otro cuento!¡¡¡Vaya li...",
+    "location_name": "Centro Cultural Buenavista (Salamanca)",
+    "address": "AVENIDA TOREROS 5",
+    "district": "Salamanca",
+    "latitude": 40.43200001609297,
+    "longitude": -3.670904677285496,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=09033bd055b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "gratis"
+    ],
+    "id": "d8369556a047e8bd",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "b25d5f291cb2f37c": {
+    "title": "Evocaciones. Dibujos a bolígrafo",
+    "description": "Inauguración sábado 11 de abril a las 12 horas.   Edad: Todos los públicos.  Sinopsis: Muestra de dibujos a bolígrafo y reproducciones que representan escenas fotográficas y de películas pertenecientes al proyecto Dèplacer (Desplazar), donde se descentraliza el encuadre y se fragmenta la imagen, ...",
+    "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
+    "address": "CALLE DOCTOR TOLOSA LATOUR 16",
+    "district": "Usera",
+    "latitude": 40.374166248648216,
+    "longitude": -3.7032220308808577,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=584cf83f6060d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "id": "b25d5f291cb2f37c",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "b059385963e4a3a4": {
+    "title": "Fantasías sentimentales",
+    "description": "De Marina Sorín y Nacho Mastreta.   Recomendada a partir de 18 años.  Marina Sorin y Nacho Mastretta presentan 'Fantasías sentimentales', su nuevo espectáculo a dúo, en el que combinan con su personal estilo, canciones a dos voces y piezas instrumentales. Ambos multiinstrumentistas sorprenden en ...",
+    "location_name": "Centro Cultural Antonio Machado (San Blas - Canillejas)",
+    "address": "CALLE SAN ROMAN DEL VALLE 8",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.420280457570335,
+    "longitude": -3.621730741880216,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=04c206cb7fa0d910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "musica",
+      "gratis"
+    ],
+    "id": "b059385963e4a3a4",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "6ab24e76778f73ba": {
+    "title": "Father mother sisther brother",
+    "description": "Director, Jim Jarmusch   Recomendada a partir de 12 años  Película dividida en tres actos alrededor del mismo hecho: el reencuentro de miembros de una familia. Unos hermanos ya adultos se vuelven a juntar después de años sin verse, forzados a enfrentarse a tensiones no resueltas y a reevaluar sus...",
+    "location_name": "Centro Cultural Buero Vallejo (San Blas - Canillejas)",
+    "address": "CALLE BOLTAÑA 27",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.44477474902185,
+    "longitude": -3.6129105844633775,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=d7af187371b0d910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "gratis"
+    ],
+    "id": "6ab24e76778f73ba",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "e348f23c11f666b2": {
+    "title": "Fauna del huerto",
+    "description": "Se trata de una actividad diseñada para familias de acercamiento a la Biodiversidad presente en los Huertos. La actividad incorpora un recorrido por las instalaciones del Huerto del Retiro observando y reflexionando sobre la variada diversidad e introduciéndonos en las distintas especies de anima...",
+    "location_name": "Centro de Educación Ambiental El Retiro",
+    "address": "PASEO FERNAN NUÑEZ 2",
+    "district": "Retiro",
+    "latitude": 40.40943503279114,
+    "longitude": -3.6861797800993257,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=f47def951fa33810VgnVCM1000001d4a900aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros",
+      "gratis"
+    ],
+    "id": "e348f23c11f666b2",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "5dff89fa26406bdc": {
+    "title": "Festival Cuentos de la Tierra",
+    "description": "De 11 a 13 horas. Ana Matesanz.  Edad: Todos los públicos (menores acompañados con un adulto).   Sinopsis: Inscríbete y participa en un encuentro donde tu voz, será el puente para conectar con nuestro Planeta Tierra.  No hace falta ser un profesional, solo tener ganas de emocionar y compartir con...",
+    "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
+    "address": "CALLE DOCTOR TOLOSA LATOUR 16",
+    "district": "Usera",
+    "latitude": 40.374166248648216,
+    "longitude": -3.7032220308808577,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=7f10483d1260d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "id": "5dff89fa26406bdc",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "11e4519d4fdfb4fb": {
+    "title": "Hotel de insectos",
+    "description": "De 17:30 a 18:30 horas.  Edad: Público familiar, a partir de 7 años (menores acompañados con un adulto). Imprescindible reserva previa.  Sinopsis: Los insectos cumplen muchas funciones fundamentales en los ecosistemas. Tan importantes como la polinización, ser el principal alimento de una inmensa...",
+    "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
+    "address": "CALLE DOCTOR TOLOSA LATOUR 16",
+    "district": "Usera",
+    "latitude": 40.374166248648216,
+    "longitude": -3.7032220308808577,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=d881f83f6060d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "id": "11e4519d4fdfb4fb",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "74a7dd4844378c55": {
+    "title": "Identificación de mariposas",
+    "description": "De 10:30 a 11:30 horas.  Edad: Público familiar, a partir de 7 años (menores acompañados con un adulto).  Sinopsis: Las mariposas son unos seres muy especiales. A lo largo de su vida cambian su cuerpo de una manera muy radical, pasando de oruga a un bello insecto con alas de mil colores… En este ...",
+    "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
+    "address": "CALLE DOCTOR TOLOSA LATOUR 16",
+    "district": "Usera",
+    "latitude": 40.374166248648216,
+    "longitude": -3.7032220308808577,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=93b79c046160d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "id": "74a7dd4844378c55",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "07bbe3d792278eba": {
+    "title": "Iniciación a las Sevillanas (La 1.ª y la 2.ª)",
+    "description": "De 17:30 a 19 horas. Juan Carlos ‘El Niño’.  Edad: Todos los públicos, a partir de 6 años (menores acompañados con un adulto). Imprescindible reserva previa.  Sinopsis: En esta primera sesión trabajaremos las sevillanas 1 y 2, centrándonos en la base, la estructura y la correcta colocación de bra...",
+    "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
+    "address": "CALLE DOCTOR TOLOSA LATOUR 16",
+    "district": "Usera",
+    "latitude": 40.374166248648216,
+    "longitude": -3.7032220308808577,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=2db69c046160d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "danza",
+      "gratis"
+    ],
+    "id": "07bbe3d792278eba",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "99174be42da8ad80": {
+    "title": "Jaime Urrutia",
+    "description": null,
+    "location_name": "Museo Lázaro Galdiano",
+    "address": "CALLE SERRANO 122",
+    "district": "Salamanca",
+    "latitude": 40.43675593917329,
+    "longitude": -3.6861820403705816,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=e85b74520fa0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "musica",
+      "gratis"
+    ],
+    "id": "99174be42da8ad80",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "6918cfc8a8e7d13f": {
+    "title": "Jornada informativa de la Oficina Verde - Distrito Centro",
+    "description": "Información sobre planes de subvenciones para obras de rehabilitación y accesibilidad en viviendas:    - Plan Adapta    - Plan Rehabilita    - Plan Transforma tu Barrio    Entrada libre hasta completar aforo (55 personas máximo).",
+    "location_name": "Centro Cultural Clara del Rey - Museo ABC (Centro)",
+    "address": "CALLE AMANIEL 29",
+    "district": "Centro",
+    "latitude": 40.42741340671151,
+    "longitude": -3.7095381101739444,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=02f7e47057a0d910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros",
+      "gratis"
+    ],
+    "id": "6918cfc8a8e7d13f",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "239a5c0a990d04f2": {
+    "title": "Josefina Aldecoa en el centenario de su nacimientos",
+    "description": "Por Javier de la Nava .El 8 de marzo se cumplió un siglo del nacimiento de Josefina R. Aldecoa y queremos celebrar su vida y su obra con esta conferencia. Escritora, editora, conferenciante y, sobre todo, pedagoga y creadora de una escuela de pequeños librepensadores. En 'Historia de una maestra'...",
+    "location_name": "Centro Cultural Buenavista (Salamanca)",
+    "address": "AVENIDA TOREROS 5",
+    "district": "Salamanca",
+    "latitude": 40.43200001609297,
+    "longitude": -3.670904677285496,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=c5d1a01714b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conferencias",
+      "gratis"
+    ],
+    "id": "239a5c0a990d04f2",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "b7cad8e89f64ccb6": {
+    "title": "La aldea de los cautivos",
+    "description": "Por Carlos Díaz Domínguez  Vuelve Carlos Díaz Domínguez, autor de nuestro distrito Guindalera-Salamanca, a presentarnos su nueva novela 'La aldea de los cautivos'. La vida de Carmiña Barreiro parece que está a punto de cambiar. Rodeada de un ingeniero alemán, un escritor sueco, una madre ausente,...",
+    "location_name": "Centro Cultural Buenavista (Salamanca)",
+    "address": "AVENIDA TOREROS 5",
+    "district": "Salamanca",
+    "latitude": 40.43200001609297,
+    "longitude": -3.670904677285496,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=69efa01714b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "musica",
+      "gratis"
+    ],
+    "id": "b7cad8e89f64ccb6",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "277a6dc9ea74dbe2": {
+    "title": "La Dehesa en guerra: un momento crucial en la historia de Madrid",
+    "description": null,
+    "location_name": "Centro de Información y Educación Ambiental de Dehesa de la Villa",
+    "address": null,
+    "district": "Moncloa-Aravaca",
+    "latitude": 40.45914104116349,
+    "longitude": -3.718270563679269,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=281d928a3a80d910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "id": "277a6dc9ea74dbe2",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "363b84b75aa69373": {
+    "title": "La luz del misterio",
+    "description": "Alaia ensemble    La Semana Santa ha inspirado algunas de las páginas más profundas de la música coral. Este programa propone un recorrido desde la adoración y la súplica hasta la luz de la esperanza, invitando a la reflexión y al recogimiento. Comenzamos con obras del Renacimiento —Palestrina, V...",
+    "location_name": null,
+    "address": null,
+    "district": null,
+    "latitude": null,
+    "longitude": null,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=6aaf5c893b6ec910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "fiestas",
+      "gratis"
+    ],
+    "id": "363b84b75aa69373",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "7ca397c69b81e14d": {
+    "title": "La magia empieza por tí",
+    "description": "COMPAÑÍA: Mago Sergio GarcíaGÉNERO: MagiaPÚBLICO: Todos los públicos.  Prepárate para no parar de asombrarte. ¡Es la hora! En este espectáculo, la magia y los sueños se atreven a interponerse en la realidad para recordarnos que todo es posible. La magia empieza por ti es un show familiar, pensado...",
+    "location_name": "Centro Cultural Nicolás Salmerón (Chamartín)",
+    "address": "CALLE MANTUANO 51",
+    "district": "Chamartin",
+    "latitude": 40.44834125150792,
+    "longitude": -3.6761992414203526,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=4e39c03201b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "id": "7ca397c69b81e14d",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "5b8acf9decae27d6": {
+    "title": "Las marionetas de la Dehesa y sus cuentos",
+    "description": null,
+    "location_name": "Centro de Información y Educación Ambiental de Dehesa de la Villa",
+    "address": null,
+    "district": "Moncloa-Aravaca",
+    "latitude": 40.45914104116349,
+    "longitude": -3.718270563679269,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=355f187371b0d910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "id": "5b8acf9decae27d6",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "ad678a0e376ef41b": {
+    "title": "Las más guapas del asfalto. Conoce la flora espontánea de Madrid",
+    "description": null,
+    "location_name": "Centro de Información y Educación Ambiental de Dehesa de la Villa",
+    "address": null,
+    "district": "Moncloa-Aravaca",
+    "latitude": 40.45914104116349,
+    "longitude": -3.718270563679269,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=70c706cb7fa0d910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "id": "ad678a0e376ef41b",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "57fa1aa6bb91c37a": {
+    "title": "LECTURA DE TEXTOS TEATRALES Y POÉTICOS",
+    "description": "El jueves 26 de marzo se realizará una  Lectura comentada abierta al público. Chéjov, el dramaturgo ecologista .           Moderada por La Otra Arcadia (Ana Contreras y Raúl Losánez).  Se leerán y comentarán textos de los autores Anton Chéjov, Jose María Gabriel y Galán y otros autores que han ab...",
+    "location_name": "Fernán Gómez Centro Cultural de la Villa",
+    "address": "PLAZA COLON 4",
+    "district": "Salamanca",
+    "latitude": 40.4249721516942,
+    "longitude": -3.689948085098791,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=300a355b64a0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "destacado"
+    ],
+    "id": "57fa1aa6bb91c37a",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "0af18ad66a112d66": {
+    "title": "Los artrópodos del huerto",
+    "description": "Se trata de una actividad diseñada para familias de acercamiento al mundo de los artrópodos. Durante dos horas los artrópodos dejarán de ser esos seres que dan asco, miedo, pican o asustan para convertirse en importantes elementos del ecosistema del huerto, con un papel imprescindible en procesos...",
+    "location_name": "Centro de Educación Ambiental El Retiro",
+    "address": "PASEO FERNAN NUÑEZ 2",
+    "district": "Retiro",
+    "latitude": 40.40943503279114,
+    "longitude": -3.6861797800993257,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=75e4475df7777910VgnVCM2000001f4a900aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros",
+      "gratis"
+    ],
+    "id": "0af18ad66a112d66",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "e8abf4a982212a52": {
+    "title": "Marionetas con calcetines",
+    "description": "De 11 a 12 horas.  Edad: Público infantil, a partir de 4 años (menores acompañados con un adulto). Imprescindible reserva previa.  Sinopsis: ¿Qué hacemos con el pobre calcetín desparejado del cajón? ¿Y si le ponemos unos cuantos adornos y le pegamos dos ojos? ¡Tachán! Sorpréndete con la creativid...",
+    "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
+    "address": "CALLE DOCTOR TOLOSA LATOUR 16",
+    "district": "Usera",
+    "latitude": 40.374166248648216,
+    "longitude": -3.7032220308808577,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=30d4f83f6060d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "id": "e8abf4a982212a52",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "0db6722e9d039450": {
+    "title": "Música: `Pasión y Arte´",
+    "description": "Con María Nevado.   Sinopsis: María hace un recorrido por diferentes estilos musicales: Copla, Baladas, Rancheras, Tangos, Chotis, Cuplés... dándole lel sabor y la esencia que caracteriza a cada uno de ellos.  Duración: 60 Minutos     Edad recomendada para todos los públicos.      Entrada libre s...",
+    "location_name": "Centro Sociocultural San Cristóbal de los Ángeles (Villaverde)",
+    "address": "PLAZA PINAZO 9",
+    "district": "Villaverde",
+    "latitude": 40.34268360439146,
+    "longitude": -3.6914402549812873,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=0c97717b0ca0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "musica",
+      "gratis"
+    ],
+    "id": "0db6722e9d039450",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "c032d5f93900e609": {
+    "title": "No sé dónde estás",
+    "description": "Dirigida y escrita por Luis Hernández Plaza. Han pasado diez meses desde que María desapareció en trágicas circunstancias. Adrián, su pareja, empieza a ser consciente de que jamás volverá a verla. Pero aún hay una última cosa que puede hacer: enloquecer.",
+    "location_name": "Centro Cultural Buenavista (Salamanca)",
+    "address": "AVENIDA TOREROS 5",
+    "district": "Salamanca",
+    "latitude": 40.43200001609297,
+    "longitude": -3.670904677285496,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=fecba01714b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "gratis"
+    ],
+    "id": "c032d5f93900e609",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "2c6f35f4d6d49610": {
+    "title": "Nouvelle vague",
+    "description": "Director, Richard Linklater.  Recomendada a partir de 12 años.  La historia recrea el momento de la creación del movimiento cinematográfico francés conocido como 'Nouvelle Vague', centrándose en la producción de la innovadora película de Jean-Luc Godard 'Al final de la escapada', en 1959. 2025: P...",
+    "location_name": "Centro Cultural Buero Vallejo (San Blas - Canillejas)",
+    "address": "CALLE BOLTAÑA 27",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.44477474902185,
+    "longitude": -3.6129105844633775,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=b283187371b0d910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "gratis"
+    ],
+    "id": "2c6f35f4d6d49610",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "a8d015da45d1e7cd": {
+    "title": "Paddington, aventura en la selva",
+    "description": "Paddington y la familia Brown visitan a la tía Lucy en Perú, pero un misterio los envía a la selva amazónica y a las montañas peruanas. Acompáñalos en la aventura",
+    "location_name": "Centro Cultural Buenavista (Salamanca)",
+    "address": "AVENIDA TOREROS 5",
+    "district": "Salamanca",
+    "latitude": 40.43200001609297,
+    "longitude": -3.670904677285496,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=3eada01714b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "gratis"
+    ],
+    "id": "a8d015da45d1e7cd",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "8c9061a41121993a": {
+    "title": "Paseo escénico abierto por El Jardín de los Cerezos",
+    "description": "Juan Carlos Pérez de la Fuente, director artístico y diseño de escenografía, junto a Isi Ponce, diseño de escenografía, y Abel Ferris, ayudante de dirección, guiarán al público por el montaje escénico mostrándoles aspectos relacionados con la dirección artística y los cuatro actos en los que se d...",
+    "location_name": "Fernán Gómez Centro Cultural de la Villa",
+    "address": "PLAZA COLON 4",
+    "district": "Salamanca",
+    "latitude": 40.4249721516942,
+    "longitude": -3.689948085098791,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=f60a355b64a0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "destacado"
+    ],
+    "id": "8c9061a41121993a",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "42871252d65cce59": {
+    "title": "Plantas nutricias para mariposas",
+    "description": "De 11 a 12 horas.  Edad: Público infantil, a partir de 6 años (menores acompañados con un adulto). Imprescindible reserva previa.  Sinopsis: En este taller práctico aprenderemos que plantas alimentan a estos hermosos insectos para favorecer su hábitat dentro de nuestra ciudad.",
+    "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
+    "address": "CALLE DOCTOR TOLOSA LATOUR 16",
+    "district": "Usera",
+    "latitude": 40.374166248648216,
+    "longitude": -3.7032220308808577,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=548ef83f6060d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "id": "42871252d65cce59",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "fa5cccec4a485c82": {
+    "title": "Programa de desarrollo profesional: empoderamiento laboral y emocional",
+    "description": null,
+    "location_name": "Espacio de Igualdad Lourdes Hernández. Carabanchel",
+    "address": "CALLE COMANDANTE FONTANES 8",
+    "district": "Carabanchel",
+    "latitude": 40.395326406887946,
+    "longitude": -3.721622686264932,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=dfe46ee45250d910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "id": "fa5cccec4a485c82",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "2216843b3eaf54f9": {
+    "title": "Regularización Extraordinaria 2026. Información jurídica gratuita para la comunidad migrante",
+    "description": null,
+    "location_name": "Biblioteca Pública Municipal Gabriel García Márquez (Usera)",
+    "address": "PLAZA PUEBLO 2",
+    "district": "Usera",
+    "latitude": 40.366768324753416,
+    "longitude": -3.701141063083806,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=4bc5b80dda60d910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conferencias",
+      "gratis"
+    ],
+    "id": "2216843b3eaf54f9",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "1a4a4c526563c6da": {
+    "title": "Senda Descubre las mariposas de Pradolongo",
+    "description": "De 12 a 13 horas.  Edad: Público general a partir de 7 años (menores acompañados con un adulto).  Sinopsis: Ven a explorar la gran biodiversidad del Parque de Pradolongo en una senda diseñada para descubrir e identificar las especies locales de mariposas que habitan en este oasis urbano de la cap...",
+    "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
+    "address": "CALLE DOCTOR TOLOSA LATOUR 16",
+    "district": "Usera",
+    "latitude": 40.374166248648216,
+    "longitude": -3.7032220308808577,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=6d98483d1260d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "id": "1a4a4c526563c6da",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "4e1521a233eb1c3a": {
+    "title": "Senda En busca de anfibios en Pradolongo",
+    "description": "De ﻿11 a 12:30 horas.   Edad: Público general a partir de 7 años (menores acompañados con un adulto). Imprescindible reserva previa.  Sinopsis: Desde hace años estamos poniendo más atención en la biodiversidad urbana. Para conseguir ciudades más amables para todos y todas (animales, plantas y otr...",
+    "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
+    "address": "CALLE DOCTOR TOLOSA LATOUR 16",
+    "district": "Usera",
+    "latitude": 40.374166248648216,
+    "longitude": -3.7032220308808577,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=d3f0483d1260d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "id": "4e1521a233eb1c3a",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "2fe50e2b5197a913": {
+    "title": "Senda Leyendas del Parque Lineal del Manzanares",
+    "description": "De 10 a 11:30 horas. El punto de encuentro es la puerta del Parque Lineal del Manzanares que da a la Rotonda del Camino de Perales, número aprox. 61. A esta rotonda también desemboca la Calle de San Mario. Parada de autobús próxima de líneas 23 y 123 de la EMT.  Edad: Público general a partir de ...",
+    "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
+    "address": "CALLE DOCTOR TOLOSA LATOUR 16",
+    "district": "Usera",
+    "latitude": 40.374166248648216,
+    "longitude": -3.7032220308808577,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=ef589c046160d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "id": "2fe50e2b5197a913",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "8ec73bd8b19273a8": {
+    "title": "Senda Pradolongo apuesta por la biodiversidad: los recursos del Parque",
+    "description": "﻿De 11 a 12 horas.   Edad: Público general a partir de 7 años (menores acompañados con un adulto). Imprescindible reserva previa.  Sinopsis: En esta ruta por Pradolongo conocerás la gestión sostenible del parque: desde cajas nido para diversas aves hasta praderas de floración espontanea, fomentan...",
+    "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
+    "address": "CALLE DOCTOR TOLOSA LATOUR 16",
+    "district": "Usera",
+    "latitude": 40.374166248648216,
+    "longitude": -3.7032220308808577,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=2043f83f6060d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "id": "8ec73bd8b19273a8",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "d0bd3ed809dce999": {
+    "title": "Taller ambiental Cambio Climático",
+    "description": "De 11 a 12:30 horas.  Edad: Público familiar, a partir de 6 años (menores acompañados con un adulto).  Sinopsis:  En este taller comprenderemos que es el cambio climático, en qué consiste y en cómo podemos poner nuestro granito de arena para mitigarlo. Además, realizaremos una huella ecológica pa...",
+    "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
+    "address": "CALLE DOCTOR TOLOSA LATOUR 16",
+    "district": "Usera",
+    "latitude": 40.374166248648216,
+    "longitude": -3.7032220308808577,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=d0aa483d1260d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "id": "d0bd3ed809dce999",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "32dd503835f15f1c": {
+    "title": "Taller de acuarela. Juegos de color y agua",
+    "description": "Edades: de 8 a 14 horas. De 11 a 14 horas.",
+    "location_name": "Parque Olof Palme",
+    "address": "CALLE CERECINOS 1",
+    "district": "Usera",
+    "latitude": 40.38439900273861,
+    "longitude": -3.7129519968429445,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=e3db207299aeb910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "id": "32dd503835f15f1c",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "f2c0008d7a3bcbf0": {
+    "title": "Taller de cosmética familiar",
+    "description": "Todo el mundo quiere verse guapo/a, y es muy importante cuidarse, para sentirse bien, ¿por qué no hacerlo cuidando nuestra piel?  Si decidimos liberar a nuestra cara de sustancias químicas y tóxicos ¿cómo no hacerlo con el medio ambiente?    A través de este taller pretendemos potenciar la elecci...",
+    "location_name": "Centro de Educación Ambiental El Retiro",
+    "address": "PASEO FERNAN NUÑEZ 2",
+    "district": "Retiro",
+    "latitude": 40.40943503279114,
+    "longitude": -3.6861797800993257,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=27d0b7fd14450910VgnVCM1000001d4a900aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros",
+      "gratis"
+    ],
+    "id": "f2c0008d7a3bcbf0",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "9db1b24de6040d0a": {
+    "title": "Taller de huerto familiar",
+    "description": "El huerto es una herramienta didáctica muy atractiva para trabajar la concienciación ambiental, los hábitos saludables y las relaciones sociales. Los más pequeños disfrutan en contacto con la tierra y aprenden valores como la responsabilidad y el trabajo colaborativo. Se realizarán las tareas nec...",
+    "location_name": "Centro de Educación Ambiental El Retiro",
+    "address": "PASEO FERNAN NUÑEZ 2",
+    "district": "Retiro",
+    "latitude": 40.40943503279114,
+    "longitude": -3.6861797800993257,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=4888815c82327810VgnVCM1000001d4a900aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros",
+      "gratis"
+    ],
+    "id": "9db1b24de6040d0a",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "5f67066c74edaafe": {
+    "title": "Talleres infantiles Semana Santa",
+    "description": "TALLERES INFANTILES SEMANA SANTA    Centro Cultural Galileo   Horario: de 9 h. a 13 h.   Lunes 30 de marzo de 09:00-13:00h. Taller para 15 niños de 4 a 10 años.  Actividades creativas de dibujo y pintura, en las que los niños desarrollan su imaginación plasmándola a través del dibujo.     Martes ...",
+    "location_name": "Centro Cultural Galileo (Chamberí)",
+    "address": "CALLE GALILEO 39",
+    "district": "Chamberi",
+    "latitude": 40.433719454283505,
+    "longitude": -3.7104468992841753,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=27d04c89ee50d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros",
+      "gratis"
+    ],
+    "id": "5f67066c74edaafe",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "3b56bbf358f2a967": {
+    "title": "Taller-cuentacuentos. Las hadas de las plantas y las hadas de las flores",
+    "description": "De 17:30 a 18:45 horas.  Edad: Público infantil, a partir de 2 años (menores acompañados con un adulto).  Sinopsis: Gracias a las hadas de la naturaleza, los bosques y los campos se mantienen llenos de vida. Ven a Pradolongo a conocer las hadas de las plantas y de las flores, aprenderás a escucha...",
+    "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
+    "address": "CALLE DOCTOR TOLOSA LATOUR 16",
+    "district": "Usera",
+    "latitude": 40.374166248648216,
+    "longitude": -3.7032220308808577,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=6f00483d1260d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "id": "3b56bbf358f2a967",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "0c02cb0c49ef240a": {
+    "title": "Taller: Creando nuestra propia aventura",
+    "description": "Niños de 4 a 10 años   En este taller, los niños se convertirán en autores y protagonistas de su propio cuento. A través del juego, la imaginación y el trabajo colaborativo, irán creando una historia única desde cero.  Comenzaremos dando forma al cuento: inventaremos personajes, elegiremos lugare...",
+    "location_name": "Centro Cultural Nicolás Salmerón (Chamartín)",
+    "address": "CALLE MANTUANO 51",
+    "district": "Chamartin",
+    "latitude": 40.44834125150792,
+    "longitude": -3.6761992414203526,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=532dc03201b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "id": "0c02cb0c49ef240a",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "50dd8c7f71cb17b8": {
+    "title": "Taller: Mimo y Clown",
+    "description": "Edades de 4 años a 10 años.   El teatro es de las actividades más antiguas que realiza el ser humano y esto no es por casualidad.  Pocas actividades nos permiten descubrir tanto sobre nosotr@s mismos, a la vez que nos dan la libertad de jugar a ser otr@s. Además, el teatro y particularmente el cl...",
+    "location_name": "Centro Cultural Nicolás Salmerón (Chamartín)",
+    "address": "CALLE MANTUANO 51",
+    "district": "Chamartin",
+    "latitude": 40.44834125150792,
+    "longitude": -3.6761992414203526,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=711374520fa0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "id": "50dd8c7f71cb17b8",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "cb9175c48c2c3cde": {
+    "title": "Taller: Zumba",
+    "description": "Niños de 4 a 12 años   Bailar y moverse al ritmo de la música ayuda a liberar tensiones y a canalizar la energía de forma positiva. La Zumba para niños ayuda a trabajar la motricidad, coordinación y atención. Y es un excelente aliado para fomentar la actividad y ejercicio físico en los niños ayud...",
+    "location_name": "Centro Cultural Nicolás Salmerón (Chamartín)",
+    "address": "CALLE MANTUANO 51",
+    "district": "Chamartin",
+    "latitude": 40.44834125150792,
+    "longitude": -3.6761992414203526,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=8de974520fa0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "id": "cb9175c48c2c3cde",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "34b8bd0372d336aa": {
+    "title": "Tiempos pasados",
+    "description": "Compañía.. AMATEUR PALCO 3  Evocación y un recuerdo de mediados del siglo XX por personas que lo han vivido, mientras celebran el cumpleaños de una de ellas.",
+    "location_name": "Centro Cultural Buenavista (Salamanca)",
+    "address": "AVENIDA TOREROS 5",
+    "district": "Salamanca",
+    "latitude": 40.43200001609297,
+    "longitude": -3.670904677285496,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=18803bd055b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "gratis"
+    ],
+    "id": "34b8bd0372d336aa",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "bd35080e3327913c": {
+    "title": "Un mundo de cuentos",
+    "description": "COMPAÑÍA: AliciacuenteandoGÉNERO: Cuentacuentos TeatralizadosPÚBLICO: Familiar  'Alicia 'la Aviadora' viaja con su aeroplano recorriendo el mundo. Desde el Polo Norte hasta la sabana africana, en cada una de sus paradas se encontrará con curiosos personajes: niños y niñas de otras culturas y anim...",
+    "location_name": "Centro Cultural Nicolás Salmerón (Chamartín)",
+    "address": "CALLE MANTUANO 51",
+    "district": "Chamartin",
+    "latitude": 40.44834125150792,
+    "longitude": -3.6761992414203526,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=21e0c03201b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "id": "bd35080e3327913c",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "ebc19c7874b4f5db": {
+    "title": "Un simple accidente",
+    "description": "Director: Jafar Panahi.   Recomendada a partir de 16 años.  Una pequeña colisión de coche desencadena una cadena de encuentros y revelaciones entre varios personajes cuyas vidas se cruzan inesperadamente. Panahi reflexiona con sutileza sobre la culpa, la verdad y la libertad en la sociedad iraní ...",
+    "location_name": "Centro Cultural Buero Vallejo (San Blas - Canillejas)",
+    "address": "CALLE BOLTAÑA 27",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.44477474902185,
+    "longitude": -3.6129105844633775,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=1322187371b0d910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "gratis"
+    ],
+    "id": "ebc19c7874b4f5db",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "49bddb13844b43db": {
+    "title": "Vacaciones a ninguna parte",
+    "description": "COMPAÑÍA: Cía. AnticlownGÉNERO: ClownPÚBLICO: Todos los públicos  Es un montaje teatral de clown apto para todos los públicos, que visita los lugares comunes en la búsqueda del placer cotidiano y el deseo de volar a paraísos utópicos.  Las vidas son como los caminos que van a dar a la mar... Ah n...",
+    "location_name": "Centro Cultural Nicolás Salmerón (Chamartín)",
+    "address": "CALLE MANTUANO 51",
+    "district": "Chamartin",
+    "latitude": 40.44834125150792,
+    "longitude": -3.6761992414203526,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=0cbd945830b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "id": "49bddb13844b43db",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "79ddb212f7b63768": {
+    "title": "Visita a las galerías de agua de Amaniel",
+    "description": "En este recorrido guiado, que se inicia en la Dehesa de la Villa, conoceréis como funcionaban las antiguas infraestructuras hidráulicas del siglo XVII con las que se abastecía de agua una zona de la ciudad de Madrid, en concreto, el viaje de agua de Amaniel. Aprenderéis qué es un capirote y la fu...",
+    "location_name": "Centro de Información y Educación Ambiental de Dehesa de la Villa",
+    "address": null,
+    "district": "Moncloa-Aravaca",
+    "latitude": 40.45914104116349,
+    "longitude": -3.718270563679269,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=aea001ef51037910VgnVCM2000001f4a900aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros",
+      "gratis"
+    ],
+    "id": "79ddb212f7b63768",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "a2d76c225aba7325": {
+    "title": "Visita familiar al Vivero de Estufas y Nendo Dango",
+    "description": "La actividad consiste en un pequeño itinerario por el Vivero de Estufas para conocer algunas de sus instalaciones. A través de diferentes juegos, los participantes aprenderán qué actividades se realizan a diario y por qué son importantes para el Parque. Además irán adquiriendo todas las pistas pa...",
+    "location_name": "Centro de Educación Ambiental El Retiro",
+    "address": "PASEO FERNAN NUÑEZ 2",
+    "district": "Retiro",
+    "latitude": 40.40943503279114,
+    "longitude": -3.6861797800993257,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=80132892905fa810VgnVCM1000001d4a900aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros",
+      "gratis"
+    ],
+    "id": "a2d76c225aba7325",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "e7507ab602757943": {
+    "title": "Visitas guiadas público general exposición Naturaleza de asfalto ABRIL",
+    "description": "Te invitamos a una visita guiada por la pintura de José Miguel Palacio, una oportunidad paramirar Madrid con sus ojos. Descubriremos no solo lo que muestran sus cuadros, sino cómo losconstruye desde dentro: sus paseos por la ciudad, la fotografía que utiliza como punto departida, la luz que obser...",
+    "location_name": "Museo de Historia de Madrid",
+    "address": "CALLE FUENCARRAL 78",
+    "district": "Centro",
+    "latitude": 40.42577054821346,
+    "longitude": -3.700845660719608,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=8660c7086a89b910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "id": "e7507ab602757943",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "8ee53e5474b381f4": {
+    "title": "'123, manos, dedos y pies' con Andrea Ortúzar",
+    "description": "Te invitamos a disfrutar de una sesión de bebecuentos para estimular los sentidos y fortalecer elvínculo afectivo con tu bebé iniciándole en el maravilloso mundo del libro y de la lectura.  Las historias están adaptadas para bebés de 0 a 24 meses .  Dos sesiones: A las 17:30 y a las 18:00 horas. ...",
+    "location_name": "Biblioteca Pública Municipal Manuel Vázquez Montalbán (Tetuán)",
+    "address": "CALLE FRANCOS RODRIGUEZ 67",
+    "district": "Tetuan",
+    "latitude": 40.45749513485957,
+    "longitude": -3.710539712535917,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=d2214e58e8b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "id": "8ee53e5474b381f4",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "dfbd28dd2fe40610": {
+    "title": "'A jugar con los libros' con Israel Hergón",
+    "description": "Te invitamos a disfrutar de una sesión de bebecuentos para estimular los sentidos y fortalecer elvínculo afectivo con tu bebé iniciándole en el maravilloso mundo del libro y de la lectura.  Las historias están adaptadas para bebés de 0 a 24 meses .  Dos sesiones: A las 17:30 y a las 18:00 horas. ...",
+    "location_name": "Biblioteca Pública Municipal María Zambrano (Tetuán)",
+    "address": "PLAZA DONOSO 5",
+    "district": "Tetuan",
+    "latitude": 40.46903299144094,
+    "longitude": -3.6976620067964996,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=f8114e58e8b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "id": "dfbd28dd2fe40610",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "a919122f7e85cf64": {
+    "title": "'Agüita, agüita' con Silvina Rodríguez",
+    "description": "Te invitamos a disfrutar de una sesión de bebecuentos para estimular los sentidos y fortalecer elvínculo afectivo con tu bebé iniciándole en el maravilloso mundo del libro y de la lectura.  Las historias están adaptadas para bebés de 0 a 24 meses .  Dos sesiones: A las 18:00 y a las 18:30 horas. ...",
+    "location_name": "Biblioteca Pública Municipal Pío Baroja (Arganzuela)",
+    "address": "CALLE ARGANDA 12",
+    "district": "Arganzuela",
+    "latitude": 40.40003652682007,
+    "longitude": -3.7074488154950584,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=1b114e58e8b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "id": "a919122f7e85cf64",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "cc99166ca5a19904": {
+    "title": "'An African story' con Mamen Storyteller",
+    "description": "Con estos cuentos viajaremos a mundos mágicos, conoceremos personajes divertidos y viviremosemocionantes aventuras… ¡todo en inglés! Ven a disfrutar de una sesión especial de cuentacuentos, donde los más pequeños descubrirán elplacer de las historias mientras se familiarizan con el idioma de form...",
+    "location_name": "Biblioteca Pública Municipal Pablo Neruda (Ciudad Lineal)",
+    "address": "CALLE ASCAO 4",
+    "district": "CiudadLineal",
+    "latitude": 40.42941133441142,
+    "longitude": -3.6416899839787695,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=0c5cc18d4d33c910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "id": "cc99166ca5a19904",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "5ed2b9518e356717": {
+    "title": "'Baa baa black sheep' con Mar Amado",
+    "description": "Con estos cuentos viajaremos a mundos mágicos, conoceremos personajes divertidos y viviremosemocionantes aventuras… ¡todo en inglés! Ven a disfrutar de una sesión especial de cuentacuentos, donde los más pequeños descubrirán elplacer de las historias mientras se familiarizan con el idioma de form...",
+    "location_name": "Biblioteca Pública Municipal Iván de Vargas (Centro)",
+    "address": "CALLE SAN JUSTO 5",
+    "district": "Centro",
+    "latitude": 40.41410290844665,
+    "longitude": -3.7098591212735883,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=da5cc18d4d33c910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "id": "5ed2b9518e356717",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "ef71b7844cfc3c31": {
+    "title": "'Buenos días Padre sol' con Andrea Otúzar",
+    "description": "Te invitamos a disfrutar de una sesión de bebecuentos para estimular los sentidos y fortalecer elvínculo afectivo con tu bebé iniciándole en el maravilloso mundo del libro y de la lectura.  Las historias están adaptadas para bebés de 0 a 24 meses .  Dos sesiones: A las 17:30 y a las 18:00 horas. ...",
+    "location_name": "Biblioteca Pública Municipal Mario Vargas Llosa (Centro)",
+    "address": "CALLE BARCELO 4",
+    "district": "Centro",
+    "latitude": 40.426642215368176,
+    "longitude": -3.699722994908341,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=c2034e58e8b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "id": "ef71b7844cfc3c31",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "6d5a42dcf70e7643": {
+    "title": "'Con mis manitas' con Aurora Maroto",
+    "description": "Te invitamos a disfrutar de una sesión de bebecuentos para estimular los sentidos y fortalecer elvínculo afectivo con tu bebé iniciándole en el maravilloso mundo del libro y de la lectura.  Las historias están adaptadas para bebés de 0 a 24 meses .  Dos sesiones: A las 17:30 y a las 18:00 horas. ...",
+    "location_name": "Biblioteca Pública Municipal Francisco Ibáñez (Chamartín)",
+    "address": "CALLE MANTUANO 51",
+    "district": "Chamartin",
+    "latitude": 40.44810636195716,
+    "longitude": -3.6762309620097398,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=a5ef4e58e8b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "id": "6d5a42dcf70e7643",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "704cb2f9f7ebd07e": {
+    "title": "'Cucutrás' con Roberto Mezquita",
+    "description": "Te invitamos a disfrutar de una sesión de bebecuentos para estimular los sentidos y fortalecer elvínculo afectivo con tu bebé iniciándole en el maravilloso mundo del libro y de la lectura.  Las historias están adaptadas para bebés de 0 a 24 meses .  Dos sesiones: A las 18:00 y a las 18:30 horas. ...",
+    "location_name": "Biblioteca Pública Municipal David Gistau (Salamanca)",
+    "address": "AVENIDA TOREROS 5",
+    "district": "Salamanca",
+    "latitude": 40.43199309720514,
+    "longitude": -3.670929243543714,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=894f4e58e8b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "id": "704cb2f9f7ebd07e",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "b314a6db0a4a60b2": {
+    "title": "'Cucú... ¡Cuento!' con Aurora Maroto",
+    "description": "Te invitamos a disfrutar de una sesión de bebecuentos para estimular los sentidos y fortalecer elvínculo afectivo con tu bebé iniciándole en el maravilloso mundo del libro y de la lectura.  Las historias están adaptadas para bebés de 0 a 24 meses .  Dos sesiones: A las 12:00 y a las 12:30 horas. ...",
+    "location_name": "Biblioteca Pública Municipal San Fermín (Usera)",
+    "address": "AVENIDA SAN FERMIN 10",
+    "district": "Usera",
+    "latitude": 40.3711623444796,
+    "longitude": -3.692742821990015,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=be114e58e8b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "id": "b314a6db0a4a60b2",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "895f2d7ef9033410": {
+    "title": "'Desde esta azotea todo es diferente' de Rafael Caunedo",
+    "description": null,
+    "location_name": "Biblioteca Pública Municipal Eugenio Trías. Casa de Fieras de El Retiro (Retiro)",
+    "address": "PASEO FERNÁN NÚÑEZ 24",
+    "district": "Retiro",
+    "latitude": 40.4166091081099,
+    "longitude": -3.6795930368034804,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=64c0483d1260d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "musica",
+      "gratis"
+    ],
+    "id": "895f2d7ef9033410",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "8527cbe4872b3800": {
+    "title": "'Duck and frog' con Mar Amado",
+    "description": "Con estos cuentos viajaremos a mundos mágicos, conoceremos personajes divertidos y viviremosemocionantes aventuras… ¡todo en inglés! Ven a disfrutar de una sesión especial de cuentacuentos, donde los más pequeños descubrirán elplacer de las historias mientras se familiarizan con el idioma de form...",
+    "location_name": "Biblioteca Pública Municipal Ciudad Lineal (Ciudad Lineal)",
+    "address": "CALLE HERMANOS GARCIA NOBLEJAS 14",
+    "district": "CiudadLineal",
+    "latitude": 40.43644651057092,
+    "longitude": -3.6372924261150033,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=4bcdc18d4d33c910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "id": "8527cbe4872b3800",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "ba889dce6b05ec2f": {
+    "title": "'El cumpleaños de León' con Nelson Calderón",
+    "description": "Te invitamos a disfrutar de una sesión de bebecuentos para estimular los sentidos y fortalecer elvínculo afectivo con tu bebé iniciándole en el maravilloso mundo del libro y de la lectura.  Las historias están adaptadas para bebés de 0 a 24 meses .  Dos sesiones: A las 17:30 y a las 18:00 horas. ...",
+    "location_name": "Biblioteca Pública Municipal San Blas (San Blas-Canillejas)",
+    "address": "CALLE SAN ROMAN DEL VALLE 8",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.420231627534996,
+    "longitude": -3.6218113860909074,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=b4ef4e58e8b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "id": "ba889dce6b05ec2f",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "a050391b072a65e4": {
+    "title": "'El jardín de Cuenteando' con Alicia Cuenteando",
+    "description": "Te invitamos a disfrutar de una sesión de bebecuentos para estimular los sentidos y fortalecer elvínculo afectivo con tu bebé iniciándole en el maravilloso mundo del libro y de la lectura.  Las historias están adaptadas para bebés de 0 a 24 meses .  Dos sesiones: A las 18:00 y a las 18:30 horas. ...",
+    "location_name": "Biblioteca Pública Municipal La Elipa (Ciudad Lineal)",
+    "address": "CALLE NUESTRA SE&amp;Ntilde;ORA DEL VILLAR 6",
+    "district": "CiudadLineal",
+    "latitude": 40.42343352863466,
+    "longitude": -3.6518288644365704,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=08f24e58e8b0d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "id": "a050391b072a65e4",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "dbca6ca08cd11af6": {
+    "title": "'The dressmaker'",
+    "description": "'Sophie es una niña que quiere ser diseñadora de moda. Cada día visita en secreto la tienda de Dottie, la mejor costurera de la ciudad, para aprender observando cómo crea vestidos únicos. Una noche, cuando Dottie está demasiado cansada para terminar un encargo importante, Sophie decide ayudarla e...",
+    "location_name": "Biblioteca Pública Municipal San Blas (San Blas-Canillejas)",
+    "address": "CALLE SAN ROMAN DEL VALLE 8",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.420231627534996,
+    "longitude": -3.6218113860909074,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=81ecc18d4d33c910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "id": "dbca6ca08cd11af6",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "963f644799a97c4d": {
+    "title": "'Why monkeys live in trees' con Mamen Storyteller",
+    "description": "Con estos cuentos viajaremos a mundos mágicos, conoceremos personajes divertidos y viviremosemocionantes aventuras… ¡todo en inglés! Ven a disfrutar de una sesión especial de cuentacuentos, donde los más pequeños descubrirán elplacer de las historias mientras se familiarizan con el idioma de form...",
+    "location_name": "Biblioteca Pública Municipal La Elipa (Ciudad Lineal)",
+    "address": "CALLE NUESTRA SE&amp;Ntilde;ORA DEL VILLAR 6",
+    "district": "CiudadLineal",
+    "latitude": 40.42343352863466,
+    "longitude": -3.6518288644365704,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=5066efe7661eb910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "id": "963f644799a97c4d",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+  },
+  "c05051413e49ee15": {
+    "title": "¿Se nace ingeniera? Del juego al empleo",
+    "description": null,
+    "location_name": "Espacio de Igualdad Lourdes Hernández. Carabanchel",
+    "address": "CALLE COMANDANTE FONTANES 8",
+    "district": "Carabanchel",
+    "latitude": 40.395326406887946,
+    "longitude": -3.721622686264932,
+    "url": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextoid=a1012f2d4350d910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "id": "c05051413e49ee15",
+    "created_at": "2026-03-21T06:36:45.039049+00:00",
+    "updated_at": "2026-03-21T06:36:45.039049+00:00"
   }
 }
