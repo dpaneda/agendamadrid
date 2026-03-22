@@ -3,7 +3,7 @@
 import json
 import re
 import time
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta
 from urllib.parse import quote
 
@@ -277,14 +277,14 @@ def _parse_event_page(url):
         try:
             settings = json.loads(drupal_match.group(1))
             route = settings.get("formatter_calcule_route", {})
-            if route.get("lat") and route.get("long"):
-                latitude = float(route["lat"])
-                longitude = float(route["long"])
+            lat = route.get("lat")
+            lng = route.get("long")
+            if lat is not None and lng is not None:
+                lat, lng = float(lat), float(lng)
+                if lat != 0 or lng != 0:
+                    latitude, longitude = lat, lng
         except (json.JSONDecodeError, ValueError, TypeError):
             pass
-    if latitude and longitude and latitude == 0 and longitude == 0:
-        latitude = None
-        longitude = None
 
     # Schedule/time from page
     schedule_el = (

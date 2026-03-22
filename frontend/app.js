@@ -246,7 +246,13 @@ const SOURCE_LABELS = {
   "teatros_canal": "teatroscanal.com",
 };
 
-const _initParams = new URLSearchParams(window.location.search);
+const EXCLUDED_CATS = new Set(["gratis", "destacado", "aire libre", "accesible"]);
+
+function fmtTime(t) {
+  if (!t) return "";
+  const p = t.split(":");
+  return p.length >= 2 ? p[0].padStart(2, "0") + ":" + p[1] : "";
+}
 let selectedDate = (function() {
   // On initial load, prefer URL path (SEO entry point), then sessionStorage, then today
   const pathMatch = window.location.pathname.match(/\/(\d{4}-\d{2}-\d{2})\/?$/);
@@ -264,7 +270,6 @@ let selectedDate = (function() {
 let allEvents = {};   // id -> event data
 let calendarData = {}; // date -> [{event_id, start_time, end_time}]
 let allData = [];      // flattened for backward compat (buildCategories)
-let activeTags = new Set();
 let activeLocation = "";
 let activeSource = "";
 let activeSort = Settings.get("sort", "hora");
@@ -362,12 +367,7 @@ async function init() {
     }
   });
 
-  document.getElementById("category-filter").addEventListener("change", (e) => {
-    const val = e.target.value;
-    activeTags.clear();
-    if (val) {
-      activeTags.add(val);
-    }
+  document.getElementById("category-filter").addEventListener("change", () => {
     renderActiveFilters();
     render();
   });
@@ -679,10 +679,9 @@ async function loadData() {
 }
 
 function buildCategories() {
-  const EXCLUDED = new Set(["gratis", "destacado", "aire libre", "accesible"]);
   const allCats = new Set();
   allData.forEach(ev => {
-    (ev.categories || []).forEach(c => { if (c && !EXCLUDED.has(c)) allCats.add(c); });
+    (ev.categories || []).forEach(c => { if (c && !EXCLUDED_CATS.has(c)) allCats.add(c); });
   });
 
   const catSelect = document.getElementById("category-filter");
@@ -718,18 +717,20 @@ function _applyHidePast(events, ds) {
   return events.filter(ev => !ev.start_time || ev.start_time >= nowTime);
 }
 
-function getFilteredDayEvents() {
-  const selectedDateStr = dateStr(selectedDate);
-  const dayEntries = calendarData[selectedDateStr] || [];
-
-  // Join calendar entries with event data
-  let filtered = dayEntries.map(entry => {
+function _getDayEvents(ds) {
+  const dayEntries = calendarData[ds] || [];
+  let events = dayEntries.map(entry => {
     const ev = allEvents[entry.event_id];
     if (!ev) return null;
-    return { ..._mergeEntryTimes(ev, entry), start_date: selectedDateStr };
+    return { ..._mergeEntryTimes(ev, entry), start_date: ds };
   }).filter(Boolean);
+  events = _applyCatFilter(events);
+  return _applyHidePast(events, ds);
+}
 
-  filtered = _applyCatFilter(filtered);
+function getFilteredDayEvents() {
+  const selectedDateStr = dateStr(selectedDate);
+  let filtered = _getDayEvents(selectedDateStr);
 
   if (activeUserFilter === "favorites") {
     filtered = filtered.filter(ev => UserData.has("favorites", ev.id));
@@ -748,8 +749,6 @@ function getFilteredDayEvents() {
   if (activeSource) {
     filtered = filtered.filter(ev => (ev.source || "").split(",").includes(activeSource));
   }
-
-  filtered = _applyHidePast(filtered, selectedDateStr);
 
   if (activeSort === "precio") {
     filtered.sort((a, b) => {
@@ -828,11 +827,6 @@ function renderEvents() {
 }
 
 function renderEvent(ev) {
-  const fmtTime = (t) => {
-    if (!t) return "";
-    const parts = t.split(":");
-    return parts.length >= 2 ? parts[0].padStart(2, "0") + ":" + parts[1] : "";
-  };
   const time = fmtTime(ev.start_time);
   const endTime = fmtTime(ev.end_time);
   const timeStr = time ? (endTime && endTime > time ? `${time} - ${endTime}` : time) : "";
@@ -843,8 +837,6 @@ function renderEvent(ev) {
   const desc = ev.description
     ? `<p class="event-desc">${esc(ev.description.length > 200 ? ev.description.slice(0, 200) + "..." : ev.description)}</p>`
     : "";
-
-  const EXCLUDED_CATS = new Set(["gratis", "destacado", "aire libre", "accesible"]);
   const seenLabels = new Set();
   const catTags = ev.categories.filter(c => !EXCLUDED_CATS.has(c)).map(c => {
     const label = CATEGORY_LABELS[c] || c;
@@ -910,18 +902,6 @@ function renderEvent(ev) {
   return `<div class="event-card">${cardContent}</div>`;
 }
 
-function toggleTag(tag) {
-  if (activeTags.has(tag)) {
-    activeTags.delete(tag);
-  } else {
-    activeTags.clear();
-    activeTags.add(tag);
-  }
-  document.getElementById("category-filter").value = activeTags.size === 1 ? [...activeTags][0] : "";
-  renderActiveFilters();
-  render();
-}
-
 function toggleLocation(loc) {
   activeLocation = activeLocation === loc ? "" : loc;
   renderActiveFilters();
@@ -942,15 +922,7 @@ function renderActiveFilters() {
 }
 
 function getEventsForDate(ds) {
-  const dayEntries = calendarData[ds] || [];
-  let events = dayEntries.map(entry => {
-    const ev = allEvents[entry.event_id];
-    if (!ev) return null;
-    return { ..._mergeEntryTimes(ev, entry), start_date: ds };
-  }).filter(Boolean);
-
-  events = _applyCatFilter(events);
-  events = _applyHidePast(events, ds);
+  let events = _getDayEvents(ds);
 
   if (activeUserFilter === "favorites") {
     events = events.filter(ev => UserData.has("favorites", ev.id));
@@ -1065,9 +1037,8 @@ function renderUserView() {
     </div>` : `
     <button class="btn-login" onclick="FirebaseSync.login()">Iniciar sesión con Google</button>`;
 
-  const EXCLUDED_TAGS = new Set(["gratis", "destacado", "aire libre", "accesible"]);
   const allCats = [...new Set(allData.flatMap(ev => ev.categories || []))]
-    .filter(c => !EXCLUDED_TAGS.has(c))
+    .filter(c => !EXCLUDED_CATS.has(c))
     .sort((a, b) => (CATEGORY_LABELS[a] || a).localeCompare(CATEGORY_LABELS[b] || b));
   const prefCats = Settings.get("cats", []);
   const effectivePrefCats = prefCats.length === 0 ? allCats : prefCats;
@@ -1155,15 +1126,9 @@ function applyHidePast(val) {
   renderUserView();
 }
 
-function applyCategory(val) {
-  activeTags = val ? new Set([val]) : new Set();
-  setView("list");
-}
-
 function toggleCatPref(cat) {
-  const EXCLUDED = new Set(["gratis", "destacado", "aire libre", "accesible"]);
   const allAvail = [...new Set(allData.flatMap(ev => ev.categories || []))]
-    .filter(c => !EXCLUDED.has(c));
+    .filter(c => !EXCLUDED_CATS.has(c));
   let cats = Settings.get("cats", []);
   if (cats.length === 0) cats = [...allAvail]; // expand "all" before modifying
   cats = cats.includes(cat) ? cats.filter(c => c !== cat) : [...cats, cat];
@@ -1211,15 +1176,7 @@ let swipeIndex = 0;
 let swipeActive = false;
 
 function _getSwipeEvents() {
-  const ds = dateStr(selectedDate);
-  const dayEntries = calendarData[ds] || [];
-  let events = dayEntries.map(entry => {
-    const ev = allEvents[entry.event_id];
-    if (!ev) return null;
-    return { ..._mergeEntryTimes(ev, entry), start_date: ds };
-  }).filter(Boolean);
-  events = _applyCatFilter(events);
-  events = _applyHidePast(events, ds);
+  let events = _getDayEvents(dateStr(selectedDate));
   events = events.filter(ev => !UserData.has("favorites", ev.id) && !UserData.has("seen", ev.id) && !UserData.has("dismissed", ev.id));
   return events.sort((a, b) => (a.start_time || "99:99").localeCompare(b.start_time || "99:99"));
 }
@@ -1297,11 +1254,6 @@ function _swipeCardInner(ev) {
   const catInfo = CAT_ICONS[cat] || { emoji: "📍", color: "#6B7280" };
   const color = catInfo.color;
 
-  const fmtTime = (t) => {
-    if (!t) return "";
-    const p = t.split(":");
-    return p.length >= 2 ? p[0].padStart(2, "0") + ":" + p[1] : "";
-  };
   const timeStr = (() => {
     const s = fmtTime(ev.start_time), e = fmtTime(ev.end_time);
     return s ? (e && e > s ? `${s} – ${e}` : s) : "";
@@ -1317,7 +1269,6 @@ function _swipeCardInner(ev) {
     const m = price.match(/(\d+[\.,]?\d*)\s*€/);
     return m ? `Desde ${m[1]} €` : "De pago";
   })();
-  const EXCLUDED_CATS = new Set(["gratis", "destacado", "aire libre", "accesible"]);
   const catBadges = [...new Set(ev.categories)].filter(c => !EXCLUDED_CATS.has(c)).map(c => {
     const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
     return `<span class="swipe-info-badge swipe-info-badge-cat">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</span>`;

@@ -4,7 +4,7 @@ import hashlib
 import json
 import os
 import sys
-from datetime import datetime, date as date_type, UTC
+from datetime import datetime, UTC
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
