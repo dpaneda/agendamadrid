@@ -1404,7 +1404,9 @@ function _swipeCardInner(ev) {
     ${hasImage
       ? `<img class="swipe-card-img" src="${esc(imageUrl)}" alt="" loading="eager">`
       : `<div class="swipe-card-bg" style="background:linear-gradient(160deg,${color}cc 0%,${color}66 45%,${color}22 75%,#1a1a2e 100%)"></div>`}
-    ${hasImage ? '' : `<div class="swipe-emoji-area"><span class="swipe-emoji-big">${catInfo.emoji}</span></div>`}
+    ${hasImage
+      ? `<div class="swipe-cat-badge">${catInfo.emoji}</div>`
+      : `<div class="swipe-emoji-area"><span class="swipe-emoji-big">${catInfo.emoji}</span></div>`}
     <div class="swipe-info-badges">
       ${isFree ? '<span class="swipe-info-badge swipe-info-badge-free">Gratis</span>' : (shortPrice ? `<span class="swipe-info-badge swipe-info-badge-price">${esc(shortPrice)}</span>` : "")}
       ${distBadge}
