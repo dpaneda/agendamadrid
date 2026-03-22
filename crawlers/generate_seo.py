@@ -32,7 +32,9 @@ def _date_label(d: date) -> str:
 
 
 def _start_dt(ds, t):
-    return f"{ds}T{t}:00" if t else ds
+    if not t:
+        return ds
+    return f"{ds}T{t}" if t.count(":") >= 2 else f"{ds}T{t}:00"
 
 
 def _get_day_events(events, calendar, ds):
@@ -79,18 +81,27 @@ def _generate_json_ld(day_events, ds):
         if cats:
             item["keywords"] = ", ".join(cats)
         is_free = "gratis" in (ev.get("categories") or [])
+        event_url = ev.get("url") or f"{BASE_URL}/{ds}/"
         item["offers"] = {
             "@type": "Offer",
             "price": "0" if is_free else "",
             "priceCurrency": "EUR",
             "availability": "https://schema.org/InStock",
+            "validFrom": ev.get("created_at", ds)[:10],
+            "url": event_url,
         }
+        item["image"] = f"{BASE_URL}/images/og-image.png"
+        loc_name = ev.get("location_name") or ev.get("location") or "Madrid"
+        item["organizer"] = {"@type": "Organization", "name": loc_name, "url": event_url}
+        item["performer"] = {"@type": "PerformingGroup", "name": loc_name}
         if ev.get("latitude") and ev.get("longitude"):
             item["location"]["geo"] = {
                 "@type": "GeoCoordinates",
                 "latitude": ev["latitude"],
                 "longitude": ev["longitude"],
             }
+            if ev.get("address"):
+                item["location"]["address"]["streetAddress"] = ev["address"]
         items.append(item)
 
     ld = {"@context": "https://schema.org", "@graph": items}
