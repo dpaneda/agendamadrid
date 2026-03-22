@@ -246,6 +246,20 @@ def _parse_event_page(url):
         if len(description) > 300:
             description = description[:297] + "..."
 
+    # Image from JSON-LD or og:image
+    image = None
+    img_data = ld.get("image")
+    if isinstance(img_data, list) and img_data:
+        image = img_data[0] if isinstance(img_data[0], str) else img_data[0].get("url")
+    elif isinstance(img_data, dict):
+        image = img_data.get("url")
+    elif isinstance(img_data, str):
+        image = img_data
+    if not image:
+        og_img = soup.find("meta", property="og:image")
+        if og_img and og_img.get("content"):
+            image = og_img["content"]
+
     # Dates from JSON-LD (used as fallback, actual date comes from search)
     start_date = None
     end_date = None
@@ -373,6 +387,7 @@ def _parse_event_page(url):
         "longitude": longitude,
         "url": event_url or url,
         "price": price_text_raw,
+        "image": image,
         "source_url": url,
         "source": "esmadrid",
         "categories": normalize(categories),

@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#2D0D6B">
+  <meta name="theme-color" content="#381d92">
   <link rel="canonical" href="https://agendamadrid.es/2026-04-04/">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="style.css">
   <style>body{opacity:0}body.ready{opacity:1;transition:opacity .15s}</style>
+  <script>try{const t=JSON.parse(localStorage.getItem("agendamadrid_user")||"{}");if(t.settings&&t.settings.theme){document.documentElement.setAttribute("data-theme",t.settings.theme);const c={madrid:"#b30012",clasico:"#381d92",noche:"#121212"}[t.settings.theme];if(c)document.querySelector('meta[name="theme-color"]').setAttribute("content",c)}}catch(e){}</script>
   <!-- SEO:JSON_LD:START --><script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -628,49 +629,6 @@
       "performer": {
         "@type": "PerformingGroup",
         "name": "SOLO CSV"
-      }
-    },
-    {
-      "@type": "Event",
-      "name": "Los Sábados de El Rastro",
-      "startDate": "2026-04-04T10:00:00",
-      "eventStatus": "https://schema.org/EventScheduled",
-      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-      "location": {
-        "@type": "Place",
-        "name": "Madrid",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Madrid",
-          "addressCountry": "ES",
-          "streetAddress": "del General Vara del Rey"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 40.4107628,
-          "longitude": -3.707389
-        }
-      },
-      "url": "https://lossabadosdelrastro.com/",
-      "description": "La feria de ocio más castiza y emblemática con las mejores antigüedades, vintage, almoneda, coleccionismo, gastronomía y entretenimiento (Plaza del General Vara del Rey.",
-      "keywords": "Gastronomía",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "EUR",
-        "availability": "https://schema.org/InStock",
-        "validFrom": "2026-03-22",
-        "url": "https://lossabadosdelrastro.com/"
-      },
-      "image": "https://agendamadrid.es/images/og-image.png",
-      "organizer": {
-        "@type": "Organization",
-        "name": "Madrid",
-        "url": "https://lossabadosdelrastro.com/"
-      },
-      "performer": {
-        "@type": "PerformingGroup",
-        "name": "Madrid"
       }
     },
     {
@@ -2607,6 +2565,49 @@
         "@type": "PerformingGroup",
         "name": "Conde Duque"
       }
+    },
+    {
+      "@type": "Event",
+      "name": "Rauschenberg: Express. En movimiento",
+      "startDate": "2026-04-04T10:00:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Museo Nacional Thyssen-Bornemisza",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Madrid",
+          "addressCountry": "ES",
+          "streetAddress": "del Prado, 8"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 40.4160406,
+          "longitude": -3.6949254
+        }
+      },
+      "url": "https://www.museothyssen.org/exposiciones/rauschenberg-express-dentro-fuera-taller",
+      "description": "Instalación especial en torno a una de las obras más representativas del artista (Museo Nacional Thyssen-Bornemisza. Hasta 24 may).",
+      "keywords": "Exposiciones",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2026-03-18",
+        "url": "https://www.museothyssen.org/exposiciones/rauschenberg-express-dentro-fuera-taller"
+      },
+      "image": "https://agendamadrid.es/images/og-image.png",
+      "organizer": {
+        "@type": "Organization",
+        "name": "Museo Nacional Thyssen-Bornemisza",
+        "url": "https://www.museothyssen.org/exposiciones/rauschenberg-express-dentro-fuera-taller"
+      },
+      "performer": {
+        "@type": "PerformingGroup",
+        "name": "Museo Nacional Thyssen-Bornemisza"
+      }
     }
   ]
 }
@@ -2630,10 +2631,10 @@
         <button class="view-toggle active" data-view="list" id="btn-list">Lista</button>
         <button class="view-toggle" data-view="map" id="btn-map">Mapa</button>
         <button class="view-toggle" data-view="cal" id="btn-cal">Mes</button>
-        <button class="view-toggle view-toggle-swipe" data-view="swipe" id="btn-swipe">✨ Mix</button>
+        <button class="view-toggle view-toggle-swipe" data-view="swipe" id="btn-swipe">Swipe</button>
       </nav>
       <button id="btn-sync" class="btn-sync" title="Iniciar sesión">
-        <span id="sync-label">Login</span>
+        <span id="sync-label">Ajustes</span>
       </button>
     </div>
   </header>
@@ -2723,11 +2724,6 @@
     <h2><a href="https://movimiento37.com/#cindy ">Cindy Crawford. Hostage 01</a></h2>
     <p><time datetime="2026-04-04T09:30:00">09:30:00</time> · SOLO CSV · Exposiciones</p>
     <p>El artista investiga la materialidad de la tensión: el cuerpo contenido y la energía latente de los objetos suspendidos (SOLO CSV. Hasta 18 julio).</p>
-  </article>
-  <article>
-    <h2><a href="https://lossabadosdelrastro.com/">Los Sábados de El Rastro</a></h2>
-    <p><time datetime="2026-04-04T10:00:00">10:00:00</time> · Gratis · Gastronomía</p>
-    <p>La feria de ocio más castiza y emblemática con las mejores antigüedades, vintage, almoneda, coleccionismo, gastronomía y entretenimiento (Plaza del General Vara del Rey.</p>
   </article>
   <article>
     <h2><a href="https://150aniversario.museomisionessalesianas.org/">La aventura valdrá la pena. 150 años de las misiones salesianas</a></h2>
@@ -2853,6 +2849,11 @@
     <h2><a href="https://leica-camera.com/es-ES/eventos/exposicion-new-comer-de-ziyi-le?srsltid=AfmBOorOupGvXr9kqRTHzi8k30_2fPK_YjdBUNr07TL5aG_Jn9psBIz1">New Comer de Ziyi Le</a></h2>
     <p><time datetime="2026-04-04T10:00:00">10:00:00</time> · Gratis · Exposiciones, Fotografía</p>
     <p>Exposición fotográfica del artista chino Ziyi Le, ganador del Premio Leica Oskar Barnack 2023, que incluye una serie de retratos (Leica Madrid Gallery. Hasta 15 mayo).</p>
+  </article>
+  <article>
+    <h2><a href="https://www.centrocentro.org/exposicion/luis-perez-calvo">Luis Pérez Calvo. Cromos de artista</a></h2>
+    <p><time datetime="2026-04-04T10:00:00">10:00:00</time> · CentroCentro · Gratis · Exposiciones</p>
+    <p>El artista multidisciplinar presenta una exposición integrada por una selección de «cromos» y un mural realizado in situ (CentroCentro. Hasta 20 sept).</p>
   </article><!-- SEO:PRERENDER:END --></div>
     <div id="map-container" hidden>
       <div id="map"></div>
@@ -2877,7 +2878,11 @@
     </button>
     <button class="bottom-tab" id="btn-swipe-tab" data-view="swipe">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-      <span>Mix</span>
+      <span>Swipe</span>
+    </button>
+    <button class="bottom-tab" id="btn-user-tab" data-view="user">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      <span>Ajustes</span>
     </button>
   </nav>
 

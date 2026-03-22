@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#2D0D6B">
+  <meta name="theme-color" content="#381d92">
   <link rel="canonical" href="https://agendamadrid.es/2026-03-26/">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="style.css">
   <style>body{opacity:0}body.ready{opacity:1;transition:opacity .15s}</style>
+  <script>try{const t=JSON.parse(localStorage.getItem("agendamadrid_user")||"{}");if(t.settings&&t.settings.theme){document.documentElement.setAttribute("data-theme",t.settings.theme);const c={madrid:"#b30012",clasico:"#381d92",noche:"#121212"}[t.settings.theme];if(c)document.querySelector('meta[name="theme-color"]').setAttribute("content",c)}}catch(e){}</script>
   <!-- SEO:JSON_LD:START --><script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -2630,10 +2631,10 @@
         <button class="view-toggle active" data-view="list" id="btn-list">Lista</button>
         <button class="view-toggle" data-view="map" id="btn-map">Mapa</button>
         <button class="view-toggle" data-view="cal" id="btn-cal">Mes</button>
-        <button class="view-toggle view-toggle-swipe" data-view="swipe" id="btn-swipe">✨ Mix</button>
+        <button class="view-toggle view-toggle-swipe" data-view="swipe" id="btn-swipe">Swipe</button>
       </nav>
       <button id="btn-sync" class="btn-sync" title="Iniciar sesión">
-        <span id="sync-label">Login</span>
+        <span id="sync-label">Ajustes</span>
       </button>
     </div>
   </header>
@@ -2877,7 +2878,11 @@
     </button>
     <button class="bottom-tab" id="btn-swipe-tab" data-view="swipe">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-      <span>Mix</span>
+      <span>Swipe</span>
+    </button>
+    <button class="bottom-tab" id="btn-user-tab" data-view="user">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      <span>Ajustes</span>
     </button>
   </nav>
 

@@ -64,6 +64,53 @@ const Settings = {
   getAll() { return UserData.raw().settings || {}; },
 };
 
+const THEMES = {
+  madrid:  { label: "Madrid", emoji: "🔴", themeColor: "#b30012" },
+  clasico: { label: "Clásico", emoji: "🟣", themeColor: "#381d92" },
+  noche:   { label: "Noche", emoji: "🌙", themeColor: "#121212" },
+};
+
+function applyTheme(theme) {
+  if (!THEMES[theme]) theme = "clasico";
+  document.documentElement.setAttribute("data-theme", theme);
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.setAttribute("content", THEMES[theme].themeColor);
+  Settings.set("theme", theme);
+  if (typeof renderUserView === "function" && typeof currentView !== "undefined" && currentView === "user") renderUserView();
+}
+
+function customDropdown(id, options, selectedValue, onChangeFn) {
+  const sel = options.find(o => o.value === selectedValue);
+  const label = sel ? sel.label : options[0]?.label || "";
+  return `<div class="custom-dropdown" data-dd="${id}">
+    <button class="custom-dropdown-trigger" onclick="toggleDropdown('${id}')">
+      <span class="dd-label">${label}</span>
+      <span class="dd-arrow">▼</span>
+    </button>
+    <div class="custom-dropdown-menu">
+      ${options.map(o => `<button class="custom-dropdown-option${o.value === selectedValue ? " selected" : ""}" onclick="selectDropdown('${id}','${o.value}',${onChangeFn})">${o.label}</button>`).join("")}
+    </div>
+  </div>`;
+}
+
+function toggleDropdown(id) {
+  const el = document.querySelector(`[data-dd="${id}"]`);
+  const wasOpen = el.classList.contains("open");
+  document.querySelectorAll(".custom-dropdown.open").forEach(d => d.classList.remove("open"));
+  if (!wasOpen) el.classList.add("open");
+}
+
+function selectDropdown(id, value, fn) {
+  document.querySelectorAll(".custom-dropdown.open").forEach(d => d.classList.remove("open"));
+  fn(value);
+}
+
+document.addEventListener("click", e => {
+  if (!e.target.closest(".custom-dropdown")) {
+    document.querySelectorAll(".custom-dropdown.open").forEach(d => d.classList.remove("open"));
+  }
+});
+
 const MAP_TILES = {
   light:   { label: "Claro",   url: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" },
   dark:    { label: "Oscuro",  url: "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png" },
@@ -183,7 +230,7 @@ const FirebaseSync = (() => {
     if (!btn) return;
     if (u) {
       btn.classList.add("logged-in");
-      label.textContent = u.displayName ? u.displayName.split(" ")[0] : "Login";
+      label.textContent = u.displayName ? u.displayName.split(" ")[0] : "Ajustes";
       if (u.photoURL) {
         let img = btn.querySelector(".sync-avatar");
         if (!img) {
@@ -196,7 +243,7 @@ const FirebaseSync = (() => {
       }
     } else {
       btn.classList.remove("logged-in");
-      label.textContent = "Login";
+      label.textContent = "Ajustes";
       const avatar = btn.querySelector(".sync-avatar");
       if (avatar) avatar.remove();
     }
@@ -382,6 +429,7 @@ async function init() {
   document.getElementById("btn-map-tab").addEventListener("click", () => setView("map"));
   document.getElementById("btn-cal-tab").addEventListener("click", () => setView("cal"));
   document.getElementById("btn-swipe-tab").addEventListener("click", () => setView("swipe"));
+  document.getElementById("btn-user-tab").addEventListener("click", () => setView("user"));
 
   document.getElementById("btn-today").addEventListener("click", () => {
     selectedDate = new Date();
@@ -405,7 +453,10 @@ async function init() {
     const action = btn.dataset.action;
     if (action === "fav") {
       UserData.toggle("favorites", id);
-      btn.classList.toggle("active", UserData.has("favorites", id));
+      const isNowFav = UserData.has("favorites", id);
+      btn.classList.toggle("active", isNowFav);
+      const svg = btn.querySelector("svg path, svg");
+      if (svg) svg.setAttribute("fill", isNowFav ? "currentColor" : "none");
     } else if (action === "seen" || action === "dismiss") {
       const collection = action === "seen" ? "seen" : "dismissed";
       UserData.toggle(collection, id);
@@ -422,17 +473,17 @@ async function init() {
   });
 
   document.getElementById("btn-sync").addEventListener("click", () => {
-    if (FirebaseSync.isLoggedIn()) {
-      setView("user");
-    } else {
-      FirebaseSync.login();
-    }
+    setView("user");
   });
   FirebaseSync.init();
 
   syncPicker();
   locateUser();
   await loadData();
+
+  // Apply saved theme
+  const savedTheme = Settings.get("theme", "clasico");
+  document.documentElement.setAttribute("data-theme", savedTheme);
 
   setView(currentView);
   document.body.classList.add("ready");
@@ -465,6 +516,7 @@ function setView(view) {
   document.getElementById("btn-map-tab").classList.toggle("active", view === "map");
   document.getElementById("btn-cal-tab").classList.toggle("active", view === "cal");
   document.getElementById("btn-swipe-tab").classList.toggle("active", view === "swipe");
+  document.getElementById("btn-user-tab").classList.toggle("active", view === "user");
   document.getElementById("events-container").hidden = view !== "list";
   document.getElementById("map-container").hidden = view !== "map";
   document.getElementById("cal-container").hidden = view !== "cal";
@@ -609,21 +661,32 @@ function renderMap() {
     const bestCat = PRIORITY.find(p => allCats.includes(p)) || "otros";
     const location = evs[0].location_name || evs[0].location || "";
 
-    const evRows = evs.map(ev => {
+    // Deduplicate events by title, keep the one with the next upcoming time
+    const now = new Date();
+    const nowHHMM = `${String(now.getHours()).padStart(2,"0")}:${String(now.getMinutes()).padStart(2,"0")}`;
+    const uniqueEvs = new Map();
+    evs.forEach(ev => {
+      const key = ev.title;
+      const time = ev.start_time ? ev.start_time.slice(0, 5) : "";
+      const existing = uniqueEvs.get(key);
+      if (!existing) {
+        uniqueEvs.set(key, ev);
+      } else {
+        const exTime = existing.start_time ? existing.start_time.slice(0, 5) : "";
+        // Prefer the next upcoming time (>= now), or the earliest future one
+        if (time >= nowHHMM && (exTime < nowHHMM || time < exTime)) {
+          uniqueEvs.set(key, ev);
+        }
+      }
+    });
+
+    const evRows = [...uniqueEvs.values()].map(ev => {
       const time = ev.start_time ? ev.start_time.slice(0, 5) : "";
       const titleHtml = ev.url
         ? `<a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.title)}</a>`
         : esc(ev.title);
-      const mapFav = UserData.has("favorites", ev.id);
-      const mapSeen = UserData.has("seen", ev.id);
       return `<div class="popup-event">
-        <div class="popup-title">${titleHtml}</div>
-        ${time ? `<div class="popup-meta">${esc(time)}</div>` : ""}
-        <div class="popup-actions">
-          <button class="ev-action ev-fav${mapFav ? ' active' : ''}" onclick="mapAction('fav','${esc(ev.id)}',this)" title="Favorito"><svg width="16" height="16" viewBox="0 0 24 24" fill="${mapFav ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
-          <button class="ev-action ev-seen${mapSeen ? ' active' : ''}" onclick="mapAction('seen','${esc(ev.id)}',this)" title="Visto"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></button>
-          <button class="ev-action ev-dismiss" onclick="mapAction('dismiss','${esc(ev.id)}',this)" title="Ocultar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
-        </div>
+        <div class="popup-title">${time ? `<span class="popup-time">${esc(time)}</span> ` : ""}${titleHtml}</div>
       </div>`;
     }).join("");
 
@@ -1012,30 +1075,46 @@ function renderUserView() {
   const user = FirebaseSync.getUser();
   const currentTile = Settings.get("mapTile", "voyager");
   const hidePast = Settings.get("hidePast", true);
+  const currentTheme = Settings.get("theme", "clasico");
 
-  const tilesHtml = `<select onchange="applyMapTile(this.value)">
-    ${Object.entries(MAP_TILES).map(([key, t]) => `<option value="${key}"${key === currentTile ? " selected" : ""}>${t.label}</option>`).join("")}
-  </select>`;
+  const tilesHtml = customDropdown("mapTile",
+    Object.entries(MAP_TILES).map(([key, t]) => ({ value: key, label: t.label })),
+    currentTile, "applyMapTile");
 
   const sources = [...new Set(allData.flatMap(ev => (ev.source || "").split(",").filter(Boolean)))].sort();
-  const sourcesHtml = sources.length > 1 ? `
-    <label class="setting-row">
-      <span>Fuente <small>(debug)</small></span>
-      <select onchange="applySource(this.value)">
-        <option value="">Todas</option>
-        ${sources.map(s => `<option value="${s}"${activeSource === s ? " selected" : ""}>${SOURCE_LABELS[s] || s}</option>`).join("")}
-      </select>
-    </label>` : "";
+  const sourcesHtml = sources.length > 1;
 
   const profileHtml = user ? `
-    <div class="user-header">
+    <div class="user-profile-centered">
       <img src="${user.photoURL || ''}" class="user-avatar-large" alt="">
-      <div>
+      <div class="user-profile-info">
         <div class="user-name">${user.displayName || ''}</div>
         <div class="user-email">${user.email || ''}</div>
       </div>
     </div>` : `
     <button class="btn-login" onclick="FirebaseSync.login()">Iniciar sesión con Google</button>`;
+
+  const numFavs = Object.keys(UserData.getAll("favorites")).length;
+  const numSeen = Object.keys(UserData.getAll("seen")).length;
+  const numDismissed = Object.keys(UserData.getAll("dismissed")).length;
+  const statsHtml = `
+    <div class="user-stats">
+      <button class="stat-card" onclick="goToUserFilter('favorites')">
+        <span class="stat-label">Favoritos</span>
+        <span class="stat-num">${numFavs}</span>
+        <span class="stat-icon" style="color:#6b21a8;font-size:1.4rem">♥</span>
+      </button>
+      <button class="stat-card" onclick="goToUserFilter('seen')">
+        <span class="stat-label">Vistos</span>
+        <span class="stat-num">${numSeen}</span>
+        <span class="stat-icon">👁</span>
+      </button>
+      <button class="stat-card" onclick="goToUserFilter('dismissed')">
+        <span class="stat-label">Ocultos</span>
+        <span class="stat-num">${numDismissed}</span>
+        <span class="stat-icon">🚫</span>
+      </button>
+    </div>`;
 
   const allCats = [...new Set(allData.flatMap(ev => ev.categories || []))]
     .filter(c => !EXCLUDED_CATS.has(c))
@@ -1043,60 +1122,103 @@ function renderUserView() {
   const prefCats = Settings.get("cats", []);
   const effectivePrefCats = prefCats.length === 0 ? allCats : prefCats;
   const catGridHtml = `
-    <div class="cat-grid">
+    <div class="cat-grid-circles">
       ${allCats.map(c => {
         const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
         const active = effectivePrefCats.includes(c);
-        return `<button class="cat-pill${active ? " active" : ""}" onclick="toggleCatPref('${esc(c)}')">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</button>`;
+        return `<button class="cat-circle${active ? " active" : ""}" onclick="toggleCatPref('${esc(c)}')">
+          <span class="cat-circle-icon">${info.emoji}</span>
+          <span class="cat-circle-label">${esc(CATEGORY_LABELS[c] || c)}</span>
+        </button>`;
       }).join("")}
     </div>
   `;
-
-  const statsHtml = `
-    <div class="user-stats">
-      <button class="stat-card" onclick="goToUserFilter('favorites')">
-        <span class="stat-num">${Object.keys(UserData.getAll("favorites")).length}</span>
-        <span class="stat-label">Favoritos ♥</span>
-      </button>
-      <button class="stat-card" onclick="goToUserFilter('seen')">
-        <span class="stat-num">${Object.keys(UserData.getAll("seen")).length}</span>
-        <span class="stat-label">Vistos ✓</span>
-      </button>
-      <button class="stat-card" onclick="goToUserFilter('dismissed')">
-        <span class="stat-num">${Object.keys(UserData.getAll("dismissed")).length}</span>
-        <span class="stat-label">Ocultos ✕</span>
-      </button>
-    </div>`;
 
   document.getElementById("user-container").innerHTML = `
     <div class="user-page">
       ${profileHtml}
       ${statsHtml}
-      <section class="user-settings">
-        <h3>Categorías visibles</h3>
-        ${catGridHtml}
-        <h3>Preferencias</h3>
-        <div class="setting-row">
-          <span>Ocultar eventos pasados</span>
-          <input type="checkbox" ${hidePast ? "checked" : ""} onchange="applyHidePast(this.checked)">
+
+      <section class="pref-section">
+        <div class="pref-section-header">
+          <h3>Mis Intereses</h3>
         </div>
-        <label class="setting-row">
-          <span>Ordenar por</span>
-          <select onchange="applySort(this.value)">
-            <option value="hora"${activeSort === "hora" ? " selected" : ""}>Hora</option>
-            <option value="precio"${activeSort === "precio" ? " selected" : ""}>Precio</option>
-            <option value="distancia"${activeSort === "distancia" ? " selected" : ""}>Distancia</option>
-          </select>
-        </label>
-        ${sourcesHtml}
-        <label class="setting-row">
-          <span>Estilo del mapa</span>
-          ${tilesHtml}
-        </label>
+        ${catGridHtml}
       </section>
-      ${user ? `<button class="btn-logout" onclick="FirebaseSync.logout(); setView('list')">Cerrar sesión</button>` : ""}
+
+      <section class="pref-section">
+        <h3>Configuración</h3>
+        <div class="setting-toggle-row">
+          <div class="setting-toggle-text">
+            <span class="setting-toggle-title">Ocultar eventos pasados</span>
+          </div>
+          <label class="toggle-switch">
+            <input type="checkbox" ${hidePast ? "checked" : ""} onchange="applyHidePast(this.checked)">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+        <div class="setting-grid">
+          <div class="setting-grid-item">
+            <span class="setting-grid-label">Ordenar por</span>
+            ${customDropdown("sort", [
+              { value: "hora", label: "Hora" },
+              { value: "precio", label: "Precio" },
+              { value: "distancia", label: "Distancia" },
+            ], activeSort || "hora", "applySort")}
+          </div>
+          <div class="setting-grid-item">
+            <span class="setting-grid-label">Tema visual</span>
+            ${customDropdown("theme",
+              Object.entries(THEMES).map(([key, t]) => ({ value: key, label: `${t.emoji} ${t.label}` })),
+              currentTheme, "applyTheme")}
+          </div>
+          ${sourcesHtml ? `<div class="setting-grid-item">
+            <span class="setting-grid-label">Fuente</span>
+            ${customDropdown("source",
+              [{ value: "", label: "Todas" }, ...sources.map(s => ({ value: s, label: SOURCE_LABELS[s] || s }))],
+              activeSource || "", "applySource")}
+          </div>` : ""}
+          <div class="setting-grid-item">
+            <span class="setting-grid-label">Estilo del mapa</span>
+            ${tilesHtml}
+          </div>
+        </div>
+      </section>
+
+      <div class="user-actions-row">
+        ${user ? `<button class="btn-logout" onclick="FirebaseSync.logout(); setView('list')">Cerrar sesión</button>` : ""}
+        <button class="btn-logout btn-danger" onclick="resetUserData()">Resetear todo</button>
+      </div>
     </div>
   `;
+}
+
+function showConfirm(msg, onConfirm) {
+  const overlay = document.createElement("div");
+  overlay.className = "confirm-overlay";
+  overlay.innerHTML = `<div class="confirm-dialog">
+    <p>${msg}</p>
+    <div class="confirm-actions">
+      <button class="confirm-cancel">Cancelar</button>
+      <button class="confirm-ok">Confirmar</button>
+    </div>
+  </div>`;
+  document.body.appendChild(overlay);
+  requestAnimationFrame(() => overlay.classList.add("visible"));
+  const close = () => { overlay.classList.remove("visible"); setTimeout(() => overlay.remove(), 200); };
+  overlay.querySelector(".confirm-cancel").onclick = close;
+  overlay.querySelector(".confirm-ok").onclick = () => { close(); onConfirm(); };
+  overlay.addEventListener("click", e => { if (e.target === overlay) close(); });
+}
+
+function resetUserData() {
+  showConfirm("¿Resetear toda la configuración y datos a los valores por defecto?", () => {
+    const data = { version: 1, favorites: {}, seen: {}, dismissed: {}, settings: {} };
+    localStorage.setItem("agendamadrid_user", JSON.stringify(data));
+    FirebaseSync.push(data);
+    applyTheme("clasico");
+    renderUserView();
+  });
 }
 
 function goToUserFilter(filter) {
@@ -1196,22 +1318,8 @@ function _buildSwipeDeck() {
 
   const remaining = swipeQueue.slice(swipeIndex);
 
-  // Action bar (always present)
-  container.insertAdjacentHTML("beforeend", `
-    <div class="swipe-actions-bar">
-      <button class="swipe-btn swipe-btn-dismiss" onclick="triggerSwipe('left')" title="Ocultar">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-      </button>
-      <button class="swipe-btn swipe-btn-skip" onclick="triggerSwipe('up')" title="Saltar">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"><polyline points="7 20 17 12 7 4"/></svg>
-      </button>
-      <button class="swipe-btn swipe-btn-fav" onclick="triggerSwipe('right')" title="Favorito">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-      </button>
-    </div>`);
-
   if (!remaining.length) {
-    container.insertAdjacentHTML("afterbegin", `
+    container.innerHTML = `
       <div class="swipe-empty">
         <div class="swipe-empty-icon">✅</div>
         <div class="swipe-empty-title">¡Todo clasificado!</div>
@@ -1220,30 +1328,40 @@ function _buildSwipeDeck() {
           <button onclick="setView('list')">Ver lista</button>
           <button onclick="changeDay(1); renderSwipeView()">Siguiente día →</button>
         </div>
-      </div>`);
+      </div>`;
     return;
   }
 
-  // Render up to 3 cards; top card is last in DOM (highest z-index)
-  const visible = remaining.slice(0, 3).reverse();
-  visible.forEach((ev, i) => {
-    const stackPos = visible.length - 1 - i; // 0 = top
-    const el = document.createElement("div");
-    el.className = "swipe-card" + (stackPos === 0 ? " swipe-card-top" : "");
-    el.dataset.id = ev.id;
-    el.innerHTML = _swipeCardInner(ev);
-    if (stackPos === 1) el.style.cssText = "transform: scale(0.95) translateY(16px); z-index: 3;";
-    if (stackPos === 2) el.style.cssText = "transform: scale(0.90) translateY(32px); z-index: 2;";
-    container.appendChild(el);
-  });
+  // Deck wrapper for cards
+  const deck = document.createElement("div");
+  deck.className = "swipe-deck";
+  container.appendChild(deck);
 
-  // Top bar (back + counter) — above cards
-  container.insertAdjacentHTML("beforeend", `
+  // Render only the top card
+  const el = document.createElement("div");
+  el.className = "swipe-card swipe-card-top";
+  el.dataset.id = remaining[0].id;
+  el.innerHTML = _swipeCardInner(remaining[0]);
+  deck.appendChild(el);
+
+  // Counter overlay on top card
+  deck.insertAdjacentHTML("beforeend", `
     <div class="swipe-top-bar">
-      <button class="swipe-back-btn" onclick="setView('list')" title="Volver">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
-      </button>
       <span class="swipe-counter">${swipeIndex + 1} / ${swipeQueue.length}</span>
+    </div>`);
+
+  // Action bar below deck
+  container.insertAdjacentHTML("beforeend", `
+    <div class="swipe-actions-bar">
+      <button class="swipe-btn swipe-btn-dismiss" onclick="triggerSwipe('left')" title="Ocultar">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <button class="swipe-btn swipe-btn-skip" onclick="triggerSwipe('up')" title="Saltar">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+      </button>
+      <button class="swipe-btn swipe-btn-fav" onclick="triggerSwipe('right')" title="Favorito">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </button>
     </div>`);
 
   _initSwipeDrag();
@@ -1280,17 +1398,19 @@ function _swipeCardInner(ev) {
     return `<span class="swipe-info-badge swipe-info-badge-dist">📍 ${d.toFixed(1)} km</span>`;
   })();
 
+  const imageUrl = Array.isArray(ev.image) ? ev.image[0] : ev.image;
+  const hasImage = !!imageUrl;
   return `
-    <div class="swipe-card-bg" style="background:linear-gradient(160deg,${color}cc 0%,${color}66 45%,${color}22 75%,#1a1a2e 100%)"></div>
-    <div class="swipe-emoji-area">
-      <span class="swipe-emoji-big">${catInfo.emoji}</span>
+    ${hasImage
+      ? `<img class="swipe-card-img" src="${esc(imageUrl)}" alt="" loading="eager">`
+      : `<div class="swipe-card-bg" style="background:linear-gradient(160deg,${color}cc 0%,${color}66 45%,${color}22 75%,#1a1a2e 100%)"></div>`}
+    ${hasImage ? '' : `<div class="swipe-emoji-area"><span class="swipe-emoji-big">${catInfo.emoji}</span></div>`}
+    <div class="swipe-info-badges">
+      ${isFree ? '<span class="swipe-info-badge swipe-info-badge-free">Gratis</span>' : (shortPrice ? `<span class="swipe-info-badge swipe-info-badge-price">${esc(shortPrice)}</span>` : "")}
+      ${distBadge}
+      ${catBadges}
     </div>
     <div class="swipe-info">
-      <div class="swipe-info-badges">
-        ${isFree ? '<span class="swipe-info-badge swipe-info-badge-free">Gratis</span>' : (shortPrice ? `<span class="swipe-info-badge swipe-info-badge-price">${esc(shortPrice)}</span>` : "")}
-        ${distBadge}
-        ${catBadges}
-      </div>
       <div class="swipe-info-title">${esc(ev.title)}</div>
       <div class="swipe-info-meta">
         ${timeStr ? `<span>⏰ ${esc(timeStr)}</span>` : ""}

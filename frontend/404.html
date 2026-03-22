@@ -7,26 +7,27 @@
   <link rel="icon" type="image/png" href="/images/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #381d92;
-      --primary-dark: #1C0A63;
-      --bg: #F2F2FA;
+      --primary: #b30012;
+      --primary-dark: #8a000e;
+      --primary-container: #e1001a;
+      --bg: #fbf9f8;
       --white: #ffffff;
-      --muted: #6b6b8a;
+      --muted: #936e6a;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Inter, sans-serif; background: var(--bg); color: #0B0620; min-height: 100vh; display: flex; flex-direction: column; }
-    header { background: var(--primary-dark); padding: 0.75rem 1rem; }
-    .logo { text-decoration: none; font-weight: 700; font-size: 2rem; letter-spacing: -0.02em; }
-    .logo-agenda { color: #e63228; }
-    .logo-madrid { color: var(--white); }
+    body { font-family: Inter, sans-serif; background: var(--bg); color: #1b1c1c; min-height: 100vh; display: flex; flex-direction: column; }
+    header { background: rgba(251, 249, 248, 0.85); backdrop-filter: blur(16px); padding: 0.75rem 1rem; }
+    .logo { text-decoration: none; font-weight: 700; font-size: 1.6rem; letter-spacing: -0.03em; text-transform: uppercase; }
+    .logo-agenda { color: var(--primary-container); }
+    .logo-madrid { color: #1b1c1c; font-weight: 800; }
     main { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; padding: 2rem; text-align: center; }
     .code { font-size: 5rem; font-weight: 700; color: var(--primary); line-height: 1; }
     .msg { font-size: 1.1rem; color: var(--muted); }
-    a.btn { display: inline-block; margin-top: 0.5rem; padding: 0.6rem 1.5rem; background: var(--primary); color: var(--white); border-radius: 0.5rem; text-decoration: none; font-weight: 600; }
-    a.btn:hover { background: var(--primary-dark); }
+    a.btn { display: inline-block; margin-top: 0.5rem; padding: 0.6rem 1.5rem; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-container) 100%); color: var(--white); border-radius: 999px; text-decoration: none; font-weight: 600; }
+    a.btn:hover { opacity: 0.9; }
   </style>
 </head>
 <body>

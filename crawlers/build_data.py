@@ -16,7 +16,7 @@ EVENTS_PATH = os.path.join(DATA_DIR, "events.json")
 CALENDAR_PATH = os.path.join(DATA_DIR, "calendar.json")
 
 RICHNESS_FIELDS = ["description", "start_time", "end_time", "location_name", "address",
-                   "latitude", "longitude", "url", "district"]
+                   "latitude", "longitude", "url", "district", "image"]
 
 
 def cal_entries_for_date(ev, eid, ds):
