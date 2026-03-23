@@ -622,7 +622,7 @@ const CAT_ICONS = {
   fotografia:      { emoji: "📷", color: "#6B7280" },
   literatura:      { emoji: "📖", color: "#7C2D12" },
   circo:           { emoji: "🤹", color: "#BE185D" },
-  otros:           { emoji: "🎪", color: "#6B7280" },
+  otros:           { emoji: "📌", color: "#6B7280" },
 };
 
 
