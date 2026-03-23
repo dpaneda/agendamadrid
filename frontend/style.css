@@ -1765,23 +1765,6 @@ footer p + p {
   display: none;
 }
 
-.swipe-card-img-blur {
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  width: 100%;
-  height: 63%;
-  object-fit: cover;
-  object-position: center center;
-  pointer-events: none;
-  filter: blur(28px) brightness(0.5);
-  transform: scale(1.15);
-  display: none;
-}
-
-.swipe-card--wide .swipe-card-img-blur {
-  display: block;
-}
-
 .swipe-card-img {
   position: absolute;
   top: 0; left: 0; right: 0;
@@ -1791,12 +1774,8 @@ footer p + p {
   object-position: center center;
   pointer-events: none;
   background: #111;
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
-}
-
-.swipe-card--wide .swipe-card-img {
-  object-fit: contain;
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
 }
 
 .swipe-card--has-img {
