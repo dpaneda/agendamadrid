@@ -1769,7 +1769,7 @@ footer p + p {
   position: absolute;
   top: 2.5rem; left: 0; right: 0;
   width: 100%;
-  height: calc(63% - 2.5rem);
+  height: calc(50% - 2.5rem);
   object-fit: contain;
   object-position: center center;
   pointer-events: none;
@@ -1800,7 +1800,7 @@ footer p + p {
 /* Bottom info overlay */
 .swipe-info {
   position: absolute;
-  top: 60%;
+  top: 50%;
   bottom: 0; left: 0; right: 0;
   padding: 1rem 1rem 2.5rem;
   background: linear-gradient(to top, rgba(10,10,12,0.92) 0%, rgba(10,10,12,0.65) 55%, transparent 100%);
@@ -1812,7 +1812,7 @@ footer p + p {
 }
 
 .swipe-card--has-img .swipe-info {
-  top: 60%;
+  top: 50%;
   background: linear-gradient(to top, rgba(17,17,17,1) 0%, rgba(17,17,17,0.97) 70%, rgba(17,17,17,0.7) 90%, transparent 100%);
 }
 
@@ -1864,7 +1864,7 @@ footer p + p {
   opacity: 0.7;
   margin-top: 0.25rem;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
