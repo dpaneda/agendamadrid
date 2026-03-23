@@ -1,4 +1,4 @@
-"""Patch existing events.json with og:image from source_url (esmadrid events)."""
+"""Patch existing events.json with og:image from source_url or destination url."""
 
 import json
 import os
@@ -54,16 +54,18 @@ def main():
     with open(EVENTS_PATH) as f:
         events = json.load(f)
 
-    # Find esmadrid events without image
+    # Find events without image — try source_url first, then destination url
     to_fetch = {}
     for eid, ev in events.items():
         if ev.get("image"):
             continue
         url = ev.get("source_url") or ""
-        if "esmadrid.com" in url:
+        if url:
             to_fetch[eid] = url
+        elif ev.get("url"):
+            to_fetch[eid] = ev["url"]
 
-    print(f"Found {len(to_fetch)} esmadrid events without image")
+    print(f"Found {len(to_fetch)} events without image")
 
     count = 0
     with ThreadPoolExecutor(max_workers=4) as pool:
@@ -77,12 +79,36 @@ def main():
             if (count % 50) == 0 and count > 0:
                 print(f"  {count} images found...")
 
-    print(f"Patched {count} events with images")
+    print(f"Patched {count} events with images (pass 1: source_url/url)")
+
+    # Pass 2: for events that still have no image, try destination url if different
+    to_fetch2 = {}
+    for eid, ev in events.items():
+        if ev.get("image"):
+            continue
+        dest_url = ev.get("url") or ""
+        source_url = ev.get("source_url") or ""
+        if dest_url and dest_url != source_url:
+            to_fetch2[eid] = dest_url
+
+    if to_fetch2:
+        print(f"Pass 2: trying {len(to_fetch2)} destination URLs")
+        count2 = 0
+        with ThreadPoolExecutor(max_workers=4) as pool:
+            futures = {pool.submit(fetch_image, url): eid for eid, url in to_fetch2.items()}
+            for future in as_completed(futures):
+                eid = futures[future]
+                img = future.result()
+                if img:
+                    events[eid]["image"] = img
+                    count2 += 1
+        print(f"Patched {count2} more events (pass 2: destination url)")
+        count += count2
 
     with open(EVENTS_PATH, "w") as f:
         json.dump(events, f, ensure_ascii=False, separators=(",", ":"))
 
-    print("Done!")
+    print(f"Done! Total: {count} images patched")
 
 
 if __name__ == "__main__":
