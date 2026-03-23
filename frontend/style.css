@@ -1765,23 +1765,6 @@ footer p + p {
   display: none;
 }
 
-.swipe-card-img-blur {
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  width: 100%;
-  height: 63%;
-  object-fit: cover;
-  object-position: center center;
-  pointer-events: none;
-  filter: blur(40px) brightness(0.55) saturate(1.2);
-  transform: scale(1.2);
-  display: none;
-}
-
-.swipe-card--wide .swipe-card-img-blur {
-  display: block;
-}
-
 .swipe-card-img {
   position: absolute;
   top: 0; left: 0; right: 0;
@@ -1793,24 +1776,8 @@ footer p + p {
   background: #111;
 }
 
-.swipe-card--wide .swipe-card-img {
-  object-fit: contain;
-  background: transparent;
-}
-
 .swipe-card--has-img {
   background: #111;
-}
-
-.swipe-card--has-img::after {
-  content: '';
-  position: absolute;
-  left: 0; right: 0;
-  top: 50%;
-  height: 13%;
-  background: linear-gradient(to bottom, transparent, #111);
-  pointer-events: none;
-  z-index: 1;
 }
 
 /* Large emoji centered in upper portion */
