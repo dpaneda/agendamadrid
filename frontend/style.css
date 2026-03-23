@@ -1864,7 +1864,7 @@ footer p + p {
   opacity: 0.7;
   margin-top: 0.25rem;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: unset;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
