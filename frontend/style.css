@@ -1791,6 +1791,8 @@ footer p + p {
   object-position: center center;
   pointer-events: none;
   background: #111;
+  -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
 }
 
 .swipe-card--wide .swipe-card-img {
@@ -1833,9 +1835,8 @@ footer p + p {
 }
 
 .swipe-card--has-img .swipe-info {
-  top: 45%;
-  padding-top: 4rem;
-  background: linear-gradient(to top, rgba(17,17,17,1) 0%, rgba(17,17,17,0.98) 50%, rgba(17,17,17,0.7) 75%, rgba(17,17,17,0.3) 90%, transparent 100%);
+  top: 60%;
+  background: linear-gradient(to top, rgba(17,17,17,1) 0%, rgba(17,17,17,0.97) 70%, rgba(17,17,17,0.7) 90%, transparent 100%);
 }
 
 .swipe-info-badges {
