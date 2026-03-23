@@ -1382,17 +1382,19 @@ function _swipeCardInner(ev) {
   const price = ev.price || "";
   const priceLower = price.toLowerCase();
   const isFree = !price || price === "0" || price === "0.00" ||
-    priceLower.includes("gratis") || priceLower.includes("gratuito") || priceLower.includes("entrada libre");
+    priceLower.includes("gratis") || priceLower.includes("gratuit") || priceLower.includes("entrada libre") || priceLower.includes("acceso libre");
   const shortPrice = (() => {
     if (isFree || !price) return "";
     if (price.length <= 30) return price;
     const m = price.match(/(\d+[\.,]?\d*)\s*€/);
     return m ? `Desde ${m[1]} €` : "De pago";
   })();
-  const catBadges = [...new Set(ev.categories)].filter(c => !EXCLUDED_CATS.has(c)).map(c => {
-    const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
-    return `<span class="swipe-info-badge swipe-info-badge-cat">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</span>`;
-  }).join("");
+  const filteredCats = [...new Set(ev.categories)].filter(c => !EXCLUDED_CATS.has(c));
+  const bestCat = filteredCats.length ? filteredCats[filteredCats.length - 1] : null;
+  const catBadge = bestCat ? (() => {
+    const info = CAT_ICONS[bestCat] || { emoji: "📍", color: "#6B7280" };
+    return `<span class="swipe-info-badge swipe-info-badge-cat">${info.emoji} ${esc(CATEGORY_LABELS[bestCat] || bestCat)}</span>`;
+  })() : "";
 
   const distBadge = (() => {
     if (!userLatLng || !ev.latitude || !ev.longitude) return "";
@@ -1410,9 +1412,9 @@ function _swipeCardInner(ev) {
       ? `<div class="swipe-cat-badge">${catInfo.emoji}</div>`
       : `<div class="swipe-emoji-area"><span class="swipe-emoji-big">${catInfo.emoji}</span></div>`}
     <div class="swipe-info-badges">
-      ${isFree ? '<span class="swipe-info-badge swipe-info-badge-free">Gratis</span>' : (shortPrice ? `<span class="swipe-info-badge swipe-info-badge-price">${esc(shortPrice)}</span>` : "")}
+      ${isFree ? '<span class="swipe-info-badge swipe-info-badge-free">Gratis</span>' : (shortPrice ? `<span class="swipe-info-badge">${esc(shortPrice)}</span>` : "")}
       ${distBadge}
-      ${catBadges}
+      ${catBadge}
     </div>
     <div class="swipe-info">
       <div class="swipe-info-title">${esc(ev.title)}</div>
