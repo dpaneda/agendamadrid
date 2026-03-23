@@ -1836,7 +1836,7 @@ footer p + p {
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   overflow: hidden;
 }
 
