@@ -1423,8 +1423,8 @@ function _swipeCardInner(ev) {
         ${ev.location_name ? `<span>📍 ${esc(ev.location_name)}${ev.district ? ` · ${esc(ev.district.replace(/([a-z])([A-Z])/g, "$1 $2"))}` : ""}</span>` : ""}
       </div>
       ${ev.description ? `<p class="swipe-info-desc">${esc(ev.description)}</p>` : ""}
-      ${ev.url ? `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="swipe-info-link" onclick="event.stopPropagation()">Ver más info →</a>` : ""}
     </div>
+    ${ev.url ? `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="swipe-info-link" onclick="event.stopPropagation()">Ver más info</a>` : ""}
     <div class="swipe-overlay swipe-overlay-right"><span>❤️</span><span>Favorito</span></div>
     <div class="swipe-overlay swipe-overlay-left"><span>✕</span><span>Ocultar</span></div>
     <div class="swipe-overlay swipe-overlay-up"><span>→</span><span>Saltar</span></div>`;

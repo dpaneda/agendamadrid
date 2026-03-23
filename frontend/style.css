@@ -1870,18 +1870,19 @@ footer p + p {
 }
 
 .swipe-info-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  margin-top: 0.6rem;
-  padding: 0.5rem 1.2rem;
+  position: absolute;
+  bottom: 0.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 1.5rem;
   background: var(--primary);
   color: white;
   font-size: 0.85rem;
   font-weight: 700;
   text-decoration: none;
   border-radius: var(--radius-full);
-  align-self: flex-start;
+  z-index: 4;
+  white-space: nowrap;
 }
 
 /* Top bar: counter */
