@@ -1769,7 +1769,7 @@ footer p + p {
   position: absolute;
   top: 0; left: 0; right: 0;
   width: 100%;
-  height: 58%;
+  height: 63%;
   object-fit: cover;
   object-position: center center;
   pointer-events: none;
@@ -1786,7 +1786,7 @@ footer p + p {
   position: absolute;
   top: 0; left: 0; right: 0;
   width: 100%;
-  height: 58%;
+  height: 63%;
   object-fit: cover;
   object-position: center center;
   pointer-events: none;
@@ -1821,7 +1821,7 @@ footer p + p {
 /* Bottom info overlay */
 .swipe-info {
   position: absolute;
-  top: 55%;
+  top: 60%;
   bottom: 0; left: 0; right: 0;
   padding: 1rem 1rem 2.5rem;
   background: linear-gradient(to top, rgba(10,10,12,0.92) 0%, rgba(10,10,12,0.65) 55%, transparent 100%);
@@ -1833,7 +1833,7 @@ footer p + p {
 }
 
 .swipe-card--has-img .swipe-info {
-  top: 55%;
+  top: 60%;
   background: linear-gradient(to top, rgba(17,17,17,1) 0%, rgba(17,17,17,0.97) 70%, rgba(17,17,17,0.7) 90%, transparent 100%);
 }
 
