@@ -1346,12 +1346,10 @@ function _buildSwipeDeck() {
   el.innerHTML = _swipeCardInner(ev0);
   deck.appendChild(el);
 
-  // Progress bar
-  const progress = ((swipeIndex + 1) / swipeQueue.length * 100).toFixed(1);
-  deck.insertAdjacentHTML("beforeend", `
-    <div class="swipe-progress-bar">
-      <div class="swipe-progress-fill" style="width:${progress}%"></div>
-    </div>`);
+  // Update swipe nav button fill
+  const remaining_pct = ((swipeQueue.length - swipeIndex) / swipeQueue.length * 100).toFixed(1);
+  const swipeBtn = document.getElementById('btn-swipe-tab');
+  if (swipeBtn) swipeBtn.style.setProperty("--swipe-fill", remaining_pct + "%");
 
   // Action bar below deck
   container.insertAdjacentHTML("beforeend", `

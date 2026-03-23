@@ -1886,21 +1886,22 @@ footer p + p {
 }
 
 /* Top bar: counter */
-.swipe-progress-bar {
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 3px;
-  background: rgba(255,255,255,0.1);
-  z-index: 10;
-  border-radius: 2px 2px 0 0;
+#btn-swipe-tab {
+  --swipe-fill: 100%;
+  position: relative;
   overflow: hidden;
 }
 
-.swipe-progress-fill {
-  height: 100%;
+#btn-swipe-tab::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: var(--swipe-fill);
   background: var(--primary);
-  border-radius: 2px;
-  transition: width 0.3s ease;
+  opacity: 0.2;
+  transition: height 0.3s ease;
+  pointer-events: none;
+  border-radius: 8px;
 }
 
 /* Swipe direction overlays */
