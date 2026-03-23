@@ -1770,7 +1770,7 @@ footer p + p {
   top: 0; left: 0; right: 0;
   width: 100%;
   height: 63%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center center;
   pointer-events: none;
   background: #111;
