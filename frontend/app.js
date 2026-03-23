@@ -1406,7 +1406,7 @@ function _swipeCardInner(ev) {
   const hasImage = !!imageUrl;
   return `
     ${hasImage
-      ? `<img class="swipe-card-img" src="${esc(imageUrl)}" alt="" loading="eager">`
+      ? `<img class="swipe-card-img-blur" src="${esc(imageUrl)}" alt="" aria-hidden="true"><img class="swipe-card-img" src="${esc(imageUrl)}" alt="" loading="eager" onload="if(this.naturalWidth/this.naturalHeight>1.6)this.closest('.swipe-card').classList.add('swipe-card--wide')">`
       : `<div class="swipe-card-bg" style="background:linear-gradient(160deg,${color}cc 0%,${color}66 45%,${color}22 75%,#1a1a2e 100%)"></div>`}
     ${hasImage
       ? `<div class="swipe-cat-badge">${catInfo.emoji}</div>`
