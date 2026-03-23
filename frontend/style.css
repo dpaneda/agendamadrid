@@ -1984,7 +1984,7 @@ footer p + p {
   bottom: 0; left: 0; right: 0;
   height: var(--skip-fill, 100%);
   background: var(--primary);
-  opacity: 0.15;
+  opacity: 0.25;
   transition: height 0.3s ease;
   pointer-events: none;
 }
