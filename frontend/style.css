@@ -1870,13 +1870,18 @@ footer p + p {
 }
 
 .swipe-info-link {
-  display: inline-block;
-  margin-top: 0.4rem;
-  color: rgba(255,255,255,0.75);
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+  padding: 0.5rem 1.2rem;
+  background: var(--primary);
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: var(--radius-full);
+  align-self: flex-start;
 }
 
 /* Top bar: counter */
