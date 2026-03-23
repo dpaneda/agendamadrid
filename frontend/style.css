@@ -1987,7 +1987,6 @@ footer p + p {
   opacity: 0.15;
   transition: height 0.3s ease;
   pointer-events: none;
-  border-radius: 50%;
 }
 .swipe-btn-skip:hover { background: rgba(59,130,246,0.08); }
 
