@@ -522,7 +522,7 @@ function setView(view) {
   document.getElementById("cal-container").hidden = view !== "cal";
   document.getElementById("user-container").hidden = view !== "user";
   document.getElementById("swipe-container").hidden = view !== "swipe";
-  document.querySelector("header").hidden = view === "user";
+  document.querySelector("header").hidden = view === "user" && window.innerWidth <= 640;
   updateURL();
 
   if (view === "list") {
