@@ -1346,10 +1346,12 @@ function _buildSwipeDeck() {
   el.innerHTML = _swipeCardInner(ev0);
   deck.appendChild(el);
 
-  // Update swipe nav button fill
+  // Update skip button fill (empties as you progress)
   const remaining_pct = ((swipeQueue.length - swipeIndex) / swipeQueue.length * 100).toFixed(1);
-  const swipeBtn = document.getElementById('btn-swipe-tab');
-  if (swipeBtn) swipeBtn.style.setProperty("--swipe-fill", remaining_pct + "%");
+  requestAnimationFrame(() => {
+    const skipBtn = document.querySelector('.swipe-btn-skip');
+    if (skipBtn) skipBtn.style.setProperty("--skip-fill", remaining_pct + "%");
+  });
 
   // Action bar below deck
   container.insertAdjacentHTML("beforeend", `

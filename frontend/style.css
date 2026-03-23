@@ -1886,20 +1886,18 @@ footer p + p {
 }
 
 /* Top bar: counter */
-#btn-swipe-tab {
-  --swipe-fill: 100%;
+.bottom-tab.active {
   position: relative;
   overflow: hidden;
 }
 
-#btn-swipe-tab::before {
+.bottom-tab.active::before {
   content: '';
   position: absolute;
   bottom: 0; left: 0; right: 0;
-  height: var(--swipe-fill);
+  height: 100%;
   background: var(--primary);
-  opacity: 0.2;
-  transition: height 0.3s ease;
+  opacity: 0.15;
   pointer-events: none;
   border-radius: 8px;
 }
@@ -1946,7 +1944,7 @@ footer p + p {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem;
+  gap: 3rem;
   margin-top: -32px;
   position: relative;
   z-index: 10;
@@ -1975,7 +1973,21 @@ footer p + p {
 
 .swipe-btn-skip {
   border-color: var(--primary); color: var(--primary);
-  width: 68px; height: 68px;
+  width: 88px; height: 88px;
+  position: relative;
+  overflow: hidden;
+}
+
+.swipe-btn-skip::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: var(--skip-fill, 100%);
+  background: var(--primary);
+  opacity: 0.15;
+  transition: height 0.3s ease;
+  pointer-events: none;
+  border-radius: 50%;
 }
 .swipe-btn-skip:hover { background: rgba(59,130,246,0.08); }
 
