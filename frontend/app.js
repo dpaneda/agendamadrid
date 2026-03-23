@@ -1346,10 +1346,11 @@ function _buildSwipeDeck() {
   el.innerHTML = _swipeCardInner(ev0);
   deck.appendChild(el);
 
-  // Counter overlay on top card
+  // Progress bar
+  const progress = ((swipeIndex + 1) / swipeQueue.length * 100).toFixed(1);
   deck.insertAdjacentHTML("beforeend", `
-    <div class="swipe-top-bar">
-      <span class="swipe-counter">${swipeIndex + 1} / ${swipeQueue.length}</span>
+    <div class="swipe-progress-bar">
+      <div class="swipe-progress-fill" style="width:${progress}%"></div>
     </div>`);
 
   // Action bar below deck
