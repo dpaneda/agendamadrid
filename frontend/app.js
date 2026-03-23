@@ -1391,7 +1391,7 @@ function _swipeCardInner(ev) {
   })();
   const filteredCats = [...new Set(ev.categories)].filter(c => !EXCLUDED_CATS.has(c));
   const bestCat = filteredCats.length ? filteredCats[filteredCats.length - 1] : null;
-  const catBadge = bestCat ? (() => {
+  const catBadge = (bestCat && bestCat !== "otros") ? (() => {
     const info = CAT_ICONS[bestCat] || { emoji: "📍", color: "#6B7280" };
     return `<span class="swipe-info-badge swipe-info-badge-cat">${info.emoji} ${esc(CATEGORY_LABELS[bestCat] || bestCat)}</span>`;
   })() : "";
@@ -1409,7 +1409,7 @@ function _swipeCardInner(ev) {
       ? `<img class="swipe-card-img" src="${esc(imageUrl)}" alt="" loading="eager">`
       : `<div class="swipe-card-bg" style="background:linear-gradient(160deg,${color}cc 0%,${color}66 45%,${color}22 75%,#1a1a2e 100%)"></div>`}
     ${hasImage
-      ? `<div class="swipe-cat-badge">${catInfo.emoji}</div>`
+      ? ``
       : `<div class="swipe-emoji-area"><span class="swipe-emoji-big">${catInfo.emoji}</span></div>`}
     <div class="swipe-info-badges">
       ${isFree ? '<span class="swipe-info-badge swipe-info-badge-free">Gratis</span>' : (shortPrice ? `<span class="swipe-info-badge">${esc(shortPrice)}</span>` : "")}
