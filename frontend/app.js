@@ -1338,10 +1338,12 @@ function _buildSwipeDeck() {
   container.appendChild(deck);
 
   // Render only the top card
+  const ev0 = remaining[0];
+  const hasImg = !!(Array.isArray(ev0.image) ? ev0.image[0] : ev0.image);
   const el = document.createElement("div");
-  el.className = "swipe-card swipe-card-top";
-  el.dataset.id = remaining[0].id;
-  el.innerHTML = _swipeCardInner(remaining[0]);
+  el.className = "swipe-card swipe-card-top" + (hasImg ? " swipe-card--has-img" : "");
+  el.dataset.id = ev0.id;
+  el.innerHTML = _swipeCardInner(ev0);
   deck.appendChild(el);
 
   // Counter overlay on top card

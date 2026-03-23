@@ -1767,12 +1767,15 @@ footer p + p {
 
 .swipe-card-img {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+  top: 0; left: 0; right: 0;
+  height: 60%;
   object-fit: cover;
   object-position: center center;
   pointer-events: none;
+}
+
+.swipe-card--has-img {
+  background: #111;
 }
 
 /* Large emoji centered in upper portion */
@@ -1804,6 +1807,11 @@ footer p + p {
   flex-direction: column;
   justify-content: flex-end;
   overflow: hidden;
+}
+
+.swipe-card--has-img .swipe-info {
+  top: 40%;
+  background: linear-gradient(to top, rgba(17,17,17,1) 0%, rgba(17,17,17,0.95) 50%, rgba(17,17,17,0.5) 80%, transparent 100%);
 }
 
 .swipe-info-badges {
