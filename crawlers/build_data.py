@@ -28,7 +28,14 @@ def cal_entries_for_date(ev, eid, ds):
         weekday = None
     day_times = (schedule.get(weekday) or schedule.get(str(weekday)) or []) if weekday is not None else []
     if day_times:
-        return [{"event_id": eid, "start_time": t} for t in day_times]
+        # Pair consecutive times as open-close ranges
+        entries = []
+        for i in range(0, len(day_times), 2):
+            entry = {"event_id": eid, "start_time": day_times[i]}
+            if i + 1 < len(day_times):
+                entry["end_time"] = day_times[i + 1]
+            entries.append(entry)
+        return entries
     entry = {"event_id": eid}
     if ev.get("start_time"):
         entry["start_time"] = ev["start_time"]
