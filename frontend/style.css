@@ -356,6 +356,8 @@ main {
   min-height: 50vh;
 }
 
+.swipe-hint { display: none; }
+
 /* Event card — no borders, tonal layering */
 .event-card {
   background: var(--white);
@@ -380,22 +382,16 @@ main {
 
 .event-header {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  align-items: center;
   gap: 0.5rem;
   line-height: 1.3;
 }
 
-.event-title-wrap {
+.event-header .event-tags {
   display: flex;
-  align-items: baseline;
-  gap: 0.5rem;
   flex-wrap: wrap;
-  overflow: hidden;
-}
-
-.event-distance {
-  flex-shrink: 0;
+  gap: 0.3rem;
+  margin-left: auto;
 }
 
 .event-time {
@@ -410,6 +406,7 @@ main {
   font-size: 1.12rem;
   font-weight: 600;
   letter-spacing: -0.01em;
+  margin-top: 0.3rem;
 }
 
 .event-title a {
@@ -428,6 +425,7 @@ main {
   align-items: baseline;
   gap: 0.3rem;
   min-width: 0;
+  margin-top: 0.4rem;
 }
 
 .location-pin {
@@ -518,6 +516,23 @@ main {
   gap: 0.5rem;
   align-items: center;
   margin-left: auto;
+}
+
+.tag-dist, .tag-cat {
+  background: var(--surface-container-low);
+  color: var(--fg);
+}
+
+.tag-free {
+  background: rgba(34,197,94,0.12);
+  color: #16a34a;
+  font-weight: 700;
+}
+
+.tag-price {
+  background: var(--surface-container-high);
+  color: var(--muted);
+  font-weight: 600;
 }
 
 .tag-link {
@@ -1075,12 +1090,51 @@ footer p + p {
     font-size: 0.6rem;
   }
 
-  .ev-action {
-    opacity: 0.5;
+  .event-actions {
+    display: none !important;
   }
 
-  .ev-action.active {
-    opacity: 1;
+  .event-card {
+    position: relative;
+    overflow: hidden;
+    touch-action: pan-y;
+  }
+
+  .event-card .swipe-hint {
+    position: absolute;
+    top: 0; bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s;
+    z-index: 5;
+  }
+  .event-card .swipe-hint-right {
+    justify-content: flex-start;
+    background: linear-gradient(to right, rgba(22,163,74,0.15), transparent 60%);
+    color: #16a34a;
+  }
+  .event-card .swipe-hint-left {
+    justify-content: flex-end;
+    background: linear-gradient(to left, rgba(239,68,68,0.15), transparent 60%);
+    color: #ef4444;
+  }
+
+  .event-card.swiping-right .swipe-hint-right { opacity: 1; }
+  .event-card.swiping-left .swipe-hint-left { opacity: 1; }
+
+  .event-card.fav-flash {
+    animation: favFlash 0.4s ease;
+  }
+  @keyframes favFlash {
+    0% { background: var(--white); }
+    30% { background: rgba(91,60,196,0.12); }
+    100% { background: var(--white); }
   }
 
   /* Map full-screen on mobile */

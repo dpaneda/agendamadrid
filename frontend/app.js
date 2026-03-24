@@ -294,6 +294,36 @@ const SOURCE_LABELS = {
 };
 
 const EXCLUDED_CATS = new Set(["gratis", "destacado", "aire libre", "accesible"]);
+const CAT_PRIORITY = ["fotografia","circo","cine","danza","gastronomia","deportes","infantil","mercados","fiestas","musica","teatro","talleres","conferencias","literatura","visitas guiadas","exposiciones"];
+
+function eventBadges(ev, cls) {
+  const price = ev.price || "";
+  const priceLower = price.toLowerCase();
+  const isFree = ev.is_free || !price || price === "0" || price === "0.00" ||
+    priceLower.includes("gratis") || priceLower.includes("gratuit") || priceLower.includes("entrada libre") || priceLower.includes("acceso libre");
+  const shortPrice = (() => {
+    if (isFree || !price) return "";
+    if (price.length <= 30) return price;
+    const m = price.match(/(\d+[\.,]?\d*)\s*€/);
+    return m ? `Desde ${m[1]} €` : "De pago";
+  })();
+  const priceBadge = isFree ? `<span class="${cls} ${cls}-free">Gratis</span>` : (shortPrice ? `<span class="${cls} ${cls}-price">${esc(shortPrice)}</span>` : "");
+
+  let distBadge = "";
+  if (userLatLng && ev.latitude && ev.longitude) {
+    const d = haversineDistance(userLatLng.lat, userLatLng.lng, parseFloat(ev.latitude), parseFloat(ev.longitude));
+    distBadge = `<span class="${cls} ${cls}-dist">📍 ${d.toFixed(1)} km</span>`;
+  }
+
+  const filteredCats = (ev.categories || []).filter(c => !EXCLUDED_CATS.has(c));
+  const bestCat = CAT_PRIORITY.find(p => filteredCats.includes(p));
+  const catBadge = bestCat ? (() => {
+    const info = CAT_ICONS[bestCat] || { emoji: "📍", color: "#6B7280" };
+    return `<span class="${cls} ${cls}-cat">${info.emoji} ${esc(CATEGORY_LABELS[bestCat] || bestCat)}</span>`;
+  })() : "";
+
+  return { priceBadge, distBadge, catBadge, isFree };
+}
 
 function fmtTime(t) {
   if (!t) return "";
@@ -471,6 +501,80 @@ async function init() {
       }
     }
   });
+
+  // Mobile gestures: swipe right=seen, swipe left=dismiss, double-tap=fav
+  if (window.innerWidth <= 640) {
+    const container = document.getElementById("events-container");
+    let touchStartX = 0, touchStartY = 0, touchCard = null, touchMoved = false;
+    let lastTap = 0, preventClick = false;
+    const SWIPE_THRESHOLD = 80;
+
+    container.addEventListener("click", (e) => {
+      if (preventClick) { e.preventDefault(); preventClick = false; }
+    }, true);
+
+    container.addEventListener("touchstart", (e) => {
+      const card = e.target.closest(".event-card");
+      if (!card) return;
+      touchCard = card;
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchMoved = false;
+    }, { passive: true });
+
+    container.addEventListener("touchmove", (e) => {
+      if (!touchCard) return;
+      const dx = e.touches[0].clientX - touchStartX;
+      const dy = e.touches[0].clientY - touchStartY;
+      if (Math.abs(dy) > Math.abs(dx) && !touchMoved) { touchCard = null; return; }
+      if (Math.abs(dx) > 15) {
+        touchMoved = true;
+        touchCard.style.transform = `translateX(${dx}px)`;
+        touchCard.style.transition = "none";
+        touchCard.classList.toggle("swiping-right", dx > 30);
+        touchCard.classList.toggle("swiping-left", dx < -30);
+      }
+    }, { passive: true });
+
+    container.addEventListener("touchend", (e) => {
+      if (!touchCard) return;
+      const card = touchCard;
+      const id = card.dataset.eid;
+      touchCard = null;
+
+      if (touchMoved) {
+        preventClick = true;
+        const dx = e.changedTouches[0].clientX - touchStartX;
+        card.classList.remove("swiping-right", "swiping-left");
+        if (Math.abs(dx) >= SWIPE_THRESHOLD && id) {
+          const dir = dx > 0 ? 1 : -1;
+          card.style.transition = "transform 0.25s ease, opacity 0.25s ease";
+          card.style.transform = `translateX(${dir * 300}px)`;
+          card.style.opacity = "0";
+          card.addEventListener("transitionend", () => {
+            if (dx > 0) { if (!UserData.has("seen", id)) UserData.toggle("seen", id); }
+            else { if (!UserData.has("dismissed", id)) UserData.toggle("dismissed", id); }
+            render();
+          }, { once: true });
+        } else {
+          card.style.transition = "transform 0.2s ease";
+          card.style.transform = "";
+        }
+        return;
+      }
+
+      // Double-tap detection
+      const now = Date.now();
+      if (now - lastTap < 350 && id) {
+        preventClick = true;
+        UserData.toggle("favorites", id);
+        card.classList.remove("fav-flash");
+        void card.offsetWidth;
+        card.classList.add("fav-flash");
+      }
+      lastTap = now;
+    });
+  }
 
   document.getElementById("btn-sync").addEventListener("click", () => {
     setView("user");
@@ -901,39 +1005,16 @@ function renderEvent(ev) {
   const desc = ev.description
     ? `<p class="event-desc">${esc(ev.description.length > 200 ? ev.description.slice(0, 200) + "..." : ev.description)}</p>`
     : "";
-  const seenLabels = new Set();
-  const catTags = ev.categories.filter(c => !EXCLUDED_CATS.has(c)).map(c => {
-    const label = CATEGORY_LABELS[c] || c;
-    if (seenLabels.has(label)) return "";
-    seenLabels.add(label);
-    return `<span class="tag">${esc(label)}</span>`;
-  }).join("");
-  const sourceTags = (ev.source || "").split(",").filter(Boolean).map(s => {
-    const label = SOURCE_LABELS[s] || s;
-    const sourceUrl = ev.source_url || "";
-    if (sourceUrl) {
-      return `<span class="tag tag-source tag-link" onclick="event.preventDefault(); event.stopPropagation(); window.open('${esc(sourceUrl)}', '_blank')">${esc(label)}</span>`;
-    }
-    return `<span class="tag tag-source">${esc(label)}</span>`;
-  }).join("");
-  const tags = catTags + sourceTags;
+  const { priceBadge, distBadge, catBadge } = eventBadges(ev, "tag");
+  const badges = priceBadge + distBadge + catBadge;
 
-  const address = ev.address || "";
   let locationHtml = "";
-  if (location || address) {
+  if (location) {
     const isLocActive = activeLocation === location;
-    const locClass = location ? ` location-clickable${isLocActive ? ' location-active' : ''}` : '';
-    const locClick = location ? ` onclick="event.preventDefault(); event.stopPropagation(); toggleLocation('${esc(location)}')"` : '';
-    locationHtml = `<div class="event-location${locClass}"${locClick}><span class="location-pin">📍</span> ${esc([location, address].filter(Boolean).join(", "))}</div>`;
+    const locClass = ` location-clickable${isLocActive ? ' location-active' : ''}`;
+    const locClick = ` onclick="event.preventDefault(); event.stopPropagation(); toggleLocation('${esc(location)}')"`;
+    locationHtml = `<div class="event-location${locClass}"${locClick}><span class="location-pin">📍</span> ${esc(location)}</div>`;
   }
-
-  let distanceHtml = "";
-  if (userLatLng && ev.latitude && ev.longitude) {
-    const dist = haversineDistance(userLatLng.lat, userLatLng.lng, parseFloat(ev.latitude), parseFloat(ev.longitude));
-    distanceHtml = `<span class="event-distance">📍 ${dist.toFixed(1)} km</span>`;
-  }
-
-  const hasFooter = locationHtml || tags || distanceHtml;
 
   const isFav = UserData.has("favorites", ev.id);
   const isSeen = UserData.has("seen", ev.id);
@@ -946,24 +1027,21 @@ function renderEvent(ev) {
   </span>`;
 
   const cardContent = `
+      <div class="swipe-hint swipe-hint-right">✓ Visto</div>
+      <div class="swipe-hint swipe-hint-left">✕ Ocultar</div>
       <div class="event-header">
-        <span class="event-title-wrap">
-          ${timeStr ? `<span class="event-time">${esc(timeStr)}</span>` : ""}
-          <span class="event-title">${title}</span>
-        </span>
-        ${distanceHtml}
+        ${timeStr ? `<span class="event-time">${esc(timeStr)}</span>` : ""}
+        <div class="event-tags">${badges}</div>
         ${actionsHtml}
       </div>
+      <div class="event-title">${title}</div>
       ${desc}
-      ${hasFooter ? `<div class="event-footer">
-        ${locationHtml}
-        ${tags ? `<div class="event-tags">${tags}</div>` : ""}
-      </div>` : ""}`;
+      ${locationHtml}`;
 
   if (ev.url) {
-    return `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="event-card event-card-link">${cardContent}</a>`;
+    return `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="event-card event-card-link" data-eid="${esc(ev.id)}">${cardContent}</a>`;
   }
-  return `<div class="event-card">${cardContent}</div>`;
+  return `<div class="event-card" data-eid="${esc(ev.id)}">${cardContent}</div>`;
 }
 
 function toggleLocation(loc) {
@@ -1381,28 +1459,8 @@ function _swipeCardInner(ev) {
     return s ? (e && e > s ? `${s} – ${e}` : s) : "";
   })();
 
-  const price = ev.price || "";
-  const priceLower = price.toLowerCase();
-  const isFree = !price || price === "0" || price === "0.00" ||
-    priceLower.includes("gratis") || priceLower.includes("gratuit") || priceLower.includes("entrada libre") || priceLower.includes("acceso libre");
-  const shortPrice = (() => {
-    if (isFree || !price) return "";
-    if (price.length <= 30) return price;
-    const m = price.match(/(\d+[\.,]?\d*)\s*€/);
-    return m ? `Desde ${m[1]} €` : "De pago";
-  })();
-  const filteredCats = [...new Set(ev.categories)].filter(c => !EXCLUDED_CATS.has(c));
-  const bestCat = filteredCats.length ? filteredCats[filteredCats.length - 1] : null;
-  const catBadge = (bestCat && bestCat !== "otros") ? (() => {
-    const info = CAT_ICONS[bestCat] || { emoji: "📍", color: "#6B7280" };
-    return `<span class="swipe-info-badge swipe-info-badge-cat">${info.emoji} ${esc(CATEGORY_LABELS[bestCat] || bestCat)}</span>`;
-  })() : "";
-
-  const distBadge = (() => {
-    if (!userLatLng || !ev.latitude || !ev.longitude) return "";
-    const d = haversineDistance(userLatLng.lat, userLatLng.lng, parseFloat(ev.latitude), parseFloat(ev.longitude));
-    return `<span class="swipe-info-badge swipe-info-badge-dist">📍 ${d.toFixed(1)} km</span>`;
-  })();
+  const { priceBadge, distBadge, catBadge, isFree } = eventBadges(ev, "swipe-info-badge");
+  const shortPrice = (!isFree && ev.price) ? ev.price : "";
 
   const imageUrl = Array.isArray(ev.image) ? ev.image[0] : ev.image;
   const hasImage = !!imageUrl;
@@ -1414,7 +1472,7 @@ function _swipeCardInner(ev) {
       ? ``
       : `<div class="swipe-emoji-area"><span class="swipe-emoji-big">${catInfo.emoji}</span></div>`}
     <div class="swipe-info-badges">
-      ${isFree ? '<span class="swipe-info-badge swipe-info-badge-free">Gratis</span>' : (shortPrice ? `<span class="swipe-info-badge">${esc(shortPrice)}</span>` : "")}
+      ${priceBadge}
       ${distBadge}
       ${catBadge}
     </div>
