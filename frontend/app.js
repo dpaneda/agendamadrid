@@ -502,7 +502,7 @@ async function init() {
     }
   });
 
-  // Mobile gestures: swipe right=seen, swipe left=dismiss, double-tap=fav
+  // Mobile gestures: swipe right=fav, swipe left=dismiss, double-tap=fav
   if (window.innerWidth <= 640) {
     const container = document.getElementById("events-container");
     let touchStartX = 0, touchStartY = 0, touchCard = null, touchMoved = false;
@@ -552,7 +552,7 @@ async function init() {
           card.style.transform = `translateX(${dir * 300}px)`;
           card.style.opacity = "0";
           card.addEventListener("transitionend", () => {
-            if (dx > 0) { if (!UserData.has("seen", id)) UserData.toggle("seen", id); }
+            if (dx > 0) { if (!UserData.has("favorites", id)) UserData.toggle("favorites", id); }
             else { if (!UserData.has("dismissed", id)) UserData.toggle("dismissed", id); }
             render();
           }, { once: true });
@@ -1027,7 +1027,7 @@ function renderEvent(ev) {
   </span>`;
 
   const cardContent = `
-      <div class="swipe-hint swipe-hint-right">✓ Visto</div>
+      <div class="swipe-hint swipe-hint-right">♥ Favorito</div>
       <div class="swipe-hint swipe-hint-left">✕ Ocultar</div>
       <div class="event-header">
         ${timeStr ? `<span class="event-time">${esc(timeStr)}</span>` : ""}

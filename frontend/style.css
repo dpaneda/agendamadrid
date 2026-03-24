@@ -1116,8 +1116,8 @@ footer p + p {
   }
   .event-card .swipe-hint-right {
     justify-content: flex-start;
-    background: linear-gradient(to right, rgba(22,163,74,0.15), transparent 60%);
-    color: #16a34a;
+    background: linear-gradient(to right, rgba(91,60,196,0.15), transparent 60%);
+    color: var(--primary-container);
   }
   .event-card .swipe-hint-left {
     justify-content: flex-end;
