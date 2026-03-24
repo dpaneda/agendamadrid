@@ -26,8 +26,12 @@ def cal_entries_for_date(ev, eid, ds):
         weekday = datetime.strptime(ds, "%Y-%m-%d").weekday()
     except ValueError:
         weekday = None
-    day_times = (schedule.get(weekday) or schedule.get(str(weekday)) or []) if weekday is not None else []
+    # Check if this weekday is in the schedule (try both int and str keys)
+    day_times = None
+    if weekday is not None:
+        day_times = schedule.get(weekday) or schedule.get(str(weekday))
     if day_times:
+        day_times = sorted(day_times)
         # Pair consecutive times as open-close ranges
         entries = []
         for i in range(0, len(day_times), 2):
@@ -36,9 +40,11 @@ def cal_entries_for_date(ev, eid, ds):
                 entry["end_time"] = day_times[i + 1]
             entries.append(entry)
         return entries
-    # If schedule exists but has no entry for this weekday, skip this date
     if schedule:
-        return []
+        # Day is in schedule but has no specific times — use generic times
+        day_in_schedule = weekday is not None and (weekday in schedule or str(weekday) in schedule)
+        if not day_in_schedule:
+            return []
     # No schedule at all — use generic start/end times
     entry = {"event_id": eid}
     if ev.get("start_time"):
@@ -69,9 +75,15 @@ def merge_event(existing, new):
     cats = list(dict.fromkeys(existing.get("categories", []) + new.get("categories", [])))
     base["categories"] = cats
 
-    # Always take the newer schedule if present (existing may predate schedule parsing)
-    if new.get("schedule"):
-        base["schedule"] = new["schedule"]
+    # Keep the richer schedule (more days/times)
+    old_sched = existing.get("schedule") or {}
+    new_sched = new.get("schedule") or {}
+    old_score = sum(len(v) for v in old_sched.values())
+    new_score = sum(len(v) for v in new_sched.values())
+    if new_score >= old_score and new_sched:
+        base["schedule"] = new_sched
+    elif old_sched:
+        base["schedule"] = old_sched
 
     sources = set()
     for ev in [existing, new]:
@@ -175,8 +187,8 @@ def run(only=None, force=False):
 
                 # Build event data (without date-specific fields)
                 event_data = {k: v for k, v in ev.items()
-                              if k not in ("start_date", "end_date", "start_time",
-                                           "end_time", "id", "created_at", "updated_at",
+                              if k not in ("start_date", "end_date", "schedule",
+                                           "id", "created_at", "updated_at",
                                            "open_days")}
                 event_data["id"] = eid
                 event_data.setdefault("created_at", now)

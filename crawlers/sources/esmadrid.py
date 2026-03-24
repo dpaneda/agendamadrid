@@ -84,6 +84,9 @@ def _parse_schedule(text):
             for t in times:
                 if t not in result[day]:
                     result[day].append(t)
+    # Sort times per day so pairing works correctly
+    for day in result:
+        result[day] = sorted(result[day])
     return result if result else None
 
 

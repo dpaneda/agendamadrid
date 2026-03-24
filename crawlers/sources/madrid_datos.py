@@ -10,6 +10,11 @@ import requests
 from crawlers.base import BaseCrawler
 from crawlers.categories import normalize
 
+# Map recurrence day abbreviations to Python weekday ints (Monday=0)
+_RECURRENCE_DAY_MAP = {
+    "MO": 0, "TU": 1, "WE": 2, "TH": 3, "FR": 4, "SA": 5, "SU": 6,
+}
+
 # Map @type URIs to our canonical categories
 TYPE_MAP = {
     # Cultural
@@ -129,6 +134,20 @@ def parse_madrid_event(item: dict, source: str) -> dict | None:
     if is_free == 1 or is_free == "1":
         categories.append("gratis")
 
+    # Build schedule from recurrence.days + time
+    schedule = None
+    recurrence = item.get("recurrence") or {}
+    rec_days_str = recurrence.get("days", "")
+    if rec_days_str:
+        weekdays = set()
+        for abbr in rec_days_str.split(","):
+            d = _RECURRENCE_DAY_MAP.get(abbr.strip())
+            if d is not None:
+                weekdays.add(d)
+        if weekdays:
+            times = [t for t in [start_time, end_time] if t]
+            schedule = {d: list(times) for d in sorted(weekdays)}
+
     return {
         "title": title,
         "description": description,
@@ -144,6 +163,7 @@ def parse_madrid_event(item: dict, source: str) -> dict | None:
         "url": url,
         "source": source,
         "categories": normalize(categories),
+        "schedule": schedule,
     }
 
 
