@@ -1,10 +1,15 @@
 {
   "name": "Agenda Madrid",
   "short_name": "Agenda Madrid",
+  "description": "Eventos y actividades en Madrid, actualizado a diario",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#fbf9f8",
-  "theme_color": "#b30012",
+  "background_color": "#F2F2FA",
+  "theme_color": "#381d92",
+  "orientation": "portrait",
+  "categories": ["entertainment", "lifestyle"],
+  "lang": "es",
   "icons": [
     {
       "src": "images/icon-192.png",

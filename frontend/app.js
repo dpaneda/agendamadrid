@@ -1265,6 +1265,11 @@ function renderUserView() {
         </div>
       </section>
 
+      ${_deferredInstall ? `<div class="pwa-install-banner" onclick="pwaInstall()">
+        <span>📲</span>
+        <div><strong>Instalar Agenda Madrid</strong><br><small>Accede más rápido desde la pantalla de inicio</small></div>
+      </div>` : ""}
+
       <div class="user-actions-row">
         ${user ? `<button class="btn-logout" onclick="FirebaseSync.logout(); setView('list')">Cerrar sesión</button>` : ""}
         <button class="btn-logout btn-danger" onclick="resetUserData()">Resetear todo</button>
@@ -1368,6 +1373,22 @@ function esc(s) {
 }
 
 init();
+
+// Service Worker + PWA install prompt
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/sw.js");
+}
+let _deferredInstall = null;
+window.addEventListener("beforeinstallprompt", (e) => {
+  e.preventDefault();
+  _deferredInstall = e;
+});
+function pwaInstall() {
+  if (_deferredInstall) {
+    _deferredInstall.prompt();
+    _deferredInstall = null;
+  }
+}
 
 // ==============================
 // SWIPE VIEW (Mix / Tinder mode)
