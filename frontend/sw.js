@@ -1,20 +1,4 @@
-const CACHE_NAME = "agendamadrid-v1";
-const SHELL_ASSETS = [
-  "/",
-  "/style.css",
-  "/app.js",
-  "/manifest.json",
-  "/images/icon-192.png",
-  "/images/icon-512.png",
-];
-
-// Install: cache app shell
-self.addEventListener("install", (e) => {
-  e.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(SHELL_ASSETS))
-  );
-  self.skipWaiting();
-});
+const CACHE_NAME = "agendamadrid-v2";
 
 // Activate: clean old caches
 self.addEventListener("activate", (e) => {
@@ -26,49 +10,23 @@ self.addEventListener("activate", (e) => {
   self.clients.claim();
 });
 
-// Fetch: network-first for data, cache-first for shell
-self.addEventListener("fetch", (e) => {
-  const url = new URL(e.request.url);
+self.addEventListener("install", () => self.skipWaiting());
 
-  // Data files: network first, fallback to cache
-  if (url.pathname.startsWith("/data/")) {
-    e.respondWith(
-      fetch(e.request)
-        .then((res) => {
+// Network-first for everything: fast when online, works offline from cache
+self.addEventListener("fetch", (e) => {
+  // Skip non-GET requests
+  if (e.request.method !== "GET") return;
+
+  e.respondWith(
+    fetch(e.request)
+      .then((res) => {
+        // Cache successful responses
+        if (res.ok) {
           const clone = res.clone();
           caches.open(CACHE_NAME).then((cache) => cache.put(e.request, clone));
-          return res;
-        })
-        .catch(() => caches.match(e.request))
-    );
-    return;
-  }
-
-  // External resources (fonts, leaflet, etc): network first, cache fallback
-  if (url.origin !== location.origin) {
-    e.respondWith(
-      fetch(e.request)
-        .then((res) => {
-          if (res.ok) {
-            const clone = res.clone();
-            caches.open(CACHE_NAME).then((cache) => cache.put(e.request, clone));
-          }
-          return res;
-        })
-        .catch(() => caches.match(e.request))
-    );
-    return;
-  }
-
-  // App shell: cache first, update in background
-  e.respondWith(
-    caches.match(e.request).then((cached) => {
-      const fetchPromise = fetch(e.request).then((res) => {
-        const clone = res.clone();
-        caches.open(CACHE_NAME).then((cache) => cache.put(e.request, clone));
+        }
         return res;
-      });
-      return cached || fetchPromise;
-    })
+      })
+      .catch(() => caches.match(e.request))
   );
 });
