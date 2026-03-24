@@ -1034,7 +1034,7 @@ function renderEvent(ev) {
         <div class="event-tags">${badges}</div>
         ${actionsHtml}
       </div>
-      <div class="event-title">${title}</div>
+      <div class="event-title">${isFav ? '❤️ ' : ''}${title}</div>
       ${desc}
       ${locationHtml}`;
 
