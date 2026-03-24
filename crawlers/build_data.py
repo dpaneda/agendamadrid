@@ -36,8 +36,10 @@ def cal_entries_for_date(ev, eid, ds):
                 entry["end_time"] = day_times[i + 1]
             entries.append(entry)
         return entries
-    # Schedule exists but not for this weekday — still create entry without time
-    # (trust the crawler/search to only send valid dates)
+    # If schedule exists but has no entry for this weekday, skip this date
+    if schedule:
+        return []
+    # No schedule at all — use generic start/end times
     entry = {"event_id": eid}
     if ev.get("start_time"):
         entry["start_time"] = ev["start_time"]
