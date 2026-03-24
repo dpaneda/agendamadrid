@@ -303,6 +303,7 @@ function eventBadges(ev, cls) {
     priceLower.includes("gratis") || priceLower.includes("gratuit") || priceLower.includes("entrada libre") || priceLower.includes("acceso libre");
   const shortPrice = (() => {
     if (isFree || !price) return "";
+    if (/consultar|p[aá]gina oficial/i.test(price)) return "";
     if (price.length <= 30) return price;
     const m = price.match(/(\d+[\.,]?\d*)\s*€/);
     return m ? `Desde ${m[1]} €` : "De pago";
