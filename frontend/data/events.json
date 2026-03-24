@@ -4197,14 +4197,15 @@
     "longitude": -3.691465258598,
     "url": "https://www.museodelferrocarril.org/exposiciones/viajar-en-el-tiempo/",
     "price": "General: 7 €\nReducida: 4 € (Personas mayores de 65 años, niños de 4 a 12 años, estudiantes, miembros de asociaciones de Amigos del Ferrocarril, poseedores de pases InterRail y EuRail)\nConsultar página oficial",
+    "image": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/rfGfP2QmFxjOK3ukiHYWT5ienaWAlaEJy-RbT9wlsAs/mtime:1766135923/sites/default/files/eventos/eventos/cartel-expo-publi_web1.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/8QnxnNHbiEIHPw_gDpQZQdmT7_siYz8e_fPNN-JccF0/mtime:1766135953/sites/default/files/eventos/eventos/viajetiempo_03.jpg"
+    ],
     "source_url": "https://www.esmadrid.com/agenda/viajar-tiempo-85-anos-publicidad-renfe-museo-ferrocarril",
     "source": "esmadrid",
     "categories": [
       "exposiciones"
     ],
-    "id": "e54e3abcf027a519",
-    "created_at": "2026-03-17T20:37:06.498345+00:00",
-    "updated_at": "2026-03-17T20:37:06.498345+00:00",
     "schedule": {
       "0": [
         "09:30:00",
@@ -4234,7 +4235,10 @@
         "10:00:00",
         "15:00:00"
       ]
-    }
+    },
+    "id": "e54e3abcf027a519",
+    "created_at": "2026-03-24T15:15:24.503484+00:00",
+    "updated_at": "2026-03-24T15:15:24.503484+00:00"
   },
   "d73d04ae5f10f0a0": {
     "title": "Ukiyo-e. El ferrocarril en el mundo flotante",
@@ -4246,15 +4250,17 @@
     "longitude": -3.691465258598,
     "url": "https://www.museodelferrocarril.org/comunicacion/noticia.asp?item=798",
     "price": "General: 7 €\nReducida: 4 €\nEntrada gratuita: Menores de 4 años acompañados de un adulto\nConsultar página oficial",
+    "image": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/1sd2Vx38GnE5qbJ0g_JPrDTIFysZKp1ovW5CXU0UU2Q/mtime:1772448575/sites/default/files/eventos/eventos/exposicio_ukiyo-e_museo_del_ferrocarril.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/a2Ycx5V-dHx8GinazBPHo3Tr1B0EUkx79wyU2KoLM08/mtime:1772452515/sites/default/files/eventos/eventos/ukiyo.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/6xr-Jy7JrXQEvtDn0N3BpPrnttroSOf4_1dZ8xgmp9U/mtime:1772448592/sites/default/files/eventos/eventos/exposicion_ukiyo-e_museo_del_ferrocarril.jpg"
+    ],
     "source_url": "https://www.esmadrid.com/agenda/ukiyo-e-ferrocarril-mundo-flotante-museo-ferrocarril",
     "source": "esmadrid",
     "categories": [
       "exposiciones",
       "gratis"
     ],
-    "id": "d73d04ae5f10f0a0",
-    "created_at": "2026-03-17T20:37:06.498345+00:00",
-    "updated_at": "2026-03-17T20:37:06.498345+00:00",
     "schedule": {
       "0": [
         "09:30:00",
@@ -4298,7 +4304,10 @@
         "10:00:00",
         "19:00:00"
       ]
-    }
+    },
+    "id": "d73d04ae5f10f0a0",
+    "created_at": "2026-03-24T15:15:24.503484+00:00",
+    "updated_at": "2026-03-24T15:15:24.503484+00:00"
   },
   "cc1b10be44023186": {
     "title": "IV Semana de Irlanda en Madrid",
@@ -4381,6 +4390,11 @@
     "longitude": -3.6901373,
     "url": "https://www.mncn.csic.es/es/visita-el-mncn/exposiciones/las-costas-desde-el-espacio",
     "price": "General: 7 €\nReducida: 3,50 € (estudiantes, desempleados y niños de 4 a 16 años)\nGrupo: 3,50 €\nGratuita: Domingos, de  17:00 - 20:00 h, jubilados 65 años y menores de 4 años, personas con algún tipo de discapacidad certificada, entre otros (consultar más casos en web oficial)",
+    "image": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/oq5PhWPHmm857bK7hVrhNEO880yjw5ELw84g4POAGFo/mtime:1773054923/sites/default/files/eventos/eventos/las_costas_desde_el_espacio.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/JS8aiRdTUYunrtu1hXrP11bopF7ufKO3Fz2nB-2gHnA/mtime:1773054785/sites/default/files/eventos/eventos/las_costas_desde_el_espacio_3.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/x-r-cvqtgOxP_7pmKtbj6NwUtcrwrQuIRnfKhhXf2jw/mtime:1773054885/sites/default/files/eventos/eventos/las_costas_desde_el_espacio_2.jpg"
+    ],
     "source_url": "https://www.esmadrid.com/agenda/costas-espacio-museo-nacional-ciencias-naturales",
     "source": "esmadrid",
     "categories": [
@@ -4388,9 +4402,6 @@
       "fotografia",
       "gratis"
     ],
-    "id": "ec6d3e52a0332142",
-    "created_at": "2026-03-17T20:37:06.498345+00:00",
-    "updated_at": "2026-03-17T20:37:06.498345+00:00",
     "schedule": {
       "1": [
         "10:00:00",
@@ -4416,7 +4427,10 @@
         "10:00:00",
         "20:00:00"
       ]
-    }
+    },
+    "id": "ec6d3e52a0332142",
+    "created_at": "2026-03-24T15:15:24.503484+00:00",
+    "updated_at": "2026-03-24T15:15:24.503484+00:00"
   },
   "4b0c988bcf3c9df3": {
     "title": "Mírame. Retratos y retratistas en la colección ABC",
@@ -6352,15 +6366,13 @@
     "longitude": -3.6857313,
     "url": "https://www.museolazarogaldiano.es/actividades/once-again-statues-never-die-2022-videoinstalacion-de-isaac-julien",
     "price": "General: 8 €\nReducida: 5 € (sólo se puede adquirir en taquilla, con acreditación documental, en su caso): martes a viernes: 16:30 - 19:30 h; Mayores 65 años; Estudiantes con carnet vigente; Familias numerosas; Personas con discapacidad; Menores entre 7 y 10 años\nEntrada gratuita: martes a viernes: 14:00 - 15:00 h / Menores de 7 años; desempleados; personal docente; Visitantes incluidos en convenios suscritos por la Fundación Lázaro Galdiano y que prevean tal eventualidad: ICOM, etc...",
+    "image": "https://estaticos.esmadrid.com/cdn/farfuture/9BvuH_KZiU3Tutn1Xj5BK8NQVhTOJBXLP0ZyZqb8Ki0/mtime:1770107977/sites/default/files/eventos/eventos/once_again.jpg",
     "source_url": "https://www.esmadrid.com/agenda/once-again-statues-never-die-museo-lazaro-galdiano",
     "source": "esmadrid",
     "categories": [
       "exposiciones",
       "gratis"
     ],
-    "id": "6ee1d0a34858ca35",
-    "created_at": "2026-03-17T20:37:06.498345+00:00",
-    "updated_at": "2026-03-17T20:37:06.498345+00:00",
     "schedule": {
       "1": [
         "09:30:00",
@@ -6394,7 +6406,10 @@
         "09:30:00",
         "15:00:00"
       ]
-    }
+    },
+    "id": "6ee1d0a34858ca35",
+    "created_at": "2026-03-24T15:15:24.503484+00:00",
+    "updated_at": "2026-03-24T15:15:24.503484+00:00"
   },
   "7978621147a2802c": {
     "title": "Alberto Greco. Viva el arte vivo",
@@ -8822,15 +8837,22 @@
     "longitude": -3.6862284,
     "url": "https://teatroserrano.com/",
     "price": "Desde 16 €",
+    "image": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/ppfBcASbMrNMTqvQ5Am02D9NpotMYsAMIJLG6_JYguQ/mtime:1764070315/sites/default/files/eventos/eventos/juana_la_loca.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/CLPLpZ5Vn03k0gOzVzYWtG1u65XD-0jGS_bpP0hHO1U/mtime:1686138860/sites/default/files/eventos/eventos/juana_la_loca2.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/o1r1B1-Uq7TTinXcerwOPYmnJw0Eh0BMRQcvQdjS6Zk/mtime:1574624928/sites/default/files/eventos/eventos/juana_6.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/fbFncfSYdBrIPKLaj-TBT6L0niPU-DpsoaEzwQ2wQKg/mtime:1686138846/sites/default/files/eventos/eventos/juana_la_loca_0.jpg"
+    ],
     "source_url": "https://www.esmadrid.com/agenda/juana-loca-teatro-serrano",
     "source": "esmadrid",
     "categories": [
       "teatro",
       "danza"
     ],
+    "schedule": null,
     "id": "f296e2bc768faf5e",
-    "created_at": "2026-03-17T20:37:06.498345+00:00",
-    "updated_at": "2026-03-17T20:37:06.498345+00:00"
+    "created_at": "2026-03-24T15:15:24.503484+00:00",
+    "updated_at": "2026-03-24T15:15:24.503484+00:00"
   },
   "00b8638874cabc1b": {
     "title": "Bodas de sangre",
@@ -10304,24 +10326,31 @@
     "location_name": "Teatros Luchana",
     "address": "de Luchana, 38",
     "district": null,
-    "latitude": 40.43192,
-    "longitude": -3.6982533,
+    "latitude": 40.4318433,
+    "longitude": -3.6981038,
     "url": "https://luchanakids.es/cartelera/una-rana-en-el-mar/",
     "price": "Desde 7 €",
+    "image": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/x67oVJYYHvM0O7JKJYbRnMAgwWKsIBBhtGItNFB0v6U/mtime:1578997401/sites/default/files/eventos/eventos/una_rana.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/YvvfvHXVFSmiNbkTVeY5_vBdRjh65woskONvMFiUn7M/mtime:1578997424/sites/default/files/eventos/eventos/una_rana_2.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/XRulbI398PYlz6K4xbd2fYHAPOe2ZR9l79M1ZOpIgbQ/mtime:1578997442/sites/default/files/eventos/eventos/una_rana_3.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/Y-b_FgU2bHFz8AsI43smEu6BDG1FpiBGNb87eoH7GYs/mtime:1578997462/sites/default/files/eventos/eventos/una_rana_4.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/LVz0U3debiqXSj6PgRftPCh3avhHzmSQorwnG6HA4sc/mtime:1578997481/sites/default/files/eventos/eventos/una_rana_5.jpg"
+    ],
     "source_url": "https://www.esmadrid.com/agenda/rana-mar-teatros-luchana",
     "source": "esmadrid",
     "categories": [
       "infantil",
       "teatro"
     ],
-    "id": "129386f5e87cbc1b",
-    "created_at": "2026-03-17T20:37:06.498345+00:00",
-    "updated_at": "2026-03-17T20:37:06.498345+00:00",
     "schedule": {
       "6": [
         "11:00:00"
       ]
-    }
+    },
+    "id": "129386f5e87cbc1b",
+    "created_at": "2026-03-24T15:15:24.503484+00:00",
+    "updated_at": "2026-03-24T15:15:24.503484+00:00"
   },
   "7256a19f991dcfa1": {
     "title": "Nos damos un viaje - Santi Rodríguez",
@@ -11184,7 +11213,9 @@
     "source_url": "https://www.esmadrid.com/agenda/brujo-lazarillo-tormes-teatro-alcazar",
     "source": "esmadrid",
     "categories": [
-      "otros"
+      "otros",
+      "teatro",
+      "danza"
     ],
     "id": "113287fade770768",
     "created_at": "2026-03-17T20:37:06.498345+00:00",
@@ -36194,6 +36225,10 @@
     "longitude": -3.7379452,
     "url": "https://www.palaciovistalegre.com/event/la-musica-magica-de-harry-potter-en-concierto/",
     "price": "Desde 39 €",
+    "image": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/D8hkz8Ho4jZ902bZimvfZVMzheivrMnHSMEarEPOeQg/mtime:1772549976/sites/default/files/eventos/eventos/the_magical_music_of_harry_potter.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/zHLtfZWRFfOFMQcjkjEzy4dU6CTt1_1-I7YgHjkJ_os/mtime:1702216548/sites/default/files/eventos/eventos/the-magical-music-of-harry-potter-live-in-concert.jpg"
+    ],
     "source_url": "https://www.esmadrid.com/agenda/magical-music-harry-potter-live-concert-palacio-vistalegre-arena",
     "source": "esmadrid",
     "categories": [
@@ -36201,8 +36236,8 @@
     ],
     "schedule": null,
     "id": "b9b95d6e7773345b",
-    "created_at": "2026-03-21T06:36:45.039049+00:00",
-    "updated_at": "2026-03-21T06:36:45.039049+00:00"
+    "created_at": "2026-03-24T15:15:24.503484+00:00",
+    "updated_at": "2026-03-24T15:15:24.503484+00:00"
   },
   "bfa45894a5903f7f": {
     "title": "The Dark Side of the Moon",
@@ -37950,6 +37985,7 @@
     "longitude": -3.6862379,
     "url": "https://www.movistarestudiantes.com/plantilla-femenina/",
     "price": "Consultar página oficial",
+    "image": "https://estaticos.esmadrid.com/cdn/farfuture/0Ejuc1LEDNkxdaaBsWoVCsc-feGLtIl10kXk4LQIyU4/mtime:1695725063/sites/default/files/eventos/eventos/movistar_estuadiantes_gernika_kesb_liga_f_endesa.jpg",
     "source_url": "https://www.esmadrid.com/agenda/movistar-estudiantes-lointek-gernika-bizkaia-lf-endesa-movistar-academy-magarinos",
     "source": "esmadrid",
     "categories": [
@@ -37957,8 +37993,8 @@
     ],
     "schedule": null,
     "id": "3de4ea63f8fad1e6",
-    "created_at": "2026-03-22T06:43:50.367922+00:00",
-    "updated_at": "2026-03-22T06:43:50.367922+00:00"
+    "created_at": "2026-03-24T15:15:24.503484+00:00",
+    "updated_at": "2026-03-24T15:15:24.503484+00:00"
   },
   "675036251bcfae87": {
     "title": "El Prado de noche",
@@ -39624,5 +39660,60 @@
     "id": "3d434fc23de3080d",
     "created_at": "2026-03-24T11:31:31.005306+00:00",
     "updated_at": "2026-03-24T11:31:31.005306+00:00"
+  },
+  "a670961151457121": {
+    "title": "El sueño de una noche de verano. Julia Margaret Cameron",
+    "description": "Exposición que recupera la intensidad poética y teatral de las imágenes de la fotógrafa británica (Teatro Real. Hasta 11 junio).",
+    "location_name": "Teatro Real",
+    "address": "de Isabel II, s/n",
+    "district": null,
+    "latitude": 40.418299121798,
+    "longitude": -3.710589408875,
+    "url": "https://phe.es/exposicion/el-sueno-de-una-noche-de-verano/",
+    "price": "Mañanas: acceso a la exposición con la compra de la visita guiada\nTardes: acceso a la exposición incluido en la entrada los días que haya función de ópera\nConsultar página oficial",
+    "image": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/U5ludNhjrqQjHjmyjk0OlNT6LRPyPY9El7mb8BHyJpU/mtime:1749659688/sites/default/files/eventos/eventos/el_sueno_de_una_noche_de_verano._julia_margaret_cameron2.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/NQK54gHyHJQAFtN0_lP8GAj1yyIZ6OjFHC5eI9E4SIE/mtime:1749659673/sites/default/files/eventos/eventos/el_sueno_de_una_noche_de_verano._julia_margaret_cameron.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/dpqvYuO237OZcY52IbFeUwipI6oBWh1nWrFGaN3DuN4/mtime:1748874444/sites/default/files/eventos/eventos/julia_margaret_cameron.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/sueno-noche-verano-julia-margaret-cameron-teatro-real",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "fotografia"
+    ],
+    "schedule": {
+      "0": [
+        "09:30:00",
+        "13:30:00"
+      ],
+      "1": [
+        "09:30:00",
+        "13:30:00"
+      ],
+      "2": [
+        "09:30:00",
+        "13:30:00"
+      ],
+      "3": [
+        "09:30:00",
+        "13:30:00"
+      ],
+      "4": [
+        "09:30:00",
+        "13:30:00"
+      ],
+      "5": [
+        "09:30:00",
+        "13:30:00"
+      ],
+      "6": [
+        "09:30:00",
+        "13:30:00"
+      ]
+    },
+    "id": "a670961151457121",
+    "created_at": "2026-03-24T15:15:24.503484+00:00",
+    "updated_at": "2026-03-24T15:15:24.503484+00:00"
   }
 }
