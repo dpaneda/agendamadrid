@@ -191,8 +191,9 @@ def run(only=None, force=False):
         except Exception as e:
             print(f"  Error: {e}")
 
-    # Sort calendar dates
-    calendar = dict(sorted(calendar.items()))
+    # Remove past dates and sort
+    today = datetime.now(UTC).strftime("%Y-%m-%d")
+    calendar = dict(sorted((k, v) for k, v in calendar.items() if k >= today))
 
     os.makedirs(DATA_DIR, exist_ok=True)
     with open(EVENTS_PATH, "w") as f:
