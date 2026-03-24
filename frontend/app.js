@@ -1007,15 +1007,16 @@ function renderEvent(ev) {
     ? `<p class="event-desc">${esc(ev.description.length > 200 ? ev.description.slice(0, 200) + "..." : ev.description)}</p>`
     : "";
   const { priceBadge, distBadge, catBadge } = eventBadges(ev, "tag");
-  const sourceTags = (ev.source || "").split(",").filter(Boolean).map(s => {
-    const label = SOURCE_LABELS[s] || s;
+  const mainSource = (ev.source || "").split(",").filter(Boolean)[0] || "";
+  const sourceTag = mainSource ? (() => {
+    const label = SOURCE_LABELS[mainSource] || mainSource;
     const sourceUrl = ev.source_url || "";
     if (sourceUrl) {
       return `<span class="tag tag-source tag-link" onclick="event.preventDefault(); event.stopPropagation(); window.open('${esc(sourceUrl)}', '_blank')">${esc(label)}</span>`;
     }
     return `<span class="tag tag-source">${esc(label)}</span>`;
-  }).join("");
-  const badges = priceBadge + distBadge + catBadge + sourceTags;
+  })() : "";
+  const badges = priceBadge + distBadge + catBadge + sourceTag;
 
   let locationHtml = "";
   if (location) {
