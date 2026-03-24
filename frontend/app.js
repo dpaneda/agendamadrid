@@ -307,7 +307,7 @@ function eventBadges(ev, cls) {
     const m = price.match(/(\d+[\.,]?\d*)\s*€/);
     return m ? `Desde ${m[1]} €` : "De pago";
   })();
-  const priceBadge = isFree ? `<span class="${cls} ${cls}-free">Gratis</span>` : (shortPrice ? `<span class="${cls} ${cls}-price">${esc(shortPrice)}</span>` : "");
+  const priceBadge = isFree ? `<span class="${cls} ${cls}-free">Gratis</span>` : (shortPrice ? `<span class="${cls} ${cls}-price">💰 ${esc(shortPrice)}</span>` : "");
 
   let distBadge = "";
   if (userLatLng && ev.latitude && ev.longitude) {
