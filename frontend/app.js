@@ -1276,10 +1276,6 @@ function renderUserView() {
         </div>
       </section>
 
-      ${_deferredInstall ? `<div class="pwa-install-banner" onclick="pwaInstall()">
-        <span>📲</span>
-        <div><strong>Instalar Agenda Madrid</strong><br><small>Accede más rápido desde la pantalla de inicio</small></div>
-      </div>` : ""}
 
       <div class="user-actions-row">
         ${user ? `<button class="btn-logout" onclick="FirebaseSync.logout(); setView('list')">Cerrar sesión</button>` : ""}
@@ -1385,20 +1381,12 @@ function esc(s) {
 
 init();
 
-// Service Worker + PWA install prompt
+// Unregister any existing Service Worker and clear caches
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/sw.js");
-}
-let _deferredInstall = null;
-window.addEventListener("beforeinstallprompt", (e) => {
-  e.preventDefault();
-  _deferredInstall = e;
-});
-function pwaInstall() {
-  if (_deferredInstall) {
-    _deferredInstall.prompt();
-    _deferredInstall = null;
-  }
+  navigator.serviceWorker.getRegistrations().then((regs) =>
+    regs.forEach((r) => r.unregister())
+  );
+  caches.keys().then((keys) => keys.forEach((k) => caches.delete(k)));
 }
 
 // ==============================
