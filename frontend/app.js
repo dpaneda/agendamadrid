@@ -209,6 +209,7 @@ const FirebaseSync = (() => {
 
       localStorage.setItem("agendamadrid_user", JSON.stringify(merged));
       await db.collection("users").doc(user.uid).set(merged);
+      console.log("[Sync] Merged:", Object.keys(merged.favorites || {}).length, "favs,", Object.keys(merged.seen || {}).length, "seen");
       if (typeof render === "function") render();
       if (typeof renderUserView === "function" && typeof currentView !== "undefined" && currentView === "user") renderUserView();
     } catch (e) {
