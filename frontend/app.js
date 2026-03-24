@@ -1501,6 +1501,8 @@ function triggerSwipe(dir) {
   else if (dir === "left") { tx = -(window.innerWidth + 200); ty = -50; rot = -20; }
   else { ty = -(window.innerHeight + 200); }
 
+  // Force a reflow so the browser registers the current position before animating
+  void card.offsetWidth;
   card.style.transition = "transform 0.38s ease, opacity 0.28s ease";
   card.style.transform = `translateX(${tx}px) translateY(${ty}px) rotate(${rot}deg)`;
   card.style.opacity = "0";
@@ -1509,11 +1511,11 @@ function triggerSwipe(dir) {
   else if (dir === "left" && !UserData.has("dismissed", id)) UserData.toggle("dismissed", id);
   // up = skip (no classification)
 
-  setTimeout(() => {
+  card.addEventListener("transitionend", () => {
     swipeIndex++;
     swipeActive = false;
     _buildSwipeDeck();
-  }, 360);
+  }, { once: true });
 }
 
 function _initSwipeDrag() {
