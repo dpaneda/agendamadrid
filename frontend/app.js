@@ -883,7 +883,7 @@ function _applyHidePast(events, ds) {
   if (ds !== dateStr(new Date())) return events;
   const now = new Date();
   const nowTime = now.getHours().toString().padStart(2, "0") + ":" + now.getMinutes().toString().padStart(2, "0");
-  return events.filter(ev => !ev.start_time || ev.start_time >= nowTime);
+  return events.filter(ev => !ev.start_time || (ev.end_time || ev.start_time) >= nowTime);
 }
 
 function _getDayEvents(ds) {
