@@ -1007,7 +1007,15 @@ function renderEvent(ev) {
     ? `<p class="event-desc">${esc(ev.description.length > 200 ? ev.description.slice(0, 200) + "..." : ev.description)}</p>`
     : "";
   const { priceBadge, distBadge, catBadge } = eventBadges(ev, "tag");
-  const badges = priceBadge + distBadge + catBadge;
+  const sourceTags = (ev.source || "").split(",").filter(Boolean).map(s => {
+    const label = SOURCE_LABELS[s] || s;
+    const sourceUrl = ev.source_url || "";
+    if (sourceUrl) {
+      return `<span class="tag tag-source tag-link" onclick="event.preventDefault(); event.stopPropagation(); window.open('${esc(sourceUrl)}', '_blank')">${esc(label)}</span>`;
+    }
+    return `<span class="tag tag-source">${esc(label)}</span>`;
+  }).join("");
+  const badges = priceBadge + distBadge + catBadge + sourceTags;
 
   let locationHtml = "";
   if (location) {
@@ -1032,12 +1040,14 @@ function renderEvent(ev) {
       <div class="swipe-hint swipe-hint-left">✕ Ocultar</div>
       <div class="event-header">
         ${timeStr ? `<span class="event-time">${esc(timeStr)}</span>` : ""}
-        <div class="event-tags">${badges}</div>
         ${actionsHtml}
       </div>
       <div class="event-title">${isFav ? '❤️ ' : ''}${title}</div>
       ${desc}
-      ${locationHtml}`;
+      <div class="event-footer">
+        ${locationHtml}
+        ${badges ? `<div class="event-tags">${badges}</div>` : ""}
+      </div>`;
 
   if (ev.url) {
     return `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="event-card event-card-link" data-eid="${esc(ev.id)}">${cardContent}</a>`;

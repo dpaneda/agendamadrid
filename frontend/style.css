@@ -465,10 +465,18 @@ main {
 
 .event-footer {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
   margin-top: 0.5rem;
+}
+
+.event-footer .event-location {
+  margin-top: 0;
+}
+
+.event-footer .event-tags {
+  margin-left: auto;
 }
 
 .event-tags {
