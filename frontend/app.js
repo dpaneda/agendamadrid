@@ -593,21 +593,6 @@ async function init() {
   setView(currentView);
   document.body.classList.add("ready");
 
-  // Swipe to change day on touch devices
-  let touchStartX = 0, touchStartY = 0;
-  const mainEl = document.querySelector("main");
-  mainEl.addEventListener("touchstart", (e) => {
-    touchStartX = e.touches[0].clientX;
-    touchStartY = e.touches[0].clientY;
-  }, { passive: true });
-  mainEl.addEventListener("touchend", (e) => {
-    if (currentView === "map") return;
-    const dx = e.changedTouches[0].clientX - touchStartX;
-    const dy = e.changedTouches[0].clientY - touchStartY;
-    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) {
-      changeDay(dx < 0 ? 1 : -1);
-    }
-  }, { passive: true });
 }
 
 function setView(view) {
@@ -1396,18 +1381,25 @@ if ("serviceWorker" in navigator) {
 let swipeQueue = [];
 let swipeIndex = 0;
 let swipeActive = false;
+let swipeSkipped = new Set(); // track skipped event IDs within the session
+let swipeDay = null; // track which day the skip set belongs to
 
 function _getSwipeEvents() {
   let events = _getDayEvents(dateStr(selectedDate));
-  events = events.filter(ev => !UserData.has("favorites", ev.id) && !UserData.has("seen", ev.id) && !UserData.has("dismissed", ev.id));
+  events = events.filter(ev => !UserData.has("favorites", ev.id) && !UserData.has("seen", ev.id) && !UserData.has("dismissed", ev.id) && !swipeSkipped.has(ev.id));
   return events.sort((a, b) => (a.start_time || "99:99").localeCompare(b.start_time || "99:99"));
 }
 
-function renderSwipeView() {
-  swipeQueue = _getSwipeEvents();
-  swipeIndex = 0;
-  swipeActive = false;
-  updateDateLabel(swipeQueue.length);
+function renderSwipeView(forceReset) {
+  const day = dateStr(selectedDate);
+  if (forceReset || swipeDay !== day) {
+    swipeSkipped.clear();
+    swipeDay = day;
+    swipeQueue = _getSwipeEvents();
+    swipeIndex = 0;
+    swipeActive = false;
+  }
+  updateDateLabel(swipeQueue.length - swipeIndex);
   _buildSwipeDeck();
 }
 
@@ -1443,7 +1435,7 @@ function _buildSwipeDeck() {
   const el = document.createElement("div");
   el.className = "swipe-card swipe-card-top" + (hasImg ? " swipe-card--has-img" : "");
   el.dataset.id = ev0.id;
-  el.innerHTML = _swipeCardInner(ev0);
+  el.innerHTML = _swipeCardInner(ev0, swipeIndex + 1, swipeQueue.length);
   deck.appendChild(el);
 
   // Update skip button fill (empties as you progress)
@@ -1470,7 +1462,7 @@ function _buildSwipeDeck() {
   _initSwipeDrag();
 }
 
-function _swipeCardInner(ev) {
+function _swipeCardInner(ev, pos, total) {
   const cat = ev.categories?.[0] || "otros";
   const catInfo = CAT_ICONS[cat] || { emoji: "📍", color: "#6B7280" };
   const color = catInfo.color;
@@ -1498,6 +1490,7 @@ function _swipeCardInner(ev) {
       ${catBadge}
     </div>
     <div class="swipe-info">
+      ${pos ? `<div class="swipe-counter">${pos} / ${total}</div>` : ""}
       <div class="swipe-info-title">${esc(ev.title)}</div>
       <div class="swipe-info-meta">
         ${timeStr ? `<span>⏰ ${esc(timeStr)}</span>` : ""}
@@ -1530,7 +1523,7 @@ function triggerSwipe(dir) {
 
   if (dir === "right" && !UserData.has("favorites", id)) UserData.toggle("favorites", id);
   else if (dir === "left" && !UserData.has("dismissed", id)) UserData.toggle("dismissed", id);
-  // up = skip (no classification)
+  else if (dir === "up") swipeSkipped.add(id);
 
   card.addEventListener("transitionend", () => {
     swipeIndex++;

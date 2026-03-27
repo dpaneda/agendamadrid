@@ -1926,6 +1926,13 @@ footer p + p {
 
 .swipe-info-badge-free { background: rgba(34,197,94,0.85); }
 
+.swipe-counter {
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
 .swipe-info-title {
   font-size: 1.35rem;
   font-weight: 800;
