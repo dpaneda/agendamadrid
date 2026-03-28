@@ -248,6 +248,8 @@ header[hidden] {
   display: flex;
   gap: 0;
   flex-shrink: 0;
+  align-self: stretch;
+  align-items: stretch;
 }
 
 .search-bar {
@@ -316,13 +318,14 @@ header[hidden] {
   background: var(--surface-container-low);
   border: none;
   color: var(--muted-light);
-  padding: 0.3rem 0.7rem;
+  padding: 0.4rem 1rem;
   border-radius: 0;
   font-family: inherit;
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   font-weight: 500;
   cursor: pointer;
   transition: background 0.15s, color 0.15s;
+  align-self: stretch;
 }
 
 
