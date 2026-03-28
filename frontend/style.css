@@ -133,6 +133,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--fg);
@@ -317,7 +321,7 @@ header[hidden] {
   font-size: 0.82rem;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.15s;
+  transition: background 0.15s, color 0.15s;
 }
 
 
@@ -342,7 +346,7 @@ header[hidden] {
   z-index: 1;
 }
 
-.view-toggle + .view-toggle:not(.active) {
+.view-toggle + .view-toggle {
   margin-left: -1px;
 }
 
