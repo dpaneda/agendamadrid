@@ -28,7 +28,7 @@
   --cal-max: #bfb0e0;
   --header-bg: rgba(242, 242, 250, 0.85);
   --nav-bg: rgba(242, 242, 250, 0.9);
-  --logo-agenda: #e63228;
+  --logo-agenda: #c4403a;
   --logo-madrid: #0B0620;
 }
 
@@ -246,7 +246,7 @@ header[hidden] {
 
 .header-nav {
   display: flex;
-  gap: 0.25rem;
+  gap: 0;
   flex-shrink: 0;
 }
 
@@ -316,7 +316,7 @@ header[hidden] {
   background: var(--surface-container-low);
   border: none;
   color: var(--muted-light);
-  padding: 0.3rem 0.7rem;
+  padding: 0.15rem 0.45rem;
   border-radius: 0;
   font-family: inherit;
   font-size: 0.82rem;
