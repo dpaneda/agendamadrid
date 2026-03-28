@@ -1153,15 +1153,15 @@ function renderEventMobile(ev) {
   const cardContent = `
       <div class="swipe-hint swipe-hint-right">♥ Favorito</div>
       <div class="swipe-hint swipe-hint-left">✕ Ocultar</div>
+      <div class="event-mobile-top">
+        ${timeStr ? `<span class="event-time">${esc(timeStr)}</span>` : ""}
+        ${badges ? `<div class="event-tags">${badges}</div>` : ""}
+      </div>
       ${thumbHtml}
       <div class="event-mobile-body">
-        <div class="event-header">
-          ${timeStr ? `<span class="event-time">${esc(timeStr)}</span>` : ""}
-          ${locationHtml}
-        </div>
         <div class="event-title">${isFav ? '❤️ ' : ''}${title}</div>
         ${desc}
-        ${badges ? `<div class="event-tags">${badges}</div>` : ""}
+        ${locationHtml}
       </div>`;
 
   return _wrapCard(ev, cardContent);
