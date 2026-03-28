@@ -112,6 +112,10 @@ def parse_madrid_event(item: dict, source: str) -> dict | None:
         longitude = None
 
     url = (item.get("link") or "").strip() or None
+    if url:
+        m = re.search(r"vgnextoid=([^&]+)", url)
+        if m:
+            url = f"https://www.madrid.es/sites/v/index.jsp?vgnextoid={m.group(1)}"
 
     description = (item.get("description") or "").strip() or None
     if description:
