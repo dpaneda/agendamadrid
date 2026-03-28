@@ -993,7 +993,9 @@ function renderEvents() {
 }
 
 function renderEvent(ev) {
-  return window.matchMedia("(max-width: 640px)").matches ? renderEventMobile(ev) : renderEventDesktop(ev);
+  const nav = document.querySelector(".bottom-nav");
+  const isMobile = nav && getComputedStyle(nav).display !== "none";
+  return isMobile ? renderEventMobile(ev) : renderEventDesktop(ev);
 }
 
 function _eventCommon(ev) {
