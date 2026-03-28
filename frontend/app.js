@@ -1094,9 +1094,9 @@ function renderEventMobile(ev) {
         ${locationHtml}
       </div>
       <div class="event-mobile-actions">
-        <button class="ev-action-mobile${isFav ? ' active' : ''}" data-id="${esc(ev.id)}" data-action="fav"><svg width="18" height="18" viewBox="0 0 24 24" fill="${isFav ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> Favorito</button>
-        <button class="ev-action-mobile${isSeen ? ' active' : ''}" data-id="${esc(ev.id)}" data-action="seen"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Visto</button>
-        <button class="ev-action-mobile${isDismissed ? ' active' : ''}" data-id="${esc(ev.id)}" data-action="dismiss"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Ocultar</button>
+        <button class="ev-action-mobile${isFav ? ' active' : ''}" data-id="${esc(ev.id)}" data-action="fav"><svg width="22" height="22" viewBox="0 0 24 24" fill="${isFav ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+        <button class="ev-action-mobile${isSeen ? ' active' : ''}" data-id="${esc(ev.id)}" data-action="seen"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></button>
+        <button class="ev-action-mobile${isDismissed ? ' active' : ''}" data-id="${esc(ev.id)}" data-action="dismiss"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
       </div>`;
 
   return _wrapCard(ev, cardContent);
