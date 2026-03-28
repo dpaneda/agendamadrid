@@ -1089,7 +1089,7 @@ function renderEventMobile(ev) {
       </div>
       ${thumbHtml}
       <div class="event-mobile-body">
-        <div class="event-title">${isFav ? '❤️ ' : ''}${title}</div>
+        <div class="event-title">${title}</div>
         ${desc}
         ${locationHtml}
       </div>
