@@ -315,7 +315,7 @@ header[hidden] {
   background: var(--surface-container-low);
   border: none;
   color: var(--muted-light);
-  padding: 0.4rem 1rem;
+  padding: 0.35rem 0.8rem;
   border-radius: 0;
   font-family: inherit;
   font-size: 0.82rem;
@@ -326,11 +326,11 @@ header[hidden] {
 
 
 .view-toggle:first-child {
-  border-radius: var(--radius-full) 0 0 var(--radius-full);
+  border-radius: var(--radius) 0 0 var(--radius);
 }
 
 .view-toggle:nth-child(3) {
-  border-radius: 0 var(--radius-full) var(--radius-full) 0;
+  border-radius: 0 var(--radius) var(--radius) 0;
 }
 
 
