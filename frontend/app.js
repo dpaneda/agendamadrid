@@ -1077,12 +1077,17 @@ function _eventCommon(ev) {
   const title = esc(ev.title);
   const imgSrc = Array.isArray(ev.image) ? ev.image[0] : ev.image;
   const isFav = UserData.has("favorites", ev.id);
+  let distStr = "";
+  if (userLatLng && ev.latitude && ev.longitude) {
+    const d = haversineDistance(userLatLng.lat, userLatLng.lng, parseFloat(ev.latitude), parseFloat(ev.longitude));
+    distStr = ` (${d.toFixed(1)} km)`;
+  }
   let locationHtml = "";
   if (location) {
     const isLocActive = activeLocation === location;
     const locClass = ` location-clickable${isLocActive ? ' location-active' : ''}`;
     const locClick = ` onclick="event.preventDefault(); event.stopPropagation(); toggleLocation('${esc(location)}')"`;
-    locationHtml = `<div class="event-location${locClass}"${locClick}><span class="location-pin">📍</span> ${esc(location)}</div>`;
+    locationHtml = `<div class="event-location${locClass}"${locClick}><span class="location-pin">📍</span> ${esc(location)}${distStr ? `<span class="location-dist">${distStr}</span>` : ""}</div>`;
   }
   return { timeStr, location, title, imgSrc, isFav, locationHtml };
 }
@@ -1099,7 +1104,7 @@ function renderEventDesktop(ev) {
   const desc = ev.description
     ? `<p class="event-desc">${esc(ev.description.length > 200 ? ev.description.slice(0, 200) + "..." : ev.description)}</p>`
     : "";
-  const { priceBadge, distBadge, catBadge } = eventBadges(ev, "tag");
+  const { priceBadge, catBadge } = eventBadges(ev, "tag");
   const mainSource = (ev.source || "").split(",").filter(Boolean)[0] || "";
   const sourceTag = mainSource ? (() => {
     const label = SOURCE_LABELS[mainSource] || mainSource;
@@ -1109,7 +1114,7 @@ function renderEventDesktop(ev) {
     }
     return `<span class="tag tag-source">${esc(label)}</span>`;
   })() : "";
-  const badges = priceBadge + distBadge + catBadge + sourceTag;
+  const badges = priceBadge + catBadge + sourceTag;
 
   const isSeen = UserData.has("seen", ev.id);
   const isDismissed = UserData.has("dismissed", ev.id);
@@ -1120,13 +1125,13 @@ function renderEventDesktop(ev) {
   </span>`;
   const thumbHtml = imgSrc ? `<img class="event-thumb" src="${esc(imgSrc)}" alt="" loading="lazy" />` : "";
 
-  const headerHtml = `<div class="event-header">${timeStr ? `<span class="event-time">${esc(timeStr)}</span>` : ""}${actionsHtml}</div>`;
+  const headerHtml = `<div class="event-header">${timeStr ? `<span class="event-time">${esc(timeStr)}</span>` : ""}${badges ? `<div class="event-tags">${badges}</div>` : ""}</div>`;
   const bodyHtml = `
-      <div class="event-title">${isFav ? '❤️ ' : ''}${title}</div>
+      <div class="event-title">${title}</div>
       ${desc}
       <div class="event-footer">
         ${locationHtml}
-        ${badges ? `<div class="event-tags">${badges}</div>` : ""}
+        ${actionsHtml}
       </div>`;
 
   const cardContent = imgSrc
@@ -1141,8 +1146,8 @@ function renderEventMobile(ev) {
   const desc = ev.description
     ? `<p class="event-desc">${esc(ev.description.length > 200 ? ev.description.slice(0, 200) + "..." : ev.description)}</p>`
     : "";
-  const { priceBadge, distBadge, catBadge } = eventBadges(ev, "tag");
-  const badges = priceBadge + distBadge + catBadge;
+  const { priceBadge, catBadge } = eventBadges(ev, "tag");
+  const badges = priceBadge + catBadge;
   const thumbHtml = imgSrc ? `<img class="event-thumb" src="${esc(imgSrc)}" alt="" loading="lazy" />` : "";
 
   const cardContent = `
