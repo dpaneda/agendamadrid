@@ -816,11 +816,20 @@ async function loadData() {
   container.innerHTML = "<p class='empty-state'>Cargando...</p>";
 
   try {
-    const [evRes, calRes] = await Promise.all([
+    const [evRes, calRes, locRes] = await Promise.all([
       fetch("data/events.json"),
       fetch("data/calendar.json"),
+      fetch("data/locations.json"),
     ]);
     allEvents = await evRes.json();
+    const locations = await locRes.json();
+    for (const [id, ev] of Object.entries(allEvents)) {
+      ev.id = id;
+      if (ev.lid) {
+        const loc = locations[ev.lid];
+        if (loc) Object.assign(ev, loc);
+      }
+    }
     calendarData = await calRes.json();
 
     // Build allData for categories (unique events)

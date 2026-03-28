@@ -14,6 +14,9 @@ from crawlers.generate_seo import run as generate_seo
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "frontend", "data")
 EVENTS_PATH = os.path.join(DATA_DIR, "events.json")
 CALENDAR_PATH = os.path.join(DATA_DIR, "calendar.json")
+LOCATIONS_PATH = os.path.join(DATA_DIR, "locations.json")
+
+LOC_FIELDS = ("location_name", "address", "district", "latitude", "longitude")
 
 RICHNESS_FIELDS = ["description", "start_time", "end_time", "location_name", "address",
                    "latitude", "longitude", "url", "district", "image"]
@@ -141,8 +144,6 @@ def run(only=None, force=False):
         known_source_urls -= forced_urls
         print(f"  Force mode: cleared {len(forced_urls)} known URLs for '{only}'")
 
-    now = datetime.now(UTC).isoformat()
-
     # Build URL -> event_id index for fast lookup
     url_to_eid = {}
     for eid, ev in events.items():
@@ -189,13 +190,11 @@ def run(only=None, force=False):
                 event_data = {k: v for k, v in ev.items()
                               if k not in ("start_date", "end_date", "schedule",
                                            "id", "created_at", "updated_at",
-                                           "open_days")}
-                event_data["id"] = eid
+                                           "open_days", "end_time")
+                              and v is not None}
                 # Upgrade http to https
                 if event_data.get("url", "").startswith("http://"):
                     event_data["url"] = "https://" + event_data["url"][7:]
-                event_data.setdefault("created_at", now)
-                event_data["updated_at"] = now
 
                 if eid in events:
                     events[eid] = merge_event(events[eid], event_data)
@@ -214,6 +213,19 @@ def run(only=None, force=False):
     today = datetime.now(UTC).strftime("%Y-%m-%d")
     calendar = dict(sorted((k, v) for k, v in calendar.items() if k >= today))
 
+    # Extract locations into separate file
+    locations = {}
+    for ev in events.values():
+        loc_name = (ev.get("location_name") or "").strip()
+        if not loc_name:
+            continue
+        lid = hashlib.sha256(loc_name.lower().encode()).hexdigest()[:8]
+        if lid not in locations:
+            locations[lid] = {k: ev[k] for k in LOC_FIELDS if ev.get(k) is not None}
+        ev["lid"] = lid
+        for k in LOC_FIELDS:
+            ev.pop(k, None)
+
     os.makedirs(DATA_DIR, exist_ok=True)
     with open(EVENTS_PATH, "w") as f:
         json.dump(events, f, indent=2, ensure_ascii=False, default=str)
@@ -221,8 +233,11 @@ def run(only=None, force=False):
     with open(CALENDAR_PATH, "w") as f:
         json.dump(calendar, f, indent=2, ensure_ascii=False, default=str)
 
+    with open(LOCATIONS_PATH, "w") as f:
+        json.dump(locations, f, indent=2, ensure_ascii=False, default=str)
+
     total_entries = sum(len(v) for v in calendar.values())
-    print(f"\nWrote {len(events)} events, {len(calendar)} days ({total_entries} calendar entries)")
+    print(f"\nWrote {len(events)} events, {len(locations)} locations, {len(calendar)} days ({total_entries} calendar entries)")
 
     generate_seo()
 
