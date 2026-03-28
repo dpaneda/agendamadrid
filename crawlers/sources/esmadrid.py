@@ -246,6 +246,8 @@ def _parse_event_page(url):
     description = (ld.get("description") or "").strip()
     if description:
         description = re.sub(r"<[^>]+>", "", description).strip()
+        if len(description) > 500:
+            description = description[:497] + "..."
 
     # Image from JSON-LD or og:image
     image = None
