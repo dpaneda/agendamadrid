@@ -1318,6 +1318,12 @@ function renderUserView() {
       <div class="user-actions-row">
         <button class="btn-logout btn-danger" onclick="resetUserData()">Resetear todo</button>
       </div>
+
+      <footer class="user-footer">
+        <p>En algunos casos la programación de ciertos eventos no se hace pública hasta pocos días antes de que se celebren.</p>
+        <p>Los eventos se actualizan con frecuencia. Consulta la fuente original para confirmar detalles.</p>
+        <p><a href="/info.html">Info</a></p>
+      </footer>
     </div>
   `;
 }
