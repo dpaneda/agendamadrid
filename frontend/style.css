@@ -422,12 +422,13 @@ main {
 
 /* Event card — no borders, tonal layering */
 .event-card {
-  background: var(--white);
-  border-radius: var(--radius-lg);
-  padding: 0.5rem 0.8rem;
-  margin-bottom: 0.5rem;
+  background: none;
+  border-radius: 0;
+  padding: 0.4rem 0.6rem;
+  margin-bottom: 0;
   border: none;
-  transition: box-shadow 0.2s, transform 0.2s;
+  border-bottom: 1px solid var(--surface-container);
+  transition: background 0.15s;
 }
 
 .event-card-link {
@@ -438,8 +439,7 @@ main {
 }
 
 .event-card:hover {
-  box-shadow: 0 4px 24px rgba(27, 28, 28, 0.05);
-  transform: translateY(-1px);
+  background: var(--surface-container-low);
 }
 
 .event-header {
@@ -475,12 +475,10 @@ main {
 }
 
 .event-thumb {
-  width: 130px;
-  min-height: 130px;
-  object-fit: cover;
-  border-radius: var(--radius);
+  width: 260px;
+  object-fit: contain;
   flex-shrink: 0;
-  align-self: stretch;
+  align-self: center;
 }
 
 .event-title {
