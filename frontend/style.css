@@ -424,7 +424,7 @@ main {
 .event-card {
   background: var(--white);
   border-radius: var(--radius-lg);
-  padding: 1rem 1.2rem;
+  padding: 0.5rem 0.8rem;
   margin-bottom: 0.5rem;
   border: none;
   transition: box-shadow 0.2s, transform 0.2s;
@@ -462,6 +462,25 @@ main {
   color: var(--primary);
   white-space: nowrap;
   flex-shrink: 0;
+}
+
+.event-with-thumb {
+  display: flex;
+  gap: 1rem;
+}
+
+.event-with-thumb .event-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.event-thumb {
+  width: 130px;
+  min-height: 130px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  flex-shrink: 0;
+  align-self: stretch;
 }
 
 .event-title {

@@ -1106,19 +1106,28 @@ function renderEvent(ev) {
     <button class="ev-action ev-dismiss${isDismissed ? ' active' : ''}" data-id="${esc(ev.id)}" data-action="dismiss" title="Ocultar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
   </span>`;
 
-  const cardContent = `
+  const imgSrc = Array.isArray(ev.image) ? ev.image[0] : ev.image;
+  const thumbHtml = imgSrc ? `<img class="event-thumb" src="${esc(imgSrc)}" alt="" loading="lazy" />` : "";
+
+  const hintsHtml = `
       <div class="swipe-hint swipe-hint-right">♥ Favorito</div>
-      <div class="swipe-hint swipe-hint-left">✕ Ocultar</div>
+      <div class="swipe-hint swipe-hint-left">✕ Ocultar</div>`;
+  const headerHtml = `
       <div class="event-header">
         ${timeStr ? `<span class="event-time">${esc(timeStr)}</span>` : ""}
         ${actionsHtml}
-      </div>
+      </div>`;
+  const bodyHtml = `
       <div class="event-title">${isFav ? '❤️ ' : ''}${title}</div>
       ${desc}
       <div class="event-footer">
         ${locationHtml}
         ${badges ? `<div class="event-tags">${badges}</div>` : ""}
       </div>`;
+
+  const cardContent = imgSrc
+    ? `${hintsHtml}<div class="event-with-thumb">${thumbHtml}<div class="event-main">${headerHtml}${bodyHtml}</div></div>`
+    : `${hintsHtml}${headerHtml}${bodyHtml}`;
 
   if (ev.url) {
     return `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="event-card event-card-link" data-eid="${esc(ev.id)}">${cardContent}</a>`;
