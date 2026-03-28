@@ -2134,7 +2134,7 @@ footer p + p {
   background: var(--primary);
   opacity: 0.15;
   pointer-events: none;
-  border-radius: 8px;
+  border-radius: 0;
 }
 
 /* Swipe direction overlays */
