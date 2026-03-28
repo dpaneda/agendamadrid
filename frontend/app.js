@@ -541,7 +541,7 @@ async function init() {
 
   // Event delegation for action buttons
   document.getElementById("events-container").addEventListener("click", (e) => {
-    const btn = e.target.closest(".ev-action");
+    const btn = e.target.closest(".ev-action, .ev-action-mobile");
     if (!btn) return;
     e.preventDefault();
     e.stopPropagation();
@@ -568,79 +568,6 @@ async function init() {
     }
   });
 
-  // Mobile gestures: swipe right=fav, swipe left=dismiss, double-tap=fav
-  if (window.innerWidth <= 640) {
-    const container = document.getElementById("events-container");
-    let touchStartX = 0, touchStartY = 0, touchCard = null, touchMoved = false;
-    let lastTap = 0, preventClick = false;
-    const SWIPE_THRESHOLD = 80;
-
-    container.addEventListener("click", (e) => {
-      if (preventClick) { e.preventDefault(); preventClick = false; }
-    }, true);
-
-    container.addEventListener("touchstart", (e) => {
-      const card = e.target.closest(".event-card");
-      if (!card) return;
-      touchCard = card;
-      touchStartX = e.touches[0].clientX;
-      touchStartY = e.touches[0].clientY;
-      touchMoved = false;
-    }, { passive: true });
-
-    container.addEventListener("touchmove", (e) => {
-      if (!touchCard) return;
-      const dx = e.touches[0].clientX - touchStartX;
-      const dy = e.touches[0].clientY - touchStartY;
-      if (Math.abs(dy) > Math.abs(dx) && !touchMoved) { touchCard = null; return; }
-      if (Math.abs(dx) > 15) {
-        touchMoved = true;
-        touchCard.style.transform = `translateX(${dx}px)`;
-        touchCard.style.transition = "none";
-        touchCard.classList.toggle("swiping-right", dx > 30);
-        touchCard.classList.toggle("swiping-left", dx < -30);
-      }
-    }, { passive: true });
-
-    container.addEventListener("touchend", (e) => {
-      if (!touchCard) return;
-      const card = touchCard;
-      const id = card.dataset.eid;
-      touchCard = null;
-
-      if (touchMoved) {
-        preventClick = true;
-        const dx = e.changedTouches[0].clientX - touchStartX;
-        card.classList.remove("swiping-right", "swiping-left");
-        if (Math.abs(dx) >= SWIPE_THRESHOLD && id) {
-          const dir = dx > 0 ? 1 : -1;
-          card.style.transition = "transform 0.25s ease, opacity 0.25s ease";
-          card.style.transform = `translateX(${dir * 300}px)`;
-          card.style.opacity = "0";
-          card.addEventListener("transitionend", () => {
-            if (dx > 0) { if (!UserData.has("favorites", id)) UserData.toggle("favorites", id); }
-            else { if (!UserData.has("dismissed", id)) UserData.toggle("dismissed", id); }
-            render();
-          }, { once: true });
-        } else {
-          card.style.transition = "transform 0.2s ease";
-          card.style.transform = "";
-        }
-        return;
-      }
-
-      // Double-tap detection
-      const now = Date.now();
-      if (now - lastTap < 350 && id) {
-        preventClick = true;
-        UserData.toggle("favorites", id);
-        card.classList.remove("fav-flash");
-        void card.offsetWidth;
-        card.classList.add("fav-flash");
-      }
-      lastTap = now;
-    });
-  }
 
   document.getElementById("btn-sync").addEventListener("click", () => {
     setView("user");
@@ -1150,6 +1077,9 @@ function renderEventMobile(ev) {
   const badges = priceBadge + catBadge;
   const thumbHtml = imgSrc ? `<img class="event-thumb" src="${esc(imgSrc)}" alt="" loading="lazy" />` : "";
 
+  const isSeen = UserData.has("seen", ev.id);
+  const isDismissed = UserData.has("dismissed", ev.id);
+
   const cardContent = `
       <div class="swipe-hint swipe-hint-right">♥ Favorito</div>
       <div class="swipe-hint swipe-hint-left">✕ Ocultar</div>
@@ -1162,6 +1092,11 @@ function renderEventMobile(ev) {
         <div class="event-title">${isFav ? '❤️ ' : ''}${title}</div>
         ${desc}
         ${locationHtml}
+      </div>
+      <div class="event-mobile-actions">
+        <button class="ev-action-mobile${isFav ? ' active' : ''}" data-id="${esc(ev.id)}" data-action="fav"><svg width="18" height="18" viewBox="0 0 24 24" fill="${isFav ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> Favorito</button>
+        <button class="ev-action-mobile${isSeen ? ' active' : ''}" data-id="${esc(ev.id)}" data-action="seen"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Visto</button>
+        <button class="ev-action-mobile${isDismissed ? ' active' : ''}" data-id="${esc(ev.id)}" data-action="dismiss"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Ocultar</button>
       </div>`;
 
   return _wrapCard(ev, cardContent);
