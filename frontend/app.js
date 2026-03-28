@@ -1313,8 +1313,8 @@ function renderUserView() {
 
 
       <div class="user-actions-row">
-        ${user ? `<button class="btn-logout" onclick="FirebaseSync.logout(); setView('list')">🚪 Cerrar sesión</button>` : ""}
-        <button class="btn-logout btn-danger" onclick="resetUserData()">Resetear todo</button>
+        ${user ? `<button class="btn-logout" onclick="FirebaseSync.logout(); setView('list')">➜] Cerrar sesión</button>` : ""}
+        <button class="btn-logout btn-danger" onclick="resetUserData()">⟳ Resetear todo</button>
       </div>
 
       <footer class="user-footer">
