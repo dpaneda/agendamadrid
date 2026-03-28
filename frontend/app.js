@@ -774,7 +774,7 @@ function renderMap() {
     const evRows = [...uniqueEvs.values()].map(ev => {
       const time = ev.start_time ? ev.start_time.slice(0, 5) : "";
       const titleHtml = ev.url
-        ? `<a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.title)}</a>`
+        ? `<a href="${esc(ev.url)}" target="_blank" rel="noopener noreferrer">${esc(ev.title)}</a>`
         : esc(ev.title);
       return `<div class="popup-event">
         <div class="popup-title">${time ? `<span class="popup-time">${esc(time)}</span> ` : ""}${titleHtml}</div>
@@ -1036,7 +1036,7 @@ function renderEvent(ev) {
       </div>`;
 
   if (ev.url) {
-    return `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="event-card event-card-link" data-eid="${esc(ev.id)}">${cardContent}</a>`;
+    return `<a href="${esc(ev.url)}" target="_blank" rel="noopener noreferrer" class="event-card event-card-link" data-eid="${esc(ev.id)}">${cardContent}</a>`;
   }
   return `<div class="event-card" data-eid="${esc(ev.id)}">${cardContent}</div>`;
 }
@@ -1498,7 +1498,7 @@ function _swipeCardInner(ev, pos, total) {
       </div>
       ${ev.description ? `<p class="swipe-info-desc">${esc(ev.description)}</p>` : ""}
     </div>
-    ${ev.url ? `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="swipe-info-link" onclick="event.stopPropagation()">Ver más info</a>` : ""}
+    ${ev.url ? `<a href="${esc(ev.url)}" target="_blank" rel="noopener noreferrer" class="swipe-info-link" onclick="event.stopPropagation()">Ver más info</a>` : ""}
     <div class="swipe-overlay swipe-overlay-right"><span>❤️</span><span>Favorito</span></div>
     <div class="swipe-overlay swipe-overlay-left"><span>✕</span><span>Ocultar</span></div>
     <div class="swipe-overlay swipe-overlay-up"><span>→</span><span>Saltar</span></div>`;
