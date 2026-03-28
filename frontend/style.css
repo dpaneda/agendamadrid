@@ -160,7 +160,7 @@ header[hidden] {
 .header-inner {
   max-width: 70rem;
   margin: 0 auto;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -243,6 +243,68 @@ header[hidden] {
   display: flex;
   gap: 0.25rem;
   flex-shrink: 0;
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.search-bar input {
+  flex: 1;
+  background: var(--surface-container);
+  border: 2px solid var(--primary);
+  color: var(--fg);
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.search-bar button {
+  background: none;
+  border: none;
+  color: var(--muted-light);
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: var(--radius);
+}
+
+.search-bar button:hover {
+  color: var(--fg);
+}
+
+.btn-search {
+  background: none;
+  border: none;
+  color: var(--muted-light);
+  cursor: pointer;
+  padding: 0.3rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.btn-search:hover {
+  color: var(--fg);
+}
+
+.search-date-header {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+  padding: 0.8rem 0 0.3rem;
+  border-bottom: 1px solid var(--surface-container);
+  margin-bottom: 0.3rem;
+}
+
+.search-result-count {
+  font-size: 0.82rem;
+  color: var(--muted-light);
+  margin: 0 0 0.3rem;
 }
 
 .view-toggle {

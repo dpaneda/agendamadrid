@@ -352,6 +352,7 @@ let activeLocation = "";
 let activeSource = "";
 let activeSort = Settings.get("sort", "hora");
 let activeUserFilter = sessionStorage.getItem("activeUserFilter") || "";
+let activeSearch = "";
 let currentView = sessionStorage.getItem("currentView") || "list";
 let map = null, markersLayer = null, mapAutofit = false, tileLayer = null;
 let picker = null;
@@ -466,6 +467,70 @@ async function init() {
     selectedDate = new Date();
     syncPicker();
     render();
+  });
+
+  // Search
+  const searchBar = document.getElementById("search-bar");
+  const searchInput = document.getElementById("search-input");
+  const dateNav = document.querySelector(".date-nav");
+  let searchDebounce = null;
+
+  function openSearch() {
+    dateNav.style.display = "none";
+    searchBar.style.display = "";
+    searchInput.focus();
+  }
+
+  function closeSearch() {
+    searchBar.style.display = "none";
+    dateNav.style.display = "";
+    searchInput.value = "";
+    activeSearch = "";
+    render();
+  }
+
+  function doSearch() {
+    activeSearch = searchInput.value.trim().toLowerCase();
+    if (!activeSearch) { render(); return; }
+    if (currentView === "map") { renderMap(); return; }
+    if (currentView === "cal") { renderCalendar(); return; }
+    renderSearchList();
+  }
+
+  function renderSearchList() {
+    const container = document.getElementById("events-container");
+    const results = [];
+    const dates = Object.keys(calendarData).sort();
+    for (const ds of dates) {
+      const dayResults = [];
+      for (const entry of calendarData[ds]) {
+        const ev = allEvents[entry.event_id];
+        if (!ev || !matchesSearch(ev)) continue;
+        dayResults.push({ ...ev, ...entry, start_date: ds });
+      }
+      if (dayResults.length) results.push({ date: ds, events: dayResults });
+    }
+    const total = results.reduce((s, g) => s + g.events.length, 0);
+    if (!total) {
+      container.innerHTML = `<p class='empty-state'>No se encontraron eventos para "${esc(searchInput.value)}"</p>`;
+      return;
+    }
+    let html = `<p class="search-result-count">${total} resultado${total !== 1 ? "s" : ""}</p>`;
+    for (const group of results) {
+      const d = new Date(group.date + "T12:00:00");
+      const label = `${DAYS_LONG[d.getDay()]} ${d.getDate()} de ${MONTHS_ES[d.getMonth()]}`;
+      html += `<div class="search-date-header">${label.charAt(0).toUpperCase() + label.slice(1)}</div>`;
+      html += group.events.map(ev => renderEvent(ev)).join("");
+    }
+    container.innerHTML = html;
+  }
+
+  document.getElementById("btn-search").addEventListener("click", openSearch);
+  document.getElementById("search-close").addEventListener("click", closeSearch);
+  searchInput.addEventListener("keydown", (e) => { if (e.key === "Escape") closeSearch(); });
+  searchInput.addEventListener("input", () => {
+    clearTimeout(searchDebounce);
+    searchDebounce = setTimeout(doSearch, 200);
   });
 
   document.getElementById("user-filter").addEventListener("change", (e) => {
@@ -880,6 +945,12 @@ function _applyHidePast(events, ds) {
   return events.filter(ev => !ev.start_time || (ev.end_time || ev.start_time) >= nowTime);
 }
 
+function matchesSearch(ev) {
+  if (!activeSearch) return true;
+  const haystack = `${ev.title} ${ev.description || ""} ${ev.location_name || ""}`.toLowerCase();
+  return haystack.includes(activeSearch);
+}
+
 function _getDayEvents(ds) {
   const dayEntries = calendarData[ds] || [];
   let events = dayEntries.map(entry => {
@@ -911,6 +982,10 @@ function getFilteredDayEvents() {
 
   if (activeSource) {
     filtered = filtered.filter(ev => (ev.source || "").split(",").includes(activeSource));
+  }
+
+  if (activeSearch) {
+    filtered = filtered.filter(matchesSearch);
   }
 
   if (activeSort === "precio") {
@@ -958,6 +1033,7 @@ function updateURL() {
 function render() {
   updateURL();
   if (currentView === "list") {
+    if (activeSearch) { renderSearchList(); return; }
     renderEvents();
   } else if (currentView === "map") {
     renderMap();
@@ -1087,6 +1163,9 @@ function getEventsForDate(ds) {
   }
   if (activeSource) {
     events = events.filter(ev => (ev.source || "").split(",").includes(activeSource));
+  }
+  if (activeSearch) {
+    events = events.filter(matchesSearch);
   }
   return events;
 }
