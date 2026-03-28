@@ -1039,6 +1039,8 @@ footer p + p {
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border-top: none;
+    border-radius: 0;
+    box-shadow: 0 -1px 3px rgba(0,0,0,0.08);
     padding-bottom: env(safe-area-inset-bottom, 0px);
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
