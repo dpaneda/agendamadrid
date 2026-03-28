@@ -120,8 +120,6 @@ def parse_madrid_event(item: dict, source: str) -> dict | None:
     description = (item.get("description") or "").strip() or None
     if description:
         description = re.sub(r"<[^>]+>", "", description).strip()
-        if len(description) > 300:
-            description = description[:297] + "..."
 
     categories = []
     type_uri = item.get("@type", "") or ""

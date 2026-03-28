@@ -1102,7 +1102,7 @@ function _wrapCard(ev, cardContent) {
 function renderEventDesktop(ev) {
   const { timeStr, title, imgSrc, isFav, locationHtml } = _eventCommon(ev);
   const desc = ev.description
-    ? `<p class="event-desc">${esc(ev.description.length > 200 ? ev.description.slice(0, 200) + "..." : ev.description)}</p>`
+    ? `<p class="event-desc">${esc(ev.description)}</p>`
     : "";
   const { priceBadge, catBadge } = eventBadges(ev, "tag");
   const mainSource = (ev.source || "").split(",").filter(Boolean)[0] || "";
@@ -1144,7 +1144,7 @@ function renderEventDesktop(ev) {
 function renderEventMobile(ev) {
   const { timeStr, title, imgSrc, isFav, locationHtml } = _eventCommon(ev);
   const desc = ev.description
-    ? `<p class="event-desc">${esc(ev.description.length > 200 ? ev.description.slice(0, 200) + "..." : ev.description)}</p>`
+    ? `<p class="event-desc">${esc(ev.description)}</p>`
     : "";
   const { priceBadge, catBadge } = eventBadges(ev, "tag");
   const badges = priceBadge + catBadge;
