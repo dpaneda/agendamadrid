@@ -1299,25 +1299,11 @@ function renderUserView() {
         </div>
         <div class="setting-grid">
           <div class="setting-grid-item">
-            <span class="setting-grid-label">Ordenar por</span>
-            ${customDropdown("sort", [
-              { value: "hora", label: "Hora" },
-              { value: "precio", label: "Precio" },
-              { value: "distancia", label: "Distancia" },
-            ], activeSort || "hora", "applySort")}
-          </div>
-          <div class="setting-grid-item">
             <span class="setting-grid-label">Tema visual</span>
             ${customDropdown("theme",
               Object.entries(THEMES).map(([key, t]) => ({ value: key, label: `${t.emoji} ${t.label}` })),
               currentTheme, "applyTheme")}
           </div>
-          ${sourcesHtml ? `<div class="setting-grid-item">
-            <span class="setting-grid-label">Fuente</span>
-            ${customDropdown("source",
-              [{ value: "", label: "Todas" }, ...sources.map(s => ({ value: s, label: SOURCE_LABELS[s] || s }))],
-              activeSource || "", "applySource")}
-          </div>` : ""}
           <div class="setting-grid-item">
             <span class="setting-grid-label">Estilo del mapa</span>
             ${tilesHtml}
@@ -1326,8 +1312,10 @@ function renderUserView() {
       </section>
 
 
+      ${user ? `<div class="user-actions-row">
+        <button class="btn-logout" onclick="FirebaseSync.logout(); setView('list')">🚪 Cerrar sesión</button>
+      </div>` : ""}
       <div class="user-actions-row">
-        ${user ? `<button class="btn-logout" onclick="FirebaseSync.logout(); setView('list')">Cerrar sesión</button>` : ""}
         <button class="btn-logout btn-danger" onclick="resetUserData()">Resetear todo</button>
       </div>
     </div>
