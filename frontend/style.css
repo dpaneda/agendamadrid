@@ -442,6 +442,7 @@ main {
   background: var(--surface-container-low);
 }
 
+
 .event-header {
   display: flex;
   align-items: center;
@@ -1140,15 +1141,33 @@ footer p + p {
   }
 
   .event-card {
-    padding: 0.7rem 0.9rem;
+    background: var(--white);
+    border-radius: var(--radius);
+    border-bottom: none;
+    padding: 0;
+    margin-bottom: 0.6rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+
+  .event-card:hover {
+    background: var(--white);
   }
 
   .event-thumb {
-    display: none;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
   }
 
-  .event-with-thumb {
-    display: block;
+  .event-mobile-body {
+    padding: 0.5rem 0.9rem 0.7rem;
+  }
+
+  .event-mobile-body .event-location {
+    flex: 1;
+    min-width: 0;
+    padding: 0;
   }
 
   .event-time {
@@ -1157,15 +1176,21 @@ footer p + p {
 
   .event-title {
     font-size: 0.95rem;
+    margin-top: 0.15rem;
   }
 
-  .event-footer {
-    flex-direction: column;
-    gap: 0.4rem;
+  .event-desc {
+    margin-top: 0.3rem;
+    font-size: 0.82rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .event-tags {
     margin-left: 0;
+    margin-top: 0.3rem;
   }
 
   .active-filters {
@@ -1191,7 +1216,6 @@ footer p + p {
 
   .event-card {
     position: relative;
-    overflow: hidden;
     touch-action: pan-y;
   }
 

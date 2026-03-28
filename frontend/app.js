@@ -1066,13 +1066,36 @@ function renderEvents() {
 }
 
 function renderEvent(ev) {
+  return window.matchMedia("(max-width: 640px)").matches ? renderEventMobile(ev) : renderEventDesktop(ev);
+}
+
+function _eventCommon(ev) {
   const time = fmtTime(ev.start_time);
   const endTime = fmtTime(ev.end_time);
   const timeStr = time ? (endTime && endTime > time ? `${time} - ${endTime}` : time) : "";
   const location = ev.location_name || ev.location || "";
-
   const title = esc(ev.title);
+  const imgSrc = Array.isArray(ev.image) ? ev.image[0] : ev.image;
+  const isFav = UserData.has("favorites", ev.id);
+  let locationHtml = "";
+  if (location) {
+    const isLocActive = activeLocation === location;
+    const locClass = ` location-clickable${isLocActive ? ' location-active' : ''}`;
+    const locClick = ` onclick="event.preventDefault(); event.stopPropagation(); toggleLocation('${esc(location)}')"`;
+    locationHtml = `<div class="event-location${locClass}"${locClick}><span class="location-pin">📍</span> ${esc(location)}</div>`;
+  }
+  return { timeStr, location, title, imgSrc, isFav, locationHtml };
+}
 
+function _wrapCard(ev, cardContent) {
+  if (ev.url) {
+    return `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="event-card event-card-link" data-eid="${esc(ev.id)}">${cardContent}</a>`;
+  }
+  return `<div class="event-card" data-eid="${esc(ev.id)}">${cardContent}</div>`;
+}
+
+function renderEventDesktop(ev) {
+  const { timeStr, title, imgSrc, isFav, locationHtml } = _eventCommon(ev);
   const desc = ev.description
     ? `<p class="event-desc">${esc(ev.description.length > 200 ? ev.description.slice(0, 200) + "..." : ev.description)}</p>`
     : "";
@@ -1088,35 +1111,16 @@ function renderEvent(ev) {
   })() : "";
   const badges = priceBadge + distBadge + catBadge + sourceTag;
 
-  let locationHtml = "";
-  if (location) {
-    const isLocActive = activeLocation === location;
-    const locClass = ` location-clickable${isLocActive ? ' location-active' : ''}`;
-    const locClick = ` onclick="event.preventDefault(); event.stopPropagation(); toggleLocation('${esc(location)}')"`;
-    locationHtml = `<div class="event-location${locClass}"${locClick}><span class="location-pin">📍</span> ${esc(location)}</div>`;
-  }
-
-  const isFav = UserData.has("favorites", ev.id);
   const isSeen = UserData.has("seen", ev.id);
   const isDismissed = UserData.has("dismissed", ev.id);
-
   const actionsHtml = `<span class="event-actions">
     <button class="ev-action ev-fav${isFav ? ' active' : ''}" data-id="${esc(ev.id)}" data-action="fav" title="Favorito"><svg width="18" height="18" viewBox="0 0 24 24" fill="${isFav ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
     <button class="ev-action ev-seen${isSeen ? ' active' : ''}" data-id="${esc(ev.id)}" data-action="seen" title="Visto"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></button>
     <button class="ev-action ev-dismiss${isDismissed ? ' active' : ''}" data-id="${esc(ev.id)}" data-action="dismiss" title="Ocultar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
   </span>`;
-
-  const imgSrc = Array.isArray(ev.image) ? ev.image[0] : ev.image;
   const thumbHtml = imgSrc ? `<img class="event-thumb" src="${esc(imgSrc)}" alt="" loading="lazy" />` : "";
 
-  const hintsHtml = `
-      <div class="swipe-hint swipe-hint-right">♥ Favorito</div>
-      <div class="swipe-hint swipe-hint-left">✕ Ocultar</div>`;
-  const headerHtml = `
-      <div class="event-header">
-        ${timeStr ? `<span class="event-time">${esc(timeStr)}</span>` : ""}
-        ${actionsHtml}
-      </div>`;
+  const headerHtml = `<div class="event-header">${timeStr ? `<span class="event-time">${esc(timeStr)}</span>` : ""}${actionsHtml}</div>`;
   const bodyHtml = `
       <div class="event-title">${isFav ? '❤️ ' : ''}${title}</div>
       ${desc}
@@ -1126,13 +1130,36 @@ function renderEvent(ev) {
       </div>`;
 
   const cardContent = imgSrc
-    ? `${hintsHtml}<div class="event-with-thumb">${thumbHtml}<div class="event-main">${headerHtml}${bodyHtml}</div></div>`
-    : `${hintsHtml}${headerHtml}${bodyHtml}`;
+    ? `<div class="event-with-thumb">${thumbHtml}<div class="event-main">${headerHtml}${bodyHtml}</div></div>`
+    : `${headerHtml}${bodyHtml}`;
 
-  if (ev.url) {
-    return `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="event-card event-card-link" data-eid="${esc(ev.id)}">${cardContent}</a>`;
-  }
-  return `<div class="event-card" data-eid="${esc(ev.id)}">${cardContent}</div>`;
+  return _wrapCard(ev, cardContent);
+}
+
+function renderEventMobile(ev) {
+  const { timeStr, title, imgSrc, isFav, locationHtml } = _eventCommon(ev);
+  const desc = ev.description
+    ? `<p class="event-desc">${esc(ev.description.length > 200 ? ev.description.slice(0, 200) + "..." : ev.description)}</p>`
+    : "";
+  const { priceBadge, distBadge, catBadge } = eventBadges(ev, "tag");
+  const badges = priceBadge + distBadge + catBadge;
+  const thumbHtml = imgSrc ? `<img class="event-thumb" src="${esc(imgSrc)}" alt="" loading="lazy" />` : "";
+
+  const cardContent = `
+      <div class="swipe-hint swipe-hint-right">♥ Favorito</div>
+      <div class="swipe-hint swipe-hint-left">✕ Ocultar</div>
+      ${thumbHtml}
+      <div class="event-mobile-body">
+        <div class="event-header">
+          ${timeStr ? `<span class="event-time">${esc(timeStr)}</span>` : ""}
+          ${locationHtml}
+        </div>
+        <div class="event-title">${isFav ? '❤️ ' : ''}${title}</div>
+        ${desc}
+        ${badges ? `<div class="event-tags">${badges}</div>` : ""}
+      </div>`;
+
+  return _wrapCard(ev, cardContent);
 }
 
 function toggleLocation(loc) {
