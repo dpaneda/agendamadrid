@@ -703,7 +703,7 @@ function initMap() {
   const initCenter = (savedLat && savedLng && savedZ) ? [savedLat, savedLng] : [40.4168, -3.7038];
   const initZoom = savedZ || 13;
   mapAutofit = !(savedLat && savedLng && savedZ);
-  map = L.map("map", { zoomControl: false, scrollWheelZoom: false, smoothWheelZoom: true, smoothSensitivity: 1 }).setView(initCenter, initZoom);
+  map = L.map("map", { zoomControl: false, zoomSnap: 0, scrollWheelZoom: false, smoothWheelZoom: true, smoothSensitivity: 1 }).setView(initCenter, initZoom);
   L.control.zoom({ position: "bottomright" }).addTo(map);
   const LocateCtrl = L.Control.extend({
     options: { position: "bottomright" },
