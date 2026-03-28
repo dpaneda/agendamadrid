@@ -191,6 +191,9 @@ def run(only=None, force=False):
                                            "id", "created_at", "updated_at",
                                            "open_days")}
                 event_data["id"] = eid
+                # Upgrade http to https
+                if event_data.get("url", "").startswith("http://"):
+                    event_data["url"] = "https://" + event_data["url"][7:]
                 event_data.setdefault("created_at", now)
                 event_data["updated_at"] = now
 
