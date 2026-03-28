@@ -657,7 +657,7 @@ main {
   border: none;
 }
 
-body:not([data-view="list"]) footer { display: none; }
+body:not([data-view="list"]):not([data-view="user"]) footer { display: none; }
 
 body[data-view="map"] #map-container {
   border-radius: 0;
