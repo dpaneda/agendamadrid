@@ -1312,10 +1312,8 @@ function renderUserView() {
       </section>
 
 
-      ${user ? `<div class="user-actions-row">
-        <button class="btn-logout" onclick="FirebaseSync.logout(); setView('list')">🚪 Cerrar sesión</button>
-      </div>` : ""}
       <div class="user-actions-row">
+        ${user ? `<button class="btn-logout" onclick="FirebaseSync.logout(); setView('list')">🚪 Cerrar sesión</button>` : ""}
         <button class="btn-logout btn-danger" onclick="resetUserData()">Resetear todo</button>
       </div>
 
