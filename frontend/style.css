@@ -1142,8 +1142,8 @@ footer p + p {
   }
 
   main {
-    padding: 0.4rem 0.8rem 0.8rem;
-    padding-bottom: calc(0.8rem + 58px + env(safe-area-inset-bottom, 0px));
+    padding: 0.4rem 0 0;
+    padding-bottom: calc(0.4rem + 58px + env(safe-area-inset-bottom, 0px));
   }
 
   body[data-view="user"] main {
