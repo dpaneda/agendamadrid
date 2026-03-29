@@ -4,8 +4,11 @@ All datasets share the same JSON-LD structure, so we use a common parser.
 """
 
 import re
+import time
+from concurrent.futures import ThreadPoolExecutor
 
 import requests
+from bs4 import BeautifulSoup
 
 from crawlers.base import BaseCrawler
 from crawlers.categories import normalize
@@ -178,11 +181,31 @@ def parse_madrid_event(item: dict, source: str) -> dict | None:
     }
 
 
+def _fetch_image(url):
+    """Fetch event page and extract image from div.image-content."""
+    try:
+        headers = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"}
+        resp = requests.get(url, timeout=10, headers=headers)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "lxml")
+        ic = soup.find("div", class_=lambda c: c and "image-content" in c)
+        if ic:
+            img = ic.find("img")
+            if img and img.get("src"):
+                src = img["src"]
+                if not src.startswith("http"):
+                    src = "https://www.madrid.es" + src
+                return src
+    except Exception:
+        pass
+    return None
+
+
 class _MadridDatosBase(BaseCrawler):
     """Base for datos.madrid.es JSON-LD feeds."""
     json_url: str = ""
 
-    def crawl(self) -> list[dict]:
+    def crawl(self, fetch_images=False) -> list[dict]:
         resp = requests.get(self.json_url, timeout=30)
         resp.raise_for_status()
         data = resp.json()
@@ -191,6 +214,25 @@ class _MadridDatosBase(BaseCrawler):
             ev = parse_madrid_event(item, self.name)
             if ev:
                 events.append(ev)
+
+        if fetch_images:
+            print(f"  Fetching images for {len(events)} events...")
+            to_fetch = [(i, ev["url"]) for i, ev in enumerate(events)
+                        if ev.get("url") and not ev.get("image")]
+
+            def fetch_one(args):
+                i, url = args
+                img = _fetch_image(url)
+                return i, img
+
+            done = 0
+            with ThreadPoolExecutor(max_workers=5) as pool:
+                for i, img in pool.map(fetch_one, to_fetch):
+                    if img:
+                        events[i]["image"] = img
+                        done += 1
+            print(f"  Got {done} images")
+
         return events
 
 
@@ -200,4 +242,11 @@ class MadridDatosAgendaGeneralCrawler(_MadridDatosBase):
 
 
 if __name__ == "__main__":
-    MadridDatosAgendaGeneralCrawler().run()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--images", action="store_true", help="Fetch images from madrid.es pages")
+    args = parser.parse_args()
+    c = MadridDatosAgendaGeneralCrawler()
+    if args.images:
+        c.crawl = lambda: c.__class__.crawl(c, fetch_images=True)
+    c.run()
