@@ -122,6 +122,8 @@ def run():
             start_date = ev.get("start_date", "")
             if not title or not start_date:
                 continue
+            if ev.get("is_multi_event"):
+                continue
 
             eid = make_event_id(title)
 
