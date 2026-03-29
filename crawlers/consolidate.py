@@ -132,12 +132,14 @@ def run():
             calendar[start_date] = [e for e in calendar[start_date] if e["event_id"] != eid]
             calendar[start_date].extend(cal_entries_for_date(ev, eid, start_date))
 
-            # Also add entries for date range
+            # Also add entries for date range (capped at 30 days from today)
             end_date = ev.get("end_date")
             if end_date and end_date > start_date:
                 from datetime import timedelta
-                d = datetime.strptime(start_date, "%Y-%m-%d")
-                end_d = datetime.strptime(end_date, "%Y-%m-%d")
+                today_dt = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+                max_dt = today_dt + timedelta(days=30)
+                d = max(datetime.strptime(start_date, "%Y-%m-%d"), today_dt)
+                end_d = min(datetime.strptime(end_date, "%Y-%m-%d"), max_dt)
                 d += timedelta(days=1)
                 while d <= end_d:
                     ds = d.strftime("%Y-%m-%d")
@@ -165,9 +167,10 @@ def run():
             else:
                 events[eid] = event_data
 
-    # Remove past dates and sort
+    # Keep only today + 30 days
     today = datetime.now(UTC).strftime("%Y-%m-%d")
-    calendar = dict(sorted((k, v) for k, v in calendar.items() if k >= today))
+    max_date = (datetime.now(UTC) + timedelta(days=30)).strftime("%Y-%m-%d")
+    calendar = dict(sorted((k, v) for k, v in calendar.items() if today <= k <= max_date))
 
     # Extract locations
     locations = {}
