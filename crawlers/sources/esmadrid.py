@@ -492,4 +492,11 @@ class EsMadridCrawler(BaseCrawler):
 
 
 if __name__ == "__main__":
-    EsMadridCrawler().run()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--enrich", action="store_true", help="Enrich with LLM (needs GEMINI_API_KEY)")
+    args = parser.parse_args()
+    c = EsMadridCrawler()
+    if args.enrich:
+        c.crawl = lambda: c.crawl_incremental(set(), enrich=True)
+    c.run()
