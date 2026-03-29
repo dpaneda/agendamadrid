@@ -600,6 +600,10 @@ main {
   background: var(--surface-container-high);
   color: var(--muted-light);
 }
+a.tag-source {
+  text-decoration: none;
+  color: inherit;
+}
 
 .tag-clickable {
   cursor: pointer;
