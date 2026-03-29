@@ -81,7 +81,7 @@ def run(source_name, limit=0, skip_enriched=True):
                 errors += 1
                 print(f"    ✗ No LLM data returned")
 
-            time.sleep(4)  # respect rate limits (~15 RPM)
+            time.sleep(5)  # respect rate limits (~20 RPM for gemini-3-flash)
 
         except Exception as e:
             errors += 1

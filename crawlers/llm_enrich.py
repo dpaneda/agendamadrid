@@ -113,7 +113,7 @@ def _parse_time_range(time_str):
     return times
 
 
-def enrich(html, retries=2):
+def enrich(html, retries=3):
     """Send page HTML to LLM and return enriched fields dict, or None on failure."""
     client = _get_client()
     if not client:
@@ -161,7 +161,12 @@ def enrich(html, retries=2):
             return None
         except Exception as e:
             if "429" in str(e) and attempt < retries:
-                time.sleep(10)
+                wait = 30
+                m = re.search(r'retryDelay.*?(\d+)', str(e))
+                if m:
+                    wait = int(m.group(1)) + 5
+                print(f"    Rate limited, waiting {wait}s...")
+                time.sleep(wait)
                 continue
             print(f"    LLM error: {e}")
             return None
