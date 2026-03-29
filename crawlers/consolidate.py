@@ -100,7 +100,10 @@ def cal_entries_for_date(ev, eid, ds):
 
 
 def run():
-    source_files = sorted(glob(os.path.join(SOURCES_DIR, "*.json")))
+    # Load lower-quality sources first, so higher-quality ones win in merge
+    SOURCE_PRIORITY = {"madrid_agenda": 0, "esmadrid": 1}
+    source_files = sorted(glob(os.path.join(SOURCES_DIR, "*.json")),
+                          key=lambda p: SOURCE_PRIORITY.get(os.path.splitext(os.path.basename(p))[0], 0))
     if not source_files:
         print("No source files found in", SOURCES_DIR)
         return
