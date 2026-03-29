@@ -1,35 +1,40 @@
-"""Download event images locally and update events.json."""
+"""Download event images locally and update source JSONs.
+
+Scans all source files in crawlers/data/sources/, downloads remote images,
+resizes them, and updates the image field to local paths.
+
+Usage:
+  python -m crawlers.download_images
+"""
 
 import hashlib
 import json
 import os
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from glob import glob
 from io import BytesIO
 
 import requests
 from PIL import Image
 
-DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "frontend", "data")
-EVENTS_PATH = os.path.join(DATA_DIR, "events.json")
+SOURCES_DIR = os.path.join(os.path.dirname(__file__), "data", "sources")
 IMG_DIR = os.path.join(os.path.dirname(__file__), "..", "frontend", "images", "events")
 MAX_WIDTH = 400
 QUALITY = 80
 TIMEOUT = 15
+HEADERS = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
 
 
 def img_filename(url):
-    """Generate a stable filename from the image URL."""
     return hashlib.sha256(url.encode()).hexdigest()[:12] + ".jpg"
 
 
 def download_and_resize(url, dest):
-    """Download image, resize to MAX_WIDTH, save as JPEG."""
     if os.path.exists(dest):
         return True
     try:
-        headers = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
-        resp = requests.get(url, timeout=TIMEOUT, headers=headers)
+        resp = requests.get(url, timeout=TIMEOUT, headers=HEADERS)
         resp.raise_for_status()
         img = Image.open(BytesIO(resp.content))
         img = img.convert("RGB")
@@ -46,53 +51,60 @@ def download_and_resize(url, dest):
 def run():
     os.makedirs(IMG_DIR, exist_ok=True)
 
-    with open(EVENTS_PATH) as f:
-        events = json.load(f)
+    source_files = glob(os.path.join(SOURCES_DIR, "*.json"))
+    if not source_files:
+        print("No source files found")
+        return
 
-    # Collect unique URLs (skip already-local paths)
-    url_to_file = {}
-    for ev in events.values():
-        url = ev.get("image")
-        if not url or not isinstance(url, str) or not url.startswith("http"):
+    for path in sorted(source_files):
+        source_name = os.path.splitext(os.path.basename(path))[0]
+        with open(path) as f:
+            events = json.load(f)
+
+        # Collect remote URLs
+        url_to_file = {}
+        for ev in events:
+            url = ev.get("image")
+            if url and isinstance(url, str) and url.startswith("http"):
+                if url not in url_to_file:
+                    url_to_file[url] = img_filename(url)
+
+        if not url_to_file:
             continue
-        if url not in url_to_file:
-            url_to_file[url] = img_filename(url)
 
-    print(f"Downloading {len(url_to_file)} images...")
+        print(f"{source_name}: downloading {len(url_to_file)} images...")
 
-    ok = 0
-    fail = 0
-    with ThreadPoolExecutor(max_workers=10) as pool:
-        futures = {}
-        for url, fname in url_to_file.items():
-            dest = os.path.join(IMG_DIR, fname)
-            futures[pool.submit(download_and_resize, url, dest)] = url
+        ok = 0
+        fail = 0
+        with ThreadPoolExecutor(max_workers=10) as pool:
+            futures = {}
+            for url, fname in url_to_file.items():
+                dest = os.path.join(IMG_DIR, fname)
+                futures[pool.submit(download_and_resize, url, dest)] = url
 
-        for future in as_completed(futures):
-            if future.result():
-                ok += 1
-            else:
-                fail += 1
-            if (ok + fail) % 50 == 0:
-                print(f"  {ok + fail}/{len(url_to_file)}...")
+            for future in as_completed(futures):
+                if future.result():
+                    ok += 1
+                else:
+                    fail += 1
 
-    print(f"Done: {ok} ok, {fail} failed")
+        print(f"  {ok} ok, {fail} failed")
 
-    # Update events.json with local paths
-    for ev in events.values():
-        url = ev.get("image")
-        if not url or url not in url_to_file:
-            continue
-        fname = url_to_file[url]
-        if os.path.exists(os.path.join(IMG_DIR, fname)):
-            ev["image"] = f"images/events/{fname}"
-        else:
-            del ev["image"]
+        # Update events with local paths
+        changed = 0
+        for ev in events:
+            url = ev.get("image")
+            if url and url in url_to_file:
+                fname = url_to_file[url]
+                if os.path.exists(os.path.join(IMG_DIR, fname)):
+                    ev["image"] = f"images/events/{fname}"
+                    changed += 1
+                else:
+                    del ev["image"]
 
-    with open(EVENTS_PATH, "w") as f:
-        json.dump(events, f, indent=2, ensure_ascii=False)
-
-    print(f"Updated events.json")
+        with open(path, "w") as f:
+            json.dump(events, f, indent=2, ensure_ascii=False, default=str)
+        print(f"  Updated {changed} image paths in {source_name}")
 
 
 if __name__ == "__main__":
