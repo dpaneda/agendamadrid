@@ -162,13 +162,21 @@ def enrich(html, retries=3):
         except Exception as e:
             if "429" in str(e) and attempt < retries:
                 wait = 30
-                m = re.search(r'retryDelay.*?(\d+)', str(e))
-                if m:
-                    wait = int(m.group(1)) + 5
-                print(f"    Rate limited, waiting {wait}s...")
+                try:
+                    err_data = json.loads(str(e).split(".", 1)[1].strip())
+                    for detail in err_data.get("error", {}).get("details", []):
+                        delay = detail.get("retryDelay", "")
+                        if delay:
+                            wait = int(re.search(r'(\d+)', delay).group(1)) + 2
+                            break
+                except Exception:
+                    m = re.search(r'retryDelay.*?(\d+)', str(e))
+                    if m:
+                        wait = int(m.group(1)) + 2
+                print(f"    ⏳ Rate limited, waiting {wait}s...")
                 time.sleep(wait)
                 continue
-            print(f"    LLM error: {e}")
+            print(f"    ✗ LLM error: {e}")
             return None
 
     return None
