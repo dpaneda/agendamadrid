@@ -1011,7 +1011,8 @@ function renderEvent(ev) {
 function _eventCommon(ev) {
   const time = fmtTime(ev.start_time);
   const endTime = fmtTime(ev.end_time);
-  const timeStr = time ? (endTime && endTime > time ? `${time} - ${endTime}` : time) : "";
+  const timeStr = time === "00:00" && endTime === "23:59" ? "Todo el día"
+    : time ? (endTime && endTime > time ? `${time} - ${endTime}` : time) : "";
   const location = ev.location_name || ev.location || "";
   const title = esc(ev.title);
   const imgSrc = Array.isArray(ev.image) ? ev.image[0] : ev.image;
@@ -1537,7 +1538,8 @@ function _swipeCardInner(ev, pos, total) {
 
   const timeStr = (() => {
     const s = fmtTime(ev.start_time), e = fmtTime(ev.end_time);
-    return s ? (e && e > s ? `${s} – ${e}` : s) : "";
+    return s === "00:00" && e === "23:59" ? "Todo el día"
+      : s ? (e && e > s ? `${s} – ${e}` : s) : "";
   })();
 
   const { priceBadge, distBadge, catBadge, isFree } = eventBadges(ev, "swipe-info-badge");
