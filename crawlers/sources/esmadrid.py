@@ -254,23 +254,32 @@ def _parse_event_page(url, _enrich=False):
         if len(description) > 500:
             description = description[:497] + "..."
 
-    # Image from JSON-LD or og:image
-    image = None
+    # Image from JSON-LD or og:image — collect all candidates
+    image_candidates = []
     img_data = ld.get("image")
-    if isinstance(img_data, list) and img_data:
-        image = img_data[0] if isinstance(img_data[0], str) else img_data[0].get("url")
+    if isinstance(img_data, list):
+        for item in img_data:
+            if isinstance(item, str):
+                image_candidates.append(item)
+            elif isinstance(item, dict) and item.get("url"):
+                url_val = item["url"]
+                if isinstance(url_val, list):
+                    image_candidates.extend(url_val)
+                elif isinstance(url_val, str):
+                    image_candidates.append(url_val)
     elif isinstance(img_data, dict):
         url_val = img_data.get("url")
-        if isinstance(url_val, list) and url_val:
-            image = url_val[0]
+        if isinstance(url_val, list):
+            image_candidates.extend(url_val)
         elif isinstance(url_val, str):
-            image = url_val
+            image_candidates.append(url_val)
     elif isinstance(img_data, str):
-        image = img_data
-    if not image:
+        image_candidates.append(img_data)
+    if not image_candidates:
         og_img = soup.find("meta", property="og:image")
         if og_img and og_img.get("content"):
-            image = og_img["content"]
+            image_candidates.append(og_img["content"])
+    image = image_candidates[0] if image_candidates else None
 
     # Dates from JSON-LD (used as fallback, actual date comes from search)
     start_date = None
@@ -400,6 +409,7 @@ def _parse_event_page(url, _enrich=False):
         "url": event_url or url,
         "price": price_text_raw,
         "image": image,
+        "_image_candidates": image_candidates if len(image_candidates) > 1 else None,
         "source_url": url,
         "source": "esmadrid",
         "categories": normalize(categories),
