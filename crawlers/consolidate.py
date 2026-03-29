@@ -122,7 +122,7 @@ def run():
             start_date = ev.get("start_date", "")
             if not title or not start_date:
                 continue
-            if ev.get("is_multi_event"):
+            if ev.get("is_multi_event") and not ev.get("schedule") and not ev.get("start_time"):
                 continue
 
             eid = make_event_id(title)
