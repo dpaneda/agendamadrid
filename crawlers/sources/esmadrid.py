@@ -260,7 +260,11 @@ def _parse_event_page(url, _enrich=False):
     if isinstance(img_data, list) and img_data:
         image = img_data[0] if isinstance(img_data[0], str) else img_data[0].get("url")
     elif isinstance(img_data, dict):
-        image = img_data.get("url")
+        url_val = img_data.get("url")
+        if isinstance(url_val, list) and url_val:
+            image = url_val[0]
+        elif isinstance(url_val, str):
+            image = url_val
     elif isinstance(img_data, str):
         image = img_data
     if not image:
