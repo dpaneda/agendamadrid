@@ -1,20 +1,21 @@
 [
   {
     "title": "Festival Teatralia 2026",
-    "description": "El festival presenta una selección de artes escénicas que integran teatro, títeres, circo, danza y performance. La programación incluye propuestas internacionales y nacionales dirigidas a públicos de todas las edades.",
+    "description": "El festival presenta espectáculos internacionales y españoles que combinan teatro, títeres, circo, videocreación y performance para todos los públicos. La programación incluye 30 obras que exploran diversos géneros escénicos a través de un enfoque multidisciplinar.",
     "url": "https://www.madrid.org/teatralia/2026/index.html",
     "price": "Consultar página oficial",
     "source_url": "https://www.esmadrid.com/agenda/teatralia",
     "source": "esmadrid",
     "categories": [
       "teatro",
-      "danza"
+      "circo"
     ],
     "start_date": "2026-03-28",
     "end_date": "2026-03-29",
     "location_name": "Varios espacios",
     "is_multi_event": true,
-    "image": "images/events/25e240a63038.jpg"
+    "image": "images/events/25e240a63038.jpg",
+    "_enriched": true
   },
   {
     "title": "La aventura valdrá la pena. 150 años de las misiones salesianas",
@@ -61,7 +62,7 @@
   },
   {
     "title": "Villanos del Jazz",
-    "description": "Ciclo musical que presenta actuaciones de jazz nacional e internacional con el objetivo de acercar este género a todos los públicos. La programación incluye figuras consagradas, nuevos talentos y diversas variantes del jazz, incluyendo el jazz fusión, flamenco y cubano.",
+    "description": "Ciclo musical que acoge actuaciones de jazz nacional e internacional con el objetivo de acercar este género a todos los públicos. La programación incluye figuras consagradas, nuevos talentos y diversas fusiones musicales a lo largo del año.",
     "url": "https://villanosdeljazz.es/",
     "price": "Consultar página oficial",
     "source_url": "https://www.esmadrid.com/agenda/villanos-jazz",
@@ -76,7 +77,20 @@
     "longitude": -3.699996,
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
-    "is_multi_event": true
+    "is_multi_event": true,
+    "schedule": {
+      "4": [
+        "21:00:00"
+      ],
+      "6": [
+        "20:30:00"
+      ],
+      "2": [
+        "19:30:00"
+      ]
+    },
+    "start_time": "19:30:00",
+    "_enriched": true
   },
   {
     "title": "La conspiración judeo-masónica. La construcción de un mito",
@@ -171,7 +185,7 @@
   },
   {
     "title": "Real Teatro de Retiro",
-    "description": "Un proyecto que reúne conciertos didácticos, ópera, danza, teatro y música para toda la familia. La iniciativa busca acercar las artes escénicas a niños y jóvenes mediante una extensa programación anual.",
+    "description": "Proyecto que acerca la música, la ópera y las artes escénicas al público infantil y familiar mediante una amplia variedad de espectáculos. La programación incluye desde conciertos didácticos y títeres hasta teatro musical y danza en un espacio referente para jóvenes espectadores.",
     "url": "https://www.realteatroderetiro.es/",
     "price": "15 €",
     "source_url": "https://www.esmadrid.com/agenda/real-teatro-retiro-centro-cultural-daoiz-velarde",
@@ -187,7 +201,31 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "is_multi_event": true,
-    "image": "images/events/cb03c65045d1.jpg"
+    "image": "images/events/cb03c65045d1.jpg",
+    "schedule": {
+      "2": [
+        "10:00:00",
+        "19:30:00"
+      ],
+      "3": [
+        "10:00:00",
+        "19:30:00"
+      ],
+      "4": [
+        "10:00:00",
+        "19:30:00"
+      ],
+      "5": [
+        "10:00:00",
+        "19:30:00"
+      ],
+      "6": [
+        "10:00:00",
+        "14:00:00"
+      ]
+    },
+    "start_time": "10:00:00",
+    "_enriched": true
   },
   {
     "title": "Avatar: The Experience",
@@ -778,7 +816,7 @@
   },
   {
     "title": "Visitas guiadas a la casa - Fundación Ramón Menéndez Pidal",
-    "description": "Un recorrido guiado por el jardín y el interior de la casa donde residió y trabajó la familia Menéndez Pidal-Goyri. El espacio conserva los muebles, decoración original y una extensa colección documental de la época.",
+    "description": "Recorrido por el jardín y el interior de la casa donde residió la familia Menéndez Pidal-Goyri, conservando su decoración original y archivos históricos. La visita permite conocer un espacio clave en la transformación cultural española del siglo XX.",
     "url": "https://fundacionramonmenendezpidal.org/visitas/",
     "price": "10 €",
     "source_url": "https://www.esmadrid.com/agenda/visitas-guiadas-casa-fundacion-ramon-menendez-pidal",
@@ -791,7 +829,8 @@
     "end_date": "2026-04-10",
     "_broken": "HTTPSConnectionPool(host='www.esmadrid.com', port=443): Read timed out. (read timeout=15)",
     "location_name": "Fundación Ramón Menéndez Pidal",
-    "address": "Calle de Menéndez Pidal, 5"
+    "address": "Calle de Menéndez Pidal, 5",
+    "_enriched": true
   },
   {
     "title": "The Animals",
@@ -940,7 +979,7 @@
   },
   {
     "title": "21DISTRITOS 2026",
-    "description": "Programa de dinamización cultural que ofrece una amplia variedad de propuestas artísticas en toda la ciudad. Incluye música, teatro, circo, danza, artes visuales y actividades participativas para todos los públicos.",
+    "description": "Programa anual que ofrece una amplia variedad de propuestas artísticas y culturales que integran música, teatro, circo, danza y artes visuales. La iniciativa busca dinamizar los barrios madrileños fomentando la accesibilidad, la diversidad y la participación ciudadana.",
     "url": "https://21distritos.es/",
     "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/21distritos",
@@ -954,7 +993,8 @@
     "end_date": "2026-04-10",
     "location_name": "Varios espacios de Madrid",
     "address": "Varios espacios de Madrid",
-    "is_multi_event": true
+    "is_multi_event": true,
+    "_enriched": true
   },
   {
     "title": "Frida Kahlo: Experiencia Live Art y Muestra Gastronómica",
@@ -1410,7 +1450,7 @@
   },
   {
     "title": "El secuestro",
-    "description": "Esta divertida comedia reflexiona sobre la importancia de la familia y los conflictos cotidianos entre la gente de la calle y los políticos. La obra propone una visión optimista del ser humano a través de la historia de un hombre que se enfrenta a una situación límite.",
+    "description": "Una divertida comedia sobre la importancia de la familia y los problemas cotidianos entre la gente de la calle y los políticos. La obra propone una visión optimista del ser humano a través de la historia de un hombre que, agobiado por sus problemas económicos, decide convertirse en justiciero.",
     "url": "https://teatrolara.com/programacion/el-secuestro",
     "price": "Desde 14 €",
     "source_url": "https://www.esmadrid.com/agenda/secuestro-teatro-lara-sala-candido-lara",
@@ -1424,7 +1464,8 @@
     "latitude": 40.4220989,
     "longitude": -3.7044511,
     "start_date": "2026-03-28",
-    "end_date": "2026-03-28"
+    "end_date": "2026-03-28",
+    "_enriched": true
   },
   {
     "title": "Fui sobre agua edificada",
@@ -1606,7 +1647,7 @@
   },
   {
     "title": "Lola Lasurt. Deep Song",
-    "description": "La artista realiza un ejercicio de reconstrucción imaginativa que combina performance y pintura para explorar gestos históricos y su resistencia al olvido. La obra reflexiona sobre la relación entre el cuerpo, la danza y los hechos históricos mediante piezas pictóricas y audiovisuales.",
+    "description": "La artista realiza un ejercicio de reconstrucción imaginativa que combina performance y pintura para explorar la fisicidad del movimiento y la memoria histórica. La obra parte de la danza y la Guerra Civil española para reflexionar sobre la resistencia y la construcción de un imaginario común.",
     "url": "https://www.condeduquemadrid.es/actividades/lola-lasurt",
     "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/lola-lasurt-deep-song-conde-duque",
@@ -1620,7 +1661,35 @@
     "latitude": 40.427887,
     "longitude": -3.710802,
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "schedule": {
+      "1": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "14:00:00"
+      ]
+    },
+    "start_time": "10:00:00",
+    "_enriched": true
   },
   {
     "title": "Naturaleza de asfalto. Madrid hiperrealista. José Miguel Palacio",
@@ -2225,7 +2294,7 @@
   },
   {
     "title": "16ª Ruta del Cocido Madrileño",
-    "description": "Recorrido gastronómico por diversos establecimientos que rinde homenaje a la cocina tradicional madrileña. Los comensales pueden degustar el plato típico servido generalmente en tres vuelcos.",
+    "description": "Recorrido gastronómico por diversos restaurantes de Madrid donde se rinde homenaje a la cocina tradicional a través del típico cocido madrileño. La propuesta invita a degustar este plato castizo servido, generalmente, en los tradicionales tres vuelcos.",
     "url": "https://xn--rutadelcocidomadrileo-vbc.com/",
     "price": "Consultar en cada restaurante participante",
     "source_url": "https://www.esmadrid.com/agenda/ruta-cocido-madrile%C3%B1o",
@@ -2237,7 +2306,39 @@
     "start_date": "2026-03-28",
     "end_date": "2026-03-31",
     "location_name": "Varios locales de la Comunidad de Madrid",
-    "is_multi_event": true
+    "is_multi_event": true,
+    "schedule": {
+      "0": [
+        "13:00:00",
+        "16:00:00"
+      ],
+      "1": [
+        "13:00:00",
+        "16:00:00"
+      ],
+      "2": [
+        "13:00:00",
+        "16:00:00"
+      ],
+      "3": [
+        "13:00:00",
+        "16:00:00"
+      ],
+      "4": [
+        "13:00:00",
+        "16:00:00"
+      ],
+      "5": [
+        "13:00:00",
+        "16:00:00"
+      ],
+      "6": [
+        "13:00:00",
+        "16:00:00"
+      ]
+    },
+    "start_time": "13:00:00",
+    "_enriched": true
   },
   {
     "title": "Hotel del artefacto expoliado",
@@ -2612,7 +2713,7 @@
   },
   {
     "title": "Generación 2026",
-    "description": "Exposición que recoge los proyectos ganadores de la convocatoria de ayudas a la creación joven de la Fundación Montemadrid. La muestra presenta propuestas de diversos artistas emergentes seleccionadas por un jurado especializado.",
+    "description": "Exposición que reúne los proyectos ganadores de la convocatoria de la Fundación Montemadrid, centrada en promover a jóvenes artistas actuales. La muestra exhibe propuestas de creación contemporánea que abarcan diversas disciplinas artísticas.",
     "url": "https://www.lacasaencendida.es/exposiciones/generacion-2026",
     "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/generacion-2026-casa-encendida",
@@ -2626,7 +2727,19 @@
     "latitude": 40.4060622,
     "longitude": -3.6999668,
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "schedule": {
+      "5": [
+        "12:00:00",
+        "20:00:00"
+      ],
+      "6": [
+        "12:00:00",
+        "14:00:00"
+      ]
+    },
+    "start_time": "12:00:00",
+    "_enriched": true
   },
   {
     "title": "Este libro es mío... la heráldica como elemento distintivo en la producción del libro antiguo",
@@ -2854,7 +2967,7 @@
   },
   {
     "title": "Blue as Velvet",
-    "description": "Nueva exposición del artista visual Baptiste Laurent que presenta una serie de obras inéditas realizadas sobre terciopelo. La muestra explora paisajes imaginarios y naturalezas muertas que invitan a sumergirse en una atmósfera entre sueño y ficción.",
+    "description": "Nueva exposición del artista visual Baptiste Laurent que presenta una serie de obras inéditas realizadas sobre terciopelo. La muestra invita a sumergirse en paisajes imaginarios y naturalezas muertas que exploran la frontera entre sueño y ficción.",
     "url": "https://brachmadrid.com/es/",
     "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/blue-velvet-brach-madrid",
@@ -2868,7 +2981,8 @@
     "latitude": 40.4197037,
     "longitude": -3.6990886,
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "_enriched": true
   },
   {
     "title": "La crónica citadina de Juan Guzmán: en donde no cabe un alfiler, bien caben dos ruleteros",
@@ -3031,7 +3145,7 @@
   },
   {
     "title": "Tría Áurea",
-    "description": "Programa de visitas que permite recorrer tres destacados hitos del barroco madrileño. La experiencia incluye el acceso a la Iglesia de San Antonio de los Alemanes, el Monasterio de las Comendadoras de Santiago y la Iglesia de San Plácido.",
+    "description": "Programa de visitas que permite explorar tres hitos del barroco madrileño: la Iglesia de San Antonio de los Alemanes, el Monasterio de las Comendadoras de Santiago y la Iglesia de San Plácido. Los visitantes pueden descubrir espacios sacros históricos que custodian importantes colecciones artísticas y joyas arquitectónicas.",
     "url": "https://realhermandaddelrefugio.org/tria-aurea/",
     "price": "12 €",
     "source_url": "https://www.esmadrid.com/agenda/tria-aurea-madrid",
@@ -3047,7 +3161,15 @@
     "longitude": -3.7036394,
     "start_date": "2026-03-28",
     "end_date": "2026-03-31",
-    "is_multi_event": true
+    "is_multi_event": true,
+    "schedule": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": []
+    },
+    "_enriched": true
   },
   {
     "title": "Lo que la ciudad esconde: Imágenes de la corte medieval de Toledo",
@@ -3145,7 +3267,7 @@
   },
   {
     "title": "Noches y días",
-    "description": "El artista José María Sicilia interviene las estancias emblemáticas del Palacio de Liria con una selección de obras recientes y una instalación site-specific. La propuesta establece un diálogo entre la memoria del edificio y el arte contemporáneo, explorando la luz y la fragilidad de los signos.",
+    "description": "El artista José María Sicilia interviene las estancias emblemáticas del Palacio de Liria con obras creadas ex profeso e instalaciones site-specific. La muestra establece un diálogo entre la colección de la Casa de Alba, la arquitectura del edificio y el arte contemporáneo.",
     "url": "https://www.palaciodeliria.com/",
     "price": "Consultar página oficial",
     "source_url": "https://www.esmadrid.com/agenda/noches-dias-palacio-liria",
@@ -3159,7 +3281,8 @@
     "latitude": 40.427732729479,
     "longitude": -3.712424039841,
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "_enriched": true
   },
   {
     "title": "El rostro significa lo infinito",
@@ -3333,7 +3456,7 @@
   },
   {
     "title": "Mercedes-Benz Fashion Week Madrid (Edición marzo)",
-    "description": "El evento sirve como pasarela para presentar las colecciones de diseñadores consagrados y jóvenes promesas de la moda. Se trata de una plataforma de referencia internacional que busca visibilizar las nuevas tendencias y el talento de la industria textil.",
+    "description": "Este evento reúne a diseñadores consagrados y jóvenes talentos para presentar las últimas tendencias y colecciones de moda. Es un escaparate de referencia internacional que destaca la creatividad y la industria de la moda de autor.",
     "url": "https://www.ifema.es/mbfw-madrid",
     "price": "Consultar página oficial",
     "source_url": "https://www.esmadrid.com/agenda/mercedes-benz-fashion-week-madrid-marzo-ifema-madrid",
@@ -3348,11 +3471,12 @@
     "longitude": -3.616549993517,
     "start_date": "2027-03-16",
     "end_date": "2027-03-21",
-    "is_multi_event": true
+    "is_multi_event": true,
+    "_enriched": true
   },
   {
     "title": "Semana de la Moda de Madrid 2026",
-    "description": "La capital se convierte en el centro del diseño español con una programación que integra desfiles de moda de autor y eventos profesionales. El programa incluye pasarelas, presentaciones y encuentros culturales que conectan la industria con el entorno urbano.",
+    "description": "La capital se convierte en el epicentro del diseño español con una programación que combina desfiles, presentaciones y encuentros culturales. El evento integra la pasarela profesional con la industria y la vida ciudadana a través de diversas propuestas creativas.",
     "url": "https://madridesmoda.com/",
     "price": "--",
     "source_url": "https://www.esmadrid.com/agenda/semana-de-la-moda-madrid",
@@ -3364,7 +3488,9 @@
     "location_name": "Varios espacios",
     "start_date": "2026-03-12",
     "end_date": "2026-03-22",
-    "is_multi_event": true
+    "is_multi_event": true,
+    "address": "Plaza de España e IFEMA Madrid",
+    "_enriched": true
   },
   {
     "title": "Eclosión. El Círculo de Bellas Artes en los 80 y 90",
@@ -3465,7 +3591,7 @@
   },
   {
     "title": "Plaza Mayor de Madrid: miradas que habitan",
-    "description": "Exposición fotográfica que retrata la vida cotidiana y la memoria de la Plaza Mayor a través de las imágenes capturadas por sus propios vecinos. La muestra explora el espacio como una comunidad viva y como un símbolo histórico y monumental.",
+    "description": "Exposición que reúne fotografías tomadas por vecinos para mostrar las vidas y experiencias personales que dan sentido cotidiano a la Plaza Mayor. La muestra explora el espacio como una comunidad viva tejida por generaciones de residentes.",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=62f40edcccdac910VgnVCM100000891ecb1aRCRD",
     "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/plaza-mayor-madrid-miradas-habitan-imprenta-municipal-artes-libro",
@@ -3479,7 +3605,39 @@
     "latitude": 40.41362,
     "longitude": -3.705555,
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "schedule": {
+      "0": [
+        "18:30:00",
+        "20:00:00"
+      ],
+      "1": [
+        "18:30:00",
+        "20:00:00"
+      ],
+      "2": [
+        "18:30:00",
+        "20:00:00"
+      ],
+      "3": [
+        "18:30:00",
+        "20:00:00"
+      ],
+      "4": [
+        "18:30:00",
+        "20:00:00"
+      ],
+      "5": [
+        "18:30:00",
+        "20:00:00"
+      ],
+      "6": [
+        "18:30:00",
+        "20:00:00"
+      ]
+    },
+    "start_time": "18:30:00",
+    "_enriched": true
   },
   {
     "title": "La quema",
@@ -3844,7 +4002,7 @@
   },
   {
     "title": "Carreras en el Hipódromo de la Zarzuela. Temporada 2026",
-    "description": "El Hipódromo de la Zarzuela ofrece una completa temporada de carreras de caballos en un recinto histórico de arquitectura racionalista. La programación combina la competición deportiva con una amplia oferta de ocio y restauración.",
+    "description": "El evento ofrece una temporada completa de carreras de caballos en un recinto histórico, combinando la competición deportiva con una variada oferta de restauración. Se incluyen jornadas temáticas, actividades infantiles y experiencias premium para todo tipo de público.",
     "url": "https://www.hipodromodelazarzuela.es",
     "price": "Consultar página oficial",
     "source_url": "https://www.esmadrid.com/agenda/carreras-hipodromo-zarzuela-temporada",
@@ -3860,7 +4018,8 @@
     "longitude": -3.7562084198,
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
-    "is_multi_event": true
+    "is_multi_event": true,
+    "_enriched": true
   },
   {
     "title": "Viajar en el tiempo: 85 años de publicidad de Renfe",
@@ -4106,14 +4265,13 @@
   },
   {
     "title": "Des-caradas",
-    "description": "La exposición es un proyecto de C. S. Leyva que reivindica el papel extraordinario de las mujeres a lo largo de la historia a través de una reflexión artística. La muestra invita a dialogar con el pasado y cuestionar las narrativas oficiales mediante imágenes cargadas de fuerza simbólica.",
+    "description": "La exposición es un espacio de reflexión donde el arte y la historia dialogan desde una perspectiva contemporánea. El proyecto reivindica el papel extraordinario de mujeres históricas a través de imágenes que cuestionan las narrativas oficiales y exploran la identidad.",
     "url": "https://rjb.csic.es/evento/exposicion-des-caradas/",
     "price": "4 €",
     "source_url": "https://www.esmadrid.com/agenda/caradas-real-jardin-botanico",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "otros"
+      "exposiciones"
     ],
     "image": "images/events/ae9517401455.jpg",
     "location_name": "Real Jardín Botánico",
@@ -4121,7 +4279,39 @@
     "latitude": 40.4122193,
     "longitude": -3.6919986,
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "schedule": {
+      "0": [
+        "10:00:00",
+        "17:00:00"
+      ],
+      "1": [
+        "10:00:00",
+        "17:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "17:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "17:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "17:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "17:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "17:00:00"
+      ]
+    },
+    "start_time": "10:00:00",
+    "_enriched": true
   },
   {
     "title": "Día y Noche. Ritmos del Alma",
@@ -4675,7 +4865,7 @@
   },
   {
     "title": "X Muestra Orfebrería y Joyería Contemporánea",
-    "description": "Esta muestra reúne diseños y piezas artesanales de joyería y orfebrería contemporánea a través de exposiciones colectivas e individuales. El evento destaca el trabajo innovador de creadores nacionales e internacionales en diversos museos y espacios culturales de la ciudad.",
+    "description": "Esta muestra reúne diseños y piezas artesanales de joyería y orfebrería en diversos museos y espacios culturales de la ciudad. El evento destaca el trabajo innovador de orfebres nacionales e internacionales a través de una amplia variedad de técnicas y estilos.",
     "url": "https://madriddesignfestival.lafabrica.com/eventos/x-muestra-orfebreria-contemporanea-2026/",
     "price": "Consultar programación y sedes",
     "source_url": "https://www.esmadrid.com/agenda/muestra-orfebreria-joyeria-contemporaneas",
@@ -4690,11 +4880,35 @@
     "longitude": -3.6895545,
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
-    "is_multi_event": true
+    "is_multi_event": true,
+    "schedule": {
+      "0": [
+        "09:00:00",
+        "20:00:00"
+      ],
+      "1": [
+        "09:00:00",
+        "20:00:00"
+      ],
+      "2": [
+        "09:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "09:00:00",
+        "20:00:00"
+      ],
+      "4": [
+        "09:00:00",
+        "20:00:00"
+      ]
+    },
+    "start_time": "09:00:00",
+    "_enriched": true
   },
   {
     "title": "Arte textil en Guatemala: diseño e identidad",
-    "description": "La muestra reúne una selección de huipiles y piezas elaboradas mediante técnicas tradicionales como el telar de cintura o el brocado. Se presenta como un espacio inmersivo donde los textiles guatemaltecos se revelan como una sofisticada expresión del diseño contemporáneo.",
+    "description": "Exposición inmersiva que presenta una selección de huipiles y piezas elaboradas mediante técnicas tradicionales como el telar de cintura y el brocado. La muestra explora la convergencia entre la técnica ancestral, la creatividad comunitaria y la innovación del diseño contemporáneo.",
     "url": "https://madriddesignfestival.lafabrica.com/eventos/diseno-y-arte-textil/",
     "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/arte-textil-guatemala-diseno-e-identidad-fernan-gomez-centro-cultural-villa",
@@ -4708,11 +4922,12 @@
     "latitude": 40.424637345173,
     "longitude": -3.689861297607,
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "_enriched": true
   },
   {
     "title": "Manifiesto Mediterráneo",
-    "description": "Exposición que agrupa una selección de muebles de diseñadores europeos, explorando un cambio de paradigma en la forma de habitar. La muestra destaca el valor cultural del Mediterráneo a través de la artesanía, el folclore y lenguajes contemporáneos innovadores.",
+    "description": "Exposición que agrupa una selección de muebles de diversos diseñadores, explorando un cambio de paradigma en la forma de vivir. La muestra reivindica la identidad cultural y el patrimonio inmaterial a través de la artesanía y lenguajes contemporáneos.",
     "url": "https://madriddesignfestival.lafabrica.com/eventos/manifiesto-mediterraneo/",
     "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/manifiesto-mediterraneo-fernan-gomez-centro-cultural-villa",
@@ -4726,7 +4941,8 @@
     "latitude": 40.424637345173,
     "longitude": -3.689861297607,
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "_enriched": true
   },
   {
     "title": "Fachadas de comercios centenarios del distrito de Centro",
@@ -5999,7 +6215,7 @@
   },
   {
     "title": "5º Festival de Zarzuela y Ópera",
-    "description": "Quinta edición de este festival dedicado íntegramente a los géneros de la zarzuela y la ópera. El programa cuenta con orquesta y voces en directo para interpretar títulos populares del repertorio lírico y dramático.",
+    "description": "Quinta edición de este festival que presenta una programación especial centrada en los géneros de la zarzuela y la ópera con orquesta y voces en directo. El ciclo incluye títulos populares del repertorio operístico y lírico nacional.",
     "url": "https://www.teatroamaya.com/4o-festival-de-zarzuela-y-opera/",
     "price": "Consultar programación",
     "source_url": "https://www.esmadrid.com/agenda/festival-zarzuela-opera-teatro-amaya",
@@ -6015,7 +6231,8 @@
     "longitude": -3.6971056,
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
-    "is_multi_event": true
+    "is_multi_event": true,
+    "_enriched": true
   },
   {
     "title": "Fashion Art by Manuel Fernández",
@@ -6328,7 +6545,7 @@
   },
   {
     "title": "Temas de Madrid",
-    "description": "Exposición que presenta una colección de 41 acuarelas que representan la esencia, la luz y la arquitectura de la ciudad. La muestra es el punto de partida de una programación anual con la participación de diversos artistas locales y foráneos.",
+    "description": "Exposición compuesta por una colección de 41 acuarelas que reflejan la esencia, la arquitectura y la memoria de la ciudad. La muestra se desarrolla a través de cuatro plantas en un espacio dedicado a la promoción de artistas locales y foráneos.",
     "url": "https://aedamadrid.org/agenda/inauguracion-y-entrega-de-premios-de-la-6a-exposicion-participativa-de-los-socios-de-aeda-2026-jueves-19-de-marzo/",
     "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/temas-madrid-silo-hortaleza",
@@ -6342,7 +6559,8 @@
     "latitude": 40.4753178,
     "longitude": -3.6465498,
     "start_date": "2026-03-28",
-    "end_date": "2026-04-01"
+    "end_date": "2026-04-01",
+    "_enriched": true
   },
   {
     "title": "Teatro de Títeres de El Retiro",
@@ -6530,13 +6748,13 @@
   },
   {
     "title": "Retail Forum 2026",
-    "description": "Este foro internacional reúne a directivos y líderes del sector retail para compartir estrategias de negocio y visión estratégica. El encuentro aborda tendencias tecnológicas clave y pasos prácticos para lograr una gestión empresarial centrada en el cliente.",
+    "description": "Este foro internacional es un punto de encuentro para directivos y profesionales del sector retail interesados en la estrategia y la innovación. El evento explora tendencias tecnológicas y los retos actuales para crear empresas líderes centradas en el cliente.",
     "url": "https://www.retailforum.es/",
     "price": "Consultar página oficial",
     "source_url": "https://www.esmadrid.com/agenda/retail-forum-ifema-madrid",
     "source": "esmadrid",
     "categories": [
-      "otros"
+      "conferencias"
     ],
     "image": "images/events/1a1f511c609d.jpg",
     "location_name": "IFEMA MADRID",
@@ -6544,7 +6762,8 @@
     "latitude": 40.465157240748,
     "longitude": -3.616549993517,
     "start_date": "2027-03-01",
-    "end_date": "2027-03-31"
+    "end_date": "2027-03-31",
+    "_enriched": true
   },
   {
     "title": "Arte urbano. De los orígenes a Banksy",
@@ -7026,7 +7245,7 @@
   },
   {
     "title": "Los tacones de papá",
-    "description": "Una divertida comedia que explora el mundo del transformismo a través de la historia de una joven que descubre una nueva perspectiva sobre la vida tras el fallecimiento de su padre. La obra cuenta con un reparto coral y una puesta en escena que destaca por su ternura y humor.",
+    "description": "Una divertida comedia que explora el mundo del transformismo a través de los ojos de una joven tras el fallecimiento de su padre. La obra cuenta con un destacado reparto y está dirigida por Juan Luis Iborra y Jose Warletta.",
     "url": "https://teatrolara.com/programacion/tacones-de-papa",
     "price": "Desde 22 €",
     "source_url": "https://www.esmadrid.com/agenda/tacones-papa-teatro-lara-sala-candido-lara",
@@ -7040,7 +7259,8 @@
     "latitude": 40.4220989,
     "longitude": -3.7044511,
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "_enriched": true
   },
   {
     "title": "El Mago Yunke. Hangar 52",
@@ -7210,14 +7430,14 @@
   },
   {
     "title": "OVO - Cirque du Soleil",
-    "description": "Espectáculo de la compañía Cirque du Soleil que explora el vibrante ecosistema de los insectos a través del movimiento, la danza y acrobacias. La obra narra la historia de un insecto peculiar que encuentra el amor en un mundo lleno de energía y biodiversidad.",
+    "description": "El Cirque du Soleil presenta un deslumbrante espectáculo que explora el fascinante y bullicioso ecosistema del mundo de los insectos. La producción destaca por su cuidada puesta en escena inspirada en el movimiento y una banda sonora basada en la música brasileña.",
     "url": "https://www.cirquedusoleil.com/es/ovo",
     "price": "Desde 55 €",
     "source_url": "https://www.esmadrid.com/agenda/ovo-cirque-du-soleil-movistar-arena",
     "source": "esmadrid",
     "categories": [
-      "teatro",
-      "circo"
+      "circo",
+      "teatro"
     ],
     "image": "images/events/052b69723272.jpg",
     "location_name": "Movistar Arena (WiZink Center)",
@@ -7225,7 +7445,8 @@
     "latitude": 40.4241371,
     "longitude": -3.6749756,
     "start_date": "2026-03-19",
-    "end_date": "2026-03-23"
+    "end_date": "2026-03-23",
+    "_enriched": true
   },
   {
     "title": "Dinoverse: viaje a la era de los dinosaurios",
@@ -7734,13 +7955,14 @@
   },
   {
     "title": "Piensa en Wilbur",
-    "description": "El actor y cómico Wilbur presenta un espectáculo que combina acrobacias imposibles con humor y riesgo físico. El artista crea situaciones cómicas únicas junto a sus acompañantes en escena, demostrando que la acrobacia trasciende el deporte.",
+    "description": "Espectáculo que combina acrobacias, humor y situaciones imposibles con una técnica física fuera de lo común. El actor y cómico Wilbur crea un show dinámico acompañado por sus singulares amigos Contractura, Tirón y Desgarro.",
     "url": "https://teatroserrano.com/piensa-en-wilbur/",
     "price": "Desde 12 €",
     "source_url": "https://www.esmadrid.com/agenda/piensa-wilbur-teatro-serrano",
     "source": "esmadrid",
     "categories": [
-      "teatro"
+      "teatro",
+      "monólogos"
     ],
     "image": "images/events/1b8e4b407123.jpg",
     "location_name": "Teatro Serrano",
@@ -7749,7 +7971,8 @@
     "longitude": -3.6862284,
     "start_date": "2026-03-28",
     "end_date": "2026-04-08",
-    "is_multi_event": true
+    "is_multi_event": true,
+    "_enriched": true
   },
   {
     "title": "Ángel Martín - Somos monos",
@@ -7886,7 +8109,7 @@
   },
   {
     "title": "101 Dálmatas, The Show",
-    "description": "Nueva versión del clásico infantil que reimagina la historia de Cruella como una influencer en la era de las redes sociales. El espectáculo combina música urbana, hip-hop y una ambientación inspirada en los años 90.",
+    "description": "Nueva versión del clásico infantil que reimagina la historia de Cruella como una influencer en la era de las redes sociales. El espectáculo combina música urbana, hip-hop y una estética inspirada en los años 90.",
     "url": "https://tickets.oneboxtds.com/laestacion/events",
     "price": "Desde 25 €",
     "source_url": "https://www.esmadrid.com/agenda/101-dalmatas-show-gran-teatro-caixabank-principe-pio",
@@ -7902,7 +8125,8 @@
     "longitude": -3.7187873,
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
-    "is_multi_event": true
+    "is_multi_event": true,
+    "_enriched": true
   },
   {
     "title": "Ilustres ignorantes",
@@ -7990,7 +8214,7 @@
   },
   {
     "title": "En los márgenes: Festival Teatro a Pie de Barrio",
-    "description": "Un festival participativo que acerca el teatro a diversos distritos de la ciudad a través de propuestas escénicas y experiencias culturales. El programa busca conectar con públicos amplios mediante representaciones en espacios descentralizados.",
+    "description": "Festival de artes escénicas que ofrece una programación diversa de teatro como herramienta de participación y encuentro cultural en distintos distritos de la ciudad. El proyecto busca conectar con públicos amplios a través de propuestas dinámicas y cercanas a pie de calle.",
     "url": "https://21distritos.es/festival/proyecto-participativo-en-los-margenes-festival-teatro-a-pie-de-barrio/",
     "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/margenes-festival-teatro-pie-barrio",
@@ -8003,7 +8227,8 @@
     "start_date": "2026-03-28",
     "end_date": "2026-03-29",
     "location_name": "Varios espacios de Madrid",
-    "is_multi_event": true
+    "is_multi_event": true,
+    "_enriched": true
   },
   {
     "title": "Mercado del Encanto - Edición primavera",
@@ -9726,7 +9951,7 @@
   },
   {
     "title": "Fabiolo Connection",
-    "description": "Rafael Maza interpreta al irreverente personaje Fabiolo de la Mora y Leja en una divertida propuesta de humor. El espectáculo ofrece una sátira sobre la crisis social a través de la visión snob de su protagonista.",
+    "description": "Rafael Maza interpreta al irreverente personaje Fabiolo de la Mora y Leja, un snob de la alta sociedad que narra sus experiencias tras ser contratado para dar clases de tenis a la hija de un jeque. Es una propuesta de humor que explora la visión de la crisis y el lujo desde una perspectiva satírica.",
     "url": "https://www.teatrobellasartes.es/obra-de-teatro/fabiolo-connection/",
     "price": "22 €",
     "source_url": "https://www.esmadrid.com/agenda/fabiolo-connection-teatro-bellas-artes",
@@ -9741,13 +9966,14 @@
     "longitude": -3.69638979435,
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
-    "is_multi_event": true
+    "is_multi_event": true,
+    "_enriched": true
   },
   {
     "title": "Gordas, lisiadas y mamarrachas",
-    "description": "Espectáculo cómico donde las actrices cuestionan la identidad, el lenguaje, la normalidad y la corrección social. Una propuesta artística que integra humor y reflexión sobre la experiencia personal de sus intérpretes.",
+    "description": "Un espectáculo cómico donde dos actrices cuestionan la identidad, el lenguaje, la normalidad y la corrección social. La obra ofrece una propuesta artística centrada en el humor y la reflexión sobre la diversidad.",
     "url": "https://teatrodelbarrio.com/gordas-lisiadas-y-mamarrachas/",
-    "price": "Desde 16 €",
+    "price": "Desde 14 €",
     "source_url": "https://www.esmadrid.com/agenda/gordas-lisiadas-mamarrachas-teatro-barrio",
     "source": "esmadrid",
     "categories": [
@@ -9759,7 +9985,8 @@
     "latitude": 40.4096362,
     "longitude": -3.6991806,
     "start_date": "2026-04-05",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "_enriched": true
   },
   {
     "title": "El Brujo - Autobiografía de un Yogui",
@@ -9874,7 +10101,7 @@
   },
   {
     "title": "LALIGA FC FUTURES Mundial Sub12",
-    "description": "Torneo internacional de fútbol base que reúne a 20 clubes de élite de cinco continentes para celebrar el 30º aniversario de la competición. El encuentro sirve de escaparate para las jóvenes promesas del fútbol mundial.",
+    "description": "Torneo internacional de fútbol base que reúne a 20 clubes de élite de cinco continentes para celebrar el 30º aniversario de la competición. El evento sirve de escaparate para las mayores promesas del fútbol mundial.",
     "url": "https://www.laliga.com/noticias/laliga-presenta-el-primer-torneo-laliga-fc-futures-mundial-sub12",
     "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/laliga-fc-futures-mundial-sub12-campo-municipal-arcos-brunete",
@@ -9887,11 +10114,35 @@
     "end_date": "2026-03-29",
     "location_name": "Campo Municipal de Los Arcos",
     "address": "Calle Remedios, 6, 28690, Brunete",
-    "is_multi_event": true
+    "is_multi_event": true,
+    "schedule": {
+      "2": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "3": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "4": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "6": [
+        "11:30:00",
+        "14:00:00"
+      ]
+    },
+    "start_time": "09:30:00",
+    "_enriched": true
   },
   {
     "title": "HELNWEIN: mundos invertidos",
-    "description": "La exposición presenta el universo visual del artista austro-irlandés Gottfried Helnwein a través de sus icónicas obras hiperrealistas que abordan la inocencia infantil y la violencia. La muestra se completa con piezas de otros artistas que exploran la convergencia entre la ficción y la realidad.",
+    "description": "Esta exposición presenta el universo visual del artista austro-irlandés Gottfried Helnwein a través de sus icónicas obras hiperrealistas y de gran carga simbólica. La muestra explora temas como la inocencia infantil, el fascismo y la convergencia entre la cultura popular y la violencia.",
     "url": "https://solocontemporary.com/projects/helnwein-mundos-invertidos/",
     "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/helnwein-mundos-invertidos-solo-independencia",
@@ -9905,7 +10156,31 @@
     "latitude": 40.4206267,
     "longitude": -3.6882458,
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "schedule": {
+      "1": [
+        "11:30:00",
+        "14:00:00"
+      ],
+      "2": [
+        "11:30:00",
+        "14:00:00"
+      ],
+      "3": [
+        "11:30:00",
+        "14:00:00"
+      ],
+      "4": [
+        "11:30:00",
+        "14:00:00"
+      ],
+      "5": [
+        "11:30:00",
+        "14:00:00"
+      ]
+    },
+    "start_time": "11:30:00",
+    "_enriched": true
   },
   {
     "title": "Jugar con fuego",
@@ -10003,7 +10278,7 @@
   },
   {
     "title": "Cenicienta. Les Ballets de Monte-Carlo",
-    "description": "Una versión moderna del clásico cuento con música de Prokofiev y coreografía de Jean-Christophe Maillot. La propuesta utiliza la técnica del teatro dentro del teatro para ofrecer una experiencia escénica contemporánea.",
+    "description": "Una versión contemporánea del clásico cuento infantil con música de Sergei Prokofiev y coreografía de Jean-Christophe Maillot. La propuesta abandona lo accesorio para centrarse en la esencia de la historia con una puesta en escena que combina elementos realistas y fantásticos.",
     "url": "https://www.teatroscanal.com/espectaculo/cenicienta-les-ballets-de-monte-carlo-tc2526/",
     "price": "Desde 9 €",
     "source_url": "https://www.esmadrid.com/agenda/cenicienta-ballets-monte-carlo-teatros-canal",
@@ -10018,7 +10293,8 @@
     "latitude": 40.4382782,
     "longitude": -3.705182,
     "start_date": "2026-03-28",
-    "end_date": "2026-03-28"
+    "end_date": "2026-03-28",
+    "_enriched": true
   },
   {
     "title": "Drone Art Show Madrid",
@@ -10065,7 +10341,7 @@
   },
   {
     "title": "Feria del Cómic de Madrid 2026",
-    "description": "Evento dedicado al noveno arte que reúne a figuras nacionales e internacionales en torno a la historieta. La programación incluye venta de publicaciones, mesas redondas, talleres y encuentros con autores.",
+    "description": "Evento dedicado al noveno arte que reúne a figuras nacionales e internacionales con una programación diversa centrada en la historieta. Incluye actividades como casetas de venta, mesas redondas, entrevistas con autores, talleres y proyecciones.",
     "url": "https://feriacomicmadrid.com/",
     "price": "Consultar página oficial",
     "source_url": "https://www.esmadrid.com/agenda/feria-comic-madrid-matadero-madrid",
@@ -10081,7 +10357,8 @@
     "longitude": -3.6963598,
     "start_date": "2026-03-28",
     "end_date": "2026-03-29",
-    "is_multi_event": true
+    "is_multi_event": true,
+    "_enriched": true
   },
   {
     "title": "AN-KI",
@@ -10769,7 +11046,7 @@
   },
   {
     "title": "Orejas de Mariposa",
-    "description": "Un espectáculo musical infantil basado en el libro de Luisa Aguilar que instruye a los niños en la tolerancia, la diversidad y la aceptación de las diferencias. La historia sigue a Mara, quien utiliza su imaginación para transformar las burlas sobre su físico en herramientas para reforzar su autoestima.",
+    "description": "Musical infantil que narra la historia de Mara, una niña que utiliza su imaginación para combatir las burlas y fomentar la tolerancia. La obra explora la diversidad y la importancia de aceptar las características que hacen único a cada individuo.",
     "url": "https://www.teatrosanpol.com/OC_espiral_magica_orejas_de_mariposa_2020.htm",
     "price": "Desde 13 €",
     "source_url": "https://www.esmadrid.com/agenda/orejas-mariposa-teatro-sanpol",
@@ -10784,7 +11061,9 @@
     "latitude": 40.4239561,
     "longitude": -3.7266076,
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "is_multi_event": true,
+    "_enriched": true
   },
   {
     "title": "La Noche de Cadena 100",
@@ -11117,7 +11396,7 @@
   },
   {
     "title": "Mercado del Juguete de Madrid",
-    "description": "Feria dedicada al juguete antiguo, custom y de colección que reúne a numerosos expositores. Es una opción de ocio familiar para encontrar juguetes de diferentes épocas.",
+    "description": "Feria dedicada a la compraventa de juguetes antiguos, custom y de colección. Es una propuesta de ocio familiar que reúne a diversos expositores especializados en juguetes clásicos y actuales.",
     "url": "https://www.juguetedemadrid.es/pr%C3%B3ximos-eventos/ ",
     "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/mercado-juguete-madrid",
@@ -11130,7 +11409,8 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "location_name": "Sede variable (Centros Comerciales)",
-    "is_multi_event": true
+    "is_multi_event": true,
+    "_enriched": true
   },
   {
     "title": "LAB theClub",
@@ -11334,7 +11614,7 @@
   },
   {
     "title": "El Pequeño Conejo Blanco",
-    "description": "Un musical familiar con música en directo que utiliza títeres y actores para narrar una historia sobre el valor y la amistad. El montaje cuenta la aventura de un conejo que busca ayuda en el bosque tras ser expulsado de su madriguera por una cabra.",
+    "description": "Un musical infantil con música en directo que narra la historia de un conejo que busca ayuda para recuperar su casa tras ser ocupada por una cabra. Es un espectáculo familiar que combina actores y títeres para transmitir valores como el compañerismo.",
     "url": "https://www.teatrosanpol.com/el-pequeno-conejo-blanco/",
     "price": "Desde 12 €",
     "source_url": "https://www.esmadrid.com/agenda/pequeno-conejo-blanco-teatro-sanpol",
@@ -11349,7 +11629,8 @@
     "latitude": 40.4239561,
     "longitude": -3.7266076,
     "start_date": "2026-03-29",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "_enriched": true
   },
   {
     "title": "Real Madrid CF - FC Barcelona (Liga F Moeve)",
@@ -11404,7 +11685,7 @@
   },
   {
     "title": "Festival Internacional de Arte Sacro (FIAS) 2026",
-    "description": "El festival se centra en la figura de Johann Sebastian Bach, el Barroco musical de carácter sacro y la interpretación histórica con criterios de época. La programación incluye recitales de música antigua y clásica en diversos escenarios emblemáticos de la región.",
+    "description": "El festival celebra su 36ª edición centrada en la figura de Johann Sebastian Bach, el Barroco musical y la interpretación histórica con criterios de época. La programación incluye recitales de destacados ensembles y solistas en diversos escenarios emblemáticos de la región.",
     "url": "https://www.madrid.org/fias/2026/index.html",
     "price": "Consultar página oficial",
     "source_url": "https://www.esmadrid.com/agenda/festival-internacional-arte-sacro",
@@ -11419,11 +11700,12 @@
     "longitude": -3.709701597691,
     "start_date": "2026-03-29",
     "end_date": "2026-04-10",
-    "is_multi_event": true
+    "is_multi_event": true,
+    "_enriched": true
   },
   {
     "title": "Maestrissimo - Yllana",
-    "description": "La compañía Yllana presenta una comedia gestual que fusiona un concierto de cámara con un satírico retrato de época del siglo XVIII. El espectáculo cuenta la historia de un talentoso músico que busca ascender en su carrera artística a través de una audición muy especial.",
+    "description": "Comedia gestual que fusiona un concierto de cámara con un satírico retrato de época del siglo XVIII. Un espectáculo que combina la música clásica con géneros como el rock, el pop y el jazz mediante el humor mudo.",
     "url": "https://yllana.com/espectaculo/maestrissimo/",
     "price": "Desde 22 €",
     "source_url": "https://www.esmadrid.com/agenda/maestrissimo-yllana-gran-teatro-caixabank-principe-pio",
@@ -11437,7 +11719,9 @@
     "latitude": 40.4209943,
     "longitude": -3.7187873,
     "start_date": "2026-03-29",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "is_multi_event": true,
+    "_enriched": true
   },
   {
     "title": "Los sueños de Elsa. Tributo a Frozen",
@@ -12065,7 +12349,7 @@
   },
   {
     "title": "Honduras - Perú (Partido Amistoso Internacional)",
-    "description": "Las selecciones nacionales de Honduras y Perú se enfrentan en un encuentro amistoso de preparación internacional. El partido forma parte del calendario de compromisos de ambas selecciones en territorio europeo.",
+    "description": "Las selecciones nacionales de fútbol de Honduras y Perú se enfrentan en un encuentro amistoso de preparación internacional. El partido se celebra en territorio español en el marco de las fechas FIFA.",
     "url": "https://ffh.hn/",
     "price": "Por confirmar",
     "source_url": "https://www.esmadrid.com/agenda/honduras-peru-partido-amistoso-internacional-estadio-municipal-butarque",
@@ -12079,7 +12363,8 @@
     "latitude": 40.3394716,
     "longitude": -3.7627478,
     "start_date": "2026-03-31",
-    "end_date": "2026-03-31"
+    "end_date": "2026-03-31",
+    "_enriched": true
   },
   {
     "title": "Premios COAM 2025",
@@ -13040,7 +13325,7 @@
   },
   {
     "title": "Stranger Fan Meet 9 The Tour",
-    "description": "Una convención dedicada a la serie de ciencia ficción Stranger Things donde los seguidores pueden conocer a sus actores favoritos. El evento incluye paneles de preguntas y respuestas, sesiones de firmas y oportunidades para fotografías con los protagonistas.",
+    "description": "Una convención dedicada a la serie Stranger Things que permite a los fans conocer a los actores del reparto. Los asistentes pueden participar en sesiones de firmas, paneles de preguntas y respuestas y oportunidades fotográficas.",
     "url": "https://www.people-convention.com/es/event/stranger-fan-meet-9-the-tour-madrid/",
     "price": "69 €",
     "source_url": "https://www.esmadrid.com/agenda/stranger-fan-meet-9-tour-ifema-madrid",
@@ -13054,7 +13339,8 @@
     "latitude": 40.465157240748,
     "longitude": -3.616549993517,
     "start_date": "2026-04-04",
-    "end_date": "2026-04-05"
+    "end_date": "2026-04-05",
+    "_enriched": true
   },
   {
     "title": "Atlético de Madrid - FC Barcelona (LALIGA EA SPORTS)",
@@ -13965,7 +14251,7 @@
   },
   {
     "title": "Bienvenida la primavera 2026",
-    "description": "La fachada de la Fundación Casa de México en España presenta una intervención artística monumental compuesta por tejidos artesanales de crochet con motivos florales. Esta creación colectiva realizada por artesanas mexicanas busca celebrar la llegada de la estación mediante una instalación de gran formato.",
+    "description": "La Fundación Casa de México en España presenta una intervención artística en su fachada compuesta por motivos florales tejidos a mano. Esta instalación colaborativa busca celebrar la llegada de la estación mediante una monumental obra de artesanía textil.",
     "url": "https://www.casademexico.es/exposicion/bienvenida-la-primavera-2026/",
     "price": "Gratis",
     "image": "images/events/6a19ed797bf1.jpg",
@@ -13981,7 +14267,39 @@
     "longitude": -3.7092035,
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
-    "is_multi_event": true
+    "is_multi_event": true,
+    "schedule": {
+      "0": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "1": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "20:00:00"
+      ]
+    },
+    "start_time": "10:00:00",
+    "_enriched": true
   },
   {
     "title": "Arepa Fest by Rita's",
@@ -14410,7 +14728,7 @@
   },
   {
     "title": "Casa Decor 2026",
-    "description": "Exposición exclusiva de interiorismo, arquitectura, diseño y arte celebrada en una emblemática casa palacio. El evento reúne a profesionales del sector y al público general para mostrar las últimas tendencias en decoración.",
+    "description": "Exposición de interiorismo, arquitectura, diseño y arte que transforma un edificio icónico de la ciudad. El evento reúne a profesionales y empresas para mostrar las últimas tendencias en decoración y estilo de vida.",
     "url": "https://casadecor.es/",
     "price": "Consultar página oficial",
     "image": "images/events/97ae2d0358ad.jpg",
@@ -14422,7 +14740,39 @@
     "start_date": "2026-04-09",
     "end_date": "2026-04-10",
     "location_name": "Calle San Agustín, 11",
-    "address": "Calle San Agustín, 11, 28014 Madrid"
+    "address": "Calle San Agustín, 11, 28014 Madrid",
+    "schedule": {
+      "0": [
+        "11:00:00",
+        "21:00:00"
+      ],
+      "1": [
+        "11:00:00",
+        "21:00:00"
+      ],
+      "2": [
+        "11:00:00",
+        "21:00:00"
+      ],
+      "3": [
+        "11:00:00",
+        "21:00:00"
+      ],
+      "4": [
+        "11:00:00",
+        "21:00:00"
+      ],
+      "5": [
+        "11:00:00",
+        "21:00:00"
+      ],
+      "6": [
+        "11:00:00",
+        "21:00:00"
+      ]
+    },
+    "start_time": "11:00:00",
+    "_enriched": true
   },
   {
     "title": "Soy Asurbanipal, rey del mundo, rey de Asiria",
@@ -14476,7 +14826,7 @@
   },
   {
     "title": "Sound Isidro Vibra Mahou 2026",
-    "description": "Ciclo de conciertos que presenta una amplia programación con más de 120 artistas en diversas salas de la capital. La propuesta abarca géneros diversos que van desde el rock alternativo y el indie hasta la música urbana y la electrónica.",
+    "description": "Ciclo de conciertos que ofrece una amplia programación con actuaciones de más de 120 artistas nacionales e internacionales. El festival abarca estilos musicales diversos que van desde el rock alternativo y el indie hasta la electrónica y los sonidos urbanos.",
     "url": "https://dice.fm/promoters/sound-isidro-72w8b",
     "price": "Desde 13,77 €",
     "image": "images/events/19273b554e67.jpg",
@@ -14488,7 +14838,8 @@
     "start_date": "2026-04-09",
     "end_date": "2026-04-10",
     "location_name": "Varios locales",
-    "is_multi_event": true
+    "is_multi_event": true,
+    "_enriched": true
   },
   {
     "title": "Danish Dance Theatre Company | Marina Mascarell - Bloody Moon",

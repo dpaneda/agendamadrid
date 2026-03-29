@@ -4,7 +4,8 @@
       "event_id": "bf9fc4d38cd1d9ac"
     },
     {
-      "event_id": "af4d082907b751fd"
+      "event_id": "af4d082907b751fd",
+      "start_time": "20:30:00"
     },
     {
       "event_id": "abf014b920e42c50",
@@ -12,7 +13,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "be7d5ac37b90df1e"
+      "event_id": "be7d5ac37b90df1e",
+      "start_time": "10:00:00",
+      "end_time": "14:00:00"
     },
     {
       "event_id": "c3283b2c930d5606"
@@ -155,7 +158,9 @@
       "end_time": "15:00:00"
     },
     {
-      "event_id": "6daa691ba9237ac2"
+      "event_id": "6daa691ba9237ac2",
+      "start_time": "10:00:00",
+      "end_time": "14:00:00"
     },
     {
       "event_id": "64dc1176f1002a11",
@@ -217,7 +222,9 @@
       "start_time": "16:30:00"
     },
     {
-      "event_id": "f922daf5cba8b67b"
+      "event_id": "f922daf5cba8b67b",
+      "start_time": "13:00:00",
+      "end_time": "16:00:00"
     },
     {
       "event_id": "d58613d836825c8a",
@@ -254,7 +261,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "2d95ebfdad7b149e"
+      "event_id": "2d95ebfdad7b149e",
+      "start_time": "12:00:00",
+      "end_time": "14:00:00"
     },
     {
       "event_id": "16f6f1aa741305c7",
@@ -285,9 +294,6 @@
     },
     {
       "event_id": "3d021b64c24debbe"
-    },
-    {
-      "event_id": "eb5c227eb6e3cb2d"
     },
     {
       "event_id": "84ce7af36335fea1",
@@ -326,7 +332,9 @@
       "end_time": "14:00:00"
     },
     {
-      "event_id": "82c9d2c5faee2fbb"
+      "event_id": "82c9d2c5faee2fbb",
+      "start_time": "18:30:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "3d0f9e052f7ddef4",
@@ -376,7 +384,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "f1a3256404735bef"
+      "event_id": "f1a3256404735bef",
+      "start_time": "10:00:00",
+      "end_time": "17:00:00"
     },
     {
       "event_id": "e168f61cc0c683b1",
@@ -430,9 +440,6 @@
       "event_id": "e36d37bcfb3ba647",
       "start_time": "10:00:00",
       "end_time": "20:00:00"
-    },
-    {
-      "event_id": "08a6d1b9cfd8022b"
     },
     {
       "event_id": "dd43540abba85ff0"
@@ -840,10 +847,9 @@
       "end_time": "21:40:00"
     },
     {
-      "event_id": "bc03498fe50eecdf"
-    },
-    {
-      "event_id": "9ae3adc5a84653ad"
+      "event_id": "bc03498fe50eecdf",
+      "start_time": "11:30:00",
+      "end_time": "14:00:00"
     },
     {
       "event_id": "462c92518f784d38",
@@ -1018,7 +1024,9 @@
       "end_time": "13:30:00"
     },
     {
-      "event_id": "80eedb3d75d9f52a"
+      "event_id": "80eedb3d75d9f52a",
+      "start_time": "10:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "1c3716c726b3b93e",
@@ -1028,15 +1036,9 @@
   ],
   "2026-03-30": [
     {
-      "event_id": "af4d082907b751fd"
-    },
-    {
       "event_id": "a1e5fb3f9d0b6306",
       "start_time": "10:30:00",
       "end_time": "20:00:00"
-    },
-    {
-      "event_id": "be7d5ac37b90df1e"
     },
     {
       "event_id": "bb6f882f640c6193",
@@ -1085,9 +1087,6 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "6daa691ba9237ac2"
-    },
-    {
       "event_id": "33bfc433b8f00a8c",
       "start_time": "20:00:00",
       "end_time": "21:45:00"
@@ -1113,7 +1112,9 @@
       "end_time": "06:00:00"
     },
     {
-      "event_id": "f922daf5cba8b67b"
+      "event_id": "f922daf5cba8b67b",
+      "start_time": "13:00:00",
+      "end_time": "16:00:00"
     },
     {
       "event_id": "52b31bdc94cc3b32",
@@ -1124,9 +1125,6 @@
       "event_id": "d53eea01f8d309fd",
       "start_time": "10:00:00",
       "end_time": "20:00:00"
-    },
-    {
-      "event_id": "2d95ebfdad7b149e"
     },
     {
       "event_id": "a94263714899aed1",
@@ -1152,9 +1150,6 @@
       "end_time": "15:00:00"
     },
     {
-      "event_id": "eb5c227eb6e3cb2d"
-    },
-    {
       "event_id": "619ac495ceb9372a"
     },
     {
@@ -1168,7 +1163,9 @@
       "end_time": "19:00:00"
     },
     {
-      "event_id": "82c9d2c5faee2fbb"
+      "event_id": "82c9d2c5faee2fbb",
+      "start_time": "18:30:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "34e514130ed26459",
@@ -1204,7 +1201,9 @@
       "end_time": "13:30:00"
     },
     {
-      "event_id": "f1a3256404735bef"
+      "event_id": "f1a3256404735bef",
+      "start_time": "10:00:00",
+      "end_time": "17:00:00"
     },
     {
       "event_id": "e168f61cc0c683b1",
@@ -1232,7 +1231,9 @@
       "end_time": "21:20:00"
     },
     {
-      "event_id": "08a6d1b9cfd8022b"
+      "event_id": "08a6d1b9cfd8022b",
+      "start_time": "09:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "dd43540abba85ff0"
@@ -1405,9 +1406,6 @@
       "end_time": "21:40:00"
     },
     {
-      "event_id": "9ae3adc5a84653ad"
-    },
-    {
       "event_id": "6c4e48d875cb6860",
       "start_time": "10:00:00",
       "end_time": "21:00:00"
@@ -1513,7 +1511,9 @@
       "end_time": "13:30:00"
     },
     {
-      "event_id": "80eedb3d75d9f52a"
+      "event_id": "80eedb3d75d9f52a",
+      "start_time": "10:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "1c3716c726b3b93e",
@@ -1528,9 +1528,6 @@
       "end_time": "14:00:00"
     },
     {
-      "event_id": "af4d082907b751fd"
-    },
-    {
       "event_id": "a1e5fb3f9d0b6306",
       "start_time": "10:30:00",
       "end_time": "20:00:00"
@@ -1539,9 +1536,6 @@
       "event_id": "abf014b920e42c50",
       "start_time": "10:00:00",
       "end_time": "20:00:00"
-    },
-    {
-      "event_id": "be7d5ac37b90df1e"
     },
     {
       "event_id": "b5d317fbc1a86c8e",
@@ -1662,7 +1656,9 @@
       "end_time": "19:00:00"
     },
     {
-      "event_id": "6daa691ba9237ac2"
+      "event_id": "6daa691ba9237ac2",
+      "start_time": "10:00:00",
+      "end_time": "21:00:00"
     },
     {
       "event_id": "64dc1176f1002a11",
@@ -1719,7 +1715,9 @@
       "start_time": "20:30:00"
     },
     {
-      "event_id": "f922daf5cba8b67b"
+      "event_id": "f922daf5cba8b67b",
+      "start_time": "13:00:00",
+      "end_time": "16:00:00"
     },
     {
       "event_id": "d58613d836825c8a",
@@ -1754,9 +1752,6 @@
       "event_id": "d5290431a475847d",
       "start_time": "10:00:00",
       "end_time": "20:00:00"
-    },
-    {
-      "event_id": "2d95ebfdad7b149e"
     },
     {
       "event_id": "a94263714899aed1",
@@ -1845,7 +1840,9 @@
       "end_time": "21:00:00"
     },
     {
-      "event_id": "82c9d2c5faee2fbb"
+      "event_id": "82c9d2c5faee2fbb",
+      "start_time": "18:30:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "3d0f9e052f7ddef4",
@@ -1900,7 +1897,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "f1a3256404735bef"
+      "event_id": "f1a3256404735bef",
+      "start_time": "10:00:00",
+      "end_time": "17:00:00"
     },
     {
       "event_id": "e168f61cc0c683b1",
@@ -1958,7 +1957,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "08a6d1b9cfd8022b"
+      "event_id": "08a6d1b9cfd8022b",
+      "start_time": "09:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "dd43540abba85ff0"
@@ -2199,7 +2200,9 @@
       "end_time": "21:40:00"
     },
     {
-      "event_id": "9ae3adc5a84653ad"
+      "event_id": "9ae3adc5a84653ad",
+      "start_time": "11:30:00",
+      "end_time": "14:00:00"
     },
     {
       "event_id": "462c92518f784d38",
@@ -2338,7 +2341,9 @@
       "end_time": "13:30:00"
     },
     {
-      "event_id": "80eedb3d75d9f52a"
+      "event_id": "80eedb3d75d9f52a",
+      "start_time": "10:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "1c3716c726b3b93e",
@@ -2353,7 +2358,8 @@
       "end_time": "14:00:00"
     },
     {
-      "event_id": "af4d082907b751fd"
+      "event_id": "af4d082907b751fd",
+      "start_time": "19:30:00"
     },
     {
       "event_id": "a1e5fb3f9d0b6306",
@@ -2366,7 +2372,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "be7d5ac37b90df1e"
+      "event_id": "be7d5ac37b90df1e",
+      "start_time": "10:00:00",
+      "end_time": "19:30:00"
     },
     {
       "event_id": "c3283b2c930d5606"
@@ -2493,7 +2501,9 @@
       "end_time": "19:00:00"
     },
     {
-      "event_id": "6daa691ba9237ac2"
+      "event_id": "6daa691ba9237ac2",
+      "start_time": "10:00:00",
+      "end_time": "21:00:00"
     },
     {
       "event_id": "64dc1176f1002a11",
@@ -2594,9 +2604,6 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "2d95ebfdad7b149e"
-    },
-    {
       "event_id": "a94263714899aed1",
       "start_time": "09:00:00",
       "end_time": "20:30:00"
@@ -2678,7 +2685,9 @@
       "end_time": "21:00:00"
     },
     {
-      "event_id": "82c9d2c5faee2fbb"
+      "event_id": "82c9d2c5faee2fbb",
+      "start_time": "18:30:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "3d0f9e052f7ddef4",
@@ -2733,7 +2742,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "f1a3256404735bef"
+      "event_id": "f1a3256404735bef",
+      "start_time": "10:00:00",
+      "end_time": "17:00:00"
     },
     {
       "event_id": "e168f61cc0c683b1",
@@ -2791,7 +2802,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "08a6d1b9cfd8022b"
+      "event_id": "08a6d1b9cfd8022b",
+      "start_time": "09:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "dd43540abba85ff0"
@@ -3086,7 +3099,9 @@
       "end_time": "21:40:00"
     },
     {
-      "event_id": "9ae3adc5a84653ad"
+      "event_id": "9ae3adc5a84653ad",
+      "start_time": "11:30:00",
+      "end_time": "14:00:00"
     },
     {
       "event_id": "462c92518f784d38",
@@ -3224,7 +3239,9 @@
       "end_time": "13:30:00"
     },
     {
-      "event_id": "80eedb3d75d9f52a"
+      "event_id": "80eedb3d75d9f52a",
+      "start_time": "10:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "1c3716c726b3b93e",
@@ -3239,9 +3256,6 @@
       "end_time": "14:00:00"
     },
     {
-      "event_id": "af4d082907b751fd"
-    },
-    {
       "event_id": "a1e5fb3f9d0b6306",
       "start_time": "10:30:00",
       "end_time": "20:00:00"
@@ -3252,7 +3266,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "be7d5ac37b90df1e"
+      "event_id": "be7d5ac37b90df1e",
+      "start_time": "10:00:00",
+      "end_time": "19:30:00"
     },
     {
       "event_id": "c3283b2c930d5606"
@@ -3379,7 +3395,9 @@
       "end_time": "19:00:00"
     },
     {
-      "event_id": "6daa691ba9237ac2"
+      "event_id": "6daa691ba9237ac2",
+      "start_time": "10:00:00",
+      "end_time": "21:00:00"
     },
     {
       "event_id": "64dc1176f1002a11",
@@ -3475,9 +3493,6 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "2d95ebfdad7b149e"
-    },
-    {
       "event_id": "a94263714899aed1",
       "start_time": "09:00:00",
       "end_time": "20:30:00"
@@ -3559,7 +3574,9 @@
       "end_time": "21:00:00"
     },
     {
-      "event_id": "82c9d2c5faee2fbb"
+      "event_id": "82c9d2c5faee2fbb",
+      "start_time": "18:30:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "3d0f9e052f7ddef4",
@@ -3614,7 +3631,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "f1a3256404735bef"
+      "event_id": "f1a3256404735bef",
+      "start_time": "10:00:00",
+      "end_time": "17:00:00"
     },
     {
       "event_id": "e168f61cc0c683b1",
@@ -3675,7 +3694,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "08a6d1b9cfd8022b"
+      "event_id": "08a6d1b9cfd8022b",
+      "start_time": "09:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "dd43540abba85ff0"
@@ -3984,7 +4005,9 @@
       "end_time": "21:40:00"
     },
     {
-      "event_id": "9ae3adc5a84653ad"
+      "event_id": "9ae3adc5a84653ad",
+      "start_time": "11:30:00",
+      "end_time": "14:00:00"
     },
     {
       "event_id": "462c92518f784d38",
@@ -4136,7 +4159,9 @@
       "end_time": "13:30:00"
     },
     {
-      "event_id": "80eedb3d75d9f52a"
+      "event_id": "80eedb3d75d9f52a",
+      "start_time": "10:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "3189f4c40978af49",
@@ -4156,7 +4181,8 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "af4d082907b751fd"
+      "event_id": "af4d082907b751fd",
+      "start_time": "21:00:00"
     },
     {
       "event_id": "a1e5fb3f9d0b6306",
@@ -4169,7 +4195,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "be7d5ac37b90df1e"
+      "event_id": "be7d5ac37b90df1e",
+      "start_time": "10:00:00",
+      "end_time": "19:30:00"
     },
     {
       "event_id": "c3283b2c930d5606"
@@ -4297,7 +4325,9 @@
       "end_time": "19:00:00"
     },
     {
-      "event_id": "6daa691ba9237ac2"
+      "event_id": "6daa691ba9237ac2",
+      "start_time": "10:00:00",
+      "end_time": "21:00:00"
     },
     {
       "event_id": "64dc1176f1002a11",
@@ -4395,9 +4425,6 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "2d95ebfdad7b149e"
-    },
-    {
       "event_id": "a94263714899aed1",
       "start_time": "09:00:00",
       "end_time": "20:30:00"
@@ -4479,7 +4506,9 @@
       "end_time": "21:00:00"
     },
     {
-      "event_id": "82c9d2c5faee2fbb"
+      "event_id": "82c9d2c5faee2fbb",
+      "start_time": "18:30:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "3d0f9e052f7ddef4",
@@ -4534,7 +4563,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "f1a3256404735bef"
+      "event_id": "f1a3256404735bef",
+      "start_time": "10:00:00",
+      "end_time": "17:00:00"
     },
     {
       "event_id": "e168f61cc0c683b1",
@@ -4595,7 +4626,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "08a6d1b9cfd8022b"
+      "event_id": "08a6d1b9cfd8022b",
+      "start_time": "09:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "dd43540abba85ff0"
@@ -4945,7 +4978,9 @@
       "end_time": "21:40:00"
     },
     {
-      "event_id": "9ae3adc5a84653ad"
+      "event_id": "9ae3adc5a84653ad",
+      "start_time": "11:30:00",
+      "end_time": "14:00:00"
     },
     {
       "event_id": "462c92518f784d38",
@@ -5120,7 +5155,9 @@
       "end_time": "13:30:00"
     },
     {
-      "event_id": "80eedb3d75d9f52a"
+      "event_id": "80eedb3d75d9f52a",
+      "start_time": "10:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "3189f4c40978af49",
@@ -5144,15 +5181,14 @@
       "end_time": "14:00:00"
     },
     {
-      "event_id": "af4d082907b751fd"
-    },
-    {
       "event_id": "abf014b920e42c50",
       "start_time": "11:00:00",
       "end_time": "20:00:00"
     },
     {
-      "event_id": "be7d5ac37b90df1e"
+      "event_id": "be7d5ac37b90df1e",
+      "start_time": "10:00:00",
+      "end_time": "19:30:00"
     },
     {
       "event_id": "c3283b2c930d5606"
@@ -5277,7 +5313,9 @@
       "end_time": "19:00:00"
     },
     {
-      "event_id": "6daa691ba9237ac2"
+      "event_id": "6daa691ba9237ac2",
+      "start_time": "10:00:00",
+      "end_time": "21:00:00"
     },
     {
       "event_id": "64dc1176f1002a11",
@@ -5375,7 +5413,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "2d95ebfdad7b149e"
+      "event_id": "2d95ebfdad7b149e",
+      "start_time": "12:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "16f6f1aa741305c7",
@@ -5444,7 +5484,9 @@
       "end_time": "21:00:00"
     },
     {
-      "event_id": "82c9d2c5faee2fbb"
+      "event_id": "82c9d2c5faee2fbb",
+      "start_time": "18:30:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "3d0f9e052f7ddef4",
@@ -5494,7 +5536,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "f1a3256404735bef"
+      "event_id": "f1a3256404735bef",
+      "start_time": "10:00:00",
+      "end_time": "17:00:00"
     },
     {
       "event_id": "e168f61cc0c683b1",
@@ -5548,9 +5592,6 @@
       "event_id": "e36d37bcfb3ba647",
       "start_time": "10:00:00",
       "end_time": "20:00:00"
-    },
-    {
-      "event_id": "08a6d1b9cfd8022b"
     },
     {
       "event_id": "dd43540abba85ff0"
@@ -5946,7 +5987,9 @@
       "end_time": "21:40:00"
     },
     {
-      "event_id": "9ae3adc5a84653ad"
+      "event_id": "9ae3adc5a84653ad",
+      "start_time": "11:30:00",
+      "end_time": "14:00:00"
     },
     {
       "event_id": "462c92518f784d38",
@@ -6155,7 +6198,9 @@
       "end_time": "13:30:00"
     },
     {
-      "event_id": "80eedb3d75d9f52a"
+      "event_id": "80eedb3d75d9f52a",
+      "start_time": "10:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "3189f4c40978af49",
@@ -6174,7 +6219,8 @@
   ],
   "2026-04-05": [
     {
-      "event_id": "af4d082907b751fd"
+      "event_id": "af4d082907b751fd",
+      "start_time": "20:30:00"
     },
     {
       "event_id": "abf014b920e42c50",
@@ -6182,7 +6228,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "be7d5ac37b90df1e"
+      "event_id": "be7d5ac37b90df1e",
+      "start_time": "10:00:00",
+      "end_time": "14:00:00"
     },
     {
       "event_id": "c3283b2c930d5606"
@@ -6305,7 +6353,9 @@
       "end_time": "15:00:00"
     },
     {
-      "event_id": "6daa691ba9237ac2"
+      "event_id": "6daa691ba9237ac2",
+      "start_time": "10:00:00",
+      "end_time": "14:00:00"
     },
     {
       "event_id": "64dc1176f1002a11",
@@ -6396,7 +6446,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "2d95ebfdad7b149e"
+      "event_id": "2d95ebfdad7b149e",
+      "start_time": "12:00:00",
+      "end_time": "14:00:00"
     },
     {
       "event_id": "16f6f1aa741305c7",
@@ -6465,7 +6517,9 @@
       "end_time": "14:00:00"
     },
     {
-      "event_id": "82c9d2c5faee2fbb"
+      "event_id": "82c9d2c5faee2fbb",
+      "start_time": "18:30:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "3d0f9e052f7ddef4",
@@ -6510,7 +6564,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "f1a3256404735bef"
+      "event_id": "f1a3256404735bef",
+      "start_time": "10:00:00",
+      "end_time": "17:00:00"
     },
     {
       "event_id": "e168f61cc0c683b1",
@@ -6564,9 +6620,6 @@
       "event_id": "e36d37bcfb3ba647",
       "start_time": "10:00:00",
       "end_time": "20:00:00"
-    },
-    {
-      "event_id": "08a6d1b9cfd8022b"
     },
     {
       "event_id": "dd43540abba85ff0"
@@ -6908,9 +6961,6 @@
       "end_time": "21:40:00"
     },
     {
-      "event_id": "9ae3adc5a84653ad"
-    },
-    {
       "event_id": "462c92518f784d38",
       "start_time": "18:00:00",
       "end_time": "20:00:00"
@@ -7108,7 +7158,9 @@
       "end_time": "13:30:00"
     },
     {
-      "event_id": "80eedb3d75d9f52a"
+      "event_id": "80eedb3d75d9f52a",
+      "start_time": "10:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "3189f4c40978af49",
@@ -7127,15 +7179,9 @@
   ],
   "2026-04-06": [
     {
-      "event_id": "af4d082907b751fd"
-    },
-    {
       "event_id": "a1e5fb3f9d0b6306",
       "start_time": "10:30:00",
       "end_time": "20:00:00"
-    },
-    {
-      "event_id": "be7d5ac37b90df1e"
     },
     {
       "event_id": "bb6f882f640c6193",
@@ -7174,9 +7220,6 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "6daa691ba9237ac2"
-    },
-    {
       "event_id": "33bfc433b8f00a8c",
       "start_time": "20:00:00",
       "end_time": "21:45:00"
@@ -7212,9 +7255,6 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "2d95ebfdad7b149e"
-    },
-    {
       "event_id": "a94263714899aed1",
       "start_time": "09:00:00",
       "end_time": "20:30:00"
@@ -7241,7 +7281,9 @@
       "end_time": "19:00:00"
     },
     {
-      "event_id": "82c9d2c5faee2fbb"
+      "event_id": "82c9d2c5faee2fbb",
+      "start_time": "18:30:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "34e514130ed26459",
@@ -7272,7 +7314,9 @@
       "end_time": "13:30:00"
     },
     {
-      "event_id": "f1a3256404735bef"
+      "event_id": "f1a3256404735bef",
+      "start_time": "10:00:00",
+      "end_time": "17:00:00"
     },
     {
       "event_id": "e168f61cc0c683b1",
@@ -7295,7 +7339,9 @@
       "end_time": "20:40:00"
     },
     {
-      "event_id": "08a6d1b9cfd8022b"
+      "event_id": "08a6d1b9cfd8022b",
+      "start_time": "09:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "dd43540abba85ff0"
@@ -7457,9 +7503,6 @@
       "end_time": "21:40:00"
     },
     {
-      "event_id": "9ae3adc5a84653ad"
-    },
-    {
       "event_id": "6c4e48d875cb6860",
       "start_time": "10:00:00",
       "end_time": "21:00:00"
@@ -7580,7 +7623,9 @@
       "end_time": "13:30:00"
     },
     {
-      "event_id": "80eedb3d75d9f52a"
+      "event_id": "80eedb3d75d9f52a",
+      "start_time": "10:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "3189f4c40978af49",
@@ -7604,15 +7649,9 @@
       "end_time": "14:00:00"
     },
     {
-      "event_id": "af4d082907b751fd"
-    },
-    {
       "event_id": "a1e5fb3f9d0b6306",
       "start_time": "10:30:00",
       "end_time": "20:00:00"
-    },
-    {
-      "event_id": "be7d5ac37b90df1e"
     },
     {
       "event_id": "b5d317fbc1a86c8e",
@@ -7723,7 +7762,9 @@
       "end_time": "19:00:00"
     },
     {
-      "event_id": "6daa691ba9237ac2"
+      "event_id": "6daa691ba9237ac2",
+      "start_time": "10:00:00",
+      "end_time": "21:00:00"
     },
     {
       "event_id": "64dc1176f1002a11",
@@ -7809,9 +7850,6 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "2d95ebfdad7b149e"
-    },
-    {
       "event_id": "a94263714899aed1",
       "start_time": "09:00:00",
       "end_time": "20:30:00"
@@ -7886,7 +7924,9 @@
       "end_time": "21:00:00"
     },
     {
-      "event_id": "82c9d2c5faee2fbb"
+      "event_id": "82c9d2c5faee2fbb",
+      "start_time": "18:30:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "3d0f9e052f7ddef4",
@@ -7936,7 +7976,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "f1a3256404735bef"
+      "event_id": "f1a3256404735bef",
+      "start_time": "10:00:00",
+      "end_time": "17:00:00"
     },
     {
       "event_id": "e168f61cc0c683b1",
@@ -7989,7 +8031,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "08a6d1b9cfd8022b"
+      "event_id": "08a6d1b9cfd8022b",
+      "start_time": "09:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "dd43540abba85ff0"
@@ -8206,7 +8250,9 @@
       "end_time": "21:40:00"
     },
     {
-      "event_id": "9ae3adc5a84653ad"
+      "event_id": "9ae3adc5a84653ad",
+      "start_time": "11:30:00",
+      "end_time": "14:00:00"
     },
     {
       "event_id": "462c92518f784d38",
@@ -8348,7 +8394,9 @@
       "end_time": "13:30:00"
     },
     {
-      "event_id": "80eedb3d75d9f52a"
+      "event_id": "80eedb3d75d9f52a",
+      "start_time": "10:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "3189f4c40978af49",
@@ -8387,7 +8435,8 @@
       "end_time": "14:00:00"
     },
     {
-      "event_id": "af4d082907b751fd"
+      "event_id": "af4d082907b751fd",
+      "start_time": "19:30:00"
     },
     {
       "event_id": "a1e5fb3f9d0b6306",
@@ -8395,7 +8444,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "be7d5ac37b90df1e"
+      "event_id": "be7d5ac37b90df1e",
+      "start_time": "10:00:00",
+      "end_time": "19:30:00"
     },
     {
       "event_id": "c3283b2c930d5606"
@@ -8512,7 +8563,9 @@
       "end_time": "19:00:00"
     },
     {
-      "event_id": "6daa691ba9237ac2"
+      "event_id": "6daa691ba9237ac2",
+      "start_time": "10:00:00",
+      "end_time": "21:00:00"
     },
     {
       "event_id": "64dc1176f1002a11",
@@ -8608,9 +8661,6 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "2d95ebfdad7b149e"
-    },
-    {
       "event_id": "a94263714899aed1",
       "start_time": "09:00:00",
       "end_time": "20:30:00"
@@ -8688,7 +8738,9 @@
       "end_time": "21:00:00"
     },
     {
-      "event_id": "82c9d2c5faee2fbb"
+      "event_id": "82c9d2c5faee2fbb",
+      "start_time": "18:30:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "3d0f9e052f7ddef4",
@@ -8738,7 +8790,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "f1a3256404735bef"
+      "event_id": "f1a3256404735bef",
+      "start_time": "10:00:00",
+      "end_time": "17:00:00"
     },
     {
       "event_id": "e168f61cc0c683b1",
@@ -8791,7 +8845,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "08a6d1b9cfd8022b"
+      "event_id": "08a6d1b9cfd8022b",
+      "start_time": "09:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "dd43540abba85ff0"
@@ -9045,7 +9101,9 @@
       "end_time": "21:40:00"
     },
     {
-      "event_id": "9ae3adc5a84653ad"
+      "event_id": "9ae3adc5a84653ad",
+      "start_time": "11:30:00",
+      "end_time": "14:00:00"
     },
     {
       "event_id": "462c92518f784d38",
@@ -9197,7 +9255,9 @@
       "end_time": "13:30:00"
     },
     {
-      "event_id": "80eedb3d75d9f52a"
+      "event_id": "80eedb3d75d9f52a",
+      "start_time": "10:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "3189f4c40978af49",
@@ -9222,15 +9282,14 @@
       "end_time": "14:00:00"
     },
     {
-      "event_id": "af4d082907b751fd"
-    },
-    {
       "event_id": "a1e5fb3f9d0b6306",
       "start_time": "10:30:00",
       "end_time": "20:00:00"
     },
     {
-      "event_id": "be7d5ac37b90df1e"
+      "event_id": "be7d5ac37b90df1e",
+      "start_time": "10:00:00",
+      "end_time": "19:30:00"
     },
     {
       "event_id": "c3283b2c930d5606"
@@ -9347,7 +9406,9 @@
       "end_time": "19:00:00"
     },
     {
-      "event_id": "6daa691ba9237ac2"
+      "event_id": "6daa691ba9237ac2",
+      "start_time": "10:00:00",
+      "end_time": "21:00:00"
     },
     {
       "event_id": "64dc1176f1002a11",
@@ -9433,9 +9494,6 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "2d95ebfdad7b149e"
-    },
-    {
       "event_id": "a94263714899aed1",
       "start_time": "09:00:00",
       "end_time": "20:30:00"
@@ -9513,7 +9571,9 @@
       "end_time": "21:00:00"
     },
     {
-      "event_id": "82c9d2c5faee2fbb"
+      "event_id": "82c9d2c5faee2fbb",
+      "start_time": "18:30:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "3d0f9e052f7ddef4",
@@ -9563,7 +9623,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "f1a3256404735bef"
+      "event_id": "f1a3256404735bef",
+      "start_time": "10:00:00",
+      "end_time": "17:00:00"
     },
     {
       "event_id": "e168f61cc0c683b1",
@@ -9619,7 +9681,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "08a6d1b9cfd8022b"
+      "event_id": "08a6d1b9cfd8022b",
+      "start_time": "09:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "dd43540abba85ff0"
@@ -9870,7 +9934,9 @@
       "end_time": "21:40:00"
     },
     {
-      "event_id": "9ae3adc5a84653ad"
+      "event_id": "9ae3adc5a84653ad",
+      "start_time": "11:30:00",
+      "end_time": "14:00:00"
     },
     {
       "event_id": "462c92518f784d38",
@@ -10027,7 +10093,9 @@
       "end_time": "13:30:00"
     },
     {
-      "event_id": "80eedb3d75d9f52a"
+      "event_id": "80eedb3d75d9f52a",
+      "start_time": "10:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "3189f4c40978af49",
@@ -10035,7 +10103,9 @@
       "end_time": "21:00:00"
     },
     {
-      "event_id": "bc6cb2ba5cf6c860"
+      "event_id": "bc6cb2ba5cf6c860",
+      "start_time": "11:00:00",
+      "end_time": "21:00:00"
     },
     {
       "event_id": "7f6d0e28ea47022a",
@@ -10089,7 +10159,8 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "af4d082907b751fd"
+      "event_id": "af4d082907b751fd",
+      "start_time": "21:00:00"
     },
     {
       "event_id": "a1e5fb3f9d0b6306",
@@ -10097,7 +10168,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "be7d5ac37b90df1e"
+      "event_id": "be7d5ac37b90df1e",
+      "start_time": "10:00:00",
+      "end_time": "19:30:00"
     },
     {
       "event_id": "c3283b2c930d5606"
@@ -10215,7 +10288,9 @@
       "end_time": "19:00:00"
     },
     {
-      "event_id": "6daa691ba9237ac2"
+      "event_id": "6daa691ba9237ac2",
+      "start_time": "10:00:00",
+      "end_time": "21:00:00"
     },
     {
       "event_id": "64dc1176f1002a11",
@@ -10303,9 +10378,6 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "2d95ebfdad7b149e"
-    },
-    {
       "event_id": "a94263714899aed1",
       "start_time": "09:00:00",
       "end_time": "20:30:00"
@@ -10383,7 +10455,9 @@
       "end_time": "21:00:00"
     },
     {
-      "event_id": "82c9d2c5faee2fbb"
+      "event_id": "82c9d2c5faee2fbb",
+      "start_time": "18:30:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "3d0f9e052f7ddef4",
@@ -10433,7 +10507,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "f1a3256404735bef"
+      "event_id": "f1a3256404735bef",
+      "start_time": "10:00:00",
+      "end_time": "17:00:00"
     },
     {
       "event_id": "e168f61cc0c683b1",
@@ -10489,7 +10565,9 @@
       "end_time": "20:00:00"
     },
     {
-      "event_id": "08a6d1b9cfd8022b"
+      "event_id": "08a6d1b9cfd8022b",
+      "start_time": "09:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "dd43540abba85ff0"
@@ -10761,7 +10839,9 @@
       "event_id": "4d1214e44b3c7b40"
     },
     {
-      "event_id": "9ae3adc5a84653ad"
+      "event_id": "9ae3adc5a84653ad",
+      "start_time": "11:30:00",
+      "end_time": "14:00:00"
     },
     {
       "event_id": "462c92518f784d38",
@@ -10941,7 +11021,9 @@
       "end_time": "13:30:00"
     },
     {
-      "event_id": "80eedb3d75d9f52a"
+      "event_id": "80eedb3d75d9f52a",
+      "start_time": "10:00:00",
+      "end_time": "20:00:00"
     },
     {
       "event_id": "3189f4c40978af49",
@@ -10958,7 +11040,9 @@
       "start_time": "17:30:00"
     },
     {
-      "event_id": "bc6cb2ba5cf6c860"
+      "event_id": "bc6cb2ba5cf6c860",
+      "start_time": "11:00:00",
+      "end_time": "21:00:00"
     },
     {
       "event_id": "7f6d0e28ea47022a",

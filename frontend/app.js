@@ -533,6 +533,12 @@ async function init() {
   document.getElementById("btn-search").addEventListener("click", openSearch);
   document.getElementById("search-close").addEventListener("click", closeSearch);
   searchInput.addEventListener("keydown", (e) => { if (e.key === "Escape") closeSearch(); });
+  document.addEventListener("keydown", (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key === "f") {
+      e.preventDefault();
+      openSearch();
+    }
+  });
   searchInput.addEventListener("input", () => {
     clearTimeout(searchDebounce);
     searchDebounce = setTimeout(doSearch, 200);

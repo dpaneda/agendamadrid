@@ -19,20 +19,33 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4 lxml
+        run: pip install -r crawlers/requirements.txt
 
       - name: Run crawlers
         run: python crawlers/build_data.py
+
+      - name: Enrich with LLM
+        if: env.GEMINI_API_KEY != ''
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python -m crawlers.enrich_source esmadrid
+
+      - name: Download images
+        run: python -m crawlers.download_images
+
+      - name: Consolidate
+        run: python -m crawlers.consolidate
 
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add frontend/data/events.json frontend/data/calendar.json frontend/index.html frontend/sitemap.xml frontend/robots.txt
+          git add crawlers/data/sources/
+          git add frontend/data/ frontend/images/events/
+          git add frontend/index.html frontend/sitemap.xml frontend/robots.txt
           git add frontend/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]/index.html 2>/dev/null || true
           git add -u frontend/
           git diff --staged --quiet && exit 0
           git commit -m "Update events data"
           git pull --rebase
           git push
-
