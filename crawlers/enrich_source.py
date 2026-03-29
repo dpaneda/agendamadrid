@@ -81,7 +81,6 @@ def run(source_name, limit=0, skip_enriched=True):
                 errors += 1
                 print(f"    ✗ No LLM data returned")
 
-            time.sleep(5)  # respect rate limits (~20 RPM for gemini-3-flash)
 
         except requests.exceptions.HTTPError as e:
             if e.response is not None and e.response.status_code in (403, 404, 410):
