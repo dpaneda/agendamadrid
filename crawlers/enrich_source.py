@@ -50,7 +50,7 @@ def run(source_name, limit=0, skip_enriched=True):
             skipped += 1
             continue
 
-        if skip_enriched and ev.get("_enriched"):
+        if skip_enriched and (ev.get("_enriched") or ev.get("_enrich_error")):
             skipped += 1
             continue
 
@@ -85,7 +85,8 @@ def run(source_name, limit=0, skip_enriched=True):
 
         except Exception as e:
             errors += 1
-            print(f"    Error: {e}")
+            events[i]["_enrich_error"] = str(e)[:100]
+            print(f"    ✗ {e}")
 
     print(f"\nDone: {enriched} enriched, {errors} errors, {skipped} skipped")
 
