@@ -417,7 +417,7 @@ class EsMadridCrawler(BaseCrawler):
     def crawl(self, enrich=False) -> list[dict]:
         return self.crawl_incremental(set(), enrich=enrich)
 
-    def crawl_incremental(self, known_urls: set, enrich=False) -> list[dict]:
+    def crawl_incremental(self, known_urls: set, enrich=False, limit=0) -> list[dict]:
         today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
         days_ahead = 14
         events = []
@@ -440,6 +440,10 @@ class EsMadridCrawler(BaseCrawler):
 
             # Split into cached and uncached
             urls_to_fetch = [u for u in new_urls if u not in seen_urls]
+            if limit and len(seen_urls) >= limit:
+                urls_to_fetch = []
+            elif limit:
+                urls_to_fetch = urls_to_fetch[:limit - len(seen_urls)]
 
             _enrich = enrich
             def fetch_one(url):
@@ -495,8 +499,8 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("--enrich", action="store_true", help="Enrich with LLM (needs GEMINI_API_KEY)")
+    parser.add_argument("--limit", type=int, default=0, help="Max events to scrape (0=all)")
     args = parser.parse_args()
     c = EsMadridCrawler()
-    if args.enrich:
-        c.crawl = lambda: c.crawl_incremental(set(), enrich=True)
+    c.crawl = lambda: c.crawl_incremental(set(), enrich=args.enrich, limit=args.limit)
     c.run()
