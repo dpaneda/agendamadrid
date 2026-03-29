@@ -139,6 +139,7 @@ def parse_madrid_event(item: dict, source: str) -> dict | None:
         categories.append("gratis")
 
     # Build schedule from recurrence.days + time
+    # Only create schedule if we have both days AND times, otherwise it's useless
     schedule = None
     recurrence = item.get("recurrence") or {}
     rec_days_str = recurrence.get("days", "")
@@ -148,9 +149,12 @@ def parse_madrid_event(item: dict, source: str) -> dict | None:
             d = _RECURRENCE_DAY_MAP.get(abbr.strip())
             if d is not None:
                 weekdays.add(d)
-        if weekdays:
-            times = [t for t in [start_time, end_time] if t]
+        times = [t for t in [start_time, end_time] if t]
+        if weekdays and times:
             schedule = {d: list(times) for d in sorted(weekdays)}
+        elif weekdays:
+            # Days without times — store as open_days for filtering
+            schedule = {d: [] for d in sorted(weekdays)}
 
     return {
         "title": title,

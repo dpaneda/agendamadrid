@@ -89,8 +89,7 @@ def cal_entries_for_date(ev, eid, ds):
             entries.append(entry)
         return entries
     if schedule and isinstance(schedule, dict):
-        day_in_schedule = weekday is not None and (weekday in schedule or str(weekday) in schedule)
-        if not day_in_schedule:
+        if weekday is None or not (weekday in schedule or str(weekday) in schedule):
             return []
     entry = {"event_id": eid}
     if ev.get("start_time"):
