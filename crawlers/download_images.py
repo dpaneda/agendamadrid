@@ -23,10 +23,7 @@ IMG_DIR = os.path.join(os.path.dirname(__file__), "..", "frontend", "images", "e
 MAX_WIDTH = 400
 QUALITY = 80
 TIMEOUT = 15
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    "Referer": "https://www.madrid.es/",
-}
+HEADERS = {}
 
 
 def img_filename(url):
@@ -79,7 +76,7 @@ def run():
 
         ok = 0
         fail = 0
-        with ThreadPoolExecutor(max_workers=10) as pool:
+        with ThreadPoolExecutor(max_workers=2) as pool:
             futures = {}
             for url, fname in url_to_file.items():
                 dest = os.path.join(IMG_DIR, fname)
@@ -102,8 +99,6 @@ def run():
                 if os.path.exists(os.path.join(IMG_DIR, fname)):
                     ev["image"] = f"images/events/{fname}"
                     changed += 1
-                else:
-                    del ev["image"]
 
         with open(path, "w") as f:
             json.dump(events, f, indent=2, ensure_ascii=False, default=str)
