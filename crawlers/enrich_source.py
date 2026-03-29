@@ -69,17 +69,14 @@ def run(source_name, limit=0, skip_enriched=True):
                 enriched += 1
                 parts = []
                 if llm_data.get("price"):
-                    parts.append(f"price={llm_data['price']}")
+                    parts.append(f"💰 {llm_data['price']}")
                 if llm_data.get("schedule"):
-                    days = list(llm_data["schedule"].keys())
-                    parts.append(f"schedule={len(days)} days")
+                    parts.append(f"🕐 {len(llm_data['schedule'])} días")
                 if llm_data.get("categories"):
-                    parts.append(f"cats={','.join(llm_data['categories'])}")
+                    parts.append(f"🏷 {','.join(llm_data['categories'])}")
                 if llm_data.get("is_multi_event"):
-                    parts.append("MULTI-EVENT")
-                if llm_data.get("description"):
-                    parts.append(f"desc={llm_data['description'][:80]}...")
-                print(f"    ✓ {' | '.join(parts) or 'no new data'}")
+                    parts.append("📦 multi-evento")
+                print(f"    ✓ {' | '.join(parts) or 'sin datos nuevos'}")
             else:
                 errors += 1
                 print(f"    ✗ No LLM data returned")
