@@ -19,7 +19,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 from crawlers.generate_seo import run as generate_seo
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "frontend", "data")
-SOURCES_DIR = os.path.join(DATA_DIR, "sources")
+SOURCES_DIR = os.path.join(os.path.dirname(__file__), "data", "sources")
 EVENTS_PATH = os.path.join(DATA_DIR, "events.json")
 CALENDAR_PATH = os.path.join(DATA_DIR, "calendar.json")
 LOCATIONS_PATH = os.path.join(DATA_DIR, "locations.json")

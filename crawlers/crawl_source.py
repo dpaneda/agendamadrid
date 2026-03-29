@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
 from crawlers.runner import discover_crawlers
 
-SOURCES_DIR = os.path.join(os.path.dirname(__file__), "..", "frontend", "data", "sources")
+SOURCES_DIR = os.path.join(os.path.dirname(__file__), "data", "sources")
 
 
 def crawl_one(crawler, known_urls=None):
