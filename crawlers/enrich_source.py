@@ -65,7 +65,6 @@ def run(source_name, limit=0, skip_enriched=True):
             llm_data = enrich(html)
             if llm_data:
                 events[i] = merge_llm_data(ev, llm_data)
-                events[i]["_enriched"] = True
                 enriched += 1
                 parts = []
                 if llm_data.get("price"):
@@ -77,6 +76,25 @@ def run(source_name, limit=0, skip_enriched=True):
                 if llm_data.get("is_multi_event"):
                     parts.append("📦 multi-evento")
                 print(f"    ✓ {' | '.join(parts) or 'sin datos nuevos'}")
+
+                # Fallback: if no schedule, try destination URL
+                dest_url = events[i].get("url")
+                if (not events[i].get("schedule") and not events[i].get("start_time")
+                        and dest_url and dest_url != url):
+                    try:
+                        dest_resp = requests.get(dest_url, timeout=15, headers=HEADERS)
+                        dest_resp.raise_for_status()
+                        dest_data = enrich(dest_resp.text)
+                        if dest_data and dest_data.get("schedule"):
+                            events[i]["schedule"] = dest_data["schedule"]
+                            all_times = [t for times in dest_data["schedule"].values() for t in times]
+                            if all_times:
+                                events[i]["start_time"] = sorted(all_times)[0]
+                            print(f"    ✓ Fallback: got schedule from {dest_url[:60]}")
+                    except Exception as e:
+                        print(f"    ⚠ Fallback failed: {e}")
+
+                events[i]["_enriched"] = True
             else:
                 errors += 1
                 print(f"    ✗ No LLM data returned")
