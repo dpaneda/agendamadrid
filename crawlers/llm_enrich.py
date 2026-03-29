@@ -42,7 +42,7 @@ Contenido de la página:
 _DAY_MAP = {"L": 0, "M": 1, "X": 2, "J": 3, "V": 4, "S": 5, "D": 6, "todos": "todos"}
 
 _client = None
-_model = "gemini-3-flash-preview"
+_model = "gemini-2.5-flash"
 
 
 def _get_client():
