@@ -182,8 +182,12 @@ def merge_llm_data(scraped, llm_data):
         if llm_data.get(field):
             merged[field] = llm_data[field]
 
+    # LLM always wins for categories (better classification)
+    if llm_data.get("categories"):
+        merged["categories"] = llm_data["categories"]
+
     # LLM fills gaps for these
-    for field in ("title", "location_name", "address", "start_date", "end_date", "categories"):
+    for field in ("title", "location_name", "address", "start_date", "end_date"):
         if llm_data.get(field) and not scraped.get(field):
             merged[field] = llm_data[field]
 
