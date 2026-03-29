@@ -83,16 +83,27 @@ def run(source_name, limit=0, skip_enriched=True):
 
             time.sleep(5)  # respect rate limits (~20 RPM for gemini-3-flash)
 
+        except requests.exceptions.HTTPError as e:
+            if e.response is not None and e.response.status_code in (403, 404, 410):
+                events[i] = None  # mark for removal
+                errors += 1
+                print(f"    🗑 Removed (HTTP {e.response.status_code})")
+            else:
+                errors += 1
+                events[i]["_broken"] = str(e)[:100]
+                print(f"    ✗ {e}")
         except Exception as e:
             errors += 1
             events[i]["_broken"] = str(e)[:100]
             print(f"    ✗ {e}")
 
-    print(f"\nDone: {enriched} enriched, {errors} errors, {skipped} skipped")
+    events = [ev for ev in events if ev is not None]
+    removed = len(json.load(open(path))) - len(events) if os.path.exists(path) else 0
+    print(f"\nDone: {enriched} enriched, {errors} errors, {skipped} skipped, {removed} removed")
 
     with open(path, "w") as f:
         json.dump(events, f, indent=2, ensure_ascii=False, default=str)
-    print(f"Saved to {path}")
+    print(f"Saved {len(events)} events to {path}")
 
 
 if __name__ == "__main__":
