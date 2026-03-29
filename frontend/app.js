@@ -951,7 +951,7 @@ function getFilteredDayEvents() {
     filtered.sort((a, b) => {
       const ta = a.start_time || "99:99";
       const tb = b.start_time || "99:99";
-      return ta.localeCompare(tb);
+      return ta.localeCompare(tb) || a.title.localeCompare(b.title);
     });
   }
   return filtered;
