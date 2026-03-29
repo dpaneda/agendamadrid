@@ -17,18 +17,21 @@ _RECURRENCE_DAY_MAP = {
 
 # Map @type URIs to our canonical categories
 TYPE_MAP = {
-    # Cultural
-    "Exposiciones": "exposiciones",
-    "ProgramacionDestacadaAgendaCultura": "destacado",
+    # Artes escénicas
     "TeatroPerformance": "teatro",
-    "Musica": "musica",
     "DanzaBaile": "danza",
+    "CircoMagia": "circo",
+    # Música
+    "Musica": "conciertos",
+    "Recitales": "conciertos",
+    # Audiovisual
     "CineCortometrajes": "cine",
     "CineActividadesAudiovisuales": "cine",
     "CineFiccion": "cine",
+    # Arte y cultura
+    "Exposiciones": "exposiciones",
+    "ProgramacionDestacadaAgendaCultura": "destacado",
     "ConferenciasColoquios": "conferencias",
-    "Recitales": "musica",
-    "CircoMagia": "circo",
     # Bibliotecas / literatura
     "ActividadesBibliotecas": "literatura",
     "ClubesLectura": "literatura",
@@ -57,8 +60,8 @@ TYPE_MAP = {
     "FiestasSemanaSanta": "fiestas",
     "Fiestas": "fiestas",
     "Festivales": "fiestas",
-    # Gastronomia
-    "Gastronomia": "gastronomia",
+    # Gastronomía
+    "Gastronomia": "gastronomía",
     # Otros
     "1ciudad21distritos": "otros",
     "ActividadesCalleArteUrbano": "otros",

@@ -1,19 +1,19 @@
 [
   {
     "title": "Festival Teatralia 2026",
-    "description": "El festival celebra una nueva edición acogiendo espectáculos que combinan teatro, títeres, circo, videocreación y performance (Varios espacios. 6 a 29 marzo).",
+    "description": "Festival internacional de artes escénicas que ofrece espectáculos de teatro, títeres, circo y danza para todos los públicos. La programación reúne creaciones nacionales e internacionales que exploran géneros contemporáneos como la videocreación y la performance.",
     "url": "https://www.madrid.org/teatralia/2026/index.html",
     "price": "Consultar página oficial",
     "source_url": "https://www.esmadrid.com/agenda/teatralia",
     "source": "esmadrid",
     "categories": [
-      "infantil",
       "teatro",
-      "danza",
-      "circo"
+      "infantil"
     ],
     "start_date": "2026-03-28",
-    "end_date": "2026-03-29"
+    "end_date": "2026-03-29",
+    "location_name": "Varios espacios",
+    "_enriched": true
   },
   {
     "title": "Imágenes al vuelo",
@@ -49,13 +49,13 @@
   },
   {
     "title": "Villanos del Jazz",
-    "description": "Programación con lo mejor del jazz a lo largo del año con formato festival en octubre y noviembre (Sede principal: Sala Villanos. Consultar programación).",
+    "description": "Ciclo musical que presenta a figuras consagradas y nuevos talentos para popularizar géneros como el jazz fusión, flamenco, bossa nova y mestizaje. Su propuesta ecléctica e inclusiva busca eliminar las etiquetas elitistas asociadas tradicionalmente al género.",
     "url": "https://villanosdeljazz.es/",
     "price": "Consultar página oficial",
     "source_url": "https://www.esmadrid.com/agenda/villanos-jazz",
     "source": "esmadrid",
     "categories": [
-      "musica"
+      "música"
     ],
     "image": "images/events/c7fac6fa64cb.jpg",
     "location_name": "Sala Villanos",
@@ -63,18 +63,18 @@
     "latitude": 40.404034,
     "longitude": -3.699996,
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "_enriched": true
   },
   {
     "title": "La conspiración judeo-masónica. La construcción de un mito",
-    "description": "Exposición que aporta una mirada crítica para romper con los relatos conspirativos del pasado sobre la conspiración judeo-masónica (Centro Sefarad-Israel. Hasta 31 marzo 2026).",
+    "description": "Esta exposición ofrece una mirada crítica sobre la construcción y expansión del mito franquista de la conspiración judeo-masónica. A través de numeroso material de época, invita a reflexionar sobre cómo estos relatos del pasado siguen influyendo en el presente.",
     "url": "https://www.sefarad-israel.es/exposiciones/la-conspiracion-judeo-masonica/",
-    "price": "Entrada libre",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/conspiracion-judeo-masonica-construccion-mito-centro-sefarad-israel",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "location_name": "Centro Sefarad-Israel",
     "address": "Mayor, 69",
@@ -83,19 +83,41 @@
     "start_date": "2026-03-30",
     "end_date": "2026-04-10",
     "start_time": "10:30:00",
-    "end_time": "20:00:00"
+    "end_time": "20:00:00",
+    "schedule": {
+      "0": [
+        "10:30:00",
+        "20:00:00"
+      ],
+      "1": [
+        "10:30:00",
+        "20:00:00"
+      ],
+      "2": [
+        "10:30:00",
+        "20:00:00"
+      ],
+      "3": [
+        "10:30:00",
+        "20:00:00"
+      ],
+      "4": [
+        "10:30:00",
+        "20:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "El sueño de la razón. Del Siglo de las Luces a la inteligencia artificial",
-    "description": "Recorrido que va desde el uso del dibujo y el grabado como forma científica de representar el mundo hasta el nacimiento de la fotografía (Espacio Fundación Telefónica. Hasta 5 abr).",
+    "description": "Exposición que recorre la evolución de la representación del mundo desde el grabado y la fotografía pionera hasta las instalaciones generadas por inteligencia artificial. La muestra explora cómo la tecnología, desde el dibujo científico hasta el big data, transforma nuestra forma de ver y conocer la realidad.",
     "url": "https://espacio.fundaciontelefonica.com/evento/el-sueno-de-la-razon-del-siglo-de-las-luces-a-la-inteligencia-artificial/",
-    "price": "Entrada libre.\nVisitas comentadas: gratuitas, previa reserva",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/sueno-razon-siglo-luces-inteligencia-artificial-espacio-fundacion-telefonica",
     "source": "esmadrid",
     "categories": [
       "exposiciones",
-      "fotografia",
-      "gratis"
+      "fotografía"
     ],
     "image": "images/events/b80d153a9c6c.jpg",
     "location_name": "Espacio Fundación Telefónica",
@@ -105,26 +127,53 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-05",
     "start_time": "11:00:00",
-    "end_time": "20:00:00"
+    "end_time": "20:00:00",
+    "schedule": {
+      "1": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "5": [
+        "11:00:00",
+        "20:00:00"
+      ],
+      "6": [
+        "11:00:00",
+        "20:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Real Teatro de Retiro",
-    "description": "Un proyecto que reúne conciertos didácticos, historias musicales con proyecciones, teatro y música para toda la familia (Centro Cultural Daoíz y Velarde. 28 sept a 6 jul 2026.",
+    "description": "Un proyecto que reúne conciertos didácticos, historias musicales con proyecciones, teatro y música para toda la familia. Busca promover el acceso a la cultura y ofrecer experiencias artísticas para el público infantil y juvenil.",
     "url": "https://www.realteatroderetiro.es/",
-    "price": "Público general:\n\nAdultos: 20 €\nNiños y jóvenes hasta 16 años: 15 €\n\nColegios y centros educativos: Precio único: 12 €\nConsultar programación",
+    "price": "20 €",
     "source_url": "https://www.esmadrid.com/agenda/real-teatro-retiro-centro-cultural-daoiz-velarde",
     "source": "esmadrid",
     "categories": [
-      "musica",
       "infantil",
-      "teatro"
+      "música"
     ],
     "location_name": "Centro Cultural Daoíz y Velarde",
     "address": "de Daoíz y Velarde, 4",
     "latitude": 40.4015359,
     "longitude": -3.6773107,
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "_enriched": true
   },
   {
     "title": "Avatar: The Experience",

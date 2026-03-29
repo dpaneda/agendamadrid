@@ -1,22 +1,23 @@
 """Canonical category set. All crawlers must map to these."""
 
 CATEGORIES = {
-    "musica",
     "teatro",
+    "monólogos",
     "danza",
+    "circo",
+    "conciertos",
+    "ópera",
     "cine",
     "exposiciones",
-    "conferencias",
+    "literatura",
     "talleres",
+    "conferencias",
+    "visitas guiadas",
     "infantil",
     "deportes",
     "fiestas",
-    "visitas guiadas",
-    "circo",
-    "literatura",
-    "fotografia",
     "mercados",
-    "gastronomia",
+    "gastronomía",
     "otros",
 }
 
@@ -30,7 +31,19 @@ TAGS = {
 
 ALL_VALID = CATEGORIES | TAGS
 
+# Migration map: old category -> new category
+MIGRATION = {
+    "musica": "conciertos",
+    "fotografia": "exposiciones",
+    "gastronomia": "gastronomía",
+}
+
 
 def normalize(raw_categories: list[str]) -> list[str]:
-    """Filter to only valid categories/tags, deduplicated."""
-    return list(dict.fromkeys(c for c in raw_categories if c in ALL_VALID))
+    """Filter to only valid categories/tags, deduplicated. Migrates old names."""
+    result = []
+    for c in raw_categories:
+        c = MIGRATION.get(c, c)
+        if c in ALL_VALID:
+            result.append(c)
+    return list(dict.fromkeys(result))

@@ -268,23 +268,28 @@ const MONTHS_ES = [
 const DAYS_LONG = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
 
 const CATEGORY_LABELS = {
-  "musica": "música",
   "teatro": "teatro",
+  "monólogos": "monólogos",
   "danza": "danza",
+  "circo": "circo",
+  "conciertos": "conciertos",
+  "ópera": "ópera",
   "cine": "cine",
   "exposiciones": "exposiciones",
-  "conferencias": "conferencias",
+  "literatura": "literatura",
   "talleres": "talleres",
+  "conferencias": "conferencias",
+  "visitas guiadas": "visitas guiadas",
   "infantil": "infantil",
   "deportes": "deportes",
   "fiestas": "fiestas",
-  "visitas guiadas": "visitas guiadas",
-  "circo": "circo",
-  "literatura": "literatura",
-  "fotografia": "fotografía",
   "mercados": "mercados",
-  "gastronomia": "gastronomía",
+  "gastronomía": "gastronomía",
   "otros": "otros",
+  // Legacy
+  "musica": "música",
+  "fotografia": "fotografía",
+  "gastronomia": "gastronomía",
 };
 
 const SOURCE_LABELS = {
@@ -294,7 +299,7 @@ const SOURCE_LABELS = {
 };
 
 const EXCLUDED_CATS = new Set(["gratis", "destacado", "aire libre", "accesible"]);
-const CAT_PRIORITY = ["fotografia","circo","cine","danza","gastronomia","deportes","infantil","mercados","fiestas","musica","teatro","talleres","conferencias","literatura","visitas guiadas","exposiciones"];
+const CAT_PRIORITY = ["monólogos","ópera","circo","cine","danza","gastronomía","deportes","infantil","mercados","fiestas","conciertos","teatro","talleres","conferencias","literatura","visitas guiadas","exposiciones","musica","fotografia","gastronomia"];
 
 function eventBadges(ev, cls) {
   const price = ev.price || "";
@@ -689,23 +694,28 @@ function locateUser() {
 }
 
 const CAT_ICONS = {
-  musica:          { emoji: "🎵", color: "#7C3AED" },
   teatro:          { emoji: "🎭", color: "#1D4ED8" },
+  "monólogos":     { emoji: "😂", color: "#7C3AED" },
+  danza:           { emoji: "💃", color: "#DB2777" },
+  circo:           { emoji: "🤹", color: "#BE185D" },
+  conciertos:      { emoji: "🎵", color: "#7C3AED" },
+  "ópera":         { emoji: "🎼", color: "#4338CA" },
+  cine:            { emoji: "🎬", color: "#374151" },
   exposiciones:    { emoji: "🏛️", color: "#0891B2" },
+  literatura:      { emoji: "📖", color: "#7C2D12" },
+  talleres:        { emoji: "🔨", color: "#92400E" },
+  conferencias:    { emoji: "🎤", color: "#4338CA" },
+  "visitas guiadas": { emoji: "🗺️", color: "#1E40AF" },
   infantil:        { emoji: "🧸", color: "#F59E0B" },
   deportes:        { emoji: "⚽", color: "#16A34A" },
-  danza:           { emoji: "💃", color: "#DB2777" },
-  cine:            { emoji: "🎬", color: "#374151" },
-  gastronomia:     { emoji: "🍽️", color: "#EA580C" },
   fiestas:         { emoji: "🎉", color: "#DC2626" },
-  talleres:        { emoji: "🔨", color: "#92400E" },
   mercados:        { emoji: "🛒", color: "#15803D" },
-  "visitas guiadas": { emoji: "🗺️", color: "#1E40AF" },
-  conferencias:    { emoji: "🎤", color: "#4338CA" },
-  fotografia:      { emoji: "📷", color: "#6B7280" },
-  literatura:      { emoji: "📖", color: "#7C2D12" },
-  circo:           { emoji: "🤹", color: "#BE185D" },
+  "gastronomía":   { emoji: "🍽️", color: "#EA580C" },
   otros:           { emoji: "📌", color: "#6B7280" },
+  // Legacy aliases
+  musica:          { emoji: "🎵", color: "#7C3AED" },
+  fotografia:      { emoji: "🏛️", color: "#0891B2" },
+  gastronomia:     { emoji: "🍽️", color: "#EA580C" },
 };
 
 
