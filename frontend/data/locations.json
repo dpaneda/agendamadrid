@@ -1,9 +1,10 @@
 {
   "f749255f": {
     "location_name": "Fernán Gómez Centro Cultural de la Villa",
-    "address": "de Colón , 4",
-    "latitude": 40.424637345173,
-    "longitude": -3.689861297607
+    "address": "PLAZA COLON 4",
+    "district": "Salamanca",
+    "latitude": 40.4249721516942,
+    "longitude": -3.689948085098791
   },
   "2f2a8411": {
     "location_name": "Centro Cultural Casa de Vacas (Retiro)",
@@ -419,9 +420,10 @@
   },
   "2c103545": {
     "location_name": "Teatro Español",
-    "address": "del Príncipe, 25",
-    "latitude": 40.414945992798,
-    "longitude": -3.700187802315
+    "address": "CALLE PRINCIPE 25",
+    "district": "Centro",
+    "latitude": 40.414828532240946,
+    "longitude": -3.700164949543688
   },
   "3dc30559": {
     "location_name": "Centro Cultural Orcasur (Usera)",
@@ -732,9 +734,10 @@
   },
   "1f1e5d44": {
     "location_name": "Museo de San Isidro. Los Orígenes de Madrid",
-    "address": "de San Andrés, 2",
-    "latitude": 40.412148187254,
-    "longitude": -3.711002469063
+    "address": "PLAZA SAN ANDRES 2",
+    "district": "Centro",
+    "latitude": 40.41207900253883,
+    "longitude": -3.7108161027466378
   },
   "e42688b9": {
     "location_name": "Imprenta Municipal - Artes del libro",
@@ -820,11 +823,12 @@
     "latitude": 40.39245798191536,
     "longitude": -3.6972067902718897
   },
-  "41cfd2ba": {
-    "location_name": "Conde Duque",
-    "address": "del Conde Duque, 11",
-    "latitude": 40.427887,
-    "longitude": -3.710802
+  "bc288b4d": {
+    "location_name": "Salas de exposiciones Conde Duque",
+    "address": "CALLE CONDE DUQUE 9",
+    "district": "Centro",
+    "latitude": 40.425879483969005,
+    "longitude": -3.7116123357920823
   },
   "650e56e7": {
     "location_name": "Centro Cultural Quinta del Berro - Rafael Altamira (Salamanca)",
@@ -1057,12 +1061,6 @@
     "latitude": 40.371654294908154,
     "longitude": -3.692056897625109
   },
-  "da578583": {
-    "location_name": "Casa del Lector (Matadero)",
-    "address": "de la Chopera, 14",
-    "latitude": 40.3923033,
-    "longitude": -3.69743
-  },
   "49b7587a": {
     "location_name": "Espacio de Igualdad Gloria Fuertes. Vicálvaro",
     "address": "AVENIDA REAL 14",
@@ -1247,15 +1245,10 @@
   },
   "5989b7b0": {
     "location_name": "Museo ABC",
-    "address": "de Amaniel, 29",
-    "latitude": 40.4281043,
-    "longitude": -3.7097008
-  },
-  "0a572068": {
-    "location_name": "Auditorio y Sala de Exposiciones Paco de Lucía",
-    "address": "de Las Aguilas, 2",
-    "latitude": 40.3850545,
-    "longitude": -3.7642101
+    "address": "CALLE AMANIEL 29",
+    "district": "Centro",
+    "latitude": 40.42741340671151,
+    "longitude": -3.7095381101739444
   },
   "d87268b2": {
     "location_name": "Sala de Exposiciones Maruja Mallo (Retiro)",
@@ -1277,12 +1270,6 @@
     "district": "Salamanca",
     "latitude": 40.426826159507435,
     "longitude": -3.6825349481985135
-  },
-  "3fd83ca9": {
-    "location_name": "Nave 10 Matadero (antes Naves del Español)",
-    "address": "de la Chopera, 14",
-    "latitude": 40.391820782642,
-    "longitude": -3.697409033775
   },
   "c573f708": {
     "location_name": "Colegio Público Pradolongo",
@@ -1431,11 +1418,12 @@
     "latitude": 40.46903299144094,
     "longitude": -3.6976620067964996
   },
-  "29d119f2": {
-    "location_name": "El silo de Hortaleza",
-    "address": "del Mar de las Antillas, 8 (Parque Huerta de la Salud)",
-    "latitude": 40.4753178,
-    "longitude": -3.6465498
+  "3166d913": {
+    "location_name": "Silo de Hortaleza",
+    "address": "CALLE MAR DE LAS ANTILLAS 8",
+    "district": "Hortaleza",
+    "latitude": 40.47484735634347,
+    "longitude": -3.645543866498554
   },
   "0fd52b7f": {
     "location_name": "Centro Cultural Sanchinarro (Hortaleza)",
@@ -1696,6 +1684,12 @@
     "address": "de Alfonso XII, 68",
     "latitude": 40.4077713,
     "longitude": -3.6890236
+  },
+  "41cfd2ba": {
+    "location_name": "Conde Duque",
+    "address": "del Conde Duque, 11",
+    "latitude": 40.427887,
+    "longitude": -3.710802
   },
   "bebd45c9": {
     "location_name": "Museo Nacional de Ciencias Naturales",
@@ -2033,6 +2027,12 @@
     "address": "del General Martínez Campos, 9",
     "latitude": 40.4351546,
     "longitude": -3.6971056
+  },
+  "da578583": {
+    "location_name": "Casa del Lector (Matadero)",
+    "address": "de la Chopera, 14",
+    "latitude": 40.3923033,
+    "longitude": -3.69743
   },
   "1e8020f3": {
     "location_name": "Teatro Bellas Artes",

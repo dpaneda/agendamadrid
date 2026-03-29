@@ -138,9 +138,9 @@ def run():
                 from datetime import timedelta
                 today_dt = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
                 max_dt = today_dt + timedelta(days=30)
-                d = max(datetime.strptime(start_date, "%Y-%m-%d"), today_dt)
+                start_dt = datetime.strptime(start_date, "%Y-%m-%d")
                 end_d = min(datetime.strptime(end_date, "%Y-%m-%d"), max_dt)
-                d += timedelta(days=1)
+                d = max(start_dt + timedelta(days=1), today_dt)
                 while d <= end_d:
                     ds = d.strftime("%Y-%m-%d")
                     if ds not in calendar:
