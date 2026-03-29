@@ -23,7 +23,10 @@ IMG_DIR = os.path.join(os.path.dirname(__file__), "..", "frontend", "images", "e
 MAX_WIDTH = 400
 QUALITY = 80
 TIMEOUT = 15
-HEADERS = {}
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Referer": "https://www.esmadrid.com/",
+}
 
 
 def img_filename(url):
