@@ -427,6 +427,24 @@ def _parse_event_page(url, _enrich=False):
         except Exception as e:
             print(f"    LLM enrich failed: {e}")
 
+        # Fallback: if still no schedule, try the destination URL
+        event_url_val = event.get("url")
+        if (not event.get("schedule") and not event.get("start_time")
+                and event_url_val and event_url_val != url):
+            try:
+                from crawlers.llm_enrich import enrich as llm_enrich
+                dest_html = _fetch(event_url_val).text
+                llm_fallback = llm_enrich(dest_html)
+                if llm_fallback and llm_fallback.get("schedule"):
+                    event["schedule"] = llm_fallback["schedule"]
+                    # Derive start_time from schedule
+                    all_times = [t for times in llm_fallback["schedule"].values() for t in times]
+                    if all_times:
+                        event["start_time"] = sorted(all_times)[0]
+                    print(f"    LLM fallback (dest URL): got schedule for {title[:40]}")
+            except Exception as e:
+                print(f"    LLM fallback failed: {e}")
+
     return event
 
 
