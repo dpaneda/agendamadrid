@@ -23,7 +23,8 @@ PROMPT = """Extrae datos estructurados de esta página web de un evento en Madri
   "start_date": "string - formato YYYY-MM-DD, primer día del evento",
   "end_date": "string - formato YYYY-MM-DD, último día, o null si es un solo día",
   "schedule": "objeto con los días y horarios. Busca tablas de horario, secciones 'horario', 'cuándo', 'apertura'. Formato: {'L': '10:00-20:00', 'M': '10:00-20:00', ...} usando L,M,X,J,V,S,D para los días. Si el horario es el mismo todos los días pon {'todos': '10:00-20:00'}. null solo si no hay ninguna información de horario",
-  "categories": ["EXACTAMENTE una o dos de: música, teatro, exposiciones, danza, cine, infantil, talleres, deportes, fiestas, visitas guiadas, conferencias, literatura, gastronomía, circo, fotografía, mercados, otros"]
+  "categories": ["EXACTAMENTE una o dos de: música, teatro, exposiciones, danza, cine, infantil, talleres, deportes, fiestas, visitas guiadas, conferencias, literatura, gastronomía, circo, fotografía, mercados, otros"],
+  "is_multi_event": "boolean - true si es un festival, ciclo o programación con múltiples eventos/espectáculos dentro (ej: festivales, temporadas, ciclos de conciertos). false si es un evento único"
 }
 
 REGLAS:
@@ -148,6 +149,9 @@ def enrich(html, retries=2):
             if sched:
                 result["schedule"] = sched
 
+            if data.get("is_multi_event"):
+                result["is_multi_event"] = True
+
             return result
 
         except json.JSONDecodeError:
@@ -190,5 +194,8 @@ def merge_llm_data(scraped, llm_data):
     for field in ("title", "location_name", "address", "start_date", "end_date"):
         if llm_data.get(field) and not scraped.get(field):
             merged[field] = llm_data[field]
+
+    if llm_data.get("is_multi_event"):
+        merged["is_multi_event"] = True
 
     return merged
