@@ -210,7 +210,7 @@ def _get_event_urls_for_date(date):
     return list(dict.fromkeys(urls))  # dedupe preserving order
 
 
-def _parse_event_page(url):
+def _parse_event_page(url, _enrich=False):
     """Scrape a single event page for structured data."""
     resp = _fetch(url)
     html = resp.text
@@ -376,7 +376,7 @@ def _parse_event_page(url):
         except ValueError:
             pass
 
-    return {
+    event = {
         "title": title,
         "description": description or None,
         "start_date": start_date,
@@ -398,14 +398,26 @@ def _parse_event_page(url):
         "schedule": schedule,
     }
 
+    if _enrich:
+        try:
+            from crawlers.llm_enrich import enrich, merge_llm_data
+            llm_data = enrich(html)
+            if llm_data:
+                event = merge_llm_data(event, llm_data)
+                print(f"    LLM enriched: {title[:40]}")
+        except Exception as e:
+            print(f"    LLM enrich failed: {e}")
+
+    return event
+
 
 class EsMadridCrawler(BaseCrawler):
     name = "esmadrid"
 
-    def crawl(self) -> list[dict]:
-        return self.crawl_incremental(set())
+    def crawl(self, enrich=False) -> list[dict]:
+        return self.crawl_incremental(set(), enrich=enrich)
 
-    def crawl_incremental(self, known_urls: set) -> list[dict]:
+    def crawl_incremental(self, known_urls: set, enrich=False) -> list[dict]:
         today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
         days_ahead = 14
         events = []
@@ -429,9 +441,10 @@ class EsMadridCrawler(BaseCrawler):
             # Split into cached and uncached
             urls_to_fetch = [u for u in new_urls if u not in seen_urls]
 
+            _enrich = enrich
             def fetch_one(url):
                 try:
-                    ev = _parse_event_page(url)
+                    ev = _parse_event_page(url, _enrich=_enrich)
                     time.sleep(CRAWL_DELAY)
                     return url, ev
                 except Exception as e:
