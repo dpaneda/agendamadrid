@@ -476,3 +476,7 @@ class EsMadridCrawler(BaseCrawler):
 
         print(f"  Total: {len(events)} events across {days_ahead} days, scraped {len(seen_urls)} unique pages")
         return events
+
+
+if __name__ == "__main__":
+    EsMadridCrawler().run()

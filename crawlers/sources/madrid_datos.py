@@ -190,3 +190,7 @@ class _MadridDatosBase(BaseCrawler):
 class MadridDatosAgendaGeneralCrawler(_MadridDatosBase):
     name = "madrid_agenda"
     json_url = "https://datos.madrid.es/egob/catalogo/300107-0-agenda-actividades-eventos.json"
+
+
+if __name__ == "__main__":
+    MadridDatosAgendaGeneralCrawler().run()
