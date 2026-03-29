@@ -1033,11 +1033,7 @@ function _eventCommon(ev) {
     const isLocActive = activeLocation === location;
     const locClass = ` location-clickable${isLocActive ? ' location-active' : ''}`;
     const locClick = ` onclick="event.preventDefault(); event.stopPropagation(); toggleLocation('${esc(location)}')"`;
-    const mapsUrl = ev.latitude && ev.longitude
-      ? `https://www.google.com/maps/search/?api=1&query=${ev.latitude},${ev.longitude}`
-      : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location + ', Madrid')}`;
-    const mapsLink = `<a class="location-maps" href="${mapsUrl}" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Ver en Google Maps">📍</a>`;
-    locationHtml = `<div class="event-location${locClass}"${locClick}>${mapsLink} ${esc(location)}${distStr ? `<span class="location-dist">${distStr}</span>` : ""}</div>`;
+    locationHtml = `<div class="event-location${locClass}"${locClick}><span class="location-pin">📍</span> ${esc(location)}${distStr ? `<span class="location-dist">${distStr}</span>` : ""}</div>`;
   }
   return { timeStr, location, title, imgSrc, isFav, locationHtml };
 }
@@ -1060,7 +1056,7 @@ function renderEventDesktop(ev) {
     const label = SOURCE_LABELS[mainSource] || mainSource;
     const sourceUrl = ev.source_url || "";
     if (sourceUrl) {
-      return `<a class="tag tag-source tag-link" href="${esc(sourceUrl)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${esc(label)}</a>`;
+      return `<span class="tag tag-source tag-link" onclick="event.preventDefault(); event.stopPropagation(); window.open('${esc(sourceUrl)}', '_blank')">${esc(label)}</span>`;
     }
     return `<span class="tag tag-source">${esc(label)}</span>`;
   })() : "";
