@@ -55,7 +55,7 @@ def run(source_name, limit=0, skip_enriched=True):
             continue
 
         title = ev.get("title", "???")
-        print(f"  [{enriched+1}/{limit or '∞'}] {title[:50]}...")
+        print(f"\n  [{enriched+1}/{limit or '∞'}] {title}")
 
         try:
             resp = requests.get(url, timeout=15, headers=HEADERS)
@@ -67,10 +67,22 @@ def run(source_name, limit=0, skip_enriched=True):
                 events[i] = merge_llm_data(ev, llm_data)
                 events[i]["_enriched"] = True
                 enriched += 1
-                print(f"    OK: price={llm_data.get('price')}, schedule={'yes' if llm_data.get('schedule') else 'no'}")
+                parts = []
+                if llm_data.get("price"):
+                    parts.append(f"price={llm_data['price']}")
+                if llm_data.get("schedule"):
+                    days = list(llm_data["schedule"].keys())
+                    parts.append(f"schedule={len(days)} days")
+                if llm_data.get("categories"):
+                    parts.append(f"cats={','.join(llm_data['categories'])}")
+                if llm_data.get("is_multi_event"):
+                    parts.append("MULTI-EVENT")
+                if llm_data.get("description"):
+                    parts.append(f"desc={llm_data['description'][:80]}...")
+                print(f"    ✓ {' | '.join(parts) or 'no new data'}")
             else:
                 errors += 1
-                print(f"    No LLM data returned")
+                print(f"    ✗ No LLM data returned")
 
             time.sleep(4)  # respect rate limits (~15 RPM)
 
