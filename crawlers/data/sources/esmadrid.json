@@ -1,61 +1,73 @@
 [
   {
     "title": "Festival Teatralia 2026",
-    "description": "Festival internacional de artes escénicas que ofrece espectáculos de teatro, títeres, circo y danza para todos los públicos. La programación reúne creaciones nacionales e internacionales que exploran géneros contemporáneos como la videocreación y la performance.",
+    "description": "El festival presenta una selección de artes escénicas que integran teatro, títeres, circo, danza y performance. La programación incluye propuestas internacionales y nacionales dirigidas a públicos de todas las edades.",
     "url": "https://www.madrid.org/teatralia/2026/index.html",
     "price": "Consultar página oficial",
     "source_url": "https://www.esmadrid.com/agenda/teatralia",
     "source": "esmadrid",
     "categories": [
       "teatro",
-      "infantil"
+      "danza"
     ],
     "start_date": "2026-03-28",
     "end_date": "2026-03-29",
     "location_name": "Varios espacios",
+    "is_multi_event": true,
     "_enriched": true
   },
   {
-    "title": "Imágenes al vuelo",
-    "description": "Exposición que ofrece un recorrido por la historia de la fotografía aérea en España (Instituto Geográfico Nacional. Hasta 20 marzo 2026).",
-    "url": "https://www.ign.es/web/ign/portal/ic-salas-expo-madrid-2025",
-    "price": "Visita libre y gratuita sin reserva previa\nCita previa para visitas guiadas e información: reservas@cnig.es",
-    "source_url": "https://www.esmadrid.com/agenda/imagenes-vuelo-instituto-geografico-nacional",
-    "source": "esmadrid",
-    "categories": [
-      "exposiciones",
-      "fotografia",
-      "gratis"
-    ],
-    "image": "images/events/b212db9e63f5.jpg"
-  },
-  {
     "title": "La aventura valdrá la pena. 150 años de las misiones salesianas",
-    "description": "El ciclo expositivo recorre la historia y actualidad de la misión salesiana con cuatro muestras culturales y antropológicas (Museo Misiones Salesianas. Hasta 31 julio 2026).",
+    "description": "Ciclo expositivo compuesto por cuatro muestras culturales y antropológicas que recorren la historia y actualidad de la misión salesiana. La programación incluye homenajes a figuras misioneras, memoria de comunidades originarias y una reflexión sobre la fragilidad del planeta.",
     "url": "https://150aniversario.museomisionessalesianas.org/",
-    "price": "Reserva de entrada gratuita",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/aventura-valdra-pena-150-anos-misiones-salesianas-museo-misiones-salesianas",
     "source": "esmadrid",
     "categories": [
       "exposiciones",
-      "fotografia",
-      "gratis"
+      "otros"
     ],
     "image": "images/events/2ea35d6ce0dd.jpg",
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "14:00:00"
+    "end_time": "14:00:00",
+    "schedule": {
+      "1": [
+        "10:00:00",
+        "14:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "14:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "14:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "14:00:00"
+      ]
+    },
+    "location_name": "Museo Misiones Salesianas",
+    "address": "Lisboa, 4",
+    "is_multi_event": true,
+    "_enriched": true
   },
   {
     "title": "Villanos del Jazz",
-    "description": "Ciclo musical que presenta a figuras consagradas y nuevos talentos para popularizar géneros como el jazz fusión, flamenco, bossa nova y mestizaje. Su propuesta ecléctica e inclusiva busca eliminar las etiquetas elitistas asociadas tradicionalmente al género.",
+    "description": "Ciclo musical que presenta actuaciones de jazz nacional e internacional con el objetivo de acercar este género a todos los públicos. La programación incluye figuras consagradas, nuevos talentos y diversas variantes del jazz, incluyendo el jazz fusión, flamenco y cubano.",
     "url": "https://villanosdeljazz.es/",
     "price": "Consultar página oficial",
     "source_url": "https://www.esmadrid.com/agenda/villanos-jazz",
     "source": "esmadrid",
     "categories": [
-      "música"
+      "conciertos"
     ],
     "image": "images/events/c7fac6fa64cb.jpg",
     "location_name": "Sala Villanos",
@@ -64,17 +76,19 @@
     "longitude": -3.699996,
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
+    "is_multi_event": true,
     "_enriched": true
   },
   {
     "title": "La conspiración judeo-masónica. La construcción de un mito",
-    "description": "Esta exposición ofrece una mirada crítica sobre la construcción y expansión del mito franquista de la conspiración judeo-masónica. A través de numeroso material de época, invita a reflexionar sobre cómo estos relatos del pasado siguen influyendo en el presente.",
+    "description": "Exposición que analiza los mecanismos propagandísticos y la construcción del mito franquista sobre la conspiración judeo-masónica mediante carteles, caricaturas y documentos. La muestra invita a una reflexión crítica sobre los discursos del odio y el antisemitismo histórico en España.",
     "url": "https://www.sefarad-israel.es/exposiciones/la-conspiracion-judeo-masonica/",
     "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/conspiracion-judeo-masonica-construccion-mito-centro-sefarad-israel",
     "source": "esmadrid",
     "categories": [
-      "exposiciones"
+      "exposiciones",
+      "otros"
     ],
     "location_name": "Centro Sefarad-Israel",
     "address": "Mayor, 69",
@@ -110,14 +124,13 @@
   },
   {
     "title": "El sueño de la razón. Del Siglo de las Luces a la inteligencia artificial",
-    "description": "Exposición que recorre la evolución de la representación del mundo desde el grabado y la fotografía pionera hasta las instalaciones generadas por inteligencia artificial. La muestra explora cómo la tecnología, desde el dibujo científico hasta el big data, transforma nuestra forma de ver y conocer la realidad.",
+    "description": "La exposición traza un recorrido que va desde el uso del dibujo y el grabado científico hasta el nacimiento de la fotografía y su evolución actual. La muestra explora cómo las nuevas tecnologías y la inteligencia artificial generativa configuran nuevas formas de conocimiento y visión del mundo.",
     "url": "https://espacio.fundaciontelefonica.com/evento/el-sueno-de-la-razon-del-siglo-de-las-luces-a-la-inteligencia-artificial/",
     "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/sueno-razon-siglo-luces-inteligencia-artificial-espacio-fundacion-telefonica",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "fotografía"
+      "exposiciones"
     ],
     "image": "images/events/b80d153a9c6c.jpg",
     "location_name": "Espacio Fundación Telefónica",
@@ -158,14 +171,14 @@
   },
   {
     "title": "Real Teatro de Retiro",
-    "description": "Un proyecto que reúne conciertos didácticos, historias musicales con proyecciones, teatro y música para toda la familia. Busca promover el acceso a la cultura y ofrecer experiencias artísticas para el público infantil y juvenil.",
+    "description": "Un proyecto que reúne conciertos didácticos, ópera, danza, teatro y música para toda la familia. La iniciativa busca acercar las artes escénicas a niños y jóvenes mediante una extensa programación anual.",
     "url": "https://www.realteatroderetiro.es/",
-    "price": "20 €",
+    "price": "15 €",
     "source_url": "https://www.esmadrid.com/agenda/real-teatro-retiro-centro-cultural-daoiz-velarde",
     "source": "esmadrid",
     "categories": [
-      "infantil",
-      "música"
+      "teatro",
+      "conciertos"
     ],
     "location_name": "Centro Cultural Daoíz y Velarde",
     "address": "de Daoíz y Velarde, 4",
@@ -173,37 +186,43 @@
     "longitude": -3.6773107,
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
+    "is_multi_event": true,
     "_enriched": true
   },
   {
     "title": "Avatar: The Experience",
-    "description": "Un recorrido a través de nueve zonas inmersivas inspiradas en la obra maestra cinematográfica de James Cameron (Espacio Delicias. Hasta 19 abr).",
+    "description": "Una experiencia inmersiva que recrea el universo cinematográfico de James Cameron mediante tecnología interactiva, animatrónica y diseño de vanguardia. Los visitantes pueden explorar entornos bioluminiscentes y sumergirse en la cultura del pueblo Na'vi en un recorrido por nueve zonas temáticas.",
     "url": "https://avatartheexperience.com/",
-    "price": "Entrada general (+3 años): 18 €\nEntrada premium (Fast Pass + poster): 27 €\nEntrada reducida / Pack Familia & Amigos: 16 €\nEntrada gratuita: menores de 3 años",
+    "price": "18 €",
     "source_url": "https://www.esmadrid.com/agenda/avatar-experience-espacio-delicias",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "location_name": "Espacio Delicias",
     "address": "de las Delicias, 61",
     "latitude": 40.397883697556,
     "longitude": -3.688788414002,
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "schedule": {
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": []
+    },
+    "_enriched": true
   },
   {
     "title": "Miluca Sanz. Estratos. La inmortalidad de lo efímero",
-    "description": "Exposición que reúne en formato audiovisual una selección de los conocidos diarios de la artista (CentroCentro. 23 oct a 26 abr).",
+    "description": "Exposición que reúne en formato audiovisual una selección de diarios de la artista Miluca Sanz, inspirados en la poética de lo cotidiano y lo efímero. La muestra incluye una instalación de objetos y fotografías que propone una arqueología personal de la ciudad.",
     "url": "https://www.centrocentro.org/exposicion/miluca-sanz-estratos",
-    "price": "Entrada gratuita",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/miluca-sanz-estratos-inmortalidad-lo-efimero-centrocentro",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "fotografia",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/a26dea6fe315.jpg",
     "location_name": "CentroCentro",
@@ -213,19 +232,44 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "20:00:00"
+    "end_time": "20:00:00",
+    "schedule": {
+      "1": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "20:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Oriol Maspons",
-    "description": "Selección de obras del fotógrafo español considerado uno de los más activos e influyentes fotógrafos de la Escuela de Barcelona (Real Academia de Bellas Artes de San Fernando.",
+    "description": "Exposición que recorre la trayectoria de una de las figuras clave de la fotografía española contemporánea durante la segunda mitad del siglo XX. La muestra exhibe una selección de obras que reflejan la mirada directa y humana del autor en géneros como el reportaje social, el retrato y la fotografía de moda.",
     "url": "https://www.realacademiabellasartessanfernando.com/actividades/exposiciones/oriol-maspons/",
-    "price": "General: 10 € ( museo + Gabinete Goya + exposiciones)\nReducida: 5 € (consultar casos en web oficial)\nEntrada gratuita: acceso gratuito solo a la Colección Permanente de martes a viernes de 13:30 a 15:00 horas y los días 18 de mayo (Día Internacional de los Museos), 12 de octubre (Fiesta Nacional) y 6 de diciembre (Día de la Constitución). Consultar en web oficial otros casos de acceso gratuito.\nVisitas guiadas (grupos con guía voluntario): 5 €",
+    "price": "10 €",
     "source_url": "https://www.esmadrid.com/agenda/oriol-maspons-real-academia-bellas-artes-san-fernando",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "fotografia",
-      "gratis"
+      "exposiciones"
     ],
     "location_name": "Real Academia de Bellas Artes de San Fernando",
     "address": "de Alcalá, 13",
@@ -234,18 +278,48 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "15:00:00"
+    "end_time": "15:00:00",
+    "schedule": {
+      "0": [
+        "10:00:00",
+        "15:00:00"
+      ],
+      "1": [
+        "10:00:00",
+        "15:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "15:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "15:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "15:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "15:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "15:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Javier Garcerá. El pico al aire",
-    "description": "El espacio dialogará con esta gran instalación de pinturas, generando una experiencia inmersiva y sensorial para el público (CentroCentro. Hasta 3 may).",
+    "description": "Una gran instalación de pinturas que dialoga con el espacio generando una experiencia inmersiva y sensorial para el público. La muestra reflexiona sobre la vida vertiginosa y la mirada crítica a través de la poética visual del autor.",
     "url": "https://www.centrocentro.org/exposicion/javier-garcera",
-    "price": "Entrada gratuita",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/javier-garcera-pico-aire-centrocentro",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/4e07e648ae75.jpg",
     "location_name": "CentroCentro",
@@ -255,18 +329,44 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "20:00:00"
+    "end_time": "20:00:00",
+    "schedule": {
+      "1": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "20:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Corral Cervantes - Temporada Regular",
-    "description": "Esta nueva temporada incluye grandes obras clásicas como La dama boba, El perro del hortelano, Don Gil de las calzas verdes y La francesa Laura (Centro Cultural Casa del Relo",
+    "description": "Ciclo teatral centrado en la recuperación y difusión de grandes obras clásicas del Siglo de Oro español. El programa incluye representaciones de títulos emblemáticos en un formato de temporada regular durante varios meses.",
     "url": "https://corralcervantes.com/en-escena/",
     "price": "Consultar programación",
     "source_url": "https://www.esmadrid.com/agenda/corral-cervantes-temporada-regular",
     "source": "esmadrid",
     "categories": [
-      "teatro",
-      "danza"
+      "teatro"
     ],
     "image": "images/events/2ff8955cf736.jpg",
     "location_name": "Centro Cultural Casa del Reloj",
@@ -274,19 +374,49 @@
     "latitude": 40.394078,
     "longitude": -3.6994614,
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "schedule": {
+      "0": [
+        "20:00:00",
+        "21:30:00"
+      ],
+      "1": [
+        "20:00:00",
+        "21:30:00"
+      ],
+      "2": [
+        "20:00:00",
+        "21:30:00"
+      ],
+      "3": [
+        "20:00:00",
+        "21:30:00"
+      ],
+      "4": [
+        "20:00:00",
+        "21:30:00"
+      ],
+      "5": [
+        "20:00:00",
+        "21:30:00"
+      ],
+      "6": [
+        "20:00:00",
+        "21:30:00"
+      ]
+    },
+    "is_multi_event": true,
+    "_enriched": true
   },
   {
     "title": "Disney: The Exhibition. 100 Años de Magia",
-    "description": "Gran experiencia interactiva que incluye desde clásicos de Disney hasta los lanzamientos recientes de Marvel, Pixar y Star Wars (Fundación Canal Sala Castellana 214. Hasta 31 mayo).",
+    "description": "Gran exposición conmemorativa del centenario de The Walt Disney Company que recorre su historia a través de piezas originales, vestuario y atrezzo. Incluye instalaciones inmersivas y galerías temáticas dedicadas a sus grandes clásicos y a franquicias como Marvel, Pixar y Star Wars.",
     "url": "https://disney100exhibit.com/es/madrid/",
-    "price": "Desde 14,90 €\nMartes Mágicos: Precio especial para todos (excepto festivos y vísperas)\nEntrada infantil: Niños de 4 a 12 años. Se deberá acreditar en el acceso.\nEntrada gratuita: Niños menores de 4 años. Se deberá acreditar en el acceso.\nEntrada reducida: Todos los miércoles, jueves y viernes no festivos ni vísperas. Válida para mayores de 65 años, Carné Joven, discapacidad superior al 33% y familia numerosa. Se requerirá acreditación en el acceso\nPack familiar: Pack de 4 entradas, máximo 2 adultos",
+    "price": "Desde 14,90 €",
     "source_url": "https://www.esmadrid.com/agenda/disney-exhibition-100-anos-magia-fundacion-canal-sala-castellana-214",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "fotografia",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/9f95db21ab7f.jpg",
     "location_name": "Fundación Canal Sala Castellana 214",
@@ -296,18 +426,44 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "11:00:00",
-    "end_time": "21:00:00"
+    "end_time": "21:00:00",
+    "schedule": {
+      "1": [
+        "11:00:00",
+        "21:00:00"
+      ],
+      "2": [
+        "11:00:00",
+        "21:00:00"
+      ],
+      "3": [
+        "11:00:00",
+        "21:00:00"
+      ],
+      "4": [
+        "11:00:00",
+        "21:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "21:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Ester Partegàs. Arquitectura menor",
-    "description": "Amplia revisión del trabajo de la artista desarrollado durante las tres últimas décadas (Centro de Arte Dos de Mayo - CA2M. 14 feb a 14 jun)",
+    "description": "Exposición que ofrece una revisión del trabajo de la artista Ester Partegàs desarrollado durante las tres últimas décadas. La muestra presenta una mirada crítica sobre los espacios que habitamos y las formas invisibles de la arquitectura cotidiana.",
     "url": "https://ca2m.org/exposiciones/ester-partegas-arquitectura-menor",
-    "price": "Acceso gratuito",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/ester-partegas-arquitectura-menor-centro-arte-dos-mayo-ca2m",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/fb42c48a96d5.jpg",
     "location_name": "Centro de Arte Dos de Mayo (CA2M) / Móstoles",
@@ -317,18 +473,44 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "11:00:00",
-    "end_time": "21:00:00"
+    "end_time": "21:00:00",
+    "schedule": {
+      "1": [
+        "11:00:00",
+        "21:00:00"
+      ],
+      "2": [
+        "11:00:00",
+        "21:00:00"
+      ],
+      "3": [
+        "11:00:00",
+        "21:00:00"
+      ],
+      "4": [
+        "11:00:00",
+        "21:00:00"
+      ],
+      "5": [
+        "11:00:00",
+        "21:00:00"
+      ],
+      "6": [
+        "11:00:00",
+        "21:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Momentos. Un proyecto fotográfico de Antonio Liébana",
-    "description": "Exposición de Antonio Liébana que reúne 25 fotografías de gran formato tomadas en distintos rincones del planeta (B the travel brand Xperience Madrid. 15 ene a 20 mar).",
+    "description": "Exposición que reúne 25 fotografías de gran formato tomadas en distintos rincones del planeta. La muestra recopila instantes únicos de la naturaleza capturados a través de la trayectoria profesional del fotógrafo Antonio Liébana.",
     "url": "https://premium.btravel.com/momentos-un-proyecto-fotografico-de-antonio-liebana/",
-    "price": "Consultar página oficial",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/momentos-proyecto-fotografico-antonio-liebana-b-travel-brand-xperience-madrid",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "fotografia"
+      "exposiciones"
     ],
     "image": "images/events/c06708b5cba7.jpg",
     "location_name": "B the travel brand Xperience Madrid",
@@ -338,18 +520,40 @@
     "start_date": "2026-03-30",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "19:00:00"
+    "end_time": "19:00:00",
+    "schedule": {
+      "0": [
+        "10:00:00",
+        "19:00:00"
+      ],
+      "1": [
+        "10:00:00",
+        "19:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "19:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "19:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "19:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Victoria Eugenia",
-    "description": "Un viaje a través de la fascinante vida y legado de la reina Victoria Eugenia de Battenberg (Galería de las Colecciones Reales. Hasta 5 abr).",
+    "description": "Una exposición que recorre la fascinante vida y el legado humanitario de la reina Victoria Eugenia de Battenberg. La muestra reúne una amplia colección de obras, documentos, libros y fotografías que revisitan su figura en la corte española.",
     "url": "https://www.galeriadelascoleccionesreales.es/exposicion/victoria-eugenia/bde4b248-65e8-6cc8-44bb-6b91b6666366",
-    "price": "Entrada general: 14 €\nPrecio reducido: 7 €\nConsultar página oficial",
+    "price": "14 €",
     "source_url": "https://www.esmadrid.com/agenda/victoria-eugenia-galeria-colecciones-reales",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "fotografia"
+      "exposiciones"
     ],
     "image": "images/events/7ae34b85ebe3.jpg",
     "location_name": "Galería de las Colecciones Reales",
@@ -359,18 +563,48 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-05",
     "start_time": "10:00:00",
-    "end_time": "19:00:00"
+    "end_time": "19:00:00",
+    "schedule": {
+      "0": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "1": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "19:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Juguetes Reales",
-    "description": "Objetos relacionados con el ocio y el aprendizaje que formaron parte de la infancia de la monarquía española entre mediados del siglo XIX y el primer tercio del XX (Galería de las Colecciones Reale",
+    "description": "La exposición reúne una selección de objetos y juguetes relacionados con el ocio y el aprendizaje de la infancia de la monarquía española. A través de estas piezas, se ofrece una aproximación a la vida cotidiana de los miembros de la familia real entre el siglo XIX y el XX.",
     "url": "https://www.galeriadelascoleccionesreales.es/exposicion/juguetes-reales/067453c6-f34b-42d9-f0d3-993690226ada",
-    "price": "Tarifa básica: 14 €\nTarifa reducida: 7 €\nTarifa exposición: 8 €\nTarifa combinada: 24 € (Galería + Palacio Real)\nConsultar página oficial",
+    "price": "7 €",
     "source_url": "https://www.esmadrid.com/agenda/juguetes-reales-galeria-colecciones-reales",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "fotografia"
+      "exposiciones"
     ],
     "image": "images/events/5172b4b0cde6.jpg",
     "location_name": "Galería de las Colecciones Reales",
@@ -380,19 +614,48 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-05",
     "start_time": "10:00:00",
-    "end_time": "19:00:00"
+    "end_time": "19:00:00",
+    "schedule": {
+      "0": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "1": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "19:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Los pilares de la Tierra, el musical",
-    "description": "Llega a Madrid el estreno mundial de un innovador musical basado en el best-seller de éxito mundial del escritor Ken Follett (Teatro Gran Vía. Mar-dom).",
+    "description": "El estreno mundial del musical del famoso libro de Ken Follett ofrece una experiencia inmersiva con proyecciones 360º y sonido envolvente. La puesta en escena utiliza herramientas de inteligencia artificial para trasladar al espectador a la Edad Media del siglo XII.",
     "url": "https://www.beon-entertainment.com/los-pilares-de-la-tierra-musical/",
     "price": "Desde 23 €",
     "source_url": "https://www.esmadrid.com/agenda/pilares-tierra-musical-teatro-gran-via",
     "source": "esmadrid",
     "categories": [
-      "musica",
-      "teatro",
-      "danza"
+      "teatro"
     ],
     "image": "images/events/4f75905766db.jpg",
     "location_name": "Teatro Gran Vía",
@@ -402,18 +665,34 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "17:00:00",
-    "end_time": "21:00:00"
+    "end_time": "21:00:00",
+    "schedule": {
+      "1": [
+        "20:30:00"
+      ],
+      "2": [
+        "19:00:00"
+      ],
+      "3": [
+        "20:00:00"
+      ],
+      "4": [],
+      "5": [],
+      "6": [
+        "16:30:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "La madre que me parió",
-    "description": "Marisol Ayuso participa en esta divertida comedia de Gabriel Olivares sobre las relaciones madre-hija que ahora celebra su novena temporada en cartel (Teatro Lara - Sala Cándido Lara.",
+    "description": "Una comedia que explora con humor las relaciones entre madres e hijas y el miedo a terminar pareciéndose a las progenitoras. La obra presenta a tres mujeres que, durante la boda de una amiga, comparten secretos y vivencias sobre la maternidad y la identidad.",
     "url": "https://teatrolara.com/programacion/la-madre-que-me-pario",
     "price": "Desde 20 €",
     "source_url": "https://www.esmadrid.com/agenda/madre-me-pario-teatro-lara-sala-candido-lara",
     "source": "esmadrid",
     "categories": [
-      "teatro",
-      "danza"
+      "teatro"
     ],
     "image": "images/events/2c15ea7277e6.jpg",
     "location_name": "Teatro Lara - Sala Cándido Lara",
@@ -423,18 +702,36 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "18:00:00",
-    "end_time": "20:00:00"
+    "end_time": "20:00:00",
+    "schedule": {
+      "1": [
+        "20:00:00"
+      ],
+      "2": [
+        "20:00:00"
+      ],
+      "3": [
+        "20:00:00"
+      ],
+      "4": [
+        "20:00:00"
+      ],
+      "5": [],
+      "6": [
+        "18:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "75 años de la Colección Marañón: el origen del Fondo Antiguo de la Biblioteca COAM",
-    "description": "Exposición que rinde homenaje a la biblioteca del Colegio Oficial de Arquitectos de Madrid y a la adquisición de un conjunto bibliográfico de gran valor que dio origen a sus fondos antiguos (COAM.",
+    "description": "Exposición que rinde homenaje a la biblioteca del Colegio Oficial de Arquitectos de Madrid y a la adquisición de un conjunto bibliográfico que dio origen a sus fondos antiguos. La muestra recorre la historia de la biblioteca colegial y la figura de José María Marañón a través de manuscritos y obras históricas.",
     "url": "https://www.coam.org/actualidad-agenda-coam-75-anos-de-la-coleccion-maranon-el-origen-del-fondo-antiguo-de-la-biblioteca-coam/",
-    "price": "Gratuito",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/75-anos-coleccion-maranon-origen-fondo-antiguo-biblioteca-coam",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/1b743bf47516.jpg",
     "location_name": "COAM",
@@ -444,33 +741,66 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "09:00:00",
-    "end_time": "20:00:00"
+    "end_time": "20:00:00",
+    "schedule": {
+      "0": [
+        "09:00:00",
+        "20:00:00"
+      ],
+      "1": [
+        "09:00:00",
+        "20:00:00"
+      ],
+      "2": [
+        "09:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "09:00:00",
+        "20:00:00"
+      ],
+      "4": [
+        "09:00:00",
+        "20:00:00"
+      ],
+      "5": [
+        "11:00:00",
+        "19:00:00"
+      ],
+      "6": [
+        "11:00:00",
+        "15:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Visitas guiadas a la casa - Fundación Ramón Menéndez Pidal",
-    "description": "Un recorrido guiado por el jardín y el interior de la casa donde residió y trabajó la familia Menéndez Pidal-Goyri (Fundación Ramón Menéndez Pidal. Consultar fechas).",
+    "description": "Un recorrido guiado por el jardín y el interior de la casa donde residió y trabajó la familia Menéndez Pidal-Goyri. El espacio conserva los muebles, decoración original y una extensa colección documental de la época.",
     "url": "https://fundacionramonmenendezpidal.org/visitas/",
-    "price": "10 € por persona (pago en efectivo)\nReservar visita: visitasfundacionrmp@gmail.com / 913 59 47 24 (10:00 - 14:00 h)",
+    "price": "10 €",
     "source_url": "https://www.esmadrid.com/agenda/visitas-guiadas-casa-fundacion-ramon-menendez-pidal",
     "source": "esmadrid",
     "categories": [
-      "otros"
+      "visitas guiadas"
     ],
     "image": "images/events/eae06d97f164.jpg",
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "_broken": "HTTPSConnectionPool(host='www.esmadrid.com', port=443): Read timed out. (read timeout=15)",
+    "location_name": "Fundación Ramón Menéndez Pidal",
+    "address": "Calle de Menéndez Pidal, 5",
+    "_enriched": true
   },
   {
     "title": "The Animals",
-    "description": "Una selección de 22 retratos de la fotógrafa y activista Elena de Castro que combinan sensibilidad y compromiso (Matadero Madrid. Hasta Junio).",
+    "description": "Proyecto fotográfico que retrata a animales rescatados para cuestionar nuestra relación con ellos y reflexionar sobre la injusticia especista. La muestra combina sensibilidad y dignidad a través de una serie de retratos que visibilizan vidas habitualmente silenciadas.",
     "url": "https://www.mataderomadrid.org/programacion/animals",
-    "price": "Entrada libre y gratuita",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/animals-matadero-madrid",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "fotografia",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/f0dc29c5352b.jpg",
     "location_name": "Matadero Madrid",
@@ -480,18 +810,48 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "09:00:00",
-    "end_time": "22:00:00"
+    "end_time": "22:00:00",
+    "schedule": {
+      "0": [
+        "09:00:00",
+        "22:00:00"
+      ],
+      "1": [
+        "09:00:00",
+        "22:00:00"
+      ],
+      "2": [
+        "09:00:00",
+        "22:00:00"
+      ],
+      "3": [
+        "09:00:00",
+        "22:00:00"
+      ],
+      "4": [
+        "09:00:00",
+        "22:00:00"
+      ],
+      "5": [
+        "09:00:00",
+        "22:00:00"
+      ],
+      "6": [
+        "09:00:00",
+        "22:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Regeneraciones: China y España en el espejo",
-    "description": "Exposición que propone un diálogo entre los dos países sobre regeneración urbana, sostenibilidad y arquitectura contemporánea (La Casa de la Arquitectura. Hasta 29 marzo).",
+    "description": "La exposición plantea un diálogo sobre la regeneración urbana, la sostenibilidad y la arquitectura contemporánea entre ambos países. A través de un diseño especular, las obras se entrelazan para explorar estrategias de rehabilitación y reactivación de entornos urbanos.",
     "url": "https://lacasadelaarquitectura.es/recurso/regeneraciones-regeneraciones/fc6b53ee-9ce4-46a9-a1d7-7a3060e804f7",
-    "price": "Entrada gratuita",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/regeneraciones-china-espana-espejo-casa-arquitectura",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/5a276c16329a.jpg",
     "location_name": "La Casa de la Arquitectura (Arquería de Nuevos Ministerios)",
@@ -501,19 +861,44 @@
     "start_date": "2026-03-28",
     "end_date": "2026-03-29",
     "start_time": "11:00:00",
-    "end_time": "15:00:00"
+    "end_time": "15:00:00",
+    "schedule": {
+      "1": [
+        "11:00:00",
+        "20:00:00"
+      ],
+      "2": [
+        "11:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "11:00:00",
+        "20:00:00"
+      ],
+      "4": [
+        "11:00:00",
+        "20:00:00"
+      ],
+      "5": [
+        "11:00:00",
+        "20:00:00"
+      ],
+      "6": [
+        "11:00:00",
+        "15:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "El código de las formas",
-    "description": "Instalación compuesta por varias fotografías de viviendas populares de La Palma que invita a reflexionar sobre su particular arquitectura (La Casa de la Arquitectura. Hasta 29 marzo).",
+    "description": "Esta exposición fotográfica explora la arquitectura popular de la isla de La Palma a través de fragmentos de viviendas, colores y geometrías. La muestra invita a reflexionar sobre la identidad, la memoria colectiva y el lenguaje oculto de la arquitectura vernácula.",
     "url": "https://lacasadelaarquitectura.es/recurso/el-codigo-de-las-formas-el-codigo-de-las-formas/2ce3d0e6-f54d-4c5a-96b6-bd611bc89537",
-    "price": "Entrada gratuita",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/codigo-formas-casa-arquitectura-arqueria-nuevos-ministerios",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "fotografia",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/9bbc7f4572cc.jpg",
     "location_name": "La Casa de la Arquitectura (Arquería de Nuevos Ministerios)",
@@ -523,64 +908,88 @@
     "start_date": "2026-03-28",
     "end_date": "2026-03-29",
     "start_time": "11:00:00",
-    "end_time": "15:00:00"
-  },
-  {
-    "title": "NMIXX",
-    "description": "El grupo femenino surcoreano de K-Pop visita Madrid como parte de su gira mundial NMIXX 1st World Tour  (Palacio Vistalegre Arena.",
-    "url": "https://www.palaciovistalegre.com/event/nmixx-1st-world-tour/",
-    "price": "Desde 84 €",
-    "source_url": "https://www.esmadrid.com/agenda/nmixx-palacio-vistalegre-arena",
-    "source": "esmadrid",
-    "categories": [
-      "musica"
-    ],
-    "location_name": "Palacio Vistalegre Arena",
-    "address": "de Utebo , 1",
-    "latitude": 40.3862011,
-    "longitude": -3.7379452
+    "end_time": "15:00:00",
+    "schedule": {
+      "1": [
+        "11:00:00",
+        "20:00:00"
+      ],
+      "2": [
+        "11:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "11:00:00",
+        "20:00:00"
+      ],
+      "4": [
+        "11:00:00",
+        "20:00:00"
+      ],
+      "5": [
+        "11:00:00",
+        "20:00:00"
+      ],
+      "6": [
+        "11:00:00",
+        "15:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "21DISTRITOS 2026",
-    "description": "Numerosas propuestas artísticas de acceso libre llenarán la ciudad de cultura durante todo el año (Varios espacios. A partir 30 enero).",
+    "description": "Programa de dinamización cultural que ofrece una amplia variedad de propuestas artísticas en toda la ciudad. Incluye música, teatro, circo, danza, artes visuales y actividades participativas para todos los públicos.",
     "url": "https://21distritos.es/",
-    "price": "Actividades gratuitas",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/21distritos",
     "source": "esmadrid",
     "categories": [
-      "otros",
-      "gratis"
+      "teatro",
+      "conciertos"
     ],
     "image": "images/events/5bf372e2c2d2.jpg",
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "location_name": "Varios espacios de Madrid",
+    "address": "Varios espacios de Madrid",
+    "is_multi_event": true,
+    "_enriched": true
   },
   {
     "title": "Frida Kahlo: Experiencia Live Art y Muestra Gastronómica",
-    "description": "Una experiencia única en la que descubrir a la artista mexicana desde una perspectiva inédita y profunda (Paseo del Pintor Rosales, 30. Miér-dom).",
+    "description": "Una experiencia inmersiva que explora la vida y obra de la artista mexicana a través de instalaciones sensoriales, proyecciones y una exposición fotográfica. El recorrido se completa con una muestra gastronómica que resalta los sabores tradicionales de México.",
     "url": "https://fridawomanexperience.com/madrid/",
-    "price": "Entrada general (+13 años): 15 €\nEntrada infantil (6 a 12 años): 12 €\nEntrada gratuita: 0 a 5 años",
+    "price": "15 €",
     "source_url": "https://www.esmadrid.com/agenda/frida-kahlo-experiencia-live-art-muestra-gastronomica-paseo-pintor-rosales-30",
     "source": "esmadrid",
     "categories": [
       "exposiciones",
-      "fotografia",
-      "gratis"
+      "gastronomía"
     ],
     "image": "images/events/22f20c83494e.jpg",
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "schedule": {
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": []
+    },
+    "location_name": "Paseo del Pintor Rosales, 30",
+    "address": "Paseo del Pintor Rosales, 30, 28008 Madrid",
+    "_enriched": true
   },
   {
     "title": "El nacimiento de la moneda. Tesoros de la colección Zhuyuetang",
-    "description": "Exposición que reúne 148 piezas singulares procedentes de una de las colecciones privadas más relevantes del mundo (Museo Casa de la Moneda. Hasta 21 junio 2026).",
+    "description": "La exposición muestra 148 piezas singulares que recorren los dos primeros siglos de la historia de la moneda. La muestra analiza el carácter revolucionario de las primeras acuñaciones y su impacto en la economía y sociedad del Mediterráneo antiguo.",
     "url": "https://www.museocasadelamoneda.es/colecci%C3%B3n-zhuyuetang",
-    "price": "Entrada gratuita. Imprescindible presentar documento de identificación (DNI o pasaporte) para poder acceder al Museo",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/nacimiento-moneda-tesoros-coleccion-zhuyuetang-museo-casa-moneda",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/62f869a99668.jpg",
     "location_name": "Museo Casa de La Moneda",
@@ -590,19 +999,44 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "20:00:00"
+    "end_time": "20:00:00",
+    "schedule": {
+      "1": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "14:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "14:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Esther Ferrer. Pliegue y proceso",
-    "description": "La exposición revisita la trayectoria de la creadora vasca, una de las principales exponentes de la performance en España (Museo Casa de la Moneda. Hasta 12 abril).",
+    "description": "La exposición es una muestra antológica que revisita la trayectoria de la creadora vasca, una de las principales exponentes de la performance en España. La obra explora conceptos y dualidades vitales como espacio y tiempo, rigor y absurdo, a través de diversas instalaciones y piezas artísticas.",
     "url": "https://www.museocasadelamoneda.es/esther_ferrer",
-    "price": "Entrada gratuita",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/esther-ferrer-pliegue-proceso-museo-casa-moneda",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "fotografia",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/5bdbe588b352.jpg",
     "location_name": "Museo Casa de La Moneda",
@@ -612,19 +1046,45 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "20:00:00"
+    "end_time": "20:00:00",
+    "_broken": "HTTPSConnectionPool(host='www.esmadrid.com', port=443): Read timed out. (read timeout=15)",
+    "schedule": {
+      "1": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "14:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "14:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "The Fold. Hoda Afshar",
-    "description": "Una investigación visual y psicológica del psiquiatra y fotógrafo francés Gaëtan Gatian de Clérambault (La Casa Encendida. 27 ene a 26 abr)",
+    "description": "Exposición de la artista visual Hoda Afshar que investiga la herencia de las prácticas fotográficas orientalistas y colonialistas a través de archivos históricos. El proyecto emplea diversas técnicas como fotografía, vídeo e instalaciones para reflexionar sobre los regímenes de percepción y representación.",
     "url": "https://www.lacasaencendida.es/exposiciones/the-fold-hoda-afshar",
-    "price": "Entrada gratuita",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/fold-hoda-afshar-casa-encendida",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "fotografia",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/356d398a0b99.jpg",
     "location_name": "La Casa Encendida",
@@ -634,18 +1094,44 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "21:00:00"
+    "end_time": "21:00:00",
+    "schedule": {
+      "1": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "16:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Carmen Martín Gaite. Un paradigma de mujer de letras",
-    "description": "Exposición dedicada a la vida y obra de Carmen Martín Gaite, figura esencial de la literatura española contemporánea (Biblioteca Nacional. Hasta 17 mayo).",
+    "description": "Exposición dedicada a la vida, obra y trayectoria literaria de una de las autoras más influyentes del siglo XX. La muestra explora el pensamiento, el compromiso creativo y el legado de la escritora a través de manuscritos, objetos personales y correspondencia.",
     "url": "https://bne.es/es/agenda/carmen-martin-gaite-paradigma-mujer-letras",
-    "price": "Entrada gratuita. Aforo limitado",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/carmen-martin-gaite-paradigma-mujer-letras-biblioteca-nacional",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/26eb7a498e5e.jpg",
     "location_name": "Biblioteca Nacional",
@@ -655,35 +1141,48 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "20:00:00"
-  },
-  {
-    "title": "La mitad del mundo. La mujer en el México indígena. El ámbito divino",
-    "description": "Un análisis sobre las construcciones culturales de género en el mundo prehispánico (Fundación Casa de México en España/ Museo Arqueológico Nacional/ Instituto Cervantes/ Museo Nacional Thyssen-Born",
-    "url": "https://www.casademexico.es/exposicion/la-mitad-del-mundo-la-mujer-en-el-mexico-indigena/",
-    "price": "Entrada gratuita",
-    "source_url": "https://www.esmadrid.com/agenda/mitad-mundo-mujer-mexico-indigena-ambito-divino-fundacion-casa-mexico-espana",
-    "source": "esmadrid",
-    "categories": [
-      "exposiciones",
-      "gratis"
-    ],
-    "image": "images/events/d47b75a970da.jpg",
-    "location_name": "Fundación Casa de México en España",
-    "address": "de Alberto Aguilera, 20",
-    "latitude": 40.4301378,
-    "longitude": -3.7092035
+    "end_time": "20:00:00",
+    "schedule": {
+      "0": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "1": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "14:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Habitar España",
-    "description": "La muestra reúne 100 proyectos residenciales y 85 maquetas, explorando la evolución del vivir en España desde 1975 hasta la actualidad (La Casa de la Arquitectura. Hasta 29 marzo).",
+    "description": "La exposición ofrece un recorrido por cinco décadas de arquitectura residencial mediante una revisión histórica y crítica de los proyectos más destacados desde 1975 hasta la actualidad. La muestra reúne 100 proyectos y 85 maquetas que analizan la evolución de las formas de vida y los modelos urbanos en España.",
     "url": "https://lacasadelaarquitectura.es/recurso/habitar-espaa-habitar-espaa/fdcd8144-1906-461b-8715-6d32ee3740f1",
-    "price": "Entrada gratuita",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/habitar-espana-casa-arquitectura",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/bfd0aae3a0a6.jpg",
     "location_name": "La Casa de la Arquitectura (Arquería de Nuevos Ministerios)",
@@ -693,18 +1192,44 @@
     "start_date": "2026-03-28",
     "end_date": "2026-03-29",
     "start_time": "11:00:00",
-    "end_time": "20:00:00"
+    "end_time": "20:00:00",
+    "schedule": {
+      "1": [
+        "11:00:00",
+        "20:00:00"
+      ],
+      "2": [
+        "11:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "11:00:00",
+        "20:00:00"
+      ],
+      "4": [
+        "11:00:00",
+        "20:00:00"
+      ],
+      "5": [
+        "11:00:00",
+        "20:00:00"
+      ],
+      "6": [
+        "11:00:00",
+        "15:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Interludio. El sonido de Oceanía. Un pahu de las Islas Marquesas en el Museo Cerralbo",
-    "description": "Microexposición que visibiliza las líneas de investigación sobre las colecciones, el edificio y las personas vinculadas históricamente al mismo (Museo Cerralbo. 16 dic a 19 abr).",
+    "description": "Microexposición que pone en valor un tambor tradicional de las Islas Marquesas, explorando su procedencia y contexto cultural dentro del palacio. El proyecto ofrece una nueva lectura histórica sobre las conexiones globales del coleccionismo y la transformación de objetos en piezas patrimoniales.",
     "url": "https://www.cultura.gob.es/mcerralbo/exposiciones/exposiciones/proximamente/interludio-2025.html",
-    "price": "Visita a la exposición incluida en la entrada general al museo:\nEntrada general: 3 €\nEntrada reducida: 1,50 €\nConsultar tarifas",
+    "price": "3 €",
     "source_url": "https://www.esmadrid.com/agenda/interludio-sonido-oceania-pahu-islas-marquesas-museo-cerralbo",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "fotografia"
+      "exposiciones"
     ],
     "image": "images/events/7630f59a72c2.jpg",
     "location_name": "Museo Cerralbo",
@@ -714,36 +1239,89 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "09:30:00",
-    "end_time": "15:00:00"
+    "end_time": "15:00:00",
+    "schedule": {
+      "1": [
+        "09:30:00",
+        "15:00:00"
+      ],
+      "2": [
+        "09:30:00",
+        "15:00:00"
+      ],
+      "3": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "4": [
+        "09:30:00",
+        "15:00:00"
+      ],
+      "5": [
+        "09:30:00",
+        "15:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "15:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Archivo Alexander Von Humboldt Madrid: Gesto Pacífico",
-    "description": "Una exposición inspirada en los viajes de Alexander von Humboldt y su mirada científica sobre América (Museo de América. Hasta 21 marzo).",
+    "description": "Exposición que homenajea al naturalista Alexander Von Humboldt mediante un diálogo entre ciencia, arte y patrimonio. La muestra combina documentos históricos, piezas etnográficas y creaciones contemporáneas para explorar su legado científico y ecológico.",
     "url": "https://www.cultura.gob.es/museodeamerica/en/exposiciones/exposiciones-temporales/2025-archivo-von-humboldt.html",
-    "price": "Exposición incluida en la visita a la exposición permanente:\nEntrada general: 3 €\nEntrada reducida: 1,50 €\nEntrada gratuita: Jueves a partir de las 14 h y domingos todo el día y 1 de noviembre",
+    "price": "3 €",
     "source_url": "https://www.esmadrid.com/agenda/archivo-alexander-humboldt-madrid-gesto-pacifico-museo-america",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "fotografia",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/c4629ea70330.jpg",
     "location_name": "Museo de América",
     "address": "de los Reyes Católicos, 6",
     "latitude": 40.438275,
-    "longitude": -3.7219676
+    "longitude": -3.7219676,
+    "schedule": {
+      "1": [
+        "09:30:00",
+        "15:00:00"
+      ],
+      "2": [
+        "09:30:00",
+        "15:00:00"
+      ],
+      "3": [
+        "09:30:00",
+        "19:00:00"
+      ],
+      "4": [
+        "09:30:00",
+        "15:00:00"
+      ],
+      "5": [
+        "09:30:00",
+        "15:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "15:00:00"
+      ]
+    },
+    "start_date": "2025-10-16",
+    "end_date": "2026-03-21",
+    "_enriched": true
   },
   {
     "title": "Pintura cuzqueña. Centro y periferia",
-    "description": "Exposición dedicada a la pintura cuzqueña, un recorrido por sus centros de producción y periferias artísticas (Museo de América. 27 nov a 19 abr 2026).",
+    "description": "La exposición explora la riqueza y diversidad del movimiento artístico colonial surgido en los Andes a través de obras representativas. La muestra analiza el papel del taller cuzqueño como centro de producción y las expresiones artísticas desarrolladas en sus regiones periféricas.",
     "url": "https://www.cultura.gob.es/museodeamerica/exposiciones/exposiciones-temporales/2025-pintura-cuzquenha.html",
-    "price": "Entrada gratuita. Aforo limitado",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/pintura-cuzquena-centro-periferia-museo-america",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/a5c724e7919f.jpg",
     "location_name": "Museo de América",
@@ -753,18 +1331,45 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "09:30:00",
-    "end_time": "15:00:00"
+    "end_time": "15:00:00",
+    "schedule": {
+      "1": [
+        "09:30:00",
+        "15:00:00"
+      ],
+      "2": [
+        "09:30:00",
+        "15:00:00"
+      ],
+      "3": [
+        "09:30:00",
+        "19:00:00"
+      ],
+      "4": [
+        "09:30:00",
+        "15:00:00"
+      ],
+      "5": [
+        "09:30:00",
+        "15:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "15:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Escaparatismos",
-    "description": "Exposición colectiva que destaca el papel de los escaparates y fachadas como reflejo de los cambios sociales, económicos y políticos de las últimas décadas (Museo de Arte Contemporáneo.",
+    "description": "Exposición colectiva que analiza el papel de los escaparates y fachadas comerciales como reflejo de los cambios sociales y estéticos en la ciudad. La muestra reúne trabajos de diversos artistas que exploran la cualidad de espejo y la poética de estos espacios urbanos.",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c06a0f0ffe19a910VgnVCM200000f921e388RCRD",
-    "price": "Acceso libre durante el horario de apertura del museo",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/escaparatismos-museo-arte-contemporaneo",
     "source": "esmadrid",
     "categories": [
       "exposiciones",
-      "gratis"
+      "otros"
     ],
     "image": "images/events/5bd14caf4d7b.jpg",
     "location_name": "Museo de Arte Contemporáneo",
@@ -774,18 +1379,44 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "14:00:00"
+    "end_time": "14:00:00",
+    "schedule": {
+      "1": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "6": [
+        "10:30:00",
+        "14:30:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "El secuestro",
-    "description": "Fran Nortes escribe y dirige esta divertida comedia sobre la gente de la calle y los políticos (Teatro Lara - Sala Cándido Lara. Fines de semana).",
+    "description": "Esta divertida comedia reflexiona sobre la importancia de la familia y los conflictos cotidianos entre la gente de la calle y los políticos. La obra propone una visión optimista del ser humano a través de la historia de un hombre que se enfrenta a una situación límite.",
     "url": "https://teatrolara.com/programacion/el-secuestro",
     "price": "Desde 14 €",
     "source_url": "https://www.esmadrid.com/agenda/secuestro-teatro-lara-sala-candido-lara",
     "source": "esmadrid",
     "categories": [
-      "teatro",
-      "danza"
+      "teatro"
     ],
     "image": "images/events/394964055ee3.jpg",
     "location_name": "Teatro Lara - Sala Cándido Lara",
@@ -793,19 +1424,18 @@
     "latitude": 40.4220989,
     "longitude": -3.7044511,
     "start_date": "2026-03-28",
-    "end_date": "2026-03-28"
+    "end_date": "2026-03-28",
+    "_enriched": true
   },
   {
     "title": "Fui sobre agua edificada",
-    "description": "Muestra que reúne las fotografías ganadoras y finalistas del V Concurso de fotografía, que retrata la presencia del agua en Madrid (Museo de Historia. Hasta 12 abril).",
+    "description": "La exposición reúne las fotografías ganadoras y finalistas de un concurso dedicado a retratar la presencia del agua en Madrid. La muestra explora el vínculo histórico y poético de la ciudad con este elemento a través de diversas perspectivas artísticas.",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=ab18a1ead63ab010VgnVCM100000d90ca8c0RCRD",
-    "price": "Entrada gratuita",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/fui-agua-edificada-museo-historia",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "fotografia",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/e764b307a608.jpg",
     "location_name": "Museo de Historia",
@@ -815,19 +1445,44 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "20:00:00"
+    "end_time": "20:00:00",
+    "schedule": {
+      "1": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "20:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Cabaret, el musical en el Kit Kat Klub",
-    "description": "Una nueva producción del clásico musical, pero con un enfoque moderno e inmersivo (UMusic Hotel Teatro Albéniz. Martes a domingos).",
+    "description": "Una nueva producción inmersiva del clásico musical que traslada al público al Berlín de los años 30 durante el auge del nazismo. El montaje transforma el teatro en un auténtico cabaret donde los personajes intentan sobrevivir a una realidad cambiante.",
     "url": "https://www.kitkatklubcabaret.com/",
-    "price": "Desde 23,20 €",
+    "price": "Desde 23,20 €",
     "source_url": "https://www.esmadrid.com/agenda/cabaret-musical-kit-kat-klub-umusic-hotel-teatro-albeniz",
     "source": "esmadrid",
     "categories": [
-      "musica",
-      "teatro",
-      "danza"
+      "teatro"
     ],
     "image": "images/events/7481844d13e2.jpg",
     "location_name": "UMusic Hotel Teatro Albéniz",
@@ -837,19 +1492,34 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "20:00:00",
-    "end_time": "17:15:00"
+    "end_time": "17:15:00",
+    "schedule": {
+      "1": [
+        "20:30:00"
+      ],
+      "2": [
+        "20:00:00"
+      ],
+      "3": [
+        "20:00:00"
+      ],
+      "4": [
+        "20:00:00"
+      ],
+      "5": [],
+      "6": []
+    },
+    "_enriched": true
   },
   {
     "title": "El centro puede estar en todas partes. Quisqueya Henríquez",
-    "description": "Retrospectiva de la obra de la artista cubano-dominicana, una de las voces más potentes en la crítica de los discursos hegemónicos del arte contemporáneo (C Arte C. Hasta 26 abril).",
+    "description": "Exposición monográfica que recorre la trayectoria multidisciplinar de la artista cubano-dominicana a través de instalaciones, fotografías y performances. La muestra explora temas como la identidad, la hibridez cultural y la crítica a los discursos hegemónicos del arte contemporáneo.",
     "url": "https://www.ucm.es/cultura/exposicion-actual",
-    "price": "Entrada gratuita",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/centro-puede-estar-todas-partes-quisqueya-henriquez-c-arte-c",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "fotografia",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/a824d375618a.jpg",
     "location_name": "C Arte C",
@@ -859,13 +1529,40 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "19:00:00"
+    "end_time": "19:00:00",
+    "schedule": {
+      "1": [
+        "10:00:00",
+        "19:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "19:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "19:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "19:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "19:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "15:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Migrar. Historias de Movimiento, Pertenencia y Transformación",
-    "description": "Muestra que analiza distintas experiencias de migración y desplazamiento a través de objetos e imágenes (Museo Nacional de Antropología. A partir 3 febrero).",
+    "description": "Esta exposición analiza las experiencias de migración y desplazamiento a través de objetos e imágenes que exploran procesos de adaptación y memoria. La muestra reflexiona sobre cómo la movilidad humana influye en la configuración de identidades y modos de vida.",
     "url": "https://www.esmadrid.com/agenda/migrar-historias-movimiento-pertenencia-transformacion-museo-nacional-antropologia",
-    "price": "Entrada conjunta con la de la exposición permanente:\nEntrada general: 3 €\nTarjeta anual del Museo Nacional de Antropología: 25 €\nTarjeta conjunta de Museos Estatales: 36,06 €\nConsultar tarifas",
+    "price": "3 €",
     "source_url": "https://www.esmadrid.com/agenda/migrar-historias-movimiento-pertenencia-transformacion-museo-nacional-antropologia",
     "source": "esmadrid",
     "categories": [
@@ -879,18 +1576,44 @@
     "start_date": "2026-03-28",
     "end_date": "2026-03-29",
     "start_time": "10:00:00",
-    "end_time": "15:00:00"
+    "end_time": "15:00:00",
+    "schedule": {
+      "1": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "2": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "3": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "4": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "5": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "15:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Lola Lasurt. Deep Song",
-    "description": "La coreógrafa y ahora artista realiza un ejercicio de reconstrucción imaginativa para repetir un gesto que nunca vio, pero le contaron, desde la performance y la pintura (Conde Duque.",
+    "description": "La artista realiza un ejercicio de reconstrucción imaginativa que combina performance y pintura para explorar gestos históricos y su resistencia al olvido. La obra reflexiona sobre la relación entre el cuerpo, la danza y los hechos históricos mediante piezas pictóricas y audiovisuales.",
     "url": "https://www.condeduquemadrid.es/actividades/lola-lasurt",
-    "price": "Entrada libre",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/lola-lasurt-deep-song-conde-duque",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/f06dc8b48948.jpg",
     "location_name": "Conde Duque",
@@ -898,18 +1621,18 @@
     "latitude": 40.427887,
     "longitude": -3.710802,
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "_enriched": true
   },
   {
     "title": "Naturaleza de asfalto. Madrid hiperrealista. José Miguel Palacio",
-    "description": "El artista aragonés expone varias pinturas, esculturas y dibujos en los que Madrid es retratada en todo su esplendor (Museo de Historia. Hasta 24 may).",
+    "description": "La exposición reúne una selección de óleos, esculturas y dibujos del artista contemporáneo José Miguel Palacio. La obra retrata la ciudad de Madrid como un gran escenario urbano, destacando elementos cotidianos y el paisaje metropolitano mediante una técnica hiperrealista.",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=ab18a1ead63ab010VgnVCM100000d90ca8c0RCRD",
-    "price": "Entrada gratuita",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/naturaleza-asfalto-madrid-hiperrealista-jose-miguel-palacio-museo-historia",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/b415dd6d7da1.jpg",
     "location_name": "Museo de Historia",
@@ -919,13 +1642,40 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "20:00:00"
+    "end_time": "20:00:00",
+    "schedule": {
+      "1": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "20:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Ángel Cabrera, el naturalista infinito",
-    "description": "Una muestra que rinde tributo al máximo exponente de la mastozoología del siglo pasado (Museo Nacional de Ciencias Naturales. Hasta 12 abr).",
+    "description": "La exposición rinde homenaje a la vida y obra de Ángel Cabrera, uno de los más destacados mastozoólogos del siglo XX. La muestra recorre su legado científico y divulgativo a través de diversos fósiles, mamíferos, aves, láminas y documentos históricos.",
     "url": "https://www.mncn.csic.es/es/visita-el-mncn/exposiciones/angel-cabrera-el-naturalista-infinito",
-    "price": "Entrada general: 7 €\nEntrada reducida: 3,50 €\nConsultar página oficial",
+    "price": "7 €",
     "source_url": "https://www.esmadrid.com/agenda/angel-cabrera-naturalista-infinito-museo-nacional-ciencias-naturales",
     "source": "esmadrid",
     "categories": [
@@ -939,18 +1689,44 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "17:00:00"
+    "end_time": "17:00:00",
+    "schedule": {
+      "1": [
+        "10:00:00",
+        "17:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "17:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "17:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "17:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "17:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "17:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Ignacio Bolívar y Urrutia (1850-1944). Director del Museo de Ciencias Naturales",
-    "description": "Homenaje al que fuera director del Museo Nacional de Ciencias Naturales en el primer tercio del siglo XX, responsable de su modernización y prestigio (MNCN. A partir 27 noviembre).",
+    "description": "Exposición que rinde homenaje a la figura de Ignacio Bolívar y Urrutia, responsable de la modernización y prestigio del Museo Nacional de Ciencias Naturales a principios del siglo XX. La muestra reúne paneles, instrumentos científicos, mobiliario y colecciones que ilustran su destacada labor científica y museológica.",
     "url": "https://www.mncn.csic.es/es/visita-el-mncn/exposiciones/ignacio-bolivar-y-urrutia-1850-1944-director-del-museo-de-ciencias",
-    "price": "General: 7 €\nReducida: 3,50 € (estudiantes, desempleados y niños de 4 a 16 años)\nGrupo: 3,50 €\nGratuita: Domingos, de  17:00 - 20:00 h, jubilados 65 años y menores de 4 años, personas con algún tipo de discapacidad certificada, entre otros (consultar más casos en web oficial)",
+    "price": "7 €",
     "source_url": "https://www.esmadrid.com/agenda/ignacio-bolivar-urrutia-1850-1944-director-museo-ciencias-naturales",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/65c912f477bc.jpg",
     "location_name": "Museo Nacional de Ciencias Naturales",
@@ -960,18 +1736,44 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "17:00:00"
+    "end_time": "17:00:00",
+    "schedule": {
+      "1": [
+        "10:00:00",
+        "17:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "17:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "17:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "17:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "20:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Wunderkammer. Ana Juan",
-    "description": "Exposición de varios dibujos realizados por la destacada ilustradora valenciana en los que muestra su particular forma de entender el mundo (CentroCentro. Hasta 3 may).",
+    "description": "Exposición que recorre la trayectoria de la ilustradora Ana Juan a través de dibujos, esculturas y animaciones que configuran su universo creativo. La muestra explora el virtuosismo plástico de la artista y su capacidad para cuestionar la realidad a través de figuras imaginarias.",
     "url": "https://www.centrocentro.org/exposicion/ana-juan",
-    "price": "Entrada gratuita",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/wunderkammer-ana-juan-centrocentro",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/fd0eeacac576.jpg",
     "location_name": "CentroCentro",
@@ -981,18 +1783,44 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "20:00:00"
+    "end_time": "20:00:00",
+    "schedule": {
+      "1": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "20:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Fundación. Marlon de Azambuja",
-    "description": "Instalación escultórica del artista visual brasileño en la que el espacio se transforma en un territorio vivo (La Casa Encendida. Hasta 27 sept).",
+    "description": "Instalación escultórica del artista brasileño Marlon de Azambuja que transforma el espacio en un territorio vivo centrado en la materialidad. El proyecto reflexiona sobre la arquitectura y el concepto de museo mediante una experiencia que invita al visitante a habitar y atravesar la obra.",
     "url": "https://www.lacasaencendida.es/exposiciones/fundacion-marlon-de-azambuja",
-    "price": "Entrada gratuita",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/fundacion-marlon-azambuja-casa-encendida",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/596bff44210d.jpg",
     "location_name": "La Casa Encendida",
@@ -1002,18 +1830,44 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "21:00:00"
+    "end_time": "21:00:00",
+    "schedule": {
+      "1": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "16:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "La omisión de la familia Coleman",
-    "description": "Claudio Tolcachir dirige las últimas funciones de su exitosa comedia (Teatro Infanta Isabel. Lunes a miércoles. Hasta 11 feb).",
+    "description": "Comedia de corte independiente que narra la historia de una familia que vive al límite de su propia disolución. La obra explora la compleja convivencia y los espacios personales de cada integrante en una casa compartida.",
     "url": "https://www.teatroinfantaisabel.es/obra/la-omision-de-la-familia-coleman/",
     "price": "Desde 12 €",
     "source_url": "https://www.esmadrid.com/agenda/omision-familia-coleman-teatro-infanta-isabel",
     "source": "esmadrid",
     "categories": [
-      "teatro",
-      "danza"
+      "teatro"
     ],
     "image": "images/events/fefb9b0bc500.jpg",
     "location_name": "Teatro Infanta Isabel",
@@ -1022,18 +1876,32 @@
     "longitude": -3.6954356,
     "start_date": "2026-03-30",
     "end_date": "2026-04-08",
-    "start_time": "21:30:00"
+    "start_time": "21:30:00",
+    "schedule": {
+      "0": [
+        "20:00:00",
+        "21:45:00"
+      ],
+      "1": [
+        "20:00:00",
+        "21:45:00"
+      ],
+      "2": [
+        "21:30:00",
+        "23:15:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "The flag that came from the sea. The colours that identify us",
-    "description": "Exposición que recorre la historia de la bandera española, desde sus orígenes hasta su consolidación como símbolo nacional (Museo Naval. Hasta 5 abril).",
+    "description": "Exposición que recorre la historia de la bandera española a través de 57 piezas originales, desde sus orígenes como pabellón de la Real Armada hasta su consolidación como símbolo nacional. La muestra incluye objetos y recursos gráficos que permiten entender la evolución y relevancia histórica de esta enseña.",
     "url": "https://acortar.link/8SbSnm",
-    "price": "El museo es de acceso gratuito. Se solicita una aportación voluntaria para su mantenimiento.",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/bandera-vino-mar-colores-nos-identifican-museo-naval",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/d9db780161f8.jpg",
     "location_name": "Museo Naval",
@@ -1043,19 +1911,45 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-05",
     "start_time": "10:00:00",
-    "end_time": "19:00:00"
+    "end_time": "19:00:00",
+    "_broken": "HTTPSConnectionPool(host='www.esmadrid.com', port=443): Read timed out. (read timeout=15)",
+    "schedule": {
+      "1": [
+        "10:00:00",
+        "19:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "19:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "19:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "19:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "19:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "19:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Desenfocado. Otra visión del arte",
-    "description": "Exposición que explora el concepto de desenfoque en el arte como nueva manera de comprender el mundo (CaixaForum Madrid. Hasta 12 abr).",
+    "description": "Esta exposición analiza el concepto de desenfoque en el arte como una nueva forma de comprender el mundo a través de diversas disciplinas. La muestra reúne pinturas, vídeos, fotografías e instalaciones de artistas modernos y contemporáneos que exploran lo borroso e impreciso como elemento expresivo.",
     "url": "https://caixaforum.org/es/madrid/p/desenfocado_a173668105",
-    "price": "Entrada general: 6 €\nEntrada gratuita: clientes Caixabank y menores de 16 años\n20 y 21 de septiembre, entrada gratuita con reserva previa, con motivo del Festival de las Ideas\n26 de septiembre, entrada gratuita con reserva previa, con motivo de La noche de la investigación\nConsultar página oficial",
+    "price": "6 €",
     "source_url": "https://www.esmadrid.com/agenda/desenfocado-otra-vision-arte-caixaforum-madrid",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "fotografia",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/b57ad73f99bf.jpg",
     "location_name": "CaixaForum Madrid",
@@ -1065,7 +1959,38 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "20:00:00"
+    "end_time": "20:00:00",
+    "schedule": {
+      "0": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "1": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "20:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Entre Oriente y Occidente. Chipre, la isla de Afrodita",
@@ -1089,9 +2014,9 @@
   },
   {
     "title": "Oliver Laxe. HU/هُوَ. Bailad como si nadie os viera",
-    "description": "Uno de los cineastas contemporáneos con mayor proyección internacional presenta su nueva pieza que tiene objeto fundamental su última película Sirat (Museo Reina Sofía.",
+    "description": "Una instalación que expone la nueva pieza del cineasta Oliver Laxe, centrada en su película Sirat. La obra explora la práctica colaborativa, el misticismo y la hibridación de géneros a través de una propuesta instalativa que desafía las limitaciones de la pantalla cinematográfica.",
     "url": "https://www.museoreinasofia.es/exposicion/oliver-laxe",
-    "price": "Entrada general. Visita a Colección y exposiciones temporales (taquilla y online): 12 € \nEntrada individual general válida para dos visitas (taquilla y online): 18 €\nEntrada combinada. Visita Colección, exposiciones temporales y audioguía (taquilla): 16,50 €\nConsultar página oficial",
+    "price": "12 €",
     "source_url": "https://www.esmadrid.com/agenda/oliver-laxe-bailad-si-nadie-os-viera-museo-reina-sofia",
     "source": "esmadrid",
     "categories": [
@@ -1105,13 +2030,40 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "21:00:00"
+    "end_time": "21:00:00",
+    "schedule": {
+      "0": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "14:30:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Juan Uslé. Ese barco en la montaña",
-    "description": "Gran muestra antológica que profundiza en los más de cuarenta años de trayectoria artística del artista (Museo Reina Sofía. Hasta 20 abril).",
+    "description": "Gran muestra antológica que recorre más de cuarenta años de trayectoria artística del pintor Juan Uslé. La exposición propone un relato no cronológico a través de diez salas del museo.",
     "url": "https://www.museoreinasofia.es/prensa/nota-de-prensa/juan-usle",
-    "price": "Entrada general. Visita a Colección y exposiciones temporales (taquilla y online): 12 € \nEntrada individual general válida para dos visitas (taquilla y online): 18 €\nEntrada combinada. Visita Colección, exposiciones temporales y audioguía (taquilla): 16,50 €\nConsultar página oficial",
+    "price": "12 €",
     "source_url": "https://www.esmadrid.com/agenda/juan-usle-barco-montana-museo-reina-sofia",
     "source": "esmadrid",
     "categories": [
@@ -1125,18 +2077,44 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-08",
     "start_time": "10:00:00",
-    "end_time": "21:00:00"
+    "end_time": "21:00:00",
+    "schedule": {
+      "0": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "21:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "14:30:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Fardo. Andrea Canepa",
-    "description": "La obra de la artista peruana interviene la lona que cubre temporalmente el palacio decimonónico del Parque de El Retiro durante su restauración (Palacio de Cristal. 13 ene a 1 ene 2027).",
+    "description": "La artista peruana Andrea Canepa interviene la lona que cubre temporalmente el Palacio de Cristal con una obra inspirada en los textiles precolombinos y el ritual de envolver a los difuntos. El proyecto transforma la estructura arquitectónica en un praxinoscopio contemporáneo que explora la memoria y la identidad a través de un relato cíclico.",
     "url": "https://www.museoreinasofia.es/exposicion/andrea-canepa",
-    "price": "Entrada gratuita",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/fardo-andrea-canepa-palacio-cristal",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/2e0a81910443.jpg",
     "location_name": "Palacio de Cristal",
@@ -1144,19 +2122,48 @@
     "latitude": 40.4136275,
     "longitude": -3.6820393,
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "schedule": {
+      "0": [
+        "06:00:00",
+        "00:00:00"
+      ],
+      "1": [
+        "06:00:00",
+        "00:00:00"
+      ],
+      "2": [
+        "06:00:00",
+        "00:00:00"
+      ],
+      "3": [
+        "06:00:00",
+        "00:00:00"
+      ],
+      "4": [
+        "06:00:00",
+        "00:00:00"
+      ],
+      "5": [
+        "06:00:00",
+        "00:00:00"
+      ],
+      "6": [
+        "06:00:00",
+        "00:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Wicked, el musical",
-    "description": "El fenómeno musical de Broadway llega a Madrid para cautivar con su extraordinaria historia y sus mágicas melodías (Nuevo Teatro Alcalá. Mar-dom).",
+    "description": "El fenómeno musical de Broadway narra la sorprendente historia de las legendarias brujas de Oz mucho antes de la llegada de Dorothy. Es una aclamada superproducción que explora una inesperada y profunda amistad en un mundo lleno de magia.",
     "url": "https://wickedelmusical.com/",
-    "price": "Desde 24,90 €\n* Los precios puedes sufrir modificaciones sin previo aviso",
+    "price": "Desde 24,90 €",
     "source_url": "https://www.esmadrid.com/agenda/wicked-musical-nuevo-teatro-alcala",
     "source": "esmadrid",
     "categories": [
-      "musica",
-      "teatro",
-      "danza"
+      "teatro"
     ],
     "image": "images/events/74dd1c8ec3dd.jpg",
     "location_name": "Nuevo Teatro Alcalá",
@@ -1166,33 +2173,57 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "17:00:00",
-    "end_time": "21:00:00"
+    "end_time": "21:00:00",
+    "schedule": {
+      "1": [
+        "20:30:00"
+      ],
+      "2": [
+        "20:00:00"
+      ],
+      "3": [
+        "20:00:00"
+      ],
+      "4": [
+        "17:00:00",
+        "21:00:00"
+      ],
+      "5": [
+        "17:00:00",
+        "21:00:00"
+      ],
+      "6": [
+        "16:30:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "16ª Ruta del Cocido Madrileño",
-    "description": "El típico plato madrileño protagoniza un recorrido gastronómico por toda la Comunidad de Madrid (Varios locales. 15 feb a 31 mar).",
+    "description": "Recorrido gastronómico por diversos establecimientos que rinde homenaje a la cocina tradicional madrileña. Los comensales pueden degustar el plato típico servido generalmente en tres vuelcos.",
     "url": "https://xn--rutadelcocidomadrileo-vbc.com/",
     "price": "Consultar en cada restaurante participante",
     "source_url": "https://www.esmadrid.com/agenda/ruta-cocido-madrile%C3%B1o",
     "source": "esmadrid",
     "categories": [
-      "gastronomia"
+      "gastronomía"
     ],
     "image": "images/events/c02a33964eb2.jpg",
     "start_date": "2026-03-28",
-    "end_date": "2026-03-31"
+    "end_date": "2026-03-31",
+    "location_name": "Varios locales de la Comunidad de Madrid",
+    "is_multi_event": true,
+    "_enriched": true
   },
   {
     "title": "Hotel del artefacto expoliado",
-    "description": "Exposición de la artista Agnes Essonti que forma parte del programa especial del 150º aniversario del museo (Museo Nacional de Antropología. Hasta 24 may).",
+    "description": "Exposición de la artista Agnes Essonti que explora la restitución de artefactos expoliados y su conexión con identidades afrodescendientes. La muestra establece un diálogo entre imágenes y objetos vinculados a África central y al acervo del museo.",
     "url": "https://www.cultura.gob.es/mnantropologia/actividades/agenda/2026/expotemporales2026/hotel.html",
-    "price": "Entrada gratuita",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/hotel-artefacto-expoliado-museo-nacional-antropologia",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "fotografia",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/ea6877557001.jpg",
     "location_name": "Museo Nacional de Antropología",
@@ -1202,18 +2233,44 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "20:00:00",
-    "end_time": "9:30:00"
+    "end_time": "9:30:00",
+    "schedule": {
+      "1": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "2": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "3": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "4": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "5": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "15:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Diálogos de escultura ibérica. El Museo del Louvre en el MAN",
-    "description": "Obras maestras del Museo del Louvre dialogan por primera vez con la escultura ibérica del MAN (Museo Arqueológico Nacional. Hasta 10 may).",
+    "description": "La exposición reúne por primera vez piezas maestras del Museo del Louvre con la colección de escultura ibérica del Museo Arqueológico Nacional. Las obras exploran el pensamiento simbólico, los rituales funerarios y la maestría técnica de la cultura ibérica a través de piezas arqueológicas excepcionales.",
     "url": "https://www.man.es/man/exposicion/exposiciones-temporales/20251118-escultura-iberica-louvre-man.html",
-    "price": "Exposición gratuita con la entrada del Museo:\nEntrada general: 3 €\nEntrada reducida: 1,50 €",
+    "price": "3 €",
     "source_url": "https://www.esmadrid.com/agenda/dialogos-escultura-iberica-museo-louvre-man-museo-arqueologico-nacional",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/96443066dc0d.jpg",
     "location_name": "Museo Arqueológico Nacional",
@@ -1223,18 +2280,44 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "09:30:00",
-    "end_time": "20:00:00"
+    "end_time": "20:00:00",
+    "schedule": {
+      "1": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "2": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "3": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "4": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "5": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "6": [
+        "09:30:00",
+        "15:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Constelaciones",
-    "description": "El director Sergio Peris-Mencheta adapta la obra de Nick Payne sobre la posibilidades vitales (Teatro Valle-Inclán. Martes a domingos. Hasta 29 mar).",
+    "description": "Una obra de teatro que explora las posibilidades vitales y la teoría de los multiversos a través de la relación entre un apicultor y una física. La pieza reflexiona sobre el amor, el destino y la libertad de elección mediante una estructura narrativa innovadora.",
     "url": "https://dramatico.inaem.gob.es/evento/constelaciones/",
-    "price": "General: 25 €Menores de 30 años, mayores de 65 años, desempleados, familia numerosa y certificado de discapacidad: 12,50 €",
+    "price": "25 €",
     "source_url": "https://www.esmadrid.com/agenda/constelaciones-teatro-valle-inclan",
     "source": "esmadrid",
     "categories": [
-      "teatro",
-      "danza"
+      "teatro"
     ],
     "image": "images/events/4c83eac33ece.jpg",
     "location_name": "Teatro Valle-Inclán",
@@ -1243,19 +2326,48 @@
     "longitude": -3.7006353,
     "start_date": "2026-03-28",
     "end_date": "2026-03-29",
-    "start_time": "20:00:00"
+    "start_time": "20:00:00",
+    "schedule": {
+      "0": [
+        "20:00:00",
+        "21:30:00"
+      ],
+      "1": [
+        "20:00:00",
+        "21:30:00"
+      ],
+      "2": [
+        "20:00:00",
+        "21:30:00"
+      ],
+      "3": [
+        "20:00:00",
+        "21:30:00"
+      ],
+      "4": [
+        "20:00:00",
+        "21:30:00"
+      ],
+      "5": [
+        "20:00:00",
+        "21:30:00"
+      ],
+      "6": [
+        "20:00:00",
+        "21:30:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "The Book Of Mormon, el musical",
-    "description": "La comedia musical más salvaje, gamberra e indecentemente divertida de la que todo el mundo habla (Teatro Rialto. Martes a domingos. Última función 31 mayo).",
+    "description": "Una comedia musical audaz y divertida creada por los autores de South Park junto al compositor de Coco. La obra destaca por su banda sonora magistral, brillantes interpretaciones y coreografías de alto nivel.",
     "url": "https://thebookofmormonelmusical.es/",
     "price": "Desde 29 €",
     "source_url": "https://www.esmadrid.com/agenda/book-mormon-musical-teatro-rialto",
     "source": "esmadrid",
     "categories": [
-      "musica",
-      "teatro",
-      "danza"
+      "teatro"
     ],
     "image": "images/events/41a7f34d1511.jpg",
     "location_name": "Teatro Rialto",
@@ -1265,18 +2377,34 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "17:00:00",
-    "end_time": "21:00:00"
+    "end_time": "21:00:00",
+    "schedule": {
+      "1": [
+        "20:30:00"
+      ],
+      "2": [
+        "20:00:00"
+      ],
+      "3": [
+        "20:00:00"
+      ],
+      "4": [],
+      "5": [],
+      "6": [
+        "16:30:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Transitar el siglo XX. Dibujo y escultura en las Colecciones ICO",
-    "description": "Un recorrido a través de la obra de una treintena de artistas que rinde homenaje a los orígenes de la colección de arte del museo (Museo ICO. Hasta 10 may).",
+    "description": "La exposición propone un recorrido por el arte del siglo XX a través de obras de treinta y cuatro creadores, explorando los lenguajes del trazo y el volumen. La muestra permite comprender la evolución de la forma y el espacio desde las vanguardias hasta la contemporaneidad.",
     "url": "https://www.fundacionico.es/web/guest/pr%C3%B3xima-exposicion",
-    "price": "Entrada gratuita",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/transitar-siglo-xx-dibujo-escultura-colecciones-ico-museo-ico",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/91cce02a6b96.jpg",
     "location_name": "Museo ICO",
@@ -1286,7 +2414,34 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "11:00:00",
-    "end_time": "20:00:00"
+    "end_time": "20:00:00",
+    "schedule": {
+      "1": [
+        "11:00:00",
+        "20:00:00"
+      ],
+      "2": [
+        "11:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "11:00:00",
+        "20:00:00"
+      ],
+      "4": [
+        "11:00:00",
+        "20:00:00"
+      ],
+      "5": [
+        "11:00:00",
+        "20:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "14:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "New Comer de Ziyi Le",
@@ -1308,14 +2463,13 @@
   },
   {
     "title": "De Babel al último rey de Iraq: una civilización milenaria",
-    "description": "Las obras del artista iraquí Hanoos Hanoos reflexionan sobre el poder, la violencia y la fragilidad humana (Casa Árabe. Hasta 17 mayo).",
+    "description": "La exposición presenta una serie de obras del artista iraquí Hanoos Hanoos que exploran la memoria histórica, el poder y la violencia. A través de pinturas y bocetos, se entrelaza el mito bíblico de Babel con la historia moderna de Iraq para reflexionar sobre la condición humana.",
     "url": "https://casaarabe.es/eventos-arabes/show/de-babel-al-ultimo-rey-de-iraq-una-civilizacion-milenaria",
-    "price": "Entrada libre hasta completar aforo",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/babel-ultimo-rey-iraq-civilizacion-milenaria-casa-arabe",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/e8c428340ef3.jpg",
     "location_name": "Casa Árabe",
@@ -1325,18 +2479,48 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "20:00:00"
+    "end_time": "20:00:00",
+    "schedule": {
+      "0": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "1": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "20:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Luis Pérez Calvo. Cromos de artista",
-    "description": "El artista multidisciplinar presenta una exposición integrada por una selección de «cromos» y un mural realizado in situ (CentroCentro. Hasta 20 sept).",
+    "description": "El artista multidisciplinar presenta una exposición que recupera la iconografía popular española mediante el dibujo, el collage, la pintura y la cerámica. La muestra se articula en torno a murales realizados in situ y una extensa selección de piezas que exploran la memoria y la cultura visual.",
     "url": "https://www.centrocentro.org/exposicion/luis-perez-calvo",
-    "price": "Entrada gratuita",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/luis-perez-calvo-cromos-artista-centrocentro",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/a1b1f414f33e.jpg",
     "location_name": "CentroCentro",
@@ -1346,19 +2530,44 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "20:00:00"
+    "end_time": "20:00:00",
+    "schedule": {
+      "1": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "20:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Generación 2026",
-    "description": "Una muestra que reúne los proyectos ganadores de la última edición de Generaciones de la Fundación Montemadrid (La Casa Encendida. Hasta 19 abril).",
+    "description": "Exposición que recoge los proyectos ganadores de la convocatoria de ayudas a la creación joven de la Fundación Montemadrid. La muestra presenta propuestas de diversos artistas emergentes seleccionadas por un jurado especializado.",
     "url": "https://www.lacasaencendida.es/exposiciones/generacion-2026",
-    "price": "Entrada gratuita",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/generacion-2026-casa-encendida",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "fotografia",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/ae52bf3cedb8.jpg",
     "location_name": "La Casa Encendida",
@@ -1366,13 +2575,14 @@
     "latitude": 40.4060622,
     "longitude": -3.6999668,
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "_enriched": true
   },
   {
     "title": "Este libro es mío... la heráldica como elemento distintivo en la producción del libro antiguo",
-    "description": "Exposición que explora cómo la heráldica se empleaba en las portadas y encuadernaciones de libros antiguos para indicar la propiedad (Biblioteca Histórica UCM Marqués de Valdecilla.",
+    "description": "La exposición explora cómo la heráldica se empleaba en las portadas y encuadernaciones de libros antiguos para indicar la propiedad, el prestigio y la afiliación social. La muestra pone especial énfasis en el papel y la visibilidad de la mujer en estas composiciones.",
     "url": "https://biblioteca.ucm.es/historica/este-libro-es-mio-la-heraldica",
-    "price": "Consultar página oficial",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/libro-es-mio-biblioteca-historica-ucm-marques-valdecilla",
     "source": "esmadrid",
     "categories": [
@@ -1386,19 +2596,40 @@
     "start_date": "2026-03-30",
     "end_date": "2026-04-10",
     "start_time": "09:00:00",
-    "end_time": "20:30:00"
+    "end_time": "20:30:00",
+    "schedule": {
+      "0": [
+        "09:00:00",
+        "20:30:00"
+      ],
+      "1": [
+        "09:00:00",
+        "20:30:00"
+      ],
+      "2": [
+        "09:00:00",
+        "20:30:00"
+      ],
+      "3": [
+        "09:00:00",
+        "20:30:00"
+      ],
+      "4": [
+        "09:00:00",
+        "20:30:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "La casa de las artes. Abierta desde 1926",
-    "description": "Un recorrido por el origen, el diseño y la construcción de una de las arquitecturas más emblemáticas de la Gran Vía madrileña (Círculo de Bellas Artes. Hasta 10 may).",
+    "description": "Esta exposición recorre el origen, diseño y construcción del emblemático edificio del Círculo de Bellas Artes proyectado por Antonio Palacios. La muestra reúne planos originales, dibujos, fotografías y piezas inéditas que reconstruyen la historia de esta sede cultural.",
     "url": "https://www.circulobellasartes.com/exposiciones/la-casa-de-las-artes-abierta-desde-1926/",
-    "price": "Entrada normal: 6 €\nEntrada reducida: 5 €\nSocios CBA: entrada gratuita",
+    "price": "5 €",
     "source_url": "https://www.esmadrid.com/agenda/casa-artes-abierta-1926-circulo-bellas-artes",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "fotografia",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/2f742dd3145e.jpg",
     "location_name": "Círculo de Bellas Artes",
@@ -1408,13 +2639,40 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "11:00:00",
-    "end_time": "14:00:00"
+    "end_time": "14:00:00",
+    "schedule": {
+      "1": [
+        "11:00:00",
+        "21:00:00"
+      ],
+      "2": [
+        "11:00:00",
+        "21:00:00"
+      ],
+      "3": [
+        "11:00:00",
+        "21:00:00"
+      ],
+      "4": [
+        "11:00:00",
+        "21:00:00"
+      ],
+      "5": [
+        "11:00:00",
+        "21:00:00"
+      ],
+      "6": [
+        "11:00:00",
+        "21:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Bellezas del mundo flotante",
-    "description": "La edad de oro del grabado japonés entre finales del siglo XVIII y mediados del XIX protagoniza esta exposición (Real Academia Bellas Artes San Fernando. Hasta 31 may).",
+    "description": "La exposición muestra una selección de setenta y siete obras de los maestros clásicos de la edad de oro del grabado japonés. La muestra destaca por la calidad y diversidad de sus estampas pertenecientes al género bijin-ga.",
     "url": "https://www.realacademiabellasartessanfernando.com/actividades/exposiciones/bellezas-del-mundo-flotante/",
-    "price": "Entrada general (Museo, Gabinete Goya y exposición): 10 €\nEntrada reducida (Museo, Gabinete Goya y exposición): 5 €\nEntrada solo exposición: 6 €\nReducida solo exposición: 3 €\nConsultar web oficial para casos de precio reducido y gratuidad de entrada.",
+    "price": "3 €",
     "source_url": "https://www.esmadrid.com/agenda/bellezas-mundo-flotante-real-academia-bellas-artes-san-fernando",
     "source": "esmadrid",
     "categories": [
@@ -1428,19 +2686,44 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "19:00:00"
+    "end_time": "19:00:00",
+    "schedule": {
+      "1": [
+        "10:00:00",
+        "19:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "19:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "19:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "19:00:00"
+      ],
+      "5": [
+        "10:00:00",
+        "19:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "15:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "El jardín de los cerezos",
-    "description": "Juan Carlos Pérez de la Fuente dirige una adaptación de Ignacio García May del drama de Antón Chéjov (Fernán Gómez Centro Cultural de la Villa - Sala Guirau. Martes a domingos.",
+    "description": "Adaptación del drama de Antón Chéjov que retrata el ocaso de la aristocracia rusa y el nacimiento de una nueva sociedad. La obra utiliza la venta de una hacienda familiar como alegoría sobre la incapacidad humana para adaptarse a los cambios.",
     "url": "https://www.teatrofernangomez.es/actividades/el-jardin-de-los-cerezos",
-    "price": "General: 22 €Carné joven, mayores de 65 años, familia numerosa, discapacidad y acompañante, desempleados y carné de bibliotecas municipales de Madrid: 18 €Amigos TFG: 15 €Grupos (+ de 20): 17 €Menores de 14 años: 17 €",
+    "price": "22 €",
     "source_url": "https://www.esmadrid.com/agenda/jardin-cerezos-fernan-gomez-centro-cultural-villa",
     "source": "esmadrid,madrid_agenda",
     "categories": [
-      "teatro",
-      "danza",
-      "destacado"
+      "teatro"
     ],
     "image": "images/events/bdb1531e7213.jpg",
     "location_name": "Fernán Gómez Centro Cultural de la Villa",
@@ -1448,18 +2731,44 @@
     "latitude": 40.424637345173,
     "longitude": -3.689861297607,
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "schedule": {
+      "1": [
+        "20:00:00",
+        "22:00:00"
+      ],
+      "2": [
+        "20:00:00",
+        "22:00:00"
+      ],
+      "3": [
+        "20:00:00",
+        "22:00:00"
+      ],
+      "4": [
+        "20:00:00",
+        "22:00:00"
+      ],
+      "5": [
+        "20:00:00",
+        "22:00:00"
+      ],
+      "6": [
+        "19:00:00",
+        "21:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "La última noche con mi hermano",
-    "description": "El director Alfredo Sanzol crea un drama que explora el duelo, la hermandad y la fragilidad (Teatro María Guerrero. Martes a domingos. Hasta 5 abr).",
+    "description": "El director Alfredo Sanzol presenta un drama que explora el duelo, la hermandad y la fragilidad humana a partir de una experiencia personal. La obra reflexiona sobre cómo los vínculos fraternos atraviesan la existencia y los distintos modos de vivir la pérdida en el seno familiar.",
     "url": "https://dramatico.inaem.gob.es/evento/la-ultima-noche-con-mi-hermano/",
-    "price": "General: 25 €Menores de 30 años, mayores de 65 años, desempleados, familia numerosa y certificado de discapacidad: 12,5 €",
+    "price": "25 €",
     "source_url": "https://www.esmadrid.com/agenda/ultima-noche-mi-hermano-teatro-maria-guerrero",
     "source": "esmadrid",
     "categories": [
-      "teatro",
-      "danza"
+      "teatro"
     ],
     "image": "images/events/ea622d827c94.jpg",
     "location_name": "Teatro María Guerrero",
@@ -1469,18 +2778,39 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-05",
     "start_time": "12:00:00",
-    "end_time": "20:00:00"
+    "end_time": "20:00:00",
+    "schedule": {
+      "0": [],
+      "1": [
+        "20:00:00"
+      ],
+      "2": [
+        "20:00:00"
+      ],
+      "3": [
+        "20:00:00"
+      ],
+      "4": [
+        "20:00:00"
+      ],
+      "5": [
+        "20:00:00"
+      ],
+      "6": [
+        "20:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Blue as Velvet",
-    "description": "Nueva exposición del artista visual Baptiste Laurent que presenta una serie de obras realizadas sobre terciopelo (Brach Madrid. 25 feb a 12 abr).",
+    "description": "Nueva exposición del artista visual Baptiste Laurent que presenta una serie de obras inéditas realizadas sobre terciopelo. La muestra explora paisajes imaginarios y naturalezas muertas que invitan a sumergirse en una atmósfera entre sueño y ficción.",
     "url": "https://brachmadrid.com/es/",
-    "price": "Entrada libre",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/blue-velvet-brach-madrid",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/fd7ed0a7c6c9.jpg",
     "location_name": "Brach Madrid",
@@ -1488,35 +2818,18 @@
     "latitude": 40.4197037,
     "longitude": -3.6990886,
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
-  },
-  {
-    "title": "Voices United",
-    "description": "Un recital que incluye las actuaciones de varios coros procedentes de Estados Unidos (Parroquia de Santa Cruz. 17 marzo).",
-    "url": "https://www.nashvillesymphony.org/education/community-programs/we-are-nashville/we-are-nashville-2024/trey-jacobs/",
-    "price": "Entrada gratuita",
-    "source_url": "https://www.esmadrid.com/agenda/voices-united-parroquia-santa-cruz",
-    "source": "esmadrid",
-    "categories": [
-      "musica",
-      "gratis"
-    ],
-    "location_name": "Parroquia de Santa Cruz",
-    "address": "de Atocha, 6",
-    "latitude": 40.4145721,
-    "longitude": -3.7051763
+    "end_date": "2026-04-10",
+    "_enriched": true
   },
   {
     "title": "La crónica citadina de Juan Guzmán: en donde no cabe un alfiler, bien caben dos ruleteros",
-    "description": "Exposición compuesta por imágenes tomadas por el fotógrafo de origen alemán, que retrató la capital mexicana desde mediados del siglo XX (Instituto Cultural de México en España.",
+    "description": "Exposición fotográfica que documenta la transformación urbana, social y cultural de la capital mexicana a mediados del siglo XX. La muestra recoge el trabajo del fotoperiodista Juan Guzmán, quien retrató la vida cotidiana, oficios y cambios arquitectónicos de la metrópoli.",
     "url": "https://icm.sre.gob.mx/espana/index.php/artes-visuales/944-exposicion-la-cronica-citadina-de-juan-guzman-en-donde-no-cabe-un-alfiler-bien-caben-dos-ruleteros",
-    "price": "Entrada gratuita",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/cronica-citadina-juan-guzman-donde-no-alfiler-bien-caben-dos-ruleteros-instituto-cultural",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "fotografia",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/4182687be92f.jpg",
     "location_name": "Instituto Cultural de México en España",
@@ -1526,37 +2839,85 @@
     "start_date": "2026-03-30",
     "end_date": "2026-04-10",
     "start_time": "10:00:00",
-    "end_time": "14:00:00"
+    "end_time": "14:00:00",
+    "schedule": {
+      "0": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "1": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "2": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "10:00:00",
+        "20:00:00"
+      ],
+      "4": [
+        "10:00:00",
+        "20:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "El límite de lo real",
-    "description": "Una exposición inmersiva realizada por el reconocido fotógrafo y artista Javier Aranburu (Galería de Arte Javier Aranburu - Flashara. Hasta 31 marzo).",
+    "description": "Exposición inmersiva que propone un juego visual entre fotografías y creaciones mediante inteligencia artificial. La muestra invita al espectador a distinguir entre lo real y lo inventado en un territorio de apariencia similar.",
     "url": "https://flashara.com/galeria-de-arte/exposicion-limite-de-lo-real/",
-    "price": "Entrada libre hasta completar aforo",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/limite-lo-real-galeria-arte-javier-aranburu-flashara",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "fotografia",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/11fb16ec11f6.jpg",
     "start_date": "2026-03-28",
     "end_date": "2026-03-31",
     "start_time": "11:00:00",
-    "end_time": "15:00:00"
+    "end_time": "15:00:00",
+    "schedule": {
+      "0": [
+        "11:00:00",
+        "15:00:00"
+      ],
+      "1": [
+        "11:00:00",
+        "15:00:00"
+      ],
+      "2": [
+        "11:00:00",
+        "20:00:00"
+      ],
+      "3": [
+        "11:00:00",
+        "15:00:00"
+      ],
+      "4": [
+        "11:00:00",
+        "15:00:00"
+      ],
+      "5": [
+        "11:00:00",
+        "15:00:00"
+      ]
+    },
+    "location_name": "Galería de Arte Javier Aranburu - Flashara",
+    "address": "Guzmán el Bueno, 63",
+    "_enriched": true
   },
   {
     "title": "Gauchos",
-    "description": "Retrato de los vaqueros uruguayos a través de las fotografías de Luis Fabini (Museo de América. Hasta 12 abril).",
+    "description": "Esta exposición presenta el retrato de los vaqueros uruguayos a través de las fotografías de Luis Fabini. La muestra explora la vida austera y digna de este colectivo social en el contexto de su hermandad con la tierra y el caballo.",
     "url": "https://www.cultura.gob.es/museodeamerica/exposiciones/exposiciones-temporales/2025-gauchos.html",
-    "price": "Entrada gratuita",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/gauchos-museo-america",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "fotografia",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/e207b47af013.jpg",
     "location_name": "Museo de América",
@@ -1566,13 +2927,40 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "09:30:00",
-    "end_time": "15:00:00"
+    "end_time": "15:00:00",
+    "schedule": {
+      "1": [
+        "09:30:00",
+        "15:00:00"
+      ],
+      "2": [
+        "09:30:00",
+        "15:00:00"
+      ],
+      "3": [
+        "09:30:00",
+        "19:00:00"
+      ],
+      "4": [
+        "09:30:00",
+        "15:00:00"
+      ],
+      "5": [
+        "09:30:00",
+        "15:00:00"
+      ],
+      "6": [
+        "10:00:00",
+        "15:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Machu Picchu: Viaje a la Ciudad Perdida",
-    "description": "Experiencia de realidad virtual que transporta 450 años atrás al corazón del antiguo Imperio Inca (Fever Hub Madrid. Martes a domingos).",
+    "description": "Una experiencia inmersiva de realidad virtual que transporta al espectador al corazón del antiguo Imperio Inca utilizando tecnología de vanguardia. El recorrido permite explorar templos, plazas y paisajes míticos a través de una detallada reconstrucción digital histórica.",
     "url": "https://machupicchuexp.com/madrid/",
-    "price": "Entrada general Adulto (18+): 14,40 €\nEntrada reducida (Niños 10 a 17; estudiantes; senior): 10,40 €\nPack de grupo (min. 4 tickets): 11,20 €\nConsultar página oficial",
+    "price": "Desde 10,40 €",
     "source_url": "https://www.esmadrid.com/agenda/machu-picchu-viaje-ciudad-perdida-fever-hub-madrid",
     "source": "esmadrid",
     "categories": [
@@ -1580,16 +2968,27 @@
     ],
     "image": "images/events/c4d65fb292a4.jpg",
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "schedule": {
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": []
+    },
+    "location_name": "Fever Hub Madrid",
+    "address": "Raimundo Fernández Villaverde, 57",
+    "_enriched": true
   },
   {
     "title": "Tría Áurea",
-    "description": "Programa de visitas que incluye la visita conjunta a tres hitos del barroco madrileño (Iglesia de San Antonio de los Alemanes, Monasterio de las Comendadoras de Santiago, Iglesia de San Plácido.",
+    "description": "Programa de visitas que permite recorrer tres destacados hitos del barroco madrileño. La experiencia incluye el acceso a la Iglesia de San Antonio de los Alemanes, el Monasterio de las Comendadoras de Santiago y la Iglesia de San Plácido.",
     "url": "https://realhermandaddelrefugio.org/tria-aurea/",
-    "price": "Entrada Tría Áurea: 19,50 € (entrada conjunta con los monumentos: San Antonio, San Plácido y Comendadoras de Santiago)\nEntrada general: 12 € (no es una visita guiada, incluye audioguía. Visita combinada San Antonio de los Alemanes y San Plácido)",
+    "price": "12 €",
     "source_url": "https://www.esmadrid.com/agenda/tria-aurea-madrid",
     "source": "esmadrid",
     "categories": [
+      "visitas guiadas",
       "otros"
     ],
     "image": "images/events/1ebe6c1edeb1.jpg",
@@ -1598,18 +2997,19 @@
     "latitude": 40.4224508,
     "longitude": -3.7036394,
     "start_date": "2026-03-28",
-    "end_date": "2026-03-31"
+    "end_date": "2026-03-31",
+    "is_multi_event": true,
+    "_enriched": true
   },
   {
     "title": "Lo que la ciudad esconde: Imágenes de la corte medieval de Toledo",
-    "description": "La muestra presenta un excepcional conjunto de tablas policromadas medievales, de extraordinaria riqueza iconográfica, halladas de manera casual en Toledo (Museo Arqueológico Nacional.",
+    "description": "La exposición exhibe un conjunto de tablas policromadas medievales de gran valor iconográfico halladas recientemente en Toledo. Las piezas ofrecen una visión detallada de la vida cortesana, escenas caballerescas y representaciones de la filosofía y ciencia de los siglos XIII y XIV.",
     "url": "https://www.man.es/man/exposicion/novedades-arqueologicas/20260217-imagenes-corte-medieval-toledo.html",
-    "price": "Entrada gratuita",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/lo-ciudad-esconde-imagenes-corte-medieval-toledo-museo-arqueologico-nacional",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/ceb104cbd889.jpg",
     "location_name": "Museo Arqueológico Nacional",
@@ -1619,18 +3019,44 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "09:30:00",
-    "end_time": "20:00:00"
+    "end_time": "20:00:00",
+    "schedule": {
+      "1": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "2": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "3": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "4": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "5": [
+        "09:30:00",
+        "20:00:00"
+      ],
+      "6": [
+        "09:30:00",
+        "15:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Abierto x Obras - Pulgar. Mónica Mays",
-    "description": "La artista presenta una instalación site specific con una nueva serie de esculturas (Nave 0 - Matadero Madrid. Hasta 24 may).",
+    "description": "La artista presenta una instalación site specific que se articula como un ensamblaje de objetos e historias. La muestra explora tensiones entre la economía material y la vida afectiva a través de esculturas que integran componentes industriales y domésticos.",
     "url": "https://www.mataderomadrid.org/programacion/exposicion-pulgar-de-monica-mays",
-    "price": "Entrada libre hasta completar aforo",
+    "price": "Gratis",
     "source_url": "https://www.esmadrid.com/agenda/abierto-x-obras-pulgar-monica-mays-nave-0-matadero-madrid",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "image": "images/events/05454dd6ecfa.jpg",
     "location_name": "Nave 0 (Matadero)",
@@ -1640,11 +3066,38 @@
     "start_date": "2026-03-28",
     "end_date": "2026-04-10",
     "start_time": "12:00:00",
-    "end_time": "21:00:00"
+    "end_time": "21:00:00",
+    "schedule": {
+      "1": [
+        "17:00:00",
+        "21:00:00"
+      ],
+      "2": [
+        "17:00:00",
+        "21:00:00"
+      ],
+      "3": [
+        "17:00:00",
+        "21:00:00"
+      ],
+      "4": [
+        "12:00:00",
+        "21:00:00"
+      ],
+      "5": [
+        "12:00:00",
+        "21:00:00"
+      ],
+      "6": [
+        "12:00:00",
+        "21:00:00"
+      ]
+    },
+    "_enriched": true
   },
   {
     "title": "Noches y días",
-    "description": "El artista José María Sicilia instala obras creadas ex profeso en las estancias más emblemáticas del palacio (Palacio de Liria. Hasta 31 may).",
+    "description": "El artista José María Sicilia interviene las estancias emblemáticas del Palacio de Liria con una selección de obras recientes y una instalación site-specific. La propuesta establece un diálogo entre la memoria del edificio y el arte contemporáneo, explorando la luz y la fragilidad de los signos.",
     "url": "https://www.palaciodeliria.com/",
     "price": "Consultar página oficial",
     "source_url": "https://www.esmadrid.com/agenda/noches-dias-palacio-liria",
@@ -1658,7 +3111,8 @@
     "latitude": 40.427732729479,
     "longitude": -3.712424039841,
     "start_date": "2026-03-28",
-    "end_date": "2026-04-10"
+    "end_date": "2026-04-10",
+    "_enriched": true
   },
   {
     "title": "El rostro significa lo infinito",
