@@ -299,7 +299,7 @@ const SOURCE_LABELS = {
 };
 
 const EXCLUDED_CATS = new Set(["gratis", "destacado", "aire libre", "accesible"]);
-const CAT_PRIORITY = ["monólogos","ópera","circo","cine","danza","gastronomía","deportes","infantil","mercados","fiestas","conciertos","teatro","talleres","conferencias","literatura","visitas guiadas","exposiciones","musica","fotografia","gastronomia"];
+const CAT_PRIORITY = ["monólogos","ópera","circo","cine","danza","gastronomía","deportes","infantil","mercados","fiestas","conciertos","teatro","talleres","conferencias","literatura","visitas guiadas","musica","fotografia","gastronomia","exposiciones"];
 
 function eventBadges(ev, cls) {
   const price = ev.price || "";
