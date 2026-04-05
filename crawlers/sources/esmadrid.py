@@ -438,7 +438,7 @@ class EsMadridCrawler(BaseCrawler):
 
     def crawl_incremental(self, known_urls: set, enrich=False, limit=0) -> list[dict]:
         today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
-        days_ahead = 14
+        days_ahead = 30
         events = []
         seen_urls = {}  # url -> parsed event data (cache across days)
 

@@ -53,7 +53,21 @@ class BaseCrawler(ABC):
             if "_known_url" in ev:
                 continue
             t = ev.get("title", "").strip().lower()
-            if t:
+            if not t:
+                continue
+            if t in by_title:
+                old = by_title[t]
+                # Expand date range: keep earliest start, latest end
+                old_sd = old.get("start_date", "")
+                new_sd = ev.get("start_date", "")
+                old_ed = old.get("end_date", "")
+                new_ed = ev.get("end_date", "")
+                by_title[t] = ev
+                if old_sd and (not new_sd or old_sd < new_sd):
+                    by_title[t]["start_date"] = old_sd
+                if old_ed and (not new_ed or old_ed > new_ed):
+                    by_title[t]["end_date"] = old_ed
+            else:
                 by_title[t] = ev
 
         merged = list(by_title.values())
