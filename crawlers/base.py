@@ -49,8 +49,22 @@ class BaseCrawler(ABC):
             new_events = self.crawl()
         print(f"  Got {len(new_events)} events")
 
+        # Index existing events by source_url for stub matching
+        by_url = {}
+        for t, ev in by_title.items():
+            url = ev.get("source_url") or ev.get("url")
+            if url:
+                by_url[url] = t
+
         for ev in new_events:
+            # Stubs from known URLs: extend end_date of existing event
             if "_known_url" in ev:
+                t = by_url.get(ev["_known_url"])
+                if t and t in by_title:
+                    ds = ev.get("start_date", "")
+                    old_ed = by_title[t].get("end_date", "")
+                    if ds and (not old_ed or ds > old_ed):
+                        by_title[t]["end_date"] = ds
                 continue
             t = ev.get("title", "").strip().lower()
             if not t:
@@ -69,6 +83,10 @@ class BaseCrawler(ABC):
                     by_title[t]["end_date"] = old_ed
             else:
                 by_title[t] = ev
+            # Update url index
+            url = ev.get("source_url") or ev.get("url")
+            if url:
+                by_url[url] = t
 
         merged = list(by_title.values())
         self.save(merged)

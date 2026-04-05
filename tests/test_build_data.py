@@ -5,7 +5,7 @@ import os
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
-from crawlers.build_data import cal_entries_for_date, make_event_id, richness, merge_event
+from crawlers.consolidate import cal_entries_for_date, make_event_id, richness, merge_event
 
 
 class TestCalEntriesForDate:
