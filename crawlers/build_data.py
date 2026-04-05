@@ -30,9 +30,9 @@ def run(consolidate_only=False):
                 crawler.run()
             except Exception as e:
                 print(f"  Error in {crawler.name}: {e}")
-
-    print("\n--- Consolidating ---")
-    consolidate()
+    else:
+        print("\n--- Consolidating ---")
+        consolidate()
 
 
 if __name__ == "__main__":

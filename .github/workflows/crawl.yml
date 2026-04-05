@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r crawlers/requirements.txt
 
-      - name: Run crawlers
+      - name: Run crawlers (no consolidate, done after enrich+images)
         run: python crawlers/build_data.py
 
       - name: Enrich with LLM
