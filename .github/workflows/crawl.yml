@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r crawlers/requirements.txt
 
-      - name: Run crawlers (no consolidate, done after enrich+images)
+      - name: Run crawlers
         run: python crawlers/build_data.py
 
       - name: Enrich with LLM
@@ -40,7 +40,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add crawlers/data/sources/
+          git add crawlers/data/sources/ crawlers/data/enrich/
           git add frontend/data/ frontend/images/events/
           git add frontend/index.html frontend/sitemap.xml frontend/robots.txt
           git add frontend/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]/index.html 2>/dev/null || true

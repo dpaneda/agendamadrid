@@ -1,7 +1,8 @@
-"""Enrich existing source events with LLM data.
+"""Enrich existing source events with LLM data, saving to a separate file.
 
 Reads a source JSON, downloads each event's source_url, sends to LLM,
-and merges the result back. Saves enriched events to the same file.
+and saves the enrichment data to crawlers/data/enrich/{source}.json.
+Source files are never modified.
 
 Usage:
   GEMINI_API_KEY=key python -m crawlers.enrich_source esmadrid --limit 5
@@ -10,116 +11,100 @@ Usage:
 import json
 import os
 import sys
-import time
 
 import requests
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
-from crawlers.llm_enrich import enrich, merge_llm_data, _clean_html, _get_client
+from crawlers.base import make_event_id
+from crawlers.llm_enrich import enrich, _get_client
 
 SOURCES_DIR = os.path.join(os.path.dirname(__file__), "data", "sources")
+ENRICH_DIR = os.path.join(os.path.dirname(__file__), "data", "enrich")
 HEADERS = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"}
 
 
-def run(source_name, limit=0, skip_enriched=True):
-    path = os.path.join(SOURCES_DIR, f"{source_name}.json")
-    if not os.path.exists(path):
-        print(f"Source file not found: {path}")
+def run(source_name, limit=0, force=False):
+    source_path = os.path.join(SOURCES_DIR, f"{source_name}.json")
+    enrich_path = os.path.join(ENRICH_DIR, f"{source_name}.json")
+
+    if not os.path.exists(source_path):
+        print(f"Source file not found: {source_path}")
         sys.exit(1)
 
     if not _get_client():
         print("Error: set GEMINI_API_KEY env var")
         sys.exit(1)
 
-    with open(path) as f:
+    with open(source_path) as f:
         events = json.load(f)
 
-    print(f"Loaded {len(events)} events from {source_name}")
+    # Load existing enrichments
+    existing_enrich = {}
+    if not force and os.path.exists(enrich_path):
+        with open(enrich_path) as f:
+            existing_enrich = json.load(f)
 
-    enriched = 0
+    print(f"Loaded {len(events)} events from {source_name}, {len(existing_enrich)} already enriched")
+
+    enriched_count = 0
     errors = 0
     skipped = 0
 
-    for i, ev in enumerate(events):
-        if limit and enriched >= limit:
+    for ev in events:
+        if limit and enriched_count >= limit:
             break
 
+        eid = ev.get("id") or make_event_id(ev.get("title", ""))
         url = ev.get("source_url") or ev.get("url")
+
         if not url or not url.startswith("http"):
             skipped += 1
             continue
 
-        if skip_enriched and ev.get("_enriched"):
+        if not force and eid in existing_enrich:
             skipped += 1
             continue
 
         title = ev.get("title", "???")
-        print(f"\n  [{enriched+1}/{limit or '∞'}] {title}")
+        print(f"\n  [{enriched_count+1}/{limit or '∞'}] {title}")
 
         try:
             resp = requests.get(url, timeout=15, headers=HEADERS)
             resp.raise_for_status()
-            html = resp.text
 
-            llm_data = enrich(html)
+            llm_data = enrich(resp.text)
             if llm_data:
-                events[i] = merge_llm_data(ev, llm_data)
-                enriched += 1
+                existing_enrich[eid] = llm_data
+                enriched_count += 1
                 parts = []
                 if llm_data.get("price"):
-                    parts.append(f"💰 {llm_data['price']}")
+                    parts.append(f"price={llm_data['price']}")
                 if llm_data.get("schedule"):
-                    parts.append(f"🕐 {len(llm_data['schedule'])} días")
+                    parts.append(f"schedule={len(llm_data['schedule'])} days")
                 if llm_data.get("categories"):
-                    parts.append(f"🏷 {','.join(llm_data['categories'])}")
+                    parts.append(f"cats={','.join(llm_data['categories'])}")
                 if llm_data.get("is_multi_event"):
-                    parts.append("📦 multi-evento")
-                print(f"    ✓ {' | '.join(parts) or 'sin datos nuevos'}")
-
-                # Fallback: if no schedule, try destination URL
-                dest_url = events[i].get("url")
-                if (not events[i].get("schedule") and not events[i].get("start_time")
-                        and dest_url and dest_url != url):
-                    try:
-                        dest_resp = requests.get(dest_url, timeout=15, headers=HEADERS)
-                        dest_resp.raise_for_status()
-                        dest_data = enrich(dest_resp.text)
-                        if dest_data and dest_data.get("schedule"):
-                            events[i]["schedule"] = dest_data["schedule"]
-                            all_times = [t for times in dest_data["schedule"].values() for t in times]
-                            if all_times:
-                                events[i]["start_time"] = sorted(all_times)[0]
-                            print(f"    ✓ Fallback: got schedule from {dest_url[:60]}")
-                    except Exception as e:
-                        print(f"    ⚠ Fallback failed: {e}")
-
-                events[i]["_enriched"] = True
+                    parts.append("multi-event")
+                print(f"    OK: {' | '.join(parts) or 'no new data'}")
             else:
                 errors += 1
-                print(f"    ✗ No LLM data returned")
-
+                print(f"    No LLM data returned")
 
         except requests.exceptions.HTTPError as e:
-            if e.response is not None and e.response.status_code in (403, 404, 410):
-                events[i] = None  # mark for removal
-                errors += 1
-                print(f"    🗑 Removed (HTTP {e.response.status_code})")
-            else:
-                errors += 1
-                events[i]["_broken"] = str(e)[:100]
-                print(f"    ✗ {e}")
+            errors += 1
+            status = e.response.status_code if e.response is not None else "?"
+            print(f"    HTTP {status}: {e}")
         except Exception as e:
             errors += 1
-            print(f"    ✗ {e}")
+            print(f"    Error: {e}")
 
-    events = [ev for ev in events if ev is not None]
-    removed = len(json.load(open(path))) - len(events) if os.path.exists(path) else 0
-    print(f"\nDone: {enriched} enriched, {errors} errors, {skipped} skipped, {removed} removed")
+    print(f"\nDone: {enriched_count} enriched, {errors} errors, {skipped} skipped")
 
-    with open(path, "w") as f:
-        json.dump(events, f, indent=2, ensure_ascii=False, default=str)
-    print(f"Saved {len(events)} events to {path}")
+    os.makedirs(ENRICH_DIR, exist_ok=True)
+    with open(enrich_path, "w") as f:
+        json.dump(existing_enrich, f, indent=2, ensure_ascii=False, default=str)
+    print(f"Saved {len(existing_enrich)} enrichments to {enrich_path}")
 
 
 if __name__ == "__main__":
@@ -127,6 +112,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("source", help="Source name (e.g. esmadrid)")
     parser.add_argument("--limit", type=int, default=0, help="Max events to enrich (0=all)")
-    parser.add_argument("--all", action="store_true", help="Re-enrich already enriched events")
+    parser.add_argument("--force", action="store_true", help="Re-enrich all events")
     args = parser.parse_args()
-    run(args.source, limit=args.limit, skip_enriched=not args.all)
+    run(args.source, limit=args.limit, force=args.force)

@@ -1,25 +1,27 @@
-"""Consolidate source JSONs into events.json + calendar.json + locations.json.
+"""Consolidate source JSONs + enrich into events.json + calendar.json + locations.json.
 
-Reads all files in data/sources/*.json and merges them into the final output.
-This step is fast and doesn't hit any external APIs.
+Reads all files in data/sources/*.json and data/enrich/*.json, merges them
+into the final output. This step is fast and doesn't hit any external APIs.
 
 Usage:
-  python crawlers/consolidate.py
+  python -m crawlers.consolidate
 """
 
 import hashlib
 import json
 import os
 import sys
-from datetime import datetime, UTC
+from datetime import datetime, timedelta, UTC
 from glob import glob
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
+from crawlers.base import make_event_id
 from crawlers.generate_seo import run as generate_seo
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "frontend", "data")
 SOURCES_DIR = os.path.join(os.path.dirname(__file__), "data", "sources")
+ENRICH_DIR = os.path.join(os.path.dirname(__file__), "data", "enrich")
 EVENTS_PATH = os.path.join(DATA_DIR, "events.json")
 CALENDAR_PATH = os.path.join(DATA_DIR, "calendar.json")
 LOCATIONS_PATH = os.path.join(DATA_DIR, "locations.json")
@@ -28,11 +30,6 @@ LOC_FIELDS = ("location_name", "address", "district", "latitude", "longitude")
 
 RICHNESS_FIELDS = ["description", "start_time", "end_time", "location_name", "address",
                    "latitude", "longitude", "url", "district", "image"]
-
-
-def make_event_id(title):
-    title_norm = title.strip().lower()
-    return hashlib.sha256(title_norm.encode()).hexdigest()[:16]
 
 
 def richness(ev):
@@ -98,8 +95,37 @@ def cal_entries_for_date(ev, eid, ds):
     return [entry]
 
 
+def _apply_enrich(event_data, enrich_data):
+    """Apply enrich data: LLM fills gaps, never overwrites scraper dates."""
+    if not enrich_data:
+        return event_data
+
+    merged = {**event_data}
+
+    # LLM wins for description and price (better quality)
+    for field in ("description", "price"):
+        if enrich_data.get(field):
+            merged[field] = enrich_data[field]
+
+    # LLM wins for categories (better classification)
+    if enrich_data.get("categories"):
+        merged["categories"] = enrich_data["categories"]
+
+    # LLM fills gaps only — never overwrite scraper data
+    for field in ("location_name", "address"):
+        if enrich_data.get(field) and not event_data.get(field):
+            merged[field] = enrich_data[field]
+
+    # LLM never touches dates — those come from the scraper only
+
+    if enrich_data.get("is_multi_event"):
+        merged["is_multi_event"] = True
+
+    return merged
+
+
 def run():
-    # Load lower-quality sources first, so higher-quality ones win in merge
+    # Load source files (lower-quality first so higher-quality wins in merge)
     SOURCE_PRIORITY = {"esmadrid": 1}
     source_files = sorted(glob(os.path.join(SOURCES_DIR, "*.json")),
                           key=lambda p: SOURCE_PRIORITY.get(os.path.splitext(os.path.basename(p))[0], 0))
@@ -107,17 +133,26 @@ def run():
         print("No source files found in", SOURCES_DIR)
         return
 
-    events = {}
+    # Load all enrich files
+    all_enrich = {}
+    for path in glob(os.path.join(ENRICH_DIR, "*.json")):
+        with open(path) as f:
+            all_enrich.update(json.load(f))
+    if all_enrich:
+        print(f"Loaded {len(all_enrich)} enrichments")
+
+    raw_events = {}  # id -> raw event (with schedule, dates — for calendar)
+    events = {}      # id -> event data (for events.json)
     calendar = {}
 
     for path in source_files:
         source_name = os.path.splitext(os.path.basename(path))[0]
         print(f"Loading: {source_name}")
         with open(path) as f:
-            raw_events = json.load(f)
-        print(f"  {len(raw_events)} events")
+            source_events = json.load(f)
+        print(f"  {len(source_events)} events")
 
-        for ev in raw_events:
+        for ev in source_events:
             title = ev.get("title", "")
             start_date = ev.get("start_date", "")
             if not title or not start_date:
@@ -125,34 +160,15 @@ def run():
             if ev.get("is_multi_event") and not ev.get("schedule") and not ev.get("start_time"):
                 continue
 
-            eid = make_event_id(title)
+            eid = ev.get("id") or make_event_id(title)
 
-            # Calendar entries
-            if start_date not in calendar:
-                calendar[start_date] = []
-            calendar[start_date] = [e for e in calendar[start_date] if e["event_id"] != eid]
-            calendar[start_date].extend(cal_entries_for_date(ev, eid, start_date))
+            # Raw events: keep full data for calendar generation
+            if eid in raw_events:
+                raw_events[eid] = merge_event(raw_events[eid], ev)
+            else:
+                raw_events[eid] = {**ev}
 
-            # Also add entries for date range (capped at 30 days from today)
-            end_date = ev.get("end_date")
-            if end_date and end_date > start_date:
-                from datetime import timedelta
-                today_dt = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
-                max_dt = today_dt + timedelta(days=30)
-                start_dt = datetime.strptime(start_date, "%Y-%m-%d")
-                end_d = min(datetime.strptime(end_date, "%Y-%m-%d"), max_dt)
-                d = max(start_dt + timedelta(days=1), today_dt)
-                while d <= end_d:
-                    ds = d.strftime("%Y-%m-%d")
-                    if ds not in calendar:
-                        calendar[ds] = []
-                    calendar[ds] = [e for e in calendar[ds] if e["event_id"] != eid]
-                    entries = cal_entries_for_date(ev, eid, ds)
-                    if entries:
-                        calendar[ds].extend(entries)
-                    d += timedelta(days=1)
-
-            # Build event data (without date-specific fields)
+            # Build event data (without date/schedule fields)
             event_data = {k: v for k, v in ev.items()
                           if k not in ("start_date", "end_date", "schedule",
                                        "id", "created_at", "updated_at",
@@ -163,14 +179,48 @@ def run():
             if event_data.get("url", "").startswith("http://"):
                 event_data["url"] = "https://" + event_data["url"][7:]
 
+            # Apply enrich
+            enrich_data = all_enrich.get(eid)
+            if enrich_data:
+                event_data = _apply_enrich(event_data, enrich_data)
+
             if eid in events:
                 events[eid] = merge_event(events[eid], event_data)
             else:
                 events[eid] = event_data
 
-    # Keep only today + 30 days
+    # Generate calendar from raw events (with original dates and schedules)
     today = datetime.now(UTC).strftime("%Y-%m-%d")
     max_date = (datetime.now(UTC) + timedelta(days=30)).strftime("%Y-%m-%d")
+
+    for eid, ev in raw_events.items():
+        start_date = ev.get("start_date", "")
+        end_date = ev.get("end_date") or start_date
+
+        # Expand date range
+        try:
+            start_dt = datetime.strptime(start_date, "%Y-%m-%d")
+            end_dt = datetime.strptime(end_date, "%Y-%m-%d")
+            today_dt = datetime.strptime(today, "%Y-%m-%d")
+            max_dt = datetime.strptime(max_date, "%Y-%m-%d")
+        except ValueError:
+            continue
+
+        # Cap to our window
+        d = max(start_dt, today_dt)
+        end_dt = min(end_dt, max_dt)
+
+        while d <= end_dt:
+            ds = d.strftime("%Y-%m-%d")
+            entries = cal_entries_for_date(ev, eid, ds)
+            if entries:
+                if ds not in calendar:
+                    calendar[ds] = []
+                # Remove existing entries for this event on this day
+                calendar[ds] = [e for e in calendar[ds] if e["event_id"] != eid]
+                calendar[ds].extend(entries)
+            d += timedelta(days=1)
+
     calendar = dict(sorted((k, v) for k, v in calendar.items() if today <= k <= max_date))
 
     # Extract locations

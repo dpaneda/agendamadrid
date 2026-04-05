@@ -1,8 +1,13 @@
+import hashlib
 import json
 import os
 from abc import ABC, abstractmethod
 
 SOURCES_DIR = os.path.join(os.path.dirname(__file__), "data", "sources")
+
+
+def make_event_id(title):
+    return hashlib.sha256(title.strip().lower().encode()).hexdigest()[:16]
 
 
 class BaseCrawler(ABC):
@@ -88,6 +93,13 @@ class BaseCrawler(ABC):
             if url:
                 by_url[url] = t
 
-        merged = list(by_title.values())
+        # Add IDs and strip enrich artifacts
+        merged = []
+        for ev in by_title.values():
+            ev["id"] = make_event_id(ev.get("title", ""))
+            ev.pop("_enriched", None)
+            ev.pop("_broken", None)
+            merged.append(ev)
+
         self.save(merged)
         return merged

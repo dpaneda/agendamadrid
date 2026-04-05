@@ -215,7 +215,7 @@ def _get_event_urls_for_date(date):
     return list(dict.fromkeys(urls))  # dedupe preserving order
 
 
-def _parse_event_page(url, _enrich=False):
+def _parse_event_page(url):
     """Scrape a single event page for structured data."""
     resp = _fetch(url)
     html = resp.text
@@ -417,26 +417,16 @@ def _parse_event_page(url, _enrich=False):
         "schedule": schedule,
     }
 
-    if _enrich:
-        try:
-            from crawlers.llm_enrich import enrich, merge_llm_data
-            llm_data = enrich(html)
-            if llm_data:
-                event = merge_llm_data(event, llm_data)
-                print(f"    LLM enriched: {title[:40]}")
-        except Exception as e:
-            print(f"    LLM enrich failed: {e}")
-
     return event
 
 
 class EsMadridCrawler(BaseCrawler):
     name = "esmadrid"
 
-    def crawl(self, enrich=False) -> list[dict]:
-        return self.crawl_incremental(set(), enrich=enrich)
+    def crawl(self) -> list[dict]:
+        return self.crawl_incremental(set())
 
-    def crawl_incremental(self, known_urls: set, enrich=False, limit=0) -> list[dict]:
+    def crawl_incremental(self, known_urls: set, limit=0) -> list[dict]:
         today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
         days_ahead = 30
         events = []
@@ -464,10 +454,9 @@ class EsMadridCrawler(BaseCrawler):
             elif limit:
                 urls_to_fetch = urls_to_fetch[:limit - len(seen_urls)]
 
-            _enrich = enrich
             def fetch_one(url):
                 try:
-                    ev = _parse_event_page(url, _enrich=_enrich)
+                    ev = _parse_event_page(url)
                     time.sleep(CRAWL_DELAY)
                     return url, ev
                 except Exception as e:
@@ -517,10 +506,9 @@ class EsMadridCrawler(BaseCrawler):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument("--enrich", action="store_true", help="Enrich with LLM (needs GEMINI_API_KEY)")
     parser.add_argument("--limit", type=int, default=0, help="Max events to scrape (0=all)")
     parser.add_argument("--force", action="store_true", help="Ignore existing data")
     args = parser.parse_args()
     c = EsMadridCrawler()
-    c.crawl = lambda: c.crawl_incremental(set(), enrich=args.enrich, limit=args.limit)
+    c.crawl = lambda: c.crawl_incremental(set(), limit=args.limit)
     c.run(force=args.force)
