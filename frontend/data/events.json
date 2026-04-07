@@ -6380,7 +6380,7 @@
   },
   "a03dada9de34353f": {
     "title": "Atlético de Madrid - Athletic Club Bilbao (LALIGA EA SPORTS)",
-    "description": "Los de Simeone reciben al equipo de Ernesto Valverde para disputar un emocionante encuentro (Estadio Riyadh Air Metropolitano. 19 abril).",
+    "description": "Los de Simeone reciben al equipo de Ernesto Valverde para disputar un emocionante encuentro de fútbol. El partido enfrenta a ambos clubes en el marco de la competición de liga.",
     "url": "https://www.atleticodemadrid.com/",
     "price": "Consultar página oficial",
     "image": "images/events/10f0f72fdd81.jpg",
@@ -6469,7 +6469,7 @@
   },
   "acbd8c9aeb50e1d8": {
     "title": "Rock In Family - Amazing Michael Jackson",
-    "description": "Espectáculo musical familiar donde no faltarán los himnos y coreografías imprescindibles de una de las mayores leyendas de la música (Teatro Rialto. 19 abr y 28 jun).",
+    "description": "Espectáculo musical familiar que rinde homenaje a Michael Jackson con un concierto que repasa sus grandes éxitos. Incluye coreografías imprescindibles interpretadas por un imitador profesional acompañado por un cuerpo de baile.",
     "start_time": "12:00:00",
     "url": "https://atgtickets.es/espectaculo/amazing-michael-jackson/",
     "price": "Desde 10 €",
@@ -6484,6 +6484,7 @@
       "conciertos",
       "infantil"
     ],
+    "is_multi_event": true,
     "lid": "0d7b035c"
   },
   "0cba669300ae0d93": {
@@ -6521,7 +6522,7 @@
   },
   "8a8746be525dacb4": {
     "title": "ORCAM. Ciclo Sinfónico / Ciclo Tiempo de Cámara",
-    "description": "La nueva temporada incluye una programación diversa que reafirma los valores de la institución (Auditorio Nacional de Música.",
+    "description": "La Orquesta y Coro de la Comunidad de Madrid presenta una programación diversa que abarca tanto el repertorio sinfónico como el de cámara. La temporada incluye catorce conciertos que destacan por la participación de reconocidos artistas internacionales y directores de prestigio.",
     "start_time": "19:30:00",
     "url": "https://fundacionorcam.org/temporada-2025-26/",
     "price": "Abono Temporada 25/26: a partir del 12 de junio en la tienda online o en la sede de la ORCAM con cita previa).\nVenta de entradas sueltas: a partir del 21 de julio a través de la tienda online",
@@ -6537,6 +6538,7 @@
     "categories": [
       "conciertos"
     ],
+    "is_multi_event": true,
     "lid": "2ca44f0a"
   },
   "6177321eac992341": {
@@ -6785,10 +6787,10 @@
   },
   "9e15016548e33692": {
     "title": "Movistar Estudiantes - Melilla Ciudad del Deporte (Liga LEB Oro)",
-    "description": "Tras el 70-82 obtenido en casa, los melillenses de Rafa Sanz buscan una victoria en Madrid (Movistar Arena. 22 abril).",
+    "description": "Partido oficial de baloncesto perteneciente a la Liga LEB Oro. El equipo local se enfrenta al Melilla Ciudad del Deporte en una competición deportiva de alto nivel.",
     "start_time": "20:00:00",
     "url": "https://www.movistarestudiantes.com/",
-    "price": "20-30 €",
+    "price": "Desde 20 €",
     "image": "images/events/598efb630b6a.jpg",
     "source_url": "https://www.esmadrid.com/agenda/movistar-estudiantes-melilla-ciudad-deporte-liga-leb-oro-movistar-arena",
     "source": "esmadrid",
@@ -7519,25 +7521,24 @@
   },
   "4ee387614fd64ba9": {
     "title": "El hijo de la cómica",
-    "description": "El actor José Sacristán da un tributo teatral al actor y director Fernando Fernán Gómez (Teatro Bellas Artes. Martes a domingos. 29 abr a 28 jun).",
+    "description": "El actor José Sacristán protagoniza un emotivo homenaje teatral a la figura del actor, director y escritor Fernando Fernán Gómez. El montaje recorre la vida y memoria personal de Fernán Gómez entrelazando anécdotas familiares y vivencias compartidas.",
     "start_time": "20:00:00",
     "url": "https://www.teatrobellasartes.es/obra-de-teatro/el-hijo-de-la-comica/",
-    "price": "Platea: 23-28 €Anfiteatro: 17-24 €",
+    "price": "Desde 17 €",
     "image": "images/events/b91ea2361273.jpg",
     "source_url": "https://www.esmadrid.com/agenda/hijo-comica-teatro-bellas-artes",
     "source": "esmadrid",
     "categories": [
-      "teatro",
-      "danza"
+      "teatro"
     ],
     "lid": "1e8020f3"
   },
   "b5abad53959a6a8d": {
     "title": "El Mago Invisible - Nada es lo que parece",
-    "description": "El ilusionista valenciano Dakris, Primer Premio Nacional de Magia, presenta su nuevo espectáculo (Teatro Gran Vía. Miércoles a domingos. 29 abr a 3 may).",
+    "description": "El ilusionista Dakris presenta un espectáculo de magia que combina teletransportaciones, mentalismo e ilusiones interactivas. La propuesta busca difuminar la frontera entre la realidad y la imaginación mediante números sorprendentes para todos los públicos.",
     "start_time": "20:00:00",
     "url": "https://gruposmedia.com/cartelera/el-mago-invisible-nada-es-lo-que-parece/",
-    "price": "Desde 25 €",
+    "price": "Desde 25 €",
     "image": "images/events/0e68d9743071.jpg",
     "_image_candidates": [
       "https://estaticos.esmadrid.com/cdn/farfuture/4KwN2tGy0SKkLYw_s9M7GTW9OO4y2YQCU4LBj_4aFIk/mtime:1770814440/sites/default/files/eventos/eventos/mago_invisible.png",
@@ -7546,8 +7547,7 @@
     "source_url": "https://www.esmadrid.com/agenda/mago-invisible-nada-es-lo-parece-teatro-gran-via",
     "source": "esmadrid",
     "categories": [
-      "teatro",
-      "danza"
+      "teatro"
     ],
     "lid": "a1af948d"
   },
@@ -8155,5 +8155,33 @@
     ],
     "is_multi_event": true,
     "lid": "59b668b3"
+  },
+  "abbcb2257b1d0791": {
+    "title": "Madrid Car Experience 2026",
+    "description": "El evento ofrece un espacio innovador dedicado a las últimas novedades y tendencias del sector automovilístico, combinando áreas de exposición, pruebas de vehículos y exhibiciones interactivas. La experiencia se complementa con una oferta de ocio que incluye música en vivo y gastronomía.",
+    "start_time": "11:00:00",
+    "url": "https://www.ifema.es/madrid-car-experience",
+    "price": "Consultar página oficial",
+    "image": "images/events/dcce66a2fa8d.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/madrid-experience-ifema-madrid",
+    "source": "esmadrid",
+    "categories": [
+      "otros"
+    ],
+    "lid": "ed301dfc"
+  },
+  "aa9e1fcb25c1d1fe": {
+    "title": "Kiefer Sutherland",
+    "description": "El reconocido actor y músico presenta su gira Love Will Bring You Home Tour 2026 en un concierto que destaca su faceta como guitarrista y vocalista. El espectáculo ofrece una actuación íntima donde el artista conecta emocionalmente con el público a través de sus temas.",
+    "start_time": "21:00:00",
+    "url": "https://www.movistararena.es/informacion?evento=kiefer-sutherland",
+    "price": "Desde 33 €",
+    "image": "images/events/7d087caaa201.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/kiefer-sutherland-sala-movistar-arena",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "lid": "b3490977"
   }
 }
