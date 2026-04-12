@@ -148,8 +148,11 @@ def run_batch(source_name, limit=0, force=False):
             for j, (eid, ev) in enumerate(batch):
                 existing_enrich[eid] = results[j]
                 enriched_count += 1
-            cats = [r.get("categories", []) for r in results]
-            print(f"    OK: {enriched_count} enriched so far")
+                r = results[j]
+                cats = ",".join(r.get("categories", []))
+                price = r.get("price", "")
+                title = r.get("title", ev.get("title", ""))[:50]
+                print(f"    ✓ {title}  [{cats}] {price or ''}")
             _save(enrich_path, existing_enrich)
             print(f"    💾 Saved ({len(existing_enrich)} total)")
         else:
