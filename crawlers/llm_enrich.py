@@ -40,7 +40,7 @@ Contenido de la página:
 
 BATCH_PROMPT = """Para cada evento de Madrid, mejora los datos y clasifícalos.
 Categorías válidas: teatro, conciertos, exposiciones, talleres, conferencias, deportes, ferias.
-Tags opcionales: infantil, visitas guiadas, gratis, danza, circo, ópera, monólogos, aire libre, cine.
+Tags opcionales: infantil, visitas guiadas, gratis, danza, circo, ópera, monólogos, aire libre, cine, fotografía, gastronomía, literatura, mercados, fiestas, musicales, flamenco, magia.
 
 Eventos:
 {events_json}
