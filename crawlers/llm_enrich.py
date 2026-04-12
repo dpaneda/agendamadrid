@@ -98,7 +98,7 @@ def _llm_call(prompt):
             if "429" not in err:
                 print(f"    ⚠ {model} error: {e.__class__.__name__}")
                 continue
-            if "per day" in err.lower() or "daily" in err.lower() or "RPD" in err:
+            if "PerDay" in err or "per day" in err.lower() or "daily" in err.lower() or "RPD" in err:
                 _dead_models.add(model)
                 print(f"    ✗ {model} daily limit exhausted, disabled")
             else:
