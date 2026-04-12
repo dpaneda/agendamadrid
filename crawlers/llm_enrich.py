@@ -23,7 +23,7 @@ PROMPT = """Extrae datos estructurados de esta página web de un evento en Madri
   "start_date": "string - formato YYYY-MM-DD, primer día del evento",
   "end_date": "string - formato YYYY-MM-DD, último día, o null si es un solo día",
   "schedule": "objeto con los días y horarios. Busca tablas de horario, secciones 'horario', 'cuándo', 'apertura'. Formato: {'L': '10:00-20:00', 'M': '10:00-20:00', ...} usando L,M,X,J,V,S,D para los días. Si el horario es el mismo todos los días pon {'todos': '10:00-20:00'}. null solo si no hay ninguna información de horario",
-  "categories": ["EXACTAMENTE una o dos de: teatro, conciertos, cine, exposiciones, literatura, talleres, conferencias, deportes, ferias. Tags adicionales opcionales: infantil, visitas guiadas, gratis, danza, circo, ópera, monólogos"],
+  "categories": ["Al menos una categoría de: teatro, conciertos, cine, exposiciones, literatura, talleres, conferencias, deportes, ferias. Tags adicionales opcionales: infantil, visitas guiadas, gratis, danza, circo, ópera, monólogos, aire libre"],
   "is_multi_event": "boolean - true si es un festival, ciclo o programación con múltiples eventos/espectáculos dentro (ej: festivales, temporadas, ciclos de conciertos). false si es un evento único"
 }
 
@@ -31,7 +31,7 @@ REGLAS:
 - Responde SOLO con el JSON, sin markdown ni explicaciones
 - BUSCA EXHAUSTIVAMENTE en toda la página: precio, horarios y fechas son CRÍTICOS
 - La descripción debe ser puramente sobre el contenido, NO logística
-- Máximo 2 categorías de la lista proporcionada, no inventar otras
+- Al menos una categoría de la lista proporcionada, no inventar otras
 - Fechas en formato ISO (YYYY-MM-DD)
 - Si hay horarios diferentes por día, detállalos todos en schedule
 
