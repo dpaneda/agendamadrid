@@ -23,7 +23,7 @@ PROMPT = """Extrae datos estructurados de esta página web de un evento en Madri
   "start_date": "string - formato YYYY-MM-DD, primer día del evento",
   "end_date": "string - formato YYYY-MM-DD, último día, o null si es un solo día",
   "schedule": "objeto con los días y horarios. Busca tablas de horario, secciones 'horario', 'cuándo', 'apertura'. Formato: {'L': '10:00-20:00', 'M': '10:00-20:00', ...} usando L,M,X,J,V,S,D para los días. Si el horario es el mismo todos los días pon {'todos': '10:00-20:00'}. null solo si no hay ninguna información de horario",
-  "categories": ["EXACTAMENTE una o dos de: teatro, monólogos, danza, circo, conciertos, ópera, cine, exposiciones, literatura, talleres, conferencias, deportes, ferias, gastronomía. Tags adicionales opcionales: infantil, visitas guiadas, gratis"],
+  "categories": ["EXACTAMENTE una o dos de: teatro, monólogos, danza, circo, conciertos, ópera, cine, exposiciones, literatura, talleres, conferencias, deportes, ferias. Tags adicionales opcionales: infantil, visitas guiadas, gratis"],
   "is_multi_event": "boolean - true si es un festival, ciclo o programación con múltiples eventos/espectáculos dentro (ej: festivales, temporadas, ciclos de conciertos). false si es un evento único"
 }
 

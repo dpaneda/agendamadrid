@@ -283,7 +283,6 @@ const CATEGORY_LABELS = {
   "infantil": "infantil",
   "deportes": "deportes",
   "ferias": "ferias",
-  "gastronomía": "gastronomía",
   "otros": "otros",
   // Legacy
   "musica": "música",
@@ -298,7 +297,7 @@ const SOURCE_LABELS = {
 };
 
 const EXCLUDED_CATS = new Set(["gratis", "destacado", "aire libre", "accesible", "infantil", "visitas guiadas"]);
-const CAT_PRIORITY = ["monólogos","ópera","circo","cine","danza","gastronomía","deportes","ferias","conciertos","teatro","talleres","conferencias","literatura","musica","fotografia","gastronomia","exposiciones"];
+const CAT_PRIORITY = ["monólogos","ópera","circo","cine","danza","deportes","ferias","conciertos","teatro","talleres","conferencias","literatura","musica","fotografia","exposiciones"];
 
 function eventBadges(ev, cls) {
   const price = ev.price || "";
@@ -713,12 +712,10 @@ const CAT_ICONS = {
   infantil:        { emoji: "🧸", color: "#F59E0B" },
   deportes:        { emoji: "⚽", color: "#16A34A" },
   ferias:          { emoji: "🎪", color: "#DC2626" },
-  "gastronomía":   { emoji: "🍽️", color: "#EA580C" },
   otros:           { emoji: "📌", color: "#6B7280" },
   // Legacy aliases
   musica:          { emoji: "🎵", color: "#7C3AED" },
   fotografia:      { emoji: "🏛️", color: "#0891B2" },
-  gastronomia:     { emoji: "🍽️", color: "#EA580C" },
 };
 
 

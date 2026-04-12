@@ -22,7 +22,7 @@ CATEGORY_LABELS = {
     "exposiciones": "Exposiciones", "conferencias": "Conferencias", "talleres": "Talleres",
     "infantil": "Infantil y familiar", "deportes": "Deportes", "ferias": "Ferias",
     "visitas guiadas": "Visitas guiadas", "circo": "Circo", "literatura": "Literatura",
-    "fotografia": "Fotografía", "gastronomia": "Gastronomía",
+    "fotografia": "Fotografía",
     "otros": "Otros",
 }
 

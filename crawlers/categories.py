@@ -14,7 +14,6 @@ CATEGORIES = {
     "conferencias",
     "deportes",
     "ferias",
-    "gastronomía",
     "otros",
 }
 
@@ -37,6 +36,8 @@ MIGRATION = {
     "gastronomia": "gastronomía",
     "mercados": "ferias",
     "fiestas": "ferias",
+    "gastronomía": "ferias",
+    "gastronomia": "ferias",
 }
 
 
