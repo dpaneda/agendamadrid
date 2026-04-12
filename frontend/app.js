@@ -1277,9 +1277,10 @@ function renderUserView() {
       </button>
     </div>`;
 
+  const CAT_ORDER = ["exposiciones","teatro","conciertos","ferias","conferencias","talleres","deportes","otros"];
   const allCats = [...new Set(allData.flatMap(ev => ev.categories || []))]
     .filter(c => !EXCLUDED_CATS.has(c))
-    .sort((a, b) => (CATEGORY_LABELS[a] || a).localeCompare(CATEGORY_LABELS[b] || b));
+    .sort((a, b) => (CAT_ORDER.indexOf(a) === -1 ? 99 : CAT_ORDER.indexOf(a)) - (CAT_ORDER.indexOf(b) === -1 ? 99 : CAT_ORDER.indexOf(b)));
   const prefCats = Settings.get("cats", []);
   const effectivePrefCats = prefCats.length === 0 ? allCats : prefCats;
   const catGridHtml = `
