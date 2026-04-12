@@ -23,7 +23,7 @@ TYPE_MAP = {
     # Artes escénicas
     "TeatroPerformance": "teatro",
     "DanzaBaile": "danza",
-    "CircoMagia": "circo",
+    "CircoMagia": "magia",
     # Música
     "Musica": "conciertos",
     "Recitales": "conciertos",
@@ -36,8 +36,8 @@ TYPE_MAP = {
     "ProgramacionDestacadaAgendaCultura": "destacado",
     "ConferenciasColoquios": "conferencias",
     # Bibliotecas / literatura
-    "ActividadesBibliotecas": "ferias",
-    "ClubesLectura": "ferias",
+    "ActividadesBibliotecas": "literatura",
+    "ClubesLectura": "literatura",
     # Infantil / joven
     "CampamentosUrbanos": "infantil",
     "CuentacuentosTiteresMarionetas": "infantil",
@@ -57,13 +57,13 @@ TYPE_MAP = {
     "Ciclismo": "deportes",
     "Natacion": "deportes",
     # Ferias / fiestas / festivales
-    "FiestasNavidad": "ferias",
-    "FiestasCarnaval": "ferias",
-    "FiestasSanIsidro": "ferias",
-    "FiestasSemanaSanta": "ferias",
-    "Fiestas": "ferias",
-    "Festivales": "ferias",
-    "Gastronomia": "ferias",
+    "FiestasNavidad": "fiestas",
+    "FiestasCarnaval": "fiestas",
+    "FiestasSanIsidro": "fiestas",
+    "FiestasSemanaSanta": "fiestas",
+    "Fiestas": "fiestas",
+    "Festivales": "fiestas",
+    "Gastronomia": "gastronomía",
     # Otros
     "1ciudad21distritos": "otros",
     "ActividadesCalleArteUrbano": "otros",

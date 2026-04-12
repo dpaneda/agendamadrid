@@ -24,6 +24,14 @@ TAGS = {
     "ópera",
     "monólogos",
     "cine",
+    "fotografía",
+    "gastronomía",
+    "literatura",
+    "mercados",
+    "fiestas",
+    "musicales",
+    "flamenco",
+    "magia",
 }
 
 ALL_VALID = CATEGORIES | TAGS
@@ -31,13 +39,8 @@ ALL_VALID = CATEGORIES | TAGS
 # Migration map: old category -> new category
 MIGRATION = {
     "musica": "conciertos",
-    "fotografia": "exposiciones",
+    "fotografia": "fotografía",
     "gastronomia": "gastronomía",
-    "mercados": "ferias",
-    "fiestas": "ferias",
-    "gastronomía": "ferias",
-    "gastronomia": "ferias",
-    "literatura": "ferias",
 }
 
 

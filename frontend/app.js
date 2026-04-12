@@ -288,6 +288,14 @@ const CATEGORY_LABELS = {
   "aire libre": "aire libre",
   "accesible": "accesible",
   "destacado": "destacado",
+  "fotografía": "fotografía",
+  "gastronomía": "gastronomía",
+  "literatura": "literatura",
+  "mercados": "mercados",
+  "fiestas": "fiestas",
+  "musicales": "musicales",
+  "flamenco": "flamenco",
+  "magia": "magia",
   // Legacy
   "musica": "música",
   "fotografia": "fotografía",
@@ -299,9 +307,9 @@ const SOURCE_LABELS = {
   "teatros_canal": "teatroscanal.com",
 };
 
-const TAG_CATS = new Set(["gratis", "destacado", "aire libre", "accesible", "infantil", "visitas guiadas", "danza", "circo", "ópera", "monólogos", "cine"]);
+const TAG_CATS = new Set(["gratis", "destacado", "aire libre", "accesible", "infantil", "visitas guiadas", "danza", "circo", "ópera", "monólogos", "cine", "fotografía", "gastronomía", "literatura", "mercados", "fiestas", "musicales", "flamenco", "magia"]);
 const MAIN_CATS = ["exposiciones","teatro","conciertos","ferias","conferencias","talleres","deportes","otros"];
-const TAG_ORDER = ["infantil","aire libre","danza","circo","ópera","monólogos","cine","visitas guiadas"];
+const TAG_ORDER = ["infantil","aire libre","danza","circo","ópera","monólogos","cine","visitas guiadas","fotografía","gastronomía","literatura","mercados","fiestas","musicales","flamenco","magia"];
 const CAT_PRIORITY = ["deportes","ferias","conciertos","teatro","talleres","conferencias","musica","fotografia","exposiciones"];
 
 function eventBadges(ev, cls) {
@@ -739,6 +747,14 @@ const CAT_ICONS = {
   "aire libre":    { emoji: "🌳", color: "#22C55E" },
   accesible:       { emoji: "♿", color: "#2563EB" },
   destacado:       { emoji: "⭐", color: "#EAB308" },
+  "fotografía":    { emoji: "📷", color: "#6B7280" },
+  "gastronomía":   { emoji: "🍽️", color: "#EA580C" },
+  literatura:      { emoji: "📖", color: "#7C2D12" },
+  mercados:        { emoji: "🛒", color: "#15803D" },
+  fiestas:         { emoji: "🎉", color: "#DC2626" },
+  musicales:       { emoji: "🎶", color: "#7C3AED" },
+  flamenco:        { emoji: "💃", color: "#DC2626" },
+  magia:           { emoji: "🪄", color: "#7C3AED" },
   // Legacy aliases
   musica:          { emoji: "🎵", color: "#7C3AED" },
   fotografia:      { emoji: "🏛️", color: "#0891B2" },
