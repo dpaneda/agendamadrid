@@ -12,6 +12,8 @@ Usage:
 import json
 import os
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import threading
 
 import requests
 
@@ -133,31 +135,40 @@ def run_batch(source_name, limit=0, force=False):
 
     enriched_count = 0
     errors = 0
+    lock = threading.Lock()
+    WORKERS = 4
 
+    # Split into batches
+    batches = []
     for i in range(0, len(pending), BATCH_SIZE):
-        batch = pending[i:i + BATCH_SIZE]
-        batch_num = i // BATCH_SIZE + 1
-        total_batches = (len(pending) + BATCH_SIZE - 1) // BATCH_SIZE
-        titles = [ev.get("title", "???")[:50] for _, ev in batch]
-        print(f"\n  Batch {batch_num}/{total_batches} ({len(batch)} events): {titles[0]}...")
+        batches.append(pending[i:i + BATCH_SIZE])
 
+    def process_batch(batch_idx, batch):
         batch_events = [ev for _, ev in batch]
-        results = enrich_batch(batch_events)
+        return batch_idx, batch, enrich_batch(batch_events)
 
-        if results and len(results) == len(batch):
-            for j, (eid, ev) in enumerate(batch):
-                existing_enrich[eid] = results[j]
-                enriched_count += 1
-                r = results[j]
-                cats = ",".join(r.get("categories", []))
-                price = r.get("price", "")
-                title = r.get("title", ev.get("title", ""))[:50]
-                print(f"    ✓ {title}  [{cats}] {price or ''}")
-            _save(enrich_path, existing_enrich)
-            print(f"    💾 Saved ({len(existing_enrich)} total)")
-        else:
-            errors += len(batch)
-            print(f"    ✗ Batch failed (got {len(results) if results else 0}/{len(batch)})")
+    with ThreadPoolExecutor(max_workers=WORKERS) as pool:
+        futures = {pool.submit(process_batch, i, b): i for i, b in enumerate(batches)}
+
+        for future in as_completed(futures):
+            batch_idx, batch, results = future.result()
+            batch_num = batch_idx + 1
+
+            with lock:
+                if results and len(results) == len(batch):
+                    for j, (eid, ev) in enumerate(batch):
+                        existing_enrich[eid] = results[j]
+                        enriched_count += 1
+                        r = results[j]
+                        cats = ",".join(r.get("categories", []))
+                        price = r.get("price", "")
+                        title = r.get("title", ev.get("title", ""))[:50]
+                        print(f"    ✓ {title}  [{cats}] {price or ''}")
+                    _save(enrich_path, existing_enrich)
+                    print(f"    💾 Batch {batch_num}/{len(batches)} saved ({len(existing_enrich)} total)")
+                else:
+                    errors += len(batch)
+                    print(f"    ✗ Batch {batch_num}/{len(batches)} failed")
 
     print(f"\nDone: {enriched_count} enriched, {errors} errors")
     _save(enrich_path, existing_enrich)
