@@ -1344,7 +1344,7 @@ function renderUserView() {
     <div class="pref-subheading">Categorías principales</div>
     <div class="cat-grid-circles">${catGrid(mainCats)}</div>
     <div class="pref-subheading">Subcategorías</div>
-    <div class="cat-grid-circles">${catGrid(tagCats)}</div>
+    <div class="cat-grid-circles cat-grid-small">${catGrid(tagCats)}</div>
   `;
 
   document.getElementById("user-container").innerHTML = `
