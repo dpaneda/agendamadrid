@@ -3,7 +3,6 @@
 CATEGORIES = {
     "teatro",
     "conciertos",
-    "cine",
     "exposiciones",
     "talleres",
     "conferencias",
@@ -24,6 +23,7 @@ TAGS = {
     "circo",
     "ópera",
     "monólogos",
+    "cine",
 }
 
 ALL_VALID = CATEGORIES | TAGS

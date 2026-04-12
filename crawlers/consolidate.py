@@ -191,7 +191,7 @@ def run():
                 events[eid] = event_data
 
     # Normalize categories, infer parent category from tags, remove redundant "otros"
-    TAG_PARENT = {"danza": "teatro", "circo": "teatro", "ópera": "conciertos", "monólogos": "teatro"}
+    TAG_PARENT = {"danza": "teatro", "circo": "teatro", "ópera": "conciertos", "monólogos": "teatro", "cine": "teatro"}
     for eid, ev in events.items():
         ev["categories"] = normalize(ev.get("categories", []))
         cats = ev["categories"]
