@@ -287,7 +287,6 @@ const CATEGORY_LABELS = {
   // Legacy
   "musica": "música",
   "fotografia": "fotografía",
-  "gastronomia": "gastronomía",
 };
 
 const SOURCE_LABELS = {
@@ -740,10 +739,10 @@ function renderMap() {
   });
 
   const PRIORITY = [
-    "fotografia", "circo", "cine", "danza", "gastronomia",
-    "deportes", "infantil", "mercados", "fiestas",
+    "fotografia", "circo", "cine", "danza",
+    "deportes", "ferias",
     "musica", "teatro", "talleres", "conferencias",
-    "literatura", "visitas guiadas", "exposiciones", "otros",
+    "literatura", "exposiciones", "otros",
   ];
 
   byLocation.forEach(({ lat, lng, evs }) => {
