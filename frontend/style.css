@@ -1566,8 +1566,8 @@ footer p + p {
 }
 
 .cat-circle.active {
-  background: color-mix(in srgb, var(--cat-color, var(--primary-dark)) 20%, var(--surface-container));
-  border-color: var(--cat-color, var(--primary-dark));
+  background: color-mix(in srgb, var(--primary-dark) 55%, var(--surface-container));
+  border-color: color-mix(in srgb, var(--primary-dark) 70%, var(--surface-container));
   opacity: 1;
 }
 
