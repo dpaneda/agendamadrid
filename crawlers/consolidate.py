@@ -78,6 +78,7 @@ def cal_entries_for_date(ev, eid, ds):
     if weekday is not None and isinstance(schedule, dict):
         day_times = schedule.get(weekday) or schedule.get(str(weekday))
     if day_times:
+        day_times = sorted(day_times)
         entries = []
         for i in range(0, len(day_times), 2):
             entry = {"event_id": eid, "start_time": day_times[i]}
