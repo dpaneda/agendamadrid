@@ -309,7 +309,7 @@ const SOURCE_LABELS = {
 
 const TAG_CATS = new Set(["gratis", "destacado", "aire libre", "accesible", "infantil", "visitas guiadas", "danza", "circo", "ópera", "monólogos", "cine", "fotografía", "gastronomía", "literatura", "mercados", "fiestas", "musicales", "flamenco", "magia"]);
 const MAIN_CATS = ["exposiciones","teatro","conciertos","ferias","conferencias","talleres","deportes","otros"];
-const TAG_ORDER = ["infantil","aire libre","danza","circo","ópera","monólogos","cine","visitas guiadas","fotografía","gastronomía","literatura","mercados","fiestas","musicales","flamenco","magia"];
+const TAG_ORDER = ["danza","monólogos","musicales","ópera","flamenco","circo","magia","cine","fotografía","literatura","visitas guiadas","gastronomía","mercados","fiestas","infantil","aire libre"];
 const CAT_PRIORITY = ["deportes","ferias","conciertos","teatro","talleres","conferencias","musica","fotografia","exposiciones"];
 
 function eventBadges(ev, cls) {
@@ -1340,15 +1340,19 @@ function renderUserView() {
     }).join("");
   }
 
-  const catGridHtml = `
-    <div class="pref-subheading">Categorías principales</div>
-    <div class="cat-grid-circles">${catGrid(mainCats)}</div>
-    <div class="pref-subheading">Subcategorías</div>
-    <div class="cat-chips-wrap">${tagCats.map(c => {
+  function chipList(cats) {
+    return cats.map(c => {
       const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
       const active = !excludedCats.includes(c);
       return `<button class="cat-chip${active ? " active" : ""}" onclick="toggleCatPref('${esc(c)}')">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</button>`;
-    }).join("")}</div>
+    }).join("");
+  }
+
+  const catGridHtml = `
+    <div class="pref-subheading">Categorías principales</div>
+    <div class="cat-chips-wrap">${chipList(mainCats)}</div>
+    <div class="pref-subheading">Subcategorías</div>
+    <div class="cat-chips-wrap">${chipList(tagCats)}</div>
   `;
 
   document.getElementById("user-container").innerHTML = `
