@@ -1325,8 +1325,8 @@ function renderUserView() {
       </button>
     </div>`;
 
-  const mainCats = MAIN_CATS.filter(c => allCatSet.has(c));
-  const tagCats = TAG_ORDER.filter(c => allCatSet.has(c));
+  const mainCats = MAIN_CATS;
+  const tagCats = TAG_ORDER;
   const excludedCats = Settings.get("excludedCats", []);
 
   function catGrid(cats) {
@@ -1487,8 +1487,8 @@ function updateFilterBadge() {
 
 function renderFilterPanelContent(panel) {
   const excluded = Settings.get("excludedCats", []);
-  const mainCats = MAIN_CATS.filter(c => allCatSet.has(c));
-  const tagCats = TAG_ORDER.filter(c => allCatSet.has(c));
+  const mainCats = MAIN_CATS;
+  const tagCats = TAG_ORDER;
 
   function chips(items, activeList, toggleFn) {
     return items.map(c => {
