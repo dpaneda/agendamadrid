@@ -5,7 +5,6 @@ CATEGORIES = {
     "conciertos",
     "cine",
     "exposiciones",
-    "literatura",
     "talleres",
     "conferencias",
     "deportes",
@@ -38,6 +37,7 @@ MIGRATION = {
     "fiestas": "ferias",
     "gastronomía": "ferias",
     "gastronomia": "ferias",
+    "literatura": "ferias",
 }
 
 

@@ -142,7 +142,7 @@ CATEGORY_MAP = {
     "talleres": "talleres",
     "mercados": "ferias",
     "visitas guiadas": "visitas guiadas",
-    "literatura": "literatura",
+    "literatura": "ferias",
 }
 
 
