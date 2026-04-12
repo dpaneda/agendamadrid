@@ -50,6 +50,12 @@ def run(source_name, limit=0, force=False):
     enriched_count = 0
     errors = 0
     skipped = 0
+    SAVE_EVERY = 10
+
+    def save():
+        os.makedirs(ENRICH_DIR, exist_ok=True)
+        with open(enrich_path, "w") as f:
+            json.dump(existing_enrich, f, indent=2, ensure_ascii=False, default=str)
 
     for ev in events:
         if limit and enriched_count >= limit:
@@ -87,6 +93,9 @@ def run(source_name, limit=0, force=False):
                 if llm_data.get("is_multi_event"):
                     parts.append("multi-event")
                 print(f"    OK: {' | '.join(parts) or 'no new data'}")
+                if enriched_count % SAVE_EVERY == 0:
+                    save()
+                    print(f"    💾 Saved ({len(existing_enrich)} total)")
             else:
                 errors += 1
                 print(f"    No LLM data returned")
@@ -101,9 +110,7 @@ def run(source_name, limit=0, force=False):
 
     print(f"\nDone: {enriched_count} enriched, {errors} errors, {skipped} skipped")
 
-    os.makedirs(ENRICH_DIR, exist_ok=True)
-    with open(enrich_path, "w") as f:
-        json.dump(existing_enrich, f, indent=2, ensure_ascii=False, default=str)
+    save()
     print(f"Saved {len(existing_enrich)} enrichments to {enrich_path}")
 
 
