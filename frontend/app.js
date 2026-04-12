@@ -298,8 +298,8 @@ const SOURCE_LABELS = {
   "teatros_canal": "teatroscanal.com",
 };
 
-const EXCLUDED_CATS = new Set(["gratis", "destacado", "aire libre", "accesible"]);
-const CAT_PRIORITY = ["monólogos","ópera","circo","cine","danza","gastronomía","deportes","infantil","mercados","fiestas","conciertos","teatro","talleres","conferencias","literatura","visitas guiadas","musica","fotografia","gastronomia","exposiciones"];
+const EXCLUDED_CATS = new Set(["gratis", "destacado", "aire libre", "accesible", "infantil", "visitas guiadas"]);
+const CAT_PRIORITY = ["monólogos","ópera","circo","cine","danza","gastronomía","deportes","mercados","fiestas","conciertos","teatro","talleres","conferencias","literatura","musica","fotografia","gastronomia","exposiciones"];
 
 function eventBadges(ev, cls) {
   const price = ev.price || "";

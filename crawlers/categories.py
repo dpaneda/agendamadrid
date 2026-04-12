@@ -12,8 +12,6 @@ CATEGORIES = {
     "literatura",
     "talleres",
     "conferencias",
-    "visitas guiadas",
-    "infantil",
     "deportes",
     "fiestas",
     "mercados",
@@ -27,6 +25,8 @@ TAGS = {
     "aire libre",
     "destacado",
     "accesible",
+    "infantil",
+    "visitas guiadas",
 }
 
 ALL_VALID = CATEGORIES | TAGS

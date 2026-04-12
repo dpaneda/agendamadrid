@@ -17,6 +17,7 @@ from glob import glob
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
 from crawlers.base import make_event_id
+from crawlers.categories import normalize, CATEGORIES
 from crawlers.generate_seo import run as generate_seo
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "frontend", "data")
@@ -188,6 +189,13 @@ def run():
                 events[eid] = merge_event(events[eid], event_data)
             else:
                 events[eid] = event_data
+
+    # Normalize categories and remove redundant "otros"
+    for eid, ev in events.items():
+        ev["categories"] = normalize(ev.get("categories", []))
+        cats = ev["categories"]
+        if "otros" in cats and any(c in CATEGORIES and c != "otros" for c in cats):
+            cats.remove("otros")
 
     # Generate calendar from raw events (with original dates and schedules)
     today = datetime.now(UTC).strftime("%Y-%m-%d")
