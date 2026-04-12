@@ -498,32 +498,41 @@ async function init() {
     renderSearchList();
   }
 
+  let _searchResults = [];
+  const SEARCH_PAGE = 50;
+
   function renderSearchList() {
     const container = document.getElementById("events-container");
-    const results = [];
-    const dates = Object.keys(calendarData).sort();
-    for (const ds of dates) {
-      const dayResults = [];
-      for (const entry of calendarData[ds]) {
-        const ev = allEvents[entry.event_id];
-        if (!ev || !matchesSearch(ev)) continue;
-        dayResults.push({ ...ev, ...entry, start_date: ds });
-      }
-      if (dayResults.length) results.push({ date: ds, events: dayResults });
+    // Search unique events, not calendar entries
+    const seen = new Set();
+    _searchResults = [];
+    for (const [eid, ev] of Object.entries(allEvents)) {
+      if (seen.has(eid) || !matchesSearch(ev)) continue;
+      seen.add(eid);
+      // Find first calendar date for this event
+      const firstDate = Object.keys(calendarData).sort().find(ds =>
+        (calendarData[ds] || []).some(e => e.event_id === eid));
+      const entry = firstDate ? (calendarData[firstDate] || []).find(e => e.event_id === eid) : {};
+      _searchResults.push({ ...ev, ...entry, id: eid, start_date: firstDate || "" });
     }
-    const total = results.reduce((s, g) => s + g.events.length, 0);
-    if (!total) {
+    if (!_searchResults.length) {
       container.innerHTML = `<p class='empty-state'>No se encontraron eventos para "${esc(searchInput.value)}"</p>`;
       return;
     }
-    let html = `<p class="search-result-count">${total} resultado${total !== 1 ? "s" : ""}</p>`;
-    for (const group of results) {
-      const d = new Date(group.date + "T12:00:00");
-      const label = `${DAYS_LONG[d.getDay()]} ${d.getDate()} de ${MONTHS_ES[d.getMonth()]}`;
-      html += `<div class="search-date-header">${label.charAt(0).toUpperCase() + label.slice(1)}</div>`;
-      html += group.events.map(ev => renderEvent(ev)).join("");
+    _renderSearchPage(container, SEARCH_PAGE);
+  }
+
+  function _renderSearchPage(container, count) {
+    const showing = Math.min(count, _searchResults.length);
+    let html = `<p class="search-result-count">${_searchResults.length} resultado${_searchResults.length !== 1 ? "s" : ""}${showing < _searchResults.length ? ` (mostrando ${showing})` : ""}</p>`;
+    for (let i = 0; i < showing; i++) {
+      html += renderEvent(_searchResults[i]);
+    }
+    if (showing < _searchResults.length) {
+      html += `<button class="btn-load-more" onclick="document.getElementById('events-container')._loadMore()">Cargar más resultados</button>`;
     }
     container.innerHTML = html;
+    container._loadMore = () => _renderSearchPage(container, showing + SEARCH_PAGE);
   }
 
   document.getElementById("btn-search").addEventListener("click", openSearch);
@@ -537,7 +546,7 @@ async function init() {
   });
   searchInput.addEventListener("input", () => {
     clearTimeout(searchDebounce);
-    searchDebounce = setTimeout(doSearch, 200);
+    searchDebounce = setTimeout(doSearch, 400);
   });
 
   document.getElementById("user-filter").addEventListener("change", (e) => {
