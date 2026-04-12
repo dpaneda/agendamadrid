@@ -301,7 +301,7 @@ const SOURCE_LABELS = {
 
 const TAG_CATS = new Set(["gratis", "destacado", "aire libre", "accesible", "infantil", "visitas guiadas", "danza", "circo", "ópera", "monólogos", "cine"]);
 const MAIN_CATS = ["exposiciones","teatro","conciertos","ferias","conferencias","talleres","deportes","otros"];
-const TAG_ORDER = ["infantil","gratis","aire libre","danza","circo","ópera","monólogos","cine","visitas guiadas"];
+const TAG_ORDER = ["infantil","aire libre","danza","circo","ópera","monólogos","cine","visitas guiadas"];
 const CAT_PRIORITY = ["deportes","ferias","conciertos","teatro","talleres","conferencias","musica","fotografia","exposiciones"];
 
 function eventBadges(ev, cls) {
