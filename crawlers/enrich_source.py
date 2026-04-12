@@ -24,7 +24,7 @@ SOURCES_DIR = os.path.join(os.path.dirname(__file__), "data", "sources")
 ENRICH_DIR = os.path.join(os.path.dirname(__file__), "data", "enrich")
 HEADERS = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"}
 
-BATCH_SIZE = 10
+BATCH_SIZE = 20
 
 
 def _save(enrich_path, data):

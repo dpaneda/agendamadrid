@@ -102,8 +102,16 @@ def _llm_call(prompt):
                 _dead_models.add(model)
                 print(f"    ✗ {model} daily limit exhausted, disabled")
             else:
-                _cooldown_until[model] = now + 62
-                print(f"    ⏳ {model} per-minute limit, cooldown 60s")
+                wait = 62
+                try:
+                    m = re.search(r'retryDelay.*?(\d+)', err)
+                    if m:
+                        wait = int(m.group(1)) + 2
+                except Exception:
+                    pass
+                print(f"    ⏳ {model} per-minute limit, waiting {wait}s...")
+                time.sleep(wait)
+                return _llm_call(prompt)  # retry after wait
             continue
     return None
 
