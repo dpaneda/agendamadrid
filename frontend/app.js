@@ -719,7 +719,7 @@ const CAT_ICONS = {
   "visitas guiadas": { emoji: "🗺️", color: "#1E40AF" },
   infantil:        { emoji: "🧸", color: "#F59E0B" },
   deportes:        { emoji: "⚽", color: "#16A34A" },
-  ferias:          { emoji: "🎪", color: "#DC2626" },
+  ferias:          { emoji: "🛍️", color: "#DC2626" },
   otros:           { emoji: "📌", color: "#6B7280" },
   // Legacy aliases
   musica:          { emoji: "🎵", color: "#7C3AED" },
