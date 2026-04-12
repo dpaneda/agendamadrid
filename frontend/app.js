@@ -1344,7 +1344,11 @@ function renderUserView() {
     <div class="pref-subheading">Categorías principales</div>
     <div class="cat-grid-circles">${catGrid(mainCats)}</div>
     <div class="pref-subheading">Subcategorías</div>
-    <div class="cat-grid-circles cat-grid-small">${catGrid(tagCats)}</div>
+    <div class="cat-chips-wrap">${tagCats.map(c => {
+      const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
+      const active = !excludedCats.includes(c);
+      return `<button class="cat-chip${active ? " active" : ""}" onclick="toggleCatPref('${esc(c)}')">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</button>`;
+    }).join("")}</div>
   `;
 
   document.getElementById("user-container").innerHTML = `

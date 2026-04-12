@@ -1686,20 +1686,30 @@ footer p + p {
   background: none !important;
 }
 
-.cat-grid-small {
-  grid-template-columns: repeat(5, 1fr);
-  gap: 4px;
+.cat-chips-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 }
-.cat-grid-small .cat-circle {
-  padding: 0.5rem 0.1rem;
-  border-radius: 8px;
-  border-width: 1px;
+.cat-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: var(--radius-full);
+  background: var(--surface-container-low);
+  border: 1px solid transparent;
+  font-family: inherit;
+  font-size: 0.8rem;
+  color: var(--fg);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  opacity: 0.45;
 }
-.cat-grid-small .cat-circle-icon {
-  font-size: 1.1rem;
-}
-.cat-grid-small .cat-circle-label {
-  font-size: 0.6rem;
+.cat-chip.active {
+  background: color-mix(in srgb, var(--primary-dark) 15%, var(--surface-container));
+  border-color: color-mix(in srgb, var(--primary-dark) 30%, var(--surface-container));
+  opacity: 1;
 }
 
 .cat-circle-label {
