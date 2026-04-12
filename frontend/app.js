@@ -465,9 +465,9 @@ async function init() {
 
   document.getElementById("filter-toggle-btn").addEventListener("click", toggleFilterPanel);
   document.addEventListener("click", (e) => {
-    const panel = document.getElementById("filter-panel");
-    if (panel && !panel.contains(e.target) && !e.target.closest("#filter-toggle-btn")) {
-      panel.remove();
+    const overlay = document.getElementById("filter-overlay");
+    if (overlay && !overlay.querySelector(".filter-panel").contains(e.target) && !e.target.closest("#filter-toggle-btn")) {
+      overlay.remove();
     }
   });
 
@@ -641,8 +641,8 @@ function setView(view) {
   document.getElementById("swipe-container").hidden = view !== "swipe";
   document.querySelector("header").hidden = view === "user" && window.innerWidth <= 640;
   document.querySelector(".filter-bar").style.display = view === "user" ? "none" : "";
-  const panel = document.getElementById("filter-panel");
-  if (panel) panel.remove();
+  const overlay = document.getElementById("filter-overlay");
+  if (overlay) overlay.remove();
   updateURL();
 
   if (view === "list") {
@@ -1474,8 +1474,8 @@ function clearActiveFilters() {
   activeTagFilter = [];
   renderActiveFilters();
   render();
-  const panel = document.getElementById("filter-panel");
-  if (panel) panel.remove();
+  const overlay = document.getElementById("filter-overlay");
+  if (overlay) overlay.remove();
 }
 
 function updateFilterBadge() {
@@ -1519,15 +1519,20 @@ function renderFilterPanelContent(panel) {
 }
 
 function toggleFilterPanel() {
-  const existing = document.getElementById("filter-panel");
+  const existing = document.getElementById("filter-overlay");
   if (existing) { existing.remove(); return; }
 
-  const bar = document.querySelector(".filter-bar");
+  const overlay = document.createElement("div");
+  overlay.id = "filter-overlay";
+  overlay.className = "filter-overlay";
+  overlay.addEventListener("click", (e) => { if (e.target === overlay) overlay.remove(); });
+
   const panel = document.createElement("div");
   panel.id = "filter-panel";
   panel.className = "filter-panel";
   renderFilterPanelContent(panel);
-  bar.appendChild(panel);
+  overlay.appendChild(panel);
+  document.body.appendChild(overlay);
 }
 
 function applySource(val) {

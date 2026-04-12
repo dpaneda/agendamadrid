@@ -452,16 +452,28 @@ header[hidden] {
   font-weight: 700;
 }
 
-.filter-panel {
-  position: absolute;
-  top: 100%;
+.filter-overlay {
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
-  z-index: 200;
+  bottom: 0;
+  z-index: 300;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.filter-panel {
   background: var(--surface);
-  border-bottom: 1px solid var(--surface-container-highest);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-  padding: 0.8rem 1rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  padding: 1.2rem 1.2rem 0.8rem;
+  max-width: 400px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
 }
 .filter-panel-section { margin-bottom: 0.6rem; }
 .filter-panel-label {
