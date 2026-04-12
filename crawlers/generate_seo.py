@@ -20,9 +20,9 @@ MONTHS_ES = ["enero", "febrero", "marzo", "abril", "mayo", "junio",
 CATEGORY_LABELS = {
     "musica": "Música", "teatro": "Teatro", "danza": "Danza", "cine": "Cine",
     "exposiciones": "Exposiciones", "conferencias": "Conferencias", "talleres": "Talleres",
-    "infantil": "Infantil y familiar", "deportes": "Deportes", "fiestas": "Fiestas",
+    "infantil": "Infantil y familiar", "deportes": "Deportes", "ferias": "Ferias",
     "visitas guiadas": "Visitas guiadas", "circo": "Circo", "literatura": "Literatura",
-    "fotografia": "Fotografía", "mercados": "Mercados", "gastronomia": "Gastronomía",
+    "fotografia": "Fotografía", "gastronomia": "Gastronomía",
     "otros": "Otros",
 }
 

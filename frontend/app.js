@@ -282,8 +282,7 @@ const CATEGORY_LABELS = {
   "visitas guiadas": "visitas guiadas",
   "infantil": "infantil",
   "deportes": "deportes",
-  "fiestas": "fiestas",
-  "mercados": "mercados",
+  "ferias": "ferias",
   "gastronomía": "gastronomía",
   "otros": "otros",
   // Legacy
@@ -299,7 +298,7 @@ const SOURCE_LABELS = {
 };
 
 const EXCLUDED_CATS = new Set(["gratis", "destacado", "aire libre", "accesible", "infantil", "visitas guiadas"]);
-const CAT_PRIORITY = ["monólogos","ópera","circo","cine","danza","gastronomía","deportes","mercados","fiestas","conciertos","teatro","talleres","conferencias","literatura","musica","fotografia","gastronomia","exposiciones"];
+const CAT_PRIORITY = ["monólogos","ópera","circo","cine","danza","gastronomía","deportes","ferias","conciertos","teatro","talleres","conferencias","literatura","musica","fotografia","gastronomia","exposiciones"];
 
 function eventBadges(ev, cls) {
   const price = ev.price || "";
@@ -322,13 +321,12 @@ function eventBadges(ev, cls) {
   }
 
   const filteredCats = (ev.categories || []).filter(c => !EXCLUDED_CATS.has(c));
-  const bestCat = CAT_PRIORITY.find(p => filteredCats.includes(p));
-  const catBadge = bestCat ? (() => {
-    const info = CAT_ICONS[bestCat] || { emoji: "📍", color: "#6B7280" };
-    return `<span class="${cls} ${cls}-cat">${info.emoji} ${esc(CATEGORY_LABELS[bestCat] || bestCat)}</span>`;
-  })() : "";
+  const catBadges = filteredCats.map(c => {
+    const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
+    return `<span class="${cls} ${cls}-cat">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</span>`;
+  }).join("");
 
-  return { priceBadge, distBadge, catBadge, isFree };
+  return { priceBadge, distBadge, catBadge: catBadges, isFree };
 }
 
 function fmtTime(t) {
@@ -714,8 +712,7 @@ const CAT_ICONS = {
   "visitas guiadas": { emoji: "🗺️", color: "#1E40AF" },
   infantil:        { emoji: "🧸", color: "#F59E0B" },
   deportes:        { emoji: "⚽", color: "#16A34A" },
-  fiestas:         { emoji: "🎉", color: "#DC2626" },
-  mercados:        { emoji: "🛒", color: "#15803D" },
+  ferias:          { emoji: "🎪", color: "#DC2626" },
   "gastronomía":   { emoji: "🍽️", color: "#EA580C" },
   otros:           { emoji: "📌", color: "#6B7280" },
   // Legacy aliases

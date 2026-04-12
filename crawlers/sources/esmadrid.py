@@ -110,8 +110,8 @@ def _parse_open_days(text):
 
 
 CATEGORY_MAP = {
-    "fiestas y eventos de la ciudad": "fiestas",
-    "fiestas": "fiestas",
+    "fiestas y eventos de la ciudad": "ferias",
+    "fiestas": "ferias",
     "música": "conciertos",
     "musica": "conciertos",
     "conciertos": "conciertos",
@@ -140,7 +140,7 @@ CATEGORY_MAP = {
     "circo": "circo",
     "conferencias": "conferencias",
     "talleres": "talleres",
-    "mercados": "mercados",
+    "mercados": "ferias",
     "visitas guiadas": "visitas guiadas",
     "literatura": "literatura",
 }

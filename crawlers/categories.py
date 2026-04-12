@@ -13,8 +13,7 @@ CATEGORIES = {
     "talleres",
     "conferencias",
     "deportes",
-    "fiestas",
-    "mercados",
+    "ferias",
     "gastronomía",
     "otros",
 }
@@ -36,6 +35,8 @@ MIGRATION = {
     "musica": "conciertos",
     "fotografia": "exposiciones",
     "gastronomia": "gastronomía",
+    "mercados": "ferias",
+    "fiestas": "ferias",
 }
 
 
