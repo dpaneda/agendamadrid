@@ -284,6 +284,10 @@ const CATEGORY_LABELS = {
   "deportes": "deportes",
   "ferias": "ferias",
   "otros": "otros",
+  "gratis": "gratis",
+  "aire libre": "aire libre",
+  "accesible": "accesible",
+  "destacado": "destacado",
   // Legacy
   "musica": "música",
   "fotografia": "fotografía",
@@ -295,7 +299,9 @@ const SOURCE_LABELS = {
   "teatros_canal": "teatroscanal.com",
 };
 
-const EXCLUDED_CATS = new Set(["gratis", "destacado", "aire libre", "accesible", "infantil", "visitas guiadas", "danza", "circo", "ópera", "monólogos", "cine"]);
+const TAG_CATS = new Set(["gratis", "destacado", "aire libre", "accesible", "infantil", "visitas guiadas", "danza", "circo", "ópera", "monólogos", "cine"]);
+const MAIN_CATS = ["exposiciones","teatro","conciertos","ferias","conferencias","talleres","deportes","otros"];
+const TAG_ORDER = ["infantil","gratis","aire libre","danza","circo","ópera","monólogos","cine","visitas guiadas"];
 const CAT_PRIORITY = ["deportes","ferias","conciertos","teatro","talleres","conferencias","musica","fotografia","exposiciones"];
 
 function eventBadges(ev, cls) {
@@ -318,7 +324,7 @@ function eventBadges(ev, cls) {
     distBadge = `<span class="${cls} ${cls}-dist">📍 ${d.toFixed(1)} km</span>`;
   }
 
-  const filteredCats = (ev.categories || []).filter(c => !EXCLUDED_CATS.has(c));
+  const filteredCats = (ev.categories || []).filter(c => !TAG_CATS.has(c));
   const catBadges = filteredCats.map(c => {
     const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
     return `<span class="${cls} ${cls}-cat">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</span>`;
@@ -354,6 +360,8 @@ let activeSource = Settings.get("source", "esmadrid");
 let activeSort = Settings.get("sort", "hora");
 let activeUserFilter = sessionStorage.getItem("activeUserFilter") || "";
 let activeSearch = "";
+let activeCatFilter = [];
+let activeTagFilter = [];
 let currentView = sessionStorage.getItem("currentView") || "list";
 let map = null, markersLayer = null, mapAutofit = false, tileLayer = null;
 let picker = null;
@@ -447,9 +455,12 @@ async function init() {
     }
   });
 
-  document.getElementById("category-filter").addEventListener("change", () => {
-    renderActiveFilters();
-    render();
+  document.getElementById("filter-toggle-btn").addEventListener("click", toggleFilterPanel);
+  document.addEventListener("click", (e) => {
+    const panel = document.getElementById("filter-panel");
+    if (panel && !panel.contains(e.target) && !e.target.closest("#filter-toggle-btn")) {
+      panel.remove();
+    }
   });
 
 
@@ -621,6 +632,9 @@ function setView(view) {
   document.getElementById("user-container").hidden = view !== "user";
   document.getElementById("swipe-container").hidden = view !== "swipe";
   document.querySelector("header").hidden = view === "user" && window.innerWidth <= 640;
+  document.querySelector(".filter-bar").style.display = view === "user" ? "none" : "";
+  const panel = document.getElementById("filter-panel");
+  if (panel) panel.remove();
   updateURL();
 
   if (view === "list") {
@@ -721,6 +735,10 @@ const CAT_ICONS = {
   deportes:        { emoji: "⚽", color: "#16A34A" },
   ferias:          { emoji: "🛍️", color: "#DC2626" },
   otros:           { emoji: "📌", color: "#6B7280" },
+  gratis:          { emoji: "🆓", color: "#16A34A" },
+  "aire libre":    { emoji: "🌳", color: "#22C55E" },
+  accesible:       { emoji: "♿", color: "#2563EB" },
+  destacado:       { emoji: "⭐", color: "#EAB308" },
   // Legacy aliases
   musica:          { emoji: "🎵", color: "#7C3AED" },
   fotografia:      { emoji: "🏛️", color: "#0891B2" },
@@ -851,25 +869,30 @@ async function loadData() {
   }
 }
 
-function buildCategories() {
-  const allCats = new Set();
-  allData.forEach(ev => {
-    (ev.categories || []).forEach(c => { if (c && !EXCLUDED_CATS.has(c)) allCats.add(c); });
-  });
+let allCatSet = new Set();
 
-  const catSelect = document.getElementById("category-filter");
-  [...allCats].sort((a, b) => (CATEGORY_LABELS[a] || a).localeCompare(CATEGORY_LABELS[b] || b)).forEach(c => {
-    const opt = document.createElement("option");
-    opt.value = c;
-    opt.textContent = CATEGORY_LABELS[c] || c;
-    catSelect.appendChild(opt);
+function buildCategories() {
+  allCatSet = new Set();
+  allData.forEach(ev => {
+    (ev.categories || []).forEach(c => { if (c) allCatSet.add(c); });
   });
 }
 
 function _applyCatFilter(events) {
+  // Stage 1: Mis Intereses (persistent)
   const cats = Settings.get("cats", []);
-  if (!cats.length) return events;
-  return events.filter(ev => (ev.categories || []).some(c => cats.includes(c)));
+  if (cats.length) {
+    events = events.filter(ev => (ev.categories || []).some(c => cats.includes(c)));
+  }
+  // Stage 2: Quick filter — categories (OR within)
+  if (activeCatFilter.length) {
+    events = events.filter(ev => (ev.categories || []).some(c => activeCatFilter.includes(c)));
+  }
+  // Stage 3: Quick filter — tags (OR within, AND with categories)
+  if (activeTagFilter.length) {
+    events = events.filter(ev => (ev.categories || []).some(c => activeTagFilter.includes(c)));
+  }
+  return events;
 }
 
 function _mergeEntryTimes(ev, entry) {
@@ -1139,7 +1162,16 @@ function renderActiveFilters() {
   if (activeLocation) {
     parts.push(`<span class="tag tag-active" onclick="toggleLocation('${esc(activeLocation)}')">📍 ${esc(activeLocation)} ✕</span>`);
   }
+  activeCatFilter.forEach(c => {
+    const info = CAT_ICONS[c] || { emoji: "📍" };
+    parts.push(`<span class="tag tag-active" onclick="toggleActiveCat('${esc(c)}')">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)} ✕</span>`);
+  });
+  activeTagFilter.forEach(t => {
+    const info = CAT_ICONS[t] || { emoji: "📍" };
+    parts.push(`<span class="tag tag-active" onclick="toggleActiveTag('${esc(t)}')">${info.emoji} ${esc(CATEGORY_LABELS[t] || t)} ✕</span>`);
+  });
   container.innerHTML = parts.join("");
+  updateFilterBadge();
 }
 
 function getEventsForDate(ds) {
@@ -1277,23 +1309,28 @@ function renderUserView() {
       </button>
     </div>`;
 
-  const CAT_ORDER = ["exposiciones","teatro","conciertos","ferias","conferencias","talleres","deportes","otros"];
-  const allCats = [...new Set(allData.flatMap(ev => ev.categories || []))]
-    .filter(c => !EXCLUDED_CATS.has(c))
-    .sort((a, b) => (CAT_ORDER.indexOf(a) === -1 ? 99 : CAT_ORDER.indexOf(a)) - (CAT_ORDER.indexOf(b) === -1 ? 99 : CAT_ORDER.indexOf(b)));
+  const mainCats = MAIN_CATS.filter(c => allCatSet.has(c));
+  const tagCats = TAG_ORDER.filter(c => allCatSet.has(c));
+  const allAvail = [...mainCats, ...tagCats];
   const prefCats = Settings.get("cats", []);
-  const effectivePrefCats = prefCats.length === 0 ? allCats : prefCats;
+  const effectivePrefCats = prefCats.length === 0 ? allAvail : prefCats;
+
+  function catGrid(cats) {
+    return cats.map(c => {
+      const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
+      const active = effectivePrefCats.includes(c);
+      return `<button class="cat-circle${active ? " active" : ""}" onclick="toggleCatPref('${esc(c)}')">
+        <span class="cat-circle-icon">${info.emoji}</span>
+        <span class="cat-circle-label">${esc(CATEGORY_LABELS[c] || c)}</span>
+      </button>`;
+    }).join("");
+  }
+
   const catGridHtml = `
-    <div class="cat-grid-circles">
-      ${allCats.map(c => {
-        const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
-        const active = effectivePrefCats.includes(c);
-        return `<button class="cat-circle${active ? " active" : ""}" style="${active ? `--cat-color:${info.color}` : ""}" onclick="toggleCatPref('${esc(c)}')">
-          <span class="cat-circle-icon">${info.emoji}</span>
-          <span class="cat-circle-label">${esc(CATEGORY_LABELS[c] || c)}</span>
-        </button>`;
-      }).join("")}
-    </div>
+    <div class="pref-subheading">Categorias</div>
+    <div class="cat-grid-circles">${catGrid(mainCats)}</div>
+    <div class="pref-subheading">Etiquetas</div>
+    <div class="cat-grid-circles">${catGrid(tagCats)}</div>
   `;
 
   document.getElementById("user-container").innerHTML = `
@@ -1393,6 +1430,87 @@ function applyMapTile(key) {
   renderUserView();
 }
 
+function toggleActiveCat(cat) {
+  const idx = activeCatFilter.indexOf(cat);
+  if (idx >= 0) activeCatFilter.splice(idx, 1);
+  else activeCatFilter.push(cat);
+  renderActiveFilters();
+  render();
+  const panel = document.getElementById("filter-panel");
+  if (panel) renderFilterPanelContent(panel);
+}
+
+function toggleActiveTag(tag) {
+  const idx = activeTagFilter.indexOf(tag);
+  if (idx >= 0) activeTagFilter.splice(idx, 1);
+  else activeTagFilter.push(tag);
+  renderActiveFilters();
+  render();
+  const panel = document.getElementById("filter-panel");
+  if (panel) renderFilterPanelContent(panel);
+}
+
+function clearActiveFilters() {
+  activeCatFilter = [];
+  activeTagFilter = [];
+  renderActiveFilters();
+  render();
+  const panel = document.getElementById("filter-panel");
+  if (panel) panel.remove();
+}
+
+function updateFilterBadge() {
+  const count = activeCatFilter.length + activeTagFilter.length;
+  const badge = document.getElementById("filter-count-badge");
+  if (badge) {
+    badge.textContent = count;
+    badge.style.display = count > 0 ? "" : "none";
+  }
+  const btn = document.getElementById("filter-toggle-btn");
+  if (btn) btn.classList.toggle("has-filters", count > 0);
+}
+
+function renderFilterPanelContent(panel) {
+  const excluded = Settings.get("cats", []);
+  const mainCats = MAIN_CATS.filter(c => allCatSet.has(c));
+  const tagCats = TAG_ORDER.filter(c => allCatSet.has(c));
+
+  function chips(items, activeList, toggleFn) {
+    return items.map(c => {
+      const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
+      const isActive = activeList.includes(c);
+      const isExcluded = excluded.length > 0 && !excluded.includes(c);
+      if (isExcluded) return `<button class="filter-chip disabled">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</button>`;
+      return `<button class="filter-chip${isActive ? " active" : ""}" onclick="${toggleFn}('${esc(c)}')">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</button>`;
+    }).join("");
+  }
+
+  const hasFilters = activeCatFilter.length + activeTagFilter.length > 0;
+  panel.innerHTML = `
+    <div class="filter-panel-section">
+      <div class="filter-panel-label">Categorias</div>
+      <div class="filter-chips">${chips(mainCats, activeCatFilter, "toggleActiveCat")}</div>
+    </div>
+    <div class="filter-panel-section">
+      <div class="filter-panel-label">Etiquetas</div>
+      <div class="filter-chips">${chips(tagCats, activeTagFilter, "toggleActiveTag")}</div>
+    </div>
+    ${hasFilters ? `<button class="filter-clear-btn" onclick="clearActiveFilters()">Limpiar filtros</button>` : ""}
+  `;
+}
+
+function toggleFilterPanel() {
+  const existing = document.getElementById("filter-panel");
+  if (existing) { existing.remove(); return; }
+
+  const bar = document.querySelector(".filter-bar");
+  const panel = document.createElement("div");
+  panel.id = "filter-panel";
+  panel.className = "filter-panel";
+  renderFilterPanelContent(panel);
+  bar.appendChild(panel);
+}
+
 function applySource(val) {
   activeSource = val;
   Settings.set("source", val);
@@ -1411,12 +1529,11 @@ function applyHidePast(val) {
 }
 
 function toggleCatPref(cat) {
-  const allAvail = [...new Set(allData.flatMap(ev => ev.categories || []))]
-    .filter(c => !EXCLUDED_CATS.has(c));
+  const allAvail = [...MAIN_CATS.filter(c => allCatSet.has(c)), ...TAG_ORDER.filter(c => allCatSet.has(c))];
   let cats = Settings.get("cats", []);
-  if (cats.length === 0) cats = [...allAvail]; // expand "all" before modifying
+  if (cats.length === 0) cats = [...allAvail];
   cats = cats.includes(cat) ? cats.filter(c => c !== cat) : [...cats, cat];
-  if (cats.length === allAvail.length) cats = []; // back to "all" = empty
+  if (cats.length === allAvail.length) cats = [];
   Settings.set("cats", cats);
   render();
   renderUserView();

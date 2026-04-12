@@ -2324,15 +2324,11 @@
 
   <div class="filter-bar">
     <div class="filter-bar-inner">
-      <select id="category-filter">
-        <option value="">Todas las categorías</option>
-      </select>
-      <select id="user-filter" style="display:none">
-        <option value="">Mis eventos</option>
-        <option value="favorites">Favoritos</option>
-        <option value="seen">Vistos</option>
-        <option value="dismissed">Ocultos</option>
-      </select>
+      <button id="filter-toggle-btn" class="filter-toggle-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+        <span>Filtrar</span>
+        <span id="filter-count-badge" class="filter-count-badge" style="display:none">0</span>
+      </button>
       <div id="active-filters" class="active-filters"></div>
     </div>
   </div>
