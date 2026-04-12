@@ -295,8 +295,8 @@ const SOURCE_LABELS = {
   "teatros_canal": "teatroscanal.com",
 };
 
-const EXCLUDED_CATS = new Set(["gratis", "destacado", "aire libre", "accesible", "infantil", "visitas guiadas"]);
-const CAT_PRIORITY = ["monólogos","ópera","circo","cine","danza","deportes","ferias","conciertos","teatro","talleres","conferencias","literatura","musica","fotografia","exposiciones"];
+const EXCLUDED_CATS = new Set(["gratis", "destacado", "aire libre", "accesible", "infantil", "visitas guiadas", "danza", "circo", "ópera"]);
+const CAT_PRIORITY = ["monólogos","cine","deportes","ferias","conciertos","teatro","talleres","conferencias","literatura","musica","fotografia","exposiciones"];
 
 function eventBadges(ev, cls) {
   const price = ev.price || "";
@@ -739,7 +739,7 @@ function renderMap() {
   });
 
   const PRIORITY = [
-    "fotografia", "circo", "cine", "danza",
+    "fotografia", "cine",
     "deportes", "ferias",
     "musica", "teatro", "talleres", "conferencias",
     "literatura", "exposiciones", "otros",

@@ -3,10 +3,7 @@
 CATEGORIES = {
     "teatro",
     "monólogos",
-    "danza",
-    "circo",
     "conciertos",
-    "ópera",
     "cine",
     "exposiciones",
     "literatura",
@@ -25,6 +22,9 @@ TAGS = {
     "accesible",
     "infantil",
     "visitas guiadas",
+    "danza",
+    "circo",
+    "ópera",
 }
 
 ALL_VALID = CATEGORIES | TAGS
