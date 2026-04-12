@@ -1327,9 +1327,9 @@ function renderUserView() {
   }
 
   const catGridHtml = `
-    <div class="pref-subheading">Categorias</div>
+    <div class="pref-subheading">Categorías principales</div>
     <div class="cat-grid-circles">${catGrid(mainCats)}</div>
-    <div class="pref-subheading">Etiquetas</div>
+    <div class="pref-subheading">Subcategorías</div>
     <div class="cat-grid-circles">${catGrid(tagCats)}</div>
   `;
 
@@ -1488,11 +1488,11 @@ function renderFilterPanelContent(panel) {
   const hasFilters = activeCatFilter.length + activeTagFilter.length > 0;
   panel.innerHTML = `
     <div class="filter-panel-section">
-      <div class="filter-panel-label">Categorias</div>
+      <div class="filter-panel-label">Categorías principales</div>
       <div class="filter-chips">${chips(mainCats, activeCatFilter, "toggleActiveCat")}</div>
     </div>
     <div class="filter-panel-section">
-      <div class="filter-panel-label">Etiquetas</div>
+      <div class="filter-panel-label">Subcategorías</div>
       <div class="filter-chips">${chips(tagCats, activeTagFilter, "toggleActiveTag")}</div>
     </div>
     ${hasFilters ? `<button class="filter-clear-btn" onclick="clearActiveFilters()">Limpiar filtros</button>` : ""}
