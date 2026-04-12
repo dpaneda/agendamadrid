@@ -74,27 +74,36 @@ def _get_client():
 
 
 _dead_models = set()
+_cooldown_until = {}  # model -> timestamp when cooldown expires
 
 
 def _llm_call(prompt):
-    """Call LLM with model fallback chain. Remembers failed models."""
+    """Call LLM with model fallback chain. Handles per-minute and per-day limits."""
     client = _get_client()
     if not client:
         return None
 
+    now = time.time()
     for model in _MODELS:
         model = model.strip()
         if model in _dead_models:
+            continue
+        if model in _cooldown_until and now < _cooldown_until[model]:
             continue
         try:
             response = client.models.generate_content(model=model, contents=prompt)
             return response.text.strip()
         except Exception as e:
-            if "429" in str(e):
-                _dead_models.add(model)
-                print(f"    ⚠ {model} rate limited, disabled for this run")
-            else:
+            err = str(e)
+            if "429" not in err:
                 print(f"    ⚠ {model} error: {e.__class__.__name__}")
+                continue
+            if "per day" in err.lower() or "daily" in err.lower() or "RPD" in err:
+                _dead_models.add(model)
+                print(f"    ✗ {model} daily limit exhausted, disabled")
+            else:
+                _cooldown_until[model] = now + 62
+                print(f"    ⏳ {model} per-minute limit, cooldown 60s")
             continue
     return None
 
