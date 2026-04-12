@@ -73,7 +73,7 @@ def _get_client():
     return _client
 
 
-def _llm_call(prompt, retries=2):
+def _llm_call(prompt):
     """Call LLM with model fallback chain. Returns raw text or None."""
     client = _get_client()
     if not client:
@@ -81,20 +81,12 @@ def _llm_call(prompt, retries=2):
 
     for model in _MODELS:
         model = model.strip()
-        for attempt in range(retries + 1):
-            try:
-                response = client.models.generate_content(model=model, contents=prompt)
-                return response.text.strip()
-            except Exception as e:
-                if "429" in str(e):
-                    print(f"    ⚠ {model} rate limited, trying next model...")
-                    break  # skip to next model immediately
-                else:
-                    if attempt < retries:
-                        time.sleep(2)
-                        continue
-                    print(f"    ✗ {model} error: {e}")
-                    break  # try next model
+        try:
+            response = client.models.generate_content(model=model, contents=prompt)
+            return response.text.strip()
+        except Exception as e:
+            print(f"    ⚠ {model} failed, trying next... ({e.__class__.__name__})")
+            continue
     return None
 
 
