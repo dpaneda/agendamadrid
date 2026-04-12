@@ -86,20 +86,9 @@ def _llm_call(prompt, retries=2):
                 response = client.models.generate_content(model=model, contents=prompt)
                 return response.text.strip()
             except Exception as e:
-                if "429" in str(e) and attempt < retries:
-                    wait = 30
-                    try:
-                        m = re.search(r'retryDelay.*?(\d+)', str(e))
-                        if m:
-                            wait = int(m.group(1)) + 2
-                    except Exception:
-                        pass
-                    print(f"    ⏳ Rate limited on {model}, waiting {wait}s...")
-                    time.sleep(wait)
-                    continue
-                elif "429" in str(e):
-                    print(f"    ⚠ {model} exhausted, trying next model...")
-                    break  # try next model
+                if "429" in str(e):
+                    print(f"    ⚠ {model} rate limited, trying next model...")
+                    break  # skip to next model immediately
                 else:
                     if attempt < retries:
                         time.sleep(2)
