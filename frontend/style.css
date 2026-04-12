@@ -1546,7 +1546,7 @@ footer p + p {
 .cat-grid-circles {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 3px;
+  gap: 6px;
   padding: 0;
 }
 
@@ -1555,29 +1555,28 @@ footer p + p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.3rem;
-  background: var(--surface-container-high);
-  border: none;
-  cursor: pointer;
-  padding: 0.6rem 0.15rem;
-  border-radius: var(--radius);
-  transition: opacity 0.15s, background 0.15s;
-}
-
-.cat-circle:not(.active) {
+  gap: 0.4rem;
   background: var(--surface-container-low);
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 0.8rem 0.15rem;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  opacity: 0.5;
 }
 
 .cat-circle.active {
-  background: color-mix(in srgb, var(--primary-dark) 55%, var(--surface-container));
+  background: color-mix(in srgb, var(--cat-color, var(--primary-dark)) 20%, var(--surface-container));
+  border-color: var(--cat-color, var(--primary-dark));
+  opacity: 1;
 }
 
 .cat-circle.active .cat-circle-label {
-  color: var(--white);
+  color: var(--fg);
 }
 
 .cat-circle-icon {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   line-height: 1;
   background: none !important;
 }

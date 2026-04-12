@@ -1287,7 +1287,7 @@ function renderUserView() {
       ${allCats.map(c => {
         const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
         const active = effectivePrefCats.includes(c);
-        return `<button class="cat-circle${active ? " active" : ""}" onclick="toggleCatPref('${esc(c)}')">
+        return `<button class="cat-circle${active ? " active" : ""}" style="${active ? `--cat-color:${info.color}` : ""}" onclick="toggleCatPref('${esc(c)}')">
           <span class="cat-circle-icon">${info.emoji}</span>
           <span class="cat-circle-label">${esc(CATEGORY_LABELS[c] || c)}</span>
         </button>`;
