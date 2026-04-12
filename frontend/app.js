@@ -486,7 +486,7 @@ async function init() {
   document.getElementById("btn-today").addEventListener("click", () => {
     selectedDate = new Date();
     syncPicker();
-    render();
+    setView("list");
   });
 
   // Search
