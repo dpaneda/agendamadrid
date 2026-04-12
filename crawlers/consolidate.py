@@ -108,6 +108,10 @@ def _apply_enrich(event_data, enrich_data):
         if enrich_data.get(field):
             merged[field] = enrich_data[field]
 
+    # LLM wins for title on datos.madrid (titles are poor quality)
+    if enrich_data.get("title") and "madrid_agenda" in event_data.get("source", ""):
+        merged["title"] = enrich_data["title"]
+
     # LLM wins for categories (better classification)
     if enrich_data.get("categories"):
         merged["categories"] = enrich_data["categories"]
