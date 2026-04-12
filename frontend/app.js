@@ -350,7 +350,7 @@ let allEvents = {};   // id -> event data
 let calendarData = {}; // date -> [{event_id, start_time, end_time}]
 let allData = [];      // flattened for backward compat (buildCategories)
 let activeLocation = "";
-let activeSource = "";
+let activeSource = Settings.get("source", "");
 let activeSort = Settings.get("sort", "hora");
 let activeUserFilter = sessionStorage.getItem("activeUserFilter") || "";
 let activeSearch = "";
@@ -1320,6 +1320,12 @@ function renderUserView() {
             <span class="setting-grid-label">Estilo del mapa</span>
             ${tilesHtml}
           </div>
+          ${sources.length > 1 ? `<div class="setting-grid-item">
+            <span class="setting-grid-label">Fuente de datos</span>
+            ${customDropdown("source",
+              [{ value: "", label: "Todas" }, ...sources.map(s => ({ value: s, label: SOURCE_LABELS[s] || s }))],
+              activeSource, "applySource")}
+          </div>` : ""}
         </div>
       </section>
 
@@ -1379,6 +1385,7 @@ function applyMapTile(key) {
 
 function applySource(val) {
   activeSource = val;
+  Settings.set("source", val);
   renderUserView();
 }
 
