@@ -356,10 +356,11 @@ header[hidden] {
 
 /* Filter bar */
 .filter-bar {
-  display: block;
   position: relative;
 }
-.filter-bar[data-view="user"] { display: none; }
+.filter-bar:has(.active-filters:empty) {
+  display: none;
+}
 
 .filter-bar-inner {
   max-width: 70rem;
@@ -423,33 +424,32 @@ header[hidden] {
 .filter-toggle-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.4rem 0.8rem;
-  border: 1px solid var(--surface-container-highest);
-  border-radius: var(--radius-full);
-  background: var(--surface-container);
+  justify-content: center;
+  gap: 0.25rem;
+  background: none;
+  border: none;
   color: var(--fg);
-  font-family: inherit;
-  font-size: 0.85rem;
-  font-weight: 500;
   cursor: pointer;
-  transition: border-color 0.15s;
+  padding: 0.4rem;
+  position: relative;
 }
 .filter-toggle-btn.has-filters {
-  border-color: var(--primary);
   color: var(--primary);
 }
 .filter-count-badge {
   background: var(--primary);
   color: var(--white);
   border-radius: 50%;
-  min-width: 1.2rem;
-  height: 1.2rem;
-  font-size: 0.7rem;
+  min-width: 0.95rem;
+  height: 0.95rem;
+  font-size: 0.6rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
+  position: absolute;
+  top: 0;
+  right: -2px;
 }
 
 .filter-overlay {
