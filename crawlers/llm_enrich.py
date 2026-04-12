@@ -73,19 +73,28 @@ def _get_client():
     return _client
 
 
+_dead_models = set()
+
+
 def _llm_call(prompt):
-    """Call LLM with model fallback chain. Returns raw text or None."""
+    """Call LLM with model fallback chain. Remembers failed models."""
     client = _get_client()
     if not client:
         return None
 
     for model in _MODELS:
         model = model.strip()
+        if model in _dead_models:
+            continue
         try:
             response = client.models.generate_content(model=model, contents=prompt)
             return response.text.strip()
         except Exception as e:
-            print(f"    ⚠ {model} failed, trying next... ({e.__class__.__name__})")
+            if "429" in str(e):
+                _dead_models.add(model)
+                print(f"    ⚠ {model} rate limited, disabled for this run")
+            else:
+                print(f"    ⚠ {model} error: {e.__class__.__name__}")
             continue
     return None
 
@@ -161,9 +170,9 @@ def _parse_time_range(time_str):
     return times
 
 
-def enrich(html, retries=3):
+def enrich(html):
     """Send page HTML to LLM and return enriched fields dict, or None on failure."""
-    raw = _llm_call(PROMPT + _clean_html(html), retries=retries)
+    raw = _llm_call(PROMPT + _clean_html(html))
     data = _parse_json(raw)
     if not data:
         return None
