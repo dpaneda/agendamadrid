@@ -879,10 +879,10 @@ function buildCategories() {
 }
 
 function _applyCatFilter(events) {
-  // Stage 1: Mis Intereses (persistent)
-  const cats = Settings.get("cats", []);
-  if (cats.length) {
-    events = events.filter(ev => (ev.categories || []).some(c => cats.includes(c)));
+  // Stage 1: Mis Intereses — exclude events that have ANY excluded category
+  const excluded = Settings.get("excludedCats", []);
+  if (excluded.length) {
+    events = events.filter(ev => !(ev.categories || []).some(c => excluded.includes(c)));
   }
   // Stage 2: Quick filter — categories (OR within)
   if (activeCatFilter.length) {
@@ -1311,14 +1311,12 @@ function renderUserView() {
 
   const mainCats = MAIN_CATS.filter(c => allCatSet.has(c));
   const tagCats = TAG_ORDER.filter(c => allCatSet.has(c));
-  const allAvail = [...mainCats, ...tagCats];
-  const prefCats = Settings.get("cats", []);
-  const effectivePrefCats = prefCats.length === 0 ? allAvail : prefCats;
+  const excludedCats = Settings.get("excludedCats", []);
 
   function catGrid(cats) {
     return cats.map(c => {
       const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
-      const active = effectivePrefCats.includes(c);
+      const active = !excludedCats.includes(c);
       return `<button class="cat-circle${active ? " active" : ""}" onclick="toggleCatPref('${esc(c)}')">
         <span class="cat-circle-icon">${info.emoji}</span>
         <span class="cat-circle-label">${esc(CATEGORY_LABELS[c] || c)}</span>
@@ -1342,6 +1340,7 @@ function renderUserView() {
         <div class="pref-section-header">
           <h3>Mis Intereses</h3>
         </div>
+        <p class="pref-hint">Lo que desactives se ocultará en toda la app: lista, mapa y calendario.</p>
         ${catGridHtml}
       </section>
 
@@ -1471,7 +1470,7 @@ function updateFilterBadge() {
 }
 
 function renderFilterPanelContent(panel) {
-  const excluded = Settings.get("cats", []);
+  const excluded = Settings.get("excludedCats", []);
   const mainCats = MAIN_CATS.filter(c => allCatSet.has(c));
   const tagCats = TAG_ORDER.filter(c => allCatSet.has(c));
 
@@ -1479,7 +1478,7 @@ function renderFilterPanelContent(panel) {
     return items.map(c => {
       const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
       const isActive = activeList.includes(c);
-      const isExcluded = excluded.length > 0 && !excluded.includes(c);
+      const isExcluded = excluded.includes(c);
       if (isExcluded) return `<button class="filter-chip disabled">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</button>`;
       return `<button class="filter-chip${isActive ? " active" : ""}" onclick="${toggleFn}('${esc(c)}')">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</button>`;
     }).join("");
@@ -1529,12 +1528,13 @@ function applyHidePast(val) {
 }
 
 function toggleCatPref(cat) {
-  const allAvail = [...MAIN_CATS.filter(c => allCatSet.has(c)), ...TAG_ORDER.filter(c => allCatSet.has(c))];
-  let cats = Settings.get("cats", []);
-  if (cats.length === 0) cats = [...allAvail];
-  cats = cats.includes(cat) ? cats.filter(c => c !== cat) : [...cats, cat];
-  if (cats.length === allAvail.length) cats = [];
-  Settings.set("cats", cats);
+  let excluded = Settings.get("excludedCats", []);
+  if (excluded.includes(cat)) {
+    excluded = excluded.filter(c => c !== cat);
+  } else {
+    excluded.push(cat);
+  }
+  Settings.set("excludedCats", excluded);
   render();
   renderUserView();
 }
