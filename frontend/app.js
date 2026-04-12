@@ -1479,7 +1479,7 @@ function renderFilterPanelContent(panel) {
       const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
       const isActive = activeList.includes(c);
       const isExcluded = excluded.includes(c);
-      if (isExcluded) return `<button class="filter-chip disabled">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</button>`;
+      if (isExcluded) return `<button class="filter-chip disabled" title="Desactivado en Mis Intereses (Ajustes)">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</button>`;
       return `<button class="filter-chip${isActive ? " active" : ""}" onclick="${toggleFn}('${esc(c)}')">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</button>`;
     }).join("");
   }
