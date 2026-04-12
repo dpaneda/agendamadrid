@@ -30,7 +30,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           python -m crawlers.enrich_source esmadrid
-          python -m crawlers.enrich_source madrid_agenda
+          python -m crawlers.enrich_source madrid_agenda --batch
 
       - name: Download images
         run: python -m crawlers.download_images

@@ -1,7 +1,7 @@
 """Enrich event data using Gemini LLM.
 
 Takes already-downloaded HTML and returns structured event fields.
-Designed to be called from scrapers after their own parsing.
+Supports single-event (HTML) and batch (metadata-only) modes.
 """
 
 import json
@@ -38,11 +38,29 @@ REGLAS:
 Contenido de la página:
 """
 
+BATCH_PROMPT = """Para cada evento de Madrid, mejora los datos y clasifícalos.
+Categorías válidas: teatro, conciertos, exposiciones, talleres, conferencias, deportes, ferias.
+Tags opcionales: infantil, visitas guiadas, gratis, danza, circo, ópera, monólogos, aire libre, cine.
+
+Eventos:
+{events_json}
+
+Devuelve SOLO un JSON array con un objeto por evento (mismo orden), cada uno con:
+{{"title": "título mejorado", "description": "máx 2 frases del contenido", "categories": ["categorías y tags"], "price": "precio o null"}}
+
+REGLAS:
+- Responde SOLO con el JSON array, sin markdown ni explicaciones
+- Al menos una categoría de la lista proporcionada, no inventar otras
+- Mantén el mismo número de eventos y el mismo orden
+"""
+
 # Map LLM day abbreviations to Python weekday ints
 _DAY_MAP = {"L": 0, "M": 1, "X": 2, "J": 3, "V": 4, "S": 5, "D": 6, "todos": "todos"}
 
 _client = None
-_model = os.environ.get("GEMINI_MODEL", "gemini-3.1-flash-lite-preview")
+
+# Model fallback chain: try each in order
+_MODELS = os.environ.get("GEMINI_MODEL", "gemma-4-31b-it,gemini-2.5-flash,gemma-3-27b-it").split(",")
 
 
 def _get_client():
@@ -53,6 +71,55 @@ def _get_client():
             return None
         _client = genai.Client(api_key=api_key)
     return _client
+
+
+def _llm_call(prompt, retries=2):
+    """Call LLM with model fallback chain. Returns raw text or None."""
+    client = _get_client()
+    if not client:
+        return None
+
+    for model in _MODELS:
+        model = model.strip()
+        for attempt in range(retries + 1):
+            try:
+                response = client.models.generate_content(model=model, contents=prompt)
+                return response.text.strip()
+            except Exception as e:
+                if "429" in str(e) and attempt < retries:
+                    wait = 30
+                    try:
+                        m = re.search(r'retryDelay.*?(\d+)', str(e))
+                        if m:
+                            wait = int(m.group(1)) + 2
+                    except Exception:
+                        pass
+                    print(f"    ⏳ Rate limited on {model}, waiting {wait}s...")
+                    time.sleep(wait)
+                    continue
+                elif "429" in str(e):
+                    print(f"    ⚠ {model} exhausted, trying next model...")
+                    break  # try next model
+                else:
+                    if attempt < retries:
+                        time.sleep(2)
+                        continue
+                    print(f"    ✗ {model} error: {e}")
+                    break  # try next model
+    return None
+
+
+def _parse_json(raw):
+    """Parse JSON from LLM response, stripping markdown fences."""
+    if not raw:
+        return None
+    if raw.startswith("```"):
+        raw = re.sub(r'^```\w*\n?', '', raw)
+        raw = re.sub(r'\n?```$', '', raw)
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        return None
 
 
 def _clean_html(html):
@@ -115,71 +182,52 @@ def _parse_time_range(time_str):
 
 def enrich(html, retries=3):
     """Send page HTML to LLM and return enriched fields dict, or None on failure."""
-    client = _get_client()
-    if not client:
+    raw = _llm_call(PROMPT + _clean_html(html), retries=retries)
+    data = _parse_json(raw)
+    if not data:
         return None
 
-    text = _clean_html(html)
+    result = {}
+    for field in ("title", "description", "price", "location_name", "address",
+                  "start_date", "end_date"):
+        if data.get(field):
+            result[field] = data[field]
 
-    for attempt in range(retries + 1):
-        try:
-            response = client.models.generate_content(
-                model=_model,
-                contents=PROMPT + text,
-            )
-            raw = response.text.strip()
-            if raw.startswith("```"):
-                raw = re.sub(r'^```\w*\n?', '', raw)
-                raw = re.sub(r'\n?```$', '', raw)
+    if data.get("categories"):
+        result["categories"] = data["categories"]
 
-            data = json.loads(raw)
+    sched = _parse_schedule(data.get("schedule"))
+    if sched:
+        result["schedule"] = sched
 
-            # Build result with our field names
-            result = {}
+    if data.get("is_multi_event"):
+        result["is_multi_event"] = True
 
-            for field in ("title", "description", "price", "location_name", "address",
-                          "start_date", "end_date"):
-                if data.get(field):
-                    result[field] = data[field]
+    return result
 
-            if data.get("categories"):
-                result["categories"] = data["categories"]
 
-            sched = _parse_schedule(data.get("schedule"))
-            if sched:
-                result["schedule"] = sched
+def enrich_batch(events_data):
+    """Enrich a batch of events from metadata (no HTML needed).
 
-            if data.get("is_multi_event"):
-                result["is_multi_event"] = True
+    events_data: list of dicts with title, categories, description, etc.
+    Returns: list of enriched dicts (same order), or None on failure.
+    """
+    slim = []
+    for ev in events_data:
+        slim.append({
+            "title": ev.get("title", ""),
+            "categories": ev.get("categories", []),
+            "description": (ev.get("description") or "")[:200],
+        })
 
-            return result
+    prompt = BATCH_PROMPT.format(events_json=json.dumps(slim, ensure_ascii=False))
+    raw = _llm_call(prompt)
+    data = _parse_json(raw)
 
-        except json.JSONDecodeError:
-            if attempt < retries:
-                time.sleep(2)
-                continue
-            return None
-        except Exception as e:
-            if "429" in str(e) and attempt < retries:
-                wait = 30
-                try:
-                    err_data = json.loads(str(e).split(".", 1)[1].strip())
-                    for detail in err_data.get("error", {}).get("details", []):
-                        delay = detail.get("retryDelay", "")
-                        if delay:
-                            wait = int(re.search(r'(\d+)', delay).group(1)) + 2
-                            break
-                except Exception:
-                    m = re.search(r'retryDelay.*?(\d+)', str(e))
-                    if m:
-                        wait = int(m.group(1)) + 2
-                print(f"    ⏳ Rate limited, waiting {wait}s...")
-                time.sleep(wait)
-                continue
-            print(f"    ✗ LLM error: {e}")
-            return None
+    if not data or not isinstance(data, list) or len(data) != len(events_data):
+        return None
 
-    return None
+    return data
 
 
 def merge_llm_data(scraped, llm_data):
