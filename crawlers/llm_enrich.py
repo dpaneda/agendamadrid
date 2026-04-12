@@ -60,7 +60,7 @@ _DAY_MAP = {"L": 0, "M": 1, "X": 2, "J": 3, "V": 4, "S": 5, "D": 6, "todos": "to
 _client = None
 
 # Model fallback chain: try each in order
-_MODELS = os.environ.get("GEMINI_MODEL", "gemini-3.1-flash-lite-preview,gemma-4-31b-it,gemini-2.5-flash,gemma-3-27b-it").split(",")
+_MODELS = os.environ.get("GEMINI_MODEL", "gemini-3.1-flash-lite-preview,gemini-2.5-flash,gemma-4-31b-it,gemma-3-27b-it").split(",")
 
 
 def _get_client():
