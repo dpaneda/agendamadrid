@@ -41,12 +41,12 @@
     "latitude": 40.49120609425076,
     "longitude": -3.6916379633219116
   },
-  "01cf734b": {
-    "location_name": "Centro Cultural Nicolás Salmerón (Chamartín)",
-    "address": "CALLE MANTUANO 51",
-    "district": "Chamartin",
-    "latitude": 40.44834125150792,
-    "longitude": -3.6761992414203526
+  "1d5179a9": {
+    "location_name": "Centro Cultural Buero Vallejo (San Blas - Canillejas)",
+    "address": "CALLE BOLTAÑA 27",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.44477474902185,
+    "longitude": -3.6129105844633775
   },
   "95a62894": {
     "location_name": "Cineteca Madrid",
@@ -109,13 +109,6 @@
     "district": "Latina",
     "latitude": 40.38493929920335,
     "longitude": -3.7641963952601154
-  },
-  "1d5179a9": {
-    "location_name": "Centro Cultural Buero Vallejo (San Blas - Canillejas)",
-    "address": "CALLE BOLTAÑA 27",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.44477474902185,
-    "longitude": -3.6129105844633775
   },
   "78f8018a": {
     "location_name": "Centro Cultural Puerta de Toledo (Centro)",
@@ -564,12 +557,12 @@
     "latitude": 40.37959032098656,
     "longitude": -3.62310875744905
   },
-  "e391ce25": {
-    "location_name": "Centro Cultural Las Californias (Retiro)",
-    "address": "CALLE LUIS PEIDRO 2",
-    "district": "Retiro",
-    "latitude": 40.397021560779024,
-    "longitude": -3.6738766514153163
+  "cdc2f892": {
+    "location_name": "Centro Cultural Miguel Hernández (Latina)",
+    "address": "CALLE SERRADILLA 13",
+    "district": "Latina",
+    "latitude": 40.37881526578977,
+    "longitude": -3.7818814193235477
   },
   "58cccc02": {
     "location_name": "Centro Dotacional Integrado Arganzuela Ángel del Río",
@@ -758,6 +751,10 @@
     "district": "Centro",
     "latitude": 40.42741340671151,
     "longitude": -3.7095381101739444
+  },
+  "40c9bbca": {
+    "location_name": "Centro Cultural el Torito",
+    "address": "Avenida Moratalaz, 130"
   },
   "3277bc83": {
     "location_name": "Centro Sociocultural Valverde (Fuencarral - El Pardo)",
@@ -968,6 +965,20 @@
     "latitude": 40.402190438836826,
     "longitude": -3.6772826298329093
   },
+  "6bf645f2": {
+    "location_name": "Centro Cultural el Madroño (Vicálvaro)",
+    "address": "CALLE VILLARDONDIEGO 36",
+    "district": "Vicalvaro",
+    "latitude": 40.40529229274289,
+    "longitude": -3.6086152959929514
+  },
+  "01cf734b": {
+    "location_name": "Centro Cultural Nicolás Salmerón (Chamartín)",
+    "address": "CALLE MANTUANO 51",
+    "district": "Chamartin",
+    "latitude": 40.44834125150792,
+    "longitude": -3.6761992414203526
+  },
   "8d536373": {
     "location_name": "Instalación Deportiva Municipal Básica Colonia Marconi",
     "address": "AVENIDA MARCONI s/n",
@@ -1042,6 +1053,13 @@
     "latitude": 40.386296991431074,
     "longitude": -3.671858416387963
   },
+  "e391ce25": {
+    "location_name": "Centro Cultural Las Californias (Retiro)",
+    "address": "CALLE LUIS PEIDRO 2",
+    "district": "Retiro",
+    "latitude": 40.397021560779024,
+    "longitude": -3.6738766514153163
+  },
   "76e2a9e1": {
     "location_name": "Biblioteca Pública Municipal La Chata (Carabanchel)",
     "address": "CALLE GENERAL RICARDOS 252",
@@ -1076,13 +1094,6 @@
     "latitude": 40.424637345173,
     "longitude": -3.689861297607
   },
-  "cdc2f892": {
-    "location_name": "Centro Cultural Miguel Hernández (Latina)",
-    "address": "CALLE SERRADILLA 13",
-    "district": "Latina",
-    "latitude": 40.37881526578977,
-    "longitude": -3.7818814193235477
-  },
   "24d8cdc0": {
     "location_name": "Monumento Pío Baroja",
     "address": "Cuesta de Moyano, Madrid"
@@ -1107,13 +1118,6 @@
     "district": "Usera",
     "latitude": 40.381114597104194,
     "longitude": -3.711149675992656
-  },
-  "6bf645f2": {
-    "location_name": "Centro Cultural el Madroño (Vicálvaro)",
-    "address": "CALLE VILLARDONDIEGO 36",
-    "district": "Vicalvaro",
-    "latitude": 40.40529229274289,
-    "longitude": -3.6086152959929514
   },
   "1880bb25": {
     "location_name": "Biblioteca Pública Municipal Benito Pérez Galdós (Centro)",
@@ -1657,6 +1661,20 @@
     "district": "PuenteDeVallecas",
     "latitude": 40.393189968014696,
     "longitude": -3.6554147649183943
+  },
+  "114b28c7": {
+    "location_name": "Colegio Público República de Venezuela",
+    "address": "CALLE CERECINOS 8",
+    "district": "Usera",
+    "latitude": 40.38358402272625,
+    "longitude": -3.713626711959121
+  },
+  "712f7971": {
+    "location_name": "Sala de exposiciones La Lonja. Centro Cultural Casa del Reloj (Arganzuela)",
+    "address": "PASEO CHOPERA 10",
+    "district": "Arganzuela",
+    "latitude": 40.39307289237465,
+    "longitude": -3.699005654074825
   },
   "8df15f7b": {
     "location_name": "Centro Cultural Daoíz y Velarde",
@@ -2751,5 +2769,34 @@
   },
   "008e9b3f": {
     "location_name": "Varias salas de Madrid"
+  },
+  "8f2bd3cf": {
+    "location_name": "Barrio Malasaña",
+    "latitude": 40.4167754,
+    "longitude": -3.7037902
+  },
+  "b8dbe74e": {
+    "location_name": "Plaza de Juan Goytisolo",
+    "address": "Plaza de Juan Goytisolo",
+    "latitude": 40.4086864,
+    "longitude": -3.6939212
+  },
+  "9fdea7d4": {
+    "location_name": "AMEN",
+    "address": "de San Andrés, 3",
+    "latitude": 40.4256941,
+    "longitude": -3.7039705
+  },
+  "3ab618a8": {
+    "location_name": "Centro Comercial Arturo Soria Plaza",
+    "address": "de Arturo Soria, 126",
+    "latitude": 40.4499968,
+    "longitude": -3.6507593
+  },
+  "f92d41ff": {
+    "location_name": "Club Internacional de Tenis de Majadahonda",
+    "address": "Carretera del Plantio km 3",
+    "latitude": 40.4754155,
+    "longitude": -3.8405518
   }
 }
