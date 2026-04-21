@@ -678,6 +678,13 @@
   "b9c0fd14": {
     "location_name": "Biblioteca Iván de Vargas"
   },
+  "35584e1c": {
+    "location_name": "Centro Cultural Zazuar (Villa de Vallecas)",
+    "address": "CALLE ZAZUAR 4",
+    "district": "VillaDeVallecas",
+    "latitude": 40.38281866921273,
+    "longitude": -3.6061377076487906
+  },
   "5157a47e": {
     "location_name": "Centro Cultural Carril del Conde (Hortaleza)",
     "address": "CALLE CARRIL DEL CONDE 57",
@@ -752,6 +759,13 @@
     "latitude": 40.42741340671151,
     "longitude": -3.7095381101739444
   },
+  "c35c9218": {
+    "location_name": "Centro Cultural Galileo (Chamberí)",
+    "address": "CALLE GALILEO 39",
+    "district": "Chamberi",
+    "latitude": 40.433719454283505,
+    "longitude": -3.7104468992841753
+  },
   "3277bc83": {
     "location_name": "Centro Sociocultural Valverde (Fuencarral - El Pardo)",
     "address": "PLAZA ISLAS AZORES 1",
@@ -800,13 +814,6 @@
     "district": "Fuencarral-ElPardo",
     "latitude": 40.48025613358832,
     "longitude": -3.7214686777952974
-  },
-  "c35c9218": {
-    "location_name": "Centro Cultural Galileo (Chamberí)",
-    "address": "CALLE GALILEO 39",
-    "district": "Chamberi",
-    "latitude": 40.433719454283505,
-    "longitude": -3.7104468992841753
   },
   "3f805e68": {
     "location_name": "Centro Sociocultural Alfonso XII (Fuencarral - El Pardo)",
@@ -1093,13 +1100,6 @@
   "24d8cdc0": {
     "location_name": "Monumento Pío Baroja",
     "address": "Cuesta de Moyano, Madrid"
-  },
-  "35584e1c": {
-    "location_name": "Centro Cultural Zazuar (Villa de Vallecas)",
-    "address": "CALLE ZAZUAR 4",
-    "district": "VillaDeVallecas",
-    "latitude": 40.38281866921273,
-    "longitude": -3.6061377076487906
   },
   "0628e94f": {
     "location_name": "Biblioteca Pública Municipal Pablo Neruda (Ciudad Lineal)",
@@ -1728,6 +1728,12 @@
     "latitude": 40.42802889001877,
     "longitude": -3.710182353581842
   },
+  "58c0410c": {
+    "location_name": "Centro Cultural Antonio Machado",
+    "address": "San Román del Valle, 8",
+    "latitude": 40.4196715,
+    "longitude": -3.6216694
+  },
   "16766d4c": {
     "location_name": "Colegio Público Arquitecto Gaudí",
     "address": "CALLE ROSA JARDON 10",
@@ -1755,6 +1761,13 @@
     "district": "CiudadLineal",
     "latitude": 40.43555222953495,
     "longitude": -3.6519351470803567
+  },
+  "9ac8a0d3": {
+    "location_name": "Auditorio al aire libre Berlín",
+    "address": "CALLE SAN ERNESTO 10",
+    "district": "Chamartin",
+    "latitude": 40.449208447370104,
+    "longitude": -3.6755539136331894
   },
   "8df15f7b": {
     "location_name": "Centro Cultural Daoíz y Velarde",
@@ -2935,5 +2948,17 @@
     "address": "de la Explanada, 14",
     "latitude": 40.4482718,
     "longitude": -3.7116787
+  },
+  "caf9b700": {
+    "location_name": "Calle de Belén 2",
+    "address": "de Belén 2",
+    "latitude": 40.4243404,
+    "longitude": -3.6972183
+  },
+  "74f25e7f": {
+    "location_name": "Escuela de Arte La Palma",
+    "address": "de la Palma, 46",
+    "latitude": 40.4266019,
+    "longitude": -3.7058638
   }
 }
