@@ -557,12 +557,12 @@
     "latitude": 40.37959032098656,
     "longitude": -3.62310875744905
   },
-  "e391ce25": {
-    "location_name": "Centro Cultural Las Californias (Retiro)",
-    "address": "CALLE LUIS PEIDRO 2",
-    "district": "Retiro",
-    "latitude": 40.397021560779024,
-    "longitude": -3.6738766514153163
+  "cdc2f892": {
+    "location_name": "Centro Cultural Miguel Hernández (Latina)",
+    "address": "CALLE SERRADILLA 13",
+    "district": "Latina",
+    "latitude": 40.37881526578977,
+    "longitude": -3.7818814193235477
   },
   "58cccc02": {
     "location_name": "Centro Dotacional Integrado Arganzuela Ángel del Río",
@@ -759,9 +759,12 @@
     "latitude": 40.42741340671151,
     "longitude": -3.7095381101739444
   },
-  "40c9bbca": {
-    "location_name": "Centro Cultural el Torito",
-    "address": "Avenida Moratalaz, 130"
+  "c35c9218": {
+    "location_name": "Centro Cultural Galileo (Chamberí)",
+    "address": "CALLE GALILEO 39",
+    "district": "Chamberi",
+    "latitude": 40.433719454283505,
+    "longitude": -3.7104468992841753
   },
   "3277bc83": {
     "location_name": "Centro Sociocultural Valverde (Fuencarral - El Pardo)",
@@ -811,13 +814,6 @@
     "district": "Fuencarral-ElPardo",
     "latitude": 40.48025613358832,
     "longitude": -3.7214686777952974
-  },
-  "c35c9218": {
-    "location_name": "Centro Cultural Galileo (Chamberí)",
-    "address": "CALLE GALILEO 39",
-    "district": "Chamberi",
-    "latitude": 40.433719454283505,
-    "longitude": -3.7104468992841753
   },
   "3f805e68": {
     "location_name": "Centro Sociocultural Alfonso XII (Fuencarral - El Pardo)",
@@ -993,12 +989,12 @@
     "latitude": 40.33393325295466,
     "longitude": -3.6931253996834856
   },
-  "fd6a0baa": {
-    "location_name": "Instalación Deportiva Municipal Básica Frontón Zofio",
-    "address": "CALLE RICARDO BELTRAN Y ROZPIDE 16",
+  "abb1adaa": {
+    "location_name": "Instalación Deportiva Municipal Básica Cerro Blanco",
+    "address": "CALLE ALBARDIN 7",
     "district": "Usera",
-    "latitude": 40.37992590963709,
-    "longitude": -3.7180064038885896
+    "latitude": 40.37976723848226,
+    "longitude": -3.7162665062702196
   },
   "f64a3395": {
     "location_name": "Edificio Sociocultural Marta Escudero Díaz-Tejeiro",
@@ -1060,6 +1056,13 @@
     "latitude": 40.386296991431074,
     "longitude": -3.671858416387963
   },
+  "e391ce25": {
+    "location_name": "Centro Cultural Las Californias (Retiro)",
+    "address": "CALLE LUIS PEIDRO 2",
+    "district": "Retiro",
+    "latitude": 40.397021560779024,
+    "longitude": -3.6738766514153163
+  },
   "76e2a9e1": {
     "location_name": "Biblioteca Pública Municipal La Chata (Carabanchel)",
     "address": "CALLE GENERAL RICARDOS 252",
@@ -1081,25 +1084,11 @@
     "latitude": 40.42559,
     "longitude": -3.71955
   },
-  "3c3c05be": {
-    "location_name": "Centro Sociocultural Oporto (Carabanchel)",
-    "address": "AVENIDA OPORTO 78",
-    "district": "Carabanchel",
-    "latitude": 40.38682740756541,
-    "longitude": -3.7277493066262406
-  },
   "f749255f": {
     "location_name": "Fernán Gómez Centro Cultural de la Villa",
     "address": "de Colón , 4",
     "latitude": 40.424637345173,
     "longitude": -3.689861297607
-  },
-  "cdc2f892": {
-    "location_name": "Centro Cultural Miguel Hernández (Latina)",
-    "address": "CALLE SERRADILLA 13",
-    "district": "Latina",
-    "latitude": 40.37881526578977,
-    "longitude": -3.7818814193235477
   },
   "24d8cdc0": {
     "location_name": "Monumento Pío Baroja",
@@ -1509,6 +1498,13 @@
     "latitude": 40.44245748722783,
     "longitude": -3.6217095632137375
   },
+  "3c3c05be": {
+    "location_name": "Centro Sociocultural Oporto (Carabanchel)",
+    "address": "AVENIDA OPORTO 78",
+    "district": "Carabanchel",
+    "latitude": 40.38682740756541,
+    "longitude": -3.7277493066262406
+  },
   "aaabd15d": {
     "location_name": "Centro Sociocultural Aula de Aire Libre (Puente de Vallecas)",
     "address": "CALLE SIERRA CARBONERA 74",
@@ -1807,6 +1803,20 @@
     "district": "Villaverde",
     "latitude": 40.341265820973355,
     "longitude": -3.690416646053115
+  },
+  "c573f708": {
+    "location_name": "Colegio Público Pradolongo",
+    "address": "CALLE PARQUE DE LA PALOMA 9",
+    "district": "Usera",
+    "latitude": 40.37893066302815,
+    "longitude": -3.7158394380500623
+  },
+  "bf7bfcf8": {
+    "location_name": "Centro Municipal de Mayores Pablo Neruda",
+    "address": "CALLE GERARDO DIEGO 8",
+    "district": "PuenteDeVallecas",
+    "latitude": 40.385232075465986,
+    "longitude": -3.644368951945781
   },
   "8df15f7b": {
     "location_name": "Centro Cultural Daoíz y Velarde",

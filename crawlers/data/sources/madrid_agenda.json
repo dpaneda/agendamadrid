@@ -182,14 +182,14 @@
     "description": null,
     "start_date": "2026-04-23",
     "end_date": "2026-04-29",
-    "start_time": "20:00:00",
+    "start_time": "19:30:00",
     "end_time": null,
     "location_name": "Cineteca Madrid",
     "address": "PLAZA LEGAZPI 8",
     "district": "Arganzuela",
     "latitude": 40.39130985242181,
     "longitude": -3.6958028442054074,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=4b30c7b4003cc910VgnVCM200000f921e388RCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8661b310c03cc910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "destacado"
@@ -3217,21 +3217,22 @@
     "id": "d14fe8c635e5a961"
   },
   {
-    "title": "Celebrando el Día del Libro",
-    "description": "Lectura dramatizada.    Compañía: Asunción Díaz. Haciendo especial mención a que Cervantes, Shakespeare y Garcilaso de la Vega fallecieron el 23 de abril de 1616 y la UNESCO en 1995 declaró esa fecha como el día mundial del libro, quiero hacer un recorrido literario por los cinco continentes. Leeremos textos, fragmentos, poemas o escenas de diferentes autores.  Duración: 90 minutos. Edad recomendada: Público adulto.    Entrada libre hasta completar aforo.",
+    "title": "Celebrando el día del libro",
+    "description": "Cervantes, Shakespeare y el Inca Garcilaso de la Vega fallecieron el 23 de abril de 1616 y la UNESCO, en 1995, declaró esa fecha como el día mundial del libro.  Haremos un recorrido literario por los cinco continentes.  Leeremos textos, fragmentos, poemas o escenas de diferentes autores. De la mano de Asunción Díaz.",
     "start_date": "2026-04-23",
     "end_date": "2026-04-24",
     "start_time": "19:00:00",
     "end_time": null,
-    "location_name": "Centro Cultural Las Californias (Retiro)",
-    "address": "CALLE LUIS PEIDRO 2",
-    "district": "Retiro",
-    "latitude": 40.397021560779024,
-    "longitude": -3.6738766514153163,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=1ae5671bbe0bd910VgnVCM100000891ecb1aRCRD",
+    "location_name": "Centro Cultural Miguel Hernández (Latina)",
+    "address": "CALLE SERRADILLA 13",
+    "district": "Latina",
+    "latitude": 40.37881526578977,
+    "longitude": -3.7818814193235477,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=f02ff7c3ca1ec910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
-      "conciertos"
+      "conferencias",
+      "gratis"
     ],
     "schedule": null,
     "id": "db14f00edc6a7456"
@@ -4324,7 +4325,7 @@
     "title": "Círculo de mujeres. Espacio de Igualdad Elena Arnedo",
     "description": null,
     "start_date": "2026-04-23",
-    "end_date": "2026-04-23",
+    "end_date": "2026-05-28",
     "start_time": "18:30:00",
     "end_time": null,
     "location_name": "Espacio de Igualdad Elena Arnedo Soriano. Retiro",
@@ -4338,15 +4339,19 @@
       "talleres",
       "gratis"
     ],
-    "schedule": null,
+    "schedule": {
+      "3": [
+        "18:30:00"
+      ]
+    },
     "id": "d85d1e2da6868c7c"
   },
   {
     "title": "Círculo de mujeres: entre fuegos y raíces",
     "description": null,
     "start_date": "2026-04-23",
-    "end_date": "2026-04-23",
-    "start_time": "17:00:00",
+    "end_date": "2026-05-28",
+    "start_time": "18:30:00",
     "end_time": null,
     "location_name": "Espacio de Igualdad Nieves Torres. Chamartín",
     "address": "CALLE ENRIQUE JARDIEL PONCELA 8",
@@ -4783,18 +4788,18 @@
     "end_date": "2026-05-29",
     "start_time": "19:00:00",
     "end_time": null,
-    "location_name": "Biblioteca Pública Municipal Mario Vargas Llosa (Centro)",
-    "address": "CALLE BARCELO 4",
-    "district": "Centro",
-    "latitude": 40.426642215368176,
-    "longitude": -3.699722994908341,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8c67e294e5839910VgnVCM200000f921e388RCRD",
+    "location_name": "Biblioteca Pública Municipal José Hierro (San Blas-Canillejas)",
+    "address": "CALLE MARIA SEVILLA DIAGO 15",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.433291625973624,
+    "longitude": -3.6105662311927453,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=1a70912514d29910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "literatura"
     ],
     "schedule": {
-      "0": [
+      "1": [
         "19:00:00"
       ]
     },
@@ -4898,7 +4903,7 @@
     "description": null,
     "start_date": "2026-04-27",
     "end_date": "2026-04-27",
-    "start_time": "18:00:00",
+    "start_time": "19:30:00",
     "end_time": null,
     "location_name": "Biblioteca Pública Municipal José Hierro (San Blas-Canillejas)",
     "address": "CALLE MARIA SEVILLA DIAGO 15",
@@ -5470,20 +5475,20 @@
   },
   {
     "title": "Concierto",
-    "description": "Concierto de San Isidro: La magia de la Zarzuela   Compañía Marta Toba   Plaza de los Chisperos   Hora: 19 h.   Duración: 60 min.   Actividad para todos los públicos.  En este espectáculo podrán disfrutar de los números más conocidos de la zarzuela y de nuestra música.",
+    "description": "Concierto Ensemble Komitas   Auditorio CC Galileo   Hora: 19 h.  Ensemble de cuerda formado por jóvenes y niños, alumnos de la profesora y directora Lyudmila Mesropyan, abarcan un amplio repertorio, desde el Barroco hasta compositores del siglo XX.",
     "start_date": "2026-04-17",
     "end_date": "2026-05-15",
     "start_time": "19:00:00",
     "end_time": null,
-    "location_name": null,
-    "address": null,
-    "district": null,
-    "latitude": null,
-    "longitude": null,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=449d5bc09aa1d910VgnVCM200000f921e388RCRD",
+    "location_name": "Centro Cultural Galileo (Chamberí)",
+    "address": "CALLE GALILEO 39",
+    "district": "Chamberi",
+    "latitude": 40.433719454283505,
+    "longitude": -3.7104468992841753,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=ea22668549a1d910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
-      "fiestas",
+      "teatro",
       "gratis"
     ],
     "schedule": null,
@@ -5832,17 +5837,17 @@
   },
   {
     "title": "Conferencia",
-    "description": "Desafíos globales que definirán nuestro futuro: La Unión Europea en la encrucijada   Miguel Ángel Muñoz Martinez   Auditorio CC Galileo   12 de mayo 2026 a las 10 h. (dirigida a institutos)  Conocer la Unión Europea y su impacto en los ciudadanos, en especial en el ámbito local a fin de acercar estas instituciones y trasladar a los vecinos que la Unión Europea también está en sus vidas en el día a día.",
+    "description": "Desafíos globales que definirán nuestro futuro: La Unión Europea en la encrucijada   Miguel Ángel Muñoz Martinez   Auditorio CC Galileo   6 de mayo 2026 a las 19 h.  Conocer la Unión Europea y su impacto en los ciudadanos, en especial en el ámbito local a fin de acercar estas instituciones y trasladar a los vecinos que la Unión Europea también está en sus vidas en el día a día.",
     "start_date": "2026-05-06",
     "end_date": "2026-05-12",
-    "start_time": "10:00:00",
+    "start_time": "19:00:00",
     "end_time": null,
     "location_name": "Centro Cultural Galileo (Chamberí)",
     "address": "CALLE GALILEO 39",
     "district": "Chamberi",
     "latitude": 40.433719454283505,
     "longitude": -3.7104468992841753,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=86825f0d7df1d910VgnVCM100000891ecb1aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d3b43ae95cf1d910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "conferencias",
@@ -8249,12 +8254,12 @@
     "end_date": "2026-05-23",
     "start_time": "22:00:00",
     "end_time": null,
-    "location_name": "Instalación Deportiva Municipal Básica Frontón Zofio",
-    "address": "CALLE RICARDO BELTRAN Y ROZPIDE 16",
+    "location_name": "Instalación Deportiva Municipal Básica Cerro Blanco",
+    "address": "CALLE ALBARDIN 7",
     "district": "Usera",
-    "latitude": 40.37992590963709,
-    "longitude": -3.7180064038885896,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=96ca4697b0abd910VgnVCM100000891ecb1aRCRD",
+    "latitude": 40.37976723848226,
+    "longitude": -3.7162665062702196,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c63fd31e3f9bd910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "deportes",
@@ -9083,18 +9088,18 @@
     "id": "47fef7f59c142e3f"
   },
   {
-    "title": "El guateque",
-    "description": "¿Recuerdas el 'guateque' de tu juventud? Ángel Grimm, con su espectáculo, nos llevará a revivir aquellos momentos con un toque nostálgico y bailable. Edad recomendada: A partir de 16 años.  Duración: 60 minutos",
+    "title": "El Guateque",
+    "description": "Ángel Grimm  Un espectáculo musical que nos invita a viajar por la memoria, reviviendo los grandes éxitos que han marcado la historia de la música en España.  Duración: 60 minutos",
     "start_date": "2026-04-11",
-    "end_date": "2026-04-11",
+    "end_date": "2026-05-07",
     "start_time": "19:00:00",
     "end_time": null,
-    "location_name": "Centro Sociocultural Oporto (Carabanchel)",
-    "address": "AVENIDA OPORTO 78",
-    "district": "Carabanchel",
-    "latitude": 40.38682740756541,
-    "longitude": -3.7277493066262406,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=720ba5d519f1d910VgnVCM200000f921e388RCRD",
+    "location_name": "Auditorio Canal de Panamá (Ciudad Lineal)",
+    "address": "CALLE PADRE COLOMA 2",
+    "district": "CiudadLineal",
+    "latitude": 40.44071019620189,
+    "longitude": -3.652412289521502,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=267162ec620bd910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "conciertos",
@@ -9334,9 +9339,9 @@
   },
   {
     "title": "El otro lado del distrito",
-    "description": "Visita guiada para público adulto.    Guía: Rocío Rivas     Visitaremos los exteriores de:   1. Monumento a Pío Baroja. 2. Cuesta Claudio Moyano y monumento + feria del libro. 3. Real Jardín Botánico. 4. Fuente de la Alcachofa/Glorieta de Carlos V. 5. Estación de Atocha (exteriores). 6. Ministerio de Agricultura (exteriores). 7. Museo Antropológico (exteriores).     Punto de encuentro: Monumento Pío Baroja (Cuesta de Moyano)  Inscripciones: En el teléfono 653 52 52 83 y en produccion2@ferrote...",
+    "description": "Visita guiada para público adulto.    Guía: Rocío Rivas  Visitaremos los exteriores de:    Monumento General Vara del Rey / Jimenena Quirós. Panteón de España (exteriores). Real Fábrica de Tapices (exteriores). Basílica de Atocha (exteriores). Antigua Maestranza y Parque de Artillería. Edificio Junta de Distrito de Retiro. Nave de motores.    Punto de encuentro: Monumento General Vara del Rey (Avenida Ciudad de Barcelona número 6).  Inscripciones: En el teléfono 653 52 52 83 y en produccion2@...",
     "start_date": "2026-04-21",
-    "end_date": "2026-04-21",
+    "end_date": "2026-05-19",
     "start_time": "11:00:00",
     "end_time": null,
     "location_name": null,
@@ -12893,9 +12898,9 @@
   },
   {
     "title": "Festival 4 estaciones",
-    "description": "Danza.    Umbral.  Compañía CBDLAB de Carabdanza.  Espectáculo de danza contemporánea que habla del cambio y la transformación. A través del movimiento, los cuerpos atraviesan estados de soledad, búsqueda e identidad.   Para todos los públicos.    Reparto de entradas desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo.",
+    "description": "Edición Primavera Danza.    Ecos de un Café Cantante.   Intérpretes: Beatriz Balseiro y Estrella Micol Espectáculo de danza española que nos invita a recorrer la riqueza y diversidad de nuestra tradición a través de un viaje lleno de matices y emociones.  Para todos los públicos.    Reparto de entradas desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo.",
     "start_date": "2026-04-10",
-    "end_date": "2026-04-10",
+    "end_date": "2026-05-29",
     "start_time": "19:00:00",
     "end_time": null,
     "location_name": "Centro Cultural Casa de Vacas (Retiro)",
@@ -14278,7 +14283,7 @@
   },
   {
     "title": "Historia de El Retiro",
-    "description": "Los Jardines del Buen Retiro cuentan con 400 años de historia en los que han sufrido múltiples transformaciones tanto a nivel botánico como paisajístico y arquitectónico. A lo largo de este itinerario se conocen distintos elementos que han sobrevivido al paso del tiempo y se conocerán los distintos usos que ha tenido cada zona del parque, desde su origen hasta la actualidad.  Actividad dirigida a público adulto.  Duración estimada: aproximadamente 2 horas.     Necesaria inscripción previa.  L...",
+    "description": "Los Jardines del Buen Retiro cuentan con 400 años de historia en los que han sufrido múltiples transformaciones tanto a nivel botánico como paisajístico y arquitectónico. A lo largo de este itinerario se conocen distintos elementos que han sobrevivido al paso del tiempo y se conocerán los distintos usos que ha tenido cada zona del parque, desde su origen hasta la actualidad. Actividad dirigida a público adulto.  Duración estimada: aproximadamente 2 horas.     Necesaria inscripción previa.  La...",
     "start_date": "2026-04-23",
     "end_date": "2026-05-16",
     "start_time": "11:00:00",
@@ -14288,7 +14293,7 @@
     "district": "Retiro",
     "latitude": 40.40943503279114,
     "longitude": -3.6861797800993257,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=61b9c0b0864b1810VgnVCM2000001f4a900aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=6f29af6138133810VgnVCM2000001f4a900aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "otros",
@@ -14343,7 +14348,7 @@
     "title": "Hombres por la igualdad: formación a profesionales",
     "description": null,
     "start_date": "2026-04-23",
-    "end_date": "2026-04-23",
+    "end_date": "2026-05-28",
     "start_time": "12:00:00",
     "end_time": null,
     "location_name": "Espacio de Igualdad Nieves Torres. Chamartín",
@@ -16702,9 +16707,9 @@
   },
   {
     "title": "La música de las palabras",
-    "description": "Concierto Recital con poemas de León felipe.   Grupo Retablo.    Intéprete: Mayte Domínguez.  Piano y composición: Pablo Bethencourt.  Abre el acto: Eugenio Rivera, director de la revista digital Entreletras, poeta y escritor.   Reparto de entradas desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo.",
+    "description": "Concierto Recital con poemas de Federico García Lorca, Luis Cernuda y Luis Gerardo Diego.   Grupo Retablo.    Intéprete: Mayte Domínguez.  Piano y composición: Pablo Bethencourt.  Abre el acto: Manuel López Azorín, poeta y escritor.   Reparto de entradas desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo.",
     "start_date": "2026-04-17",
-    "end_date": "2026-04-17",
+    "end_date": "2026-05-22",
     "start_time": "19:00:00",
     "end_time": null,
     "location_name": "Centro Cultural Casa de Vacas (Retiro)",
@@ -18534,17 +18539,17 @@
   },
   {
     "title": "Ludotecas",
-    "description": "Sábados 11, 18 y 25 de 10:30 a 13:30 h.   Actividad gratuita y de carácter abierto, sin inscripción previa, para niños/as con edades comprendidas entre 4 y 10 años.   Aforo limitado.",
+    "description": "Sábados 11, 18, y 25 de abril, de 10:30 a 13:30 h.  Actividad gratuita y de carácter abierto, sin inscripción previa, para niños y niñas con edades comprendidas entre 4 y 10 años.  Aforo limitado.",
     "start_date": "2026-04-11",
     "end_date": "2026-04-25",
     "start_time": "10:30:00",
     "end_time": null,
-    "location_name": "Centro Sociocultural Alfonso XII (Fuencarral - El Pardo)",
-    "address": "CALLE MIRA EL RIO 4",
+    "location_name": "Centro Sociocultural Valverde (Fuencarral - El Pardo)",
+    "address": "PLAZA ISLAS AZORES 1",
     "district": "Fuencarral-ElPardo",
-    "latitude": 40.519673311658686,
-    "longitude": -3.7779055687726535,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=b789d7b66452d910VgnVCM200000f921e388RCRD",
+    "latitude": 40.49504564211655,
+    "longitude": -3.6880070256093758,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=554e391d7affb910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "talleres",
@@ -21791,7 +21796,7 @@
     "title": "Parando el tiempo",
     "description": null,
     "start_date": "2026-04-07",
-    "end_date": "2026-04-21",
+    "end_date": "2026-05-19",
     "start_time": "17:00:00",
     "end_time": null,
     "location_name": "Espacio de Igualdad Berta Cáceres. Usera",
@@ -23436,7 +23441,7 @@
   {
     "title": "Quedada de cine Biblioteca José Saramago: Elvis",
     "description": "Sinopsis: La película explora la vida y la música de Elvis Presley (Butler) a través del prisma de su relación con el coronel Tom Parker (Hanks), su enigmático manager. La historia profundiza en la compleja dinámica que existía entre Presley y Parker que abarca más de 20 años, desde el ascenso de Presley a la fama hasta su estrellato sin precedentes, en el contexto de la revolución cultural y la pérdida de la inocencia en Estados Unidos. Y en el centro de ese periplo está Priscilla Presley (O...",
-    "start_date": "2026-05-20",
+    "start_date": "2026-05-13",
     "end_date": "2026-05-20",
     "start_time": "11:00:00",
     "end_time": null,
@@ -25015,7 +25020,7 @@
     "title": "Senda guiada 'El uso de las plantas'",
     "description": "Itinerarios guiados para público adulto. Ruta botánica dirigida a conocer y aprender sobre algunas especies de plantas y sobre sus usos.   Sábado 11 de abril: de 10:00 a 11:30 horas y de 12:00 a 13:30 horas.  Domingo 26 de abril: de 10:00 a 11:30 horas y de 12:00 a 13:30 horas.  Punto de encuentro: Aula Ambiental La Cabaña del Retiro.   Inscripción: Se requiere reserva previa, enviando nombre y apellidos, teléfono y correo electrónico de la persona interesada, así como número de acompañantes ...",
     "start_date": "2026-04-11",
-    "end_date": "2026-04-26",
+    "end_date": "2026-05-31",
     "start_time": "10:00:00",
     "end_time": null,
     "location_name": "Aula ambiental La Cabaña del Retiro",
@@ -25092,7 +25097,7 @@
     "title": "Senda guiada 'Ruta Ornitológica'",
     "description": "Itinerario guiado por los Jardines del Buen Retiro dirigidos a público adulto.  Ruta enfocada en las aves que se pueden encontrar en el Retiro.   Domingo 12 de abril de 10:00 a 11:30 horas y de 12:00 a 13:30 horas.  Sábado 25 de abril de 10:00 a 11:30 horas y de 12:00 a 13:30 horas.  Punto de encuentro: Aula Ambiental La Cabaña del Retiro.  Inscripción: Se requiere reserva previa, enviando nombre y apellidos, teléfono y correo electrónico de la persona interesada, así como número de acompañan...",
     "start_date": "2026-04-12",
-    "end_date": "2026-04-25",
+    "end_date": "2026-05-24",
     "start_time": "10:00:00",
     "end_time": null,
     "location_name": "Aula ambiental La Cabaña del Retiro",
@@ -25444,7 +25449,7 @@
     "district": null,
     "latitude": null,
     "longitude": null,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=37ca09340f270910VgnVCM1000001d4a900aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5c20fc4d352d5910VgnVCM2000001f4a900aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "visitas guiadas",
@@ -26715,7 +26720,7 @@
       "gratis"
     ],
     "schedule": {
-      "4": [
+      "5": [
         "17:00:00"
       ]
     },
@@ -26885,23 +26890,23 @@
   },
   {
     "title": "Taller online 'Remedial English'",
-    "description": "Remedial English es una actividad gratuita en línea dirigida a adultos con nivel A2/B1 que necesiten reforzar su inglés. Es un espacio de apoyo para superar obstáculos fonológicos y morfosintácticos que dificultan hablar, escribir y entender. Con un enfoque interactivo y práctica oral intensiva, las sesiones semanales de 60 minutos se imparten en inglés por videoconferencia, con material didáctico enviado por correo y grabaciones disponibles. Is not a course. It has been designed with the sol...",
+    "description": "Remedial English es una actividad gratuita en línea dirigida a adultos con nivel A2/B1 que necesiten reforzar su inglés. Es un espacio de apoyo para superar obstáculos fonológicos y morfosintácticos que dificultan hablar, escribir y entender. Con un enfoque interactivo y práctica oral intensiva, las sesiones semanales de 60 minutos se imparten en inglés por videoconferencia, con material didáctico enviado por correo y grabaciones disponibles. Todos los martes de 18 a 19 horas. Para participar...",
     "start_date": "2025-09-29",
     "end_date": "2026-05-29",
     "start_time": "18:00:00",
     "end_time": null,
-    "location_name": "Biblioteca Pública Municipal Mario Vargas Llosa (Centro)",
-    "address": "CALLE BARCELO 4",
-    "district": "Centro",
-    "latitude": 40.426642215368176,
-    "longitude": -3.699722994908341,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7cae78e986839910VgnVCM200000f921e388RCRD",
+    "location_name": "Biblioteca Pública Municipal Francisco Ibáñez (Chamartín)",
+    "address": "CALLE MANTUANO 51",
+    "district": "Chamartin",
+    "latitude": 40.44810636195716,
+    "longitude": -3.6762309620097398,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=69986b459c409910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "talleres"
     ],
     "schedule": {
-      "0": [
+      "1": [
         "18:00:00"
       ]
     },
@@ -29340,17 +29345,17 @@
   },
   {
     "title": "Trilogía Andaluza",
-    "description": "Miguel Ángel Villalba Garcia, natural de Madrid. Es cantante, poeta y compositor. Realizó sus estudios de Música y Canto en el Real Conservatorio Superior de Música de Madrid y en la Escuela Superior de Canto de Madrid. Ha compuesto varias canciones y pasodobles, pero su obra más importante es el Concierto de Música Clásica Española titulado 'Trilogía Andaluza'. Esta se compone de tres Suites:  Paseando por Sevilla Málaga Granada  El concierto está amenizado con bellas fotografías y vídeos.",
+    "description": "Miguel Ángel Villalba García.  Recomendado a partir de 18 años.    Concierto de música clásica española titulado 'Trilogía andaluza' que consta de tres suites dedicadas a Sevilla, Málaga y Granada. Es narrado y cantado por el tenor Miguel Ángel García, que es el compositor de la música y autor de la letra. De principio a fin se proyectan en la pantalla del escenario fotografías y videos relacionados con los temas musicales de cada momento.",
     "start_date": "2026-04-18",
     "end_date": "2026-04-25",
     "start_time": "19:00:00",
     "end_time": null,
-    "location_name": "Centro Cultural Lope de Vega (Puente de Vallecas)",
-    "address": "CALLE CONCEJO DE TEVERGA 1",
-    "district": "PuenteDeVallecas",
-    "latitude": 40.386296991431074,
-    "longitude": -3.671858416387963,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c853cbd114e3d910VgnVCM100000891ecb1aRCRD",
+    "location_name": "Centro Cultural Ciudad Pegaso (San Blas - Canillejas)",
+    "address": "AVENIDA SEPTIMA 11",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.44844757572015,
+    "longitude": -3.598099871155595,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=cd35530831e3d910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "conciertos",
@@ -31052,14 +31057,14 @@
     "description": null,
     "start_date": "2026-04-23",
     "end_date": "2026-04-24",
-    "start_time": "11:00:00",
+    "start_time": "22:30:00",
     "end_time": null,
     "location_name": "Imprenta Municipal - Artes del libro",
     "address": "CALLE CONCEPCION JERONIMA 15",
     "district": "Centro",
     "latitude": 40.413896825498995,
     "longitude": -3.7054692169323364,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=4864206b1ed3d910VgnVCM100000891ecb1aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=32c0b4a9cfd3d910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "otros",
@@ -31073,14 +31078,14 @@
     "description": null,
     "start_date": "2026-04-23",
     "end_date": "2026-04-24",
-    "start_time": "10:30:00",
+    "start_time": "22:30:00",
     "end_time": null,
     "location_name": "Imprenta Municipal - Artes del libro",
     "address": "CALLE CONCEPCION JERONIMA 15",
     "district": "Centro",
     "latitude": 40.413896825498995,
     "longitude": -3.7054692169323364,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c3c4206b1ed3d910VgnVCM100000891ecb1aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=b458b4a9cfd3d910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "otros",
@@ -31597,9 +31602,9 @@
   },
   {
     "title": "XVIII Encuentro. Talent Universal",
-    "description": "Beethoven Universal.   Ramón Torrelledó. Claudia Moro. Violonchelo.   Reparto de entradas desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo.",
+    "description": "Beethoven Universal    Ramón Torrelledó y la nueva generación de músicos. Edad recomendada: público adulto.   Reparto de entradas desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo.",
     "start_date": "2026-04-19",
-    "end_date": "2026-04-19",
+    "end_date": "2026-05-17",
     "start_time": "12:00:00",
     "end_time": null,
     "location_name": "Centro Cultural Casa de Vacas (Retiro)",
@@ -31702,10 +31707,10 @@
   },
   {
     "title": "Yincana 'Ornitológica'",
-    "description": "Dinámicas participativas para grupos familiares, que incluyen recorridos por el parque y talleres creativos.   Edad recomendada: de 4 a 7 años.  Domingo 19 de abril: de 11:00 a 12:30 horas.  Punto de encuentro: Aula Ambiental La Cabaña del Retiro.  Inscripción: Se requiere reserva previa, enviando nombre y apellidos, teléfono y correo electrónico de la persona interesada, así como número de acompañantes a través de correo electrónico Correo: aularetiro@madrid.es, o a través de los teléfonos: ...",
+    "description": "Dinámicas participativas para grupos familiares, que incluyen recorridos por el parque y talleres creativos.   Edad recomendada: de 4 a 7 años.  Sábado 9 de mayo: de 16:30 a 18:00 horas.  Punto de encuentro: Aula Ambiental La Cabaña del Retiro.  Inscripción: Se requiere reserva previa, enviando nombre y apellidos, teléfono y correo electrónico de la persona interesada, así como número de acompañantes a través de correo electrónico Correo: aularetiro@madrid.es, o a través de los teléfonos: 915...",
     "start_date": "2026-04-19",
-    "end_date": "2026-04-19",
-    "start_time": "11:00:00",
+    "end_date": "2026-05-09",
+    "start_time": "16:30:00",
     "end_time": null,
     "location_name": "Aula ambiental La Cabaña del Retiro",
     "address": "PASEO FERNAN NUÑEZ 10",
@@ -32128,9 +32133,9 @@
   },
   {
     "title": "Zona de atracciones y rincón infantil",
-    "description": "Durante el mes de abril en la trasera del Palacio de Cristal de Arganzuela, estará instalada una zona infantil de recreo para los más pequeños.",
+    "description": "Durante los meses de abril y mayo en la trasera del Palacio de Cristal de Arganzuela, estará instalada una zona infantil de recreo para los más pequeños.",
     "start_date": "2026-04-01",
-    "end_date": "2026-04-30",
+    "end_date": "2026-05-31",
     "start_time": null,
     "end_time": null,
     "location_name": "Centro Cultural Casa del Reloj (Arganzuela)",
@@ -32884,7 +32889,7 @@
     "description": "5ª Conferencia. 30 de junio de 2026.        Antonio Alberte González. Catedrático emérito de Filología Latina de la Universidad de Málaga.   RESUMEN: La Retórica medieval mantuvo su vigencia como parte esencial del trivium —junto a la gramática y la dialéctica—, aunque su función se transformó poco a poco. Durante la alta Edad Media pasó del instrumento político y judicial de la Antigüedad a herramienta una teológica y moral al servicio de la predicación cristiana y la exégesis bíblica. Los a...",
     "start_date": "2026-06-30",
     "end_date": "2026-06-30",
-    "start_time": "19:00:00",
+    "start_time": "18:30:00",
     "end_time": null,
     "location_name": "Biblioteca Pública Municipal Eugenio Trías. Casa de Fieras de El Retiro (Retiro)",
     "address": "PASEO FERNÁN NÚÑEZ 24",
@@ -37446,17 +37451,17 @@
   },
   {
     "title": "Valor sentimental",
-    "description": "Director: Joachim Trier.  Recomendada a partir de 12 años.    Tras la muerte de su madre, las hermanas Nora y Agnes se reencuentran con su distanciado padre, Gustav Borg, un veterano director de cine de renombre, que le ofrece a su hija Nora, actriz de teatro, un papel en su próxima película. Nora lo rechaza y pronto descubre que le ha dado ese papel a una joven y entusiasta estrella de Hollywood. De repente, las dos hermanas deben sortear su complicada relación con su padre y lidiar con una ...",
-    "start_date": "2026-05-23",
+    "description": "Conmemoración Día de Europa.   Proyección de película.    Sinopsis: Las hermanas Nora y Agnes se reencuentran con su padre, el carismático Gustav, un director que en su día fue muy famoso y que ahora ofrece a Nora, actriz de teatro, un papel en la que espera que sea la película de su regreso triunfal. Nora lo rechaza, pero poco después descubre que él le ha dado su papel a una joven y entusiasta estrella de Hollywood. De repente, ambas hermanas deben lidiar con la complicada relación con su p...",
+    "start_date": "2026-05-05",
     "end_date": "2026-05-23",
     "start_time": "19:00:00",
     "end_time": null,
-    "location_name": "Centro Cultural Buero Vallejo (San Blas - Canillejas)",
-    "address": "CALLE BOLTAÑA 27",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.44477474902185,
-    "longitude": -3.6129105844633775,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=e9265627c109d910VgnVCM100000891ecb1aRCRD",
+    "location_name": "Centro Cultural Las Californias (Retiro)",
+    "address": "CALLE LUIS PEIDRO 2",
+    "district": "Retiro",
+    "latitude": 40.397021560779024,
+    "longitude": -3.6738766514153163,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=631606a7b0e0c910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "cine",
@@ -41186,18 +41191,18 @@
     "id": "2417766e9ef9bf13"
   },
   {
-    "title": "Concierto de primavera",
-    "description": "Música pocular a cargo del Coro Diapasón",
+    "title": "Concierto de Primavera",
+    "description": "Música.     Concierto de Primavera. Ensembles de violines y violas.     Directores: Ignacio Gozález y Marta Mayoral.    Pianista: Jose María Pérez Merino.    Edad recomendada: público adulto.    Reparto de entradas desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo.",
     "start_date": "2026-04-25",
-    "end_date": "2026-04-25",
-    "start_time": "19:00:00",
+    "end_date": "2026-05-24",
+    "start_time": "12:00:00",
     "end_time": null,
-    "location_name": "Centro Cultural Antonio Machado (San Blas - Canillejas)",
-    "address": "CALLE SAN ROMAN DEL VALLE 8",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.420280457570335,
-    "longitude": -3.621730741880216,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c189ab6e1c4bd910VgnVCM100000891ecb1aRCRD",
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=2026e77de60ca910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "conciertos",
@@ -42774,7 +42779,7 @@
   },
   {
     "title": "VidaExtra",
-    "description": "La huelga general de septiembre de 2010 se cruza en Barcelona con La estética de la resistencia, de Peter Weiss. Las discusiones de esa noche se verán confrontadas más adelante con su puesta en tela de juicio por los protagonistas del film: cinco amigos anónimos que no son ya ni adolescentes ni militantes comunistas y que sin embargo intentan igualmente sobreponerse al estado de las cosas, como en su momento los protagonistas de la novela de Weiss. Venta de entradas en la tienda online de Mad...",
+    "description": null,
     "start_date": "2026-05-03",
     "end_date": "2026-05-03",
     "start_time": "20:00:00",
@@ -43352,5 +43357,2089 @@
     ],
     "schedule": null,
     "id": "64fcd346d662284f"
+  },
+  {
+    "title": "6 x 4 y Cueros",
+    "description": "Música. FIGUE 2026    Violín: José Gabriel Nunes  Percusión: Devis Colmenares  Guitarra: Jonnathan El Barouki  Edad recomendada: público adulto   Reparto de entradas desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo.",
+    "start_date": "2026-05-30",
+    "end_date": "2026-05-30",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=2b3338e487aca910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "700fac62472cc730"
+  },
+  {
+    "title": "Andrés Suarez",
+    "description": null,
+    "start_date": "2026-05-28",
+    "end_date": "2026-05-28",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Museo Lázaro Galdiano",
+    "address": "CALLE SERRANO 122",
+    "district": "Salamanca",
+    "latitude": 40.43675593917329,
+    "longitude": -3.6861820403705816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=ac6921369bebd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "a6a01ac5e512c7a2"
+  },
+  {
+    "title": "Antología de la Zarzuela",
+    "description": "Taller de Zarzuela de Madrid   En el Madrid goyesco, el público descubrirá la figura de los majos y majas, así como la de los manolos y manolas, personajes de las clases populares inmortalizados por los pinceles de Goya en el siglo XVIII y reflejados en El Barberillo de Lavapiés. El recorrido continúa por el Madrid más castizo de Las Vistillas, Embajadores y Lavapiés.  Duración: 60 minutos",
+    "start_date": "2026-05-30",
+    "end_date": "2026-05-30",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Auditorio Canal de Panamá (Ciudad Lineal)",
+    "address": "CALLE PADRE COLOMA 2",
+    "district": "CiudadLineal",
+    "latitude": 40.44071019620189,
+    "longitude": -3.652412289521502,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5930efe8840bd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "a1123b955c89c1bd"
+  },
+  {
+    "title": "Autocuidado, cuerpo y salud",
+    "description": null,
+    "start_date": "2026-05-14",
+    "end_date": "2026-05-14",
+    "start_time": "17:00:00",
+    "end_time": null,
+    "location_name": "Espacio de Igualdad Berta Cáceres. Usera",
+    "address": "CALLE GRAN AVENIDA 14",
+    "district": "Usera",
+    "latitude": 40.36902428128397,
+    "longitude": -3.710212677306876,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=202d968725dc5910VgnVCM2000001f4a900aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "61635ff5a272bbcc"
+  },
+  {
+    "title": "Beatelitis",
+    "description": "Música.    Compañía Cuentitis Musiquitis.   Sinopsis: Lady Madonna se convierte en un canto a nuestra 'mami mandona'. Twist and Shout pasa a ser un divertido 'no más deberes'. Y cuando pedimos Help!, el público no tarda en echar una mano. Un formato cercano centrado en la narración, el juego y la participación.   Duración 60 minutos.   Edad recomendada de 4 a 8 años.    Entrada libre hasta completar aforo.",
+    "start_date": "2026-05-09",
+    "end_date": "2026-05-09",
+    "start_time": "12:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Las Californias (Retiro)",
+    "address": "CALLE LUIS PEIDRO 2",
+    "district": "Retiro",
+    "latitude": 40.397021560779024,
+    "longitude": -3.6738766514153163,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7f257b0cfde8c910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "4366ffc598b31df0"
+  },
+  {
+    "title": "Carrera de orientación por Pradolongo",
+    "description": "Edades: de 14 a 30 años.  De 18 a 20 horas. Ocio saludable libre de consumo.",
+    "start_date": "2026-05-22",
+    "end_date": "2026-05-22",
+    "start_time": "18:00:00",
+    "end_time": null,
+    "location_name": "Parque de Pradolongo",
+    "address": "AVENIDA RAFAELA YBARRA 85",
+    "district": "Usera",
+    "latitude": 40.37557617692429,
+    "longitude": -3.711963730232908,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=0c5a17b98eebd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "133cd46ac7788444"
+  },
+  {
+    "title": "Celebrando el Berta",
+    "description": null,
+    "start_date": "2026-05-25",
+    "end_date": "2026-05-25",
+    "start_time": "12:00:00",
+    "end_time": null,
+    "location_name": "Espacio de Igualdad Berta Cáceres. Usera",
+    "address": "CALLE GRAN AVENIDA 14",
+    "district": "Usera",
+    "latitude": 40.36902428128397,
+    "longitude": -3.710212677306876,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=99c7478069fbd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "1494def901eba815"
+  },
+  {
+    "title": "Chat GPT para la búsqueda de empleo",
+    "description": null,
+    "start_date": "2026-05-12",
+    "end_date": "2026-05-12",
+    "start_time": "12:00:00",
+    "end_time": null,
+    "location_name": "Espacio de Igualdad María Telo. Moratalaz",
+    "address": "CALLE CAMINO DE LOS VINATEROS 51",
+    "district": "Moratalaz",
+    "latitude": 40.41087442118042,
+    "longitude": -3.6538891267077664,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=801d056d70ddc910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "f6802b8e8b6d0c52"
+  },
+  {
+    "title": "Christy",
+    "description": "Proyección de la película.    Sinopsis: Christy, de diecisite años, se ve obligado a mudarse con su medio hermano mayor, con el que apenas tiene relación, cuando lo echan de su hogar de acogida en un barrio residencial. Mientras que para su hermano se trata de una situación temporal, Christy empieza a sentirse como en casa en el barrio obrero del norte de Cork, donde hace amigos y vuelve a conectar con su pasado a través del resto de sus parientes; una compañía, aparentemente, mucho menos rec...",
+    "start_date": "2026-05-08",
+    "end_date": "2026-05-08",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Las Californias (Retiro)",
+    "address": "CALLE LUIS PEIDRO 2",
+    "district": "Retiro",
+    "latitude": 40.397021560779024,
+    "longitude": -3.6738766514153163,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=15f3cc4551a1d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "b3da3004c7c4fdc0"
+  },
+  {
+    "title": "Chulapos Lab",
+    "description": "Edades: de 14 a 30 años. De 17 a 20 horas en la avenida del Manzanares, 210 (Moscardó).     Ocio saludable libre de consumo.",
+    "start_date": "2026-05-15",
+    "end_date": "2026-05-15",
+    "start_time": "17:00:00",
+    "end_time": null,
+    "location_name": null,
+    "address": null,
+    "district": null,
+    "latitude": null,
+    "longitude": null,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=e547dbc3d1fbd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "fiestas",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "a90711fc47b86381"
+  },
+  {
+    "title": "Ciclo 'Mujer y salud'. La culpa en el cuerpo de las mujeres",
+    "description": null,
+    "start_date": "2026-05-19",
+    "end_date": "2026-05-19",
+    "start_time": "11:30:00",
+    "end_time": null,
+    "location_name": "Espacio de Igualdad Berta Cáceres. Usera",
+    "address": "CALLE GRAN AVENIDA 14",
+    "district": "Usera",
+    "latitude": 40.36902428128397,
+    "longitude": -3.710212677306876,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7d58fa08800cd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "15e480c3782b3c4c"
+  },
+  {
+    "title": "Ciclo 'Mujer y salud'. Mirada global de la salud de las mujeres",
+    "description": null,
+    "start_date": "2026-05-05",
+    "end_date": "2026-05-05",
+    "start_time": "10:30:00",
+    "end_time": null,
+    "location_name": "Espacio de Igualdad Berta Cáceres. Usera",
+    "address": "CALLE GRAN AVENIDA 14",
+    "district": "Usera",
+    "latitude": 40.36902428128397,
+    "longitude": -3.710212677306876,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8168fa08800cd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "fd5c0073c1843e56"
+  },
+  {
+    "title": "Ciclo 'Mujer y salud'. Suelo pélvico",
+    "description": null,
+    "start_date": "2026-05-11",
+    "end_date": "2026-05-11",
+    "start_time": "17:00:00",
+    "end_time": null,
+    "location_name": "Espacio de Igualdad Berta Cáceres. Usera",
+    "address": "CALLE GRAN AVENIDA 14",
+    "district": "Usera",
+    "latitude": 40.36902428128397,
+    "longitude": -3.710212677306876,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5f58fa08800cd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "cbcc1b5f5fcdd66d"
+  },
+  {
+    "title": "Clásica a la Puerta",
+    "description": "Concierto de piano a cargo de José Luis Bernaldo de Quirós. En este recital de piano se presentan obras de compositores españoles de finales del siglo XIX e inicios del XX: Joaquín Turina, Manuel de Falla, Isaac Albéniz entre otros. Se trata de piezas destacadas del repertorio nacional.",
+    "start_date": "2026-05-08",
+    "end_date": "2026-05-08",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Puerta de Toledo (Centro)",
+    "address": "AVENIDA GRAN VIA DE SAN FRANCISCO 2",
+    "district": "Centro",
+    "latitude": 40.40741060830642,
+    "longitude": -3.7119168856897677,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d6a9d04694fbd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "d1f670c5bdc78e10"
+  },
+  {
+    "title": "Club de la Comedia: `Virgen del Karma´",
+    "description": "Con Tati Cruz.   Sinopsis: `Virgen del Karma´ es el primer show de comedia en solitario de Tati Cruz, o sea yo. No tengo a nadie que escriba esto por mí. Todavía. Pero he escrito una hora de comedia, ¿cómo te quedas?  Duración: 60 minutos aprox.     Edad recomendada para todos los públicos.       Las entradas estarán disponibles a partir del lunes de la misma semana que se realice la actividad, recogiéndolas en el mismo centro cultural o reservando por teléfono en el 91 710 93 00 y recogiendo...",
+    "start_date": "2026-05-29",
+    "end_date": "2026-05-29",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Sociocultural Ágata (Villaverde)",
+    "address": "CALLE DOCTOR MARTIN AREVALO 2",
+    "district": "Villaverde",
+    "latitude": 40.346369432374594,
+    "longitude": -3.7085146991266473,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=9e5d5cb735fbd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "33d2f7b859e8c64a"
+  },
+  {
+    "title": "Concierto Coral Polifónica del Centro Riojano de Madrid",
+    "description": "Música.   Director: Miguel Rodríguez del Álamo   Entrega de entradas gratis desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo.",
+    "start_date": "2026-05-10",
+    "end_date": "2026-05-10",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=99c65c4116fbd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "2646e1c160187a99"
+  },
+  {
+    "title": "Concierto de Música Clásica",
+    "description": "Concierto gratuito de música clásica, organizado por ASVEYCO en colaboración con la Junta municipal de Villaverde.    Día: Domingo 24 de mayo de 2026.  Hora: a las 12:00 horas.  Entrada libre hasta completar aforo.",
+    "start_date": "2026-05-24",
+    "end_date": "2026-05-24",
+    "start_time": "12:00:00",
+    "end_time": null,
+    "location_name": "Centro Sociocultural Bohemios (Villaverde)",
+    "address": "CALLE LOS BOHEMIOS 1",
+    "district": "Villaverde",
+    "latitude": 40.35639654251886,
+    "longitude": -3.6940501846610894,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=79a77bdc9cabd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "3a633f55caa6d219"
+  },
+  {
+    "title": "Concierto. Al natural",
+    "description": "Al natural.      Compañía: Grupo Oberon.  Sinopsis: Repertorio de canciones clásicas italianas, tangos, boleros, canción española, canción mejicana y folklore... etc.  Edad recomendada: Todos los públicos.",
+    "start_date": "2026-05-23",
+    "end_date": "2026-05-23",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural el Torito (Moratalaz)",
+    "address": "AVENIDA MORATALAZ 130",
+    "district": "Moratalaz",
+    "latitude": 40.40610655994401,
+    "longitude": -3.646521482592748,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=ee9bdbc3d1fbd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "5402308c11ddb4d6"
+  },
+  {
+    "title": "Coral Polifónica Villa de Madrid",
+    "description": "Compañía: Coral Polifónica Villa de Madrid.   Sinopsis:  La 'Coral Polifónica Villa de Madrid' se formó por iniciativa de ex-alumnos de la Escuela Municipal de Música y Danza 'Plácido Domingo', del distrito madrileño de Retiro, registrándose a principios de 2013 como asociación cultural independiente sin ánimo de lucro, destinada al fomento y promoción artística de la música coral. En la actualidad está compuesta por 50 personas. Bajo la dirección de Dña. Yolanda Lázaro Chércoles, interpreta ...",
+    "start_date": "2026-05-26",
+    "end_date": "2026-05-26",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural el Torito (Moratalaz)",
+    "address": "AVENIDA MORATALAZ 130",
+    "district": "Moratalaz",
+    "latitude": 40.40610655994401,
+    "longitude": -3.646521482592748,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=6da4dbc3d1fbd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "1a5ca03390575e8d"
+  },
+  {
+    "title": "Coros de Zarzuela",
+    "description": "Coros de Zarzuela.  Compañía:  Coro del Alba Gregoriana.   Sinopsis: Recorrido por algunas de las escenas más emblemáticas del género lírico español. El público revivirá historias de amor, humor y vida cotidiana, con melodías pegadizas y ritmos llenos de energía.  Edad recomendada: Todos los públicos.",
+    "start_date": "2026-05-11",
+    "end_date": "2026-05-11",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural el Torito (Moratalaz)",
+    "address": "AVENIDA MORATALAZ 130",
+    "district": "Moratalaz",
+    "latitude": 40.40610655994401,
+    "longitude": -3.646521482592748,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=3abcb84a10fbd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "3e824fb1c2a2610c"
+  },
+  {
+    "title": "Cuatro autores, cuatro voces",
+    "description": null,
+    "start_date": "2026-04-30",
+    "end_date": "2026-04-30",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Biblioteca Pública Municipal Eugenio Trías. Casa de Fieras de El Retiro (Retiro)",
+    "address": "PASEO FERNÁN NÚÑEZ 24",
+    "district": "Retiro",
+    "latitude": 40.4166091081099,
+    "longitude": -3.6795930368034804,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=52f259d746ebd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "2980b2318c43e7a0"
+  },
+  {
+    "title": "Cuatro escritores en red",
+    "description": null,
+    "start_date": "2026-04-29",
+    "end_date": "2026-04-29",
+    "start_time": "18:00:00",
+    "end_time": null,
+    "location_name": "Biblioteca Pública Municipal Eugenio Trías. Casa de Fieras de El Retiro (Retiro)",
+    "address": "PASEO FERNÁN NÚÑEZ 24",
+    "district": "Retiro",
+    "latitude": 40.4166091081099,
+    "longitude": -3.6795930368034804,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=73822d5875ebd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "cb42d86387185f3e"
+  },
+  {
+    "title": "Cuentos con sabor a guayaba",
+    "description": "Teatro.   Compañía Nelson Calderón.  Cuentos populares del otro lado del mundo que tienen el sabor y el aroma de Colombia.  Duración 60 minutos. Edad recomendada de 6 a 10 años.   Entrada libre hasta completar aforo. Aforo máximo de 20 personas.",
+    "start_date": "2026-05-30",
+    "end_date": "2026-05-30",
+    "start_time": "12:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Mercado de Ibiza (Retiro)",
+    "address": "CALLE IBIZA 8",
+    "district": "Retiro",
+    "latitude": 40.41817872037522,
+    "longitude": -3.677376337125393,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5b843113a5abd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "e0624bb7ab43d3e3"
+  },
+  {
+    "title": "Dabadabadá",
+    "description": "Teatro.     Compañía Háblame Teatro. Espectáculo de magia y humor en el que el protagonista interviene como aprendiz de mago. Se encuentra con un baúl lleno de objetos que no sabe para qué sirven y de forma torpe trata de manejarlos con la ayuda del público.  Duración 60 minutos.  Edad recomendada de 3 a 9 años.   Entrada libre hasta completar aforo. Aforo máximo 20 personas.",
+    "start_date": "2026-05-09",
+    "end_date": "2026-05-09",
+    "start_time": "12:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Mercado de Ibiza (Retiro)",
+    "address": "CALLE IBIZA 8",
+    "district": "Retiro",
+    "latitude": 40.41817872037522,
+    "longitude": -3.677376337125393,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=08f73113a5abd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "magia",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "36d7b37d9ae24b5f"
+  },
+  {
+    "title": "Danza Goyesca",
+    "description": "Danza.    Compañía: Francisco de Goya.   La música que acompaña estas danzas se interpreta con instrumentos de cuerda: bandurria, laúd y guitarra. El grupo tiene grabados tres CDs denominados 'Música en la Villa y Corte', obteniendo elevados elogios de la crítica escrita tanto por la calidad de la dirección, arreglos e interpretación como por la fidelidad a las partituras originales.   Edad recomendada: público adulto.  Duración: 60 minutos.   Reparto de entradas desde una hora antes en el ce...",
+    "start_date": "2026-05-17",
+    "end_date": "2026-05-17",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=31f970c11402a910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "danza",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "01daf1a712bbdcb5"
+  },
+  {
+    "title": "De la sombra a la luz",
+    "description": "Documental por el Día Mundial de la Fibromialgia, Síndrome de Fatiga Crónica Encefalomielitis Miálgica, Som y EHS.    Encefalomielitis Miálgica Severa, Voces en la Sombra. Proyeción del documental y coloquio posterior.  Edad recomendada: público adulto.      Reparto de entradas desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo",
+    "start_date": "2026-05-12",
+    "end_date": "2026-05-12",
+    "start_time": "16:30:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d2f4832f37fba910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "b916d39584514513"
+  },
+  {
+    "title": "Demostración de costura",
+    "description": null,
+    "start_date": "2026-05-06",
+    "end_date": "2026-05-06",
+    "start_time": "11:00:00",
+    "end_time": null,
+    "location_name": null,
+    "address": null,
+    "district": null,
+    "latitude": null,
+    "longitude": null,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=298f478069fbd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros"
+    ],
+    "schedule": null,
+    "id": "223f7e25a9448dfd"
+  },
+  {
+    "title": "Demostración de prensa",
+    "description": null,
+    "start_date": "2026-05-06",
+    "end_date": "2026-05-06",
+    "start_time": "11:00:00",
+    "end_time": null,
+    "location_name": null,
+    "address": null,
+    "district": null,
+    "latitude": null,
+    "longitude": null,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c97f478069fbd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros"
+    ],
+    "schedule": null,
+    "id": "9cffe82896ee7e52"
+  },
+  {
+    "title": "Demostraciones de caligrafía",
+    "description": null,
+    "start_date": "2026-05-06",
+    "end_date": "2026-05-06",
+    "start_time": "12:00:00",
+    "end_time": null,
+    "location_name": null,
+    "address": null,
+    "district": null,
+    "latitude": null,
+    "longitude": null,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=799f478069fbd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros"
+    ],
+    "schedule": null,
+    "id": "e6775e4c436e11d2"
+  },
+  {
+    "title": "Desfile Eco-Reciclarte",
+    "description": "Desfile de moda.    Reciclar, rediseñar, reutilizar.   Lugar de celebración: Terraza del Centro Cultural Casa de Vacas.  Horario: de 18:30 a 20:00 horas.   Reparto de entradas desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo.",
+    "start_date": "2026-05-23",
+    "end_date": "2026-05-23",
+    "start_time": "18:30:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=0575176cd6fbd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "d0e0d98c7d07d607"
+  },
+  {
+    "title": "Día de chulapeando",
+    "description": "De 16:30 a 20 horas.  ﻿Edades:﻿ de 8 a 14 años.",
+    "start_date": "2026-05-16",
+    "end_date": "2026-05-16",
+    "start_time": "16:30:00",
+    "end_time": null,
+    "location_name": "Colegio Público República de Brasil",
+    "address": "AVENIDA FUEROS 34",
+    "district": "Usera",
+    "latitude": 40.37043939785913,
+    "longitude": -3.6899302716018574,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5d9bd154e2fbd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "fiestas",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "de015cc541406a96"
+  },
+  {
+    "title": "Día de chulapenado",
+    "description": "De 16:30 a 20 horas.  ﻿Edades:﻿ de 8 a 14 años.",
+    "start_date": "2026-05-16",
+    "end_date": "2026-05-16",
+    "start_time": "16:30:00",
+    "end_time": null,
+    "location_name": "Colegio Público Gloria Fuertes",
+    "address": "CALLE CENSO 3",
+    "district": "Usera",
+    "latitude": 40.369311628795366,
+    "longitude": -3.7051368370067617,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c6bed154e2fbd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "fiestas",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "de6ffe8a165b30e9"
+  },
+  {
+    "title": "Día de marionetas por la naturaleza",
+    "description": "De 16:30 a 20 horas.   ﻿Edades: de 8 a 14 años.",
+    "start_date": "2026-05-23",
+    "end_date": "2026-05-23",
+    "start_time": "16:30:00",
+    "end_time": null,
+    "location_name": "Colegio Público Pradolongo",
+    "address": "CALLE PARQUE DE LA PALOMA 9",
+    "district": "Usera",
+    "latitude": 40.37893066302815,
+    "longitude": -3.7158394380500623,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=df0317b98eebd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "d034d2cc4678fdc7"
+  },
+  {
+    "title": "El Alcalde de Zalamea",
+    "description": "Teatro    Compañía: Tithya Teatro.  Autor: Calderón de la Barca.  Edad recomendada: Público adulto.   Reparto de entradas desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo.",
+    "start_date": "2026-05-31",
+    "end_date": "2026-05-31",
+    "start_time": "12:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=ad14e1509792d910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "7e3715211f223da4"
+  },
+  {
+    "title": "El cantacuentos de Martina",
+    "description": "Compañía Solange Freyre     Martina y Matienzo traen un montón de cuentos-canción para que cantes, bailes, hagas palmas y  te rías sin parar. Con las canciones de María Elena Walsh, popularizadas por Rosa León, este peculiar cuentacuentos permite que los personajes cobren vida a través de la música, los juegos, los bailes, los títeres y los objetos de papel, creando un espacio para recordar y compartir sus maravillosas canciones.     Duración: 50 minutos      Edad recomendada: a partir de 5 años",
+    "start_date": "2026-05-24",
+    "end_date": "2026-05-24",
+    "start_time": "12:00:00",
+    "end_time": null,
+    "location_name": "Auditorio Canal de Panamá (Ciudad Lineal)",
+    "address": "CALLE PADRE COLOMA 2",
+    "district": "CiudadLineal",
+    "latitude": 40.44071019620189,
+    "longitude": -3.652412289521502,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=af1cefe8840bd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "78d8ada8d7d6fe84"
+  },
+  {
+    "title": "El Diferente",
+    "description": "Marta Marco Un espectáculo musical dirigido a familias, basado en el libro-disco El Diferente, que narra la historia de un extraterrestre atrapado en la Tierra intentando encajar.     Duración: 60 minutos      Edad recomendada: a partir de 5 años",
+    "start_date": "2026-05-10",
+    "end_date": "2026-05-10",
+    "start_time": "12:00:00",
+    "end_time": null,
+    "location_name": "Auditorio Canal de Panamá (Ciudad Lineal)",
+    "address": "CALLE PADRE COLOMA 2",
+    "district": "CiudadLineal",
+    "latitude": 40.44071019620189,
+    "longitude": -3.652412289521502,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=bca262ec620bd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "3317dfdace8a8e88"
+  },
+  {
+    "title": "El valor del dinero",
+    "description": "Asociación De Teatro, Abierto por obras.    Es una investigación y creación colectiva de nuestro grupo, articulada como ciclo teatral de humor y crítica social. Movidos por una pregunta central: ¿Cómo ha cambiado el dinero nuestra esencia humana, desde la antigüedad hasta nuestros días? Hemos buceado en el teatro breve universal para desenterrar las comedias de la avaricia que siguen siendo asombrosamente actuales. Esta propuesta singular entrelaza fragmentos de maestros de la farsa y el dram...",
+    "start_date": "2026-05-23",
+    "end_date": "2026-05-23",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Antonio Machado (San Blas - Canillejas)",
+    "address": "CALLE SAN ROMAN DEL VALLE 8",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.420280457570335,
+    "longitude": -3.621730741880216,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=b851c3f7bcebd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "83d2b4c92a7a751d"
+  },
+  {
+    "title": "Encuentro escritoras y poetas Saharauis",
+    "description": "Homenaje.    Participan: Zahra Hassanui, Farah Dih, Conxi Moya y Sukina Ali-Taleb.  Presenta: Ana Rossetti.  Cantautora: Suilma Aali.  Edad recomendada: público adulto.   Reparto de entradas desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo.",
+    "start_date": "2026-05-13",
+    "end_date": "2026-05-13",
+    "start_time": "18:30:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5e05cff3cf74c910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "cbf56d2c38a7802a"
+  },
+  {
+    "title": "Enlazadas",
+    "description": "Danza    Sinopsis: Tributo a los grandes ballets de finales del siglo XIX y principios del XX: 'La Bayadere', ' El carnaval de los animales', 'El pájaro de fuego',  entre otros, que se presentan en una puesta en escena a través de un lenguaje contemporáneo, sutil y delicado al comienzo, incrementando la tensión en su desarrollo y enérgico al final. Enlazadas es el resultado del camino tejido en distintos campos de danza: clásico, jazz, contemporáneo, oriental, persa y armenio. Articulado desd...",
+    "start_date": "2026-05-09",
+    "end_date": "2026-05-09",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=01665cb735fbd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "danza",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "7cd3d03bb3d8a05d"
+  },
+  {
+    "title": "Entre Oíza y Oteiza",
+    "description": "Exposición.    Odnoder Sculptor   Horario de lunes a domingo de 10h a 21h.  Entrada libre hasta completar aforo.",
+    "start_date": "2026-04-29",
+    "end_date": "2026-05-24",
+    "start_time": null,
+    "end_time": null,
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=822beadf2652a910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "schedule": {
+      "0": [],
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": []
+    },
+    "id": "d3871e7b02660720"
+  },
+  {
+    "title": "Experiencias gráficas",
+    "description": "Exposición.  'Ocho viajes a través del grabado'.   Duración: del 29 de abril al 23 de mayo.   Entrada libre hasta completar aforo.  Horario de lunes a domingo de 10h a 20h.",
+    "start_date": "2026-04-29",
+    "end_date": "2026-05-23",
+    "start_time": null,
+    "end_time": null,
+    "location_name": "Sala de Exposiciones Maruja Mallo (Retiro)",
+    "address": "PLAZA DAOIZ Y VELARDE 2",
+    "district": "Retiro",
+    "latitude": 40.402190438836826,
+    "longitude": -3.6772826298329093,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7ab270c11402a910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "schedule": {
+      "0": [],
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": []
+    },
+    "id": "e44e293c09d9f24d"
+  },
+  {
+    "title": "Exvotos de niños en España",
+    "description": "Exvotos de niños en España en el Siglo XVIII  Ponente: Gema Cobo Delgado.  Edad recomendada: adultos.   Reparto de entradas desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo.",
+    "start_date": "2026-05-12",
+    "end_date": "2026-05-12",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a8d5e042bd42d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conferencias",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "53732ec30c7e52b4"
+  },
+  {
+    "title": "Gestión del estrés y la ansiedad",
+    "description": null,
+    "start_date": "2026-05-07",
+    "end_date": "2026-05-28",
+    "start_time": "12:30:00",
+    "end_time": null,
+    "location_name": "Espacio de Igualdad María Telo. Moratalaz",
+    "address": "CALLE CAMINO DE LOS VINATEROS 51",
+    "district": "Moratalaz",
+    "latitude": 40.41087442118042,
+    "longitude": -3.6538891267077664,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=34f1d2ff46f8c910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "schedule": {
+      "3": [
+        "12:30:00"
+      ]
+    },
+    "id": "f8dc7ee6ed4a4bec"
+  },
+  {
+    "title": "Grandes ciudades del mundo: Estambul",
+    "description": "Conferencia    Conferenciante: Bárbara Linares.  Sinopsis: Estambul es un cruce de civilizaciones donde Oriente y Occidente se encuentran sobre el Bósforo. La conferencia explora su historia milenaria, desde Bizancio y Constantinopla hasta la Turquía moderna.  Público: adulto  Duración: 60 minutos.   Entrada libre hasta completar aforo.",
+    "start_date": "2026-05-05",
+    "end_date": "2026-05-05",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Las Californias (Retiro)",
+    "address": "CALLE LUIS PEIDRO 2",
+    "district": "Retiro",
+    "latitude": 40.397021560779024,
+    "longitude": -3.6738766514153163,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=6507cc4551a1d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conferencias",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "ada4ba92ade15e5a"
+  },
+  {
+    "title": "Homenaje a Carmen Sevilla",
+    "description": "Homenaje musical a Carmen Sevilla que revive su legado a través de sus canciones más emblemáticas y su inconfundible presencia escénica. Nostalgia, elegancia y emoción se entrelazan en esta propuesta, celebrando a una de las grandes figuras de la música y el cine español.    Un tributo pensado para disfrutar, recordar y dejarse envolver por la magia de su inolvidable estilo.     Duración: 60 minutos",
+    "start_date": "2026-05-29",
+    "end_date": "2026-05-29",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Auditorio Canal de Panamá (Ciudad Lineal)",
+    "address": "CALLE PADRE COLOMA 2",
+    "district": "CiudadLineal",
+    "latitude": 40.44071019620189,
+    "longitude": -3.652412289521502,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=9bfdefe8840bd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "632666088ee4b37c"
+  },
+  {
+    "title": "Inteligencia Artificial y Humanismo",
+    "description": "Conferencia    Organizada por: Tsawa Fundation. Doctor Carles Noguera, investigador en lógica para IA Doctor Gustavo G. Díez, físico teórico y neurocientífico.  Edad recomendada: Público adulto.    Reparto de entradas desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo.",
+    "start_date": "2026-05-07",
+    "end_date": "2026-05-07",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=e98c36c7fea4b910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conferencias",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "2b98497f4190e250"
+  },
+  {
+    "title": "IV Verbena de San Isidro",
+    "description": null,
+    "start_date": "2026-05-13",
+    "end_date": "2026-05-13",
+    "start_time": "17:00:00",
+    "end_time": null,
+    "location_name": "Centro Municipal de Mayores Pablo Neruda",
+    "address": "CALLE GERARDO DIEGO 8",
+    "district": "PuenteDeVallecas",
+    "latitude": 40.385232075465986,
+    "longitude": -3.644368951945781,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=e04725b84febd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "ba15909a0a930ec0"
+  },
+  {
+    "title": "Jacballet",
+    "description": "Open Studio.   Recomendada para todos los públicos.    El espectáculo Open Studio de JacBallet es una propuesta íntima y técnica que busca desnudar el proceso creativo de la danza clásica y neoclásica. A diferencia de una función tradicional en un gran teatro, este formato permite al espectador apreciar la precisión, el rigor y la sensibilidad de los bailarines en una distancia corta, casi como si fuera un ensayo de puertas abiertas. En esta edición, el programa destaca por su excelencia al r...",
+    "start_date": "2026-05-24",
+    "end_date": "2026-05-24",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Antonio Machado (San Blas - Canillejas)",
+    "address": "CALLE SAN ROMAN DEL VALLE 8",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.420280457570335,
+    "longitude": -3.621730741880216,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=1751c3f7bcebd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "danza",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "d6dd979f557023c4"
+  },
+  {
+    "title": "Jornada de huerto",
+    "description": "Dinámicas participativas para grupos familiares, que incluyen recorridos por el Parque y talleres creativos.   Edad recomendada: mayores de 8 años.  Sábado 16 de mayo: de 16:30 a 18:00 horas.  Punto de encuentro: Aula Ambiental La Cabaña del Retiro  Inscripción: e requiere reserva previa, enviando nombre y apellidos, teléfono y correo electrónico de la persona interesada, así como número de acompañantes a través de correo electrónico Correo: aularetiro@madrid.es, o a través de los teléfonos: ...",
+    "start_date": "2026-05-16",
+    "end_date": "2026-05-31",
+    "start_time": "16:30:00",
+    "end_time": null,
+    "location_name": "Aula ambiental La Cabaña del Retiro",
+    "address": "PASEO FERNAN NUÑEZ 10",
+    "district": "Retiro",
+    "latitude": 40.40912277790706,
+    "longitude": -3.6793179644920584,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=006afa263daca910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "83416cfc4a9db4df"
+  },
+  {
+    "title": "La Bossa Mayor",
+    "description": "Proyecto familiar con más de una década de trayectoria, que fusiona bossa nova, samba, jazz brasileño y ritmos latinos. Con músicos de gran nivel y las voces de Helena y Rebeca, su repertorio nos invita a un viaje lleno de color y sabor por la música brasileña de todos los tiempos.  Duración: 60 minutos",
+    "start_date": "2026-05-22",
+    "end_date": "2026-05-22",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Auditorio Canal de Panamá (Ciudad Lineal)",
+    "address": "CALLE PADRE COLOMA 2",
+    "district": "CiudadLineal",
+    "latitude": 40.44071019620189,
+    "longitude": -3.652412289521502,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=612cefe8840bd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "77a4a445403f7c6c"
+  },
+  {
+    "title": "La familia",
+    "description": "Cine foros-2026. C asa Club Venezuela   La familia     Reparto de entradas desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo.",
+    "start_date": "2026-05-31",
+    "end_date": "2026-05-31",
+    "start_time": "17:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=dda5817478bba910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "f233cbc91cc38c83"
+  },
+  {
+    "title": "La Feria del Libro de Madrid",
+    "description": "Conferencia. Asociación de Amigos de los Jardines del Buen Retiro.   La Feria del Libro de Madrid. Su historia, su vida, sus problemas..  Conferenciante: Eva Orue, directoria de la Feria que se someterá a las preguntas de Jesús Duva.  Edad recomendada: público adulto.   Reparto de entradas desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo.",
+    "start_date": "2026-05-26",
+    "end_date": "2026-05-26",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8a14e1509792d910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conferencias",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "3e29d1178758ce8a"
+  },
+  {
+    "title": "La Magia Perdida",
+    "description": "Teatro infantil.    Compañía Susana Paz  ﻿Sinopsis: Lucinda está muy contenta pues en tres noches será la reunión anual de brujas y verá a todas sus amigas. Todo parece perfecto hasta que su escoba empieza a fallar, su magia no funciona y encima su gato sufre un conjuro que parece irreversible. Edad recomendada de 3 a 8 años.    Reparto de entradas desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo.",
+    "start_date": "2026-05-02",
+    "end_date": "2026-05-02",
+    "start_time": "12:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=eda6e77de60ca910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "fde15b9dca0fb875"
+  },
+  {
+    "title": "La mirada de las hojas",
+    "description": "Poesía para una primavera.    Intervienen: Victoria Olaya Magadán, Margarita Álvarez, Pilar Quintás, Yolanda Corell, Sara Levesque, Sol Cerrato, Feli Moreno, Cris Aparicio, Sylvie Riesco, Pilar Escamilla y Alberto Blanco Rubio.  Chegagomez- Cantautora  Raquel Gómez- Danza  Organiza: Victoria Olaya Magadán.  Edad recomendada: público adulto.   Reparto de entradas desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo.",
+    "start_date": "2026-05-09",
+    "end_date": "2026-05-09",
+    "start_time": "12:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d0938dfacaf8c910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "bf078bf374720d12"
+  },
+  {
+    "title": "Libertad y canto",
+    "description": "Música por el Día Internacional de la Libertad de Prensa.    Ana Sánchez-Cano Ensemble. Voz, flauta y percusiones.  Alejandro Maciá. Guitarra, oboe y percusiones.  Libertad y canto es un viaje musical a través de diversos autores que defendieron los derechos humanos con sus canciones. Un homenaje a la música como medio de expresión para unir, emocionar y reivindicar un mundo libre en el que cuidarnos sea prioritario.   Edad recomendada: público adulto.   Reparto de entradas desde una hora ant...",
+    "start_date": "2026-05-03",
+    "end_date": "2026-05-03",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=b28e3ae411beb910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "f009b7c11f8d6e08"
+  },
+  {
+    "title": "Madrid a Tempo",
+    "description": "Madrid a Tempo. Jóvenes + Clásicos en el Retiro   Recital de piano.  Intérprete: Antoine Préat.   Obras de: J. Haydn,  Schumann, F. Chopiny Prokofiev.  Horario: de 12:00 a 13:00 horas.   Reparto de entradas desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo",
+    "start_date": "2026-05-03",
+    "end_date": "2026-05-03",
+    "start_time": "12:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5619832f37fba910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "dd4ea2a3df0975c5"
+  },
+  {
+    "title": "Madrid Gospel Voices",
+    "description": "Grupo: Escuela Coral de Madrid:  Madrid GospelVoices.    Sinopsis: Madrid Gospel Voicesse crea Escuela Coral de Madrid, bajo el prisma del contexto actual e histórico del góspel. En el grupo se trabajan todos los aspectos para crear un sonido más auténtico del góspel actual (y tradicional), dentro de un ambiente muy animado, formando un gran equipo como conjunto coral. Ha realizado diversos conciertos en iglesias emblemáticas de Madrid y en diversas salas de conciertos. Se crea en octubre de ...",
+    "start_date": "2026-05-16",
+    "end_date": "2026-05-16",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural el Torito (Moratalaz)",
+    "address": "AVENIDA MORATALAZ 130",
+    "district": "Moratalaz",
+    "latitude": 40.40610655994401,
+    "longitude": -3.646521482592748,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=bb96b84a10fbd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "ed37ac3fb643759a"
+  },
+  {
+    "title": "Music Business 260 Summit",
+    "description": "Conectando la industria musical de Latinoamérica y Europa.    Horario: de 15:00 a 21:00 horas.  Información:   El Music Business 360 Summit Madrid es un encuentro internacional dedicado al negocio de la música, que celebra los 10 años del proyecto con una programación especial a lo largo del mes de mayo, culminando en su Summit en el emblemático espacio de Casa de Vacas, en el Parque del Retiro.Este encuentro reunirá a profesionales, instituciones y artistas de Europa y América Latina en una ...",
+    "start_date": "2026-05-27",
+    "end_date": "2026-05-27",
+    "start_time": "15:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=6e898dfacaf8c910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "f0b79289c51ededb"
+  },
+  {
+    "title": "Música Infantil: `Chulapitis´",
+    "description": "Por la Compañia Cuentitis Musiquitis.    Sinopsis: El San Isidro mas musical para el público más peque. Chulapitis es un homenaje musical al Madrid mas castizo: verbenas, chotis, organillos y barrios con historia….contados con humor y mirada actual.  Duración: 60 minutos aprox.     Edad recomendada para todos los públicos.       Las entradas estarán disponibles a partir del lunes de la misma semana que se realice la actividad, recogiéndolas en el mismo centro cultural o reservando por teléfon...",
+    "start_date": "2026-05-22",
+    "end_date": "2026-05-22",
+    "start_time": "18:00:00",
+    "end_time": null,
+    "location_name": "Centro Sociocultural Ágata (Villaverde)",
+    "address": "CALLE DOCTOR MARTIN AREVALO 2",
+    "district": "Villaverde",
+    "latitude": 40.346369432374594,
+    "longitude": -3.7085146991266473,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=3d265cb735fbd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "3f5e58b73147f302"
+  },
+  {
+    "title": "Música: Chotis, Pasodobles",
+    "description": "Con María Nevado.   Sinopsis: Maria Nevado nos acerca a San Isidro con sus chotis y pasodobles.  Duración: 60 minutos aprox.     Edad recomendada para todos los públicos.         Inscripciones (máximo 2 personas) llamando al teléfono 917 109 263 el mismo día del espectáculo a partir de las 11.00 h.",
+    "start_date": "2026-05-08",
+    "end_date": "2026-05-08",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Sociocultural Bohemios (Villaverde)",
+    "address": "CALLE LOS BOHEMIOS 1",
+    "district": "Villaverde",
+    "latitude": 40.35639654251886,
+    "longitude": -3.6940501846610894,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=b958176cd6fbd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "f0f4779bfb1dd3ef"
+  },
+  {
+    "title": "ODS1: Fin de la pobreza",
+    "description": "Teatro adulto.   La Casa de Bernarda Alba.   Bernarda Alba impone a sus cinco hijas un luto serveo tras la muerte de su esposo, encerrándolas bajo su férrea autoridad. La represión despierta envidias, deseos y rivalidades entre las hermanas. La figura de Pepe el Romano rompe el frágil equilibro del hogar. La tensión entre obediencia y libertad conduce a un final trágico.  Edad recomendada: Público adulto.  Duración: 60 minutos.   Entrada libre hasta completar aforo.",
+    "start_date": "2026-05-23",
+    "end_date": "2026-05-23",
+    "start_time": "18:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Las Californias (Retiro)",
+    "address": "CALLE LUIS PEIDRO 2",
+    "district": "Retiro",
+    "latitude": 40.397021560779024,
+    "longitude": -3.6738766514153163,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=85e070c11402a910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "9b4d6eabfd9fcd11"
+  },
+  {
+    "title": "Paseando por Madrid con Francisco Ayala.... Museo de Bomberos de Madrid",
+    "description": null,
+    "start_date": "2026-05-06",
+    "end_date": "2026-05-06",
+    "start_time": "12:00:00",
+    "end_time": null,
+    "location_name": "Biblioteca Pública Municipal Francisco Ayala (Vicálvaro)",
+    "address": "BULEVAR INDALECIO PRIETO 21",
+    "district": "Vicalvaro",
+    "latitude": 40.39982891410407,
+    "longitude": -3.621281890570377,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=3d1329344cf6c910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "fd0cdfb1a84e49d1"
+  },
+  {
+    "title": "Pasión y Arte",
+    "description": "María Nevado lleva más de veinte años sobre escenarios nacionales e internacionales.    Con una trayectoria que une el baile y la canción española y formada desde niña en ballet, flamenco y copla, se ha consolidado como una intérprete de referencia, capaz de transmitir emoción y esencia.     Duración: 60 minutos",
+    "start_date": "2026-05-21",
+    "end_date": "2026-05-21",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Auditorio Canal de Panamá (Ciudad Lineal)",
+    "address": "CALLE PADRE COLOMA 2",
+    "district": "CiudadLineal",
+    "latitude": 40.44071019620189,
+    "longitude": -3.652412289521502,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=93a762ec620bd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "b92c5904cd9994a6"
+  },
+  {
+    "title": "Presentación del libro 'Cazadores de Vientos', de Javi Crespo",
+    "description": null,
+    "start_date": "2026-04-28",
+    "end_date": "2026-04-28",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Matadero Madrid",
+    "address": "PLAZA LEGAZPI 8",
+    "district": "Arganzuela",
+    "latitude": 40.39130985242181,
+    "longitude": -3.6958028442054074,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=b11333f822fbd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos"
+    ],
+    "schedule": null,
+    "id": "24c5c7d3f5b676e6"
+  },
+  {
+    "title": "Proyección documental: 'Palestina, una tragedia permanente' de Javier Díez Moro",
+    "description": null,
+    "start_date": "2026-05-20",
+    "end_date": "2026-05-20",
+    "start_time": "18:30:00",
+    "end_time": null,
+    "location_name": "Biblioteca Pública Municipal Ángel González (Latina)",
+    "address": "CALLE GRANJA DE TORREHERMOSA 1",
+    "district": "Latina",
+    "latitude": 40.397074625115906,
+    "longitude": -3.7664885474841556,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a74c1cba19ebd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "610bb63e340517f4"
+  },
+  {
+    "title": "Recital de Poesía. Gala fin de Curso",
+    "description": "Recital de poesía.     Intérpretes: Alumnos Taller de Locución Poética.  Impartido por: Luis García Guardiola.   Reparto de entradas desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo.",
+    "start_date": "2026-05-18",
+    "end_date": "2026-05-18",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=b0ee7f3291fba910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "6fc3c00302fad79c"
+  },
+  {
+    "title": "Ropa desordenada",
+    "description": "Música. Canciones a media voz. Nayade   Andrés Duende   Concha Cornejo   Luis Miguel González    Reparto de entradas desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo.",
+    "start_date": "2026-05-06",
+    "end_date": "2026-05-06",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=1520e77de60ca910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "98f8743bc87f8457"
+  },
+  {
+    "title": "Ruta 'Bosques Autóctonos'",
+    "description": "Itinerarios guiados por los Jardines del Buen Retiro dirigidos a público adulto. Ruta botánica enfocada en aprender y conocer algunas de las especies de árboles y plantas típicos de los bosques de La Península.   Sábado 9 de mayo: de 10:00 a 11:30 horas y de 12:00 a 13:30 horas.  Domingo 17 de mayo: de 10:00 a 11:30 horas y de 12:00 a 13:30 horas.  Viernes 29 de mayo: de 16:30 a 18:00 horas.  Punto de encuentro: La Cabaña del Retiro.  Inscripción: Se requiere reserva previa, enviando nombre y...",
+    "start_date": "2026-05-09",
+    "end_date": "2026-05-29",
+    "start_time": null,
+    "end_time": null,
+    "location_name": "Aula ambiental La Cabaña del Retiro",
+    "address": "PASEO FERNAN NUÑEZ 10",
+    "district": "Retiro",
+    "latitude": 40.40912277790706,
+    "longitude": -3.6793179644920584,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=4fa9359b464bd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "schedule": {
+      "4": [],
+      "5": [],
+      "6": []
+    },
+    "id": "50d085fe58d9edba"
+  },
+  {
+    "title": "Sainetes 2.0",
+    "description": "Música, poesía y teatro.    Compañía: Ferro Teatro.   Sinopsis: Estos Sainetes reflejan el más ameno y pintoresco costumbrismo madrileño del siglo XVIII. Se refleja la sociedad burguesa y aristocrática de la época y un género de larga tradición en el teatro español, apuntando en varios de sus sainetes una crítica de costumbres dirigida contra algunos vicios y costumbres de la sociedad de su tiempo.  Edad recomendada: público adulto.      Reparto de entradas desde una hora antes en el centro c...",
+    "start_date": "2026-05-01",
+    "end_date": "2026-05-01",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=3b446dbb5b42d910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "9920875710fb325f"
+  },
+  {
+    "title": "Semana de la música",
+    "description": "Música.    18 de mayo:  banda y agrupación de música moderna de jóvenes.  19 de mayo: agrupación de guitarras, coro y alumnado de percusión.  20 de mayo: orquesta de cuerda.  21 de mayo: orquesta de flautas y agrupación de música moderna de adultos.   Entrada libre hasta completar aforo.",
+    "start_date": "2026-05-18",
+    "end_date": "2026-05-21",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Plaza de Daoíz y Velarde",
+    "address": "PLAZA DAOIZ Y VELARDE 2",
+    "district": "Retiro",
+    "latitude": 40.402190438836826,
+    "longitude": -3.6772826298329093,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=94b2f9d1e53cc910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": {
+      "0": [
+        "19:00:00"
+      ],
+      "1": [
+        "19:00:00"
+      ],
+      "2": [
+        "19:00:00"
+      ],
+      "3": [
+        "19:00:00"
+      ],
+      "4": [
+        "19:00:00"
+      ],
+      "5": [
+        "19:00:00"
+      ],
+      "6": [
+        "19:00:00"
+      ]
+    },
+    "id": "206e3bdc192ebb06"
+  },
+  {
+    "title": "Senda guiada 'Los caprichos del Retiro'",
+    "description": "Itinerarios guiados por los Jardines del Buen Retiro dirigidos a público adulto. Ruta botánica e histórica centrada en el Reservado de Fernando VII y la parte Noreste del parque.   Domingo 3 de mayo: de 10:00 a 11:30 horas y de 12:00 a 13:30 horas.  Viernes 22 de mayo: de 16:30 a 18:00 horas  Sábado 30 de mayo: de 10:00 a 11:30 horas y de 12:00 a 13:30 horas.  Punto de encuentro: Puerta Sáinz de Baranda junto a la Biblioteca Eugenio Trías.  *Las actividades se realizarán con un mínimo de cuat...",
+    "start_date": "2026-05-03",
+    "end_date": "2026-05-30",
+    "start_time": null,
+    "end_time": null,
+    "location_name": "Aula ambiental La Cabaña del Retiro",
+    "address": "PASEO FERNAN NUÑEZ 10",
+    "district": "Retiro",
+    "latitude": 40.40912277790706,
+    "longitude": -3.6793179644920584,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=4a684c9c7a64b910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "schedule": {
+      "4": [],
+      "5": [],
+      "6": []
+    },
+    "id": "b28db74527a3169c"
+  },
+  {
+    "title": "Sorda",
+    "description": "Cine en conmemoración del Día de Europa.    Sinopsis: Ángela, una mujer sorda, espera un bebé con su pareja oyente, Héctor. El nacimiento de la niña genera una crisis en la pareja y obliga a Ángela a afrontar la crianza de su hija en un mundo que no está hecho para ella.  Edad recomendada: público adulto.   Reparto de entradas desde una hora antes en el centro cultural. Máximo dos entradas por persona hasta completar aforo.",
+    "start_date": "2026-05-04",
+    "end_date": "2026-05-04",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=bdc35252a8fba910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "380f4b5d28b3fb27"
+  },
+  {
+    "title": "Taller de insectos",
+    "description": "Dinámicas participativas para grupos familiares, que incluyen recorridos por el Parque y talleres creativos.    Horario  de 16:30 a 18:00 horas.    Edad recomendada: niños y niñas entre 4 y 7 años.  Punto de encuentro: Aula Ambiental La Cabaña del Retiro.   Inscripción: Se requiere reserva previa, enviando nombre y apellidos, teléfono y correo electrónico de la persona interesada, así como número de acompañantes a través de correo electrónico Correo: aularetiro@madrid.es, o a través de los te...",
+    "start_date": "2026-05-23",
+    "end_date": "2026-05-23",
+    "start_time": "16:30:00",
+    "end_time": null,
+    "location_name": "Aula ambiental La Cabaña del Retiro",
+    "address": "PASEO FERNAN NUÑEZ 10",
+    "district": "Retiro",
+    "latitude": 40.40912277790706,
+    "longitude": -3.6793179644920584,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c28764933864b910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "6147e8bb2809694d"
+  },
+  {
+    "title": "Taller insectos de La Cabaña",
+    "description": "Dinámicas participativas para grupos familiares, que incluyen recorridos por el parque y talleres creativos.   Horario: de 11:00 a 12:30 horas  Edad recomendada: a partir de 8 años.  Punto de encuentro: Aula Ambiental La Cabaña del Retiro.  Inscripción: Se requiere reserva previa, enviando nombre y apellidos, teléfono y correo electrónico de la persona interesada, así como número de acompañantes a través de correo electrónico Correo: aularetiro@madrid.es, o a través de los teléfonos: 91513320...",
+    "start_date": "2026-05-24",
+    "end_date": "2026-05-24",
+    "start_time": "11:00:00",
+    "end_time": null,
+    "location_name": "Aula ambiental La Cabaña del Retiro",
+    "address": "PASEO FERNAN NUÑEZ 10",
+    "district": "Retiro",
+    "latitude": 40.40912277790706,
+    "longitude": -3.6793179644920584,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=66dd477d230eb910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "e7797b8f830c1148"
+  },
+  {
+    "title": "Taller Todos los animales están conectados",
+    "description": "Dinámicas participativas para grupos familiares, que incluyen recorridos por el Parque y talleres creativos.   Edad recomendada: niños y niñas entre 4 y 7 años.  Domingo 3 de mayo: de 11:00 a 12:30 horas.  Punto de encuentro: Aula Ambiental La Cabaña del Retiro.   Inscripción: Se requiere reserva previa, enviando nombre y apellidos, teléfono y correo electrónico de la persona interesada, así como número de acompañantes a través de correo electrónico Correo: aularetiro@madrid.es, o a través de...",
+    "start_date": "2026-05-03",
+    "end_date": "2026-05-03",
+    "start_time": "11:00:00",
+    "end_time": null,
+    "location_name": "Aula ambiental La Cabaña del Retiro",
+    "address": "PASEO FERNAN NUÑEZ 10",
+    "district": "Retiro",
+    "latitude": 40.40912277790706,
+    "longitude": -3.6793179644920584,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=746f2cd673aca910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "06acb4a141f1a195"
+  },
+  {
+    "title": "Taller 'Herramientas para evitar estafas digitales'",
+    "description": null,
+    "start_date": "2026-05-05",
+    "end_date": "2026-05-06",
+    "start_time": "17:00:00",
+    "end_time": null,
+    "location_name": "Biblioteca Pública Municipal San Fermín (Usera)",
+    "address": "AVENIDA SAN FERMIN 10",
+    "district": "Usera",
+    "latitude": 40.3711623444796,
+    "longitude": -3.692742821990015,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=4fd1376927ebd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "schedule": {
+      "1": [
+        "17:00:00"
+      ],
+      "2": [
+        "17:00:00"
+      ]
+    },
+    "id": "739789ebcd60948c"
+  },
+  {
+    "title": "Taller 'Pequeños científicos'",
+    "description": "Dinámicas participativas para grupos familiares, que incluyen recorridos por el Parque y talleres creativos.   Domingo 10 de mayo: de 11:00 a 12:30 horas.  Edad recomendada: a partir de 8 años.  Punto de encuentro: Aula Ambiental La Cabaña del Retiro.   Inscripción: Se requiere reserva previa, enviando nombre y apellidos, teléfono y correo electrónico de la persona interesada, así como número de acompañantes a través de correo electrónico Correo: aularetiro@madrid.es, o a través de los teléfo...",
+    "start_date": "2026-05-10",
+    "end_date": "2026-05-10",
+    "start_time": "11:00:00",
+    "end_time": null,
+    "location_name": "Aula ambiental La Cabaña del Retiro",
+    "address": "PASEO FERNAN NUÑEZ 10",
+    "district": "Retiro",
+    "latitude": 40.40912277790706,
+    "longitude": -3.6793179644920584,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d73164933864b910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "82dff9e9d5584bc6"
+  },
+  {
+    "title": "Tarde deportiva balonmano y tchoukball",
+    "description": "De 16:30 a 20 horas.   ﻿Edades: ﻿ de 8 a 14 años.",
+    "start_date": "2026-05-30",
+    "end_date": "2026-05-30",
+    "start_time": "16:30:00",
+    "end_time": null,
+    "location_name": "Colegio Público República de Brasil",
+    "address": "AVENIDA FUEROS 34",
+    "district": "Usera",
+    "latitude": 40.37043939785913,
+    "longitude": -3.6899302716018574,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=54c717b98eebd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "deportes",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "1c417bb6e9124bfe"
+  },
+  {
+    "title": "Tarde deportiva. Balonmano y tchoukball",
+    "description": "De 16:30 a 20 horas.   ﻿Edades: ﻿ de 8 a 14 años.",
+    "start_date": "2026-05-30",
+    "end_date": "2026-05-30",
+    "start_time": "16:30:00",
+    "end_time": null,
+    "location_name": "Colegio Público Gloria Fuertes",
+    "address": "CALLE CENSO 3",
+    "district": "Usera",
+    "latitude": 40.369311628795366,
+    "longitude": -3.7051368370067617,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=9ab222c611fbd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "deportes",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "c585d38970d757eb"
+  },
+  {
+    "title": "Teatro. El burgués Gentilhombre",
+    "description": "El Burgues gentilhombre.  Compañía: Grupo Oberon.  Sinopsis: Esta obra narra la historia de Jourdain, un hombre de edad que busca ser aceptado en la corte, por ello, le preocupa su ignorancia, pues no fue al colegio. Por consiguiente, decide contratar maestros de baile, el manejo de las armas, filosofía, música, entre otros, quiere volverse noble, comprando conocimientos, es un burgués que ha decidido que estar forrado no es suficiente: ahora quiere ser fino. El resultado es un desfile de tim...",
+    "start_date": "2026-05-29",
+    "end_date": "2026-05-29",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural el Torito (Moratalaz)",
+    "address": "AVENIDA MORATALAZ 130",
+    "district": "Moratalaz",
+    "latitude": 40.40610655994401,
+    "longitude": -3.646521482592748,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=f0e9d154e2fbd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "00a8064348936226"
+  },
+  {
+    "title": "Teatro. Selección de obras cortas",
+    "description": "Selección de obras cortas.      Compañía: Tinglado      Sinopsis:     El Teatro y la realidad de Enrique Jardiel Poncela El teatro y la realidad de Enrique Jardiel Poncela (publicado en 1927) es una serie deescenas que contrastan situaciones teatrales convencionales con su desarrollo lógico yabsurdo en la vida real. Jardiel satiriza la 'alta comedia' y el sainete, desmitificando losclichés escénicos de su época, mostrando que la realidad es a menudo más inverosímilque la ficción. Es una parod...",
+    "start_date": "2026-05-22",
+    "end_date": "2026-05-22",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural el Torito (Moratalaz)",
+    "address": "AVENIDA MORATALAZ 130",
+    "district": "Moratalaz",
+    "latitude": 40.40610655994401,
+    "longitude": -3.646521482592748,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5c0522c611fbd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "3a01cf9a9248a719"
+  },
+  {
+    "title": "Teatro: `Cadáver No Tan Exquisito´",
+    "description": "Por la Compañía Salto al Vacío.    Sinopsis: Cadáver no tan exquisito es la nueva comedia de situación del grupo Salto al Vacío. Un suceso aparentemente dramático da paso a una auténtica locura cómica sobre el escenario. Prepárate para reírte a carcajadas con momentos de caos y tensión entre cuatro personajes de lo más peculiares, que intentarán salir airosos a su manera… aunque no sea la más apropiada.   Duración: 60 minutos aprox.     Edad recomendada para todos los públicos.         Inscri...",
+    "start_date": "2026-05-22",
+    "end_date": "2026-05-22",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Sociocultural Bohemios (Villaverde)",
+    "address": "CALLE LOS BOHEMIOS 1",
+    "district": "Villaverde",
+    "latitude": 40.35639654251886,
+    "longitude": -3.6940501846610894,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a06d176cd6fbd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "f214605c07d85d95"
+  },
+  {
+    "title": "Teatro: `La Cantante de Tangos´",
+    "description": "Por la Compañia Maru-Jasp.   Sinopsis: Olga Fernández es una cantante argentina, que siempre quiso ser una estrella del tango. Se traslada a España para conseguir reconocimiento y fama, pero no consigue más trabajo que actuar en salas y teatros secundarios. En la soledad de su camerino, entre recuerdos y anécdotas, nos acerca a los éxitos de las grandes del tango, que fueron sus maestras, hasta que termina consiguiendo su puesto.  Duración: 90 minutos aprox.     Edad recomendada para todos lo...",
+    "start_date": "2026-05-08",
+    "end_date": "2026-05-08",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Sociocultural Ágata (Villaverde)",
+    "address": "CALLE DOCTOR MARTIN AREVALO 2",
+    "district": "Villaverde",
+    "latitude": 40.346369432374594,
+    "longitude": -3.7085146991266473,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=cdf3d04694fbd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "accb6cea47d3bccc"
+  },
+  {
+    "title": "Theke Infancia y juego",
+    "description": "CICLO TEATRO PARA BEBÉS      Compañía el Hilo Rojo     Theke es una propuesta escénica dirigida a niñas y niños y sus familias. Inspirada en la idea de 'caja' o contenedor, crea un entorno vivo y flexible donde el juego conecta a las familias, los objetos y el espacio. Un encuentro sensorial y participativo pensado para explorar, descubrir y compartir durante los primeros años de vida.     Duración: 60 minutos      Edad recomendada: de 8 meses a 6 años",
+    "start_date": "2026-05-17",
+    "end_date": "2026-05-17",
+    "start_time": "12:00:00",
+    "end_time": null,
+    "location_name": "Auditorio Canal de Panamá (Ciudad Lineal)",
+    "address": "CALLE PADRE COLOMA 2",
+    "district": "CiudadLineal",
+    "latitude": 40.44071019620189,
+    "longitude": -3.652412289521502,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=383662ec620bd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "0ac37aaf89262f36"
+  },
+  {
+    "title": "Tremendo Facto. Una batalla de gallos con la IA",
+    "description": "Edades: de 14 a 30 años.  De 17 a 20 horas en el auditorio San Fermín en la calle Teba.     Ocio saludable, libre de consumo.",
+    "start_date": "2026-05-08",
+    "end_date": "2026-05-08",
+    "start_time": "17:00:00",
+    "end_time": null,
+    "location_name": null,
+    "address": null,
+    "district": null,
+    "latitude": null,
+    "longitude": null,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=daf7e2797debd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "7c53125699f13068"
+  },
+  {
+    "title": "Tributo a Alejandro Sanz",
+    "description": "Mehdi, cantautor emergente, ofrece un concierto-homenaje a Alejandro Sanz, recorriendo el pop, el flamenco y otras raíces, y conectando con la emoción y autenticidad que definen su legado.     Duración: 60 minutos",
+    "start_date": "2026-05-16",
+    "end_date": "2026-05-16",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Auditorio Canal de Panamá (Ciudad Lineal)",
+    "address": "CALLE PADRE COLOMA 2",
+    "district": "CiudadLineal",
+    "latitude": 40.44071019620189,
+    "longitude": -3.652412289521502,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=3a8462ec620bd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "4477419e03fbb7aa"
+  },
+  {
+    "title": "Vamos al circo",
+    "description": "Teatro infantil.    Compañía: Háblame Teatro. Pepo y Pepa llegan hoy para ofrecer el mayor espectáculo del mundo pero se dan cuenta que no ha llegado el resto de artistas. Como maestros de ceremonias buscarán entre el público a todos ellos para enseñarles lo difícil que es trabajar en el circo.  Edad recomendada: de 5 a 10 años.  Duración: 60 minutos.   Entrada libre hasta completar aforo.",
+    "start_date": "2026-05-23",
+    "end_date": "2026-05-23",
+    "start_time": "12:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural Las Californias (Retiro)",
+    "address": "CALLE LUIS PEIDRO 2",
+    "district": "Retiro",
+    "latitude": 40.397021560779024,
+    "longitude": -3.6738766514153163,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=de323ae411beb910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "13a68235520896d8"
+  },
+  {
+    "title": "Visita a la Casa de Campo",
+    "description": "Itinerarios guiados para público adulto.    Punto de encuentro: Salida Metro Casa de Campo  Inscripción: Se requiere reserva previa, enviando nombre y apellidos, teléfono y correo electrónico de la persona interesada, así como número de acompañantes a través de correo electrónico Correo: aularetiro@madrid.es, o a través de los teléfonos: 915133250 - 915040131.   *Las actividades se realizarán con un mínimo de cuatro participantes apuntados.",
+    "start_date": "2026-05-13",
+    "end_date": "2026-05-27",
+    "start_time": "10:30:00",
+    "end_time": null,
+    "location_name": "Aula ambiental La Cabaña del Retiro",
+    "address": "PASEO FERNAN NUÑEZ 10",
+    "district": "Retiro",
+    "latitude": 40.40912277790706,
+    "longitude": -3.6793179644920584,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=238b3d77d90eb910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "4b923122719cd4da"
+  },
+  {
+    "title": "Visita a la Casa de Campo. Zona lago.",
+    "description": "Visita externa guiada para público adulto.   Horario: de 10:30 a 13:00 horas.  Punto de encuentro: Salida del Metro Lago.  Inscripción: Se requiere reserva previa, enviando nombre y apellidos, teléfono y correo electrónico de la persona interesada, así como número de acompañantes a través de correo electrónico Correo: aularetiro@madrid.es, o a través de los teléfonos: 915133250 o 915040131.  *Las actividades se realizarán con un mínimo de cuatro participantes apuntados.",
+    "start_date": "2026-05-20",
+    "end_date": "2026-05-20",
+    "start_time": "10:30:00",
+    "end_time": null,
+    "location_name": "Aula ambiental La Cabaña del Retiro",
+    "address": "PASEO FERNAN NUÑEZ 10",
+    "district": "Retiro",
+    "latitude": 40.40912277790706,
+    "longitude": -3.6793179644920584,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=ff879985385ca910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "ecdb56f959bae068"
+  },
+  {
+    "title": "Workshop 'Habitar la Creatividad', con Ana Mateo y Luis Fidalgo",
+    "description": null,
+    "start_date": "2026-04-29",
+    "end_date": "2026-04-29",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Matadero Madrid",
+    "address": "PLAZA LEGAZPI 8",
+    "district": "Arganzuela",
+    "latitude": 40.39130985242181,
+    "longitude": -3.6958028442054074,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7da333f822fbd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "destacado"
+    ],
+    "schedule": null,
+    "id": "795726561d2fe273"
+  },
+  {
+    "title": "XUsera Xulapa",
+    "description": "De 17:30 a 21:30 horas.  Edades: de 14 a 30 años.",
+    "start_date": "2026-05-16",
+    "end_date": "2026-05-16",
+    "start_time": "17:30:00",
+    "end_time": null,
+    "location_name": "Centro Sociocultural Cánovas del Castillo (Usera)",
+    "address": "CALLE JULIO AGUIRRE 10",
+    "district": "Usera",
+    "latitude": 40.38627312379031,
+    "longitude": -3.700074755609488,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a7b5d154e2fbd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "fiestas",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "6fa4f0d57ca133cc"
+  },
+  {
+    "title": "Yincana hoja a hoja",
+    "description": "Dinámicas participativas para grupos familiares, que incluyen recorridos por el Parque y talleres creativos.   Horario de 16:30 a 18:00 horas.  Edad recomendada: niños y niñas a partir de 8 años.  Punto de encuentro: Aula Ambiental La Cabaña del Retiro.  Inscripción: Se requiere reserva previa, enviando nombre y apellidos, teléfono y correo electrónico de la persona interesada, así como número de acompañantes a través de correo electrónico Correo: aularetiro@madrid.es, o a través de los teléf...",
+    "start_date": "2026-05-30",
+    "end_date": "2026-05-30",
+    "start_time": "16:30:00",
+    "end_time": null,
+    "location_name": "Aula ambiental La Cabaña del Retiro",
+    "address": "PASEO FERNAN NUÑEZ 10",
+    "district": "Retiro",
+    "latitude": 40.40912277790706,
+    "longitude": -3.6793179644920584,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8b7cede7c4aca910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "5ee2e915fe145b2b"
+  },
+  {
+    "title": "Yincana 'El tesoro de la cabaña'",
+    "description": "Actividades dirigidas a grupos familiares.   Domingo 17 de mayo: de 11:00 a 12:30 horas.  Edad recomendada: niños y niñas de 4 a 7 años.   Punto de encuentro: Aula Ambiental La Cabaña del Retiro.  Inscripción: Se requiere reserva previa, enviando nombre y apellidos, teléfono y correo electrónico de la persona interesada, así como número de acompañantes a través de correo electrónico Correo: aularetiro@madrid.es, o a través de los teléfonos: 915133250 o 915040131.  *Las actividades se realizar...",
+    "start_date": "2026-05-17",
+    "end_date": "2026-05-17",
+    "start_time": "11:00:00",
+    "end_time": null,
+    "location_name": "Aula ambiental La Cabaña del Retiro",
+    "address": "PASEO FERNAN NUÑEZ 10",
+    "district": "Retiro",
+    "latitude": 40.40912277790706,
+    "longitude": -3.6793179644920584,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=21004c9c7a64b910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "b6e8d8209e77ae03"
+  },
+  {
+    "title": "'La extrema derecha en la Transición. El caso de Fuerza Nueva'  por Javier Malpartida.",
+    "description": null,
+    "start_date": "2026-05-21",
+    "end_date": "2026-05-21",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Biblioteca Pública Municipal Ángel González (Latina)",
+    "address": "CALLE GRANJA DE TORREHERMOSA 1",
+    "district": "Latina",
+    "latitude": 40.397074625115906,
+    "longitude": -3.7664885474841556,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=cc5bf9a8f9ebd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "dd3b4e5a78e2436f"
+  },
+  {
+    "title": "'Recortes de Humor', collage analógico de Luisa Moreno",
+    "description": "'Recortes de Humor' es una exposición de Collage analógico. Su autora, Luisa Moreno llega a Madrid desde el corazón de La Mancha, Alcázar de San Juan, ciudad de gigantes donde el Quijote desarrolló sus aventuras. En la ciudad de los gatos comienza su interés por el collage, inspirándose en Ana Millán y comprando revistas en el Rastro de Madrid va creando su arte a base de recortes y toques de humor. Alegre, divertida, creativa, especial y con alma de niña, el trabajo y la identidad de Luisa M...",
+    "start_date": "2026-05-06",
+    "end_date": "2026-05-29",
+    "start_time": "08:30:00",
+    "end_time": null,
+    "location_name": "Biblioteca Pública Municipal La Chata (Carabanchel)",
+    "address": "CALLE GENERAL RICARDOS 252",
+    "district": "Carabanchel",
+    "latitude": 40.38330593504341,
+    "longitude": -3.7420633861175796,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=9fd10ce72d5eb910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "schedule": {
+      "0": [
+        "08:30:00"
+      ],
+      "1": [
+        "08:30:00"
+      ],
+      "2": [
+        "08:30:00"
+      ],
+      "3": [
+        "08:30:00"
+      ],
+      "4": [
+        "08:30:00"
+      ]
+    },
+    "id": "26191418c8639449"
+  },
+  {
+    "title": "¿Qué es la Unión Europea?",
+    "description": null,
+    "start_date": "2026-05-07",
+    "end_date": "2026-05-07",
+    "start_time": "11:00:00",
+    "end_time": null,
+    "location_name": "Biblioteca Pública Municipal Francisco Ayala (Vicálvaro)",
+    "address": "BULEVAR INDALECIO PRIETO 21",
+    "district": "Vicalvaro",
+    "latitude": 40.39982891410407,
+    "longitude": -3.621281890570377,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=6a54478069fbd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conferencias",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "e03e8687f55790d6"
   }
 ]
