@@ -2754,14 +2754,14 @@
     "title": "Club de lectura en inglés 'Reading club'",
     "description": "Actividad participativa para analizar y comentar textos de autores anglosajones influyentes del siglo XX. Las sesiones se desarrollan íntegramente en inglés para estudiantes con nivel B2 o superior.",
     "start_time": "19:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=1a70912514d29910VgnVCM100000891ecb1aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8c67e294e5839910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "talleres"
     ],
     "price": "Gratis",
     "is_multi_event": true,
-    "lid": "a75a031b"
+    "lid": "195199f7"
   },
   "345d9850e37121dc": {
     "title": "Club de lectura Naomi Klein",
@@ -3003,14 +3003,21 @@
   },
   "1b86861f99bfe96f": {
     "title": "Compañía Nacional de Danza | Luz Arcas | Kor'sia",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=340c5a847243a910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
+    "description": "Programa doble de danza moderna que presenta las piezas Masa y Tablero. Las obras exploran la fuerza de las multitudes y la construcción compartida de la identidad y la memoria.",
+    "start_time": "20:00:00",
+    "url": "https://www.centrodanzamatadero.es/actividades/compania-nacional-de-danza-luz-arcas-mattia-russo-antonio-de-rosa-korsia",
+    "price": "Desde 27 €",
+    "image": "images/events/cba7b35a43ab.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/6Ga8cq-FL-DG1dWipz42RirWr3lXWS2NwKt3rCy2yUE/mtime:1773653579/sites/default/files/eventos/eventos/compania_nacional_de_danza_luz_arcas_korsia.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/UhosfZ8A50wLYOTeP0XlNjK9Y2rr1sWIlkMWRyQzaCs/mtime:1773653678/sites/default/files/eventos/eventos/arcas.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/compania-nacional-danza-luz-arcas-korsia-centro-danza-matadero-cdm",
+    "source": "esmadrid,madrid_agenda",
     "categories": [
       "teatro",
       "danza"
     ],
-    "description": "La Compañía Nacional de Danza presenta Struere, un díptico que incluye los estrenos absolutos de las piezas Masa, de Luz Arcas, y TABLERO, de Kor'sia. Estas nuevas creaciones originales exploran el lenguaje coreográfico contemporáneo bajo la dirección de Muriel Romero.",
-    "price": "Desde 27 €",
     "lid": "eb8b4a73"
   },
   "8106ca067aff3968": {
@@ -3151,7 +3158,7 @@
     "title": "15 Voces. Bienvenido al Teatro Musical",
     "description": "Un concierto corto que une lo más mítico del Teatro Musical, fusionando baile, canto e interpretación. Es un montaje diseñado para todos los públicos.",
     "start_time": "19:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=ea22668549a1d910VgnVCM200000f921e388RCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=449d5bc09aa1d910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "conciertos",
@@ -3161,7 +3168,7 @@
     ],
     "price": "Gratis",
     "is_multi_event": true,
-    "lid": "c35c9218"
+    "lid": "40c9bbca"
   },
   "6178885190507142": {
     "title": "Concierto con Virginia Rodero & Bucero",
@@ -3378,8 +3385,8 @@
   "317c3e5a75074bf4": {
     "title": "Desafíos globales que definirán nuestro futuro: La Unión Europea en la encrucijada",
     "description": "El evento busca acercar la Unión Europea a la ciudadanía, destacando su impacto en la vida cotidiana y el ámbito local. Se exploran las instituciones europeas como piezas clave en el devenir de los ciudadanos.",
-    "start_time": "19:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d3b43ae95cf1d910VgnVCM200000f921e388RCRD",
+    "start_time": "10:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=86825f0d7df1d910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "conferencias",
@@ -4764,7 +4771,7 @@
     "title": "Dinamización socio-deportiva al aire libre",
     "description": "Programa de actividades recreativas y deportivas diseñadas para jóvenes. El evento busca fomentar la socialización y el ejercicio físico en espacios públicos.",
     "start_time": "22:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c63fd31e3f9bd910VgnVCM100000891ecb1aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=96ca4697b0abd910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "deportes",
@@ -4773,7 +4780,7 @@
     ],
     "price": "Gratis",
     "is_multi_event": true,
-    "lid": "abb1adaa"
+    "lid": "fd6a0baa"
   },
   "34155071e589fba0": {
     "title": "Dioramas Iridescentes - Villaverde",
@@ -13199,7 +13206,7 @@
   "8d347f8b19c801a0": {
     "title": "Visita guiada a la Quinta de Torre Arias",
     "start_time": "11:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=04c176bd693f3910VgnVCM1000001d4a900aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=64f4d5d07a499910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "exposiciones",
@@ -13874,7 +13881,7 @@
     "title": "Ruta Medioambiental: Monte Abantos",
     "description": "Senderismo de dificultad moderada por el Monte Abantos con una distancia de 11 kilómetros.",
     "start_time": "09:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=f21a91d72952d910VgnVCM100000891ecb1aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d7a692297172d910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "deportes",
@@ -14041,8 +14048,7 @@
   "85c2bb7b1981691f": {
     "title": "Senda guiada: Ruta Ornitológica",
     "description": "Recorrido por los Jardines del Buen Retiro enfocado en las aves locales.",
-    "start_time": "10:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=aa8d95a1d05ca910VgnVCM100000891ecb1aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=e581ef7e4a54b910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "talleres",
@@ -14237,7 +14243,7 @@
     "title": "Sostenibilidad y arquitectura: Itinerario por las 5 torres y Parque Caleido",
     "description": "Recorrido para conocer la integración de la arquitectura moderna y la sostenibilidad ambiental.",
     "start_time": "10:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5c20fc4d352d5910VgnVCM2000001f4a900aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=37ca09340f270910VgnVCM1000001d4a900aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "talleres",
@@ -15077,14 +15083,14 @@
     "title": "Taller Online 'Remedial English'",
     "description": "Espacio de apoyo en línea dirigido a adultos con nivel A2/B1 para superar obstáculos fonológicos y morfosintácticos.",
     "start_time": "18:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=69986b459c409910VgnVCM100000891ecb1aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7cae78e986839910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "talleres",
       "gratis"
     ],
     "price": "gratis",
-    "lid": "578bab51"
+    "lid": "195199f7"
   },
   "76c7e9c587f35f47": {
     "title": "Taller Práctico de Iniciación a la Escritura Creativa",
@@ -15363,7 +15369,7 @@
   },
   "fffc7c727ad63af1": {
     "title": "Talleres de Artista",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=2f7c35fef0a2d910VgnVCM100000891ecb1aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=800135fef0a2d910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "talleres"
@@ -21241,7 +21247,7 @@
     "title": "Cine: Valor sentimental",
     "description": "Película dirigida por Joachim Trier sobre el reencuentro de dos hermanas con su padre tras la muerte de su madre. Recomendada a partir de 12 años.",
     "start_time": "19:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=631606a7b0e0c910VgnVCM100000891ecb1aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=f52ad04694fbd910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "teatro",
@@ -21249,7 +21255,7 @@
       "gratis"
     ],
     "price": "0",
-    "lid": "e391ce25"
+    "lid": "2f2a8411"
   },
   "a345409abcf31db3": {
     "title": "Concierto de variedades artísticas",
@@ -21733,12 +21739,12 @@
   },
   "170bd12cc2ddd931": {
     "title": "Taller Gran convoy",
-    "description": "Actividad creativa en formato taller abierta a los participantes.",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=4255a8500159d910VgnVCM200000f921e388RCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8f6e1e920559d910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "talleres"
     ],
+    "description": "Actividad creativa en formato taller abierta a los participantes.",
     "lid": "620aba3b"
   },
   "ceb05e611186ac16": {
@@ -22095,8 +22101,8 @@
   },
   "bc46ea62e2076c57": {
     "title": "Taller: Identificación de mariposas en Madrid",
-    "start_time": "10:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=fd796f81d50bd910VgnVCM100000891ecb1aRCRD",
+    "start_time": "11:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8d6990a3c6b9d910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "talleres",
@@ -22253,7 +22259,7 @@
   "baa0f03ff2b6249d": {
     "title": "II Feria del Libro del Distrito de Fuencarral-El Pardo",
     "description": "Encuentro literario que incluye recitales poéticos, presentaciones de libros y tertulias. Espacio dedicado a la cultura y la lectura.",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=03f5f6e28209d910VgnVCM200000f921e388RCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=729bcf4f7309d910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "ferias",
@@ -25927,6 +25933,42 @@
     "description": "Sesión informativa sobre el funcionamiento y los objetivos de la Unión Europea. Dirigida a ciudadanos interesados en política y actualidad.",
     "price": "0",
     "lid": "987eb6c2"
+  },
+  "6267b83f6f6cdc2f": {
+    "title": "Taller de Compostaje en el Huerto Huerkarral",
+    "start_time": "11:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=4048af866b3cd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis",
+      "aire libre"
+    ],
+    "description": "Aprende las técnicas esenciales para crear compost y mejorar la tierra de tu huerto. Este taller se impartirá en el Huerto Huerkarral el martes 28 de abril a las 10:00 h."
+  },
+  "6b89353151d1e24b": {
+    "title": "Taller de Control de Plagas en el Huerto Fuente de la Carra",
+    "start_time": "18:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a9c9af866b3cd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis",
+      "aire libre"
+    ],
+    "description": "Participa en este taller para aprender métodos ecológicos y efectivos de control de plagas en huertos urbanos. Se realizará en el Huerto Fuente de la Carra el miércoles 29 de abril a las 18:00 h."
+  },
+  "3ba9f66daf615dd0": {
+    "title": "Taller de Riego II en el Huerto Magerit",
+    "start_time": "17:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=497eaf866b3cd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis",
+      "aire libre"
+    ],
+    "description": "Descubre técnicas avanzadas de riego para optimizar el cuidado de tus plantas y ahorrar agua en este taller. Tendrá lugar en el Huerto Magerit el miércoles 29 de abril a las 17:30 h."
   },
   "be7d5ac37b90df1e": {
     "title": "Real Teatro de Retiro",
@@ -37260,5 +37302,75 @@
       "infantil"
     ],
     "lid": "7d9d4e27"
+  },
+  "fb61025de12b3704": {
+    "title": "Goteras",
+    "description": "Comedia que reflexiona sobre el paso del tiempo, el desencanto adulto y las expectativas incumplidas. La trama sigue el encuentro surrealista entre un joven dramaturgo y su yo del futuro.",
+    "start_time": "19:30:00",
+    "url": "https://tickets.oneboxtds.com/tpavon/events/47545?sessionView=LIST",
+    "price": "Desde 14,40 €",
+    "image": "images/events/cb13bd997e29.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/goteras-gran-teatro-pavon",
+    "source": "esmadrid",
+    "categories": [
+      "teatro"
+    ],
+    "lid": "abd05f2e"
+  },
+  "f5c9858a4e3fbe78": {
+    "title": "A la manera de Italia. España y el gótico mediterráneo (1320-1420)",
+    "description": "Exposición que tiene como objetivo acercar un fascinante periodo artístico mediante destacando el uso de la técnica como medio de expresión en las obras de lujo. Podrá verse una selección de más de un centenar de obras de diversas técnicas junto a creaciones de maestros italianos.",
+    "start_time": "10:00:00",
+    "url": "https://www.museodelprado.es/actualidad/exposicion/a-la-manera-de-italia-espaa-y-el-gotico/ba6db59c-501f-650b-583a-b9587ded7e47",
+    "price": "15 €",
+    "image": "images/events/26187131f78f.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/manera-italia-espana-gotico-mediterraneo-1320-1420-museo-prado",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones"
+    ],
+    "lid": "54913fe0"
+  },
+  "988e0269448c43d5": {
+    "title": "Ewa Juszkiewicz",
+    "description": "Monográfica dedicada a la artista polaca que reinterpreta los códigos visuales del retrato clásico europeo. Su trabajo combina una técnica pictórica minuciosa con un contenido provocador y subversivo.",
+    "start_time": "12:00:00",
+    "url": "https://www.museothyssen.org/exposiciones/ewa-juszkiewicz",
+    "price": "14 €",
+    "image": "images/events/9646a4ba9ed5.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/JxDaYG0PUfzmk1OxRhO8rb0cGP-OaLswk8fwNvJQ-mc/mtime:1756813093/sites/default/files/eventos/eventos/ewa_juszkiewicz.jpeg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/JmKGixVD5Tt2oMepchpU93t8Odh7wV1fEC2uqpp29LE/mtime:1776162541/sites/default/files/eventos/eventos/ewa_juszkiewicz._gloriosa.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/7UN2URjcKcdXKbWRMd-787E0cAvLnoLKT_4vj0U_rrk/mtime:1776162787/sites/default/files/eventos/eventos/ewa_juszkiewicz._sin_titulo_segun_joseph_wright_2020.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/9olIxcDfIluEzOi22qNaxJjryw2XQXgnpkYkwxX5No4/mtime:1776162987/sites/default/files/eventos/eventos/ewa_juszkiewicz._sin_titulo_segun_elisabeth_vigee_le_brun_2021.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/BKLQH5kXfmtNA85Ew3pLl5RFXTSystq_rq3zx3eTxOs/mtime:1776163069/sites/default/files/eventos/eventos/ewa_juszkiewicz._joven_con_abanico.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/ewa-juszkiewicz-museo-nacional-thyssen-bornemisza",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "lid": "8f711d13"
+  },
+  "b4decd3e184a8e32": {
+    "title": "DocumentaMadrid 2026",
+    "description": "Certamen internacional dedicado exclusivamente al cine de lo real, con largometrajes y cortometrajes en secciones competitivas. El festival apuesta por el cine documental de autor, la experimentación formal y el pensamiento crítico.",
+    "url": "https://www.documentamadrid.com/",
+    "price": "Consultar página oficial",
+    "image": "images/events/6fa883bc8d61.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/HrufLX1sFN4aZxPwqHinf6I9KiG4vwm7t79waZjPK2o/mtime:1773663266/sites/default/files/eventos/eventos/documentamadrid.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/8IZ-X5Jv-RkNdEBhz3R2gLWdh01t9sRA5CePyDNt5hE/mtime:1747213312/sites/default/files/eventos/eventos/documentamadrid_2025.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/FFTBGa7wYNR0mc97gFSI2tiISx4qibrr-j1M9TFOWzI/mtime:1773663287/sites/default/files/eventos/eventos/documentamadrid_.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/documentamadrid-cineteca-matadero",
+    "source": "esmadrid",
+    "categories": [
+      "talleres",
+      "cine"
+    ],
+    "is_multi_event": true,
+    "lid": "c245fac4"
   }
 }
