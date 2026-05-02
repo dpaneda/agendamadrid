@@ -986,12 +986,12 @@
     "latitude": 40.33393325295466,
     "longitude": -3.6931253996834856
   },
-  "fd6a0baa": {
-    "location_name": "Instalación Deportiva Municipal Básica Frontón Zofio",
-    "address": "CALLE RICARDO BELTRAN Y ROZPIDE 16",
+  "abb1adaa": {
+    "location_name": "Instalación Deportiva Municipal Básica Cerro Blanco",
+    "address": "CALLE ALBARDIN 7",
     "district": "Usera",
-    "latitude": 40.37992590963709,
-    "longitude": -3.7180064038885896
+    "latitude": 40.37976723848226,
+    "longitude": -3.7162665062702196
   },
   "f64a3395": {
     "location_name": "Edificio Sociocultural Marta Escudero Díaz-Tejeiro",
@@ -1648,13 +1648,6 @@
     "latitude": 40.41207900253883,
     "longitude": -3.7108161027466378
   },
-  "5ef64f12": {
-    "location_name": "Biblioteca Pública Municipal Vicálvaro",
-    "address": "CALLE VILLARDONDIEGO 36",
-    "district": "Vicalvaro",
-    "latitude": 40.405283650744316,
-    "longitude": -3.6086278232922804
-  },
   "5014b25f": {
     "location_name": "Biblioteca Pública Municipal Portazgo (Puente de Vallecas)",
     "address": "CALLE CANTALAPIEDRA 11",
@@ -1766,6 +1759,13 @@
     "latitude": 40.43555222953495,
     "longitude": -3.6519351470803567
   },
+  "5ef64f12": {
+    "location_name": "Biblioteca Pública Municipal Vicálvaro",
+    "address": "CALLE VILLARDONDIEGO 36",
+    "district": "Vicalvaro",
+    "latitude": 40.405283650744316,
+    "longitude": -3.6086278232922804
+  },
   "9ac8a0d3": {
     "location_name": "Auditorio al aire libre Berlín",
     "address": "CALLE SAN ERNESTO 10",
@@ -1856,6 +1856,20 @@
     "district": "Usera",
     "latitude": 40.36716919688689,
     "longitude": -3.7136655626692887
+  },
+  "c789714e": {
+    "location_name": "Instalación Deportiva Municipal Básica Evangelios - Almendrales",
+    "address": "CALLE EVANGELIOS 4",
+    "district": "Usera",
+    "latitude": 40.383258382877266,
+    "longitude": -3.7005815819050203
+  },
+  "df055e33": {
+    "location_name": "Parque Lineal del Manzanares (Usera - Pte de Vallecas)",
+    "address": "CAMINO PERALES 47",
+    "district": "Usera",
+    "latitude": 40.379745,
+    "longitude": -3.690042
   },
   "8df15f7b": {
     "location_name": "Centro Cultural Daoíz y Velarde",
@@ -3174,5 +3188,17 @@
     "address": "Distrito de Usera",
     "latitude": 40.3825927,
     "longitude": -3.7098748
+  },
+  "b646f076": {
+    "location_name": "Plaza de Callao",
+    "address": "de Callao",
+    "latitude": 40.42,
+    "longitude": -3.71
+  },
+  "7fa37397": {
+    "location_name": "Campo de Fútbol Fernando Torres",
+    "address": "Camino del Molino, s/n",
+    "latitude": 40.2871621,
+    "longitude": -3.8223884
   }
 }
