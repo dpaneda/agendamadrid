@@ -752,10 +752,6 @@
     "latitude": 40.42741340671151,
     "longitude": -3.7095381101739444
   },
-  "40c9bbca": {
-    "location_name": "Centro Cultural el Torito",
-    "address": "Avenida Moratalaz, 130"
-  },
   "3277bc83": {
     "location_name": "Centro Sociocultural Valverde (Fuencarral - El Pardo)",
     "address": "PLAZA ISLAS AZORES 1",
@@ -1197,12 +1193,12 @@
     "latitude": 40.45867841791346,
     "longitude": -3.7863499043313373
   },
-  "cdf5393b": {
-    "location_name": "Centro Sociocultural Marconi (Villaverde)",
-    "address": "ACCESO COLONIA MARCONI 4",
+  "25ac1ca2": {
+    "location_name": "Centro Sociocultural Santa Petronila (Villaverde)",
+    "address": "CALLE MARIA MARTINEZ OVIOL 12",
     "district": "Villaverde",
-    "latitude": 40.3347558542528,
-    "longitude": -3.7008037217338274
+    "latitude": 40.350886994103284,
+    "longitude": -3.6914981254409645
   },
   "c1ac1c4c": {
     "location_name": "Instalación Deportiva Municipal Básica Parque El Calero",
@@ -1349,6 +1345,13 @@
     "latitude": 40.42739911262292,
     "longitude": -3.710589286287491
   },
+  "cdf5393b": {
+    "location_name": "Centro Sociocultural Marconi (Villaverde)",
+    "address": "ACCESO COLONIA MARCONI 4",
+    "district": "Villaverde",
+    "latitude": 40.3347558542528,
+    "longitude": -3.7008037217338274
+  },
   "cdc2d228": {
     "location_name": "Centro Cultural José Luis Sampedro (Latina)",
     "address": "CALLE CASTROSERNA 4",
@@ -1403,13 +1406,6 @@
     "address": "de Perales, 23",
     "latitude": 40.368838851422,
     "longitude": -3.684443235397
-  },
-  "25ac1ca2": {
-    "location_name": "Centro Sociocultural Santa Petronila (Villaverde)",
-    "address": "CALLE MARIA MARTINEZ OVIOL 12",
-    "district": "Villaverde",
-    "latitude": 40.350886994103284,
-    "longitude": -3.6914981254409645
   },
   "617096fd": {
     "location_name": "Centro Deportivo Municipal Plata y Castañar",
@@ -1884,6 +1880,20 @@
     "district": "Hortaleza",
     "latitude": 40.47571688103069,
     "longitude": -3.64667257750353
+  },
+  "1fcd970e": {
+    "location_name": "Parque Anunciación",
+    "address": "CALLE ANUNCIACION 1",
+    "district": "Retiro",
+    "latitude": 40.41192841997151,
+    "longitude": -3.67583331713166
+  },
+  "a2273ec8": {
+    "location_name": "Parque Roma",
+    "address": "CALLE JUAN ESPLANDIU 4",
+    "district": "Retiro",
+    "latitude": 40.41641041087398,
+    "longitude": -3.662606100328213
   },
   "8df15f7b": {
     "location_name": "Centro Cultural Daoíz y Velarde",
@@ -3280,5 +3290,11 @@
     "address": "Ciudad universitaria de Cantoblanco",
     "latitude": 40.5438425,
     "longitude": -3.7001859
+  },
+  "9e3fb80d": {
+    "location_name": "Madrid Río",
+    "address": "de Segovia, s/n",
+    "latitude": 40.398594542658,
+    "longitude": -3.714752197266
   }
 }
