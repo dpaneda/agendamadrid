@@ -95,7 +95,7 @@ El scraper gana siempre en: imagen, coordenadas, URLs.
 
 ### Modelo y límites
 
-- Modelo: `gemini-3.1-flash-lite-preview`
+- Modelo: `gemini-3.1-flash-lite`
 - Free tier: 500 req/día, 15 req/min
 - Auto-retry en 429 con el retryDelay del servidor
 
