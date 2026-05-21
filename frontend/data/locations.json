@@ -654,12 +654,12 @@
     "latitude": 40.426642215368176,
     "longitude": -3.699722994908341
   },
-  "a75a031b": {
-    "location_name": "Biblioteca Pública Municipal José Hierro (San Blas-Canillejas)",
-    "address": "CALLE MARIA SEVILLA DIAGO 15",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.433291625973624,
-    "longitude": -3.6105662311927453
+  "987eb6c2": {
+    "location_name": "Biblioteca Pública Municipal Francisco Ayala (Vicálvaro)",
+    "address": "BULEVAR INDALECIO PRIETO 21",
+    "district": "Vicalvaro",
+    "latitude": 40.39982891410407,
+    "longitude": -3.621281890570377
   },
   "c919deda": {
     "location_name": "Centro Cultural La Vaguada (Fuencarral - El Pardo)",
@@ -712,6 +712,13 @@
     "district": "VillaDeVallecas",
     "latitude": 40.37790196240434,
     "longitude": -3.6227296605039516
+  },
+  "a75a031b": {
+    "location_name": "Biblioteca Pública Municipal José Hierro (San Blas-Canillejas)",
+    "address": "CALLE MARIA SEVILLA DIAGO 15",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.433291625973624,
+    "longitude": -3.6105662311927453
   },
   "c3c081b3": {
     "location_name": "Biblioteca Pública Municipal Manuel Vázquez Montalbán (Tetuán)",
@@ -1554,13 +1561,6 @@
     "latitude": 40.39597072367931,
     "longitude": -3.7562716852987847
   },
-  "987eb6c2": {
-    "location_name": "Biblioteca Pública Municipal Francisco Ayala (Vicálvaro)",
-    "address": "BULEVAR INDALECIO PRIETO 21",
-    "district": "Vicalvaro",
-    "latitude": 40.39982891410407,
-    "longitude": -3.621281890570377
-  },
   "0f4e1653": {
     "location_name": "Biblioteca Pública Municipal La Elipa (Ciudad Lineal)",
     "address": "CALLE NUESTRA SE&amp;Ntilde;ORA DEL VILLAR 6",
@@ -1755,13 +1755,6 @@
     "latitude": 40.43555222953495,
     "longitude": -3.6519351470803567
   },
-  "5ef64f12": {
-    "location_name": "Biblioteca Pública Municipal Vicálvaro",
-    "address": "CALLE VILLARDONDIEGO 36",
-    "district": "Vicalvaro",
-    "latitude": 40.405283650744316,
-    "longitude": -3.6086278232922804
-  },
   "9ac8a0d3": {
     "location_name": "Auditorio al aire libre Berlín",
     "address": "CALLE SAN ERNESTO 10",
@@ -1803,6 +1796,13 @@
     "district": "Villaverde",
     "latitude": 40.341265820973355,
     "longitude": -3.690416646053115
+  },
+  "5ef64f12": {
+    "location_name": "Biblioteca Pública Municipal Vicálvaro",
+    "address": "CALLE VILLARDONDIEGO 36",
+    "district": "Vicalvaro",
+    "latitude": 40.405283650744316,
+    "longitude": -3.6086278232922804
   },
   "c573f708": {
     "location_name": "Colegio Público Pradolongo",
@@ -1957,6 +1957,20 @@
     "district": "Barajas",
     "latitude": 40.460302151327085,
     "longitude": -3.5912198696737083
+  },
+  "be0f5543": {
+    "location_name": "Templete del Parque del Retiro",
+    "address": "PLAZA MAESTRO VILLA 1",
+    "district": "Retiro",
+    "latitude": 40.41941736281525,
+    "longitude": -3.6850082736557983
+  },
+  "f36e02ba": {
+    "location_name": "Junta Municipal del Distrito de Arganzuela",
+    "address": "PASEO CHOPERA 10",
+    "district": "Arganzuela",
+    "latitude": 40.39307289237465,
+    "longitude": -3.699005654074825
   },
   "8df15f7b": {
     "location_name": "Centro Cultural Daoíz y Velarde",
@@ -3452,5 +3466,27 @@
     "address": "C. de Alejandro Sánchez, 94",
     "latitude": 40.389287,
     "longitude": -3.7182901
+  },
+  "7399986c": {
+    "location_name": "Galileo Galilei",
+    "address": "de Galileo, 100",
+    "latitude": 40.4385159,
+    "longitude": -3.7096388
+  },
+  "5ac9d9d3": {
+    "location_name": "Varias salas de cine de Madrid",
+    "address": "Varias salas de cine de Madrid"
+  },
+  "93934555": {
+    "location_name": "Espacio Próxima Estación",
+    "address": "C. de Aniceto Marinas, 10",
+    "latitude": 40.4210657,
+    "longitude": -3.7218641
+  },
+  "fb2e8450": {
+    "location_name": "Ciudad del Rock de Arganda del Rey",
+    "address": "Autovía A3, km 33",
+    "latitude": 40.259649513099,
+    "longitude": -3.405804634094
   }
 }
