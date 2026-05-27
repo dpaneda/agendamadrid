@@ -713,13 +713,6 @@
     "latitude": 40.37790196240434,
     "longitude": -3.6227296605039516
   },
-  "a75a031b": {
-    "location_name": "Biblioteca Pública Municipal José Hierro (San Blas-Canillejas)",
-    "address": "CALLE MARIA SEVILLA DIAGO 15",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.433291625973624,
-    "longitude": -3.6105662311927453
-  },
   "c3c081b3": {
     "location_name": "Biblioteca Pública Municipal Manuel Vázquez Montalbán (Tetuán)",
     "address": "CALLE FRANCOS RODRIGUEZ 67",
@@ -1129,6 +1122,13 @@
     "district": "Retiro",
     "latitude": 40.41817872037522,
     "longitude": -3.677376337125393
+  },
+  "a75a031b": {
+    "location_name": "Biblioteca Pública Municipal José Hierro (San Blas-Canillejas)",
+    "address": "CALLE MARIA SEVILLA DIAGO 15",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.433291625973624,
+    "longitude": -3.6105662311927453
   },
   "67ae097a": {
     "location_name": "Biblioteca Pública Municipal Gloria Fuertes (Barajas)",
@@ -1895,6 +1895,12 @@
     "latitude": 40.41641041087398,
     "longitude": -3.662606100328213
   },
+  "e0cf7b27": {
+    "location_name": "Centro Cultural Clara del Rey - Museo ABC",
+    "address": "de Amaniel, 29 - 31",
+    "latitude": 40.4274437,
+    "longitude": -3.709624
+  },
   "9e1585dd": {
     "location_name": "Centro Deportivo Municipal José María Cagigal",
     "address": "CALLE SANTA POLA 22",
@@ -2012,6 +2018,20 @@
     "district": "Retiro",
     "latitude": 40.41878362561595,
     "longitude": -3.6866519471003647
+  },
+  "4f8b6f52": {
+    "location_name": "Centro Deportivo Municipal Daoíz y Velarde 1",
+    "address": "PLAZA DAOÍZ Y VELARDE 5",
+    "district": "Retiro",
+    "latitude": 40.40236990974131,
+    "longitude": -3.6772808932293217
+  },
+  "a575e035": {
+    "location_name": "Estadio de Vallecas",
+    "address": "AVENIDA ALBUFERA (Calle Payaso Fofó con Arroyo del Olivar y Avenida de la Albufera) 114",
+    "district": "PuenteDeVallecas",
+    "latitude": 40.39238372729193,
+    "longitude": -3.658212655639298
   },
   "8df15f7b": {
     "location_name": "Centro Cultural Daoíz y Velarde",
@@ -2654,12 +2674,6 @@
     "address": "de la Castellana, 15",
     "latitude": 40.4281099,
     "longitude": -3.6901699
-  },
-  "e0cf7b27": {
-    "location_name": "Centro Cultural Clara del Rey - Museo ABC",
-    "address": "de Amaniel, 29 - 31",
-    "latitude": 40.4281043,
-    "longitude": -3.7097008
   },
   "0316a58d": {
     "location_name": "B the travel brand Xperience Madrid",
@@ -3562,5 +3576,17 @@
     "address": "del Marqués de la Ensenada, 12",
     "latitude": 40.4247384,
     "longitude": -3.6921936
+  },
+  "09300f2e": {
+    "location_name": "Plaza de Pedro Zerolo, Plaza del Rey, Puerta del Sol y Plaza de España",
+    "address": "Plaza de Pedro Zerolo, Plaza del Rey, Puerta del Sol, Plaza de España.",
+    "latitude": 40.421044233242,
+    "longitude": -3.699442454971
+  },
+  "2c0dd596": {
+    "location_name": "Parque de la Bombilla",
+    "address": "de Valladolid, 4",
+    "latitude": 40.426695505753,
+    "longitude": -3.726253509522
   }
 }
