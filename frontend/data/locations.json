@@ -671,13 +671,6 @@
   "b9c0fd14": {
     "location_name": "Biblioteca Iván de Vargas"
   },
-  "35584e1c": {
-    "location_name": "Centro Cultural Zazuar (Villa de Vallecas)",
-    "address": "CALLE ZAZUAR 4",
-    "district": "VillaDeVallecas",
-    "latitude": 40.38281866921273,
-    "longitude": -3.6061377076487906
-  },
   "5157a47e": {
     "location_name": "Centro Cultural Carril del Conde (Hortaleza)",
     "address": "CALLE CARRIL DEL CONDE 57",
@@ -1079,6 +1072,13 @@
   "24d8cdc0": {
     "location_name": "Monumento Pío Baroja",
     "address": "Cuesta de Moyano, Madrid"
+  },
+  "35584e1c": {
+    "location_name": "Centro Cultural Zazuar (Villa de Vallecas)",
+    "address": "CALLE ZAZUAR 4",
+    "district": "VillaDeVallecas",
+    "latitude": 40.38281866921273,
+    "longitude": -3.6061377076487906
   },
   "843f1859": {
     "location_name": "Espacio de lectura Parque del Oeste  (Moncloa-Aravaca)",
@@ -2032,6 +2032,13 @@
     "district": "PuenteDeVallecas",
     "latitude": 40.39238372729193,
     "longitude": -3.658212655639298
+  },
+  "bb2b8697": {
+    "location_name": "Colegio Público Pío XII",
+    "address": "CALLE DELFIN 2",
+    "district": "Tetuan",
+    "latitude": 40.46693859499291,
+    "longitude": -3.693889291907082
   },
   "8df15f7b": {
     "location_name": "Centro Cultural Daoíz y Velarde",
@@ -3588,5 +3595,17 @@
     "address": "de Valladolid, 4",
     "latitude": 40.426695505753,
     "longitude": -3.726253509522
+  },
+  "d42bd9e0": {
+    "location_name": "Estación de Príncipe Pío",
+    "address": "de La Florida, 2",
+    "latitude": 40.4217163,
+    "longitude": -3.7201867
+  },
+  "e8388aa7": {
+    "location_name": "Fundación Pons",
+    "address": "de Serrano, 138",
+    "latitude": 40.4410046,
+    "longitude": -3.6856776
   }
 }
