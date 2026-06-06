@@ -11,6 +11,7 @@ from datetime import date, timedelta
 FRONTEND_DIR = os.path.join(os.path.dirname(__file__), "..", "frontend")
 EVENTS_PATH = os.path.join(FRONTEND_DIR, "data", "events.json")
 CALENDAR_PATH = os.path.join(FRONTEND_DIR, "data", "calendar.json")
+LOCATIONS_PATH = os.path.join(FRONTEND_DIR, "data", "locations.json")
 INDEX_PATH = os.path.join(FRONTEND_DIR, "index.html")
 BASE_URL = "https://agendamadrid.es"
 
@@ -233,6 +234,16 @@ def run():
         events = json.load(f)
     with open(CALENDAR_PATH) as f:
         calendar = json.load(f)
+    with open(LOCATIONS_PATH) as f:
+        locations = json.load(f)
+
+    # Resolve canonical venue (location_name, coords, address) back onto events
+    # so the JSON-LD and prerender include the real place, not just "Madrid".
+    for ev in events.values():
+        loc = locations.get(ev.get("lid"))
+        if loc:
+            for k, v in loc.items():
+                ev.setdefault(k, v)
 
     # Read template BEFORE injecting today (idempotent: regex replaces between markers)
     with open(INDEX_PATH) as f:

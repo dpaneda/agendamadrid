@@ -19,6 +19,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 from crawlers.base import make_event_id
 from crawlers.categories import normalize, CATEGORIES
 from crawlers.generate_seo import run as generate_seo
+from crawlers.venues import canonicalize as canonicalize_venues
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "frontend", "data")
 SOURCES_DIR = os.path.join(os.path.dirname(__file__), "data", "sources")
@@ -257,18 +258,26 @@ def run():
     events = {eid: ev for eid, ev in events.items() if eid in live_ids}
     print(f"Pruned {dropped} events without calendar entries (kept {len(events)})")
 
-    # Extract locations
-    locations = {}
+    # Extract + canonicalize locations (cluster same-building name/coord variants)
+    venue_recs = {}
     for ev in events.values():
         loc_name = (ev.get("location_name") or "").strip()
         if not loc_name:
             continue
-        lid = hashlib.sha256(loc_name.lower().encode()).hexdigest()[:8]
-        if lid not in locations:
-            locations[lid] = {k: ev[k] for k in LOC_FIELDS if ev.get(k) is not None}
-        ev["lid"] = lid
-        for k in LOC_FIELDS:
-            ev.pop(k, None)
+        r = venue_recs.setdefault(
+            loc_name, {"rec": {k: ev.get(k) for k in LOC_FIELDS if ev.get(k) is not None}, "count": 0})
+        r["count"] += 1
+
+    name_to_lid, locations = canonicalize_venues(venue_recs)
+
+    for ev in events.values():
+        loc_name = (ev.get("location_name") or "").strip()
+        lid = name_to_lid.get(loc_name) if loc_name else None
+        if lid:
+            ev["lid"] = lid
+            for k in LOC_FIELDS:
+                ev.pop(k, None)
+        # else: not a canonical venue -> keep location fields inline on the event
 
     os.makedirs(DATA_DIR, exist_ok=True)
     with open(EVENTS_PATH, "w") as f:
