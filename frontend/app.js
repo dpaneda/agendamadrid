@@ -417,7 +417,7 @@ function changeDay(delta) {
 function syncPicker() {
   if (picker) picker.setDate(selectedDate, false);
   const di = document.getElementById("date-input");
-  if (di) di.value = selectedDate.toISOString().split("T")[0];
+  if (di) di.value = dateStr(selectedDate);
 }
 
 async function init() {
@@ -439,7 +439,7 @@ async function init() {
     });
   } else {
     dateInput.type = "date";
-    dateInput.value = selectedDate.toISOString().split("T")[0];
+    dateInput.value = dateStr(selectedDate);
     dateInput.style.position = "absolute";
     dateInput.style.opacity = "0";
     dateInput.style.width = "100%";
@@ -785,7 +785,7 @@ function renderMap() {
     const evRows = [...uniqueEvs.values()].map(ev => {
       const time = ev.start_time ? ev.start_time.slice(0, 5) : "";
       const titleHtml = ev.url
-        ? `<a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.title)}</a>`
+        ? `<a href="${esc(safeUrl(ev.url))}" target="_blank" rel="noopener">${esc(ev.title)}</a>`
         : esc(ev.title);
       return `<div class="popup-event">
         <div class="popup-title">${time ? `<span class="popup-time">${esc(time)}</span> ` : ""}${titleHtml}</div>
@@ -1101,7 +1101,7 @@ function _eventCommon(ev) {
 
 function _wrapCard(ev, cardContent) {
   if (ev.url) {
-    return `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="event-card event-card-link" data-eid="${esc(ev.id)}">${cardContent}</a>`;
+    return `<a href="${esc(safeUrl(ev.url))}" target="_blank" rel="noopener" class="event-card event-card-link" data-eid="${esc(ev.id)}">${cardContent}</a>`;
   }
   return `<div class="event-card" data-eid="${esc(ev.id)}">${cardContent}</div>`;
 }
@@ -1117,7 +1117,7 @@ function renderEventDesktop(ev) {
     const label = SOURCE_LABELS[mainSource] || mainSource;
     const sourceUrl = ev.source_url || "";
     if (sourceUrl) {
-      return `<span class="tag tag-source tag-link" onclick="event.preventDefault(); event.stopPropagation(); window.open('${esc(sourceUrl)}', '_blank')">${esc(label)}</span>`;
+      return `<span class="tag tag-source tag-link" onclick="event.preventDefault(); event.stopPropagation(); window.open('${esc(safeUrl(sourceUrl))}', '_blank')">${esc(label)}</span>`;
     }
     return `<span class="tag tag-source">${esc(label)}</span>`;
   })() : "";
@@ -1130,7 +1130,7 @@ function renderEventDesktop(ev) {
     <button class="ev-action ev-seen${isSeen ? ' active' : ''}" data-id="${esc(ev.id)}" data-action="seen" title="Visto"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></button>
     <button class="ev-action ev-dismiss${isDismissed ? ' active' : ''}" data-id="${esc(ev.id)}" data-action="dismiss" title="Ocultar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
   </span>`;
-  const thumbHtml = imgSrc ? `<img class="event-thumb" src="${esc(imgSrc)}" alt="" loading="lazy" />` : "";
+  const thumbHtml = imgSrc ? `<img class="event-thumb" src="${esc(safeUrl(imgSrc))}" alt="" loading="lazy" />` : "";
 
   const headerHtml = `<div class="event-header">${timeStr ? `<span class="event-time">${esc(timeStr)}</span>` : ""}${badges ? `<div class="event-tags">${badges}</div>` : ""}</div>`;
   const bodyHtml = `
@@ -1155,7 +1155,7 @@ function renderEventMobile(ev) {
     : "";
   const { priceBadge, catBadge } = eventBadges(ev, "tag");
   const badges = priceBadge + catBadge;
-  const thumbHtml = imgSrc ? `<img class="event-thumb" src="${esc(imgSrc)}" alt="" loading="lazy" />` : "";
+  const thumbHtml = imgSrc ? `<img class="event-thumb" src="${esc(safeUrl(imgSrc))}" alt="" loading="lazy" />` : "";
 
   const isSeen = UserData.has("seen", ev.id);
   const isDismissed = UserData.has("dismissed", ev.id);
@@ -1612,7 +1612,18 @@ function decodeEntities(s) {
 function esc(s) {
   const el = document.createElement("span");
   el.textContent = decodeEntities(s);
-  return el.innerHTML.replace(/'/g, "&#39;");
+  return el.innerHTML.replace(/'/g, "&#39;").replace(/"/g, "&quot;");
+}
+
+// Only allow http(s) URLs; reject javascript:, data:, etc. from scraped data.
+function safeUrl(u) {
+  if (!u) return "";
+  try {
+    const parsed = new URL(u, location.href);
+    return /^https?:$/.test(parsed.protocol) ? u : "";
+  } catch {
+    return "";
+  }
 }
 
 init();
@@ -1731,7 +1742,7 @@ function _swipeCardInner(ev, pos, total) {
   const hasImage = !!imageUrl;
   return `
     ${hasImage
-      ? `<img class="swipe-card-img" src="${esc(imageUrl)}" alt="" loading="eager">`
+      ? `<img class="swipe-card-img" src="${esc(safeUrl(imageUrl))}" alt="" loading="eager">`
       : `<div class="swipe-card-bg" style="background:linear-gradient(160deg,${color}cc 0%,${color}66 45%,${color}22 75%,#1a1a2e 100%)"></div>`}
     ${hasImage
       ? ``
@@ -1750,7 +1761,7 @@ function _swipeCardInner(ev, pos, total) {
       </div>
       ${ev.description ? `<p class="swipe-info-desc">${esc(ev.description)}</p>` : ""}
     </div>
-    ${ev.url ? `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="swipe-info-link" onclick="event.stopPropagation()">Ver más info</a>` : ""}
+    ${ev.url ? `<a href="${esc(safeUrl(ev.url))}" target="_blank" rel="noopener" class="swipe-info-link" onclick="event.stopPropagation()">Ver más info</a>` : ""}
     <div class="swipe-overlay swipe-overlay-right"><span>❤️</span><span>Favorito</span></div>
     <div class="swipe-overlay swipe-overlay-left"><span>✕</span><span>Ocultar</span></div>
     <div class="swipe-overlay swipe-overlay-up"><span>→</span><span>Saltar</span></div>`;

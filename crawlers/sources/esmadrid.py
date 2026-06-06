@@ -413,7 +413,7 @@ def _parse_event_page(url):
         "source_url": url,
         "source": "esmadrid",
         "categories": normalize(categories),
-        "open_days": open_days,
+        "open_days": sorted(open_days) if open_days else open_days,
         "schedule": schedule,
     }
 

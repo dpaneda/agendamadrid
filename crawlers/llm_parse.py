@@ -9,7 +9,7 @@ import os
 import sys
 
 import requests
-from crawlers.llm_enrich import PROMPT, _clean_html, _get_client, _model
+from crawlers.llm_enrich import PROMPT, _clean_html, _get_client, _MODELS
 
 import re
 
@@ -32,7 +32,7 @@ def fetch_and_parse(url, api_key=None):
     print(f"Content: {len(text)} chars")
 
     response = client.models.generate_content(
-        model=_model,
+        model=_MODELS[0].strip(),
         contents=PROMPT + text,
     )
 
