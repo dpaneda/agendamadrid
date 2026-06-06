@@ -911,31 +911,32 @@ function _getDayEvents(ds) {
   return _applyHidePast(events, ds);
 }
 
-function getFilteredDayEvents() {
-  const selectedDateStr = dateStr(selectedDate);
-  let filtered = _getDayEvents(selectedDateStr);
-
+// Apply the active user/location/source/search filters to a list of events.
+// Shared by getEventsForDate() and getFilteredDayEvents().
+function _applyListFilters(events) {
   if (activeUserFilter === "favorites") {
-    filtered = filtered.filter(ev => UserData.has("favorites", ev.id));
+    events = events.filter(ev => UserData.has("favorites", ev.id));
   } else if (activeUserFilter === "seen") {
-    filtered = filtered.filter(ev => UserData.has("seen", ev.id));
+    events = events.filter(ev => UserData.has("seen", ev.id));
   } else if (activeUserFilter === "dismissed") {
-    filtered = filtered.filter(ev => UserData.has("dismissed", ev.id));
+    events = events.filter(ev => UserData.has("dismissed", ev.id));
   } else {
-    filtered = filtered.filter(ev => !UserData.has("dismissed", ev.id) && !UserData.has("seen", ev.id));
+    events = events.filter(ev => !UserData.has("dismissed", ev.id) && !UserData.has("seen", ev.id));
   }
-
   if (activeLocation) {
-    filtered = filtered.filter(ev => (ev.location_name || ev.location || "") === activeLocation);
+    events = events.filter(ev => (ev.location_name || ev.location || "") === activeLocation);
   }
-
   if (activeSource) {
-    filtered = filtered.filter(ev => (ev.source || "").split(",").includes(activeSource));
+    events = events.filter(ev => (ev.source || "").split(",").includes(activeSource));
   }
-
   if (activeSearch) {
-    filtered = filtered.filter(matchesSearch);
+    events = events.filter(matchesSearch);
   }
+  return events;
+}
+
+function getFilteredDayEvents() {
+  let filtered = getEventsForDate(dateStr(selectedDate));
 
   if (activeSort === "precio") {
     filtered.sort((a, b) => {
@@ -1115,7 +1116,7 @@ function renderEventDesktop(ev) {
     const label = SOURCE_LABELS[mainSource] || mainSource;
     const sourceUrl = ev.source_url || "";
     if (sourceUrl) {
-      return `<span class="tag tag-source tag-link" onclick="event.preventDefault(); event.stopPropagation(); window.open('${esc(safeUrl(sourceUrl))}', '_blank')">${esc(label)}</span>`;
+      return `<span class="tag tag-source tag-link" role="button" tabindex="0" aria-label="Ver en ${esc(label)} (abre en nueva pestaña)" onclick="event.preventDefault(); event.stopPropagation(); window.open('${esc(safeUrl(sourceUrl))}', '_blank')">${esc(label)}</span>`;
     }
     return `<span class="tag tag-source">${esc(label)}</span>`;
   })() : "";
@@ -1191,46 +1192,25 @@ function renderActiveFilters() {
   const parts = [];
   if (activeUserFilter) {
     const labels = { favorites: "Favoritos ♥", seen: "Vistos ✓", dismissed: "Ocultos ✕" };
-    parts.push(`<span class="tag tag-active" onclick="goToUserFilter('')">${labels[activeUserFilter] || activeUserFilter} ✕</span>`);
+    parts.push(`<span class="tag tag-active" role="button" tabindex="0" onclick="goToUserFilter('')">${labels[activeUserFilter] || activeUserFilter} ✕</span>`);
   }
   if (activeLocation) {
-    parts.push(`<span class="tag tag-active" onclick="toggleLocation('${esc(activeLocation)}')">📍 ${esc(activeLocation)} ✕</span>`);
+    parts.push(`<span class="tag tag-active" role="button" tabindex="0" onclick="toggleLocation('${esc(activeLocation)}')">📍 ${esc(activeLocation)} ✕</span>`);
   }
   activeCatFilter.forEach(c => {
     const info = CAT_ICONS[c] || { emoji: "📍" };
-    parts.push(`<span class="tag tag-active" onclick="toggleActiveCat('${esc(c)}')">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)} ✕</span>`);
+    parts.push(`<span class="tag tag-active" role="button" tabindex="0" onclick="toggleActiveCat('${esc(c)}')">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)} ✕</span>`);
   });
   activeTagFilter.forEach(t => {
     const info = CAT_ICONS[t] || { emoji: "📍" };
-    parts.push(`<span class="tag tag-active" onclick="toggleActiveTag('${esc(t)}')">${info.emoji} ${esc(CATEGORY_LABELS[t] || t)} ✕</span>`);
+    parts.push(`<span class="tag tag-active" role="button" tabindex="0" onclick="toggleActiveTag('${esc(t)}')">${info.emoji} ${esc(CATEGORY_LABELS[t] || t)} ✕</span>`);
   });
   container.innerHTML = parts.join("");
   updateFilterBadge();
 }
 
 function getEventsForDate(ds) {
-  let events = _getDayEvents(ds);
-
-  if (activeUserFilter === "favorites") {
-    events = events.filter(ev => UserData.has("favorites", ev.id));
-  } else if (activeUserFilter === "seen") {
-    events = events.filter(ev => UserData.has("seen", ev.id));
-  } else if (activeUserFilter === "dismissed") {
-    events = events.filter(ev => UserData.has("dismissed", ev.id));
-  } else {
-    events = events.filter(ev => !UserData.has("dismissed", ev.id) && !UserData.has("seen", ev.id));
-  }
-
-  if (activeLocation) {
-    events = events.filter(ev => (ev.location_name || ev.location || "") === activeLocation);
-  }
-  if (activeSource) {
-    events = events.filter(ev => (ev.source || "").split(",").includes(activeSource));
-  }
-  if (activeSearch) {
-    events = events.filter(matchesSearch);
-  }
-  return events;
+  return _applyListFilters(_getDayEvents(ds));
 }
 
 function renderCalendar() {
@@ -1277,7 +1257,7 @@ function renderCalendar() {
 
     const intensity = count === 0 ? "" : count < 5 ? " cal-low" : count < 20 ? " cal-med" : count < 50 ? " cal-high" : " cal-max";
 
-    html += `<div class="${classes}${intensity}" onclick="calDayClick('${ds}')">
+    html += `<div class="${classes}${intensity}" role="button" tabindex="0" aria-label="${ds}, ${count} eventos" onclick="calDayClick('${ds}')">
       <span class="cal-day-num">${day}</span>
       ${count > 0 ? `<span class="cal-count">${count}</span>` : ""}
     </div>`;
@@ -1347,22 +1327,11 @@ function renderUserView() {
   const tagCats = TAG_ORDER;
   const excludedCats = Settings.get("excludedCats", []);
 
-  function catGrid(cats) {
-    return cats.map(c => {
-      const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
-      const active = !excludedCats.includes(c);
-      return `<button class="cat-circle${active ? " active" : ""}" onclick="toggleCatPref('${esc(c)}')">
-        <span class="cat-circle-icon">${info.emoji}</span>
-        <span class="cat-circle-label">${esc(CATEGORY_LABELS[c] || c)}</span>
-      </button>`;
-    }).join("");
-  }
-
   function chipList(cats) {
     return cats.map(c => {
       const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
       const active = !excludedCats.includes(c);
-      return `<button class="cat-chip${active ? " active" : ""}" onclick="toggleCatPref('${esc(c)}')">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</button>`;
+      return `<button class="cat-chip${active ? " active" : ""}" aria-pressed="${active}" onclick="toggleCatPref('${esc(c)}')">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</button>`;
     }).join("");
   }
 
@@ -1433,9 +1402,10 @@ function renderUserView() {
 }
 
 function showConfirm(msg, onConfirm) {
+  const prevFocus = document.activeElement;
   const overlay = document.createElement("div");
   overlay.className = "confirm-overlay";
-  overlay.innerHTML = `<div class="confirm-dialog">
+  overlay.innerHTML = `<div class="confirm-dialog" role="dialog" aria-modal="true">
     <p>${msg}</p>
     <div class="confirm-actions">
       <button class="confirm-cancel">Cancelar</button>
@@ -1444,10 +1414,15 @@ function showConfirm(msg, onConfirm) {
   </div>`;
   document.body.appendChild(overlay);
   requestAnimationFrame(() => overlay.classList.add("visible"));
-  const close = () => { overlay.classList.remove("visible"); setTimeout(() => overlay.remove(), 200); };
+  const close = () => {
+    overlay.classList.remove("visible");
+    setTimeout(() => overlay.remove(), 200);
+    if (prevFocus && prevFocus.focus) prevFocus.focus();
+  };
   overlay.querySelector(".confirm-cancel").onclick = close;
   overlay.querySelector(".confirm-ok").onclick = () => { close(); onConfirm(); };
   overlay.addEventListener("click", e => { if (e.target === overlay) close(); });
+  overlay.querySelector(".confirm-ok").focus();
 }
 
 function resetUserData() {
@@ -1552,6 +1527,9 @@ function toggleFilterPanel() {
   const panel = document.createElement("div");
   panel.id = "filter-panel";
   panel.className = "filter-panel";
+  panel.setAttribute("role", "dialog");
+  panel.setAttribute("aria-modal", "true");
+  panel.setAttribute("aria-label", "Filtros");
   renderFilterPanelContent(panel);
   overlay.appendChild(panel);
   document.body.appendChild(overlay);
@@ -1633,6 +1611,23 @@ if ("serviceWorker" in navigator) {
   );
   caches.keys().then((keys) => keys.forEach((k) => caches.delete(k)));
 }
+
+// Keyboard accessibility: activate role=button elements with Enter/Space,
+// and close open overlays with Escape.
+document.addEventListener("keydown", (e) => {
+  const t = e.target;
+  if ((e.key === "Enter" || e.key === " ") && t && t.getAttribute && t.getAttribute("role") === "button") {
+    e.preventDefault();
+    t.click();
+    return;
+  }
+  if (e.key === "Escape") {
+    const fo = document.getElementById("filter-overlay");
+    if (fo) { fo.remove(); return; }
+    const co = document.querySelector(".confirm-overlay.visible .confirm-cancel");
+    if (co) co.click();
+  }
+});
 
 // ==============================
 // SWIPE VIEW (Mix / Tinder mode)
