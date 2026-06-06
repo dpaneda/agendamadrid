@@ -249,6 +249,14 @@ def run():
 
     calendar = dict(sorted((k, v) for k, v in calendar.items() if today <= k <= max_date))
 
+    # Keep only events with at least one calendar entry in the window. Sources
+    # accumulate past events forever; without this, events.json grows unbounded
+    # and global search surfaces thousands of expired ("sin fecha") events.
+    live_ids = {e["event_id"] for entries in calendar.values() for e in entries}
+    dropped = sum(1 for eid in events if eid not in live_ids)
+    events = {eid: ev for eid, ev in events.items() if eid in live_ids}
+    print(f"Pruned {dropped} events without calendar entries (kept {len(events)})")
+
     # Extract locations
     locations = {}
     for ev in events.values():
