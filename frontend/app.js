@@ -290,7 +290,6 @@ const CATEGORY_LABELS = {
   "destacado": "destacado",
   "fotografía": "fotografía",
   "gastronomía": "gastronomía",
-  "literatura": "literatura",
   "mercados": "mercados",
   "fiestas": "fiestas",
   "musicales": "musicales",
@@ -716,7 +715,6 @@ const CAT_ICONS = {
   destacado:       { emoji: "⭐", color: "#EAB308" },
   "fotografía":    { emoji: "📷", color: "#6B7280" },
   "gastronomía":   { emoji: "🍽️", color: "#EA580C" },
-  literatura:      { emoji: "📖", color: "#7C2D12" },
   mercados:        { emoji: "🛒", color: "#15803D" },
   fiestas:         { emoji: "🎉", color: "#DC2626" },
   musicales:       { emoji: "🎶", color: "#7C3AED" },
@@ -724,7 +722,7 @@ const CAT_ICONS = {
   magia:           { emoji: "🪄", color: "#7C3AED" },
   // Legacy aliases
   musica:          { emoji: "🎵", color: "#7C3AED" },
-  fotografia:      { emoji: "🏛️", color: "#0891B2" },
+  fotografia:      { emoji: "📷", color: "#6B7280" },
 };
 
 
