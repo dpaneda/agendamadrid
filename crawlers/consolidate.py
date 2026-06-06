@@ -8,9 +8,13 @@ Usage:
 """
 
 import hashlib
+import html
 import json
 import os
+import re
 import sys
+import unicodedata
+from collections import defaultdict
 from datetime import datetime, timedelta, UTC
 from glob import glob
 
@@ -66,6 +70,91 @@ def merge_event(existing, new):
     base["source"] = ",".join(sorted(sources))
 
     return base
+
+
+_TYPE_PREFIX = re.compile(
+    r"^(teatro|concierto|conferencia|exposicion|taller|cine|musica)\s*[:.\-]\s*")
+
+
+def dedup_title_key(title):
+    """Normalized title for cross-source matching: strip accents, type prefixes,
+    punctuation. Two sources name the same event differently; this collapses them."""
+    t = "".join(c for c in unicodedata.normalize("NFD", html.unescape(title or "").lower())
+                if unicodedata.category(c) != "Mn")
+    t = _TYPE_PREFIX.sub("", t)
+    t = re.sub(r"[^a-z0-9 ]", " ", t)
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def dedup_cross_source(events, calendar):
+    """Merge events that are the same real event arriving from different sources.
+
+    Two events are merged only when ALL hold: same normalized title, same
+    canonical venue (lid) and at least one shared calendar date. Mutates events
+    and calendar in place; returns the {dropped_id: canonical_id} remap.
+    """
+    dates = defaultdict(set)
+    for ds, entries in calendar.items():
+        for e in entries:
+            dates[e["event_id"]].add(ds)
+
+    groups = defaultdict(list)
+    for eid, ev in events.items():
+        lid = ev.get("lid")
+        if lid:
+            groups[(dedup_title_key(ev.get("title", "")), lid)].append(eid)
+
+    remap = {}
+    for ids in groups.values():
+        if len(ids) < 2:
+            continue
+        # union-find: merge ids whose date sets overlap (transitively)
+        parent = {i: i for i in ids}
+        def find(x):
+            while parent[x] != x:
+                parent[x] = parent[parent[x]]; x = parent[x]
+            return x
+        for i in range(len(ids)):
+            for j in range(i + 1, len(ids)):
+                if dates[ids[i]] & dates[ids[j]]:
+                    parent[find(ids[i])] = find(ids[j])
+        clusters = defaultdict(list)
+        for i in ids:
+            clusters[find(i)].append(i)
+        for members in clusters.values():
+            if len(members) < 2:
+                continue
+            # canonical = richest, then most dates, then stable by id
+            canon = max(members, key=lambda e: (richness(events[e]), len(dates[e]), e))
+            for other in members:
+                if other == canon:
+                    continue
+                events[canon] = merge_event(events[canon], events[other])
+                events[canon]["lid"] = events[canon].get("lid") or events[other].get("lid")
+                remap[other] = canon
+
+    if not remap:
+        return remap
+
+    # Drop merged events and remap their calendar entries onto the canonical id
+    for d in remap:
+        events.pop(d, None)
+    for ds, entries in calendar.items():
+        merged, seen = [], {}
+        for e in entries:
+            eid = remap.get(e["event_id"], e["event_id"])
+            key = (eid, e.get("start_time", ""))
+            if key in seen:
+                if e.get("end_time") and not seen[key].get("end_time"):
+                    seen[key]["end_time"] = e["end_time"]
+                continue
+            entry = {**e, "event_id": eid}
+            seen[key] = entry
+            merged.append(entry)
+        calendar[ds] = merged
+
+    print(f"Cross-source dedup: merged {len(remap)} duplicate event(s)")
+    return remap
 
 
 def cal_entries_for_date(ev, eid, ds):
@@ -278,6 +367,9 @@ def run():
             for k in LOC_FIELDS:
                 ev.pop(k, None)
         # else: not a canonical venue -> keep location fields inline on the event
+
+    # Cross-source dedup: same title + same venue + overlapping date -> one event
+    dedup_cross_source(events, calendar)
 
     os.makedirs(DATA_DIR, exist_ok=True)
     with open(EVENTS_PATH, "w") as f:

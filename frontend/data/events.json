@@ -2394,17 +2394,6 @@
     "price": "Gratis",
     "lid": "c2271205"
   },
-  "9f716d1c21342e9a": {
-    "title": "Echo (Every Cold-Hearted Oxygen)",
-    "start_time": "19:30:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=57e4b4d724339910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "teatro"
-    ],
-    "description": "Obra teatral escrita y dirigida por Nassim Soleimanpour.",
-    "lid": "12aed782"
-  },
   "fbbf9f1178d6705d": {
     "title": "Niño de Elche y Paul B. Preciado",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=4cfd52a730d87910VgnVCM1000001d4a900aRCRD",
@@ -5407,19 +5396,6 @@
       "talleres"
     ],
     "lid": "95a62894"
-  },
-  "aa8885d22a3fcc95": {
-    "title": "Exposición: Madrid entre épocas",
-    "description": "Del 30 de abril al 04 de octubre de 2026, de martes a domingo de 10:00 a 20:00 horas. Entrada gratuita y cartelas en inglés disponibles.",
-    "start_time": "10:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=4919737c2261e910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "exposiciones",
-      "gratis"
-    ],
-    "price": "gratis",
-    "lid": "303984c9"
   },
   "da330d9fc101b88d": {
     "title": "Investigactiva: Imanes, Dinosaurios y Naturaleza",
@@ -9823,20 +9799,6 @@
     "description": "Sesión reflexiva impartida por Josune Sendino sobre los procesos de duelo y la transformación personal. Un espacio para abordar estos temas desde una perspectiva profunda y compartida.",
     "lid": "1d11f16a"
   },
-  "bc80f945b2e319eb": {
-    "title": "Presentación del libro 'Mofletes Contentos' de Ana Mendiola Lozano",
-    "start_time": "11:30:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d6b7484b7096e910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "conferencias",
-      "literatura",
-      "infantil",
-      "gratis"
-    ],
-    "description": "Evento de presentación literaria que incluye una actividad de manualidades para los asistentes. Una oportunidad ideal para conocer la obra y disfrutar en familia.",
-    "lid": "439b2cee"
-  },
   "7159fa0d88a19dd6": {
     "title": "Presentación de la obra 'Vive como quieras' de May González Marqués",
     "start_time": "18:00:00",
@@ -12602,7 +12564,9 @@
     "categories": [
       "talleres",
       "literatura",
-      "gratis"
+      "gratis",
+      "conferencias",
+      "infantil"
     ],
     "description": "Presentación literaria que incluye una actividad de manualidades para los asistentes. Obra escrita por Ana Mendiola Lozano.",
     "price": "gratis",
@@ -14379,19 +14343,6 @@
     ],
     "price": "gratis",
     "lid": "5651c399"
-  },
-  "b43de2dc1c58136b": {
-    "title": "Concierto de la Coral Polifónica La Montaña",
-    "description": "Recital coral interpretado por la agrupación La Montaña en el Centro Cultural El Torito. Un encuentro dedicado a la música polifónica.",
-    "start_time": "19:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c94a0e07d3d8e910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "conciertos",
-      "gratis"
-    ],
-    "price": "gratis",
-    "lid": "40c9bbca"
   },
   "43808a685c2e4f49": {
     "title": "Concierto conjunto: Coral Ntra. Sra. de Moratalaz y Sagrada Familia",
@@ -20201,7 +20152,7 @@
       "https://estaticos.esmadrid.com/cdn/farfuture/giz3dwl23gkbTpsYQj5iWOd5DllBYzqYTnXbBBpoY6w/mtime:1765811067/sites/default/files/eventos/eventos/echo-every-cold-hearted-oxygen-3.jpg"
     ],
     "source_url": "https://www.esmadrid.com/agenda/echo-every-cold-hearted-oxygen-conde-duque",
-    "source": "esmadrid",
+    "source": "esmadrid,madrid_agenda",
     "categories": [
       "teatro"
     ],
@@ -20704,10 +20655,11 @@
       "https://estaticos.esmadrid.com/cdn/farfuture/GucUhe7N-FwUnnS5NVrfiPobA5ENCtFDYDZbMNYLJnI/mtime:1778496902/sites/default/files/eventos/eventos/hotel_roma.png"
     ],
     "source_url": "https://www.esmadrid.com/agenda/madrid-epocas-museo-historia",
-    "source": "esmadrid",
+    "source": "esmadrid,madrid_agenda",
     "categories": [
       "exposiciones",
-      "fotografía"
+      "fotografía",
+      "gratis"
     ],
     "lid": "303984c9"
   },
