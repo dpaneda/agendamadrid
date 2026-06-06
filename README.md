@@ -22,8 +22,6 @@ frontend/              Sitio web (lo que se despliega)
   index.html
   style.css
   app.js
-  sw.js                Service worker (PWA)
-  manifest.json        Manifiesto PWA
   info.html            Pagina de informacion
   data/
     events.json        Eventos unicos (dict por ID)
@@ -35,10 +33,10 @@ frontend/              Sitio web (lo que se despliega)
 crawlers/              Recogida de datos
   sources/             Un modulo por fuente de datos
     esmadrid.py        Scraping de esmadrid.com (14 dias, paralelo)
-    madrid_datos.py    API JSON-LD de datos.madrid.es
-  build_data.py        Script principal: ejecuta crawlers y genera los JSON
+    madrid_agenda.py   API JSON-LD de datos.madrid.es
+  build_data.py        Ejecuta los crawlers (con --consolidate solo consolida)
   consolidate.py       Deduplicacion y merge de eventos de todas las fuentes
-  categories.py        18 categorias canonicas + 4 tags modificadores
+  categories.py        8 categorias canonicas + 19 tags modificadores
   base.py              Clase base para crawlers
   runner.py            Descubrimiento automatico de crawlers
   download_images.py   Descarga y redimensionado de imagenes
@@ -60,10 +58,10 @@ tests/                 Tests con pytest
 # Instalar dependencias de los crawlers
 pip install -r crawlers/requirements.txt
 
-# Generar datos (pipeline completo)
+# Ejecutar los crawlers (descarga eventos a crawlers/data/sources/)
 python crawlers/build_data.py
 
-# Solo consolidar (sin crawlear)
+# Consolidar: genera frontend/data/*.json + SEO (no crawlea)
 python crawlers/build_data.py --consolidate
 
 # Descargar imagenes
@@ -84,7 +82,7 @@ pytest tests/
 | Fuente | Descripcion |
 |--------|-------------|
 | `esmadrid` | [esmadrid.com](https://www.esmadrid.com/agenda) — scraping diario por busqueda + JSON-LD, 14 dias, ~470 eventos |
-| `madrid_datos` | [datos.madrid.es](https://datos.madrid.es) — agenda general de actividades, API JSON-LD, ~1200 eventos |
+| `madrid_agenda` | [datos.madrid.es](https://datos.madrid.es) — agenda general de actividades, API JSON-LD, ~1200 eventos |
 
 ## Añadir una fuente nueva
 
@@ -100,7 +98,6 @@ Cada evento debe tener al menos `title`, `start_date`, `source` y `categories`.
 - Leaflet.js para mapa (OpenStreetMap, sin API key)
 - Flatpickr para selector de fecha
 - Firebase opcional para sync de favoritos/vistos entre dispositivos
-- PWA (service worker + manifest)
 - Vista lista + vista mapa
 - Filtros: categorias, gratis, localizacion, fuente, ordenar por hora/precio/distancia
 - Paginas pre-renderizadas por fecha para SEO y compartir en redes

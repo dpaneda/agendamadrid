@@ -22,7 +22,7 @@ Web de eventos de Madrid.
 ## Fuentes de datos
 
 - `esmadrid`: Scraping de esmadrid.com (busqueda diaria + JSON-LD en cada pagina, 14 dias, ~470 eventos, paralelo con ThreadPoolExecutor)
-- `madrid_datos`: API JSON-LD de datos.madrid.es (~1200 eventos)
+- `madrid_agenda`: API JSON-LD de datos.madrid.es (~1200 eventos)
 - `teatros_canal`: Deshabilitado (.disabled)
 
 ## Categorias canonicas
@@ -46,7 +46,6 @@ generate_seo.py             Paginas por fecha, JSON-LD, sitemap.xml
 - Leaflet.js para mapa (OpenStreetMap)
 - Flatpickr para selector de fecha
 - Firebase opcional para sync de favoritos/vistos/settings
-- PWA: service worker + manifest.json
 - Filtros: tags clickables (categoria, gratis), localizacion, fuente, ordenar por hora/precio/distancia
 - Vista lista + vista mapa
 - Paginas pre-renderizadas por fecha (SEO + social sharing)
@@ -74,7 +73,7 @@ TXT de verificacion: `_github-pages-challenge-dpaneda`
 ## Notas
 
 - Los crawlers no necesitan API key, todo es open data o scraping publico
-- ~1500+ eventos, ~350KB events.json, ~180KB calendar.json
+- ~1500+ eventos
 - 92% de eventos tienen coordenadas GPS
 - Deduplicacion por SHA256 del titulo (primeros 16 chars = event ID)
 - Crawl incremental: cachea paginas parseadas, reutiliza datos previos

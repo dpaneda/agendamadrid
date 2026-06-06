@@ -17,13 +17,19 @@ BASE_URL = "https://agendamadrid.es"
 DAYS_ES = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
 MONTHS_ES = ["enero", "febrero", "marzo", "abril", "mayo", "junio",
              "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
+# Labels for SEO keywords/meta. Keys match the canonical set in categories.py.
 CATEGORY_LABELS = {
-    "musica": "Música", "teatro": "Teatro", "danza": "Danza", "cine": "Cine",
-    "exposiciones": "Exposiciones", "conferencias": "Conferencias", "talleres": "Talleres",
-    "infantil": "Infantil y familiar", "deportes": "Deportes", "ferias": "Ferias",
-    "visitas guiadas": "Visitas guiadas", "circo": "Circo", "literatura": "Literatura",
-    "fotografia": "Fotografía",
-    "otros": "Otros",
+    # Categorías
+    "teatro": "Teatro", "conciertos": "Conciertos", "exposiciones": "Exposiciones",
+    "talleres": "Talleres", "conferencias": "Conferencias", "deportes": "Deportes",
+    "ferias": "Ferias", "otros": "Otros",
+    # Tags
+    "aire libre": "Aire libre", "destacado": "Destacado", "accesible": "Accesible",
+    "infantil": "Infantil y familiar", "visitas guiadas": "Visitas guiadas",
+    "danza": "Danza", "circo": "Circo", "ópera": "Ópera", "monólogos": "Monólogos",
+    "cine": "Cine", "fotografía": "Fotografía", "gastronomía": "Gastronomía",
+    "literatura": "Literatura", "mercados": "Mercados", "fiestas": "Fiestas",
+    "musicales": "Musicales", "flamenco": "Flamenco", "magia": "Magia",
 }
 
 

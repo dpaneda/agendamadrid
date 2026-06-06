@@ -16,10 +16,10 @@
 
 ```bash
 # datos.madrid.es (rápido, ~10s, JSON API)
-PYTHONPATH=. python -m crawlers.sources.madrid_datos
+PYTHONPATH=. python -m crawlers.sources.madrid_agenda
 
 # datos.madrid.es con imágenes (~5-10min, scrapea cada página)
-PYTHONPATH=. python -m crawlers.sources.madrid_datos --images
+PYTHONPATH=. python -m crawlers.sources.madrid_agenda --images
 
 # esmadrid.com (~20-30min, scrapea cada página)
 PYTHONPATH=. python -m crawlers.sources.esmadrid
@@ -54,12 +54,13 @@ PYTHONPATH=. python -m crawlers.download_images
 PYTHONPATH=. python -m crawlers.consolidate
 ```
 
-### Todo junto (crawl + consolidar, sin LLM ni imágenes)
+### Crawl de todas las fuentes (sin LLM ni imágenes)
 
 ```bash
+# Ejecuta todos los crawlers -> crawlers/data/sources/*.json (no consolida)
 python crawlers/build_data.py
 
-# Solo consolidar
+# Consolida los sources -> frontend/data/*.json + SEO (no crawlea)
 python crawlers/build_data.py --consolidate
 ```
 

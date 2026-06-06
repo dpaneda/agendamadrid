@@ -1,15 +1,15 @@
-"""Run all crawlers and consolidate into frontend data files.
+"""Run all crawlers (or only consolidate) for the frontend data files.
 
 Each crawler can also be run independently:
-  python crawlers/sources/madrid_datos.py
+  python crawlers/sources/madrid_agenda.py
   python crawlers/sources/esmadrid.py
 
-Then consolidate:
-  python crawlers/consolidate.py
+Usage:
+  python crawlers/build_data.py              # only crawl -> crawlers/data/sources/*.json
+  python crawlers/build_data.py --consolidate # only consolidate -> frontend/data/*.json + SEO
 
-This script does both:
-  python crawlers/build_data.py              # crawl all + consolidate
-  python crawlers/build_data.py --consolidate # only consolidate
+Crawling and consolidating are separate steps: run this without flags to crawl,
+then with --consolidate to regenerate the frontend data (or use crawlers.consolidate).
 """
 
 import os
