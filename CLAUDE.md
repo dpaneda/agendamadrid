@@ -21,7 +21,7 @@ Web de eventos de Madrid.
 
 ## Fuentes de datos
 
-- `esmadrid`: Scraping de esmadrid.com (busqueda diaria + JSON-LD en cada pagina, 14 dias, ~470 eventos, paralelo con ThreadPoolExecutor)
+- `esmadrid`: Scraping de esmadrid.com (busqueda diaria + JSON-LD en cada pagina, 30 dias, ~470 eventos, paralelo con ThreadPoolExecutor)
 - `madrid_agenda`: API JSON-LD de datos.madrid.es (~1200 eventos)
 - `teatros_canal`: Deshabilitado (.disabled)
 
@@ -31,12 +31,14 @@ Web de eventos de Madrid.
 
 ## Pipeline de datos
 
+Documentado en detalle (fases + grafo Mermaid + CI) en **[crawlers/PIPELINE.md](crawlers/PIPELINE.md)**.
+
 ```
 build_data.py               Ejecuta crawlers (o --consolidate para saltar)
   -> sources/*.json         JSON crudo por fuente en crawlers/data/sources/
 enrich_source.py            Opcional: enriquece con Gemini (GEMINI_API_KEY)
 download_images.py          Descarga + resize a 400px max
-consolidate.py              Deduplica, mergea, genera events/calendar/locations.json
+consolidate.py              Deduplica, mergea, poda, canonicaliza lugares -> events/calendar/locations.json
 generate_seo.py             Paginas por fecha, JSON-LD, sitemap.xml
 ```
 

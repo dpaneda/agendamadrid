@@ -1,13 +1,16 @@
-# Pipeline de datos
+# Crawlers — comandos
+
+Cómo funciona el pipeline (fases, grafo Mermaid e integración con CI) en
+**[PIPELINE.md](PIPELINE.md)**. Aquí solo van los comandos.
 
 ## Flujo completo
 
 ```
 1. Crawl           →  crawlers/data/sources/{fuente}.json
-2. Enrich (LLM)    →  crawlers/data/sources/{fuente}.json (enriquecido)
-3. Download images  →  frontend/images/events/*.jpg + actualiza sources
-4. Consolidate      →  frontend/data/events.json + calendar.json + locations.json
-5. SEO              →  index.html + YYYY-MM-DD/ + sitemap.xml
+2. Enrich (LLM)    →  crawlers/data/enrich/{fuente}.json
+3. Download images →  frontend/images/events/*.jpg + actualiza sources
+4. Consolidate     →  frontend/data/events.json + calendar.json + locations.json
+5. SEO             →  index.html + YYYY-MM-DD/ + sitemap.xml
 ```
 
 ## Comandos

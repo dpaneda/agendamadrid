@@ -15,6 +15,9 @@ Web de eventos en Madrid. Muestra conciertos, exposiciones, teatro, talleres y m
 
 No hay backend. Todo el sitio es un puñado de archivos estaticos.
 
+El pipeline de datos (fases, grafo y CI) esta documentado en
+**[crawlers/PIPELINE.md](crawlers/PIPELINE.md)**.
+
 ## Estructura del proyecto
 
 ```
@@ -32,7 +35,7 @@ frontend/              Sitio web (lo que se despliega)
 
 crawlers/              Recogida de datos
   sources/             Un modulo por fuente de datos
-    esmadrid.py        Scraping de esmadrid.com (14 dias, paralelo)
+    esmadrid.py        Scraping de esmadrid.com (30 dias, paralelo)
     madrid_agenda.py   API JSON-LD de datos.madrid.es
   build_data.py        Ejecuta los crawlers (con --consolidate solo consolida)
   consolidate.py       Deduplicacion y merge de eventos de todas las fuentes
@@ -81,7 +84,7 @@ pytest tests/
 
 | Fuente | Descripcion |
 |--------|-------------|
-| `esmadrid` | [esmadrid.com](https://www.esmadrid.com/agenda) — scraping diario por busqueda + JSON-LD, 14 dias, ~470 eventos |
+| `esmadrid` | [esmadrid.com](https://www.esmadrid.com/agenda) — scraping diario por busqueda + JSON-LD, 30 dias, ~470 eventos |
 | `madrid_agenda` | [datos.madrid.es](https://datos.madrid.es) — agenda general de actividades, API JSON-LD, ~1200 eventos |
 
 ## Añadir una fuente nueva
