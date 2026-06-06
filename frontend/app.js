@@ -374,6 +374,8 @@ let currentView = sessionStorage.getItem("currentView") || "list";
 let map = null, markersLayer = null, mapAutofit = false, tileLayer = null;
 let picker = null;
 let userLatLng = null;
+let _searchResults = [];   // global search results (across all dates)
+const SEARCH_PAGE = 50;
 
 function haversineDistance(lat1, lon1, lat2, lon2) {
   const R = 6371;
@@ -517,42 +519,7 @@ async function init() {
     renderSearchList();
   }
 
-  let _searchResults = [];
-  const SEARCH_PAGE = 50;
-
-  function renderSearchList() {
-    const container = document.getElementById("events-container");
-    // Search unique events, not calendar entries
-    const seen = new Set();
-    _searchResults = [];
-    for (const [eid, ev] of Object.entries(allEvents)) {
-      if (seen.has(eid) || !matchesSearch(ev)) continue;
-      seen.add(eid);
-      // Find first calendar date for this event
-      const firstDate = Object.keys(calendarData).sort().find(ds =>
-        (calendarData[ds] || []).some(e => e.event_id === eid));
-      const entry = firstDate ? (calendarData[firstDate] || []).find(e => e.event_id === eid) : {};
-      _searchResults.push({ ...ev, ...entry, id: eid, start_date: firstDate || "" });
-    }
-    if (!_searchResults.length) {
-      container.innerHTML = `<p class='empty-state'>No se encontraron eventos para "${esc(searchInput.value)}"</p>`;
-      return;
-    }
-    _renderSearchPage(container, SEARCH_PAGE);
-  }
-
-  function _renderSearchPage(container, count) {
-    const showing = Math.min(count, _searchResults.length);
-    let html = `<p class="search-result-count">${_searchResults.length} resultado${_searchResults.length !== 1 ? "s" : ""}${showing < _searchResults.length ? ` (mostrando ${showing})` : ""}</p>`;
-    for (let i = 0; i < showing; i++) {
-      html += renderEvent(_searchResults[i]);
-    }
-    if (showing < _searchResults.length) {
-      html += `<button class="btn-load-more" onclick="document.getElementById('events-container')._loadMore()">Cargar más resultados</button>`;
-    }
-    container.innerHTML = html;
-    container._loadMore = () => _renderSearchPage(container, showing + SEARCH_PAGE);
-  }
+  // renderSearchList / _renderSearchPage are defined at module scope (used by render() too).
 
   document.getElementById("btn-search").addEventListener("click", openSearch);
   document.getElementById("search-close").addEventListener("click", closeSearch);
@@ -1012,6 +979,59 @@ function updateURL() {
   } else {
     sessionStorage.removeItem("activeUserFilter");
   }
+}
+
+function _searchDateLabel(ds) {
+  const d = new Date(ds + "T12:00:00");
+  if (isNaN(d)) return ds;
+  const label = `${DAYS_LONG[d.getDay()]} ${d.getDate()} de ${MONTHS_ES[d.getMonth()]}`;
+  return label.charAt(0).toUpperCase() + label.slice(1);
+}
+
+// Search is global across all dates. Each unique event is shown once, tagged with
+// its first upcoming date, and results are grouped under date headers.
+function renderSearchList() {
+  const container = document.getElementById("events-container");
+  const queryInput = document.getElementById("search-input");
+  const seen = new Set();
+  _searchResults = [];
+  for (const [eid, ev] of Object.entries(allEvents)) {
+    if (seen.has(eid) || !matchesSearch(ev)) continue;
+    seen.add(eid);
+    // First upcoming calendar date for this event
+    const firstDate = Object.keys(calendarData).sort().find(ds =>
+      (calendarData[ds] || []).some(e => e.event_id === eid));
+    const entry = firstDate ? (calendarData[firstDate] || []).find(e => e.event_id === eid) : {};
+    _searchResults.push({ ...ev, ...entry, id: eid, start_date: firstDate || "" });
+  }
+  // Sort by date then time so the date-grouped sections render in chronological order
+  _searchResults.sort((a, b) =>
+    (a.start_date || "9999-99-99").localeCompare(b.start_date || "9999-99-99") ||
+    (a.start_time || "99:99").localeCompare(b.start_time || "99:99"));
+  if (!_searchResults.length) {
+    container.innerHTML = `<p class='empty-state'>No se encontraron eventos para "${esc(queryInput ? queryInput.value : activeSearch)}"</p>`;
+    return;
+  }
+  _renderSearchPage(container, SEARCH_PAGE);
+}
+
+function _renderSearchPage(container, count) {
+  const showing = Math.min(count, _searchResults.length);
+  let html = `<p class="search-result-count">${_searchResults.length} resultado${_searchResults.length !== 1 ? "s" : ""} en todas las fechas${showing < _searchResults.length ? ` (mostrando ${showing})` : ""}</p>`;
+  let lastDate = null;
+  for (let i = 0; i < showing; i++) {
+    const ev = _searchResults[i];
+    if (ev.start_date !== lastDate) {
+      lastDate = ev.start_date;
+      html += `<div class="search-date-header">${ev.start_date ? esc(_searchDateLabel(ev.start_date)) : "Sin fecha"}</div>`;
+    }
+    html += renderEvent(ev);
+  }
+  if (showing < _searchResults.length) {
+    html += `<button class="btn-load-more" onclick="document.getElementById('events-container')._loadMore()">Cargar más resultados</button>`;
+  }
+  container.innerHTML = html;
+  container._loadMore = () => _renderSearchPage(container, showing + SEARCH_PAGE);
 }
 
 function render() {
