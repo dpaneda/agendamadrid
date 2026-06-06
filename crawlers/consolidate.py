@@ -72,43 +72,78 @@ def merge_event(existing, new):
     return base
 
 
-_TYPE_PREFIX = re.compile(
-    r"^(teatro|concierto|conferencia|exposicion|taller|cine|musica)\s*[:.\-]\s*")
+# Words too generic to be a matching signal (Spanish stopwords + event-type and
+# venue-type words). Removed before comparing titles.
+_STOPWORDS = set(
+    "de la el los las en y a un una del con por para al sala teatro centro cultural "
+    "concierto conciertos taller talleres exposicion exposiciones museo biblioteca "
+    "espacio madrid ciclo".split())
 
 
-def dedup_title_key(title):
-    """Normalized title for cross-source matching: strip accents, type prefixes,
-    punctuation. Two sources name the same event differently; this collapses them."""
-    t = "".join(c for c in unicodedata.normalize("NFD", html.unescape(title or "").lower())
-                if unicodedata.category(c) != "Mn")
-    t = _TYPE_PREFIX.sub("", t)
-    t = re.sub(r"[^a-z0-9 ]", " ", t)
-    return re.sub(r"\s+", " ", t).strip()
+def _content_tokens(title, venue_name=""):
+    """Significant words of a title (accents/punctuation stripped, stopwords and
+    venue-name words removed) for fuzzy title matching. Short all-digit tokens
+    (ages, levels) are kept so they can act as discriminators."""
+    def fold(s):
+        return "".join(c for c in unicodedata.normalize("NFD", html.unescape(s or "").lower())
+                       if unicodedata.category(c) != "Mn")
+    venue_tokens = set(fold(venue_name).split())
+    words = re.sub(r"[^a-z0-9 ]", " ", fold(title)).split()
+    return {w for w in words
+            if (len(w) > 2 or w.isdigit()) and w not in _STOPWORDS and w not in venue_tokens}
 
 
-def dedup_cross_source(events, calendar):
+def _title_similarity(a, b):
+    """Jaccard overlap of two content-token sets (0..1)."""
+    if not a or not b:
+        return 0.0
+    return len(a & b) / len(a | b)
+
+
+# Words/patterns that, if they are what DIFFERS between two titles, mean the
+# events are distinct variants (different level/session/age/edition/status),
+# not duplicates — so they must not be merged.
+_DISCRIMINATORS = {
+    "avanzado", "avanzada", "intermedio", "intermedia", "iniciacion", "inicial",
+    "basico", "basica", "principiantes", "nivel", "manana", "tarde", "mediodia",
+    "matinal", "infantil", "adultos", "suspendido", "suspendida", "cancelado",
+    "cancelada", "aplazado", "aplazada",
+}
+
+
+def _has_discriminator(diff_tokens):
+    """True if the differing tokens include a level/session/age/status marker."""
+    return any(t in _DISCRIMINATORS or (t.isdigit() and len(t) <= 2) for t in diff_tokens)
+
+
+def dedup_cross_source(events, calendar, locations=None, threshold=0.6):
     """Merge events that are the same real event arriving from different sources.
 
-    Two events are merged only when ALL hold: same normalized title, same
-    canonical venue (lid) and at least one shared calendar date. Mutates events
-    and calendar in place; returns the {dropped_id: canonical_id} remap.
+    Two events are merged only when ALL hold: same canonical venue (lid), at
+    least one shared calendar date, and title content-word overlap (Jaccard) at
+    or above `threshold`. The venue + date guard keeps concurrent-but-different
+    activities at the same building apart. Mutates events and calendar in place;
+    returns the {dropped_id: canonical_id} remap.
     """
+    locations = locations or {}
     dates = defaultdict(set)
     for ds, entries in calendar.items():
         for e in entries:
             dates[e["event_id"]].add(ds)
 
-    groups = defaultdict(list)
+    by_lid = defaultdict(list)
     for eid, ev in events.items():
-        lid = ev.get("lid")
-        if lid:
-            groups[(dedup_title_key(ev.get("title", "")), lid)].append(eid)
+        if ev.get("lid"):
+            by_lid[ev["lid"]].append(eid)
 
     remap = {}
-    for ids in groups.values():
+    for lid, ids in by_lid.items():
         if len(ids) < 2:
             continue
-        # union-find: merge ids whose date sets overlap (transitively)
+        venue_name = locations.get(lid, {}).get("location_name", "")
+        tokens = {eid: _content_tokens(events[eid].get("title", ""), venue_name) for eid in ids}
+        # union-find: merge ids with overlapping dates and similar titles, unless
+        # the differing words are a discriminator (level/session/age/status).
         parent = {i: i for i in ids}
         def find(x):
             while parent[x] != x:
@@ -116,8 +151,14 @@ def dedup_cross_source(events, calendar):
             return x
         for i in range(len(ids)):
             for j in range(i + 1, len(ids)):
-                if dates[ids[i]] & dates[ids[j]]:
-                    parent[find(ids[i])] = find(ids[j])
+                a, b = ids[i], ids[j]
+                if not (dates[a] & dates[b]):
+                    continue
+                if _title_similarity(tokens[a], tokens[b]) < threshold:
+                    continue
+                if _has_discriminator(tokens[a] ^ tokens[b]):
+                    continue
+                parent[find(a)] = find(b)
         clusters = defaultdict(list)
         for i in ids:
             clusters[find(i)].append(i)
@@ -129,6 +170,7 @@ def dedup_cross_source(events, calendar):
             for other in members:
                 if other == canon:
                     continue
+                print(f"  merge: {events[other].get('title')!r} -> {events[canon].get('title')!r}")
                 events[canon] = merge_event(events[canon], events[other])
                 events[canon]["lid"] = events[canon].get("lid") or events[other].get("lid")
                 remap[other] = canon
@@ -368,8 +410,8 @@ def run():
                 ev.pop(k, None)
         # else: not a canonical venue -> keep location fields inline on the event
 
-    # Cross-source dedup: same title + same venue + overlapping date -> one event
-    dedup_cross_source(events, calendar)
+    # Cross-source dedup: same venue + overlapping date + similar title -> one event
+    dedup_cross_source(events, calendar, locations)
 
     os.makedirs(DATA_DIR, exist_ok=True)
     with open(EVENTS_PATH, "w") as f:
