@@ -10,12 +10,16 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import requests
 from bs4 import BeautifulSoup
 
+from crawlers.base import is_safe_url
+
 EVENTS_PATH = os.path.join(os.path.dirname(__file__), "..", "frontend", "data", "events.json")
 HEADERS = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"}
 
 
 def fetch_image(url):
     """Fetch og:image from a URL."""
+    if not is_safe_url(url):
+        return None
     try:
         resp = requests.get(url, headers=HEADERS, timeout=10)
         resp.raise_for_status()

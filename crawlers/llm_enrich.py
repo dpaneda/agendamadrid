@@ -77,7 +77,7 @@ _dead_models = set()
 _cooldown_until = {}  # model -> timestamp when cooldown expires
 
 
-def _llm_call(prompt):
+def _llm_call(prompt, _attempts=0):
     """Call LLM with model fallback chain. Handles per-minute and per-day limits."""
     client = _get_client()
     if not client:
@@ -109,9 +109,12 @@ def _llm_call(prompt):
                         wait = int(m.group(1)) + 2
                 except Exception:
                     pass
+                if _attempts >= 5:
+                    print(f"    ✗ {model} per-minute limit, retry cap reached")
+                    continue
                 print(f"    ⏳ {model} per-minute limit, waiting {wait}s...")
                 time.sleep(wait)
-                return _llm_call(prompt)  # retry after wait
+                return _llm_call(prompt, _attempts + 1)  # retry after wait
             continue
     return None
 

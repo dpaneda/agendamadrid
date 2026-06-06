@@ -1,13 +1,32 @@
 import hashlib
+import ipaddress
 import json
 import os
+import socket
 from abc import ABC, abstractmethod
+from urllib.parse import urlparse
 
 SOURCES_DIR = os.path.join(os.path.dirname(__file__), "data", "sources")
 
 
 def make_event_id(title):
     return hashlib.sha256(title.strip().lower().encode()).hexdigest()[:16]
+
+
+def is_safe_url(url):
+    """Reject non-http(s) URLs and hosts resolving to private/loopback IPs (SSRF guard)."""
+    try:
+        parsed = urlparse(url)
+        if parsed.scheme not in ("http", "https") or not parsed.hostname:
+            return False
+        for info in socket.getaddrinfo(parsed.hostname, None):
+            ip = ipaddress.ip_address(info[4][0])
+            if (ip.is_private or ip.is_loopback or ip.is_link_local
+                    or ip.is_reserved or ip.is_multicast):
+                return False
+        return True
+    except Exception:
+        return False
 
 
 class BaseCrawler(ABC):
@@ -53,6 +72,8 @@ class BaseCrawler(ABC):
         else:
             new_events = self.crawl()
         print(f"  Got {len(new_events)} events")
+        if not new_events:
+            print(f"  ⚠ WARNING: {self.name} returned 0 new events — source may have changed or failed")
 
         # Index existing events by source_url for stub matching
         by_url = {}

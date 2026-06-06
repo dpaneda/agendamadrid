@@ -25,11 +25,18 @@ def run(consolidate_only=False):
     if not consolidate_only:
         crawlers = discover_crawlers()
         print(f"Found {len(crawlers)} crawler(s)")
+        failed = []
         for crawler in crawlers:
             try:
                 crawler.run()
             except Exception as e:
                 print(f"  Error in {crawler.name}: {e}")
+                failed.append(crawler.name)
+        if failed:
+            print(f"\n⚠ {len(failed)}/{len(crawlers)} crawler(s) failed: {', '.join(failed)}")
+        if crawlers and len(failed) == len(crawlers):
+            print("✗ All crawlers failed; aborting before consolidation")
+            sys.exit(1)
     else:
         print("\n--- Consolidating ---")
         consolidate()

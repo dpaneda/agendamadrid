@@ -18,6 +18,8 @@ from io import BytesIO
 import requests
 from PIL import Image
 
+from crawlers.base import is_safe_url
+
 SOURCES_DIR = os.path.join(os.path.dirname(__file__), "data", "sources")
 IMG_DIR = os.path.join(os.path.dirname(__file__), "..", "frontend", "images", "events")
 MAX_WIDTH = 400
@@ -39,6 +41,9 @@ REJECT_ASPECT = 1.5  # above this, discard the image entirely
 
 def _download_image(url):
     """Download an image URL and return PIL Image or None."""
+    if not is_safe_url(url):
+        print(f"  Blocked unsafe URL: {url[:80]}")
+        return None
     try:
         resp = requests.get(url, timeout=TIMEOUT, headers=HEADERS)
         resp.raise_for_status()

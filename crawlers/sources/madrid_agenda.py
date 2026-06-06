@@ -10,6 +10,8 @@ from concurrent.futures import ThreadPoolExecutor
 import requests
 from bs4 import BeautifulSoup
 
+from crawlers.base import is_safe_url
+
 from crawlers.base import BaseCrawler
 from crawlers.categories import normalize
 
@@ -182,6 +184,8 @@ def parse_madrid_event(item: dict, source: str) -> dict | None:
 
 def _fetch_image(url):
     """Fetch event page and extract image from div.image-content."""
+    if not is_safe_url(url):
+        return None
     try:
         headers = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"}
         resp = requests.get(url, timeout=10, headers=headers)
@@ -209,10 +213,17 @@ class _MadridDatosBase(BaseCrawler):
         resp.raise_for_status()
         data = resp.json()
         events = []
+        errors = 0
         for item in data.get("@graph", []):
-            ev = parse_madrid_event(item, self.name)
+            try:
+                ev = parse_madrid_event(item, self.name)
+            except Exception:
+                errors += 1
+                continue
             if ev:
                 events.append(ev)
+        if errors:
+            print(f"  ⚠ {errors} item(s) failed to parse, skipped")
 
         if fetch_images:
             print(f"  Fetching images for {len(events)} events...")
