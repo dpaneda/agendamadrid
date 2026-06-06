@@ -271,7 +271,7 @@ def run():
                 shutil.rmtree(os.path.join(FRONTEND_DIR, entry), ignore_errors=True)
                 print(f"  Removed: {entry}/")
     for ds in future_dates:
-        n = _make_day_page(template, events, calendar, ds)
+        _make_day_page(template, events, calendar, ds)
 
     _generate_sitemap(today, future_dates)
     _generate_robots()

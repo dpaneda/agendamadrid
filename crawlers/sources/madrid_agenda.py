@@ -4,15 +4,12 @@ All datasets share the same JSON-LD structure, so we use a common parser.
 """
 
 import re
-import time
 from concurrent.futures import ThreadPoolExecutor
 
 import requests
 from bs4 import BeautifulSoup
 
-from crawlers.base import is_safe_url
-
-from crawlers.base import BaseCrawler
+from crawlers.base import BaseCrawler, is_safe_url
 from crawlers.categories import normalize
 
 # Map recurrence day abbreviations to Python weekday ints (Monday=0)

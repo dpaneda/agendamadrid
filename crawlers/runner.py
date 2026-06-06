@@ -1,13 +1,9 @@
-"""Discover and run all crawlers, then send events to the API."""
+"""Discover crawler classes in crawlers/sources/."""
 
 import importlib
 import os
 import sys
 import pkgutil
-import requests
-
-API_URL = os.getenv("API_URL", "http://localhost:8000")
-API_KEY = os.getenv("API_KEY", "test")
 
 
 def discover_crawlers():
@@ -25,28 +21,3 @@ def discover_crawlers():
             if isinstance(obj, type) and issubclass(obj, BaseCrawler) and obj is not BaseCrawler and not obj.__name__.startswith("_"):
                 crawlers.append(obj())
     return crawlers
-
-
-def run():
-    crawlers = discover_crawlers()
-    print(f"Found {len(crawlers)} crawler(s)")
-
-    for crawler in crawlers:
-        print(f"\nRunning: {crawler.name}")
-        try:
-            events = crawler.crawl()
-            print(f"  Got {len(events)} events")
-            if events:
-                resp = requests.post(
-                    f"{API_URL}/api/events/bulk",
-                    json=events,
-                    headers={"X-API-Key": API_KEY},
-                )
-                resp.raise_for_status()
-                print(f"  Upserted: {resp.json()['upserted']}")
-        except Exception as e:
-            print(f"  Error: {e}")
-
-
-if __name__ == "__main__":
-    run()

@@ -7,7 +7,6 @@ Usage:
   python -m crawlers.consolidate
 """
 
-import hashlib
 import html
 import json
 import os
@@ -147,7 +146,8 @@ def dedup_cross_source(events, calendar, locations=None, threshold=0.6):
         parent = {i: i for i in ids}
         def find(x):
             while parent[x] != x:
-                parent[x] = parent[parent[x]]; x = parent[x]
+                parent[x] = parent[parent[x]]
+                x = parent[x]
             return x
         for i in range(len(ids)):
             for j in range(i + 1, len(ids)):

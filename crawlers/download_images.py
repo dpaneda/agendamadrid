@@ -10,7 +10,6 @@ Usage:
 import hashlib
 import json
 import os
-import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from glob import glob
 from io import BytesIO

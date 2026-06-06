@@ -18,7 +18,10 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r crawlers/requirements.txt
-          pip install pytest
+          pip install pytest ruff
+
+      - name: Lint
+        run: python -m ruff check crawlers/
 
       - name: Run tests
         run: python -m pytest tests/ -q

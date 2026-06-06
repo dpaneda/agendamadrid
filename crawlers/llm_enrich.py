@@ -238,35 +238,3 @@ def enrich_batch(events_data):
         return None
 
     return data
-
-
-def merge_llm_data(scraped, llm_data):
-    """Merge LLM enrichment into scraped event.
-
-    LLM always wins for: description, price, schedule (better quality).
-    LLM fills gaps for: location_name, address, start_date, end_date, categories.
-    Scraper always wins for: image, latitude, longitude, source_url, url (structural data).
-    """
-    if not llm_data:
-        return scraped
-
-    merged = {**scraped}
-
-    # LLM always wins for these (better quality)
-    for field in ("description", "price", "schedule"):
-        if llm_data.get(field):
-            merged[field] = llm_data[field]
-
-    # LLM always wins for categories (better classification)
-    if llm_data.get("categories"):
-        merged["categories"] = llm_data["categories"]
-
-    # LLM fills gaps for these
-    for field in ("title", "location_name", "address", "start_date", "end_date"):
-        if llm_data.get(field) and not scraped.get(field):
-            merged[field] = llm_data[field]
-
-    if llm_data.get("is_multi_event"):
-        merged["is_multi_event"] = True
-
-    return merged

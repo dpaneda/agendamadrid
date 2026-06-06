@@ -93,7 +93,7 @@ def run_html(source_name, limit=0, force=False):
                     print(f"    💾 Saved ({len(existing_enrich)} total)")
             else:
                 errors += 1
-                print(f"    No LLM data returned")
+                print("    No LLM data returned")
 
         except requests.exceptions.HTTPError as e:
             errors += 1
