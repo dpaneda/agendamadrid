@@ -716,13 +716,6 @@
     "latitude": 40.35118703272002,
     "longitude": -3.679345889376551
   },
-  "4ec30898": {
-    "location_name": "Centro Cultural Las Californias (Retiro)",
-    "address": "CALLE LUIS PEIDRO 2",
-    "district": "Retiro",
-    "latitude": 40.397021560779024,
-    "longitude": -3.6738766514153163
-  },
   "97507349": {
     "location_name": "Biblioteca Pública Municipal Mario Vargas Llosa (Centro)",
     "address": "CALLE BARCELO 4",
@@ -862,6 +855,13 @@
     "latitude": 40.39744510759389,
     "longitude": -3.678351566632272
   },
+  "4ec30898": {
+    "location_name": "Centro Cultural Las Californias (Retiro)",
+    "address": "CALLE LUIS PEIDRO 2",
+    "district": "Retiro",
+    "latitude": 40.397021560779024,
+    "longitude": -3.6738766514153163
+  },
   "a08b657f": {
     "location_name": "Colegio Público Arquitecto Gaudí",
     "address": "CALLE ROSA JARDON 10",
@@ -890,13 +890,6 @@
     "latitude": 40.395023959810636,
     "longitude": -3.665554302127492
   },
-  "06e5ef28": {
-    "location_name": "Junta Municipal del Distrito de Usera",
-    "address": "AVENIDA RAFAELA YBARRA 41",
-    "district": "Usera",
-    "latitude": 40.3823867401053,
-    "longitude": -3.710861696949648
-  },
   "127a1864": {
     "location_name": "Centro Cultural La Vaguada (Fuencarral - El Pardo)",
     "address": "AVENIDA MONFORTE DE LEMOS 38",
@@ -917,13 +910,6 @@
     "district": "Hortaleza",
     "latitude": 40.47484735634347,
     "longitude": -3.645543866498554
-  },
-  "0418b21d": {
-    "location_name": "Centro Cultural Casa del Reloj (Arganzuela)",
-    "address": "PASEO CHOPERA 6",
-    "district": "Arganzuela",
-    "latitude": 40.39466755008527,
-    "longitude": -3.700396761468562
   },
   "a15e3fff": {
     "location_name": "Centro Cultural Hortaleza",
@@ -967,19 +953,19 @@
     "latitude": 40.41641041087398,
     "longitude": -3.662606100328213
   },
-  "8d90c6ff": {
-    "location_name": "Centro Cultural Clara del Rey - Museo ABC (Centro)",
-    "address": "CALLE AMANIEL 29",
-    "district": "Centro",
-    "latitude": 40.42741340671151,
-    "longitude": -3.7095381101739444
-  },
   "22840c10": {
     "location_name": "Espacio de Igualdad Lucrecia Pérez. Fuencarral-El Pardo",
     "address": "CALLE MANRESA 1",
     "district": "Fuencarral-ElPardo",
     "latitude": 40.49120609425076,
     "longitude": -3.6916379633219116
+  },
+  "0418b21d": {
+    "location_name": "Centro Cultural Casa del Reloj (Arganzuela)",
+    "address": "PASEO CHOPERA 6",
+    "district": "Arganzuela",
+    "latitude": 40.39466755008527,
+    "longitude": -3.700396761468562
   },
   "32d8e991": {
     "location_name": "Centro Deportivo Municipal José María Cagigal",
@@ -1001,6 +987,13 @@
     "district": "Usera",
     "latitude": 40.38709779232295,
     "longitude": -3.706253056063665
+  },
+  "06e5ef28": {
+    "location_name": "Junta Municipal del Distrito de Usera",
+    "address": "AVENIDA RAFAELA YBARRA 41",
+    "district": "Usera",
+    "latitude": 40.3823867401053,
+    "longitude": -3.710861696949648
   },
   "5ec0d445": {
     "location_name": "Biblioteca Pública Municipal Francisco Ayala (Vicálvaro)",
@@ -1191,13 +1184,6 @@
     "latitude": 40.36969488211539,
     "longitude": -3.7081179166391824
   },
-  "ebf96d4f": {
-    "location_name": "Centro Cultural Quinta del Berro - Rafael Altamira (Salamanca)",
-    "address": "CALLE ENRIQUE D'ALMONTE 1",
-    "district": "Salamanca",
-    "latitude": 40.42206923419431,
-    "longitude": -3.6629608041639368
-  },
   "5651c399": {
     "location_name": "Centro Sociocultural José de Espronceda (Tetuán)",
     "address": "CALLE ALMANSA 9",
@@ -1211,13 +1197,6 @@
     "district": "Barajas",
     "latitude": 40.47324881250678,
     "longitude": -3.5784908616003723
-  },
-  "665f7b8a": {
-    "location_name": "Centro Cultural Juan Genovés (Moncloa - Aravaca)",
-    "address": "TRAVESIA CA&amp;Ntilde;O 5",
-    "district": "Moncloa-Aravaca",
-    "latitude": 40.45867841791346,
-    "longitude": -3.7863499043313373
   },
   "c3355e2c": {
     "location_name": "Centro Cultural Buenavista (Salamanca)",
@@ -1233,12 +1212,26 @@
     "latitude": 40.432243310641894,
     "longitude": -3.7366613378902462
   },
+  "665f7b8a": {
+    "location_name": "Centro Cultural Juan Genovés (Moncloa - Aravaca)",
+    "address": "TRAVESIA CA&amp;Ntilde;O 5",
+    "district": "Moncloa-Aravaca",
+    "latitude": 40.45867841791346,
+    "longitude": -3.7863499043313373
+  },
   "9e9db1a1": {
     "location_name": "Centro Sociocultural Valle Inclán (Fuencarral - El Pardo)",
     "address": "CALLE ARZOBISPO MORCILLO 7",
     "district": "Fuencarral-ElPardo",
     "latitude": 40.48106787416528,
     "longitude": -3.6933504628706095
+  },
+  "ebf96d4f": {
+    "location_name": "Centro Cultural Quinta del Berro - Rafael Altamira (Salamanca)",
+    "address": "CALLE ENRIQUE D'ALMONTE 1",
+    "district": "Salamanca",
+    "latitude": 40.42206923419431,
+    "longitude": -3.6629608041639368
   },
   "b32cd0eb": {
     "location_name": "Centro Cultural José Luis López Vázquez (San Blas - Canillejas)",
@@ -1302,20 +1295,6 @@
     "latitude": 40.42997621103139,
     "longitude": -3.6221773579444596
   },
-  "e46a2db9": {
-    "location_name": "Centro Cultural Orcasur (Usera)",
-    "address": "PLAZA PUEBLO 2",
-    "district": "Usera",
-    "latitude": 40.366772166148415,
-    "longitude": -3.70113521931168
-  },
-  "b6232969": {
-    "location_name": "Parque Lineal del Manzanares (Usera - Pte de Vallecas)",
-    "address": "CAMINO PERALES 47",
-    "district": "Usera",
-    "latitude": 40.379745,
-    "longitude": -3.690042
-  },
   "a8d99540": {
     "location_name": "Espacio de lectura Parque del Oeste  (Moncloa-Aravaca)",
     "address": "CALLE PROFESOR MARTIN ALMAGRO BASCH 0",
@@ -1378,6 +1357,13 @@
     "district": "Usera",
     "latitude": 40.37043939785913,
     "longitude": -3.6899302716018574
+  },
+  "b6232969": {
+    "location_name": "Parque Lineal del Manzanares (Usera - Pte de Vallecas)",
+    "address": "CAMINO PERALES 47",
+    "district": "Usera",
+    "latitude": 40.379745,
+    "longitude": -3.690042
   },
   "9e757641": {
     "location_name": "Centro Sociocultural Aula de Aire Libre (Puente de Vallecas)",
@@ -1592,7 +1578,7 @@
   },
   "529045ed": {
     "location_name": "Teatro Lara",
-    "address": "Baja de San Pablo, 15",
+    "address": "Corredera Baja de San Pablo, 15",
     "latitude": 40.4220989,
     "longitude": -3.7044511
   },
@@ -1830,12 +1816,6 @@
     "latitude": 40.422464774016,
     "longitude": -3.703680038452
   },
-  "5c7ce23c": {
-    "location_name": "Palacio de Fernán Núñez",
-    "address": "de Santa Isabel, 44",
-    "latitude": 40.409942535922,
-    "longitude": -3.697172999382
-  },
   "e42e13eb": {
     "location_name": "Teatro Valle-Inclán",
     "address": "de Ana Diosdado, s/n",
@@ -2070,35 +2050,11 @@
     "latitude": 40.3910873,
     "longitude": -3.6981435
   },
-  "3cb28b4b": {
-    "location_name": "Universidad Autónoma de Madrid (Campus Cantoblanco)",
-    "address": "Ciudad universitaria de Cantoblanco",
-    "latitude": 40.5438425,
-    "longitude": -3.7001859
-  },
-  "90519d9a": {
-    "location_name": "Madrid Río",
-    "address": "de Segovia, s/n",
-    "latitude": 40.398594542658,
-    "longitude": -3.714752197266
-  },
-  "9a5be362": {
-    "location_name": "Palacio Vistalegre Arena",
-    "address": "de Utebo , 1",
-    "latitude": 40.3862011,
-    "longitude": -3.7379452
-  },
   "94c2d0f2": {
     "location_name": "Fundación MAPFRE. Sala Recoletos",
     "address": "de Recoletos, 23",
     "latitude": 40.4227242,
     "longitude": -3.6923964
-  },
-  "4da9be7c": {
-    "location_name": "Autocine Madrid",
-    "address": "de la Isla de Java, 2",
-    "latitude": 40.4868949,
-    "longitude": -3.6779926
   },
   "097cd5fb": {
     "location_name": "Teatro Amaya",
@@ -2172,18 +2128,6 @@
     "latitude": 40.411363,
     "longitude": -3.6908507
   },
-  "0d71ace6": {
-    "location_name": "Sala Villanos",
-    "address": "de Bernardino Obregón, 18",
-    "latitude": 40.4039502,
-    "longitude": -3.7002267
-  },
-  "ccabc517": {
-    "location_name": "Sala But",
-    "address": "de Barceló, 11",
-    "latitude": 40.4270028,
-    "longitude": -3.6997019
-  },
   "8eeac2e5": {
     "location_name": "Paseo de San Francisco de Sales",
     "address": "Paseo de San Francisco de Sales",
@@ -2235,6 +2179,12 @@
     "address": "Bajo de la Virgen del Puerto, s/n",
     "latitude": 40.413001836606,
     "longitude": -3.722155094147
+  },
+  "9a5be362": {
+    "location_name": "Palacio Vistalegre Arena",
+    "address": "de Utebo , 1",
+    "latitude": 40.386027002165,
+    "longitude": -3.738570213318
   },
   "a77cccb4": {
     "location_name": "Casa de Campo",
@@ -2290,6 +2240,12 @@
     "latitude": 40.4385164,
     "longitude": -3.6764022
   },
+  "3cb28b4b": {
+    "location_name": "Universidad Autónoma de Madrid (Campus Cantoblanco)",
+    "address": "Ciudad universitaria de Cantoblanco",
+    "latitude": 40.5438425,
+    "longitude": -3.7001859
+  },
   "9c355f71": {
     "location_name": "Institut Français",
     "address": "del Marqués de la Ensenada, 12",
@@ -2344,11 +2300,23 @@
     "latitude": 40.4144227,
     "longitude": -3.697431
   },
+  "0d71ace6": {
+    "location_name": "Sala Villanos",
+    "address": "de Bernardino Obregón, 18",
+    "latitude": 40.4039502,
+    "longitude": -3.7002267
+  },
   "1fc28150": {
     "location_name": "Iberdrola Music",
     "address": "Laguna Dalga",
     "latitude": 40.3319159,
     "longitude": -3.7067466
+  },
+  "4da9be7c": {
+    "location_name": "Autocine Madrid",
+    "address": "de la Isla de Java, 2",
+    "latitude": 40.486893,
+    "longitude": -3.6779918
   },
   "134e1cee": {
     "location_name": "Siroco",
@@ -2367,12 +2335,6 @@
     "address": "de Pradillo, 12",
     "latitude": 40.4485,
     "longitude": -3.6747226
-  },
-  "2c118b55": {
-    "location_name": "DT Espacio Escénico",
-    "address": "de la Reina, 9",
-    "latitude": 40.4205184,
-    "longitude": -3.7002514
   },
   "d0126c67": {
     "location_name": "Espacios Fiestas del Orgullo LGTBI+",
@@ -2397,5 +2359,11 @@
     "address": "de San Cugat del Vallés, s/n",
     "latitude": 40.4967717,
     "longitude": -3.6949222
+  },
+  "8a44a3a4": {
+    "location_name": "Salto Escénico",
+    "address": "de Granada, 10",
+    "latitude": 40.4048908,
+    "longitude": -3.6799369
   }
 }
