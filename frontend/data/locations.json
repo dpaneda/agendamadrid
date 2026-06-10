@@ -556,13 +556,6 @@
     "latitude": 40.43644651057092,
     "longitude": -3.6372924261150033
   },
-  "a172fa00": {
-    "location_name": "Centro Sociocultural Montecarmelo (Fuencarral - El Pardo)",
-    "address": "Carretera M-607 Km 13 L-10",
-    "district": "Fuencarral-ElPardo",
-    "latitude": 40.515712291624084,
-    "longitude": -3.6860532895354448
-  },
   "aac81ce4": {
     "location_name": "Centro Sociocultural Valverde (Fuencarral - El Pardo)",
     "address": "PLAZA ISLAS AZORES 1",
@@ -911,6 +904,13 @@
     "latitude": 40.45907909580629,
     "longitude": -3.7002532146213043
   },
+  "a172fa00": {
+    "location_name": "Centro Sociocultural Montecarmelo (Fuencarral - El Pardo)",
+    "address": "Carretera M-607 Km 13 L-10",
+    "district": "Fuencarral-ElPardo",
+    "latitude": 40.515712291624084,
+    "longitude": -3.6860532895354448
+  },
   "3166d913": {
     "location_name": "Silo de Hortaleza",
     "address": "CALLE MAR DE LAS ANTILLAS 8",
@@ -1015,13 +1015,6 @@
     "district": "SanBlas-Canillejas",
     "latitude": 40.44640229188281,
     "longitude": -3.6117933204271098
-  },
-  "eb02bd78": {
-    "location_name": "Biblioteca Pública Municipal Pío Baroja (Arganzuela)",
-    "address": "CALLE ARGANDA 12",
-    "district": "Arganzuela",
-    "latitude": 40.40003652682007,
-    "longitude": -3.7074488154950584
   },
   "ca84f24f": {
     "location_name": "Biblioteca Pública Municipal Pablo Neruda (Ciudad Lineal)",
@@ -2229,12 +2222,6 @@
     "location_name": "Varias salas de cine de Madrid",
     "address": "Varias salas de cine de Madrid"
   },
-  "2171a83d": {
-    "location_name": "Espacio Próxima Estación",
-    "address": "C. de Aniceto Marinas, 10",
-    "latitude": 40.4210657,
-    "longitude": -3.7218641
-  },
   "7399986c": {
     "location_name": "Galileo Galilei",
     "address": "de Galileo, 100",
@@ -2462,5 +2449,17 @@
     "address": "de Montalbán, 1",
     "latitude": 40.4182856,
     "longitude": -3.69169
+  },
+  "26613e22": {
+    "location_name": "Sala Berlanga",
+    "address": "de Andrés Mellado, 53",
+    "latitude": 40.4359272,
+    "longitude": -3.7144398
+  },
+  "871b85d1": {
+    "location_name": "Sala Mon Live",
+    "address": "de Hilarión Eslava, 36",
+    "latitude": 40.4359056,
+    "longitude": -3.7164565
   }
 }
