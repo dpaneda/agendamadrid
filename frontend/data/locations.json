@@ -239,7 +239,7 @@
     "longitude": -3.6164419466246676
   },
   "31352bed": {
-    "location_name": "Imprenta Municipal - Artes del libro",
+    "location_name": "Imprenta Municipal. Artes del libro",
     "address": "CALLE CONCEPCION JERONIMA 15",
     "district": "Centro",
     "latitude": 40.413896825498995,
@@ -336,13 +336,6 @@
     "district": "Fuencarral-ElPardo",
     "latitude": 40.48025613358832,
     "longitude": -3.7214686777952974
-  },
-  "e2457581": {
-    "location_name": "Biblioteca Musical Víctor Espinós",
-    "address": "CALLE CONDE DUQUE 9",
-    "district": "Centro",
-    "latitude": 40.42737760210632,
-    "longitude": -3.7106116887809817
   },
   "aed4d982": {
     "location_name": "Centro Sociocultural Ágata (Villaverde)",
@@ -657,6 +650,13 @@
     "latitude": 40.38330593504341,
     "longitude": -3.7420633861175796
   },
+  "e2457581": {
+    "location_name": "Biblioteca Musical Víctor Espinós",
+    "address": "CALLE CONDE DUQUE 9",
+    "district": "Centro",
+    "latitude": 40.42737760210632,
+    "longitude": -3.7106116887809817
+  },
   "28cc7d13": {
     "location_name": "Biblioteca Pública Municipal Francisco Umbral (Villaverde)",
     "address": "CALLE CALCIO 1",
@@ -697,20 +697,6 @@
     "address": "de la Chopera, 14",
     "latitude": 40.391820782642,
     "longitude": -3.697409033775
-  },
-  "fdc5567c": {
-    "location_name": "Centro Sociocultural Alberto Sánchez (Puente de Vallecas)",
-    "address": "CALLE RISCO DE PELOCHE 14",
-    "district": "PuenteDeVallecas",
-    "latitude": 40.393619022093546,
-    "longitude": -3.6556016835101834
-  },
-  "c20aaa12": {
-    "location_name": "Auditorio al aire libre. Parque de Canillejas",
-    "address": "CALLE NECTAR 32",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.442611374955234,
-    "longitude": -3.611167964373918
   },
   "9335e955": {
     "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
@@ -782,13 +768,6 @@
     "latitude": 40.39744510759389,
     "longitude": -3.678351566632272
   },
-  "dbe08552": {
-    "location_name": "Centro Cultural Auditorio Parque El Paraíso (San Blas - Canillejas)",
-    "address": "AVENIDA ARCENTALES 4",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.42997621103139,
-    "longitude": -3.6221773579444596
-  },
   "4ec30898": {
     "location_name": "Centro Cultural Las Californias (Retiro)",
     "address": "CALLE LUIS PEIDRO 2",
@@ -837,13 +816,6 @@
     "district": "Villaverde",
     "latitude": 40.35639654251886,
     "longitude": -3.6940501846610894
-  },
-  "127a1864": {
-    "location_name": "Centro Cultural La Vaguada (Fuencarral - El Pardo)",
-    "address": "AVENIDA MONFORTE DE LEMOS 38",
-    "district": "Fuencarral-ElPardo",
-    "latitude": 40.47900813206291,
-    "longitude": -3.709138377702435
   },
   "3166d913": {
     "location_name": "Silo de Hortaleza",
@@ -978,6 +950,13 @@
     "latitude": 40.405283650744316,
     "longitude": -3.6086278232922804
   },
+  "127a1864": {
+    "location_name": "Centro Cultural La Vaguada (Fuencarral - El Pardo)",
+    "address": "AVENIDA MONFORTE DE LEMOS 38",
+    "district": "Fuencarral-ElPardo",
+    "latitude": 40.47900813206291,
+    "longitude": -3.709138377702435
+  },
   "3f3d092d": {
     "location_name": "Madrid Caja Mágica",
     "address": "CAMINO PERALES 23",
@@ -1069,13 +1048,6 @@
     "latitude": 40.47967249471556,
     "longitude": -3.6657243894913565
   },
-  "9939bcd7": {
-    "location_name": "Sala de Exposiciones Maruja Mallo (Retiro)",
-    "address": "PLAZA DAOIZ Y VELARDE 2",
-    "district": "Retiro",
-    "latitude": 40.402190438836826,
-    "longitude": -3.6772826298329093
-  },
   "fef6f71f": {
     "location_name": "Jardín del Bulevar de Peña Gorbea",
     "address": "CALLE PEÑA GORBEA 17",
@@ -1089,6 +1061,13 @@
     "district": "PuenteDeVallecas",
     "latitude": 40.386296991431074,
     "longitude": -3.671858416387963
+  },
+  "fdc5567c": {
+    "location_name": "Centro Sociocultural Alberto Sánchez (Puente de Vallecas)",
+    "address": "CALLE RISCO DE PELOCHE 14",
+    "district": "PuenteDeVallecas",
+    "latitude": 40.393619022093546,
+    "longitude": -3.6556016835101834
   },
   "3262edc1": {
     "location_name": "Centro Cultural - Centro Socio Cultural Villa de Barajas",
@@ -1208,6 +1187,20 @@
     "latitude": 40.46644791330993,
     "longitude": -3.7190034169332566
   },
+  "dbe08552": {
+    "location_name": "Centro Cultural Auditorio Parque El Paraíso (San Blas - Canillejas)",
+    "address": "AVENIDA ARCENTALES 4",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.42997621103139,
+    "longitude": -3.6221773579444596
+  },
+  "0f73d594": {
+    "location_name": "Centro Cultural Valdebernardo (Vicálvaro)",
+    "address": "BULEVAR INDALECIO PRIETO 21",
+    "district": "Vicalvaro",
+    "latitude": 40.399832138328044,
+    "longitude": -3.6212720265227873
+  },
   "a8d99540": {
     "location_name": "Espacio de lectura Parque del Oeste  (Moncloa-Aravaca)",
     "address": "CALLE PROFESOR MARTIN ALMAGRO BASCH 0",
@@ -1221,13 +1214,6 @@
     "district": "Chamartin",
     "latitude": 40.467453379213175,
     "longitude": -3.6846112774442705
-  },
-  "c2904a9a": {
-    "location_name": "Templete de Música - Parque de La Bombilla",
-    "address": "GLORIETA SAN ANTONIO DE LA FLORIDA 9",
-    "district": "Moncloa-Aravaca",
-    "latitude": 40.42605230927826,
-    "longitude": -3.7259668640812973
   },
   "7d1896a5": {
     "location_name": "Jardines de la Plaza de Chamberí",
@@ -1250,6 +1236,13 @@
     "latitude": 40.465513265035874,
     "longitude": -3.650585652034587
   },
+  "c7a556cc": {
+    "location_name": "Centro Deportivo Municipal Cea Bermúdez",
+    "address": "CALLE CEA BERMUDEZ 3",
+    "district": "Chamberi",
+    "latitude": 40.43857964605446,
+    "longitude": -3.706107413184514
+  },
   "7f9397e2": {
     "location_name": "Centro Deportivo Municipal Orcasitas",
     "address": "AVENIDA RAFAELA YBARRA 52",
@@ -1264,13 +1257,6 @@
     "latitude": 40.37043939785913,
     "longitude": -3.6899302716018574
   },
-  "5651c399": {
-    "location_name": "Centro Sociocultural José de Espronceda (Tetuán)",
-    "address": "CALLE ALMANSA 9",
-    "district": "Tetuan",
-    "latitude": 40.44864332758775,
-    "longitude": -3.704513191828797
-  },
   "9e757641": {
     "location_name": "Centro Sociocultural Aula de Aire Libre (Puente de Vallecas)",
     "address": "CALLE SIERRA CARBONERA 74",
@@ -1278,12 +1264,19 @@
     "latitude": 40.39010138870244,
     "longitude": -3.6653235716960015
   },
-  "867ee94b": {
-    "location_name": "Biblioteca Pública Municipal Miguel Delibes (Moratalaz)",
-    "address": "CALLE ARROYO BELINCOSO 11",
-    "district": "Moratalaz",
-    "latitude": 40.40971737692924,
-    "longitude": -3.6529822109115133
+  "7f7d0281": {
+    "location_name": "Centro Deportivo Municipal Estadio de Atletismo Vallehermoso (Dirección General de Deporte)",
+    "address": "CALLE MELQUIADES ALVAREZ 10",
+    "district": "Chamberi",
+    "latitude": 40.441913031255396,
+    "longitude": -3.710700237505622
+  },
+  "5651c399": {
+    "location_name": "Centro Sociocultural José de Espronceda (Tetuán)",
+    "address": "CALLE ALMANSA 9",
+    "district": "Tetuan",
+    "latitude": 40.44864332758775,
+    "longitude": -3.704513191828797
   },
   "579d1092": {
     "location_name": "Parroquia Nuestra Señora de la Merced",
@@ -1333,13 +1326,6 @@
     "district": "Usera",
     "latitude": 40.37557617692429,
     "longitude": -3.711963730232908
-  },
-  "0f73d594": {
-    "location_name": "Centro Cultural Valdebernardo (Vicálvaro)",
-    "address": "BULEVAR INDALECIO PRIETO 21",
-    "district": "Vicalvaro",
-    "latitude": 40.399832138328044,
-    "longitude": -3.6212720265227873
   },
   "3c67bbc4": {
     "location_name": "Centro Cultural San Francisco La Prensa (Carabanchel)",
@@ -1478,6 +1464,27 @@
     "district": "Retiro",
     "latitude": 40.41941736281525,
     "longitude": -3.6850082736557983
+  },
+  "fa6055d1": {
+    "location_name": "Instalación Deportiva Municipal Básica San Juan Bautista - El Flori",
+    "address": "CALLE AGASTIA 87",
+    "district": "CiudadLineal",
+    "latitude": 40.45128969601845,
+    "longitude": -3.655860624786257
+  },
+  "66b28638": {
+    "location_name": "Centro Deportivo Municipal San Juan Bautista",
+    "address": "CALLE TREVIANA 1",
+    "district": "CiudadLineal",
+    "latitude": 40.44864976316054,
+    "longitude": -3.6585711797466836
+  },
+  "a730b91d": {
+    "location_name": "Instalación Deportiva Municipal Básica Parque Salvador Madariaga",
+    "address": "CALLE SALVADOR DE MADARIAGA 9",
+    "district": "CiudadLineal",
+    "latitude": 40.43939860438441,
+    "longitude": -3.6571307210648647
   },
   "b4d499b0": {
     "location_name": "Centro Cultural Daoíz y Velarde",
@@ -1833,8 +1840,8 @@
     "latitude": 40.401977082034,
     "longitude": -3.702038526535
   },
-  "50107e1c": {
-    "location_name": "Teatro Real",
+  "30c87bc1": {
+    "location_name": "Salón de Baile del Teatro Real",
     "address": "de Isabel II, s/n",
     "latitude": 40.4184102,
     "longitude": -3.7093957
@@ -2004,12 +2011,6 @@
     "latitude": 40.4154432,
     "longitude": -3.6979046
   },
-  "2b9a4735": {
-    "location_name": "Estadio Riyadh Air Metropolitano",
-    "address": "de Luis Aragonés, s/n",
-    "latitude": 40.436299422388,
-    "longitude": -3.599481582642
-  },
   "b7019de4": {
     "location_name": "Teatro de La Abadía",
     "address": "de Fernández de los Ríos, 42",
@@ -2045,12 +2046,6 @@
     "address": "de los Hermanos Alvárez Quintero , 1",
     "latitude": 40.4272699,
     "longitude": -3.6976072
-  },
-  "2c0dd596": {
-    "location_name": "Parque de la Bombilla",
-    "address": "de Valladolid, 4",
-    "latitude": 40.426695505753,
-    "longitude": -3.726253509522
   },
   "e9af25a5": {
     "location_name": "Museo ICO",
@@ -2178,6 +2173,12 @@
     "latitude": 40.386027002165,
     "longitude": -3.738570213318
   },
+  "2b9a4735": {
+    "location_name": "Estadio Riyadh Air Metropolitano",
+    "address": "de Luis Aragonés, s/n",
+    "latitude": 40.436299422388,
+    "longitude": -3.599481582642
+  },
   "07d16a57": {
     "location_name": "AZarte",
     "address": "de San Marcos, 19",
@@ -2244,6 +2245,12 @@
     "latitude": 40.421044233242,
     "longitude": -3.699442454971
   },
+  "2c0dd596": {
+    "location_name": "Parque de la Bombilla",
+    "address": "de Valladolid, 4",
+    "latitude": 40.426695505753,
+    "longitude": -3.726253509522
+  },
   "fcacf969": {
     "location_name": "Nave 73",
     "address": "de Palos de la Frontera, 5",
@@ -2297,6 +2304,12 @@
     "address": "Puerta del Sol,",
     "latitude": 40.4167139,
     "longitude": -3.7034836
+  },
+  "50107e1c": {
+    "location_name": "Teatro Real",
+    "address": "de Isabel II, s/n",
+    "latitude": 40.418299121798,
+    "longitude": -3.710589408875
   },
   "d0126c67": {
     "location_name": "Espacios Fiestas del Orgullo LGTBI+",
@@ -2420,5 +2433,35 @@
     "address": "de Pradillo, 12",
     "latitude": 40.4485,
     "longitude": -3.6747226
+  },
+  "a39a77f1": {
+    "location_name": "Teatro Lagrada",
+    "address": "de Ercilla, 20",
+    "latitude": 40.4026932,
+    "longitude": -3.7029826
+  },
+  "8a44a3a4": {
+    "location_name": "Salto Escénico",
+    "address": "de Granada, 10",
+    "latitude": 40.4048908,
+    "longitude": -3.6799369
+  },
+  "cfdf6f71": {
+    "location_name": "Espacio Abierto Quinta de los Molinos",
+    "address": "de Juan Ignacio Luca de Tena , 20",
+    "latitude": 40.4475712,
+    "longitude": -3.6293005
+  },
+  "c559b35b": {
+    "location_name": "Leica Gallery Madrid",
+    "address": "de José Ortega y Gasset, 34",
+    "latitude": 40.4299874,
+    "longitude": -3.6808178
+  },
+  "ccabc517": {
+    "location_name": "Sala But",
+    "address": "de Barceló, 11",
+    "latitude": 40.4270028,
+    "longitude": -3.6997019
   }
 }
