@@ -838,13 +838,6 @@
     "latitude": 40.46089499555313,
     "longitude": -3.654366821391548
   },
-  "8df27ab6": {
-    "location_name": "Biblioteca Pública Municipal La Elipa (Ciudad Lineal)",
-    "address": "CALLE NUESTRA SE&amp;Ntilde;ORA DEL VILLAR 6",
-    "district": "CiudadLineal",
-    "latitude": 40.42343352863466,
-    "longitude": -3.6518288644365704
-  },
   "297b23a2": {
     "location_name": "Espacio de Igualdad Lucía Sánchez Saornil. San Blas-Canillejas",
     "address": "PLAZA EURIPIDES 1",
@@ -1069,13 +1062,6 @@
     "latitude": 40.393619022093546,
     "longitude": -3.6556016835101834
   },
-  "3262edc1": {
-    "location_name": "Centro Cultural - Centro Socio Cultural Villa de Barajas",
-    "address": "CALLE BOTICA 7",
-    "district": "Barajas",
-    "latitude": 40.47324881250678,
-    "longitude": -3.5784908616003723
-  },
   "c3355e2c": {
     "location_name": "Centro Cultural Buenavista (Salamanca)",
     "address": "AVENIDA TOREROS 5",
@@ -1159,6 +1145,13 @@
     "district": "SanBlas-Canillejas",
     "latitude": 40.446826729909155,
     "longitude": -3.5727382893523254
+  },
+  "3262edc1": {
+    "location_name": "Centro Cultural - Centro Socio Cultural Villa de Barajas",
+    "address": "CALLE BOTICA 7",
+    "district": "Barajas",
+    "latitude": 40.47324881250678,
+    "longitude": -3.5784908616003723
   },
   "9c07c98c": {
     "location_name": "Espacio Cultural Núñez de Balboa, 40 (Salamanca)",
@@ -2131,12 +2124,6 @@
     "latitude": 40.4382782,
     "longitude": -3.705182
   },
-  "24318159": {
-    "location_name": "Circuito de Madrid Jarama-RACE",
-    "address": "A-1, km 28",
-    "latitude": 40.61521,
-    "longitude": -3.5854456
-  },
   "dc35bc1f": {
     "location_name": "Real Academia de Bellas Artes de San Fernando",
     "address": "de Alcalá, 13",
@@ -2154,12 +2141,6 @@
     "address": "Autovía A3, km 33",
     "latitude": 40.259649513099,
     "longitude": -3.405804634094
-  },
-  "7399986c": {
-    "location_name": "Galileo Galilei",
-    "address": "de Galileo, 100",
-    "latitude": 40.4385159,
-    "longitude": -3.7096388
   },
   "9d5eb577": {
     "location_name": "La Riviera",
@@ -2377,6 +2358,12 @@
     "latitude": 40.4359056,
     "longitude": -3.7164565
   },
+  "7399986c": {
+    "location_name": "Galileo Galilei",
+    "address": "de Galileo, 100",
+    "latitude": 40.4385159,
+    "longitude": -3.7096388
+  },
   "24d0cdde": {
     "location_name": "C Arte C",
     "address": "de Juan de Herrera, 2",
@@ -2463,5 +2450,23 @@
     "address": "de Barceló, 11",
     "latitude": 40.4270028,
     "longitude": -3.6997019
+  },
+  "2c3a5fbc": {
+    "location_name": "Teatro Monumental",
+    "address": "de Atocha, 65",
+    "latitude": 40.4125,
+    "longitude": -3.6991667
+  },
+  "e80eae3e": {
+    "location_name": "Real Coliseo de Carlos III",
+    "address": "Floridablanca, 20",
+    "latitude": 40.5910509,
+    "longitude": -4.1468961
+  },
+  "e097f20e": {
+    "location_name": "Estadio Vallehermoso",
+    "address": "de Melquíades Álvarez, 19",
+    "latitude": 40.444795769821,
+    "longitude": -3.708587896684
   }
 }
