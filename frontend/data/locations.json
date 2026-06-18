@@ -238,13 +238,6 @@
     "latitude": 40.36691109856854,
     "longitude": -3.6164419466246676
   },
-  "31352bed": {
-    "location_name": "Imprenta Municipal. Artes del libro",
-    "address": "CALLE CONCEPCION JERONIMA 15",
-    "district": "Centro",
-    "latitude": 40.413896825498995,
-    "longitude": -3.7054692169323364
-  },
   "9b3eae76": {
     "location_name": "Espacio de Igualdad Dulce Chacón. Villaverde",
     "address": "CALLE TORDEGRILLOS 32",
@@ -511,13 +504,6 @@
     "latitude": 40.43644651057092,
     "longitude": -3.6372924261150033
   },
-  "aac81ce4": {
-    "location_name": "Centro Sociocultural Valverde (Fuencarral - El Pardo)",
-    "address": "PLAZA ISLAS AZORES 1",
-    "district": "Fuencarral-ElPardo",
-    "latitude": 40.49504564211655,
-    "longitude": -3.6880070256093758
-  },
   "5989b7b0": {
     "location_name": "Museo ABC",
     "address": "de Amaniel, 29",
@@ -558,13 +544,6 @@
     "district": "Chamartin",
     "latitude": 40.45150372849227,
     "longitude": -3.6760645355093797
-  },
-  "9a81a5d0": {
-    "location_name": "Parque de la Vaguada",
-    "address": "PASEO VAGUADA 13",
-    "district": "Fuencarral-ElPardo",
-    "latitude": 40.48016602497203,
-    "longitude": -3.7112978051427574
   },
   "f616b9eb": {
     "location_name": "Instalación Deportiva Municipal Básica Los Rosales I",
@@ -650,13 +629,6 @@
     "latitude": 40.38330593504341,
     "longitude": -3.7420633861175796
   },
-  "e2457581": {
-    "location_name": "Biblioteca Musical Víctor Espinós",
-    "address": "CALLE CONDE DUQUE 9",
-    "district": "Centro",
-    "latitude": 40.42737760210632,
-    "longitude": -3.7106116887809817
-  },
   "28cc7d13": {
     "location_name": "Biblioteca Pública Municipal Francisco Umbral (Villaverde)",
     "address": "CALLE CALCIO 1",
@@ -677,13 +649,6 @@
     "district": "Centro",
     "latitude": 40.426642215368176,
     "longitude": -3.699722994908341
-  },
-  "77a9d10a": {
-    "location_name": "Biblioteca Pública Municipal San Blas (San Blas-Canillejas)",
-    "address": "CALLE SAN ROMAN DEL VALLE 8",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.420231627534996,
-    "longitude": -3.6218113860909074
   },
   "18ec62a3": {
     "location_name": "Centro Deportivo Municipal Casa de Campo",
@@ -726,19 +691,19 @@
     "latitude": 40.433291625973624,
     "longitude": -3.6105662311927453
   },
-  "1c1352bf": {
-    "location_name": "Biblioteca Pública Municipal David Gistau (Salamanca)",
-    "address": "AVENIDA TOREROS 5",
-    "district": "Salamanca",
-    "latitude": 40.43199309720514,
-    "longitude": -3.670929243543714
-  },
   "f3bebf71": {
     "location_name": "Biblioteca Pública Municipal María Zambrano (Tetuán)",
     "address": "PLAZA DONOSO 5",
     "district": "Tetuan",
     "latitude": 40.46903299144094,
     "longitude": -3.6976620067964996
+  },
+  "77a9d10a": {
+    "location_name": "Biblioteca Pública Municipal San Blas (San Blas-Canillejas)",
+    "address": "CALLE SAN ROMAN DEL VALLE 8",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.420231627534996,
+    "longitude": -3.6218113860909074
   },
   "02a50fe5": {
     "location_name": "Colegio Público República de Venezuela",
@@ -830,6 +795,13 @@
     "district": "Hortaleza",
     "latitude": 40.47682410775741,
     "longitude": -3.6420497457238
+  },
+  "e2457581": {
+    "location_name": "Biblioteca Musical Víctor Espinós",
+    "address": "CALLE CONDE DUQUE 9",
+    "district": "Centro",
+    "latitude": 40.42737760210632,
+    "longitude": -3.7106116887809817
   },
   "61a0fba7": {
     "location_name": "Centro Cultural Carril del Conde (Hortaleza)",
@@ -935,13 +907,6 @@
     "district": "Chamartin",
     "latitude": 40.44834125150792,
     "longitude": -3.6761992414203526
-  },
-  "a471d651": {
-    "location_name": "Biblioteca Pública Municipal Vicálvaro",
-    "address": "CALLE VILLARDONDIEGO 36",
-    "district": "Vicalvaro",
-    "latitude": 40.405283650744316,
-    "longitude": -3.6086278232922804
   },
   "127a1864": {
     "location_name": "Centro Cultural La Vaguada (Fuencarral - El Pardo)",
@@ -1083,6 +1048,13 @@
     "latitude": 40.432243310641894,
     "longitude": -3.7366613378902462
   },
+  "aac81ce4": {
+    "location_name": "Centro Sociocultural Valverde (Fuencarral - El Pardo)",
+    "address": "PLAZA ISLAS AZORES 1",
+    "district": "Fuencarral-ElPardo",
+    "latitude": 40.49504564211655,
+    "longitude": -3.6880070256093758
+  },
   "9e9db1a1": {
     "location_name": "Centro Sociocultural Valle Inclán (Fuencarral - El Pardo)",
     "address": "CALLE ARZOBISPO MORCILLO 7",
@@ -1208,6 +1180,13 @@
     "latitude": 40.467453379213175,
     "longitude": -3.6846112774442705
   },
+  "1c1352bf": {
+    "location_name": "Biblioteca Pública Municipal David Gistau (Salamanca)",
+    "address": "AVENIDA TOREROS 5",
+    "district": "Salamanca",
+    "latitude": 40.43199309720514,
+    "longitude": -3.670929243543714
+  },
   "7d1896a5": {
     "location_name": "Jardines de la Plaza de Chamberí",
     "address": "PLAZA CHAMBERI 1",
@@ -1264,13 +1243,6 @@
     "latitude": 40.441913031255396,
     "longitude": -3.710700237505622
   },
-  "5651c399": {
-    "location_name": "Centro Sociocultural José de Espronceda (Tetuán)",
-    "address": "CALLE ALMANSA 9",
-    "district": "Tetuan",
-    "latitude": 40.44864332758775,
-    "longitude": -3.704513191828797
-  },
   "579d1092": {
     "location_name": "Parroquia Nuestra Señora de la Merced",
     "address": "CALLE CORREGIDOR JUAN FRANCISCO DE LUJAN 101",
@@ -1284,6 +1256,13 @@
     "district": "Moratalaz",
     "latitude": 40.40311144962074,
     "longitude": -3.6372300119528695
+  },
+  "5651c399": {
+    "location_name": "Centro Sociocultural José de Espronceda (Tetuán)",
+    "address": "CALLE ALMANSA 9",
+    "district": "Tetuan",
+    "latitude": 40.44864332758775,
+    "longitude": -3.704513191828797
   },
   "8bc8072f": {
     "location_name": "Centro Deportivo Municipal Barajas",
@@ -1397,6 +1376,13 @@
     "latitude": 40.39420802732146,
     "longitude": -3.744692836307442
   },
+  "a471d651": {
+    "location_name": "Biblioteca Pública Municipal Vicálvaro",
+    "address": "CALLE VILLARDONDIEGO 36",
+    "district": "Vicalvaro",
+    "latitude": 40.405283650744316,
+    "longitude": -3.6086278232922804
+  },
   "83d70b16": {
     "location_name": "Parque de Villa Rosa-Paco Caño",
     "address": "CALLE ACONCAGUA 2",
@@ -1464,6 +1450,13 @@
     "district": "CiudadLineal",
     "latitude": 40.45128969601845,
     "longitude": -3.655860624786257
+  },
+  "31352bed": {
+    "location_name": "Imprenta Municipal. Artes del libro",
+    "address": "CALLE CONCEPCION JERONIMA 15",
+    "district": "Centro",
+    "latitude": 40.413896825498995,
+    "longitude": -3.7054692169323364
   },
   "66b28638": {
     "location_name": "Centro Deportivo Municipal San Juan Bautista",
@@ -1694,12 +1687,6 @@
     "address": "de Bailén, 8",
     "latitude": 40.4159416,
     "longitude": -3.7150162
-  },
-  "f9c4232a": {
-    "location_name": "Teatro del Barrio",
-    "address": "de Zurita, 20",
-    "latitude": 40.4096362,
-    "longitude": -3.6991806
   },
   "044f7fc6": {
     "location_name": "Gran Teatro CaixaBank Príncipe Pío",
@@ -2468,5 +2455,17 @@
     "address": "de Melquíades Álvarez, 19",
     "latitude": 40.444795769821,
     "longitude": -3.708587896684
+  },
+  "ecdf816e": {
+    "location_name": "Cementerio de La Almudena",
+    "address": "de Daroca, 90",
+    "latitude": 40.4247569,
+    "longitude": -3.6465092
+  },
+  "b1ac68ff": {
+    "location_name": "Lab theClub",
+    "address": "de Agustín de Foxa, s/n",
+    "latitude": 40.4760991,
+    "longitude": -3.6820196
   }
 }
