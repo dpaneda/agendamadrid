@@ -54,13 +54,6 @@
     "latitude": 40.45914104116349,
     "longitude": -3.718270563679269
   },
-  "c2271205": {
-    "location_name": "Espacio de Igualdad Emilia Pardo Bazán. Ciudad Lineal",
-    "address": "AVENIDA BADAJOZ 60",
-    "district": "CiudadLineal",
-    "latitude": 40.442311100791215,
-    "longitude": -3.6534806246311913
-  },
   "7fb097ff": {
     "location_name": "Espacio de Igualdad María Telo. Moratalaz",
     "address": "CALLE CAMINO DE LOS VINATEROS 51",
@@ -110,6 +103,13 @@
   },
   "397872e8": {
     "location_name": "Centros Deportivos Municipales (CDM)"
+  },
+  "c2271205": {
+    "location_name": "Espacio de Igualdad Emilia Pardo Bazán. Ciudad Lineal",
+    "address": "AVENIDA BADAJOZ 60",
+    "district": "CiudadLineal",
+    "latitude": 40.442311100791215,
+    "longitude": -3.6534806246311913
   },
   "45843cb6": {
     "location_name": "Biblioteca Pública Municipal Gerardo Diego (Villa de Vallecas)",
@@ -188,13 +188,6 @@
     "latitude": 40.36691109856854,
     "longitude": -3.6164419466246676
   },
-  "9b3eae76": {
-    "location_name": "Espacio de Igualdad Dulce Chacón. Villaverde",
-    "address": "CALLE TORDEGRILLOS 32",
-    "district": "Villaverde",
-    "latitude": 40.344107374451525,
-    "longitude": -3.7166081132911537
-  },
   "1a630411": {
     "location_name": "Espacio de Igualdad Lourdes Hernández. Carabanchel",
     "address": "CALLE COMANDANTE FONTANES 8",
@@ -271,6 +264,13 @@
     "district": "Villaverde",
     "latitude": 40.346369432374594,
     "longitude": -3.7085146991266473
+  },
+  "9b3eae76": {
+    "location_name": "Espacio de Igualdad Dulce Chacón. Villaverde",
+    "address": "CALLE TORDEGRILLOS 32",
+    "district": "Villaverde",
+    "latitude": 40.344107374451525,
+    "longitude": -3.7166081132911537
   },
   "38e0e792": {
     "location_name": "Casa del Lector (Matadero)",
@@ -1004,13 +1004,6 @@
     "latitude": 40.47324881250678,
     "longitude": -3.5784908616003723
   },
-  "aac81ce4": {
-    "location_name": "Centro Sociocultural Valverde (Fuencarral - El Pardo)",
-    "address": "PLAZA ISLAS AZORES 1",
-    "district": "Fuencarral-ElPardo",
-    "latitude": 40.49504564211655,
-    "longitude": -3.6880070256093758
-  },
   "9c07c98c": {
     "location_name": "Espacio Cultural Núñez de Balboa, 40 (Salamanca)",
     "address": "CALLE NUÑEZ DE BALBOA 40",
@@ -1024,13 +1017,6 @@
     "district": "Centro",
     "latitude": 40.41835486065351,
     "longitude": -3.712838830603048
-  },
-  "fdc5567c": {
-    "location_name": "Centro Sociocultural Alberto Sánchez (Puente de Vallecas)",
-    "address": "CALLE RISCO DE PELOCHE 14",
-    "district": "PuenteDeVallecas",
-    "latitude": 40.393619022093546,
-    "longitude": -3.6556016835101834
   },
   "956860a1": {
     "location_name": "Templete de la Música. Parque del Oeste",
@@ -1227,17 +1213,17 @@
     "latitude": 40.468674190501815,
     "longitude": -3.631588640594873
   },
+  "6dd5948c": {
+    "location_name": "Parque Huerta de la Salud",
+    "address": "CALLE MAR DE LAS ANTILLAS 8",
+    "district": "Hortaleza"
+  },
   "8d90c6ff": {
     "location_name": "Centro Cultural Clara del Rey - Museo ABC (Centro)",
     "address": "CALLE AMANIEL 29",
     "district": "Centro",
     "latitude": 40.42741340671151,
     "longitude": -3.7095381101739444
-  },
-  "6dd5948c": {
-    "location_name": "Parque Huerta de la Salud",
-    "address": "CALLE MAR DE LAS ANTILLAS 8",
-    "district": "Hortaleza"
   },
   "db46a17d": {
     "location_name": "Parque de Las Cruces",
@@ -1726,6 +1712,12 @@
     "latitude": 40.4003158,
     "longitude": -3.6936386
   },
+  "79b10898": {
+    "location_name": "OXO. Museo del Videojuego en Madrid",
+    "address": "del Postigo de San Martín, 8",
+    "latitude": 40.419292,
+    "longitude": -3.7058932
+  },
   "e2ed1fa1": {
     "location_name": "Instituto Cervantes",
     "address": "de Alcalá, 49",
@@ -2056,12 +2048,6 @@
     "latitude": 40.411363,
     "longitude": -3.6908507
   },
-  "d220e114": {
-    "location_name": "Iglesia de Santa Teresa de Jesús y San José",
-    "address": "de España, 14",
-    "latitude": 40.422571,
-    "longitude": -3.7148706
-  },
   "2c118b55": {
     "location_name": "DT Espacio Escénico",
     "address": "de la Reina, 9",
@@ -2199,5 +2185,41 @@
     "address": "de Pradillo, 12",
     "latitude": 40.4485,
     "longitude": -3.6747226
+  },
+  "62680f0b": {
+    "location_name": "Fundación Ortega - Marañón",
+    "address": "de Fortuny, 53",
+    "latitude": 40.4348973,
+    "longitude": -3.6906978
+  },
+  "272e99f1": {
+    "location_name": "Palacio de Velázquez",
+    "address": "de Venezuela, 2",
+    "latitude": 40.4151851,
+    "longitude": -3.6819343
+  },
+  "6f279bd2": {
+    "location_name": "Mercado de San Fernando",
+    "address": "de Embajadores, 41",
+    "latitude": 40.4077339,
+    "longitude": -3.7036534
+  },
+  "91f4af65": {
+    "location_name": "Parroquia Santa Rita",
+    "address": "de Gaztambide, 75",
+    "latitude": 40.4386016,
+    "longitude": -3.715468
+  },
+  "35bc59b1": {
+    "location_name": "Real Basílica de San Francisco El Grande",
+    "address": "de la Gran Vía de San Francisco, 19",
+    "latitude": 40.4098258,
+    "longitude": -3.7139253
+  },
+  "50b7e303": {
+    "location_name": "Biblioteca Regional de la Comunidad de Madrid Joaquín Leguina",
+    "address": "de Ramírez de Prado, 3",
+    "latitude": 40.3997348,
+    "longitude": -3.6906652
   }
 }
