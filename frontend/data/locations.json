@@ -33,13 +33,6 @@
     "latitude": 40.39701982315709,
     "longitude": -3.655239797848888
   },
-  "314b42da": {
-    "location_name": "Espacio de Igualdad María de Maeztu. Latina",
-    "address": "CALLE MARCELINO CASTILLO 29",
-    "district": "Latina",
-    "latitude": 40.39420907754556,
-    "longitude": -3.744687315765447
-  },
   "95a62894": {
     "location_name": "Cineteca Madrid",
     "address": "PLAZA LEGAZPI 8",
@@ -111,6 +104,13 @@
     "latitude": 40.42299730556785,
     "longitude": -3.6625213630031794
   },
+  "e232e586": {
+    "location_name": "Espacio de Igualdad María Zambrano. Chamberí",
+    "address": "CALLE ANDRES MELLADO 44",
+    "district": "Chamberi",
+    "latitude": 40.433958260960964,
+    "longitude": -3.7143358486689415
+  },
   "1a7c6818": {
     "location_name": "Centro de Información y Educación Ambiental de Dehesa de la Villa",
     "address": "Parque Dehesa de la Villa, Madrid",
@@ -180,19 +180,19 @@
     "latitude": 40.39245798191536,
     "longitude": -3.6972067902718897
   },
-  "0017d0ac": {
-    "location_name": "Centro Deportivo Municipal San Cristóbal",
-    "address": "PLAZA PINAZO 9",
-    "district": "Villaverde",
-    "latitude": 40.34267317099495,
-    "longitude": -3.6914487380508842
-  },
   "398d56b6": {
     "location_name": "Centro Intergeneracional Río Esmeralda",
     "address": "CALLE RIO ESMERALDA 15",
     "district": "PuenteDeVallecas",
     "latitude": 40.382903228859135,
     "longitude": -3.6520658390631127
+  },
+  "f14ce3db": {
+    "location_name": "Espacio de Igualdad Carme Chacón. Hortaleza",
+    "address": "CALLE MATAPOZUELOS 2",
+    "district": "Hortaleza",
+    "latitude": 40.46155641637237,
+    "longitude": -3.6501714580414126
   },
   "c9c45e0d": {
     "location_name": "Fernán Gómez Centro Cultural de la Villa",
@@ -228,20 +228,6 @@
     "district": "Retiro",
     "latitude": 40.41906571939961,
     "longitude": -3.684053112760816
-  },
-  "f14ce3db": {
-    "location_name": "Espacio de Igualdad Carme Chacón. Hortaleza",
-    "address": "CALLE MATAPOZUELOS 2",
-    "district": "Hortaleza",
-    "latitude": 40.46155641637237,
-    "longitude": -3.6501714580414126
-  },
-  "9b3eae76": {
-    "location_name": "Espacio de Igualdad Dulce Chacón. Villaverde",
-    "address": "CALLE TORDEGRILLOS 32",
-    "district": "Villaverde",
-    "latitude": 40.344107374451525,
-    "longitude": -3.7166081132911537
   },
   "38e0e792": {
     "location_name": "Casa del Lector (Matadero)",
@@ -444,6 +430,13 @@
     "latitude": 40.374166248648216,
     "longitude": -3.7032220308808577
   },
+  "9b3eae76": {
+    "location_name": "Espacio de Igualdad Dulce Chacón. Villaverde",
+    "address": "CALLE TORDEGRILLOS 32",
+    "district": "Villaverde",
+    "latitude": 40.344107374451525,
+    "longitude": -3.7166081132911537
+  },
   "57f49789": {
     "location_name": "Biblioteca Pública Municipal José Hierro (San Blas-Canillejas)",
     "address": "CALLE MARIA SEVILLA DIAGO 15",
@@ -479,12 +472,12 @@
     "latitude": 40.39744510759389,
     "longitude": -3.678351566632272
   },
-  "dbe08552": {
-    "location_name": "Centro Cultural Auditorio Parque El Paraíso (San Blas - Canillejas)",
-    "address": "AVENIDA ARCENTALES 4",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.42997621103139,
-    "longitude": -3.6221773579444596
+  "fdc5567c": {
+    "location_name": "Centro Sociocultural Alberto Sánchez (Puente de Vallecas)",
+    "address": "CALLE RISCO DE PELOCHE 14",
+    "district": "PuenteDeVallecas",
+    "latitude": 40.393619022093546,
+    "longitude": -3.6556016835101834
   },
   "ebf96d4f": {
     "location_name": "Centro Cultural Quinta del Berro - Rafael Altamira (Salamanca)",
@@ -520,6 +513,13 @@
     "district": "Salamanca",
     "latitude": 40.43200001609297,
     "longitude": -3.670904677285496
+  },
+  "dbe08552": {
+    "location_name": "Centro Cultural Auditorio Parque El Paraíso (San Blas - Canillejas)",
+    "address": "AVENIDA ARCENTALES 4",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.42997621103139,
+    "longitude": -3.6221773579444596
   },
   "a2273ec8": {
     "location_name": "Parque Roma",
@@ -562,6 +562,13 @@
     "district": "Moratalaz",
     "latitude": 40.41087442118042,
     "longitude": -3.6538891267077664
+  },
+  "314b42da": {
+    "location_name": "Espacio de Igualdad María de Maeztu. Latina",
+    "address": "CALLE MARCELINO CASTILLO 29",
+    "district": "Latina",
+    "latitude": 40.39420907754556,
+    "longitude": -3.744687315765447
   },
   "32d8e991": {
     "location_name": "Centro Deportivo Municipal José María Cagigal",
@@ -654,20 +661,6 @@
     "latitude": 40.3347558542528,
     "longitude": -3.7008037217338274
   },
-  "1d11f16a": {
-    "location_name": "Biblioteca Pública Municipal María Lejárraga (Hortaleza)",
-    "address": "CALLE PRINCESA DE EBOLI 29",
-    "district": "Hortaleza",
-    "latitude": 40.49041562546542,
-    "longitude": -3.655356751728003
-  },
-  "c4d94593": {
-    "location_name": "Centro Cultural Ciudad Pegaso (San Blas - Canillejas)",
-    "address": "AVENIDA SEPTIMA 11",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.44844757572015,
-    "longitude": -3.598099871155595
-  },
   "9e9db1a1": {
     "location_name": "Centro Sociocultural Valle Inclán (Fuencarral - El Pardo)",
     "address": "CALLE ARZOBISPO MORCILLO 7",
@@ -689,26 +682,19 @@
     "latitude": 40.47324881250678,
     "longitude": -3.5784908616003723
   },
-  "6d0e53b1": {
-    "location_name": "Centro Cultural Lope de Vega (Puente de Vallecas)",
-    "address": "CALLE CONCEJO DE TEVERGA 1",
-    "district": "PuenteDeVallecas",
-    "latitude": 40.386296991431074,
-    "longitude": -3.671858416387963
-  },
-  "9c07c98c": {
-    "location_name": "Espacio Cultural Núñez de Balboa, 40 (Salamanca)",
-    "address": "CALLE NUÑEZ DE BALBOA 40",
-    "district": "Salamanca",
-    "latitude": 40.426826159507435,
-    "longitude": -3.6825349481985135
-  },
   "297b23a2": {
     "location_name": "Espacio de Igualdad Lucía Sánchez Saornil. San Blas-Canillejas",
     "address": "PLAZA EURIPIDES 1",
     "district": "SanBlas-Canillejas",
     "latitude": 40.449003967549075,
     "longitude": -3.6069161377213526
+  },
+  "6d0e53b1": {
+    "location_name": "Centro Cultural Lope de Vega (Puente de Vallecas)",
+    "address": "CALLE CONCEJO DE TEVERGA 1",
+    "district": "PuenteDeVallecas",
+    "latitude": 40.386296991431074,
+    "longitude": -3.671858416387963
   },
   "4f409aab": {
     "location_name": "Salón y sala de exposiciones en Junta Municipal de Usera",
@@ -724,13 +710,6 @@
     "latitude": 40.42585800515975,
     "longitude": -3.689601594290468
   },
-  "40c9bbca": {
-    "location_name": "Centro Cultural el Torito (Moratalaz)",
-    "address": "AVENIDA MORATALAZ 130",
-    "district": "Moratalaz",
-    "latitude": 40.40610655994401,
-    "longitude": -3.646521482592748
-  },
   "7d1896a5": {
     "location_name": "Jardines de la Plaza de Chamberí",
     "address": "PLAZA CHAMBERI 1",
@@ -745,19 +724,19 @@
     "latitude": 40.43857964605446,
     "longitude": -3.706107413184514
   },
+  "40c9bbca": {
+    "location_name": "Centro Cultural el Torito (Moratalaz)",
+    "address": "AVENIDA MORATALAZ 130",
+    "district": "Moratalaz",
+    "latitude": 40.40610655994401,
+    "longitude": -3.646521482592748
+  },
   "7f7d0281": {
     "location_name": "Centro Deportivo Municipal Estadio de Atletismo Vallehermoso (Dirección General de Deporte)",
     "address": "CALLE MELQUIADES ALVAREZ 10",
     "district": "Chamberi",
     "latitude": 40.441913031255396,
     "longitude": -3.710700237505622
-  },
-  "395f476b": {
-    "location_name": "Centro Dotacional Integrado Arganzuela Ángel del Río",
-    "address": "CALLE CANARIAS 17",
-    "district": "Arganzuela",
-    "latitude": 40.40242416544921,
-    "longitude": -3.6954440062549017
   },
   "127a1864": {
     "location_name": "Centro Cultural La Vaguada (Fuencarral - El Pardo)",
@@ -822,13 +801,6 @@
     "latitude": 40.38300898983613,
     "longitude": -3.7799602354152393
   },
-  "523428da": {
-    "location_name": "Centro Cultural San Juan Bautista (Ciudad Lineal)",
-    "address": "CALLE SAN NEMESIO 4",
-    "district": "CiudadLineal",
-    "latitude": 40.45224710166,
-    "longitude": -3.658029027767765
-  },
   "a7513d9e": {
     "location_name": "Centro de Servicios Sociales San Diego",
     "address": "CALLE JAVIER DE MIGUEL 10",
@@ -836,19 +808,19 @@
     "latitude": 40.38871930363662,
     "longitude": -3.663689575700872
   },
+  "c4d94593": {
+    "location_name": "Centro Cultural Ciudad Pegaso (San Blas - Canillejas)",
+    "address": "AVENIDA SEPTIMA 11",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.44844757572015,
+    "longitude": -3.598099871155595
+  },
   "7e7b6ac7": {
     "location_name": "Auditorio al aire libre. Parque Cerro Almodóvar",
     "address": "CALLE MARCELINO CASTILLO 29",
     "district": "Latina",
     "latitude": 40.39420802732146,
     "longitude": -3.744692836307442
-  },
-  "a471d651": {
-    "location_name": "Biblioteca Pública Municipal Vicálvaro",
-    "address": "CALLE VILLARDONDIEGO 36",
-    "district": "Vicalvaro",
-    "latitude": 40.405283650744316,
-    "longitude": -3.6086278232922804
   },
   "4975b7d7": {
     "location_name": "Parque Alfredo Kraus",
@@ -897,12 +869,12 @@
     "latitude": 40.461621132349094,
     "longitude": -3.6281020785174873
   },
-  "e46a2db9": {
-    "location_name": "Centro Cultural Orcasur (Usera)",
-    "address": "PLAZA PUEBLO 2",
-    "district": "Usera",
-    "latitude": 40.366772166148415,
-    "longitude": -3.70113521931168
+  "1d11f16a": {
+    "location_name": "Biblioteca Pública Municipal María Lejárraga (Hortaleza)",
+    "address": "CALLE PRINCESA DE EBOLI 29",
+    "district": "Hortaleza",
+    "latitude": 40.49041562546542,
+    "longitude": -3.655356751728003
   },
   "d8052c1c": {
     "location_name": "Centro Cultural José Luis Sampedro (Latina)",
@@ -910,6 +882,13 @@
     "district": "Latina",
     "latitude": 40.40159394334669,
     "longitude": -3.749110841406562
+  },
+  "c5ebc021": {
+    "location_name": "Auditorio al aire libre. Centro Cultural el Pozo",
+    "address": "CALLE ANDALUCES DEL POZO 1",
+    "district": "PuenteDeVallecas",
+    "latitude": 40.372062320145766,
+    "longitude": -3.66075779238216
   },
   "31352bed": {
     "location_name": "Imprenta Municipal. Artes del libro",
@@ -946,13 +925,6 @@
     "latitude": 40.392680212409495,
     "longitude": -3.7593572957930554
   },
-  "ca84f24f": {
-    "location_name": "Biblioteca Pública Municipal Pablo Neruda (Ciudad Lineal)",
-    "address": "CALLE ASCAO 4",
-    "district": "CiudadLineal",
-    "latitude": 40.42941133441142,
-    "longitude": -3.6416899839787695
-  },
   "a99cbc39": {
     "location_name": "Instalación Deportiva Municipal Básica Torrespaña (Fuente del Berro)",
     "address": "CALLE ALCALDE SAINZ DE BARANDA 94",
@@ -966,6 +938,13 @@
     "district": "CiudadLineal",
     "latitude": 40.431386380971894,
     "longitude": -3.6590535229397676
+  },
+  "9c07c98c": {
+    "location_name": "Espacio Cultural Núñez de Balboa, 40 (Salamanca)",
+    "address": "CALLE NUÑEZ DE BALBOA 40",
+    "district": "Salamanca",
+    "latitude": 40.426826159507435,
+    "longitude": -3.6825349481985135
   },
   "e21dd741": {
     "location_name": "Templete 'José Menese'",
@@ -1008,6 +987,41 @@
     "district": "Retiro",
     "latitude": 40.41941736281525,
     "longitude": -3.6850082736557983
+  },
+  "ff4b611f": {
+    "location_name": "Centro Sociocultural Tetuán",
+    "address": "CALLE BRAVO MURILLO 251",
+    "district": "Tetuan",
+    "latitude": 40.45907909580629,
+    "longitude": -3.7002532146213043
+  },
+  "fef6f71f": {
+    "location_name": "Jardín del Bulevar de Peña Gorbea",
+    "address": "CALLE PEÑA GORBEA 17",
+    "district": "PuenteDeVallecas",
+    "latitude": 40.3957812018463,
+    "longitude": -3.6670346724676173
+  },
+  "a172fa00": {
+    "location_name": "Centro Sociocultural Montecarmelo (Fuencarral - El Pardo)",
+    "address": "Carretera M-607 Km 13 L-10",
+    "district": "Fuencarral-ElPardo",
+    "latitude": 40.515712291624084,
+    "longitude": -3.6860532895354448
+  },
+  "7c1958bc": {
+    "location_name": "Edificio Sociocultural Marta Escudero Díaz-Tejeiro (Villaverde)",
+    "address": "CALLE CALCIO 1",
+    "district": "Villaverde",
+    "latitude": 40.35118703272002,
+    "longitude": -3.679345889376551
+  },
+  "5651c399": {
+    "location_name": "Centro Sociocultural José de Espronceda (Tetuán)",
+    "address": "CALLE ALMANSA 9",
+    "district": "Tetuan",
+    "latitude": 40.44864332758775,
+    "longitude": -3.704513191828797
   },
   "b4d499b0": {
     "location_name": "Centro Cultural Daoíz y Velarde",
@@ -1339,12 +1353,6 @@
     "latitude": 40.4305839,
     "longitude": -3.6814985
   },
-  "d2e1acfd": {
-    "location_name": "Gran Teatro Pavón",
-    "address": "de Embajadores, 9",
-    "latitude": 40.4099808,
-    "longitude": -3.706131
-  },
   "db7a4d60": {
     "location_name": "Bululú 2120",
     "address": "de Canarias, 16",
@@ -1431,12 +1439,6 @@
     "address": "de la Castellana, 67",
     "latitude": 40.444865,
     "longitude": -3.6926507
-  },
-  "1f1e0e14": {
-    "location_name": "Movistar Arena (WiZink Center)",
-    "address": "de Felipe II, s/n",
-    "latitude": 40.4241371,
-    "longitude": -3.6749756
   },
   "8608aaad": {
     "location_name": "Café Central Ateneo",
@@ -1606,17 +1608,17 @@
     "latitude": 40.4144227,
     "longitude": -3.697431
   },
-  "134e1cee": {
-    "location_name": "Siroco",
-    "address": "de San Dimas, 3",
-    "latitude": 40.4269445,
-    "longitude": -3.7077564
-  },
   "b74eada6": {
     "location_name": "Puerta del Sol",
     "address": "Puerta del Sol,",
     "latitude": 40.4167139,
     "longitude": -3.7034836
+  },
+  "1f1e0e14": {
+    "location_name": "Movistar Arena (WiZink Center)",
+    "address": "de Felipe II, s/n",
+    "latitude": 40.4241371,
+    "longitude": -3.6749756
   },
   "50107e1c": {
     "location_name": "Teatro Real",
@@ -1737,12 +1739,6 @@
     "latitude": 40.4110309,
     "longitude": -3.7054037
   },
-  "cd08fd44": {
-    "location_name": "Lula Club",
-    "address": "Gran Vía, 54",
-    "latitude": 40.4213584,
-    "longitude": -3.7073085
-  },
   "f497a8a8": {
     "location_name": "Café Berlín Club Madrid",
     "address": "de los Ángeles, 20",
@@ -1779,6 +1775,12 @@
     "latitude": 40.4247569,
     "longitude": -3.6465092
   },
+  "cd08fd44": {
+    "location_name": "Lula Club",
+    "address": "Gran Vía, 54",
+    "latitude": 40.4213584,
+    "longitude": -3.7073085
+  },
   "b1ac68ff": {
     "location_name": "Lab theClub",
     "address": "de Agustín de Foxa, s/n",
@@ -1814,12 +1816,6 @@
     "address": "de Embajadores, 41",
     "latitude": 40.4077339,
     "longitude": -3.7036534
-  },
-  "35bc59b1": {
-    "location_name": "Real Basílica de San Francisco El Grande",
-    "address": "de la Gran Vía de San Francisco, 19",
-    "latitude": 40.4098258,
-    "longitude": -3.7139253
   },
   "50b7e303": {
     "location_name": "Biblioteca Regional de la Comunidad de Madrid Joaquín Leguina",
