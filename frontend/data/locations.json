@@ -163,13 +163,6 @@
     "latitude": 40.3923033,
     "longitude": -3.69743
   },
-  "d40f267f": {
-    "location_name": "Matadero Medialab",
-    "address": "PASEO CHOPERA 14",
-    "district": "Arganzuela",
-    "latitude": 40.39245798191536,
-    "longitude": -3.6972067902718897
-  },
   "e411800a": {
     "location_name": "Teatro Circo Price",
     "address": "RONDA ATOCHA 35",
@@ -281,6 +274,13 @@
     "latitude": 40.44245748722783,
     "longitude": -3.6217095632137375
   },
+  "d40f267f": {
+    "location_name": "Matadero Medialab",
+    "address": "PASEO CHOPERA 14",
+    "district": "Arganzuela",
+    "latitude": 40.39245798191536,
+    "longitude": -3.6972067902718897
+  },
   "4710abd1": {
     "location_name": "Centro Cultural Galileo (Chamberí)",
     "address": "CALLE GALILEO 39",
@@ -301,13 +301,6 @@
     "district": "Moratalaz",
     "latitude": 40.39928542551079,
     "longitude": -3.636600379403484
-  },
-  "97507349": {
-    "location_name": "Biblioteca Pública Municipal Mario Vargas Llosa (Centro)",
-    "address": "CALLE BARCELO 4",
-    "district": "Centro",
-    "latitude": 40.426642215368176,
-    "longitude": -3.699722994908341
   },
   "dbc8993b": {
     "location_name": "Parque Eva Duarte",
@@ -421,13 +414,6 @@
     "latitude": 40.397021560779024,
     "longitude": -3.6738766514153163
   },
-  "2a930101": {
-    "location_name": "Espacio de Igualdad Ana Orantes. Barajas",
-    "address": "CALLE PLAYA DE SAN JUAN 6",
-    "district": "Barajas",
-    "latitude": 40.473659104975354,
-    "longitude": -3.592395079190456
-  },
   "303984c9": {
     "location_name": "Museo de Historia de Madrid",
     "address": "CALLE FUENCARRAL 78",
@@ -448,13 +434,6 @@
     "district": "Barajas",
     "latitude": 40.460302151327085,
     "longitude": -3.5912198696737083
-  },
-  "77a9d10a": {
-    "location_name": "Biblioteca Pública Municipal San Blas (San Blas-Canillejas)",
-    "address": "CALLE SAN ROMAN DEL VALLE 8",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.420231627534996,
-    "longitude": -3.6218113860909074
   },
   "3f3d092d": {
     "location_name": "Madrid Caja Mágica",
@@ -629,6 +608,13 @@
     "latitude": 40.49041562546542,
     "longitude": -3.655356751728003
   },
+  "97507349": {
+    "location_name": "Biblioteca Pública Municipal Mario Vargas Llosa (Centro)",
+    "address": "CALLE BARCELO 4",
+    "district": "Centro",
+    "latitude": 40.426642215368176,
+    "longitude": -3.699722994908341
+  },
   "c5ebc021": {
     "location_name": "Auditorio al aire libre. Centro Cultural el Pozo",
     "address": "CALLE ANDALUCES DEL POZO 1",
@@ -649,13 +635,6 @@
     "district": "Centro",
     "latitude": 40.413896825498995,
     "longitude": -3.7054692169323364
-  },
-  "57f49789": {
-    "location_name": "Biblioteca Pública Municipal José Hierro (San Blas-Canillejas)",
-    "address": "CALLE MARIA SEVILLA DIAGO 15",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.433291625973624,
-    "longitude": -3.6105662311927453
   },
   "77b83e41": {
     "location_name": "Parque Santa Eugenia",
@@ -692,12 +671,26 @@
     "latitude": 40.42121783502117,
     "longitude": -3.6607653462118437
   },
+  "57f49789": {
+    "location_name": "Biblioteca Pública Municipal José Hierro (San Blas-Canillejas)",
+    "address": "CALLE MARIA SEVILLA DIAGO 15",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.433291625973624,
+    "longitude": -3.6105662311927453
+  },
   "75f92d7a": {
     "location_name": "Cementerio de Nuestra Señora de la Almudena",
     "address": "AVENIDA DAROCA 90",
     "district": "CiudadLineal",
     "latitude": 40.431386380971894,
     "longitude": -3.6590535229397676
+  },
+  "2a930101": {
+    "location_name": "Espacio de Igualdad Ana Orantes. Barajas",
+    "address": "CALLE PLAYA DE SAN JUAN 6",
+    "district": "Barajas",
+    "latitude": 40.473659104975354,
+    "longitude": -3.592395079190456
   },
   "9c07c98c": {
     "location_name": "Espacio Cultural Núñez de Balboa, 40 (Salamanca)",
@@ -1429,17 +1422,17 @@
     "latitude": 40.4167139,
     "longitude": -3.7034836
   },
-  "1f1e0e14": {
-    "location_name": "Movistar Arena (WiZink Center)",
-    "address": "de Felipe II, s/n",
-    "latitude": 40.4241371,
-    "longitude": -3.6749756
-  },
   "60383778": {
     "location_name": "Teatro La Latina",
     "address": "de la Cebada, 2",
     "latitude": 40.411436,
     "longitude": -3.7087536
+  },
+  "1f1e0e14": {
+    "location_name": "Movistar Arena (WiZink Center)",
+    "address": "de Felipe II, s/n",
+    "latitude": 40.4241371,
+    "longitude": -3.6749756
   },
   "d0126c67": {
     "location_name": "Espacios Fiestas del Orgullo LGTBI+",
@@ -1488,18 +1481,6 @@
     "address": "Laguna Dalga",
     "latitude": 40.33002438542,
     "longitude": -3.710401557036
-  },
-  "7399986c": {
-    "location_name": "Galileo Galilei",
-    "address": "de Galileo, 100",
-    "latitude": 40.4385159,
-    "longitude": -3.7096388
-  },
-  "0d71ace6": {
-    "location_name": "Sala Villanos",
-    "address": "de Bernardino Obregón, 18",
-    "latitude": 40.4039502,
-    "longitude": -3.7002267
   },
   "871b85d1": {
     "location_name": "Sala Mon Live",
@@ -1560,12 +1541,6 @@
     "latitude": 40.4299874,
     "longitude": -3.6808178
   },
-  "ccabc517": {
-    "location_name": "Sala But",
-    "address": "de Barceló, 11",
-    "latitude": 40.4270028,
-    "longitude": -3.6997019
-  },
   "e80eae3e": {
     "location_name": "Real Coliseo de Carlos III",
     "address": "Floridablanca, 20",
@@ -1583,12 +1558,6 @@
     "address": "de Daroca, 90",
     "latitude": 40.4247569,
     "longitude": -3.6465092
-  },
-  "cd08fd44": {
-    "location_name": "Lula Club",
-    "address": "Gran Vía, 54",
-    "latitude": 40.4213584,
-    "longitude": -3.7073085
   },
   "b1ac68ff": {
     "location_name": "Lab theClub",
@@ -1703,5 +1672,18 @@
     "address": "de la Gran Vía de San Francisco, 19",
     "latitude": 40.4098258,
     "longitude": -3.7139253
+  },
+  "57b3a4e9": {
+    "location_name": "Varias salas Madrid en Vivo"
+  },
+  "1ea73648": {
+    "location_name": "Café La Palma",
+    "address": "de la Palma, 62",
+    "latitude": 40.4268776,
+    "longitude": -3.7080365
+  },
+  "93c8a15d": {
+    "location_name": "Real Jardín Botánico Alfonso XIII",
+    "address": "Av. Complutense, s/n, 28040 Madrid"
   }
 }
