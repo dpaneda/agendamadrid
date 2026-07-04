@@ -95,13 +95,6 @@
     "location_name": "Parque Forestal de Valdebernardo",
     "address": "Av. de la Democracia, 25, 28031 Madrid"
   },
-  "22840c10": {
-    "location_name": "Espacio de Igualdad Lucrecia Pérez. Fuencarral-El Pardo",
-    "address": "CALLE MANRESA 1",
-    "district": "Fuencarral-ElPardo",
-    "latitude": 40.49120609425076,
-    "longitude": -3.6916379633219116
-  },
   "7bbd9a86": {
     "location_name": "Parque del Oeste"
   },
@@ -129,13 +122,6 @@
     "latitude": 40.4249721516942,
     "longitude": -3.689948085098791
   },
-  "aed4d982": {
-    "location_name": "Centro Sociocultural Ágata (Villaverde)",
-    "address": "CALLE DOCTOR MARTIN AREVALO 2",
-    "district": "Villaverde",
-    "latitude": 40.346369432374594,
-    "longitude": -3.7085146991266473
-  },
   "b1f7c00c": {
     "location_name": "Teatro Español",
     "address": "CALLE PRINCIPE 25",
@@ -143,12 +129,12 @@
     "latitude": 40.414828532240946,
     "longitude": -3.700164949543688
   },
-  "13acb8c9": {
-    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
-    "address": "PASEO COLOMBIA 1",
-    "district": "Retiro",
-    "latitude": 40.41906571939961,
-    "longitude": -3.684053112760816
+  "22840c10": {
+    "location_name": "Espacio de Igualdad Lucrecia Pérez. Fuencarral-El Pardo",
+    "address": "CALLE MANRESA 1",
+    "district": "Fuencarral-ElPardo",
+    "latitude": 40.49120609425076,
+    "longitude": -3.6916379633219116
   },
   "38e0e792": {
     "location_name": "Casa del Lector (Matadero)",
@@ -365,6 +351,13 @@
     "latitude": 40.41789950036311,
     "longitude": -3.7309390858931137
   },
+  "13acb8c9": {
+    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
+    "address": "PASEO COLOMBIA 1",
+    "district": "Retiro",
+    "latitude": 40.41906571939961,
+    "longitude": -3.684053112760816
+  },
   "c3355e2c": {
     "location_name": "Centro Cultural Buenavista (Salamanca)",
     "address": "AVENIDA TOREROS 5",
@@ -505,13 +498,6 @@
     "latitude": 40.46900764611639,
     "longitude": -3.697595691925329
   },
-  "1c1352bf": {
-    "location_name": "Biblioteca Pública Municipal David Gistau (Salamanca)",
-    "address": "AVENIDA TOREROS 5",
-    "district": "Salamanca",
-    "latitude": 40.43199309720514,
-    "longitude": -3.670929243543714
-  },
   "ccc906e4": {
     "location_name": "Auditorio y sala de exposiciones Paco de Lucía (Latina)",
     "address": "AVENIDA LAS AGUILAS 2",
@@ -594,13 +580,6 @@
     "latitude": 40.49041562546542,
     "longitude": -3.655356751728003
   },
-  "97507349": {
-    "location_name": "Biblioteca Pública Municipal Mario Vargas Llosa (Centro)",
-    "address": "CALLE BARCELO 4",
-    "district": "Centro",
-    "latitude": 40.426642215368176,
-    "longitude": -3.699722994908341
-  },
   "c5ebc021": {
     "location_name": "Auditorio al aire libre. Centro Cultural el Pozo",
     "address": "CALLE ANDALUCES DEL POZO 1",
@@ -608,19 +587,19 @@
     "latitude": 40.372062320145766,
     "longitude": -3.66075779238216
   },
-  "12355570": {
-    "location_name": "Biblioteca Pública Municipal Eugenio Trías. Casa de Fieras de El Retiro (Retiro)",
-    "address": "PASEO FERNÁN NÚÑEZ 24",
-    "district": "Retiro",
-    "latitude": 40.4166091081099,
-    "longitude": -3.6795930368034804
-  },
   "31352bed": {
     "location_name": "Imprenta Municipal. Artes del libro",
     "address": "CALLE CONCEPCION JERONIMA 15",
     "district": "Centro",
     "latitude": 40.413896825498995,
     "longitude": -3.7054692169323364
+  },
+  "5435f959": {
+    "location_name": "Centro Sociocultural Santa Petronila (Villaverde)",
+    "address": "CALLE MARIA MARTINEZ OVIOL 12",
+    "district": "Villaverde",
+    "latitude": 40.350886994103284,
+    "longitude": -3.6914981254409645
   },
   "77b83e41": {
     "location_name": "Parque Santa Eugenia",
@@ -649,6 +628,20 @@
     "district": "Latina",
     "latitude": 40.392680212409495,
     "longitude": -3.7593572957930554
+  },
+  "1c1352bf": {
+    "location_name": "Biblioteca Pública Municipal David Gistau (Salamanca)",
+    "address": "AVENIDA TOREROS 5",
+    "district": "Salamanca",
+    "latitude": 40.43199309720514,
+    "longitude": -3.670929243543714
+  },
+  "97507349": {
+    "location_name": "Biblioteca Pública Municipal Mario Vargas Llosa (Centro)",
+    "address": "CALLE BARCELO 4",
+    "district": "Centro",
+    "latitude": 40.426642215368176,
+    "longitude": -3.699722994908341
   },
   "a99cbc39": {
     "location_name": "Instalación Deportiva Municipal Básica Torrespaña (Fuente del Berro)",
@@ -698,6 +691,13 @@
     "district": "Centro",
     "latitude": 40.41207900253883,
     "longitude": -3.7108161027466378
+  },
+  "12355570": {
+    "location_name": "Biblioteca Pública Municipal Eugenio Trías. Casa de Fieras de El Retiro (Retiro)",
+    "address": "PASEO FERNÁN NÚÑEZ 24",
+    "district": "Retiro",
+    "latitude": 40.4166091081099,
+    "longitude": -3.6795930368034804
   },
   "4c65808b": {
     "location_name": "Parque Este de Valdebernardo",
@@ -789,13 +789,6 @@
     "district": "Tetuan",
     "latitude": 40.44864332758775,
     "longitude": -3.704513191828797
-  },
-  "040b80fc": {
-    "location_name": "Espacio de Igualdad Nieves Torres. Chamartín",
-    "address": "CALLE ENRIQUE JARDIEL PONCELA 8",
-    "district": "Chamartin",
-    "latitude": 40.46088981165102,
-    "longitude": -3.6700689174427326
   },
   "9b3eae76": {
     "location_name": "Espacio de Igualdad Dulce Chacón. Villaverde",
@@ -1379,12 +1372,6 @@
     "latitude": 40.4385164,
     "longitude": -3.6764022
   },
-  "1fbee8ae": {
-    "location_name": "Centro Cultural de China en Madrid",
-    "address": "del General Pardiñas, 73",
-    "latitude": 40.4340721,
-    "longitude": -3.6783231
-  },
   "22fd9956": {
     "location_name": "UMusic Hotel Teatro Albéniz",
     "address": "de la Paz, 11",
@@ -1433,17 +1420,17 @@
     "latitude": 40.34,
     "longitude": -3.51
   },
-  "1f1e0e14": {
-    "location_name": "Movistar Arena (WiZink Center)",
-    "address": "de Felipe II, s/n",
-    "latitude": 40.4241371,
-    "longitude": -3.6749756
-  },
   "2b9a4735": {
     "location_name": "Estadio Riyadh Air Metropolitano",
     "address": "de Luis Aragonés, s/n",
     "latitude": 40.436299422388,
     "longitude": -3.599481582642
+  },
+  "1f1e0e14": {
+    "location_name": "Movistar Arena (WiZink Center)",
+    "address": "de Felipe II, s/n",
+    "latitude": 40.4238597,
+    "longitude": -3.6718421
   },
   "ce6a0c87": {
     "location_name": "Real Jardín Botánico",
@@ -1582,6 +1569,12 @@
     "latitude": 40.3997348,
     "longitude": -3.6906652
   },
+  "1fbee8ae": {
+    "location_name": "Centro Cultural de China en Madrid",
+    "address": "del General Pardiñas, 73",
+    "latitude": 40.4340721,
+    "longitude": -3.6783231
+  },
   "98f49d45": {
     "location_name": "Moby Dick",
     "address": "de Brasil, 5",
@@ -1630,12 +1623,6 @@
     "latitude": 40.4026932,
     "longitude": -3.7029826
   },
-  "9b2ba2ac": {
-    "location_name": "La Usina",
-    "address": "de Palos de la Frontera, 4",
-    "latitude": 40.4025525,
-    "longitude": -3.6999978
-  },
   "d593652a": {
     "location_name": "Palacio Neptuno",
     "address": "de Cervantes, 42",
@@ -1651,14 +1638,20 @@
   "57b3a4e9": {
     "location_name": "Varias salas Madrid en Vivo"
   },
-  "1ea73648": {
-    "location_name": "Café La Palma",
-    "address": "de la Palma, 62",
-    "latitude": 40.4268776,
-    "longitude": -3.7080365
-  },
   "93c8a15d": {
     "location_name": "Real Jardín Botánico Alfonso XIII",
     "address": "Av. Complutense, s/n, 28040 Madrid"
+  },
+  "fc319523": {
+    "location_name": "Galería Guillermo de Osma",
+    "address": "de Claudio Coello, 4, 1º izq.",
+    "latitude": 40.4208447,
+    "longitude": -3.6870212
+  },
+  "2c118b55": {
+    "location_name": "DT Espacio Escénico",
+    "address": "de la Reina, 9",
+    "latitude": 40.4205184,
+    "longitude": -3.7002514
   }
 }
