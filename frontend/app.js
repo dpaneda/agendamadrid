@@ -394,6 +394,7 @@ let activeSort = Settings.get("sort", "hora");
 let activeUserFilter = sessionStorage.getItem("activeUserFilter") || "";
 let activeSearch = "";
 let activeCatFilter = [];
+let activeFormato = sessionStorage.getItem("activeFormato") || "";
 let activeTagFilter = [];
 let currentView = sessionStorage.getItem("currentView") || "list";
 let map = null, markersLayer = null, mapAutofit = false, tileLayer = null;
@@ -960,6 +961,9 @@ function _applyListFilters(events) {
   }
   if (activeSource) {
     events = events.filter(ev => (ev.source || "").split(",").includes(activeSource));
+  }
+  if (activeFormato) {
+    events = events.filter(ev => ev.formato === activeFormato);
   }
   if (activeSearch) {
     events = events.filter(matchesSearch);
