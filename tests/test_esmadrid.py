@@ -5,7 +5,41 @@ import os
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
-from crawlers.sources.esmadrid import _parse_schedule, _days_from_line, _parse_open_days
+from crawlers.sources.esmadrid import (
+    _parse_schedule,
+    _days_from_line,
+    _parse_open_days,
+    _ld_text,
+)
+
+
+class TestLdText:
+    def test_plain_string(self):
+        assert _ld_text("Teatro Real") == "Teatro Real"
+
+    def test_strips_whitespace(self):
+        assert _ld_text("  Ateneo  ") == "Ateneo"
+
+    def test_list_joined_with_comma(self):
+        # esmadrid splits comma-containing names into JSON-LD arrays
+        assert _ld_text(["The Palace", "a Luxury Collection Hotel", "Madrid"]) == (
+            "The Palace, a Luxury Collection Hotel, Madrid"
+        )
+
+    def test_list_custom_separator(self):
+        assert _ld_text(["linea uno", "linea dos"], sep=" ") == "linea uno linea dos"
+
+    def test_none_returns_empty(self):
+        assert _ld_text(None) == ""
+
+    def test_empty_list_returns_empty(self):
+        assert _ld_text([]) == ""
+
+    def test_dict_returns_empty(self):
+        assert _ld_text({"@value": "x"}) == ""
+
+    def test_list_drops_empty_items(self):
+        assert _ld_text(["", "Madrid", "  "]) == "Madrid"
 
 
 class TestDaysFromLine:

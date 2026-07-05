@@ -215,6 +215,20 @@ def _get_event_urls_for_date(date):
     return list(dict.fromkeys(urls))  # dedupe preserving order
 
 
+def _ld_text(val, sep=", "):
+    """Coerce a JSON-LD value to a stripped string.
+
+    esmadrid serialises comma-containing values (e.g. venue names) as arrays,
+    so a field that is normally a string may arrive as a list. Join those back
+    with `sep`; ignore dicts and other non-string types.
+    """
+    if isinstance(val, list):
+        val = sep.join(v.strip() for v in val if isinstance(v, str) and v.strip())
+    if not isinstance(val, str):
+        return ""
+    return val.strip()
+
+
 def _parse_event_page(url):
     """Scrape a single event page for structured data."""
     resp = _fetch(url)
@@ -244,11 +258,11 @@ def _parse_event_page(url):
     elif ld.get("@type") != "Event":
         return None
 
-    title = (ld.get("name") or "").strip()
+    title = _ld_text(ld.get("name"))
     if not title:
         return None
 
-    description = (ld.get("description") or "").strip()
+    description = _ld_text(ld.get("description"), sep=" ")
     if description:
         description = re.sub(r"<[^>]+>", "", description).strip()
         if len(description) > 500:
@@ -296,10 +310,10 @@ def _parse_event_page(url):
     location_name = None
     address = None
     if isinstance(location_data, dict):
-        location_name = (location_data.get("name") or "").strip() or None
+        location_name = _ld_text(location_data.get("name")) or None
         addr = location_data.get("address", {})
         if isinstance(addr, dict):
-            address = (addr.get("streetAddress") or "").strip() or None
+            address = _ld_text(addr.get("streetAddress")) or None
 
     # GPS from Drupal.settings JSON
     latitude = None
