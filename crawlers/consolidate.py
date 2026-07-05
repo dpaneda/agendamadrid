@@ -425,6 +425,16 @@ def run():
     events = {eid: ev for eid, ev in events.items() if eid in live_ids}
     print(f"Pruned {dropped} events without calendar entries (kept {len(events)})")
 
+    # Classify format (puntual / exposicion / festival) from real dates + flags
+    formatos = {}
+    for eid, ev in events.items():
+        raw = raw_events.get(eid, {})
+        ev["formato"] = classify_format(
+            ev, _duration_days(raw.get("start_date"), raw.get("end_date"))
+        )
+        formatos[ev["formato"]] = formatos.get(ev["formato"], 0) + 1
+    print(f"Formato: {formatos}")
+
     # Extract + canonicalize locations (cluster same-building name/coord variants)
     venue_recs = {}
     for ev in events.values():
