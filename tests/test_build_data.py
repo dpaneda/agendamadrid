@@ -43,10 +43,10 @@ class TestClassifyFormat:
         assert classify_format({"title": "Semana de la Ciencia"}, 1) == "festival"
 
     def test_exposicion_at_threshold(self):
-        assert classify_format({"title": "Retrato"}, 21) == "exposicion"
+        assert classify_format({"title": "Retrato"}, 7) == "exposicion"
 
     def test_puntual_below_threshold(self):
-        assert classify_format({"title": "Retrato"}, 20) == "puntual"
+        assert classify_format({"title": "Retrato"}, 6) == "puntual"
 
     def test_puntual_single_day(self):
         assert classify_format({"title": "Concierto"}, 1) == "puntual"

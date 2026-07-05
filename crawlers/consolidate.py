@@ -51,7 +51,7 @@ def calendar_window(now=None):
     return min_date, max_date
 
 
-EXPO_MIN_DAYS = 21
+EXPO_MIN_DAYS = 7
 _FESTIVAL_RE = re.compile(r"\b(festival|ciclo|temporada|semana de)\b", re.IGNORECASE)
 
 

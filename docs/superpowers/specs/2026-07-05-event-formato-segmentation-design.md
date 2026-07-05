@@ -40,7 +40,7 @@ classify_format(event, duration_days) -> "festival" | "exposicion" | "puntual"
 Prioridad (excluyente):
 
 1. **festival** — si `event.is_multi_event` es true, **o** el título casa (con límites de palabra, case-insensitive) con `festival | ciclo | temporada | semana de`. El heurístico de título compensa la cobertura parcial del LLM.
-2. **exposicion** — si no es festival y `duration_days >= EXPO_MIN_DAYS` (constante = **21**).
+2. **exposicion** — si no es festival y `duration_days >= EXPO_MIN_DAYS` (constante = **7**). Se eligió 7 porque la duración de los eventos con categoría `exposiciones` tiene un hueco natural entre las visitas guiadas (1 día → puntual) y las exhibiciones reales (10+ días); un umbral en ese valle separa ambos limpiamente. La categoría de contenido `exposiciones` se descartó como señal porque mezcla visitas guiadas puntuales con exhibiciones.
 3. **puntual** — el resto.
 
 `duration_days` se calcula desde las fechas reales del evento (`start_date` → `end_date` de `raw_events`), no desde la ventana recortada del calendario:
@@ -52,7 +52,7 @@ duration_days = (end_date - start_date).days + 1   # si ambas parseables
 
 Se añade `formato` a cada evento en `events.json`. Determinista; no depende de que el LLM haya enriquecido el evento.
 
-`EXPO_MIN_DAYS = 21` es el único parámetro afinable (constante nombrada).
+`EXPO_MIN_DAYS = 7` es el único parámetro afinable (constante nombrada).
 
 ### Frontend (`app.js`)
 
@@ -71,10 +71,10 @@ Se añade `formato` a cada evento en `events.json`. Determinista; no depende de 
 
 ## Testing
 
-- **Backend**: tests unitarios de `classify_format` — festival por flag, festival por keyword de título, exposición por umbral (límites 20/21 días), puntual, y precedencia (multievento largo → festival, no exposición). Igual que los tests puros existentes en `tests/test_build_data.py`.
+- **Backend**: tests unitarios de `classify_format` — festival por flag, festival por keyword de título, exposición por umbral (límites 6/7 días), puntual, y precedencia (multievento largo → festival, no exposición). Igual que los tests puros existentes en `tests/test_build_data.py`.
 - **Frontend**: verificación en navegador — los 3 chips filtran correctamente y son excluyentes; combinación con otros filtros; el tag activo se puede quitar.
 
 ## Riesgos
 
 - Cobertura parcial de `is_multi_event`: algunos festivales sin enriquecer se clasificarán como puntual/exposición. Mitigado en parte por el heurístico de título; mejorable en el futuro.
-- El umbral de 21 días es un juicio; fácil de ajustar (constante única).
+- El umbral de 7 días es un juicio (elegido en el valle entre visitas guiadas y exhibiciones); fácil de ajustar (constante única).
