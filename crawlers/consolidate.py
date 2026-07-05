@@ -51,6 +51,29 @@ def calendar_window(now=None):
     return min_date, max_date
 
 
+EXPO_MIN_DAYS = 21
+_FESTIVAL_RE = re.compile(r"\b(festival|ciclo|temporada|semana de)\b", re.IGNORECASE)
+
+
+def _duration_days(start_date, end_date):
+    """Días que dura el evento (inclusive); 1 si faltan/no parsean las fechas."""
+    try:
+        start = datetime.strptime(start_date, "%Y-%m-%d")
+        end = datetime.strptime(end_date or start_date, "%Y-%m-%d")
+    except (ValueError, TypeError):
+        return 1
+    return max(1, (end - start).days + 1)
+
+
+def classify_format(event, duration_days):
+    """Bucket de formato: 'festival', 'exposicion' o 'puntual' (excluyente, por prioridad)."""
+    if event.get("is_multi_event") or _FESTIVAL_RE.search(event.get("title") or ""):
+        return "festival"
+    if duration_days >= EXPO_MIN_DAYS:
+        return "exposicion"
+    return "puntual"
+
+
 def richness(ev):
     return sum(1 for f in RICHNESS_FIELDS if ev.get(f))
 

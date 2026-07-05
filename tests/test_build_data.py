@@ -13,7 +13,46 @@ from crawlers.consolidate import (
     richness,
     merge_event,
     calendar_window,
+    classify_format,
+    _duration_days,
 )
+
+
+class TestDurationDays:
+    def test_single_day(self):
+        assert _duration_days("2026-07-01", "2026-07-01") == 1
+
+    def test_inclusive_span(self):
+        assert _duration_days("2026-07-01", "2026-07-21") == 21
+
+    def test_missing_end_is_one_day(self):
+        assert _duration_days("2026-07-01", None) == 1
+
+    def test_unparseable_is_one_day(self):
+        assert _duration_days(None, None) == 1
+        assert _duration_days("nope", "nope") == 1
+
+
+class TestClassifyFormat:
+    def test_festival_by_flag(self):
+        assert classify_format({"is_multi_event": True, "title": "Cosa"}, 1) == "festival"
+
+    def test_festival_by_title_keyword(self):
+        assert classify_format({"title": "Festival de Otoño"}, 1) == "festival"
+        assert classify_format({"title": "Ciclo de conciertos"}, 1) == "festival"
+        assert classify_format({"title": "Semana de la Ciencia"}, 1) == "festival"
+
+    def test_exposicion_at_threshold(self):
+        assert classify_format({"title": "Retrato"}, 21) == "exposicion"
+
+    def test_puntual_below_threshold(self):
+        assert classify_format({"title": "Retrato"}, 20) == "puntual"
+
+    def test_puntual_single_day(self):
+        assert classify_format({"title": "Concierto"}, 1) == "puntual"
+
+    def test_festival_takes_precedence_over_duration(self):
+        assert classify_format({"is_multi_event": True, "title": "X"}, 90) == "festival"
 
 
 class TestCalendarWindow:
