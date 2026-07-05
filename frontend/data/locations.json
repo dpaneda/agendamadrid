@@ -19,13 +19,6 @@
     "latitude": 40.392279999540044,
     "longitude": -3.684956957448299
   },
-  "63e95416": {
-    "location_name": "Parque Cerro del Tío Pío",
-    "address": "CALLE BENJAMIN PALENCIA 2",
-    "district": "PuenteDeVallecas",
-    "latitude": 40.39701982315709,
-    "longitude": -3.655239797848888
-  },
   "95a62894": {
     "location_name": "Cineteca Madrid",
     "address": "PLAZA LEGAZPI 8",
@@ -895,12 +888,6 @@
     "latitude": 40.398749783694,
     "longitude": -3.691465258598
   },
-  "7fb49dd2": {
-    "location_name": "Pequeño Teatro Gran Vía",
-    "address": "Gran Vía, 66",
-    "latitude": 40.422430061313,
-    "longitude": -3.708958625794
-  },
   "305c5b59": {
     "location_name": "Escuela Superior de Ingenieros de Minas",
     "address": "Rios Rosas, 21",
@@ -1168,6 +1155,12 @@
   "f019fdda": {
     "location_name": "Capitol Gran Vía"
   },
+  "7fb49dd2": {
+    "location_name": "Pequeño Teatro Gran Vía",
+    "address": "Gran Vía, 66",
+    "latitude": 40.4223941,
+    "longitude": -3.7088716
+  },
   "bebd45c9": {
     "location_name": "Museo Nacional de Ciencias Naturales",
     "address": "de José Gutierrez Abascal, 2",
@@ -1420,12 +1413,6 @@
     "latitude": 40.34,
     "longitude": -3.51
   },
-  "2b9a4735": {
-    "location_name": "Estadio Riyadh Air Metropolitano",
-    "address": "de Luis Aragonés, s/n",
-    "latitude": 40.436299422388,
-    "longitude": -3.599481582642
-  },
   "1f1e0e14": {
     "location_name": "Movistar Arena (WiZink Center)",
     "address": "de Felipe II, s/n",
@@ -1450,28 +1437,22 @@
     "latitude": 40.33002438542,
     "longitude": -3.710401557036
   },
-  "871b85d1": {
-    "location_name": "Sala Mon Live",
-    "address": "de Hilarión Eslava, 36",
-    "latitude": 40.4359056,
-    "longitude": -3.7164565
-  },
   "9d5eb577": {
     "location_name": "La Riviera",
     "address": "Bajo de la Virgen del Puerto, s/n",
     "latitude": 40.4133013,
     "longitude": -3.7219371
   },
-  "24d0cdde": {
-    "location_name": "C Arte C",
-    "address": "de Juan de Herrera, 2",
-    "latitude": 40.4400973,
-    "longitude": -3.7289688
-  },
   "61c10e5d": {
     "location_name": "Varios locales",
     "latitude": 40.4167754,
     "longitude": -3.7037902
+  },
+  "2b9a4735": {
+    "location_name": "Estadio Riyadh Air Metropolitano",
+    "address": "de Luis Aragonés, s/n",
+    "latitude": 40.436299422388,
+    "longitude": -3.599481582642
   },
   "e7a6dc9e": {
     "location_name": "Sala Alcalá 31 de la Comunidad de Madrid",
@@ -1556,12 +1537,6 @@
     "address": "de Venezuela, 2",
     "latitude": 40.4151851,
     "longitude": -3.6819343
-  },
-  "6f279bd2": {
-    "location_name": "Mercado de San Fernando",
-    "address": "de Embajadores, 41",
-    "latitude": 40.4077339,
-    "longitude": -3.7036534
   },
   "50b7e303": {
     "location_name": "Biblioteca Regional de la Comunidad de Madrid Joaquín Leguina",
@@ -1653,5 +1628,11 @@
     "address": "de la Reina, 9",
     "latitude": 40.4205184,
     "longitude": -3.7002514
+  },
+  "9b2ba2ac": {
+    "location_name": "La Usina",
+    "address": "de Palos de la Frontera, 4",
+    "latitude": 40.4025525,
+    "longitude": -3.6999978
   }
 }
