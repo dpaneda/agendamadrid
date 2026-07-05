@@ -37,6 +37,20 @@ RICHNESS_FIELDS = ["description", "start_time", "end_time", "location_name", "ad
                    "latitude", "longitude", "url", "district", "image"]
 
 
+# Retention window: keep 7 days of past events (so recently-expired favourites
+# and marks stay visible on the site) plus 30 days ahead.
+PAST_DAYS = 7
+FUTURE_DAYS = 30
+
+
+def calendar_window(now=None):
+    """Return (min_date, max_date) date strings bounding the calendar window."""
+    now = now or datetime.now(UTC)
+    min_date = (now - timedelta(days=PAST_DAYS)).strftime("%Y-%m-%d")
+    max_date = (now + timedelta(days=FUTURE_DAYS)).strftime("%Y-%m-%d")
+    return min_date, max_date
+
+
 def richness(ev):
     return sum(1 for f in RICHNESS_FIELDS if ev.get(f))
 
@@ -348,8 +362,9 @@ def run():
             cats.remove("otros")
 
     # Generate calendar from raw events (with original dates and schedules)
-    today = datetime.now(UTC).strftime("%Y-%m-%d")
-    max_date = (datetime.now(UTC) + timedelta(days=30)).strftime("%Y-%m-%d")
+    min_date, max_date = calendar_window()
+    min_dt = datetime.strptime(min_date, "%Y-%m-%d")
+    max_dt = datetime.strptime(max_date, "%Y-%m-%d")
 
     for eid, ev in raw_events.items():
         start_date = ev.get("start_date", "")
@@ -359,13 +374,11 @@ def run():
         try:
             start_dt = datetime.strptime(start_date, "%Y-%m-%d")
             end_dt = datetime.strptime(end_date, "%Y-%m-%d")
-            today_dt = datetime.strptime(today, "%Y-%m-%d")
-            max_dt = datetime.strptime(max_date, "%Y-%m-%d")
         except ValueError:
             continue
 
-        # Cap to our window
-        d = max(start_dt, today_dt)
+        # Cap to our window (keeps PAST_DAYS of past + FUTURE_DAYS ahead)
+        d = max(start_dt, min_dt)
         end_dt = min(end_dt, max_dt)
 
         while d <= end_dt:
@@ -379,7 +392,7 @@ def run():
                 calendar[ds].extend(entries)
             d += timedelta(days=1)
 
-    calendar = dict(sorted((k, v) for k, v in calendar.items() if today <= k <= max_date))
+    calendar = dict(sorted((k, v) for k, v in calendar.items() if min_date <= k <= max_date))
 
     # Keep only events with at least one calendar entry in the window. Sources
     # accumulate past events forever; without this, events.json grows unbounded

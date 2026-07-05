@@ -5,7 +5,31 @@ import os
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
-from crawlers.consolidate import cal_entries_for_date, make_event_id, richness, merge_event
+from datetime import datetime, timezone
+
+from crawlers.consolidate import (
+    cal_entries_for_date,
+    make_event_id,
+    richness,
+    merge_event,
+    calendar_window,
+)
+
+
+class TestCalendarWindow:
+    """The retention window keeps 7 days of past events so recently-expired
+    favourites/marks stay visible, plus 30 days ahead."""
+
+    def test_window_bounds(self):
+        now = datetime(2026, 7, 5, tzinfo=timezone.utc)
+        min_date, max_date = calendar_window(now)
+        assert min_date == "2026-06-28"  # 7 days before
+        assert max_date == "2026-08-04"  # 30 days after
+
+    def test_window_crosses_month_boundary(self):
+        now = datetime(2026, 3, 3, tzinfo=timezone.utc)
+        min_date, _ = calendar_window(now)
+        assert min_date == "2026-02-24"
 
 
 class TestCalEntriesForDate:

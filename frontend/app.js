@@ -47,6 +47,21 @@ const UserData = (() => {
     getAll(collection) {
       return _load()[collection] || {};
     },
+    // Drop favourites/seen/dismissed whose event is no longer in the dataset
+    // (i.e. expired beyond the retention window). Deterministic over the shared
+    // data, so it converges across devices despite Firebase's union merge.
+    gc(liveIds) {
+      const data = _load();
+      let changed = false;
+      for (const col of ["favorites", "seen", "dismissed"]) {
+        const m = data[col] || {};
+        for (const id of Object.keys(m)) {
+          if (!liveIds.has(id)) { delete m[id]; changed = true; }
+        }
+      }
+      if (changed) _save(data);
+      return changed;
+    },
     raw() { return _load(); },
   };
 })();
@@ -205,6 +220,17 @@ const FirebaseSync = (() => {
       const remoteTs = (remote.settings || {})._ts || remote.settings_ts || 0;
       if (remote.settings && remoteTs >= localTs) {
         merged.settings = remote.settings;
+      }
+
+      // GC references to events no longer in the dataset (converges across
+      // devices since the criterion is the shared event data, not a local delete).
+      if (Object.keys(allEvents).length) {
+        const live = new Set(Object.keys(allEvents));
+        for (const col of ["favorites", "seen", "dismissed"]) {
+          for (const id of Object.keys(merged[col])) {
+            if (!live.has(id)) delete merged[col][id];
+          }
+        }
       }
 
       localStorage.setItem("agendamadrid_user", JSON.stringify(merged));
@@ -579,6 +605,9 @@ async function init() {
   locateUser();
   await loadData();
 
+  // Clean up references to expired events (kept out of the retention window)
+  if (Object.keys(allEvents).length) UserData.gc(new Set(Object.keys(allEvents)));
+
   // Apply saved theme
   const savedTheme = Settings.get("theme", "clasico");
   document.documentElement.setAttribute("data-theme", savedTheme);
@@ -887,6 +916,9 @@ function _mergeEntryTimes(ev, entry) {
 }
 
 function _applyHidePast(events, ds) {
+  // Marked-event views (Favoritos/Vistos/Ocultos) always show past events so
+  // recently-expired marks stay visible; category/normal browsing does not.
+  if (["favorites", "seen", "dismissed"].includes(activeUserFilter)) return events;
   if (!Settings.get("hidePast", true)) return events;
   if (ds !== dateStr(new Date())) return events;
   const now = new Date();
