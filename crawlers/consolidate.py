@@ -69,7 +69,9 @@ def classify_format(event, duration_days):
     """Bucket de formato: 'festival', 'exposicion' o 'puntual' (excluyente, por prioridad)."""
     if event.get("is_multi_event") or _FESTIVAL_RE.search(event.get("title") or ""):
         return "festival"
-    if duration_days >= EXPO_MIN_DAYS:
+    # Discrete-date events (recur on specific days, e.g. a guided visit) are
+    # point-in-time, not a continuous run, so they are never exposicion.
+    if not event.get("dates") and duration_days >= EXPO_MIN_DAYS:
         return "exposicion"
     return "puntual"
 
@@ -86,6 +88,11 @@ def merge_event(existing, new):
 
     cats = list(dict.fromkeys(existing.get("categories", []) + new.get("categories", [])))
     base["categories"] = cats
+
+    # Preserve discrete occurrence dates (union) so they survive merges
+    dates = sorted(set(existing.get("dates") or []) | set(new.get("dates") or []))
+    if dates:
+        base["dates"] = dates
 
     old_sched = existing.get("schedule") or {}
     new_sched = new.get("schedule") or {}
@@ -234,6 +241,32 @@ def dedup_cross_source(events, calendar, locations=None, threshold=0.6):
 
     print(f"Cross-source dedup: merged {len(remap)} duplicate event(s)")
     return remap
+
+
+def event_calendar_dates(ev, min_date, max_date):
+    """Dates within [min_date, max_date] on which the event has calendar entries.
+
+    If the event carries a discrete `dates` list (e.g. datos.madrid.es activities
+    that recur on specific days), only those dates are used. Otherwise the
+    start_date→end_date range is expanded day by day.
+    """
+    discrete = ev.get("dates")
+    if discrete:
+        return [d for d in sorted(discrete) if min_date <= d <= max_date]
+    start_date = ev.get("start_date", "")
+    end_date = ev.get("end_date") or start_date
+    try:
+        start_dt = datetime.strptime(start_date, "%Y-%m-%d")
+        end_dt = datetime.strptime(end_date, "%Y-%m-%d")
+    except ValueError:
+        return []
+    d = max(start_dt, datetime.strptime(min_date, "%Y-%m-%d"))
+    end_dt = min(end_dt, datetime.strptime(max_date, "%Y-%m-%d"))
+    out = []
+    while d <= end_dt:
+        out.append(d.strftime("%Y-%m-%d"))
+        d += timedelta(days=1)
+    return out
 
 
 def cal_entries_for_date(ev, eid, ds):
@@ -386,26 +419,9 @@ def run():
 
     # Generate calendar from raw events (with original dates and schedules)
     min_date, max_date = calendar_window()
-    min_dt = datetime.strptime(min_date, "%Y-%m-%d")
-    max_dt = datetime.strptime(max_date, "%Y-%m-%d")
 
     for eid, ev in raw_events.items():
-        start_date = ev.get("start_date", "")
-        end_date = ev.get("end_date") or start_date
-
-        # Expand date range
-        try:
-            start_dt = datetime.strptime(start_date, "%Y-%m-%d")
-            end_dt = datetime.strptime(end_date, "%Y-%m-%d")
-        except ValueError:
-            continue
-
-        # Cap to our window (keeps PAST_DAYS of past + FUTURE_DAYS ahead)
-        d = max(start_dt, min_dt)
-        end_dt = min(end_dt, max_dt)
-
-        while d <= end_dt:
-            ds = d.strftime("%Y-%m-%d")
+        for ds in event_calendar_dates(ev, min_date, max_date):
             entries = cal_entries_for_date(ev, eid, ds)
             if entries:
                 if ds not in calendar:
@@ -413,7 +429,6 @@ def run():
                 # Remove existing entries for this event on this day
                 calendar[ds] = [e for e in calendar[ds] if e["event_id"] != eid]
                 calendar[ds].extend(entries)
-            d += timedelta(days=1)
 
     calendar = dict(sorted((k, v) for k, v in calendar.items() if min_date <= k <= max_date))
 

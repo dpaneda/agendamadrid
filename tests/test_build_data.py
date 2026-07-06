@@ -15,7 +15,31 @@ from crawlers.consolidate import (
     calendar_window,
     classify_format,
     _duration_days,
+    event_calendar_dates,
 )
+
+
+class TestEventCalendarDates:
+    WIN = ("2026-06-28", "2026-08-04")
+
+    def test_discrete_dates_only_within_window(self):
+        ev = {"dates": ["2026-07-04", "2026-08-01", "2026-09-05"],
+              "start_date": "2026-07-04", "end_date": "2026-09-05"}
+        # 09-05 falls outside the window and is dropped
+        assert event_calendar_dates(ev, *self.WIN) == ["2026-07-04", "2026-08-01"]
+
+    def test_range_expands_daily(self):
+        ev = {"start_date": "2026-07-01", "end_date": "2026-07-03"}
+        assert event_calendar_dates(ev, *self.WIN) == ["2026-07-01", "2026-07-02", "2026-07-03"]
+
+    def test_range_clamped_to_window(self):
+        ev = {"start_date": "2026-06-01", "end_date": "2026-12-01"}
+        assert event_calendar_dates(ev, "2026-06-28", "2026-07-01") == [
+            "2026-06-28", "2026-06-29", "2026-06-30", "2026-07-01"]
+
+    def test_single_day_no_end(self):
+        ev = {"start_date": "2026-07-05", "end_date": None}
+        assert event_calendar_dates(ev, *self.WIN) == ["2026-07-05"]
 
 
 class TestDurationDays:
@@ -53,6 +77,11 @@ class TestClassifyFormat:
 
     def test_festival_takes_precedence_over_duration(self):
         assert classify_format({"is_multi_event": True, "title": "X"}, 90) == "festival"
+
+    def test_discrete_dates_event_is_puntual_not_exposicion(self):
+        # a guided visit recurring on 3 specific days spans months but is puntual
+        ev = {"title": "Visita guiada", "dates": ["2026-07-04", "2026-08-01", "2026-09-05"]}
+        assert classify_format(ev, 63) == "puntual"
 
 
 class TestCalendarWindow:

@@ -9,7 +9,7 @@ from concurrent.futures import ThreadPoolExecutor
 import requests
 from bs4 import BeautifulSoup
 
-from crawlers.base import BaseCrawler, is_safe_url
+from crawlers.base import BaseCrawler, is_safe_url, make_event_id
 from crawlers.categories import normalize
 
 # Map recurrence day abbreviations to Python weekday ints (Monday=0)
@@ -201,9 +201,59 @@ def _fetch_image(url):
     return None
 
 
+def collapse_occurrences(events):
+    """Group same-title events into one, collecting discrete single-day dates.
+
+    datos.madrid.es lists a recurring activity as multiple single-day items
+    (same title, different dtstart). Collapse them into one event that carries a
+    `dates` list of those specific days, so the calendar places entries only on
+    them instead of expanding a continuous start→end range.
+    """
+    by_title = {}
+    order = []
+    for ev in events:
+        t = (ev.get("title") or "").strip().lower()
+        if not t:
+            continue
+        if t not in by_title:
+            by_title[t] = {**ev}
+            by_title[t]["_dates"] = []
+            order.append(t)
+        g = by_title[t]
+        sd = ev.get("start_date")
+        ed = ev.get("end_date") or sd
+        if sd and ed == sd and sd not in g["_dates"]:  # single-day occurrence
+            g["_dates"].append(sd)
+
+    result = []
+    for t in order:
+        ev = by_title[t]
+        dates = sorted(ev.pop("_dates"))
+        if len(dates) > 1:  # recurs on discrete days
+            ev["dates"] = dates
+            ev["start_date"] = dates[0]
+            ev["end_date"] = dates[-1]
+        result.append(ev)
+    return result
+
+
 class _MadridDatosBase(BaseCrawler):
     """Base for datos.madrid.es JSON-LD feeds."""
     json_url: str = ""
+
+    def run(self, force=False):
+        # The full feed is re-fetched every run, so we skip base.py's incremental
+        # date-widening (which turned discrete occurrences into a continuous range
+        # and accumulated stale dates). Group by title into discrete dates instead.
+        print(f"Running: {self.name}")
+        events = collapse_occurrences(self.crawl())
+        for ev in events:
+            ev["id"] = make_event_id(ev.get("title", ""))
+            ev.pop("_enriched", None)
+            ev.pop("_broken", None)
+        print(f"  Got {len(events)} events")
+        self.save(events)
+        return events
 
     def crawl(self, fetch_images=False) -> list[dict]:
         resp = requests.get(self.json_url, timeout=30)
