@@ -83,6 +83,31 @@ class TestClassifyFormat:
         ev = {"title": "Visita guiada", "dates": ["2026-07-04", "2026-08-01", "2026-09-05"]}
         assert classify_format(ev, 63) == "puntual"
 
+    def test_multi_event_flag_suppressed_for_exhibition(self):
+        # a single exhibition inside a festival is wrongly flagged is_multi_event
+        ev = {"title": "Lux & Umbra. Viviane Sassen (PHotoESPAÑA)",
+              "is_multi_event": True, "categories": ["exposiciones"]}
+        assert classify_format(ev, 40) == "exposicion"
+
+    def test_multi_event_flag_suppressed_for_guided_visit(self):
+        ev = {"title": "Entreparques. Ruta del agua", "is_multi_event": True,
+              "categories": ["visitas guiadas"], "dates": ["2026-07-04", "2026-08-01"]}
+        assert classify_format(ev, 30) == "puntual"
+
+    def test_multi_event_flag_suppressed_for_market(self):
+        ev = {"title": "Mercado de Productores", "is_multi_event": True,
+              "categories": ["mercados"]}
+        assert classify_format(ev, 40) == "exposicion"
+
+    def test_multi_event_kept_for_concert_festival(self):
+        ev = {"title": "Veranos de la Villa", "is_multi_event": True,
+              "categories": ["conciertos"]}
+        assert classify_format(ev, 40) == "festival"
+
+    def test_title_keyword_wins_over_atomic_category(self):
+        ev = {"title": "Ciclo de exposiciones", "categories": ["exposiciones"]}
+        assert classify_format(ev, 40) == "festival"
+
 
 class TestCalendarWindow:
     """The retention window keeps 7 days of past events so recently-expired

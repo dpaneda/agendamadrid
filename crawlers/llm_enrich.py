@@ -24,7 +24,7 @@ PROMPT = """Extrae datos estructurados de esta página web de un evento en Madri
   "end_date": "string - formato YYYY-MM-DD, último día, o null si es un solo día",
   "schedule": "objeto con los días y horarios. Busca tablas de horario, secciones 'horario', 'cuándo', 'apertura'. Formato: {'L': '10:00-20:00', 'M': '10:00-20:00', ...} usando L,M,X,J,V,S,D para los días. Si el horario es el mismo todos los días pon {'todos': '10:00-20:00'}. null solo si no hay ninguna información de horario",
   "categories": ["Al menos una categoría de: teatro, conciertos, exposiciones, talleres, conferencias, deportes, ferias. Tags adicionales opcionales: infantil, visitas guiadas, gratis, danza, circo, ópera, monólogos, aire libre, cine, fotografía, gastronomía, literatura, mercados, fiestas, musicales, flamenco, magia"],
-  "is_multi_event": "boolean - true si es un festival, ciclo o programación con múltiples eventos/espectáculos dentro (ej: festivales, temporadas, ciclos de conciertos). false si es un evento único"
+  "is_multi_event": "boolean - true SOLO si ESTE evento es en sí mismo un festival, ciclo o programa paraguas que agrupa VARIOS espectáculos/eventos distintos bajo un mismo programa (ej: 'Veranos de la Villa', 'PHotoESPAÑA', 'Ciclo de Jazz'). false en TODO lo demás: un concierto de un artista, una obra de teatro, una exposición individual (aunque forme parte de un festival como PHotoESPAÑA), una visita guiada, un mercado, un taller, un club de lectura o cualquier actividad/servicio recurrente"
 }
 
 REGLAS:
@@ -46,7 +46,9 @@ Eventos:
 {events_json}
 
 Devuelve SOLO un JSON array con un objeto por evento (mismo orden), cada uno con:
-{{"title": "título mejorado", "description": "máx 2 frases del contenido", "categories": ["categorías y tags"], "price": "precio o null"}}
+{{"title": "título mejorado", "description": "máx 2 frases del contenido", "categories": ["categorías y tags"], "price": "precio o null", "is_multi_event": true/false}}
+
+is_multi_event: true SOLO si ESE evento es en sí mismo un festival, ciclo o programa paraguas que agrupa VARIOS espectáculos/eventos distintos (ej: 'Veranos de la Villa', 'PHotoESPAÑA', 'Ciclo de Jazz'). false en TODO lo demás: un concierto de un artista, una obra, una exposición individual (aunque pertenezca a un festival), una visita guiada, un mercado, un taller, un club o cualquier actividad recurrente.
 
 REGLAS:
 - Responde SOLO con el JSON array, sin markdown ni explicaciones

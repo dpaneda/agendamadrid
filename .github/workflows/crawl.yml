@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "0 6 * * *"  # 1 vez al dia
   workflow_dispatch:  # manual trigger
+    inputs:
+      force_enrich:
+        description: "Re-enrich all events with the LLM (ignore cache)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -36,8 +41,10 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          python -m crawlers.enrich_source esmadrid
-          python -m crawlers.enrich_source madrid_agenda --batch
+          FORCE=""
+          if [ "${{ inputs.force_enrich }}" = "true" ]; then FORCE="--force"; fi
+          python -m crawlers.enrich_source esmadrid $FORCE
+          python -m crawlers.enrich_source madrid_agenda --batch $FORCE
 
       - name: Download images
         run: python -m crawlers.download_images
