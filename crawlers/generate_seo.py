@@ -82,9 +82,15 @@ def _generate_json_ld(day_events, ds):
             item["endDate"] = _start_dt(ds, ev["end_time"])
         if ev.get("url"):
             item["url"] = ev["url"]
+        cats = [CATEGORY_LABELS.get(c, c) for c in (ev.get("categories") or []) if c != "gratis"]
+        # description is required by Google's Event structured data. Fall back to
+        # a synthesized one (title + categories + venue) when the event has none.
         if ev.get("description"):
             item["description"] = ev["description"][:300]
-        cats = [CATEGORY_LABELS.get(c, c) for c in (ev.get("categories") or []) if c != "gratis"]
+        else:
+            loc = ev.get("location_name") or ev.get("location") or "Madrid"
+            prefix = f"{', '.join(cats)}: " if cats else ""
+            item["description"] = f"{prefix}{ev['title']} en {loc}, Madrid."
         if cats:
             item["keywords"] = ", ".join(cats)
         is_free = "gratis" in (ev.get("categories") or [])
