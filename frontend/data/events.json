@@ -66,7 +66,7 @@
     ],
     "description": "Programa de actividades recreativas y sociales destinado a las personas mayores del distrito.",
     "is_multi_event": true,
-    "formato": "festival"
+    "formato": "exposicion"
   },
   "53d931b35dde9a6f": {
     "title": "Actividades mensuales centros de mayores - Distrito Fuencarral-El Pardo",
@@ -78,7 +78,7 @@
     ],
     "description": "Conjunto de talleres y eventos organizados mensualmente para fomentar la participación activa de los mayores del distrito.",
     "is_multi_event": true,
-    "formato": "festival"
+    "formato": "exposicion"
   },
   "b5d8fc973f21935d": {
     "title": "Actividades mensuales centros de mayores - Distrito Vicálvaro",
@@ -90,7 +90,7 @@
     ],
     "description": "Agenda mensual de actividades socioculturales dirigidas a los usuarios de los centros de mayores de Vicálvaro.",
     "is_multi_event": true,
-    "formato": "festival"
+    "formato": "exposicion"
   },
   "afc1ce9016e2c27e": {
     "title": "Acto solemne de izado de la bandera nacional",
@@ -440,7 +440,7 @@
     ],
     "description": "Programa formativo y de ocio estival para diversos públicos. Actividades variadas organizadas durante la temporada de verano.",
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "exposicion",
     "lid": "3585bff7"
   },
   "51705b5a9039a200": {
@@ -550,7 +550,7 @@
     ],
     "description": "Programa de actividades recreativas y educativas para niños en el distrito de Tetuán. Opción de ocio infantil durante el verano.",
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "exposicion",
     "lid": "d75ccb20"
   },
   "19479fc9348f55c3": {
@@ -563,7 +563,7 @@
     ],
     "description": "Actividades estivales infantiles en el distrito de Barajas. Un espacio diseñado para la diversión y aprendizaje de los más pequeños.",
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "exposicion",
     "lid": "2f1901fb"
   },
   "0bda71508c121c88": {
@@ -671,7 +671,7 @@
     "description": "Programa general de actividades lúdicas y deportivas para niños durante las vacaciones escolares.",
     "price": "0",
     "is_multi_event": true,
-    "formato": "festival"
+    "formato": "exposicion"
   },
   "f5f735369fc5a6ff": {
     "title": "Campamentos de verano 2026 en Arganzuela",
@@ -712,7 +712,7 @@
     "description": "Ciclo de actividades recreativas y de tiempo libre para menores en el distrito de Villaverde.",
     "price": "0",
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "exposicion",
     "lid": "5435f959"
   },
   "38d99d00ef59ae41": {
@@ -1623,7 +1623,7 @@
     ],
     "price": "gratis",
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "e3f7beb5"
   },
   "82b49e41a191b2b9": {
@@ -2027,8 +2027,8 @@
     "formato": "puntual"
   },
   "a2425f3290ba6380": {
-    "title": "Entreparques. Ruta del agua: de Legazpi a Hospital Doce de Octubre",
-    "description": "En esta ruta de senderismo urbano realizaremos un itinerario guiado de 5 km. Recorreremos diferentes puntos icono de la gestión del agua en la ciudad de Madrid, acompañados por un educador ambiental. Actividad dirigida a público adulto (mayores de 18 años).  Duración estimada: aproximadamente 3 horas.    Necesaria inscripción previa.  Para más información y reservas de esta actividad, la forma de contacto es a través de:  Correo electrónico: proambiental@madrid.es  Teléfono: 915 478 473  El h...",
+    "title": "Entreparques: Ruta del agua de Legazpi a Hospital Doce de Octubre",
+    "description": "Itinerario guiado de 5 km para descubrir puntos emblemáticos de la gestión del agua en Madrid. Acompañados por un educador ambiental.",
     "start_time": "18:30:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a41e35df71eee910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
@@ -2049,19 +2049,20 @@
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d2fc8e919f069910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
-      "otros"
+      "teatro"
     ],
+    "description": "Programa de formación dirigido a mayores para el análisis y disfrute de las artes escénicas. Espacio de encuentro y reflexión cultural.",
     "formato": "exposicion",
     "lid": "d40f267f"
   },
   "2b8661efc4786fc0": {
-    "title": "Esculturas desconocidas II",
-    "description": "Si ya has hecho con nosotros el primer recorrido de Esculturas desconocidas de El Retiro, sabrás que los Jardines de El Buen Retiro albergan multitud de esculturas por mucha gente desconocidas.   En esta segunda parte podrás descubrir nuevas curiosidades sobre ellas. Actividad dirigida a público adulto.  Duración estimada: aproximadamente 2 horas.     Necesaria inscripción previa.  La inscripción se puede realizar de alguna de las siguientes maneras:  Por correo electrónico: inforetiro@madrid...",
+    "title": "Visita guiada: Esculturas desconocidas del Retiro II",
+    "description": "Segunda parte del recorrido por los Jardines del Buen Retiro dedicado a descubrir las esculturas ocultas del parque.",
     "start_time": "10:00:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=4e295a33ba4e3910VgnVCM1000001d4a900aRCRD",
     "source": "madrid_agenda",
     "categories": [
-      "otros",
+      "visitas guiadas",
       "gratis"
     ],
     "dates": [
@@ -2080,18 +2081,20 @@
       "talleres",
       "gratis"
     ],
+    "description": "Punto de encuentro lúdico intergeneracional con diversas actividades de juego para todos los públicos.",
     "formato": "exposicion",
     "lid": "398d56b6"
   },
   "64f04523d115a2b0": {
-    "title": "Espacio mensual para el recuerdo de las mujeres, niñas y niños, víctimas de violencia machista",
+    "title": "Espacio mensual de recuerdo a víctimas de violencia machista",
     "start_time": "19:15:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8728f8f02740c910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
-      "otros",
+      "conferencias",
       "gratis"
     ],
+    "description": "Acto comunitario de homenaje y visibilidad para las mujeres, niñas y niños víctimas de la violencia machista.",
     "formato": "puntual",
     "lid": "f14ce3db"
   },
@@ -2101,20 +2104,20 @@
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=6fbcc8f7188fe910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
-      "otros",
+      "talleres",
       "gratis"
     ],
+    "description": "Sesión enfocada al desarrollo personal y la gestión emocional. Un espacio seguro para trabajar el amor propio.",
     "formato": "puntual",
     "lid": "22840c10"
   },
   "551a89cac6c2f324": {
     "title": "Este verano combate el calor jugando",
-    "description": "El Centro cultural te abre sus puertas todos los días para que pases un ratito divertido y fresquito.Juegos clásicos para todas las edades como el Trivial, Party, Double, Times up, Virus, Cluedo, Monopoli, Aventureros al tren, Catan, Carcassone, La polilla tramposa, RummikubJuegos infantiles como Quién es quién, Parchís, La oca, Cartas en general, Hundir la flota, Xploding kittens.  Edad: de 6 a 99 años. Niños menores de 12 años acompañados por un adulto.",
+    "description": "Actividad de juegos de mesa clásicos como Trivial, Cluedo o Party para todas las edades. Ideal para divertirse en un entorno fresquito.",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=71b1e616ad21f910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
-      "teatro",
-      "cine",
+      "talleres",
       "gratis"
     ],
     "formato": "exposicion",
@@ -2129,53 +2132,62 @@
       "talleres",
       "gratis"
     ],
+    "description": "Sesión de estiramientos dirigida para mejorar la flexibilidad y el bienestar físico. Taller abierto para fomentar el ejercicio saludable.",
     "formato": "exposicion",
     "lid": "22840c10"
   },
   "1de6e0b661c14d6a": {
-    "title": "Estivales en el FGCCVilla. El Trovador",
+    "title": "Estivales en el FGCCVilla: El Trovador",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=ea170ad1e7919910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
-      "destacado"
+      "ópera",
+      "teatro"
     ],
-    "formato": "exposicion",
+    "description": "Representación de la ópera El Trovador dentro del programa cultural de verano en la Villa.",
+    "is_multi_event": true,
+    "formato": "festival",
     "lid": "c9c45e0d"
   },
   "eb5821f877df4a87": {
-    "title": "Estivales en el FG.CCVILLA. Zarzuela en la Villa",
+    "title": "Estivales en el FGCCVilla: Zarzuela en la Villa",
     "start_time": "20:00:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=08f30ad1e7919910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
-      "destacado"
+      "teatro",
+      "conciertos"
     ],
-    "formato": "exposicion",
+    "description": "Ciclo de representaciones de zarzuela integrado en la programación de verano de la Villa.",
+    "is_multi_event": true,
+    "formato": "festival",
     "lid": "c9c45e0d"
   },
   "dbfdfeea7fb9402e": {
-    "title": "Estrenos Cineteca",
+    "title": "Estrenos en Cineteca",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=0e63fc6a6f343910VgnVCM1000001d4a900aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "teatro",
       "cine"
     ],
+    "description": "Programación semanal de estrenos cinematográficos en la Cineteca de Madrid.",
     "formato": "exposicion",
     "lid": "95a62894"
   },
   "ce0a29fb53724404": {
-    "title": "Estudio abierto  ·  Yuan iuan",
+    "title": "Estudio abierto: Yuan iuan",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=181f4090743fe910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
-      "destacado"
+      "exposiciones"
     ],
+    "description": "Sesión de exposición y puertas abiertas en el espacio de trabajo del artista Yuan iuan.",
     "formato": "puntual"
   },
   "b22d92e002ecd5e2": {
-    "title": "Eternos 70. Tributo a la música española",
-    "description": "Dúo Binotti- Tavares Concierto homenaje a grandes artistas de la música española de los años 70, con cancionesque marcaron a varias generaciones y siguen siendo clásicos hoy. Beatrice Binotti y DavidTavares ofrecen un recital emotivo y cercano que invita a viajar musicalmente a esa época. Elrepertorio incluye temas de Nino Bravo, Cecilia, Mari Trini, Camilo Sesto, Jeanette, Mocedades,Luis Aguilé, Dúo Dinámico, Fórmula V y Julio Iglesias. Todos los públicos. Duración: 60 minutos.",
+    "title": "Eternos 70: Tributo a la música española",
+    "description": "Concierto homenaje a los clásicos de la música española de los años 70 a cargo del dúo Binotti-Tavares.",
     "start_time": "20:00:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8d8d0ef8c58fe910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
@@ -2188,25 +2200,27 @@
   },
   "3e2f613ebf1a3b34": {
     "title": "Evento Multicultural Puente de Vallecas",
-    "description": "Horario de las actuaciones, baile, desfiles y DJ:   Viernes: a partir de las 17 hasta las 22 horas. Sábado: de 11 a 15 y de 17 a 22 horas.  Domingo: de 11 a 15 y de 17 a 22 horas.   Puente de Vallecas se convierte en punto de encuentro entre culturas con una gran celebración multicultural que reunirá tradiciones, música, danza y gastronomía de distintos países de Europa y América Latina. Un espacio de convivencia y participación ciudadana donde la diversidad se convierte en protagonista a tra...",
+    "description": "Jornadas de convivencia que incluyen actuaciones musicales, desfiles, baile y animación con DJ.",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=0ce40113018dd910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
-      "otros",
+      "ferias",
       "gratis"
     ],
-    "formato": "exposicion",
+    "is_multi_event": true,
+    "formato": "festival",
     "lid": "fef6f71f"
   },
   "970eaf0d4dc9bec3": {
-    "title": "Evolution",
-    "description": "De Julio Soto Gurpide y Zayra Muñoz Domínguez.  Recomendada a partir de siete años.  Cuando una sustancia extraterrestre mezcla el ADN de Zoe con el de sus exóticas mascotas, empieza una divertidísima aventura donde los humanos se animalizan, los animales se humanizan y todos tienen que ponerse de acuerdo para salvar el mundo.",
+    "title": "Proyección infantil: Evolution",
+    "description": "Proyección de la película de animación Evolution, recomendada a partir de siete años.",
     "start_time": "22:15:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=58bd36ea9eabe910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "teatro",
       "cine",
+      "infantil",
       "gratis"
     ],
     "dates": [
@@ -2223,19 +2237,22 @@
     "source": "madrid_agenda",
     "categories": [
       "visitas guiadas",
-      "gratis"
+      "gratis",
+      "aire libre"
     ],
+    "description": "Salida guiada a las zonas de baño natural en Rascafría para disfrutar de una jornada de ocio al aire libre.",
     "formato": "puntual",
     "lid": "212de84d"
   },
   "d54e07e96c038950": {
-    "title": "Explora la naturaleza de tu barrio",
-    "description": "De 11 a 13:30 horas   Categoría: Taller.  Lugar: Stand en la Avenida de San Fermín, Distrito de Usera.      Edad: Público infantil, a partir de 5 años (menores acompañados con un adulto).  Sinopsis: San Fermín es un barrio rodeado de mucha naturaleza, ¿te gustaría conocerla? Te proponemos participar en un divertido taller en el que te convertirás en un auténtico explorador de la naturaleza. Acepta el reto de descubrir que especies de plantas y animales habitan con nosotros. No olvides traer t...",
+    "title": "Taller: Explora la naturaleza de tu barrio",
+    "description": "Actividad educativa diseñada para niños a partir de 5 años para conocer la naturaleza urbana. Ubicado en la Avenida de San Fermín.",
     "start_time": "11:00:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=452eaa4db45de910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "talleres",
+      "infantil",
       "gratis"
     ],
     "formato": "puntual",
@@ -2945,7 +2962,7 @@
     ],
     "description": "Ciclo de encuentros y dinámicas grupales orientadas a la experimentación y colaboración en Medialab Matadero.",
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "exposicion",
     "lid": "95a62894"
   },
   "be25cf363ac7662a": {
@@ -3236,7 +3253,7 @@
       "2026-09-12"
     ],
     "is_multi_event": true,
-    "formato": "festival"
+    "formato": "puntual"
   },
   "0e4b55ab5fc8fbbf": {
     "title": "II Edición Yo leo en Chamberí",
@@ -3711,7 +3728,7 @@
       "gratis"
     ],
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "exposicion",
     "lid": "cf403d6c"
   },
   "833f0497ed8aebfc": {
@@ -3771,7 +3788,7 @@
     ],
     "price": "0",
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "4c65808b"
   },
   "00d29c5d932b02fa": {
@@ -3786,7 +3803,7 @@
     ],
     "price": "0",
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "4c65808b"
   },
   "681ca72dce7967e6": {
@@ -3802,7 +3819,7 @@
     ],
     "price": "0",
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "4c65808b"
   },
   "dd414ad196e7784e": {
@@ -3817,7 +3834,7 @@
     ],
     "price": "0",
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "4c65808b"
   },
   "03912816c6afe68c": {
@@ -3832,7 +3849,7 @@
     ],
     "price": "0",
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "4c65808b"
   },
   "b2f656d2795419b4": {
@@ -3847,7 +3864,7 @@
     ],
     "price": "0",
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "4c65808b"
   },
   "956468fa9d88b6fc": {
@@ -3862,7 +3879,7 @@
     ],
     "price": "0",
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "4c65808b"
   },
   "fcb67011008bbd84": {
@@ -3951,7 +3968,7 @@
     ],
     "description": "Espectáculo musical que homenajea los éxitos veraniegos más icónicos. Parte de la programación de Veranos de la Villa.",
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "95a62894"
   },
   "df0a0365e713986c": {
@@ -5438,7 +5455,7 @@
       "fiestas"
     ],
     "is_multi_event": true,
-    "formato": "festival"
+    "formato": "puntual"
   },
   "948867927e791165": {
     "title": "Proyectar lo joven: encuentro, ocio y creatividad",
@@ -6514,7 +6531,7 @@
     ],
     "description": "Programa de actividades dinámicas y formativas que se desarrollarán a lo largo de las temporadas 2025 y 2026. Un ciclo de talleres creativos.",
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "exposicion",
     "lid": "12aed782"
   },
   "d7f28c6fd251655d": {
@@ -7187,7 +7204,7 @@
     ],
     "description": "Encuentro profesional de carácter europeo sobre tecnología y sociedad. Un evento de ámbito internacional para especialistas del sector.",
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "7f7d0281"
   },
   "696df35cd27d8511": {
@@ -7260,7 +7277,7 @@
     ],
     "price": "0",
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "13acb8c9"
   },
   "5ee2e915fe145b2b": {
@@ -7485,7 +7502,7 @@
     ],
     "price": "gratis",
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "0d332ccb"
   },
   "ad941f8a3a20f91a": {
@@ -7528,7 +7545,7 @@
     ],
     "price": "gratis",
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "0d332ccb"
   },
   "832ce4a45d4304e0": {
@@ -7547,7 +7564,7 @@
     ],
     "price": "gratis",
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "0d332ccb"
   },
   "39547db9649fc3e6": {
@@ -7634,7 +7651,7 @@
     ],
     "price": "gratis",
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "0d332ccb"
   },
   "a8fa51353d6ddfbc": {
@@ -11285,7 +11302,7 @@
     ],
     "location_name": "Varios espacios (Comunidad de Madrid)",
     "is_multi_event": true,
-    "formato": "festival"
+    "formato": "exposicion"
   },
   "0c2efcc5ea4adf47": {
     "title": "Ópera & Zarzuela Dreams",
@@ -11991,7 +12008,7 @@
       "deportes"
     ],
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "d0126c67"
   },
   "713d387cbe2ff5ab": {
@@ -12226,7 +12243,7 @@
       "talleres"
     ],
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "exposicion",
     "lid": "438080e7"
   },
   "e3b72ff45e68e0af": {
@@ -12464,7 +12481,7 @@
       "conciertos"
     ],
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "82e42bdc"
   },
   "574d10738fb2cc4b": {
@@ -12575,7 +12592,7 @@
       "conciertos"
     ],
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "0d71ace6"
   },
   "22833abbb658f48b": {
@@ -12640,7 +12657,7 @@
       "conciertos"
     ],
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "82e42bdc"
   },
   "e6a323b03f44363c": {
@@ -12696,7 +12713,7 @@
       "magia"
     ],
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "exposicion",
     "lid": "3c29714c"
   },
   "a079cf40fd07e016": {
@@ -12796,7 +12813,7 @@
       "conciertos"
     ],
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "82e42bdc"
   },
   "9ed1d25395366bd8": {
@@ -13458,7 +13475,7 @@
       "conciertos"
     ],
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "82e42bdc"
   },
   "e28f4cdb50e0ec38": {
@@ -13680,7 +13697,7 @@
       "conciertos"
     ],
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "82e42bdc"
   },
   "3078b6823dc89122": {
@@ -13848,7 +13865,7 @@
       "conciertos"
     ],
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "82e42bdc"
   },
   "015e06d5a03c2eaf": {
@@ -14236,7 +14253,7 @@
       "conciertos"
     ],
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "82e42bdc"
   },
   "6fdb017f0b4f87d6": {
@@ -14361,7 +14378,7 @@
       "conciertos"
     ],
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "50107e1c"
   },
   "702508d265256aaf": {
@@ -14377,7 +14394,7 @@
       "conciertos"
     ],
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "82e42bdc"
   },
   "67dd26457cdece77": {
@@ -14432,7 +14449,7 @@
       "conciertos"
     ],
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "50107e1c"
   },
   "35137d72c2efc6da": {
@@ -14529,7 +14546,7 @@
       "conciertos"
     ],
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "50107e1c"
   },
   "9807d1bf63c0d115": {
@@ -14612,7 +14629,7 @@
       "conciertos"
     ],
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "93c8a15d"
   },
   "816d7303d8b09b89": {
@@ -14722,7 +14739,7 @@
       "danza"
     ],
     "is_multi_event": true,
-    "formato": "festival",
+    "formato": "puntual",
     "lid": "9b2ba2ac"
   },
   "80cef14ba5227ef6": {
