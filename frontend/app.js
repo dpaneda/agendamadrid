@@ -1537,10 +1537,12 @@ function updateFilterBadge() {
   if (btn) btn.classList.toggle("has-filters", count > 0);
 }
 
+// Note: the internal formato value stays "festival"; only the label changes.
+// The bucket holds festivals, cycles, programmes and multi-session series.
 const FORMATO_LABELS = {
   puntual: "🎯 Puntual",
   exposicion: "🖼 Exposiciones",
-  festival: "🎪 Festivales",
+  festival: "🎪 Eventos temáticos",
 };
 
 function renderFilterPanelContent(panel) {
