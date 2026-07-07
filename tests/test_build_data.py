@@ -58,8 +58,23 @@ class TestDurationDays:
 
 
 class TestClassifyFormat:
-    def test_festival_by_flag(self):
-        assert classify_format({"is_multi_event": True, "title": "Cosa"}, 1) == "festival"
+    def test_festival_by_flag_multiday(self):
+        assert classify_format({"is_multi_event": True, "title": "Cosa"}, 30) == "festival"
+
+    def test_single_day_multi_event_is_not_festival(self):
+        # a single concert wrongly flagged is_multi_event runs one day -> puntual
+        ev = {"title": "John Legend", "is_multi_event": True, "categories": ["conciertos"]}
+        assert classify_format(ev, 1) == "puntual"
+
+    def test_discrete_dates_multi_event_is_not_festival(self):
+        ev = {"title": "Serie de conciertos", "is_multi_event": True,
+              "categories": ["conciertos"], "dates": ["2026-07-01", "2026-08-01"]}
+        assert classify_format(ev, 32) == "puntual"
+
+    def test_multi_event_suppressed_for_workshop(self):
+        ev = {"title": "Campamento de verano", "is_multi_event": True,
+              "categories": ["talleres", "infantil"]}
+        assert classify_format(ev, 37) == "exposicion"
 
     def test_festival_by_title_keyword(self):
         assert classify_format({"title": "Festival de Otoño"}, 1) == "festival"

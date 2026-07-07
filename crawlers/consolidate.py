@@ -65,18 +65,24 @@ def _duration_days(start_date, end_date):
     return max(1, (end - start).days + 1)
 
 
-# Categories incompatible with a "festival" (an exhibition, guided visit or
-# market is never a festival, even if the LLM's is_multi_event flag says so).
-_NON_FESTIVAL_CATS = {"exposiciones", "visitas guiadas", "mercados"}
+# Categories incompatible with a "festival" (an exhibition, guided visit,
+# market or workshop is never a festival, even if is_multi_event says so).
+_NON_FESTIVAL_CATS = {"exposiciones", "visitas guiadas", "mercados", "talleres"}
+FESTIVAL_MIN_DAYS = 2
 
 
 def classify_format(event, duration_days):
     """Bucket de formato: 'festival', 'exposicion' o 'puntual' (excluyente, por prioridad)."""
     if _FESTIVAL_RE.search(event.get("title") or ""):
         return "festival"
-    # is_multi_event (from the LLM) is noisy — suppress it for clearly-atomic
-    # categories as a guardrail against false positives.
-    if event.get("is_multi_event") and not (set(event.get("categories") or []) & _NON_FESTIVAL_CATS):
+    # is_multi_event (from the LLM) is noisy. Only trust it for a genuine
+    # multi-day continuous run of a cultural type: a real festival spans several
+    # days, while mislabelled single concerts/shows run a single day, and
+    # discrete-date series or atomic categories aren't festivals at all.
+    if (event.get("is_multi_event")
+            and not event.get("dates")
+            and duration_days >= FESTIVAL_MIN_DAYS
+            and not (set(event.get("categories") or []) & _NON_FESTIVAL_CATS)):
         return "festival"
     # Discrete-date events (recur on specific days, e.g. a guided visit) are
     # point-in-time, not a continuous run, so they are never exposicion.
