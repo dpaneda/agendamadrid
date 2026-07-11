@@ -27,7 +27,7 @@ Web de eventos de Madrid.
 
 ## Categorias canonicas
 
-18 categorias + 4 tags modificadores en `crawlers/categories.py`. Todos los crawlers mapean a este set fijo.
+8 categorias + 19 tags modificadores en `crawlers/categories.py` (set canonico interno). Todos los crawlers mapean a este set fijo. En el frontend no hay distincion categoria/subcategoria: el eje primario es el Formato (Puntual / Exposiciones / Eventos tematicos) y el resto del vocabulario se presenta como tags planos ordenados por volumen (tabla unica `TAGS` en `frontend/app.js`).
 
 ## Pipeline de datos
 

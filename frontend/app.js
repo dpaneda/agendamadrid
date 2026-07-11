@@ -293,49 +293,11 @@ const MONTHS_ES = [
 
 const DAYS_LONG = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
 
-const CATEGORY_LABELS = {
-  "teatro": "teatro",
-  "monólogos": "monólogos",
-  "danza": "danza",
-  "circo": "circo",
-  "conciertos": "conciertos",
-  "ópera": "ópera",
-  "cine": "cine",
-  "exposiciones": "exposiciones",
-  "literatura": "literatura",
-  "talleres": "talleres",
-  "conferencias": "conferencias",
-  "visitas guiadas": "visitas guiadas",
-  "infantil": "infantil",
-  "deportes": "deportes",
-  "ferias": "ferias",
-  "otros": "otros",
-  "gratis": "gratis",
-  "aire libre": "aire libre",
-  "accesible": "accesible",
-  "destacado": "destacado",
-  "fotografía": "fotografía",
-  "gastronomía": "gastronomía",
-  "mercados": "mercados",
-  "fiestas": "fiestas",
-  "musicales": "musicales",
-  "flamenco": "flamenco",
-  "magia": "magia",
-  // Legacy
-  "musica": "música",
-  "fotografia": "fotografía",
-};
-
 const SOURCE_LABELS = {
   "madrid_agenda": "datos.madrid.es",
   "esmadrid": "esmadrid.com",
   "teatros_canal": "teatroscanal.com",
 };
-
-const TAG_CATS = new Set(["gratis", "destacado", "aire libre", "accesible", "infantil", "visitas guiadas", "danza", "circo", "ópera", "monólogos", "cine", "fotografía", "gastronomía", "literatura", "mercados", "fiestas", "musicales", "flamenco", "magia"]);
-const MAIN_CATS = ["exposiciones","teatro","conciertos","ferias","conferencias","talleres","deportes","otros"];
-const TAG_ORDER = ["danza","monólogos","musicales","ópera","flamenco","circo","magia","cine","fotografía","literatura","visitas guiadas","gastronomía","mercados","fiestas","infantil","aire libre"];
-const CAT_PRIORITY = ["deportes","ferias","conciertos","teatro","talleres","conferencias","musica","fotografia","exposiciones"];
 
 function eventBadges(ev, cls) {
   const price = ev.price || "";
@@ -725,41 +687,7 @@ function locateUser() {
   );
 }
 
-const CAT_ICONS = {
-  teatro:          { emoji: "🎭", color: "#1D4ED8" },
-  "monólogos":     { emoji: "😂", color: "#7C3AED" },
-  danza:           { emoji: "💃", color: "#DB2777" },
-  circo:           { emoji: "🤹", color: "#BE185D" },
-  conciertos:      { emoji: "🎵", color: "#7C3AED" },
-  "ópera":         { emoji: "🎼", color: "#4338CA" },
-  cine:            { emoji: "🎬", color: "#374151" },
-  exposiciones:    { emoji: "🏛️", color: "#0891B2" },
-  literatura:      { emoji: "📖", color: "#7C2D12" },
-  talleres:        { emoji: "🔨", color: "#92400E" },
-  conferencias:    { emoji: "🎤", color: "#4338CA" },
-  "visitas guiadas": { emoji: "🗺️", color: "#1E40AF" },
-  infantil:        { emoji: "🧸", color: "#F59E0B" },
-  deportes:        { emoji: "⚽", color: "#16A34A" },
-  ferias:          { emoji: "🛍️", color: "#DC2626" },
-  otros:           { emoji: "📌", color: "#6B7280" },
-  gratis:          { emoji: "🆓", color: "#16A34A" },
-  "aire libre":    { emoji: "🌳", color: "#22C55E" },
-  accesible:       { emoji: "♿", color: "#2563EB" },
-  destacado:       { emoji: "⭐", color: "#EAB308" },
-  "fotografía":    { emoji: "📷", color: "#6B7280" },
-  "gastronomía":   { emoji: "🍽️", color: "#EA580C" },
-  mercados:        { emoji: "🛒", color: "#15803D" },
-  fiestas:         { emoji: "🎉", color: "#DC2626" },
-  musicales:       { emoji: "🎶", color: "#7C3AED" },
-  flamenco:        { emoji: "💃", color: "#DC2626" },
-  magia:           { emoji: "🪄", color: "#7C3AED" },
-  // Legacy aliases
-  musica:          { emoji: "🎵", color: "#7C3AED" },
-  fotografia:      { emoji: "📷", color: "#6B7280" },
-};
-
-// Fuente única de verdad de metadatos de tags. Reemplaza (se irá borrando)
-// a CATEGORY_LABELS, CAT_ICONS, MAIN_CATS, TAG_ORDER, TAG_CATS, CAT_PRIORITY.
+// Fuente única de verdad de metadatos de tags.
 // kind: "tipo" = qué es el evento; "atributo" = característica transversal.
 // legacy: true = alias antiguo; resuelve label/emoji pero no aparece en filtros.
 const TAGS = {
