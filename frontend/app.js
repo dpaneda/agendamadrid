@@ -1535,20 +1535,20 @@ const FORMATO_LABELS = {
 
 function renderFilterPanelContent(panel) {
   const excluded = Settings.get("excludedCats", []);
-  const chips = tagsByVolume.map(c => {
+  const rows = tagsByVolume.map(c => {
     const info = tagMeta(c);
     const isActive = activeTagFilter.includes(c);
     const isExcluded = excluded.includes(c);
     if (isExcluded) {
-      return `<button class="filter-chip disabled" title="Desactivado en Mis Intereses (Ajustes)">${info.emoji} ${esc(info.label || c)}</button>`;
+      return `<button class="tag-row disabled" title="Desactivado en Mis Intereses (Ajustes)"><span class="tag-dot"></span>${esc(info.label || c)}</button>`;
     }
-    return `<button class="filter-chip${isActive ? " active" : ""}" onclick="toggleActiveTag('${esc(c)}')">${info.emoji} ${esc(info.label || c)}</button>`;
+    return `<button class="tag-row${isActive ? " active" : ""}" onclick="toggleActiveTag('${esc(c)}')"><span class="tag-dot" style="background:${info.color}"></span>${esc(info.label || c)}</button>`;
   }).join("");
   const hasFilters = activeTagFilter.length + (activeFormato ? 1 : 0) > 0;
   panel.innerHTML = `
     <div class="filter-panel-section">
       <div class="filter-panel-label">Tags</div>
-      <div class="filter-chips">${chips}</div>
+      <div class="tag-list">${rows}</div>
     </div>
     ${hasFilters ? `<button class="filter-clear-btn" onclick="clearActiveFilters()">Limpiar filtros</button>` : ""}
   `;

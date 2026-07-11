@@ -570,35 +570,46 @@ header[hidden] {
   letter-spacing: 0.05em;
   margin-bottom: 0.4rem;
 }
-.filter-chips {
+/* Lista compacta de tags: fila con punto del color del tag. */
+.tag-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
+  flex-direction: column;
+  gap: 0.05rem;
 }
-.filter-chip {
-  display: inline-flex;
+.tag-row {
+  display: flex;
   align-items: center;
-  gap: 0.25rem;
-  padding: 0.35rem 0.7rem;
-  border-radius: var(--radius-full);
-  background: var(--surface-container);
-  border: 1px solid var(--surface-container-highest);
-  font-size: 0.8rem;
+  gap: 0.55rem;
+  width: 100%;
+  padding: 0.32rem 0.45rem;
+  border: none;
+  background: none;
+  border-radius: 7px;
   font-family: inherit;
-  cursor: pointer;
-  transition: all 0.15s;
+  font-size: 0.85rem;
   color: var(--fg);
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.12s;
 }
-.filter-chip.active {
-  background: var(--primary);
-  color: var(--white);
-  border-color: var(--primary);
+.tag-row:hover { background: var(--surface-container); }
+.tag-row.active {
+  background: var(--surface-container);
+  font-weight: 600;
 }
-.filter-chip.disabled {
-  opacity: 0.3;
+.tag-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+  background: var(--muted);
+}
+.tag-row.disabled {
+  opacity: 0.4;
   cursor: not-allowed;
   text-decoration: line-through;
 }
+.tag-row.disabled .tag-dot { background: var(--muted) !important; }
 .filter-clear-btn {
   display: block;
   width: 100%;
