@@ -395,7 +395,6 @@ let activeSource = Settings.get("source", "esmadrid");
 let activeSort = Settings.get("sort", "hora");
 let activeUserFilter = sessionStorage.getItem("activeUserFilter") || "";
 let activeSearch = "";
-let activeCatFilter = [];
 let activeFormato = sessionStorage.getItem("activeFormato") || "";
 let activeTagFilter = [];
 let currentView = sessionStorage.getItem("currentView") || "list";
@@ -942,16 +941,12 @@ function buildCategories() {
 }
 
 function _applyCatFilter(events) {
-  // Stage 1: Mis Intereses — exclude events that have ANY excluded category
+  // Stage 1: Mis Intereses — excluye eventos con CUALQUIER tag desactivado.
   const excluded = Settings.get("excludedCats", []);
   if (excluded.length) {
     events = events.filter(ev => !(ev.categories || []).some(c => excluded.includes(c)));
   }
-  // Stage 2: Quick filter — categories (OR within)
-  if (activeCatFilter.length) {
-    events = events.filter(ev => (ev.categories || []).some(c => activeCatFilter.includes(c)));
-  }
-  // Stage 3: Quick filter — tags (OR within, AND with categories)
+  // Stage 2: filtro de tags (OR interno).
   if (activeTagFilter.length) {
     events = events.filter(ev => (ev.categories || []).some(c => activeTagFilter.includes(c)));
   }
@@ -1288,10 +1283,6 @@ function renderActiveFilters() {
   if (activeFormato) {
     parts.push(`<span class="tag tag-active" role="button" tabindex="0" onclick="toggleFormato('${activeFormato}')">${FORMATO_LABELS[activeFormato]} ✕</span>`);
   }
-  activeCatFilter.forEach(c => {
-    const info = tagMeta(c);
-    parts.push(`<span class="tag tag-active" role="button" tabindex="0" onclick="toggleActiveCat('${esc(c)}')">${info.emoji} ${esc(info.label || c)} ✕</span>`);
-  });
   activeTagFilter.forEach(t => {
     const info = tagMeta(t);
     parts.push(`<span class="tag tag-active" role="button" tabindex="0" onclick="toggleActiveTag('${esc(t)}')">${info.emoji} ${esc(info.label || t)} ✕</span>`);
@@ -1547,16 +1538,6 @@ function toggleFormato(val) {
   if (panel) renderFilterPanelContent(panel);
 }
 
-function toggleActiveCat(cat) {
-  const idx = activeCatFilter.indexOf(cat);
-  if (idx >= 0) activeCatFilter.splice(idx, 1);
-  else activeCatFilter.push(cat);
-  renderActiveFilters();
-  render();
-  const panel = document.getElementById("filter-panel");
-  if (panel) renderFilterPanelContent(panel);
-}
-
 function toggleActiveTag(tag) {
   const idx = activeTagFilter.indexOf(tag);
   if (idx >= 0) activeTagFilter.splice(idx, 1);
@@ -1568,7 +1549,6 @@ function toggleActiveTag(tag) {
 }
 
 function clearActiveFilters() {
-  activeCatFilter = [];
   activeTagFilter = [];
   activeFormato = "";
   sessionStorage.removeItem("activeFormato");
@@ -1579,7 +1559,7 @@ function clearActiveFilters() {
 }
 
 function updateFilterBadge() {
-  const count = activeCatFilter.length + activeTagFilter.length + (activeFormato ? 1 : 0);
+  const count = activeTagFilter.length + (activeFormato ? 1 : 0);
   const badge = document.getElementById("filter-count-badge");
   if (badge) {
     badge.textContent = count;
@@ -1599,35 +1579,20 @@ const FORMATO_LABELS = {
 
 function renderFilterPanelContent(panel) {
   const excluded = Settings.get("excludedCats", []);
-  const mainCats = MAIN_CATS;
-  const tagCats = TAG_ORDER;
-
-  function chips(items, activeList, toggleFn) {
-    return items.map(c => {
-      const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
-      const isActive = activeList.includes(c);
-      const isExcluded = excluded.includes(c);
-      if (isExcluded) return `<button class="filter-chip disabled" title="Desactivado en Mis Intereses (Ajustes)">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</button>`;
-      return `<button class="filter-chip${isActive ? " active" : ""}" onclick="${toggleFn}('${esc(c)}')">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</button>`;
-    }).join("");
-  }
-
-  const hasFilters = activeCatFilter.length + activeTagFilter.length + (activeFormato ? 1 : 0) > 0;
-  const formatoChips = Object.entries(FORMATO_LABELS).map(([val, label]) =>
-    `<button class="filter-chip${activeFormato === val ? " active" : ""}" onclick="toggleFormato('${val}')">${label}</button>`
-  ).join("");
+  const chips = tagsByVolume.map(c => {
+    const info = tagMeta(c);
+    const isActive = activeTagFilter.includes(c);
+    const isExcluded = excluded.includes(c);
+    if (isExcluded) {
+      return `<button class="filter-chip disabled" title="Desactivado en Mis Intereses (Ajustes)">${info.emoji} ${esc(info.label || c)}</button>`;
+    }
+    return `<button class="filter-chip${isActive ? " active" : ""}" onclick="toggleActiveTag('${esc(c)}')">${info.emoji} ${esc(info.label || c)}</button>`;
+  }).join("");
+  const hasFilters = activeTagFilter.length + (activeFormato ? 1 : 0) > 0;
   panel.innerHTML = `
     <div class="filter-panel-section">
-      <div class="filter-panel-label">Formato</div>
-      <div class="filter-chips">${formatoChips}</div>
-    </div>
-    <div class="filter-panel-section">
-      <div class="filter-panel-label">Categorías principales</div>
-      <div class="filter-chips">${chips(mainCats, activeCatFilter, "toggleActiveCat")}</div>
-    </div>
-    <div class="filter-panel-section">
-      <div class="filter-panel-label">Subcategorías</div>
-      <div class="filter-chips">${chips(tagCats, activeTagFilter, "toggleActiveTag")}</div>
+      <div class="filter-panel-label">Tags</div>
+      <div class="filter-chips">${chips}</div>
     </div>
     ${hasFilters ? `<button class="filter-clear-btn" onclick="clearActiveFilters()">Limpiar filtros</button>` : ""}
   `;
