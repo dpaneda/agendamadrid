@@ -417,9 +417,6 @@ header[hidden] {
   .tags-sidebar { display: none !important; }
   .list-layout { display: block; }
 }
-@media (min-width: 641px) {
-  .filter-toggle-btn { display: none; }
-}
 
 .filter-bar-inner {
   max-width: 70rem;
@@ -494,6 +491,10 @@ header[hidden] {
 }
 .filter-toggle-btn.has-filters {
   color: var(--primary);
+}
+/* En desktop los tags viven en la sidebar; el botón de filtro sobra. */
+@media (min-width: 641px) {
+  .filter-toggle-btn { display: none; }
 }
 .filter-count-badge {
   background: var(--primary);
