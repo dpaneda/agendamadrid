@@ -639,6 +639,7 @@ function setView(view) {
   document.querySelector("header").hidden = view === "user" && window.innerWidth <= 640;
   document.querySelector(".filter-bar").style.display = view === "user" ? "none" : "";
   renderFormatoCards();
+  renderTagsSidebar();
   const overlay = document.getElementById("filter-overlay");
   if (overlay) overlay.remove();
   updateURL();
@@ -1120,6 +1121,7 @@ function _renderSearchPage(container, count) {
 function render() {
   updateURL();
   renderFormatoCards();
+  renderTagsSidebar();
   if (currentView === "list") {
     if (activeSearch) { renderSearchList(); return; }
     renderEvents();
@@ -1628,6 +1630,14 @@ function renderFilterPanelContent(panel) {
     </div>
     ${hasFilters ? `<button class="filter-clear-btn" onclick="clearActiveFilters()">Limpiar filtros</button>` : ""}
   `;
+}
+
+function renderTagsSidebar() {
+  const sidebar = document.getElementById("tags-sidebar");
+  if (!sidebar) return;
+  const visible = currentView === "list" && !activeSearch;
+  sidebar.style.display = visible ? "" : "none";
+  if (visible) renderFilterPanelContent(sidebar);
 }
 
 function toggleFilterPanel() {

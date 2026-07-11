@@ -396,6 +396,31 @@ header[hidden] {
   .formato-label { font-size: 0.72rem; }
 }
 
+.list-layout {
+  display: flex;
+  gap: 1rem;
+  max-width: 70rem;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+.tags-sidebar {
+  flex: 0 0 220px;
+  position: sticky;
+  top: 1rem;
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
+  padding: 0.5rem;
+}
+.list-layout > #events-container { flex: 1; min-width: 0; }
+/* En móvil los tags viven en el modal; la sidebar se oculta. */
+@media (max-width: 640px) {
+  .tags-sidebar { display: none !important; }
+  .list-layout { display: block; }
+}
+@media (min-width: 641px) {
+  .filter-toggle-btn { display: none; }
+}
+
 .filter-bar-inner {
   max-width: 70rem;
   margin: 0 auto;
