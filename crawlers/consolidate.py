@@ -67,7 +67,7 @@ def _duration_days(start_date, end_date):
 
 # Categories incompatible with a "festival" (an exhibition, guided visit,
 # market or workshop is never a festival, even if is_multi_event says so).
-_NON_FESTIVAL_CATS = {"exposiciones", "visitas guiadas", "mercados", "talleres"}
+_NON_FESTIVAL_CATS = {"exposiciones", "fotografía", "visitas guiadas", "mercados", "talleres"}
 FESTIVAL_MIN_DAYS = 2
 
 
@@ -412,26 +412,12 @@ def run():
             else:
                 events[eid] = event_data
 
-    # Normalize categories, infer parent category from tags, remove redundant "otros"
-    # 'cine' y 'literatura' NO tienen padre: una pelicula no es teatro ni una
-    # lectura una feria. En el modelo plano del frontend son tags validos por si
-    # mismos y no necesitan una categoria principal fabricada.
-    TAG_PARENT = {
-        "danza": "teatro", "circo": "teatro", "ópera": "conciertos",
-        "monólogos": "teatro", "musicales": "teatro",
-        "magia": "teatro", "flamenco": "conciertos",
-        "fotografía": "exposiciones", "gastronomía": "ferias",
-        "mercados": "ferias", "fiestas": "ferias",
-    }
+    # Normaliza categorias y quita "otros" redundante. Ya no se fabrican
+    # "categorias principales": el frontend usa una lista plana de tags, asi que
+    # cada tag vale por si mismo y no necesita un padre inventado.
     for eid, ev in events.items():
         ev["categories"] = normalize(ev.get("categories", []))
         cats = ev["categories"]
-        # If event only has tags but no main category, add the parent
-        if not any(c in CATEGORIES for c in cats):
-            for tag, parent in TAG_PARENT.items():
-                if tag in cats:
-                    cats.insert(0, parent)
-                    break
         if "otros" in cats and any(c in CATEGORIES and c != "otros" for c in cats):
             cats.remove("otros")
 
