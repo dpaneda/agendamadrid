@@ -413,12 +413,15 @@ def run():
                 events[eid] = event_data
 
     # Normalize categories, infer parent category from tags, remove redundant "otros"
+    # 'cine' y 'literatura' NO tienen padre: una pelicula no es teatro ni una
+    # lectura una feria. En el modelo plano del frontend son tags validos por si
+    # mismos y no necesitan una categoria principal fabricada.
     TAG_PARENT = {
         "danza": "teatro", "circo": "teatro", "ópera": "conciertos",
-        "monólogos": "teatro", "cine": "teatro", "musicales": "teatro",
+        "monólogos": "teatro", "musicales": "teatro",
         "magia": "teatro", "flamenco": "conciertos",
         "fotografía": "exposiciones", "gastronomía": "ferias",
-        "literatura": "ferias", "mercados": "ferias", "fiestas": "ferias",
+        "mercados": "ferias", "fiestas": "ferias",
     }
     for eid, ev in events.items():
         ev["categories"] = normalize(ev.get("categories", []))
