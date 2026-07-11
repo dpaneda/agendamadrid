@@ -1535,13 +1535,10 @@ const FORMATO_LABELS = {
 
 function renderFilterPanelContent(panel) {
   const excluded = Settings.get("excludedCats", []);
-  const rows = tagsByVolume.map(c => {
+  // Los tags desactivados en Ajustes (Mis Intereses) no aparecen en el filtro.
+  const rows = tagsByVolume.filter(c => !excluded.includes(c)).map(c => {
     const info = tagMeta(c);
     const isActive = activeTagFilter.includes(c);
-    const isExcluded = excluded.includes(c);
-    if (isExcluded) {
-      return `<button class="tag-row disabled" title="Desactivado en Mis Intereses (Ajustes)"><span class="tag-dot"></span>${esc(info.label || c)}</button>`;
-    }
     return `<button class="tag-row${isActive ? " active" : ""}" onclick="toggleActiveTag('${esc(c)}')"><span class="tag-dot" style="background:${info.color}"></span>${esc(info.label || c)}</button>`;
   }).join("");
   const hasFilters = activeTagFilter.length + (activeFormato ? 1 : 0) > 0;

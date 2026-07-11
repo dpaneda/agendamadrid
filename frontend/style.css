@@ -604,12 +604,6 @@ header[hidden] {
   flex: 0 0 auto;
   background: var(--muted);
 }
-.tag-row.disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-  text-decoration: line-through;
-}
-.tag-row.disabled .tag-dot { background: var(--muted) !important; }
 .filter-clear-btn {
   display: block;
   width: 100%;
