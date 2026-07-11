@@ -357,10 +357,12 @@ function eventBadges(ev, cls) {
     distBadge = `<span class="${cls} ${cls}-dist">📍 ${d.toFixed(1)} km</span>`;
   }
 
-  const filteredCats = (ev.categories || []).filter(c => !TAG_CATS.has(c));
-  const catBadges = filteredCats.map(c => {
-    const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
-    return `<span class="${cls} ${cls}-cat">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</span>`;
+  const tipoCats = (ev.categories || [])
+    .filter(c => tagMeta(c).kind === "tipo")
+    .sort((a, b) => (tagVolume[b] || 0) - (tagVolume[a] || 0));
+  const catBadges = tipoCats.map(c => {
+    const info = tagMeta(c);
+    return `<span class="${cls} ${cls}-cat">${info.emoji} ${esc(info.label || c)}</span>`;
   }).join("");
 
   return { priceBadge, distBadge, catBadge: catBadges, isFree };
@@ -825,19 +827,12 @@ function renderMap() {
     byLocation.get(key).evs.push(ev);
   });
 
-  const PRIORITY = [
-    "fotografia", "cine",
-    "deportes", "ferias",
-    "musica", "teatro", "talleres", "conferencias",
-    "literatura", "exposiciones", "otros",
-  ];
-
   byLocation.forEach(({ lat, lng, evs }) => {
     bounds.push([lat, lng]);
 
-    // Best category across all events at this location
-    const allCats = evs.flatMap(ev => ev.categories || []);
-    const bestCat = PRIORITY.find(p => allCats.includes(p)) || "otros";
+    // Mejor categoría = tag de tipo con más volumen global entre los eventos del punto.
+    const allCats = evs.flatMap(ev => ev.categories || []).filter(c => tagMeta(c).kind === "tipo");
+    const bestCat = allCats.sort((a, b) => (tagVolume[b] || 0) - (tagVolume[a] || 0))[0] || "otros";
     const location = evs[0].location_name || evs[0].location || "";
 
     // Deduplicate events by title, keep the one with the next upcoming time
@@ -874,7 +869,7 @@ function renderMap() {
       ${evRows}
     </div>`;
 
-    const { emoji } = CAT_ICONS[bestCat] || CAT_ICONS.otros;
+    const { emoji } = tagMeta(bestCat);
     const icon = L.divIcon({
       html: `<div class="map-cat-icon">${emoji}</div>`,
       className: "",
@@ -1294,12 +1289,12 @@ function renderActiveFilters() {
     parts.push(`<span class="tag tag-active" role="button" tabindex="0" onclick="toggleFormato('${activeFormato}')">${FORMATO_LABELS[activeFormato]} ✕</span>`);
   }
   activeCatFilter.forEach(c => {
-    const info = CAT_ICONS[c] || { emoji: "📍" };
-    parts.push(`<span class="tag tag-active" role="button" tabindex="0" onclick="toggleActiveCat('${esc(c)}')">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)} ✕</span>`);
+    const info = tagMeta(c);
+    parts.push(`<span class="tag tag-active" role="button" tabindex="0" onclick="toggleActiveCat('${esc(c)}')">${info.emoji} ${esc(info.label || c)} ✕</span>`);
   });
   activeTagFilter.forEach(t => {
-    const info = CAT_ICONS[t] || { emoji: "📍" };
-    parts.push(`<span class="tag tag-active" role="button" tabindex="0" onclick="toggleActiveTag('${esc(t)}')">${info.emoji} ${esc(CATEGORY_LABELS[t] || t)} ✕</span>`);
+    const info = tagMeta(t);
+    parts.push(`<span class="tag tag-active" role="button" tabindex="0" onclick="toggleActiveTag('${esc(t)}')">${info.emoji} ${esc(info.label || t)} ✕</span>`);
   });
   container.innerHTML = parts.join("");
   updateFilterBadge();
@@ -1842,7 +1837,7 @@ function _buildSwipeDeck() {
 
 function _swipeCardInner(ev, pos, total) {
   const cat = ev.categories?.[0] || "otros";
-  const catInfo = CAT_ICONS[cat] || { emoji: "📍", color: "#6B7280" };
+  const catInfo = tagMeta(cat);
   const color = catInfo.color;
 
   const timeStr = (() => {
