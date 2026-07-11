@@ -1438,23 +1438,18 @@ function renderUserView() {
       </button>
     </div>`;
 
-  const mainCats = MAIN_CATS;
-  const tagCats = TAG_ORDER;
   const excludedCats = Settings.get("excludedCats", []);
 
   function chipList(cats) {
     return cats.map(c => {
-      const info = CAT_ICONS[c] || { emoji: "📍", color: "#6B7280" };
+      const info = tagMeta(c);
       const active = !excludedCats.includes(c);
-      return `<button class="cat-chip${active ? " active" : ""}" aria-pressed="${active}" onclick="toggleCatPref('${esc(c)}')">${info.emoji} ${esc(CATEGORY_LABELS[c] || c)}</button>`;
+      return `<button class="cat-chip${active ? " active" : ""}" aria-pressed="${active}" onclick="toggleCatPref('${esc(c)}')">${info.emoji} ${esc(info.label || c)}</button>`;
     }).join("");
   }
 
   const catGridHtml = `
-    <div class="pref-subheading">Categorías principales</div>
-    <div class="cat-chips-wrap">${chipList(mainCats)}</div>
-    <div class="pref-subheading">Subcategorías</div>
-    <div class="cat-chips-wrap">${chipList(tagCats)}</div>
+    <div class="cat-chips-wrap">${chipList(tagsByVolume)}</div>
   `;
 
   document.getElementById("user-container").innerHTML = `
