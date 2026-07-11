@@ -693,7 +693,7 @@ function locateUser() {
 // legacy: true = old alias; resolves label/emoji but not shown in filters.
 const TAGS = {
   teatro:            { label: "teatro",          emoji: "🎭", color: "#1D4ED8", kind: "tipo" },
-  "monólogos":       { label: "monólogos",       emoji: "😂", color: "#7C3AED", kind: "tipo" },
+  comedia:           { label: "comedia",         emoji: "😂", color: "#7C3AED", kind: "tipo" },
   danza:             { label: "danza",           emoji: "💃", color: "#DB2777", kind: "tipo" },
   circo:             { label: "circo",           emoji: "🤹", color: "#BE185D", kind: "tipo" },
   conciertos:        { label: "conciertos",      emoji: "🎵", color: "#7C3AED", kind: "tipo" },
@@ -714,6 +714,9 @@ const TAGS = {
   musicales:         { label: "musicales",       emoji: "🎶", color: "#7C3AED", kind: "tipo" },
   flamenco:          { label: "flamenco",        emoji: "💃", color: "#DC2626", kind: "tipo" },
   magia:             { label: "magia",           emoji: "🪄", color: "#7C3AED", kind: "tipo" },
+  bienestar:         { label: "bienestar",       emoji: "🧘", color: "#0D9488", kind: "tipo" },
+  naturaleza:        { label: "naturaleza",      emoji: "🌿", color: "#059669", kind: "tipo" },
+  patrimonio:        { label: "patrimonio",      emoji: "🏰", color: "#B45309", kind: "tipo" },
   otros:             { label: "otros",           emoji: "📌", color: "#6B7280", kind: "tipo", hidden: true },
   gratis:            { label: "gratis",          emoji: "🆓", color: "#16A34A", kind: "atributo" },
   "aire libre":      { label: "aire libre",      emoji: "🌳", color: "#22C55E", kind: "atributo" },
@@ -722,6 +725,7 @@ const TAGS = {
   // Legacy aliases: resolve metadata for old excludedCats in localStorage.
   musica:            { label: "música",          emoji: "🎵", color: "#7C3AED", kind: "tipo", legacy: true },
   fotografia:        { label: "fotografía",      emoji: "📷", color: "#6B7280", kind: "tipo", legacy: true },
+  "monólogos":       { label: "comedia",         emoji: "😂", color: "#7C3AED", kind: "tipo", legacy: true },
 };
 
 const _TAG_FALLBACK = { label: "", emoji: "📍", color: "#6B7280", kind: "tipo" };

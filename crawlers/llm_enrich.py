@@ -23,7 +23,7 @@ PROMPT = """Extrae datos estructurados de esta página web de un evento en Madri
   "start_date": "string - formato YYYY-MM-DD, primer día del evento",
   "end_date": "string - formato YYYY-MM-DD, último día, o null si es un solo día",
   "schedule": "objeto con los días y horarios. Busca tablas de horario, secciones 'horario', 'cuándo', 'apertura'. Formato: {'L': '10:00-20:00', 'M': '10:00-20:00', ...} usando L,M,X,J,V,S,D para los días. Si el horario es el mismo todos los días pon {'todos': '10:00-20:00'}. null solo si no hay ninguna información de horario",
-  "categories": ["Al menos una categoría de: teatro, conciertos, exposiciones, talleres, conferencias, deportes, ferias. Tags adicionales opcionales: infantil, visitas guiadas, gratis, danza, circo, ópera, monólogos, aire libre, cine, fotografía, gastronomía, literatura, mercados, fiestas, musicales, flamenco, magia"],
+  "categories": ["Al menos una categoría de: teatro, conciertos, exposiciones, talleres, conferencias, deportes, ferias. Tags adicionales opcionales: infantil, visitas guiadas, gratis, danza, circo, ópera, comedia, aire libre, cine, fotografía, gastronomía, literatura, mercados, fiestas, musicales, flamenco, magia, bienestar, naturaleza, patrimonio"],
   "is_multi_event": "boolean - true SOLO si ESTE evento es en sí mismo un festival, ciclo o programa paraguas que agrupa VARIOS espectáculos/eventos distintos bajo un mismo programa (ej: 'Veranos de la Villa', 'PHotoESPAÑA', 'Ciclo de Jazz'). false en TODO lo demás: un concierto de un artista, una obra de teatro, una exposición individual (aunque forme parte de un festival como PHotoESPAÑA), una visita guiada, un mercado, un taller, un club de lectura o cualquier actividad/servicio recurrente"
 }
 
@@ -40,7 +40,7 @@ Contenido de la página:
 
 BATCH_PROMPT = """Para cada evento de Madrid, mejora los datos y clasifícalos.
 Categorías válidas: teatro, conciertos, exposiciones, talleres, conferencias, deportes, ferias.
-Tags opcionales: infantil, visitas guiadas, gratis, danza, circo, ópera, monólogos, aire libre, cine, fotografía, gastronomía, literatura, mercados, fiestas, musicales, flamenco, magia.
+Tags opcionales: infantil, visitas guiadas, gratis, danza, circo, ópera, comedia, aire libre, cine, fotografía, gastronomía, literatura, mercados, fiestas, musicales, flamenco, magia, bienestar, naturaleza, patrimonio.
 
 Eventos:
 {events_json}

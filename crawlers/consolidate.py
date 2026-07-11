@@ -70,6 +70,24 @@ def _duration_days(start_date, end_date):
 _NON_FESTIVAL_CATS = {"exposiciones", "fotografía", "visitas guiadas", "mercados", "talleres"}
 FESTIVAL_MIN_DAYS = 2
 
+# Keyword-derived tags: some tags have no reliable source signal, so we infer
+# them from the (accent-stripped, lowercased) title. Matched on word boundaries
+# to avoid false hits (e.g. "aves" inside "través").
+_KEYWORD_TAGS = {
+    "comedia": r"\bcomedia\b|\bmonologo\b|\bstand ?-? ?up\b|club de la comedia",
+    "bienestar": r"\byoga\b|\bmindfulness\b|\bmeditacion\b|\bpilates\b|tai chi|\bbiodanza\b|\bbienestar\b|\brelajacion\b|autocuidado|qi ?gong|chi ?kung",
+    "naturaleza": r"\bnaturaleza\b|botanic|\bhuerto\b|senderismo|ornitolog|\baves\b|\barbol|\bflora\b|\bfauna\b|medio ambiente|\bplantas\b|silvestre",
+    "patrimonio": r"\bpatrimonio\b|\bmonumento\b|bien de interes cultural|casco historico",
+}
+_KEYWORD_TAGS = {tag: re.compile(pat) for tag, pat in _KEYWORD_TAGS.items()}
+
+
+def keyword_tags(title):
+    """Tags inferred from the event title via keyword rules."""
+    t = "".join(c for c in unicodedata.normalize("NFD", (title or "").lower())
+                if unicodedata.category(c) != "Mn")
+    return [tag for tag, rx in _KEYWORD_TAGS.items() if rx.search(t)]
+
 
 def classify_format(event, duration_days):
     """Bucket de formato: 'festival', 'exposicion' o 'puntual' (excluyente, por prioridad)."""
@@ -420,6 +438,9 @@ def run():
         cats = ev["categories"]
         if "otros" in cats and any(c in CATEGORIES and c != "otros" for c in cats):
             cats.remove("otros")
+        for tag in keyword_tags(ev.get("title", "")):
+            if tag not in cats:
+                cats.append(tag)
 
     # Generate calendar from raw events (with original dates and schedules)
     min_date, max_date = calendar_window()

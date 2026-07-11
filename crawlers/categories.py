@@ -22,7 +22,7 @@ TAGS = {
     "danza",
     "circo",
     "ópera",
-    "monólogos",
+    "comedia",
     "cine",
     "fotografía",
     "gastronomía",
@@ -32,6 +32,9 @@ TAGS = {
     "musicales",
     "flamenco",
     "magia",
+    "bienestar",
+    "naturaleza",
+    "patrimonio",
 }
 
 ALL_VALID = CATEGORIES | TAGS
@@ -41,6 +44,7 @@ MIGRATION = {
     "musica": "conciertos",
     "fotografia": "fotografía",
     "gastronomia": "gastronomía",
+    "monólogos": "comedia",
 }
 
 
