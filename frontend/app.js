@@ -755,6 +755,55 @@ const CAT_ICONS = {
   fotografia:      { emoji: "📷", color: "#6B7280" },
 };
 
+// Fuente única de verdad de metadatos de tags. Reemplaza (se irá borrando)
+// a CATEGORY_LABELS, CAT_ICONS, MAIN_CATS, TAG_ORDER, TAG_CATS, CAT_PRIORITY.
+// kind: "tipo" = qué es el evento; "atributo" = característica transversal.
+// legacy: true = alias antiguo; resuelve label/emoji pero no aparece en filtros.
+const TAGS = {
+  teatro:            { label: "teatro",          emoji: "🎭", color: "#1D4ED8", kind: "tipo" },
+  "monólogos":       { label: "monólogos",       emoji: "😂", color: "#7C3AED", kind: "tipo" },
+  danza:             { label: "danza",           emoji: "💃", color: "#DB2777", kind: "tipo" },
+  circo:             { label: "circo",           emoji: "🤹", color: "#BE185D", kind: "tipo" },
+  conciertos:        { label: "conciertos",      emoji: "🎵", color: "#7C3AED", kind: "tipo" },
+  "ópera":           { label: "ópera",           emoji: "🎼", color: "#4338CA", kind: "tipo" },
+  cine:              { label: "cine",            emoji: "🎬", color: "#374151", kind: "tipo" },
+  exposiciones:      { label: "exposiciones",    emoji: "🏛️", color: "#0891B2", kind: "tipo" },
+  literatura:        { label: "literatura",      emoji: "📖", color: "#7C2D12", kind: "tipo" },
+  talleres:          { label: "talleres",        emoji: "🔨", color: "#92400E", kind: "tipo" },
+  conferencias:      { label: "conferencias",    emoji: "🎤", color: "#4338CA", kind: "tipo" },
+  "visitas guiadas": { label: "visitas guiadas", emoji: "🗺️", color: "#1E40AF", kind: "tipo" },
+  infantil:          { label: "infantil",        emoji: "🧸", color: "#F59E0B", kind: "tipo" },
+  deportes:          { label: "deportes",        emoji: "⚽", color: "#16A34A", kind: "tipo" },
+  ferias:            { label: "ferias",          emoji: "🛍️", color: "#DC2626", kind: "tipo" },
+  "fotografía":      { label: "fotografía",      emoji: "📷", color: "#6B7280", kind: "tipo" },
+  "gastronomía":     { label: "gastronomía",     emoji: "🍽️", color: "#EA580C", kind: "tipo" },
+  mercados:          { label: "mercados",        emoji: "🛒", color: "#15803D", kind: "tipo" },
+  fiestas:           { label: "fiestas",         emoji: "🎉", color: "#DC2626", kind: "tipo" },
+  musicales:         { label: "musicales",       emoji: "🎶", color: "#7C3AED", kind: "tipo" },
+  flamenco:          { label: "flamenco",        emoji: "💃", color: "#DC2626", kind: "tipo" },
+  magia:             { label: "magia",           emoji: "🪄", color: "#7C3AED", kind: "tipo" },
+  otros:             { label: "otros",           emoji: "📌", color: "#6B7280", kind: "tipo" },
+  gratis:            { label: "gratis",          emoji: "🆓", color: "#16A34A", kind: "atributo" },
+  "aire libre":      { label: "aire libre",      emoji: "🌳", color: "#22C55E", kind: "atributo" },
+  accesible:         { label: "accesible",       emoji: "♿", color: "#2563EB", kind: "atributo" },
+  destacado:         { label: "destacado",       emoji: "⭐", color: "#EAB308", kind: "atributo" },
+  // Alias legacy: resuelven metadatos para excludedCats antiguos en localStorage.
+  musica:            { label: "música",          emoji: "🎵", color: "#7C3AED", kind: "tipo", legacy: true },
+  fotografia:        { label: "fotografía",      emoji: "📷", color: "#6B7280", kind: "tipo", legacy: true },
+};
+
+const _TAG_FALLBACK = { label: "", emoji: "📍", color: "#6B7280", kind: "tipo" };
+
+// Metadatos de un slug de tag, con fallback seguro.
+function tagMeta(slug) {
+  return TAGS[slug] || { ..._TAG_FALLBACK, label: slug };
+}
+
+// Recuento global de eventos por tag (se rellena en buildCategories).
+let tagVolume = {};
+// Slugs no-legacy con al menos 1 evento, ordenados por volumen desc (para la nube).
+let tagsByVolume = [];
+
 
 function renderMap() {
   if (!map || !markersLayer) return;
@@ -884,9 +933,17 @@ let allCatSet = new Set();
 
 function buildCategories() {
   allCatSet = new Set();
+  tagVolume = {};
   allData.forEach(ev => {
-    (ev.categories || []).forEach(c => { if (c) allCatSet.add(c); });
+    (ev.categories || []).forEach(c => {
+      if (!c) return;
+      allCatSet.add(c);
+      tagVolume[c] = (tagVolume[c] || 0) + 1;
+    });
   });
+  tagsByVolume = Object.keys(TAGS)
+    .filter(slug => !TAGS[slug].legacy && (tagVolume[slug] || 0) > 0)
+    .sort((a, b) => (tagVolume[b] || 0) - (tagVolume[a] || 0));
 }
 
 function _applyCatFilter(events) {
