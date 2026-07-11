@@ -638,6 +638,7 @@ function setView(view) {
   document.getElementById("swipe-container").hidden = view !== "swipe";
   document.querySelector("header").hidden = view === "user" && window.innerWidth <= 640;
   document.querySelector(".filter-bar").style.display = view === "user" ? "none" : "";
+  renderFormatoCards();
   const overlay = document.getElementById("filter-overlay");
   if (overlay) overlay.remove();
   updateURL();
@@ -993,7 +994,7 @@ function _getDayEvents(ds) {
 
 // Apply the active user/location/source/search filters to a list of events.
 // Shared by getEventsForDate() and getFilteredDayEvents().
-function _applyListFilters(events) {
+function _applyListFilters(events, skipFormato) {
   if (activeUserFilter === "favorites") {
     events = events.filter(ev => UserData.has("favorites", ev.id));
   } else if (activeUserFilter === "seen") {
@@ -1009,7 +1010,7 @@ function _applyListFilters(events) {
   if (activeSource) {
     events = events.filter(ev => (ev.source || "").split(",").includes(activeSource));
   }
-  if (activeFormato) {
+  if (activeFormato && !skipFormato) {
     events = events.filter(ev => ev.formato === activeFormato);
   }
   if (activeSearch) {
@@ -1118,6 +1119,7 @@ function _renderSearchPage(container, count) {
 
 function render() {
   updateURL();
+  renderFormatoCards();
   if (currentView === "list") {
     if (activeSearch) { renderSearchList(); return; }
     renderEvents();
@@ -1149,6 +1151,35 @@ function renderEvents() {
   }
 
   container.innerHTML = filterChip + dayEvents.map(renderEvent).join("");
+}
+
+const FORMATO_ORDER = ["puntual", "exposicion", "festival"];
+const FORMATO_EMOJI = { puntual: "🎯", exposicion: "🖼", festival: "🎪" };
+
+// Recuento de eventos del día por formato, aplicando el resto de filtros.
+function formatoCounts() {
+  const evs = _applyListFilters(_getDayEvents(dateStr(selectedDate)), true);
+  const counts = { puntual: 0, exposicion: 0, festival: 0 };
+  evs.forEach(ev => { if (counts[ev.formato] != null) counts[ev.formato]++; });
+  return counts;
+}
+
+function renderFormatoCards() {
+  const el = document.getElementById("formato-cards");
+  if (!el) return;
+  const showFor = currentView === "list" || currentView === "map";
+  el.style.display = showFor && !activeSearch ? "" : "none";
+  if (!showFor || activeSearch) return;
+  const counts = formatoCounts();
+  el.innerHTML = FORMATO_ORDER.map(f => {
+    const active = activeFormato === f;
+    const label = FORMATO_LABELS[f].replace(/^[^ ]+ /, "");
+    return `<button class="formato-card${active ? " active" : ""}" aria-pressed="${active}" onclick="toggleFormato('${f}')">
+      <span class="formato-emoji">${FORMATO_EMOJI[f]}</span>
+      <span class="formato-label">${esc(label)}</span>
+      <span class="formato-count">${counts[f]}</span>
+    </button>`;
+  }).join("");
 }
 
 function renderEvent(ev) {
@@ -1533,6 +1564,7 @@ function toggleFormato(val) {
   if (activeFormato) sessionStorage.setItem("activeFormato", activeFormato);
   else sessionStorage.removeItem("activeFormato");
   renderActiveFilters();
+  renderFormatoCards();
   render();
   const panel = document.getElementById("filter-panel");
   if (panel) renderFilterPanelContent(panel);

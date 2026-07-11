@@ -362,6 +362,40 @@ header[hidden] {
   display: none;
 }
 
+.formato-cards {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 70rem;
+  margin: 0.6rem auto 0;
+  padding: 0 1rem;
+}
+.formato-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.6rem 0.4rem;
+  border: 1px solid var(--surface-container-highest);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--fg);
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.formato-card.active {
+  border-color: var(--primary);
+  background: var(--surface-container);
+}
+.formato-emoji { font-size: 1.3rem; }
+.formato-label { font-size: 0.8rem; font-weight: 600; }
+.formato-count { font-size: 0.7rem; color: var(--muted); }
+@media (max-width: 640px) {
+  .formato-cards { padding: 0 0.6rem; gap: 0.35rem; }
+  .formato-label { font-size: 0.72rem; }
+}
+
 .filter-bar-inner {
   max-width: 70rem;
   margin: 0 auto;
