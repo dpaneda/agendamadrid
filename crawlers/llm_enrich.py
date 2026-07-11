@@ -12,6 +12,11 @@ import time
 from bs4 import BeautifulSoup
 from google import genai
 
+from crawlers.categories import CATEGORIES, TAGS
+
+# Full valid tag set, derived from categories.py so the prompt never drifts.
+_TAGS_STR = ", ".join(sorted(CATEGORIES | TAGS))
+
 PROMPT = """Extrae datos estructurados de esta página web de un evento en Madrid. Devuelve JSON estricto:
 
 {
@@ -23,7 +28,7 @@ PROMPT = """Extrae datos estructurados de esta página web de un evento en Madri
   "start_date": "string - formato YYYY-MM-DD, primer día del evento",
   "end_date": "string - formato YYYY-MM-DD, último día, o null si es un solo día",
   "schedule": "objeto con los días y horarios. Busca tablas de horario, secciones 'horario', 'cuándo', 'apertura'. Formato: {'L': '10:00-20:00', 'M': '10:00-20:00', ...} usando L,M,X,J,V,S,D para los días. Si el horario es el mismo todos los días pon {'todos': '10:00-20:00'}. null solo si no hay ninguna información de horario",
-  "categories": ["Al menos una categoría de: teatro, conciertos, exposiciones, talleres, conferencias, deportes, ferias. Tags adicionales opcionales: infantil, visitas guiadas, gratis, danza, circo, ópera, comedia, aire libre, cine, fotografía, gastronomía, literatura, mercados, fiestas, musicales, flamenco, magia, bienestar, naturaleza, patrimonio"],
+  "categories": ["Asigna TODAS las etiquetas aplicables de esta lista (mínimo una). Sé específico: si es un concierto de jazz pon 'conciertos', si es una obra cómica pon 'teatro' y 'comedia', etc. Lista: __TAGS__. Usa 'otros' solo si no encaja ninguna. No inventes etiquetas."],
   "is_multi_event": "boolean - true SOLO si ESTE evento es en sí mismo un festival, ciclo o programa paraguas que agrupa VARIOS espectáculos/eventos distintos bajo un mismo programa (ej: 'Veranos de la Villa', 'PHotoESPAÑA', 'Ciclo de Jazz'). false en TODO lo demás: un concierto de un artista, una obra de teatro, una exposición individual (aunque forme parte de un festival como PHotoESPAÑA), una visita guiada, un mercado, un taller, un club de lectura o cualquier actividad/servicio recurrente"
 }
 
@@ -31,7 +36,7 @@ REGLAS:
 - Responde SOLO con el JSON, sin markdown ni explicaciones
 - BUSCA EXHAUSTIVAMENTE en toda la página: precio, horarios y fechas son CRÍTICOS
 - La descripción debe ser puramente sobre el contenido, NO logística
-- Al menos una categoría de la lista proporcionada, no inventar otras
+- Asigna todas las etiquetas aplicables de la lista (mínimo una), no inventar otras
 - Fechas en formato ISO (YYYY-MM-DD)
 - Si hay horarios diferentes por día, detállalos todos en schedule
 
@@ -39,8 +44,7 @@ Contenido de la página:
 """
 
 BATCH_PROMPT = """Para cada evento de Madrid, mejora los datos y clasifícalos.
-Categorías válidas: teatro, conciertos, exposiciones, talleres, conferencias, deportes, ferias.
-Tags opcionales: infantil, visitas guiadas, gratis, danza, circo, ópera, comedia, aire libre, cine, fotografía, gastronomía, literatura, mercados, fiestas, musicales, flamenco, magia, bienestar, naturaleza, patrimonio.
+Etiquetas válidas (asigna TODAS las aplicables, mínimo una; sé específico; usa 'otros' solo si nada encaja): __TAGS__.
 
 Eventos:
 {events_json}
@@ -52,9 +56,13 @@ is_multi_event: true SOLO si ESE evento es en sí mismo un festival, ciclo o pro
 
 REGLAS:
 - Responde SOLO con el JSON array, sin markdown ni explicaciones
-- Al menos una categoría de la lista proporcionada, no inventar otras
+- Asigna todas las etiquetas aplicables de la lista (mínimo una), no inventar otras
 - Mantén el mismo número de eventos y el mismo orden
 """
+
+# Inject the full tag set (single source of truth: categories.py).
+PROMPT = PROMPT.replace("__TAGS__", _TAGS_STR)
+BATCH_PROMPT = BATCH_PROMPT.replace("__TAGS__", _TAGS_STR)
 
 # Map LLM day abbreviations to Python weekday ints
 _DAY_MAP = {"L": 0, "M": 1, "X": 2, "J": 3, "V": 4, "S": 5, "D": 6, "todos": "todos"}
