@@ -412,9 +412,9 @@ def run():
             else:
                 events[eid] = event_data
 
-    # Normaliza categorias y quita "otros" redundante. Ya no se fabrican
-    # "categorias principales": el frontend usa una lista plana de tags, asi que
-    # cada tag vale por si mismo y no necesita un padre inventado.
+    # Normalize categories and drop redundant "otros". No more fabricated
+    # "main categories": the frontend uses a flat tag list, so each tag stands
+    # on its own and doesn't need an invented parent.
     for eid, ev in events.items():
         ev["categories"] = normalize(ev.get("categories", []))
         cats = ev["categories"]

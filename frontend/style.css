@@ -361,13 +361,13 @@ header[hidden] {
 .filter-bar:has(.active-filters:empty) {
   display: none;
 }
-/* En desktop los filtros viven en la columna izquierda; la barra de filtros
-   activos de arriba es redundante. En móvil se mantiene (tags van en el modal). */
+/* On desktop the filters live in the left column, so the top active-filters
+   bar is redundant. Kept on mobile (tags live in the modal there). */
 @media (min-width: 641px) {
   .filter-bar { display: none; }
 }
 
-/* Layout de lista: columna de filtros a la izquierda + eventos a la derecha. */
+/* List layout: filters column on the left + events on the right. */
 .list-layout {
   display: flex;
   gap: 1.5rem;
@@ -388,7 +388,7 @@ header[hidden] {
   gap: 0.75rem;
 }
 
-/* Formato: apilado vertical dentro de la columna (desktop). */
+/* Formato: stacked vertically inside the column (desktop). */
 .formato-cards {
   display: flex;
   flex-direction: column;
@@ -417,7 +417,7 @@ header[hidden] {
 .formato-label { font-size: 0.85rem; font-weight: 600; }
 .formato-count { font-size: 0.75rem; color: var(--muted); margin-left: auto; }
 
-/* Móvil: sin columna; formato a lo ancho arriba (fila), tags en el modal. */
+/* Mobile: no column; formato full-width on top (row), tags in the modal. */
 @media (max-width: 640px) {
   .list-layout { display: block; }
   .filters-col {
@@ -518,7 +518,7 @@ header[hidden] {
 .filter-toggle-btn.has-filters {
   color: var(--primary);
 }
-/* En desktop los tags viven en la sidebar; el botón de filtro sobra. */
+/* On desktop tags live in the sidebar; the filter button is redundant. */
 @media (min-width: 641px) {
   .filter-toggle-btn { display: none; }
 }
@@ -570,7 +570,7 @@ header[hidden] {
   letter-spacing: 0.05em;
   margin-bottom: 0.4rem;
 }
-/* Lista compacta de tags: fila con punto del color del tag. */
+/* Compact tag list: row with a dot in the tag's color. */
 .tag-list {
   display: flex;
   flex-direction: column;

@@ -688,9 +688,9 @@ function locateUser() {
   );
 }
 
-// Fuente única de verdad de metadatos de tags.
-// kind: "tipo" = qué es el evento; "atributo" = característica transversal.
-// legacy: true = alias antiguo; resuelve label/emoji pero no aparece en filtros.
+// Single source of truth for tag metadata.
+// kind: "tipo" = what the event is; "atributo" = cross-cutting trait.
+// legacy: true = old alias; resolves label/emoji but not shown in filters.
 const TAGS = {
   teatro:            { label: "teatro",          emoji: "🎭", color: "#1D4ED8", kind: "tipo" },
   "monólogos":       { label: "monólogos",       emoji: "😂", color: "#7C3AED", kind: "tipo" },
@@ -719,21 +719,21 @@ const TAGS = {
   "aire libre":      { label: "aire libre",      emoji: "🌳", color: "#22C55E", kind: "atributo" },
   accesible:         { label: "accesible",       emoji: "♿", color: "#2563EB", kind: "atributo" },
   destacado:         { label: "destacado",       emoji: "⭐", color: "#EAB308", kind: "atributo" },
-  // Alias legacy: resuelven metadatos para excludedCats antiguos en localStorage.
+  // Legacy aliases: resolve metadata for old excludedCats in localStorage.
   musica:            { label: "música",          emoji: "🎵", color: "#7C3AED", kind: "tipo", legacy: true },
   fotografia:        { label: "fotografía",      emoji: "📷", color: "#6B7280", kind: "tipo", legacy: true },
 };
 
 const _TAG_FALLBACK = { label: "", emoji: "📍", color: "#6B7280", kind: "tipo" };
 
-// Metadatos de un slug de tag, con fallback seguro.
+// Tag metadata for a slug, with a safe fallback.
 function tagMeta(slug) {
   return TAGS[slug] || { ..._TAG_FALLBACK, label: slug };
 }
 
-// Recuento global de eventos por tag (se rellena en buildCategories).
+// Global event count per tag (filled in buildCategories).
 let tagVolume = {};
-// Slugs no-legacy con al menos 1 evento, ordenados por volumen desc (para la nube).
+// Non-legacy slugs with at least 1 event, sorted by volume desc (for the cloud).
 let tagsByVolume = [];
 
 
@@ -760,7 +760,7 @@ function renderMap() {
   byLocation.forEach(({ lat, lng, evs }) => {
     bounds.push([lat, lng]);
 
-    // Mejor categoría = tag de tipo con más volumen global entre los eventos del punto.
+    // Best category = highest global-volume tipo tag among the point's events.
     const allCats = evs.flatMap(ev => ev.categories || []).filter(c => tagMeta(c).kind === "tipo");
     const bestCat = allCats.sort((a, b) => (tagVolume[b] || 0) - (tagVolume[a] || 0))[0] || "otros";
     const location = evs[0].location_name || evs[0].location || "";
@@ -872,12 +872,12 @@ function buildCategories() {
 }
 
 function _applyCatFilter(events) {
-  // Stage 1: Mis Intereses — excluye eventos con CUALQUIER tag desactivado.
+  // Stage 1: Mis Intereses — exclude events with ANY disabled tag.
   const excluded = Settings.get("excludedCats", []);
   if (excluded.length) {
     events = events.filter(ev => !(ev.categories || []).some(c => excluded.includes(c)));
   }
-  // Stage 2: filtro de tags (OR interno).
+  // Stage 2: tag filter (OR within).
   if (activeTagFilter.length) {
     events = events.filter(ev => (ev.categories || []).some(c => activeTagFilter.includes(c)));
   }
@@ -1088,7 +1088,7 @@ function renderEvents() {
 const FORMATO_ORDER = ["puntual", "exposicion", "festival"];
 const FORMATO_EMOJI = { puntual: "🎯", exposicion: "🖼", festival: "🎪" };
 
-// Recuento de eventos del día por formato, aplicando el resto de filtros.
+// Count of the day's events per formato, applying the other filters.
 function formatoCounts() {
   const evs = _applyListFilters(_getDayEvents(dateStr(selectedDate)), true);
   const counts = { puntual: 0, exposicion: 0, festival: 0 };
@@ -1535,7 +1535,7 @@ const FORMATO_LABELS = {
 
 function renderFilterPanelContent(panel) {
   const excluded = Settings.get("excludedCats", []);
-  // Los tags desactivados en Ajustes (Mis Intereses) no aparecen en el filtro.
+  // Tags disabled in Ajustes (Mis Intereses) don't appear in the filter.
   const rows = tagsByVolume.filter(c => !excluded.includes(c)).map(c => {
     const info = tagMeta(c);
     const isActive = activeTagFilter.includes(c);
@@ -1557,8 +1557,8 @@ function renderTagsSidebar() {
   renderFilterPanelContent(sidebar);
 }
 
-// La columna de filtros (formato + tags) solo se muestra en vista lista sin busqueda.
-// En vista mapa el mapa ocupa toda la pantalla; en busqueda se muestra otra lista.
+// The filters column (formato + tags) only shows in list view without search.
+// In map view the map is fullscreen; in search a different list is shown.
 function renderFiltersCol() {
   const col = document.getElementById("filters-col");
   if (!col) return;
