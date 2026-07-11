@@ -320,7 +320,7 @@ function eventBadges(ev, cls) {
   }
 
   const tipoCats = (ev.categories || [])
-    .filter(c => tagMeta(c).kind === "tipo")
+    .filter(c => tagMeta(c).kind === "tipo" && !tagMeta(c).hidden)
     .sort((a, b) => (tagVolume[b] || 0) - (tagVolume[a] || 0));
   const catBadges = tipoCats.map(c => {
     const info = tagMeta(c);
@@ -699,18 +699,18 @@ const TAGS = {
   conciertos:        { label: "conciertos",      emoji: "🎵", color: "#7C3AED", kind: "tipo" },
   "ópera":           { label: "ópera",           emoji: "🎼", color: "#4338CA", kind: "tipo" },
   cine:              { label: "cine",            emoji: "🎬", color: "#374151", kind: "tipo" },
-  exposiciones:      { label: "exposiciones",    emoji: "🏛️", color: "#0891B2", kind: "tipo" },
+  exposiciones:      { label: "exposiciones",    emoji: "🏛️", color: "#0891B2", kind: "tipo", hidden: true },
   literatura:        { label: "literatura",      emoji: "📖", color: "#7C2D12", kind: "tipo" },
   talleres:          { label: "talleres",        emoji: "🔨", color: "#92400E", kind: "tipo" },
   conferencias:      { label: "conferencias",    emoji: "🎤", color: "#4338CA", kind: "tipo" },
   "visitas guiadas": { label: "visitas guiadas", emoji: "🗺️", color: "#1E40AF", kind: "tipo" },
   infantil:          { label: "infantil",        emoji: "🧸", color: "#F59E0B", kind: "tipo" },
   deportes:          { label: "deportes",        emoji: "⚽", color: "#16A34A", kind: "tipo" },
-  ferias:            { label: "ferias",          emoji: "🛍️", color: "#DC2626", kind: "tipo" },
+  ferias:            { label: "ferias",          emoji: "🛍️", color: "#DC2626", kind: "tipo", hidden: true },
   "fotografía":      { label: "fotografía",      emoji: "📷", color: "#6B7280", kind: "tipo" },
   "gastronomía":     { label: "gastronomía",     emoji: "🍽️", color: "#EA580C", kind: "tipo" },
-  mercados:          { label: "mercados",        emoji: "🛒", color: "#15803D", kind: "tipo" },
-  fiestas:           { label: "fiestas",         emoji: "🎉", color: "#DC2626", kind: "tipo" },
+  mercados:          { label: "mercados",        emoji: "🛒", color: "#15803D", kind: "tipo", hidden: true },
+  fiestas:           { label: "fiestas",         emoji: "🎉", color: "#DC2626", kind: "tipo", hidden: true },
   musicales:         { label: "musicales",       emoji: "🎶", color: "#7C3AED", kind: "tipo" },
   flamenco:          { label: "flamenco",        emoji: "💃", color: "#DC2626", kind: "tipo" },
   magia:             { label: "magia",           emoji: "🪄", color: "#7C3AED", kind: "tipo" },
@@ -867,7 +867,7 @@ function buildCategories() {
     });
   });
   tagsByVolume = Object.keys(TAGS)
-    .filter(slug => !TAGS[slug].legacy && (tagVolume[slug] || 0) > 0)
+    .filter(slug => !TAGS[slug].legacy && !TAGS[slug].hidden && (tagVolume[slug] || 0) > 0)
     .sort((a, b) => (tagVolume[b] || 0) - (tagVolume[a] || 0));
 }
 
