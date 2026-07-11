@@ -602,6 +602,7 @@ function setView(view) {
   document.querySelector(".filter-bar").style.display = view === "user" ? "none" : "";
   renderFormatoCards();
   renderTagsSidebar();
+  renderFiltersCol();
   const overlay = document.getElementById("filter-overlay");
   if (overlay) overlay.remove();
   updateURL();
@@ -1050,6 +1051,7 @@ function render() {
   updateURL();
   renderFormatoCards();
   renderTagsSidebar();
+  renderFiltersCol();
   if (currentView === "list") {
     if (activeSearch) { renderSearchList(); return; }
     renderEvents();
@@ -1097,9 +1099,6 @@ function formatoCounts() {
 function renderFormatoCards() {
   const el = document.getElementById("formato-cards");
   if (!el) return;
-  const showFor = currentView === "list" || currentView === "map";
-  el.style.display = showFor && !activeSearch ? "" : "none";
-  if (!showFor || activeSearch) return;
   const counts = formatoCounts();
   el.innerHTML = FORMATO_ORDER.map(f => {
     const active = activeFormato === f;
@@ -1558,9 +1557,15 @@ function renderFilterPanelContent(panel) {
 function renderTagsSidebar() {
   const sidebar = document.getElementById("tags-sidebar");
   if (!sidebar) return;
-  const visible = currentView === "list" && !activeSearch;
-  sidebar.style.display = visible ? "" : "none";
-  if (visible) renderFilterPanelContent(sidebar);
+  renderFilterPanelContent(sidebar);
+}
+
+// La columna de filtros (formato + tags) solo se muestra en vista lista sin busqueda.
+// En vista mapa el mapa ocupa toda la pantalla; en busqueda se muestra otra lista.
+function renderFiltersCol() {
+  const col = document.getElementById("filters-col");
+  if (!col) return;
+  col.style.display = (currentView === "list" && !activeSearch) ? "" : "none";
 }
 
 function toggleFilterPanel() {

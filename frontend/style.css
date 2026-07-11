@@ -361,21 +361,45 @@ header[hidden] {
 .filter-bar:has(.active-filters:empty) {
   display: none;
 }
-
-.formato-cards {
-  display: flex;
-  gap: 0.5rem;
-  max-width: 70rem;
-  margin: 0.6rem auto 0;
-  padding: 0 1rem;
+/* En desktop los filtros viven en la columna izquierda; la barra de filtros
+   activos de arriba es redundante. En móvil se mantiene (tags van en el modal). */
+@media (min-width: 641px) {
+  .filter-bar { display: none; }
 }
-.formato-card {
-  flex: 1;
+
+/* Layout de lista: columna de filtros a la izquierda + eventos a la derecha. */
+.list-layout {
+  display: flex;
+  gap: 1.5rem;
+  max-width: 70rem;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+.list-layout > #events-container { flex: 1; min-width: 0; }
+
+.filters-col {
+  flex: 0 0 220px;
+  position: sticky;
+  top: 1rem;
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Formato: apilado vertical dentro de la columna (desktop). */
+.formato-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.formato-card {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  gap: 0.15rem;
-  padding: 0.6rem 0.4rem;
+  gap: 0.5rem;
+  padding: 0.55rem 0.7rem;
   border: 1px solid var(--surface-container-highest);
   border-radius: 12px;
   background: var(--surface);
@@ -383,39 +407,41 @@ header[hidden] {
   font-family: inherit;
   cursor: pointer;
   transition: all 0.15s;
+  text-align: left;
 }
 .formato-card.active {
   border-color: var(--primary);
   background: var(--surface-container);
 }
-.formato-emoji { font-size: 1.3rem; }
-.formato-label { font-size: 0.8rem; font-weight: 600; }
-.formato-count { font-size: 0.7rem; color: var(--muted); }
-@media (max-width: 640px) {
-  .formato-cards { padding: 0 0.6rem; gap: 0.35rem; }
-  .formato-label { font-size: 0.72rem; }
-}
+.formato-emoji { font-size: 1.2rem; }
+.formato-label { font-size: 0.85rem; font-weight: 600; }
+.formato-count { font-size: 0.75rem; color: var(--muted); margin-left: auto; }
 
-.list-layout {
-  display: flex;
-  gap: 1rem;
-  max-width: 70rem;
-  margin: 0 auto;
-  align-items: flex-start;
-}
-.tags-sidebar {
-  flex: 0 0 220px;
-  position: sticky;
-  top: 1rem;
-  max-height: calc(100vh - 2rem);
-  overflow-y: auto;
-  padding: 0.5rem;
-}
-.list-layout > #events-container { flex: 1; min-width: 0; }
-/* En móvil los tags viven en el modal; la sidebar se oculta. */
+/* Móvil: sin columna; formato a lo ancho arriba (fila), tags en el modal. */
 @media (max-width: 640px) {
-  .tags-sidebar { display: none !important; }
   .list-layout { display: block; }
+  .filters-col {
+    display: block;
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+  .formato-cards {
+    flex-direction: row;
+    gap: 0.35rem;
+    padding: 0.6rem 0.6rem 0;
+  }
+  .formato-card {
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.15rem;
+    padding: 0.6rem 0.4rem;
+    text-align: center;
+  }
+  .formato-label { font-size: 0.72rem; }
+  .formato-count { margin-left: 0; }
+  .tags-sidebar { display: none !important; }
 }
 
 .filter-bar-inner {
