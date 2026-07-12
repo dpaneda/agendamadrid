@@ -817,8 +817,9 @@ main {
 }
 
 .tag-active {
-  background: var(--secondary);
-  color: var(--white);
+  background: var(--tag-bg);
+  color: var(--tag-color);
+  border: 1.5px solid var(--secondary);
   cursor: pointer;
 }
 
