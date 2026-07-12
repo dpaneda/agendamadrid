@@ -1533,7 +1533,7 @@ function renderFilterPanelContent(panel) {
   const rows = tagsByVolume.filter(c => !excluded.includes(c)).map(c => {
     const info = tagMeta(c);
     const isActive = activeTagFilter.includes(c);
-    return `<button class="tag-row${isActive ? " active" : ""}" onclick="toggleActiveTag('${esc(c)}')"><span class="tag-dot" style="background:${info.color}"></span>${esc(info.label || c)}</button>`;
+    return `<button class="tag-row${isActive ? " active" : ""}" onclick="toggleActiveTag('${esc(c)}')"><span class="tag-emoji">${info.emoji}</span>${esc(info.label || c)}</button>`;
   }).join("");
   const hasFilters = activeTagFilter.length + (activeFormato ? 1 : 0) > 0;
   panel.innerHTML = `

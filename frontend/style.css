@@ -597,12 +597,11 @@ header[hidden] {
   background: var(--surface-container);
   font-weight: 600;
 }
-.tag-dot {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
+.tag-emoji {
+  width: 1.3em;
   flex: 0 0 auto;
-  background: var(--muted);
+  text-align: center;
+  font-size: 0.95em;
 }
 .filter-clear-btn {
   display: block;
