@@ -1365,12 +1365,13 @@ function renderUserView() {
     return cats.map(c => {
       const info = tagMeta(c);
       const active = !excludedCats.includes(c);
-      return `<button class="cat-chip${active ? " active" : ""}" aria-pressed="${active}" onclick="toggleCatPref('${esc(c)}')">${info.emoji} ${esc(info.label || c)}</button>`;
+      const name = esc(info.label || c);
+      return `<button class="cat-row${active ? " active" : ""}" aria-pressed="${active}" onclick="toggleCatPref('${esc(c)}')"><span class="cat-row-em">${info.emoji}</span><span class="cat-row-nm">${name}</span><span class="cat-row-ck" aria-hidden="true">✓</span></button>`;
     }).join("");
   }
 
   const catGridHtml = `
-    <div class="cat-chips-wrap">${chipList(tagsByVolume)}</div>
+    <div class="cat-grid">${chipList(tagsByVolume)}</div>
   `;
 
   document.getElementById("user-container").innerHTML = `
