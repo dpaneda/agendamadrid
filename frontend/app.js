@@ -687,7 +687,7 @@ function locateUser() {
 const TAGS = {
   teatro:            { label: "teatro",          emoji: "🎭", color: "#1D4ED8", kind: "tipo" },
   comedia:           { label: "comedia",         emoji: "😂", color: "#7C3AED", kind: "tipo" },
-  danza:             { label: "danza",           emoji: "💃", color: "#DB2777", kind: "tipo" },
+  danza:             { label: "danza",           emoji: "🩰", color: "#DB2777", kind: "tipo" },
   circo:             { label: "circo",           emoji: "🤹", color: "#BE185D", kind: "tipo" },
   conciertos:        { label: "conciertos",      emoji: "🎵", color: "#7C3AED", kind: "tipo" },
   "ópera":           { label: "ópera",           emoji: "🎼", color: "#4338CA", kind: "tipo" },
@@ -695,7 +695,7 @@ const TAGS = {
   exposiciones:      { label: "exposiciones",    emoji: "🏛️", color: "#0891B2", kind: "tipo", hidden: true },
   literatura:        { label: "literatura",      emoji: "📖", color: "#7C2D12", kind: "tipo" },
   talleres:          { label: "talleres",        emoji: "🔨", color: "#92400E", kind: "tipo" },
-  conferencias:      { label: "conferencias",    emoji: "🎤", color: "#4338CA", kind: "tipo" },
+  conferencias:      { label: "conferencias",    emoji: "🗣️", color: "#4338CA", kind: "tipo" },
   "visitas guiadas": { label: "visitas guiadas", emoji: "🗺️", color: "#1E40AF", kind: "tipo" },
   infantil:          { label: "infantil",        emoji: "🧸", color: "#F59E0B", kind: "atributo" },
   deportes:          { label: "deportes",        emoji: "⚽", color: "#16A34A", kind: "tipo" },
