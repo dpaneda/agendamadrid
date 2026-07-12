@@ -467,11 +467,9 @@ async function init() {
   document.getElementById("btn-list").addEventListener("click", () => setView("list"));
   document.getElementById("btn-map").addEventListener("click", () => setView("map"));
   document.getElementById("btn-cal").addEventListener("click", () => setView("cal"));
-  document.getElementById("btn-swipe").addEventListener("click", () => setView("swipe"));
   document.getElementById("btn-list-tab").addEventListener("click", () => setView("list"));
   document.getElementById("btn-map-tab").addEventListener("click", () => setView("map"));
   document.getElementById("btn-cal-tab").addEventListener("click", () => setView("cal"));
-  document.getElementById("btn-swipe-tab").addEventListener("click", () => setView("swipe"));
   document.getElementById("btn-user-tab").addEventListener("click", () => setView("user"));
 
   document.getElementById("btn-today").addEventListener("click", () => {
@@ -587,17 +585,14 @@ function setView(view) {
   document.getElementById("btn-list").classList.toggle("active", view === "list");
   document.getElementById("btn-map").classList.toggle("active", view === "map");
   document.getElementById("btn-cal").classList.toggle("active", view === "cal");
-  document.getElementById("btn-swipe").classList.toggle("active", view === "swipe");
   document.getElementById("btn-list-tab").classList.toggle("active", view === "list");
   document.getElementById("btn-map-tab").classList.toggle("active", view === "map");
   document.getElementById("btn-cal-tab").classList.toggle("active", view === "cal");
-  document.getElementById("btn-swipe-tab").classList.toggle("active", view === "swipe");
   document.getElementById("btn-user-tab").classList.toggle("active", view === "user");
   document.getElementById("events-container").hidden = view !== "list";
   document.getElementById("map-container").hidden = view !== "map";
   document.getElementById("cal-container").hidden = view !== "cal";
   document.getElementById("user-container").hidden = view !== "user";
-  document.getElementById("swipe-container").hidden = view !== "swipe";
   document.querySelector("header").hidden = view === "user" && window.innerWidth <= 640;
   document.querySelector(".filter-bar").style.display = view === "user" ? "none" : "";
   renderFormatoCards();
@@ -618,8 +613,6 @@ function setView(view) {
     renderCalendar();
   } else if (view === "user") {
     renderUserView();
-  } else if (view === "swipe") {
-    renderSwipeView();
   }
 }
 
@@ -1063,8 +1056,6 @@ function render() {
     renderMap();
   } else if (currentView === "cal") {
     renderCalendar();
-  } else if (currentView === "swipe") {
-    renderSwipeView();
   } else if (currentView === "user") {
     renderUserView();
   }
@@ -1207,8 +1198,6 @@ function renderEventMobile(ev) {
   const isDismissed = UserData.has("dismissed", ev.id);
 
   const cardContent = `
-      <div class="swipe-hint swipe-hint-right">♥ Favorito</div>
-      <div class="swipe-hint swipe-hint-left">✕ Ocultar</div>
       <div class="event-mobile-top">
         ${timeStr ? `<span class="event-time">${esc(timeStr)}</span>` : ""}
         ${badges ? `<div class="event-tags">${badges}</div>` : ""}
@@ -1682,244 +1671,3 @@ document.addEventListener("keydown", (e) => {
     if (co) co.click();
   }
 });
-
-// ==============================
-// SWIPE VIEW (Mix / Tinder mode)
-// ==============================
-
-let swipeQueue = [];
-let swipeIndex = 0;
-let swipeActive = false;
-let swipeSkipped = new Set(); // track skipped event IDs within the session
-let swipeDay = null; // track which day the skip set belongs to
-
-function _getSwipeEvents() {
-  let events = _getDayEvents(dateStr(selectedDate));
-  events = events.filter(ev => !UserData.has("favorites", ev.id) && !UserData.has("seen", ev.id) && !UserData.has("dismissed", ev.id) && !swipeSkipped.has(ev.id));
-  return events.sort((a, b) => (a.start_time || "99:99").localeCompare(b.start_time || "99:99"));
-}
-
-function renderSwipeView(forceReset) {
-  const day = dateStr(selectedDate);
-  if (forceReset || swipeDay !== day) {
-    swipeSkipped.clear();
-    swipeDay = day;
-    swipeQueue = _getSwipeEvents();
-    swipeIndex = 0;
-    swipeActive = false;
-  }
-  updateDateLabel(swipeQueue.length - swipeIndex);
-  _buildSwipeDeck();
-}
-
-function _buildSwipeDeck() {
-  const container = document.getElementById("swipe-container");
-  if (!container) return;
-  container.innerHTML = "";
-
-  const remaining = swipeQueue.slice(swipeIndex);
-
-  if (!remaining.length) {
-    container.innerHTML = `
-      <div class="swipe-empty">
-        <div class="swipe-empty-icon">✅</div>
-        <div class="swipe-empty-title">¡Todo clasificado!</div>
-        <p>No quedan eventos por revisar</p>
-        <div class="swipe-empty-actions">
-          <button onclick="setView('list')">Ver lista</button>
-          <button onclick="changeDay(1); renderSwipeView()">Siguiente día →</button>
-        </div>
-      </div>`;
-    return;
-  }
-
-  // Deck wrapper for cards
-  const deck = document.createElement("div");
-  deck.className = "swipe-deck";
-  container.appendChild(deck);
-
-  // Render only the top card
-  const ev0 = remaining[0];
-  const hasImg = !!(Array.isArray(ev0.image) ? ev0.image[0] : ev0.image);
-  const el = document.createElement("div");
-  el.className = "swipe-card swipe-card-top" + (hasImg ? " swipe-card--has-img" : "");
-  el.dataset.id = ev0.id;
-  el.innerHTML = _swipeCardInner(ev0, swipeIndex + 1, swipeQueue.length);
-  deck.appendChild(el);
-
-  // Update skip button fill (empties as you progress)
-  const remaining_pct = ((swipeQueue.length - swipeIndex) / swipeQueue.length * 100).toFixed(1);
-  requestAnimationFrame(() => {
-    const skipBtn = document.querySelector('.swipe-btn-skip');
-    if (skipBtn) skipBtn.style.setProperty("--skip-fill", remaining_pct + "%");
-  });
-
-  // Action bar below deck
-  container.insertAdjacentHTML("beforeend", `
-    <div class="swipe-actions-bar">
-      <button class="swipe-btn swipe-btn-dismiss" onclick="triggerSwipe('left')" title="Ocultar">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-      </button>
-      <button class="swipe-btn swipe-btn-skip" onclick="triggerSwipe('up')" title="Saltar">
-        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-      </button>
-      <button class="swipe-btn swipe-btn-fav" onclick="triggerSwipe('right')" title="Favorito">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-      </button>
-    </div>`);
-
-  _initSwipeDrag();
-}
-
-function _swipeCardInner(ev, pos, total) {
-  const cat = ev.categories?.[0] || "otros";
-  const catInfo = tagMeta(cat);
-  const color = catInfo.color;
-
-  const timeStr = (() => {
-    const s = fmtTime(ev.start_time), e = fmtTime(ev.end_time);
-    return s === "00:00" && e === "23:59" ? "Todo el día"
-      : s ? (e && e !== s ? `${s} – ${e}` : s) : "";
-  })();
-
-  const { priceBadge, distBadge, catBadge, isFree } = eventBadges(ev, "swipe-info-badge");
-  const shortPrice = (!isFree && ev.price) ? ev.price : "";
-
-  const imageUrl = Array.isArray(ev.image) ? ev.image[0] : ev.image;
-  const hasImage = !!imageUrl;
-  return `
-    ${hasImage
-      ? `<img class="swipe-card-img" src="${esc(safeUrl(imageUrl))}" alt="" loading="eager">`
-      : `<div class="swipe-card-bg" style="background:linear-gradient(160deg,${color}cc 0%,${color}66 45%,${color}22 75%,#1a1a2e 100%)"></div>`}
-    ${hasImage
-      ? ``
-      : `<div class="swipe-emoji-area"><span class="swipe-emoji-big">${catInfo.emoji}</span></div>`}
-    <div class="swipe-info-badges">
-      ${priceBadge}
-      ${distBadge}
-      ${catBadge}
-    </div>
-    <div class="swipe-info">
-      ${pos ? `<div class="swipe-counter">${pos} / ${total}</div>` : ""}
-      <div class="swipe-info-title">${esc(ev.title)}</div>
-      <div class="swipe-info-meta">
-        ${timeStr ? `<span>⏰ ${esc(timeStr)}</span>` : ""}
-        ${ev.location_name ? `<span>📍 ${esc(ev.location_name)}${ev.district ? ` · ${esc(ev.district.replace(/([a-z])([A-Z])/g, "$1 $2"))}` : ""}</span>` : ""}
-      </div>
-      ${ev.description ? `<p class="swipe-info-desc">${esc(ev.description)}</p>` : ""}
-    </div>
-    ${ev.url ? `<a href="${esc(safeUrl(ev.url))}" target="_blank" rel="noopener" class="swipe-info-link" onclick="event.stopPropagation()">Ver más info</a>` : ""}
-    <div class="swipe-overlay swipe-overlay-right"><span>❤️</span><span>Favorito</span></div>
-    <div class="swipe-overlay swipe-overlay-left"><span>✕</span><span>Ocultar</span></div>
-    <div class="swipe-overlay swipe-overlay-up"><span>→</span><span>Saltar</span></div>`;
-}
-
-function triggerSwipe(dir) {
-  const card = document.querySelector(".swipe-card-top");
-  if (!card || swipeActive) return;
-  swipeActive = true;
-
-  const id = card.dataset.id;
-  let tx = 0, ty = 0, rot = 0;
-  if (dir === "right") { tx = window.innerWidth + 200; ty = -50; rot = 20; }
-  else if (dir === "left") { tx = -(window.innerWidth + 200); ty = -50; rot = -20; }
-  else { ty = -(window.innerHeight + 200); }
-
-  // Force a reflow so the browser registers the current position before animating
-  void card.offsetWidth;
-  card.style.transition = "transform 0.38s ease, opacity 0.28s ease";
-  card.style.transform = `translateX(${tx}px) translateY(${ty}px) rotate(${rot}deg)`;
-  card.style.opacity = "0";
-
-  if (dir === "right" && !UserData.has("favorites", id)) UserData.toggle("favorites", id);
-  else if (dir === "left" && !UserData.has("dismissed", id)) UserData.toggle("dismissed", id);
-  else if (dir === "up") swipeSkipped.add(id);
-
-  card.addEventListener("transitionend", () => {
-    swipeIndex++;
-    swipeActive = false;
-    _buildSwipeDeck();
-  }, { once: true });
-}
-
-function _initSwipeDrag() {
-  const card = document.querySelector(".swipe-card-top");
-  if (!card) return;
-
-  let startX = 0, startY = 0, dx = 0, dy = 0;
-  let dragging = false, lockDir = null;
-
-  const oRight = card.querySelector(".swipe-overlay-right");
-  const oLeft  = card.querySelector(".swipe-overlay-left");
-  const oUp    = card.querySelector(".swipe-overlay-up");
-
-  function start(x, y) {
-    if (swipeActive) return;
-    startX = x; startY = y; dx = 0; dy = 0;
-    dragging = true; lockDir = null;
-    card.style.transition = "none";
-  }
-
-  function move(x, y) {
-    if (!dragging) return;
-    dx = x - startX;
-    dy = y - startY;
-    if (!lockDir && (Math.abs(dx) > 8 || Math.abs(dy) > 8)) {
-      lockDir = Math.abs(dx) >= Math.abs(dy) ? "h" : "v";
-    }
-    // Allow both horizontal drags and upward drags (skip)
-    if (lockDir === "v" && dy >= 0) return; // only block downward scrolls
-
-    const rot = lockDir === "v" ? 0 : dx * 0.06;
-    card.style.transform = `translateX(${dx}px) translateY(${dy < 0 ? dy : 0}px) rotate(${rot}deg)`;
-
-    const T = 60;
-    const isUp = dy < -T && Math.abs(dy) > Math.abs(dx);
-    if (dx > T && !isUp) {
-      oRight.style.opacity = Math.min((dx - T) / 80, 1);
-      oLeft.style.opacity = 0; oUp.style.opacity = 0;
-    } else if (dx < -T && !isUp) {
-      oLeft.style.opacity = Math.min((-dx - T) / 80, 1);
-      oRight.style.opacity = 0; oUp.style.opacity = 0;
-    } else if (isUp) {
-      oUp.style.opacity = Math.min((-dy - T) / 80, 1);
-      oRight.style.opacity = 0; oLeft.style.opacity = 0;
-    } else {
-      oRight.style.opacity = 0; oLeft.style.opacity = 0; oUp.style.opacity = 0;
-    }
-  }
-
-  function end() {
-    if (!dragging) return;
-    dragging = false;
-    if (lockDir === "v" && dy >= 0) return;
-
-    const T = 90;
-    const isUp = dy < -T && Math.abs(dy) > Math.abs(dx);
-    if (dx > T && !isUp) triggerSwipe("right");
-    else if (dx < -T && !isUp) triggerSwipe("left");
-    else if (isUp) triggerSwipe("up");
-    else {
-      card.style.transition = "transform 0.32s cubic-bezier(0.175,0.885,0.32,1.275)";
-      card.style.transform = "";
-      oRight.style.opacity = 0; oLeft.style.opacity = 0; oUp.style.opacity = 0;
-    }
-  }
-
-  // Touch
-  card.addEventListener("touchstart", e => {
-    const t = e.touches[0]; start(t.clientX, t.clientY);
-  }, { passive: true });
-
-  card.addEventListener("touchmove", e => {
-    const t = e.touches[0]; move(t.clientX, t.clientY);
-    if (lockDir === "h" || (lockDir === "v" && dy < 0)) e.preventDefault();
-  }, { passive: false });
-
-  card.addEventListener("touchend", end, { passive: true });
-
-  // Mouse (for desktop testing)
-  card.addEventListener("mousedown", e => { start(e.clientX, e.clientY); e.preventDefault(); });
-  document.addEventListener("mousemove", e => { if (dragging) move(e.clientX, e.clientY); });
-  document.addEventListener("mouseup", () => { if (dragging) end(); });
-}
