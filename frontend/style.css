@@ -831,9 +831,13 @@ main {
   margin-left: auto;
 }
 
-.tag-dist, .tag-cat {
+.tag-dist {
   background: var(--surface-container-low);
   color: var(--fg);
+}
+.tag-cat {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.82rem;
 }
 
 .tag-free {

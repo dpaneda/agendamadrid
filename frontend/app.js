@@ -324,7 +324,8 @@ function eventBadges(ev, cls) {
     .sort((a, b) => (tagVolume[b] || 0) - (tagVolume[a] || 0));
   const catBadges = tipoCats.map(c => {
     const info = tagMeta(c);
-    return `<span class="${cls} ${cls}-cat">${info.emoji} ${esc(info.label || c)}</span>`;
+    const name = esc(info.label || c);
+    return `<span class="${cls} ${cls}-cat" title="${name}" aria-label="${name}">${info.emoji}</span>`;
   }).join("");
 
   return { priceBadge, distBadge, catBadge: catBadges, isFree };
