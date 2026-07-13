@@ -1010,7 +1010,7 @@
     ],
     "price": "0",
     "formato": "puntual",
-    "lid": "438080e7"
+    "lid": "4cacfccd"
   },
   "5bb79e859ceb8f84": {
     "title": "Ciclo de cine: Un verano en juego en Casa de México",
@@ -1025,7 +1025,7 @@
     "price": "0",
     "is_multi_event": true,
     "formato": "festival",
-    "lid": "438080e7"
+    "lid": "4cacfccd"
   },
   "2061988fa6b0f096": {
     "title": "Concierto: Mixanteña de Santa Cecilia",
@@ -1039,7 +1039,7 @@
     ],
     "price": "0",
     "formato": "puntual",
-    "lid": "438080e7"
+    "lid": "4cacfccd"
   },
   "fe22c3253ea1f1c6": {
     "title": "Visita al Centro de Interpretación del Paisaje de la Luz",
@@ -1631,6 +1631,20 @@
     "price": "0€",
     "formato": "puntual",
     "lid": "e232e586"
+  },
+  "9225b21843e67977": {
+    "title": "Espectáculo Conciencia Urbana",
+    "description": "Una propuesta llena de ritmo, improvisación y rimas a cargo de la compañía Achus y Chusita. Recomendado a partir de 12 años.",
+    "start_time": "22:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d33afd55cbede910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "price": "0€",
+    "formato": "puntual",
+    "lid": "5920ebfe"
   },
   "50a07280d9e88d47": {
     "title": "Concierto familiar: Dando la Nota",
@@ -3057,7 +3071,7 @@
     ],
     "price": "0€",
     "formato": "puntual",
-    "lid": "438080e7"
+    "lid": "4cacfccd"
   },
   "40e60cef0d7ccb80": {
     "title": "Exposición de pintura: ¿Y tú qué pintas?",
@@ -4694,6 +4708,22 @@
     "formato": "puntual",
     "lid": "4c65808b"
   },
+  "aff1d9916948f25e": {
+    "title": "Las Noches de Vicálvaro: Noche de Sol",
+    "description": "Experiencia de observación astronómica amenizada con música en directo de Carlos Arriezu.",
+    "start_time": "20:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c72ea0a5649fe910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis",
+      "aire libre"
+    ],
+    "price": "0",
+    "is_multi_event": true,
+    "formato": "puntual",
+    "lid": "4c65808b"
+  },
   "fcb67011008bbd84": {
     "title": "Club de Lectura: Lectura Compasiva",
     "start_time": "17:00:00",
@@ -5768,6 +5798,19 @@
     "description": "Taller enfocado en técnicas de relajación y bienestar durante el periodo estival.",
     "formato": "exposicion",
     "lid": "2a930101"
+  },
+  "52ef3d8d90734c4b": {
+    "title": "Nosferatu (2024)",
+    "description": "Proyección de la película dirigida por Robert Eggers sobre una gótica historia de obsesión. Recomendada para mayores de 16 años.",
+    "start_time": "22:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=e4a34de55a30f910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "gratis"
+    ],
+    "formato": "puntual",
+    "lid": "a2273ec8"
   },
   "2c6f35f4d6d49610": {
     "title": "Nouvelle vague",
@@ -8974,32 +9017,6 @@
     "formato": "festival",
     "lid": "b4d499b0"
   },
-  "9dcc631cb0405151": {
-    "title": "Disney: The Exhibition. 100 Años de Magia",
-    "description": "Gran exposición conmemorativa del centenario de The Walt Disney Company que recorre su historia a través de piezas originales, vestuario y atrezzo. Incluye instalaciones inmersivas y galerías temáticas dedicadas a sus grandes clásicos y a franquicias como Marvel, Pixar y Star Wars.",
-    "start_time": "11:00:00",
-    "url": "https://disney100exhibit.com/es/madrid/",
-    "price": "Desde 14,90 €",
-    "image": "images/events/9f95db21ab7f.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/xKJHQp1e8JEx3VrZHnXfzwiuavZz7bn-buq1AErC4Vw/mtime:1757421614/sites/default/files/eventos/eventos/disney_the_exhibition._100_anos_de_magia.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/igcXWunxyvGpv-mkbhuB5AeN_xqKQbSfW_ZOunu2gmc/mtime:1757421954/sites/default/files/eventos/eventos/disney_the_exhibition._linus_harwig.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/-u2c7zLdoepowXQyooblvZZECDkbBcvl1cmlvwVGVx4/mtime:1757422120/sites/default/files/eventos/eventos/07_disney_the_exhibition_linus_harwig.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/EQncLUn3Rmxq8hVxUCTpCgnm4Q0wrIDDz0u4wBArUM8/mtime:1757422044/sites/default/files/eventos/eventos/08_disney_the_exhibition_linus_harwig.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/UZy5VBA7w1YVMAz6vKcOH6iBimr7cEo0pGM0ROZhyEc/mtime:1757422260/sites/default/files/eventos/eventos/21_disney_the_exhibition_linus_harwig.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/rfxjC1l4NF5T9SThKyzmAsNlA2WbYrwz-RZhUhnNL_c/mtime:1757422425/sites/default/files/eventos/eventos/disney_5.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/v-JRdcVn0y6sB4gpg7A7if0e1Zad9-y9CqfgmrhIvlE/mtime:1757422197/sites/default/files/eventos/eventos/14_disney_the_exhibition_linus_harwig.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/Yc-Qo5boKkiN0149rEuDfHCapE61O3jst2VZvfpSXkc/mtime:1757422627/sites/default/files/eventos/eventos/disney_the_exhibition._linus_harwig._modelo_vestido_por_la_actriz_emma_stone.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/AhJD2JkiqWcgEce2wZceAePMoHjuLdx8e1F7D7tj3fU/mtime:1757423251/sites/default/files/eventos/eventos/19_disney_the_exhibition_linus_harwig.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/disney-exhibition-100-anos-magia-fundacion-canal-sala-castellana-214",
-    "source": "esmadrid",
-    "categories": [
-      "exposiciones"
-    ],
-    "formato": "exposicion",
-    "lid": "622c74d4"
-  },
   "bf5f31e9fef04dfc": {
     "title": "NO-DO. El mundo de ayer. Imagen y propaganda del franquismo",
     "description": "La exposición analiza el papel de los noticiarios y documentales NO-DO como herramienta de propaganda y entretenimiento durante el franquismo. Asimismo, plantea una reflexión sobre el significado actual de este material para la sociedad y el patrimonio audiovisual español.",
@@ -9164,24 +9181,6 @@
     ],
     "formato": "exposicion",
     "lid": "df925a11"
-  },
-  "619ac495ceb9372a": {
-    "title": "Noches y días",
-    "description": "El artista José María Sicilia interviene las estancias emblemáticas del Palacio de Liria con obras creadas ex profeso e instalaciones site-specific. La muestra establece un diálogo entre la colección de la Casa de Alba, la arquitectura del edificio y el arte contemporáneo.",
-    "url": "https://www.palaciodeliria.com/",
-    "price": "Consultar página oficial",
-    "image": "images/events/078f7246218a.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/7-J4SZycGzJXs2-EFDNfkUHRK53Vo0Ri_KjTp3tGxOs/mtime:1766154872/sites/default/files/eventos/eventos/2._detalle_obra_exposicion_noches_y_dias_jose_maria_sicilia._foto_blanca_guerrero._cortesia_del_artista_y_de_chantal_crousel.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/MPhEVzvV2dHl5o6KrJxvBcb41AUu3jw5BWfhaiq0R9I/mtime:1766154940/sites/default/files/eventos/eventos/1._jose_maria_sicilia._foto_blanca_guerrero._cortesia_del_artista_y_chantal_crousel_0.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/noches-dias-palacio-liria",
-    "source": "esmadrid",
-    "categories": [
-      "exposiciones"
-    ],
-    "formato": "exposicion",
-    "lid": "a39f00f6"
   },
   "5ae3afca2ae174a2": {
     "title": "Dorothy Iannone. Una y otra vez",
@@ -9575,27 +9574,6 @@
     ],
     "formato": "exposicion",
     "lid": "31352bed"
-  },
-  "1f2111f29b6ee5c2": {
-    "title": "Visita guiada a las obras maestras del Museo Nacional Thyssen-Bornemisza",
-    "description": "Recorrido por la colección permanente del museo para descubrir los secretos y curiosidades de las obras más célebres de la pintura. Los asistentes conocerán en detalle la trayectoria, motivaciones e influencias de grandes artistas de la historia.",
-    "start_time": "12:00:00",
-    "url": "https://www.museothyssen.org/actividades/visita-guiada-obras-maestras-museo",
-    "price": "9 €",
-    "image": "images/events/450b7c0ca2b3.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/7zpAPPjbnFgTPworAgb8LPF4Kqd9H8QX1t-m2TBb94s/mtime:1774870787/sites/default/files/eventos/eventos/visita_guiada_a_las_obras_maestras_del_museo.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/Q6mJ5F1pEK0agUDGaoqPdJqbK2omDZkjJdOGbwpCemk/mtime:1646064672/sites/default/files/eventos/eventos/visita_guiada_a_las_obras_maestras_del_museo.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/visita-guiada-obras-maestras-museo-nacional-thyssen-bornemisza",
-    "source": "esmadrid",
-    "categories": [
-      "visitas guiadas",
-      "exposiciones"
-    ],
-    "is_multi_event": true,
-    "formato": "exposicion",
-    "lid": "20f77603"
   },
   "91adeda4eb1449a1": {
     "title": "Teatro de Títeres de El Retiro",
@@ -10459,21 +10437,6 @@
     "formato": "exposicion",
     "lid": "12f732ab"
   },
-  "f4bb0eade228c71a": {
-    "title": "El universo del artista ante la cámara",
-    "description": "La exposición analiza el impacto de la fotografía desde el siglo XIX como nueva disciplina artística y herramienta para representar la realidad. La muestra traza un recorrido visual por la presencia del artista en sus estudios, espacios de creación y esferas domésticas.",
-    "start_time": "10:00:00",
-    "url": "https://www.museodelprado.es/actualidad/exposicion/el-universo-del-artista-ante-la-camara/b581a759-4ab0-b459-f3d4-8168c84923f2",
-    "price": "15 €",
-    "image": "images/events/8c9582a252b3.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/universo-artista-camara-museo-prado",
-    "source": "esmadrid",
-    "categories": [
-      "exposiciones"
-    ],
-    "formato": "exposicion",
-    "lid": "54913fe0"
-  },
   "c821ebde26a66d0a": {
     "title": "Las ingenieras domésticas y la revolución de la cocina",
     "description": "La exposición analiza cómo las investigadoras norteamericanas de los siglos XIX y XX transformaron el espacio doméstico integrándolo en el orden económico y social. Se explora el diseño y la racionalización de la casa desde la perspectiva femenina para mejorar la eficiencia del trabajo en el hogar.",
@@ -10783,27 +10746,6 @@
     "formato": "exposicion",
     "lid": "6e65cecf"
   },
-  "6be77725000f7ff3": {
-    "title": "La ardilla Lula y el tesoro del bosque",
-    "description": "Espectáculo interactivo sensorial dirigido a la primera infancia que fomenta la conciencia ambiental y el cuidado de la naturaleza. La obra invita a los más pequeños a participar en una aventura mágica para devolver la vida y la alegría a un bosque.",
-    "start_time": "12:30:00",
-    "url": "https://teatro.bululu2120.com/la-ardilla-lula-y-el-tesoro-del-bosque-sala-bululu/",
-    "price": "11 €",
-    "image": "images/events/bf8209617518.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/-mUzgi9X1Vj9ZybjzFnee32KLbg-qe78EAkyc2mZbzQ/mtime:1758954641/sites/default/files/eventos/eventos/la-ardilla-lula-y-el-tesoro-del-bosque.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/V8yO8wnZj5iPmluE8rjTrqTO_Vfs1KdJ-GHclbda5rs/mtime:1758954659/sites/default/files/eventos/eventos/la-ardilla-lula-y-el-tesoro-del-bosque-2.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/wm7YceMCkYxGDzSTgVf1R2kRAeiEd2tUikzSRsRk-2M/mtime:1758954676/sites/default/files/eventos/eventos/la-ardilla-lula-y-el-tesoro-del-bosque-3.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/ardilla-lula-tesoro-bosque-bululu-2120",
-    "source": "esmadrid",
-    "categories": [
-      "teatro",
-      "infantil"
-    ],
-    "formato": "exposicion",
-    "lid": "db7a4d60"
-  },
   "9aaf5b01ad85e7ea": {
     "title": "Retrato de Doña Regla Manjón, condesa de Lebrija",
     "description": "El museo exhibe el retrato de la condesa de Lebrija pintado por Antonio Rivas, destacando su labor en la protección del patrimonio y la cultura. Esta obra forma parte de un ciclo expositivo dedicado a mujeres filántropas del siglo XIX.",
@@ -10944,21 +10886,6 @@
     "formato": "exposicion",
     "lid": "4869348f"
   },
-  "1e9fcbcc3b5e4b7a": {
-    "title": "Dinosaurios entre nosotros",
-    "description": "La exposición explora la conexión evolutiva entre los dinosaurios prehistóricos y las aves actuales a través de hallazgos científicos y restos fósiles. El recorrido analiza los cambios anatómicos y los retos de supervivencia que permitieron a estas especies perdurar hasta nuestros días.",
-    "start_time": "10:00:00",
-    "url": "https://www.mncn.csic.es/es/visita-el-mncn/exposiciones/dinosaurios-entre-nosotros",
-    "price": "7 €",
-    "image": "images/events/14b5f66eee39.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/dinosaurios-museo-nacional-ciencias-naturales",
-    "source": "esmadrid",
-    "categories": [
-      "exposiciones"
-    ],
-    "formato": "exposicion",
-    "lid": "bebd45c9"
-  },
   "bd4112aaad77b478": {
     "title": "Un instante atrapado en bronce: patrimonio recuperado",
     "description": "El Museo Arqueológico Nacional expone dos excepcionales grupos escultóricos romanos tallados en bronce, datados entre los siglos I a. C. y II d. C. y procedentes del sur peninsular. Estas piezas, que representan a dos niñas jugando, fueron recuperadas tras haber sido sacadas ilícitamente del país.",
@@ -10974,29 +10901,6 @@
     ],
     "formato": "exposicion",
     "lid": "df925a11"
-  },
-  "a75159115b7edd48": {
-    "title": "El tiempo entre costuras, el musical",
-    "description": "Este musical, basado en la famosa novela de María Dueñas, narra una historia de amor y guerra que supera todas las fronteras. Sigue a la joven modista Sira Quiroga en una apasionante aventura de espionaje y conflictos políticos por el norte de África, Madrid y Lisboa.",
-    "start_time": "20:00:00",
-    "url": "https://www.beon-entertainment.com/es/el-tiempo-entre-costuras-musical",
-    "price": "Desde 29 €",
-    "image": "images/events/1044d7825ea8.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/Fe-3Uxzvw6eScI_vVzZVQE5Oxt20fcxEXtvd-C4Se74/mtime:1774512757/sites/default/files/eventos/eventos/etec7.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/TT3hu5immzQDZXZTHGaeLkh2EOi4EgyDeRI7zauxdQ4/mtime:1768925177/sites/default/files/eventos/eventos/el_tiempo_entre_costuras_el_musical.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/5wgtigk4lz9249eRxBD85lHxofvFKdUsplGolPnBG98/mtime:1768925551/sites/default/files/eventos/eventos/tiempo_costuras2.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/L-TO6x87PdCpthk3lTywuASm9YXCvg3_1mqlDPMPV7M/mtime:1768925580/sites/default/files/eventos/eventos/tiempo_costuras.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/13p0xr48OlLkimjelSiqPg14MkhLE9DoFx0lFQJGVy8/mtime:1768925626/sites/default/files/eventos/eventos/tiempo_costuras_el_musical.png"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/el-tiempo-entre-costuras-musical-teatro-calderon",
-    "source": "esmadrid",
-    "categories": [
-      "teatro",
-      "musicales"
-    ],
-    "formato": "exposicion",
-    "lid": "c05dd0a1"
   },
   "ed4160416f8c897a": {
     "title": "Tiempo juntos - 2006-2026: 20 años de Casa Árabe y de amistad entre España y el mundo árabe",
@@ -11886,7 +11790,7 @@
       "gratis"
     ],
     "formato": "exposicion",
-    "lid": "438080e7"
+    "lid": "4cacfccd"
   },
   "9bc3c698f4f9bba4": {
     "title": "Disfuncionarias. Tanit Plana (PHotoESPAÑA 2026)",
@@ -12363,7 +12267,7 @@
       "exposiciones"
     ],
     "formato": "exposicion",
-    "lid": "438080e7"
+    "lid": "4cacfccd"
   },
   "8bbca50fbd331c0b": {
     "title": "La Magia de la Zarzuela",
@@ -12387,31 +12291,6 @@
     "is_multi_event": true,
     "formato": "festival",
     "lid": "22fd9956"
-  },
-  "7ebfd96a6abee1d7": {
-    "title": "Fiestas del Orgullo LGTBIQA+ Madrid 2026",
-    "description": "Las fiestas incluyen un amplio programa de actividades reivindicativas, culturales y lúdicas, con conciertos, espectáculos y conferencias. El evento culmina con la manifestación estatal, consolidándose como una cita esencial para la visibilidad y celebración de la diversidad.",
-    "url": "https://www.madridorgullo.com/",
-    "price": "Gratis",
-    "image": "images/events/c640b7614a35.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/_7jr-_qj0abXXckVpm5p5-BcH6k8gpq-qTuXi9mF8Yw/mtime:1688563276/sites/default/files/eventos/eventos/manifestacion_orgullo_2023.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/whF_WJFc96TRmYcjEagkH6GHalF5ZuMUbXzeN8FjexU/mtime:1688563060/sites/default/files/manifestacion_orgullo_2023_mado.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/i2cLYnrm8rBAa_B4X1f_nhkYfrc4osbg1GIz5UvGlRQ/mtime:1720514527/sites/default/files/eventos/eventos/fiestas_orgullo_puerta_del_sol_2024.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/TPhCcRR1FG6VcyT51yYTIio42mGQytpIgdjfLvDOgj8/mtime:1720514588/sites/default/files/eventos/eventos/orgullo_plaza_de_espana_2024.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/smKaq4hybUoeYC3FNI2xX4iH1DB4M6IdRtjARPdzdBE/mtime:1720514311/sites/default/files/eventos/eventos/carrera_tacones_orgullo_2024_2.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/fiestas-orgullo-lgtbiqa-madrid",
-    "source": "esmadrid",
-    "categories": [
-      "fiestas",
-      "conciertos",
-      "conferencias",
-      "teatro"
-    ],
-    "is_multi_event": true,
-    "formato": "festival",
-    "lid": "d46f99a6"
   },
   "e4a6cc5188641015": {
     "title": "Fescinal 2026",
@@ -12637,25 +12516,6 @@
     "formato": "exposicion",
     "lid": "7fb49dd2"
   },
-  "ea1e8c952e0caf6c": {
-    "title": "Puños de harina",
-    "description": "Un monólogo teatral que reflexiona sobre la identidad, el racismo y la homofobia a través de dos historias paralelas sobre la lucha por la dignidad. La obra homenajea a quienes han sufrido discriminación mientras explora el sentido de la masculinidad.",
-    "start_time": "20:00:00",
-    "url": "https://tickets.oneboxtds.com/tpavon/events/54703",
-    "price": "Desde 21,50 €",
-    "image": "images/events/351746b604b6.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/hUT-NHhL71-abHuJ9tNDnOS_37ULD2FEzoTgJwQx-_I/mtime:1777562286/sites/default/files/eventos/eventos/punos_de_harina2.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/QoAr_l5Bw_n1xO7Ezvj8kr65Rqb-AD1EyueGm_P2RCc/mtime:1777562267/sites/default/files/eventos/eventos/punos_de_harina.png"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/punos-harina-gran-teatro-pavon",
-    "source": "esmadrid",
-    "categories": [
-      "teatro"
-    ],
-    "formato": "puntual",
-    "lid": "d2e1acfd"
-  },
   "b7e16f67d297dc8b": {
     "title": "Goya y las escuelas flamenca e italiana. Un siglo de filantropía de Carlota de Santamarca y Antonia González",
     "description": "La exposición reúne una destacada colección artística legada por dos filántropas, incluyendo obras de Goya, Luca Giordano y otros maestros del Siglo de Oro. La muestra ofrece un recorrido visual por lienzos, bustos y objetos que testimonian la historia del arte europeo y madrileño de los siglos XIX y XX.",
@@ -12725,21 +12585,6 @@
     ],
     "formato": "exposicion",
     "lid": "044f7fc6"
-  },
-  "627bb621b674539f": {
-    "title": "Jasón y las Furias",
-    "description": "El montaje presenta un intenso drama sobre la culpa, la memoria y la traición basado en la historia del héroe mitológico Jasón. La obra explora las consecuencias de romper un pacto amoroso y el viaje interior hacia la propia conciencia.",
-    "start_time": "20:00:00",
-    "url": "https://www.teatrobellasartes.es/obra-de-teatro/jason-y-las-furias/",
-    "price": "Desde 22,50 €",
-    "image": "images/events/1e4718d944a0.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/jason-furias-teatro-bellas-artes",
-    "source": "esmadrid",
-    "categories": [
-      "teatro"
-    ],
-    "formato": "puntual",
-    "lid": "5f3f83ad"
   },
   "414215caa243cdcc": {
     "title": "El encanto de la ilusión. Un puente entre realidad y percepción",
@@ -12835,22 +12680,6 @@
     "is_multi_event": true,
     "formato": "festival"
   },
-  "ffe71014a3d5297f": {
-    "title": "Festival Río Babel 2026",
-    "description": "Este festival de música iberoamericana reúne a artistas nacionales e internacionales que abarcan géneros desde el pop, rock y música latina hasta el folk o la electrónica. El evento busca conectar propuestas musicales diversas mediante un cartel que incluye actuaciones de figuras consagradas y nuevas promesas.",
-    "url": "https://www.festivalriobabel.com/",
-    "price": "Desde 99 €",
-    "image": "images/events/0a39346bf68b.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/festival-rio-babel",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos",
-      "ferias"
-    ],
-    "is_multi_event": true,
-    "formato": "festival",
-    "lid": "739a4956"
-  },
   "9c95015afab72f45": {
     "title": "Jean Michel Jarre",
     "description": "El músico francés ofrece dos espectáculos de música electrónica que combinan la magia de los sintetizadores con el arte multimedia de vanguardia. La propuesta destaca por su carácter visionario y su influencia en géneros como el ambient, el techno pop y la música trance.",
@@ -12888,22 +12717,6 @@
     "formato": "festival",
     "lid": "c9c45e0d"
   },
-  "0d90e37955b043fa": {
-    "title": "III Semana del Cine Mexicano 2026",
-    "description": "El festival ofrece más de 40 títulos de estreno de ficción, documental y clásicos restaurados de la cinematografía mexicana. Incluye proyecciones, retrospectivas, encuentros con creadores y talleres cinematográficos.",
-    "url": "https://www.casademexico.es/semana-del-cine-mexicano/",
-    "price": "Consultar página oficial",
-    "image": "images/events/8937ab1b6b8f.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/semana-cine-mexicano",
-    "source": "esmadrid",
-    "categories": [
-      "cine",
-      "talleres"
-    ],
-    "is_multi_event": true,
-    "formato": "exposicion",
-    "lid": "438080e7"
-  },
   "e3b72ff45e68e0af": {
     "title": "CinePlaza de Verano. Superestrellas 3 / Veranos de la Villa",
     "description": "Ciclo de cine al aire libre que combina proyecciones cinematográficas con actuaciones musicales en directo y sesiones comentadas. La programación explora diversos géneros cinematográficos incluyendo cine yeyé, blaxploitation y cine queer contemporáneo.",
@@ -12926,36 +12739,6 @@
     "is_multi_event": true,
     "formato": "festival",
     "lid": "95a62894"
-  },
-  "8707c6bed3f0a9bc": {
-    "title": "Kany García",
-    "description": "La cantautora puertorriqueña y ganadora de ocho premios Latin GRAMMY presenta en directo su gira más ambiciosa. El concierto incluye un recorrido por sus grandes éxitos y la presentación de su álbum más reciente, García.",
-    "start_time": "20:30:00",
-    "url": "https://www.movistararena.es/informacion?evento=kany-garcia",
-    "price": "Desde 39,66 €",
-    "image": "images/events/17d140de8a04.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/kany-garcia-movistar-arena",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "formato": "puntual",
-    "lid": "1f1e0e14"
-  },
-  "795b6904e54f8241": {
-    "title": "Garbage",
-    "description": "La banda de rock alternativo liderada por Shirley Manson ofrece un concierto repasando sus grandes éxitos y temas recientes. La actuación se enmarca dentro del festival Noches del Botánico.",
-    "start_time": "22:00:00",
-    "url": "https://www.nochesdelbotanico.com/conciertos/garbage",
-    "price": "Entradas agotadas",
-    "image": "images/events/0dbc8faee1d7.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/garbage-jardin-botanico-universidad-complutense",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "formato": "puntual",
-    "lid": "82e42bdc"
   },
   "21f688c512d9397e": {
     "title": "Sonrisas y lágrimas, el musical",
@@ -13420,28 +13203,6 @@
     "formato": "exposicion",
     "lid": "e2ffcb7e"
   },
-  "137f423c247acf3f": {
-    "title": "LegendFest - Elvis Vive",
-    "description": "Greg Miller, reconocido imitador de Elvis Presley, protagoniza un homenaje musical que repasa la trayectoria y éxitos del legendario cantante. El espectáculo incluye grabaciones íntimas que ilustran la estrecha relación personal que el artista mantuvo con el propio Elvis.",
-    "start_time": "22:00:00",
-    "url": "https://gruposmedia.com/cartelera/legendfest-elvis-vive/",
-    "price": "Desde 25 €",
-    "image": "images/events/8090a5d33e63.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/HXlClyfzLZmQmBKx1JjX8VsetcZwWDVIrL7uPtjc_Hk/mtime:1542585325/sites/default/files/eventos/eventos/elvis_0.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/KHT8sG8HKaHfrOdWrr7QsfwPf86fs82fqp34uOzA9lU/mtime:1542619433/sites/default/files/eventos/eventos/elvis_1.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/07YqoMqlQb0UN3HVMgC26rx7u8KorHlOMUfLY89FAKE/mtime:1542585340/sites/default/files/eventos/eventos/elvis_2.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/0l6SRyJf4Kx5gW5Ekis4GdIb8AfxiesCUcU464msVLA/mtime:1542585353/sites/default/files/eventos/eventos/elvis_3.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/legendfest-elvis-vive-capitol-gran-via",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos",
-      "musicales"
-    ],
-    "formato": "puntual",
-    "lid": "f019fdda"
-  },
   "61c6c13a352c36e8": {
     "title": "Ibermúsica. Sinfónica Nacional Juvenil de Venezuela",
     "description": "El maestro Gustavo Dudamel dirige a la formación en un recital centrado en la interpretación de la Sinfonía núm. 7 en Do Mayor de Shostakóvich. Esta obra, conocida como \"Leningrado\", se presenta como un símbolo universal de resistencia y esperanza a través de la música.",
@@ -13573,7 +13334,7 @@
     ],
     "is_multi_event": true,
     "formato": "exposicion",
-    "lid": "438080e7"
+    "lid": "4cacfccd"
   },
   "d10b21c551af2e72": {
     "title": "La Terraza Magnética 2026. Cartografías de la noche",
@@ -13736,7 +13497,7 @@
       "gratis"
     ],
     "formato": "exposicion",
-    "lid": "438080e7"
+    "lid": "4cacfccd"
   },
   "4f0b7fa1dd437653": {
     "title": "LegendFest - Rolling Stones Tribute",
@@ -13840,21 +13601,6 @@
     ],
     "formato": "exposicion",
     "lid": "ecdf816e"
-  },
-  "b5184eac1158fa8e": {
-    "title": "Eric Johnson",
-    "description": "El virtuoso guitarrista estadounidense repasa una trayectoria de más de cuatro décadas centrada en el rock instrumental, el blues y la fusión. La velada contará con la interpretación de temas emblemáticos como Cliffs Of Dover.",
-    "start_time": "20:00:00",
-    "url": "https://www.ericjohnson.com/tour",
-    "price": "35 €",
-    "image": "images/events/cbbf4662b03e.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/eric-johnson-sala-wagon",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "formato": "puntual",
-    "lid": "b1ac68ff"
   },
   "1d7405e9d1e83028": {
     "title": "Esperanza a la fuerza",
@@ -14708,27 +14454,6 @@
     "formato": "puntual",
     "lid": "9a5be362"
   },
-  "37fba39779d17916": {
-    "title": "La selva",
-    "description": "La compañía Teloncillo Teatro presenta un espectáculo de títeres para toda la familia que explora el reino animal. La obra invita a los espectadores a realizar una travesía imaginaria por diversos continentes mientras despierta la curiosidad y la imaginación mediante la exploración de la naturaleza.",
-    "start_time": "17:30:00",
-    "url": "https://tarambana.net/espectaculos/la-selva/",
-    "price": "Desde 9 €",
-    "image": "images/events/1251402bdafa.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/4eurTbbj0t_IQt99MwyXrogHvTyK_XtztvNZKphyoXM/mtime:1782475691/sites/default/files/eventos/eventos/tea60a_1.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/cw_Lp0Vxi2-ej23XCKJOWydGYUZhcTPnDPCLT0J4Lm8/mtime:1782475670/sites/default/files/eventos/eventos/teloncillo_2025_jose_vicente_18.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/QFmQIzq7Z3YOOmc2PZx69CKYW-z-XGVUgIMmit0Bc6w/mtime:1782475712/sites/default/files/eventos/eventos/ted048_1.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/selva-teatro-tarambana",
-    "source": "esmadrid",
-    "categories": [
-      "teatro",
-      "infantil"
-    ],
-    "formato": "puntual",
-    "lid": "f8a954ec"
-  },
   "746f1a825d7998c7": {
     "title": "Pat Metheny",
     "description": "El aclamado guitarrista estadounidense celebra la publicación de su álbum Side-Eye III con una actuación en directo. El músico repasa su trayectoria esencial dentro del jazz contemporáneo junto a su formación actual.",
@@ -14758,27 +14483,6 @@
     ],
     "formato": "puntual",
     "lid": "50107e1c"
-  },
-  "2295c018f0ee9994": {
-    "title": "El largo sueño de Úrsula",
-    "description": "Un espectáculo de teatro-danza que revisita la leyenda de Santa Úrsula combinando música, movimiento y un toque de humor absurdo. La obra narra el peregrinaje de la princesa bretona mediante una propuesta onírica y contemporánea.",
-    "start_time": "20:00:00",
-    "url": "https://teatrolagrada.com/el-largo-sueno-de-ursula/",
-    "price": "15 €",
-    "image": "images/events/d0fb2d8b44a7.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/D7Hpni8tO7bkLRrxGMhnJsK9GBKoyErOHykRzDqXFXQ/mtime:1782629332/sites/default/files/eventos/eventos/el-largo-sueno-de-ursula.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/7V4vDQ171hnVEUIPXli9UiFIe4XSZbl2_MD_y6JXOIY/mtime:1782629089/sites/default/files/eventos/eventos/el-largo-sueno-de-ursula-2.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/XzneYdhEdL5GecIcZcj_TOGcamhj8NVFyoWMit0nMm4/mtime:1782629109/sites/default/files/eventos/eventos/el-largo-sueno-de-ursula-3.png"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/largo-sueno-ursula-teatro-lagrada",
-    "source": "esmadrid",
-    "categories": [
-      "teatro",
-      "danza"
-    ],
-    "formato": "puntual",
-    "lid": "a39a77f1"
   },
   "49811a3bc52e3cca": {
     "title": "Los ojos que habitan en mí",
@@ -14954,25 +14658,6 @@
     ],
     "formato": "puntual",
     "lid": "82e42bdc"
-  },
-  "b393b80f944e92a3": {
-    "title": "Team Heretics",
-    "description": "El club organiza una watch party para seguir en directo su debut en la Esports World Cup 2026. Los asistentes podrán compartir la jornada junto a creadores de contenido y miembros del club en un entorno dedicado a la cultura digital.",
-    "start_time": "12:30:00",
-    "url": "https://teamheretics.com/es/",
-    "price": "1 €",
-    "image": "images/events/e7a8c781d69f.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/wHQqogfFNLVY4xzakP8JAekJu-4c1Dl-84gsA4cpbb8/mtime:1782829767/sites/default/files/eventos/eventos/team_heretics.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/13JUHy6Y-Gpg5X-plfDqsbYpHK7tmNZpGOX6OfcxTAY/mtime:1782829890/sites/default/files/eventos/eventos/team_heretics2.png"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/team-heretics-palacio-neptuno",
-    "source": "esmadrid",
-    "categories": [
-      "conferencias"
-    ],
-    "formato": "puntual",
-    "lid": "d593652a"
   },
   "3375d767b8759423": {
     "title": "Escolanía Domus Carmina",
@@ -15516,5 +15201,26 @@
     ],
     "formato": "puntual",
     "lid": "9d5eb577"
+  },
+  "c01b8232a932b6b5": {
+    "title": "Ciclo Breve: La casa que se apaga + Archivo imprimir + Los hombres no limpian",
+    "description": "Tres montajes de corta duración que abordan cuestiones universales como el paso del tiempo o las relaciones familiares. El programa combina drama íntimo con piezas de comedia negra y situaciones cotidianas llevadas a escena.",
+    "start_time": "20:00:00",
+    "url": "https://lausina.es/sala/programacion/6a381ff2cdd0501e32eaeefe/1784829600000",
+    "price": "Desde 13 €",
+    "image": "images/events/fd3824013a68.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/KhRNQLvtDXRSdrTdV6TeeClVCLjxTTW3GslTB-N5ol8/mtime:1783923767/sites/default/files/eventos/eventos/ciclo-breve-la-casa-que-se-apaga-archivo-imprimir-los-hombres-no-limpian.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/OrT1e6T-cWryoTsrReGsBw4JkCujuV_I2McIv2zitMY/mtime:1783923784/sites/default/files/eventos/eventos/ciclo-breve-la-casa-que-se-apaga-archivo-imprimir-los-hombres-no-limpian-2.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/gfY2GjZc-0j3JbDPUCgr5Cru-htIokJzCnh9mAOz6cE/mtime:1783923799/sites/default/files/eventos/eventos/ciclo-breve-la-casa-que-se-apaga-archivo-imprimir-los-hombres-no-limpian-3.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/ciclo-breve-casa-apaga-archivo-imprimir-hombres-no-limpian-usina",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "comedia"
+    ],
+    "formato": "festival",
+    "lid": "9b2ba2ac"
   }
 }

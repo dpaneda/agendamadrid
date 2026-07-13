@@ -269,11 +269,12 @@
     "latitude": 40.41878362561595,
     "longitude": -3.6866519471003647
   },
-  "438080e7": {
-    "location_name": "Fundación Casa de México en España",
-    "address": "de Alberto Aguilera, 20",
-    "latitude": 40.4301378,
-    "longitude": -3.7092035
+  "4cacfccd": {
+    "location_name": "Casa de México",
+    "address": "CALLE ALBERTO AGUILERA 20",
+    "district": "Chamberi",
+    "latitude": 40.430110282172656,
+    "longitude": -3.7095487700127783
   },
   "6ba590e1": {
     "location_name": "Espacio de Igualdad Gloria Fuertes. Vicálvaro",
@@ -401,6 +402,13 @@
     "latitude": 40.433958260960964,
     "longitude": -3.7143358486689415
   },
+  "5920ebfe": {
+    "location_name": "Auditorio Municipal Las Trece Rosas",
+    "address": "CALLE MONTE DE MONTJUICH 7",
+    "district": "VillaDeVallecas",
+    "latitude": 40.38024953878224,
+    "longitude": -3.6175290483217055
+  },
   "be0f5543": {
     "location_name": "Templete del Parque del Retiro",
     "address": "PLAZA MAESTRO VILLA 1",
@@ -484,13 +492,6 @@
     "district": "Retiro",
     "latitude": 40.41906571939961,
     "longitude": -3.684053112760816
-  },
-  "5920ebfe": {
-    "location_name": "Auditorio Municipal Las Trece Rosas",
-    "address": "CALLE MONTE DE MONTJUICH 7",
-    "district": "VillaDeVallecas",
-    "latitude": 40.38024953878224,
-    "longitude": -3.6175290483217055
   },
   "74ef50ff": {
     "location_name": "El Capricho de la Alameda Osuna",
@@ -911,12 +912,6 @@
     "latitude": 40.4015359,
     "longitude": -3.6773107
   },
-  "622c74d4": {
-    "location_name": "Fundación Canal Sala Castellana 214",
-    "address": "de la Castellana, 214",
-    "latitude": 40.463602,
-    "longitude": -3.688925
-  },
   "79932781": {
     "location_name": "Filmoteca Española",
     "address": "de la Magdalena, 10",
@@ -964,12 +959,6 @@
     "address": "de Serrano, 13",
     "latitude": 40.4234939,
     "longitude": -3.6889607
-  },
-  "a39f00f6": {
-    "location_name": "Palacio de Liria",
-    "address": "de la Princesa, 20",
-    "latitude": 40.427732729479,
-    "longitude": -3.712424039841
   },
   "8fbe5662": {
     "location_name": "Centro de Arte Dos de Mayo (CA2M) / Móstoles",
@@ -1054,12 +1043,6 @@
     "address": "de Bailén, 8",
     "latitude": 40.4159416,
     "longitude": -3.7150162
-  },
-  "20f77603": {
-    "location_name": "Museo Nacional Thyssen-Bornemisza",
-    "address": "del Prado, 8",
-    "latitude": 40.4160406,
-    "longitude": -3.6949254
   },
   "fc2a84be": {
     "location_name": "Teatro Fígaro",
@@ -1241,12 +1224,6 @@
     "latitude": 40.4305839,
     "longitude": -3.6814985
   },
-  "db7a4d60": {
-    "location_name": "Bululú 2120",
-    "address": "de Canarias, 16",
-    "latitude": 40.4019628,
-    "longitude": -3.6964991
-  },
   "86b6d704": {
     "location_name": "Museo Cerralbo",
     "address": "de Ventura Rodríguez, 17",
@@ -1261,18 +1238,6 @@
   },
   "f019fdda": {
     "location_name": "Capitol Gran Vía"
-  },
-  "bebd45c9": {
-    "location_name": "Museo Nacional de Ciencias Naturales",
-    "address": "de José Gutierrez Abascal, 2",
-    "latitude": 40.4416762,
-    "longitude": -3.6901373
-  },
-  "c05dd0a1": {
-    "location_name": "Teatro Calderón",
-    "address": "de Atocha, 18",
-    "latitude": 40.414043355837,
-    "longitude": -3.703497648239
   },
   "6666116c": {
     "location_name": "Casa Árabe",
@@ -1309,6 +1274,12 @@
     "address": "de San Jerónimo, 46",
     "latitude": 40.4158953,
     "longitude": -3.6971466
+  },
+  "20f77603": {
+    "location_name": "Museo Nacional Thyssen-Bornemisza",
+    "address": "del Prado, 8",
+    "latitude": 40.4160406,
+    "longitude": -3.6949254
   },
   "7b154a93": {
     "location_name": "Residencia de Estudiantes",
@@ -1424,6 +1395,12 @@
     "latitude": 40.4603195,
     "longitude": -3.6938521
   },
+  "bebd45c9": {
+    "location_name": "Museo Nacional de Ciencias Naturales",
+    "address": "de José Gutierrez Abascal, 2",
+    "latitude": 40.4416762,
+    "longitude": -3.6901373
+  },
   "4d6147eb": {
     "location_name": "Biblioteca Histórica UCM Marqués de Valdecilla",
     "address": "del Noviciado, 3",
@@ -1466,12 +1443,6 @@
     "latitude": 40.4153478,
     "longitude": -3.7041116
   },
-  "d46f99a6": {
-    "location_name": "Plaza de Pedro Zerolo, Plaza del Rey, Puerta del Sol y Plaza de España",
-    "address": "Plaza de Pedro Zerolo, Plaza del Rey, Puerta del Sol, Plaza de España.",
-    "latitude": 40.421044233242,
-    "longitude": -3.699442454971
-  },
   "2c0dd596": {
     "location_name": "Parque de la Bombilla",
     "address": "de Valladolid, 4",
@@ -1490,12 +1461,6 @@
     "latitude": 40.4167139,
     "longitude": -3.7034836
   },
-  "d2e1acfd": {
-    "location_name": "Gran Teatro Pavón",
-    "address": "de Embajadores, 9",
-    "latitude": 40.4099859,
-    "longitude": -3.7061463
-  },
   "60383778": {
     "location_name": "Teatro La Latina",
     "address": "de la Cebada, 2",
@@ -1507,18 +1472,6 @@
     "address": "de Filipinas, 11",
     "latitude": 40.4415537,
     "longitude": -3.7065042
-  },
-  "739a4956": {
-    "location_name": "Auditorio Miguel Ríos Rivas Vaciamadrid",
-    "address": "Alicia Alonso, s/n",
-    "latitude": 40.34,
-    "longitude": -3.51
-  },
-  "1f1e0e14": {
-    "location_name": "Movistar Arena (WiZink Center)",
-    "address": "de Felipe II, s/n",
-    "latitude": 40.4238597,
-    "longitude": -3.6718421
   },
   "ce6a0c87": {
     "location_name": "Real Jardín Botánico",
@@ -1544,10 +1497,22 @@
     "latitude": 40.4133013,
     "longitude": -3.7219371
   },
+  "1f1e0e14": {
+    "location_name": "Movistar Arena (WiZink Center)",
+    "address": "de Felipe II, s/n",
+    "latitude": 40.4241371,
+    "longitude": -3.6749756
+  },
   "61c10e5d": {
     "location_name": "Varios locales",
     "latitude": 40.4167754,
     "longitude": -3.7037902
+  },
+  "c05dd0a1": {
+    "location_name": "Teatro Calderón",
+    "address": "de Atocha, 18",
+    "latitude": 40.414043355837,
+    "longitude": -3.703497648239
   },
   "2b9a4735": {
     "location_name": "Estadio Riyadh Air Metropolitano",
@@ -1602,12 +1567,6 @@
     "address": "de Daroca, 90",
     "latitude": 40.4247569,
     "longitude": -3.6465092
-  },
-  "b1ac68ff": {
-    "location_name": "Lab theClub",
-    "address": "de Agustín de Foxa, s/n",
-    "latitude": 40.4760991,
-    "longitude": -3.6820196
   },
   "50107e1c": {
     "location_name": "Teatro Real",
@@ -1687,23 +1646,11 @@
     "latitude": 40.4351546,
     "longitude": -3.6971056
   },
-  "f8a954ec": {
-    "location_name": "Teatro Tarambana",
-    "address": "Dolores Armengot , 31",
-    "latitude": 40.3857668,
-    "longitude": -3.7432537
-  },
-  "a39a77f1": {
-    "location_name": "Teatro Lagrada",
-    "address": "de Ercilla, 20",
-    "latitude": 40.4026932,
-    "longitude": -3.7029826
-  },
-  "d593652a": {
-    "location_name": "Palacio Neptuno",
-    "address": "de Cervantes, 42",
-    "latitude": 40.4144686,
-    "longitude": -3.6950121
+  "db7a4d60": {
+    "location_name": "Bululú 2120",
+    "address": "de Canarias, 16",
+    "latitude": 40.4019632,
+    "longitude": -3.6964942
   },
   "35bc59b1": {
     "location_name": "Real Basílica de San Francisco El Grande",
@@ -1747,6 +1694,12 @@
     "address": "Casa de Campo, s/n",
     "latitude": 40.421432,
     "longitude": -3.7536663
+  },
+  "f8a954ec": {
+    "location_name": "Teatro Tarambana",
+    "address": "Dolores Armengot , 31",
+    "latitude": 40.3857614,
+    "longitude": -3.7432511
   },
   "f9c4232a": {
     "location_name": "Teatro del Barrio",
