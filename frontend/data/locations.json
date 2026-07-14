@@ -41,18 +41,18 @@
     "latitude": 40.473659104975354,
     "longitude": -3.592395079190456
   },
+  "e232e586": {
+    "location_name": "Espacio de Igualdad María Zambrano. Chamberí",
+    "address": "CALLE ANDRES MELLADO 44",
+    "district": "Chamberi",
+    "latitude": 40.433958260960964,
+    "longitude": -3.7143358486689415
+  },
   "7ff9694b": {
     "location_name": "Auditorio de la Plaza de Chamberí - Templete",
     "district": "Distrito",
     "latitude": 40.43277092586933,
     "longitude": -3.6970484720506938
-  },
-  "63e95416": {
-    "location_name": "Parque Cerro del Tío Pío",
-    "address": "CALLE BENJAMIN PALENCIA 2",
-    "district": "PuenteDeVallecas",
-    "latitude": 40.39701982315709,
-    "longitude": -3.655239797848888
   },
   "040b80fc": {
     "location_name": "Espacio de Igualdad Nieves Torres. Chamartín",
@@ -74,6 +74,20 @@
     "district": "SanBlas-Canillejas",
     "latitude": 40.42997621103139,
     "longitude": -3.6221773579444596
+  },
+  "1b4b08af": {
+    "location_name": "Espacio de Igualdad Clara Campoamor. Villaverde",
+    "address": "CALLE MARIA MARTINEZ OVIOL 12",
+    "district": "Villaverde",
+    "latitude": 40.35087114162283,
+    "longitude": -3.691508909255186
+  },
+  "7fb097ff": {
+    "location_name": "Espacio de Igualdad María Telo. Moratalaz",
+    "address": "CALLE CAMINO DE LOS VINATEROS 51",
+    "district": "Moratalaz",
+    "latitude": 40.41087442118042,
+    "longitude": -3.6538891267077664
   },
   "02b25093": {
     "location_name": "Centro de Información y Educación Ambiental de Casa de Campo",
@@ -102,13 +116,6 @@
     "latitude": 40.392279999540044,
     "longitude": -3.684956957448299
   },
-  "1b4b08af": {
-    "location_name": "Espacio de Igualdad Clara Campoamor. Villaverde",
-    "address": "CALLE MARIA MARTINEZ OVIOL 12",
-    "district": "Villaverde",
-    "latitude": 40.35087114162283,
-    "longitude": -3.691508909255186
-  },
   "1a7c6818": {
     "location_name": "Centro de Información y Educación Ambiental de Dehesa de la Villa",
     "district": "Moncloa-Aravaca",
@@ -128,13 +135,6 @@
     "district": "CiudadLineal",
     "latitude": 40.442311100791215,
     "longitude": -3.6534806246311913
-  },
-  "7fb097ff": {
-    "location_name": "Espacio de Igualdad María Telo. Moratalaz",
-    "address": "CALLE CAMINO DE LOS VINATEROS 51",
-    "district": "Moratalaz",
-    "latitude": 40.41087442118042,
-    "longitude": -3.6538891267077664
   },
   "bb29009c": {
     "location_name": "CentroCentro",
@@ -255,13 +255,6 @@
     "latitude": 40.47098300036034,
     "longitude": -3.6393251567222045
   },
-  "5ce42a5d": {
-    "location_name": "Auditorio al aire libre. Parque de la Vaguada",
-    "address": "PASEO VAGUADA 13",
-    "district": "Fuencarral-ElPardo",
-    "latitude": 40.48016602497203,
-    "longitude": -3.7112978051427574
-  },
   "f37c6e85": {
     "location_name": "Teatro Municipal de Títeres. Parque de El Retiro",
     "address": "AVENIDA MÉXICO 4",
@@ -374,13 +367,6 @@
     "latitude": 40.374166248648216,
     "longitude": -3.7032220308808577
   },
-  "6bac6bd1": {
-    "location_name": "Parque de Salvador Allende",
-    "address": "CALLE SALVADOR ALLENDE 3",
-    "district": "Carabanchel",
-    "latitude": 40.364341448699825,
-    "longitude": -3.757402071835875
-  },
   "272832c8": {
     "location_name": "Auditorio al aire libre. Parque Lineal del Manzanares",
     "address": "CAMINO PERALES 48",
@@ -395,26 +381,12 @@
     "latitude": 40.515712291624084,
     "longitude": -3.6860532895354448
   },
-  "e232e586": {
-    "location_name": "Espacio de Igualdad María Zambrano. Chamberí",
-    "address": "CALLE ANDRES MELLADO 44",
-    "district": "Chamberi",
-    "latitude": 40.433958260960964,
-    "longitude": -3.7143358486689415
-  },
   "5920ebfe": {
     "location_name": "Auditorio Municipal Las Trece Rosas",
     "address": "CALLE MONTE DE MONTJUICH 7",
     "district": "VillaDeVallecas",
     "latitude": 40.38024953878224,
     "longitude": -3.6175290483217055
-  },
-  "be0f5543": {
-    "location_name": "Templete del Parque del Retiro",
-    "address": "PLAZA MAESTRO VILLA 1",
-    "district": "Retiro",
-    "latitude": 40.41941736281525,
-    "longitude": -3.6850082736557983
   },
   "303984c9": {
     "location_name": "Museo de Historia de Madrid",
@@ -437,12 +409,12 @@
     "latitude": 40.42585800515975,
     "longitude": -3.689601594290468
   },
-  "d5698254": {
-    "location_name": "Parque del Pueblo del Pardo",
-    "address": "AVENIDA GUARDIA 4",
+  "5ce42a5d": {
+    "location_name": "Auditorio al aire libre. Parque de la Vaguada",
+    "address": "PASEO VAGUADA 13",
     "district": "Fuencarral-ElPardo",
-    "latitude": 40.5186002228516,
-    "longitude": -3.7753787533567573
+    "latitude": 40.48016602497203,
+    "longitude": -3.7112978051427574
   },
   "397eb825": {
     "location_name": "Parque de Plata y Castañar",
@@ -486,12 +458,12 @@
     "latitude": 40.44844757572015,
     "longitude": -3.598099871155595
   },
-  "13acb8c9": {
-    "location_name": "Centro Cultural Casa de Vacas (Retiro)",
-    "address": "PASEO COLOMBIA 1",
-    "district": "Retiro",
-    "latitude": 40.41906571939961,
-    "longitude": -3.684053112760816
+  "d5698254": {
+    "location_name": "Parque del Pueblo del Pardo",
+    "address": "AVENIDA GUARDIA 4",
+    "district": "Fuencarral-ElPardo",
+    "latitude": 40.5186002228516,
+    "longitude": -3.7753787533567573
   },
   "74ef50ff": {
     "location_name": "El Capricho de la Alameda Osuna",
@@ -499,6 +471,13 @@
     "district": "Barajas",
     "latitude": 40.45446361509569,
     "longitude": -3.6000964360303476
+  },
+  "6bac6bd1": {
+    "location_name": "Parque de Salvador Allende",
+    "address": "CALLE SALVADOR ALLENDE 3",
+    "district": "Carabanchel",
+    "latitude": 40.364341448699825,
+    "longitude": -3.757402071835875
   },
   "c4ad993c": {
     "location_name": "Parque Rosas (Aravaca)",
@@ -595,13 +574,6 @@
     "latitude": 40.414828532240946,
     "longitude": -3.700164949543688
   },
-  "7e7b6ac7": {
-    "location_name": "Auditorio al aire libre. Parque Cerro Almodóvar",
-    "address": "CALLE MARCELINO CASTILLO 29",
-    "district": "Latina",
-    "latitude": 40.39420802732146,
-    "longitude": -3.744692836307442
-  },
   "1a009f5e": {
     "location_name": "Plaza de Daoíz y Velarde",
     "address": "PLAZA DAOIZ Y VELARDE 2",
@@ -621,6 +593,12 @@
     "address": "de la Chopera, 14",
     "latitude": 40.3923033,
     "longitude": -3.69743
+  },
+  "13acb8c9": {
+    "location_name": "Centro Cultural Casa de Vacas",
+    "address": "de Colombia, 1",
+    "latitude": 40.4190657,
+    "longitude": -3.6840531
   },
   "8d90c6ff": {
     "location_name": "Centro Cultural Clara del Rey - Museo ABC (Centro)",
@@ -642,13 +620,6 @@
     "district": "Carabanchel",
     "latitude": 40.37746689917427,
     "longitude": -3.7547689345277977
-  },
-  "0402c527": {
-    "location_name": "Aula ambiental La Cabaña del Retiro",
-    "address": "PASEO FERNAN NUÑEZ 10",
-    "district": "Retiro",
-    "latitude": 40.40912277790706,
-    "longitude": -3.6793179644920584
   },
   "4c65808b": {
     "location_name": "Parque Este de Valdebernardo",
@@ -794,6 +765,13 @@
     "latitude": 40.39245798191536,
     "longitude": -3.6972067902718897
   },
+  "0402c527": {
+    "location_name": "Aula ambiental La Cabaña del Retiro",
+    "address": "PASEO FERNAN NUÑEZ 10",
+    "district": "Retiro",
+    "latitude": 40.40912277790706,
+    "longitude": -3.6793179644920584
+  },
   "4f409aab": {
     "location_name": "Salón y sala de exposiciones en Junta Municipal de Usera",
     "address": "AVENIDA RAFAELA YBARRA 41",
@@ -807,13 +785,6 @@
     "district": "Moratalaz",
     "latitude": 40.39928542551079,
     "longitude": -3.636600379403484
-  },
-  "97e16db3": {
-    "location_name": "Parque de don David Pérez y don Miguel Ángel González",
-    "address": "CALLE DIONISIO INCA YUPANQUI 8",
-    "district": "Hortaleza",
-    "latitude": 40.461621132349094,
-    "longitude": -3.6281020785174873
   },
   "31352bed": {
     "location_name": "Imprenta Municipal. Artes del libro",
@@ -836,20 +807,6 @@
     "latitude": 40.40218085880392,
     "longitude": -3.60141148450391
   },
-  "12355570": {
-    "location_name": "Biblioteca Pública Municipal Eugenio Trías. Casa de Fieras de El Retiro (Retiro)",
-    "address": "PASEO FERNÁN NÚÑEZ 24",
-    "district": "Retiro",
-    "latitude": 40.4166091081099,
-    "longitude": -3.6795930368034804
-  },
-  "5651c399": {
-    "location_name": "Centro Sociocultural José de Espronceda (Tetuán)",
-    "address": "CALLE ALMANSA 9",
-    "district": "Tetuan",
-    "latitude": 40.44864332758775,
-    "longitude": -3.704513191828797
-  },
   "2bf6dbd1": {
     "location_name": "Instituto Geográfico Nacional y Centro Nacional de Información Geográfica",
     "address": "CALLE GENERAL IBA&amp;Ntilde;EZ DE IBERO 3",
@@ -870,6 +827,13 @@
     "district": "Chamberi",
     "latitude": 40.441913031255396,
     "longitude": -3.710700237505622
+  },
+  "97e16db3": {
+    "location_name": "Parque de don David Pérez y don Miguel Ángel González",
+    "address": "CALLE DIONISIO INCA YUPANQUI 8",
+    "district": "Hortaleza",
+    "latitude": 40.461621132349094,
+    "longitude": -3.6281020785174873
   },
   "4ec30898": {
     "location_name": "Centro Cultural Las Californias (Retiro)",
@@ -905,12 +869,6 @@
     "district": "Latina",
     "latitude": 40.397074625115906,
     "longitude": -3.7664885474841556
-  },
-  "b4d499b0": {
-    "location_name": "Centro Cultural Daoíz y Velarde",
-    "address": "de Daoíz y Velarde, 4",
-    "latitude": 40.4015359,
-    "longitude": -3.6773107
   },
   "79932781": {
     "location_name": "Filmoteca Española",
@@ -1491,22 +1449,11 @@
     "latitude": 40.33002438542,
     "longitude": -3.710401557036
   },
-  "9d5eb577": {
-    "location_name": "La Riviera",
-    "address": "Bajo de la Virgen del Puerto, s/n",
-    "latitude": 40.4133013,
-    "longitude": -3.7219371
-  },
   "1f1e0e14": {
     "location_name": "Movistar Arena (WiZink Center)",
     "address": "de Felipe II, s/n",
     "latitude": 40.4241371,
     "longitude": -3.6749756
-  },
-  "61c10e5d": {
-    "location_name": "Varios locales",
-    "latitude": 40.4167754,
-    "longitude": -3.7037902
   },
   "c05dd0a1": {
     "location_name": "Teatro Calderón",
@@ -1609,6 +1556,12 @@
     "address": "del General Pardiñas, 73",
     "latitude": 40.4340721,
     "longitude": -3.6783231
+  },
+  "9d5eb577": {
+    "location_name": "La Riviera",
+    "address": "Bajo de la Virgen del Puerto, s/n",
+    "latitude": 40.4133013,
+    "longitude": -3.7219371
   },
   "98f49d45": {
     "location_name": "Moby Dick",
