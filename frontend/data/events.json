@@ -6305,6 +6305,25 @@
     "price": "gratis",
     "formato": "puntual"
   },
+  "132aa2eb412fbe69": {
+    "title": "Paseo ornitológico en la Casa de Campo",
+    "description": "Ruta circular para la observación de las aves que habitan y visitan el entorno de la Casa de Campo.",
+    "start_time": "09:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=04ae49e870907810VgnVCM2000001f4a900aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis",
+      "naturaleza"
+    ],
+    "dates": [
+      "2026-08-16",
+      "2026-09-20"
+    ],
+    "price": "gratis",
+    "formato": "puntual",
+    "lid": "02b25093"
+  },
   "b92c5904cd9994a6": {
     "title": "Espectáculo musical: Pasión y arte",
     "description": "María Nevado presenta un repertorio que abarca copla, tangos y chotis con una interpretación personal.",
@@ -6960,6 +6979,20 @@
     "formato": "puntual",
     "lid": "f2b4174f"
   },
+  "116ffbb533f837f8": {
+    "title": "Ruta: La Dehesa, una isla de biodiversidad.",
+    "start_time": "10:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=4d2ce96aba30f910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "description": "Recorrido interpretativo por la Dehesa para aprender sobre su ecosistema único. Visita educativa enfocada en la conservación y el medio ambiente.",
+    "price": "0",
+    "formato": "puntual",
+    "lid": "1a7c6818"
+  },
   "7eb7cf68c0a2143d": {
     "title": "Fiestas del barrio de Villaverde Alto: Sábado 18 de julio",
     "description": "Fiesta popular con actividades de agua, fiesta de la espuma y actuaciones musicales en directo.",
@@ -7181,6 +7214,20 @@
     "price": "gratis",
     "formato": "exposicion",
     "lid": "5e4b8cb1"
+  },
+  "cd48e83478358de0": {
+    "title": "Cine: Sirât",
+    "description": "Thriller dramático español del 2025 que narra la historia de un hombre y su hijo en una road movie.",
+    "start_time": "22:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d1d62656cf22f910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "gratis"
+    ],
+    "price": "0",
+    "formato": "puntual",
+    "lid": "354d0096"
   },
   "0b094df47e309509": {
     "title": "Sirat, trance en el desierto",
@@ -7935,6 +7982,20 @@
     "description": "Sesión informativa dirigida a resolver dudas legales y procedimientos relacionados con el despido laboral. Formación gratuita abierta al público.",
     "formato": "puntual",
     "lid": "2a930101"
+  },
+  "747850198d2325b4": {
+    "title": "Cine: Tres Adioses",
+    "description": "Película dirigida por Isabel Coixet que narra la separación de una pareja tras una discusión. Recomendada para mayores de doce años.",
+    "start_time": "22:15:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d05e36ea9eabe910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "gratis"
+    ],
+    "price": "0",
+    "formato": "puntual",
+    "lid": "dbe08552"
   },
   "7b4ee573801bdbd0": {
     "title": "Tributo a las mejores bandas sonoras de cine",
@@ -9229,27 +9290,6 @@
     ],
     "formato": "exposicion",
     "lid": "f23f45f9"
-  },
-  "c16129631725e36c": {
-    "title": "Los tacones de papá",
-    "description": "Una divertida comedia que explora el mundo del transformismo a través de los ojos de una joven tras el fallecimiento de su padre. La obra cuenta con un destacado reparto y está dirigida por Juan Luis Iborra y Jose Warletta.",
-    "url": "https://teatrolara.com/programacion/tacones-de-papa",
-    "price": "Desde 22 €",
-    "image": "images/events/0d702264f6c6.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/MXKfMXvv-T4vEoayIQwTCtJDZN1nDe3z0uSFVSqx-uU/mtime:1718897993/sites/default/files/eventos/eventos/tacones.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/VdV2PZmpqPcjvLvXprwzup6gYK9VYxiGu481_KRga4s/mtime:1718897975/sites/default/files/eventos/eventos/tacones2.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/hHrXDo45oNRuFtBbvc8lv4nR3B_6H80k7Hbs5tzYR1c/mtime:1718897850/sites/default/files/eventos/eventos/los_tacones_de_papa_1.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/o7x0slFnyThVqdV8vw_bie3a8nk8MVJB5031wZlFHuE/mtime:1718897872/sites/default/files/eventos/eventos/los_tacones_de_papa.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/r28A22TSkis-_WTrScQ-YWtQ6htRiMzidztSi7lvLqg/mtime:1718897826/sites/default/files/eventos/eventos/los_tacones_de_papa_3.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/tacones-papa-teatro-lara-sala-candido-lara",
-    "source": "esmadrid",
-    "categories": [
-      "teatro"
-    ],
-    "formato": "exposicion",
-    "lid": "529045ed"
   },
   "6c4e48d875cb6860": {
     "title": "La historia no se repite, pero rima. Dumile Feni: Guernica africano",
@@ -12737,41 +12777,6 @@
     "formato": "exposicion",
     "lid": "6249eafd"
   },
-  "e95092a454f86586": {
-    "title": "Grupo Frontera",
-    "description": "La banda estadounidense interpreta sus grandes éxitos en un concierto centrado en el subgénero de música norteña y regional mexicana. La actuación forma parte de su gira internacional Triste pero bien c*bron Tour 2026.",
-    "start_time": "19:30:00",
-    "url": "https://www.movistararena.es/informacion?evento=grupo-frontera-triste-pero-bien-c-bron-tour-2026",
-    "price": "Desde 33,99 €",
-    "image": "images/events/2e4a14230b7d.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/grupo-frontera-movistar-arena",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "formato": "puntual",
-    "lid": "1f1e0e14"
-  },
-  "fc27cb987b7ce1ba": {
-    "title": "Silvana Estrada / Mari Froes",
-    "description": "Dos voces femeninas referentes de la nueva música latinoamericana presentan una propuesta que fusiona folk, soul, jazz y samba. El concierto explora la tradición contemporánea y la transformación artística a través de una propuesta íntima y multicultural.",
-    "start_time": "19:30:00",
-    "url": "https://nochesdelbotanico.com/conciertos/silvana-estrada-mari-froes",
-    "price": "Desde 40 €",
-    "image": "images/events/51b72c79827f.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/FdzL68RDsef3Z_fdb3Hi0S7g4wmhjeebO1lWg_UIPcQ/mtime:1777561043/sites/default/files/eventos/eventos/silvana_estrada_0.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/lhH0kycSi-AFc_uybQGaGSHnd-Bnqi_VwQUhSexVixk/mtime:1777561069/sites/default/files/eventos/eventos/mari_froes.png"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/silvana-estrada-mari-froes-jardin-botanico-universidad-complutense",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "is_multi_event": true,
-    "formato": "puntual",
-    "lid": "82e42bdc"
-  },
   "f0dcef7ef591ff74": {
     "title": "Noches de verano CaixaForum Madrid",
     "description": "Una amplia programación estival que incluye una variada oferta de conciertos, espectáculos de danza, artes escénicas, magia y talleres. Los ciclos combinan diferentes disciplinas como el rock, el jazz, la percusión y propuestas de movimiento para todos los públicos.",
@@ -13218,22 +13223,6 @@
     "price": "25 €",
     "image": "images/events/ea18d8571faf.jpg",
     "source_url": "https://www.esmadrid.com/agenda/legendfest-rolling-stones-tribute-capitol-gran-via",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "is_multi_event": true,
-    "formato": "festival",
-    "lid": "f019fdda"
-  },
-  "9a224f7a27cd4310": {
-    "title": "LegendFest - ShowBeat - Una noche con The Beatles",
-    "description": "El grupo The Flaming Shakers ofrece un concierto tributo que recrea la música y la imagen del cuarteto de Liverpool. La puesta en escena utiliza instrumentos, vestuario y gestos fieles a la formación original de The Beatles.",
-    "start_time": "20:30:00",
-    "url": "https://gruposmedia.com/cartelera/legendfest-showbeat-una-noche-con-the-beatles/",
-    "price": "25 €",
-    "image": "images/events/209c165570bd.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/legendfest-showbeat-noche-beatles-capitol-gran-via",
     "source": "esmadrid",
     "categories": [
       "conciertos"
@@ -14021,26 +14010,6 @@
     ],
     "formato": "exposicion",
     "lid": "58d00754"
-  },
-  "8cd0f2bd438cd889": {
-    "title": "XII Festival Caprichos del Romanticismo 2026",
-    "description": "Festival que reúne una serie de conciertos de música de cámara protagonizados por destacados jóvenes intérpretes. El evento se desarrolla en diversas sedes históricas y emblemáticas de Madrid.",
-    "start_time": "19:00:00",
-    "url": "https://katarinagurska.com/caprichos-del-romanticismo-2026/",
-    "price": "Gratis",
-    "image": "images/events/6f6e295d6ed4.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/NPfhDtIzCMbIxoQ28pHBQIf5BZieIpADXMT1Ln8SE84/mtime:1782383156/sites/default/files/eventos/eventos/xii_festival_caprichos_del_romanticismo_2026.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/4aqK7EEhG4HTTUM5PTfc_mNDhV2qvImlH50X7quFIyo/mtime:1782383199/sites/default/files/eventos/eventos/caprichos_archivo.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/festival-caprichos-romanticismo-madrid",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "is_multi_event": true,
-    "formato": "festival",
-    "lid": "dc35bc1f"
   },
   "f8202f07ca6c65d2": {
     "title": "Arte plumario: naturaleza, identidad y poder",
@@ -14914,5 +14883,46 @@
     ],
     "formato": "exposicion",
     "lid": "0f65d248"
+  },
+  "fd87d80c446a590f": {
+    "title": "Río de luna",
+    "description": "Espectáculo de danza para bebés que explora el proceso comunicativo y el descubrimiento del mundo en los recién nacidos. La obra representa el desarrollo cognitivo y las primeras experiencias vitales a través de coreografías que simbolizan un viaje vital.",
+    "start_time": "17:30:00",
+    "url": "https://tarambana.net/espectaculos/rio-de-luna/",
+    "price": "Desde 9 €",
+    "image": "images/events/de41de985d47.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/1svWQ3s0_ejReD9nBeNZGFW33Stymyy_kor0CmNWUM8/mtime:1784200833/sites/default/files/eventos/eventos/rio_de_luna_1.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/T-Vb0eWsbhaYJCE1ljnFIybPqNFZ3cV3PFV_FBg_NdY/mtime:1555929847/sites/default/files/eventos/eventos/rio_0.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/rio-luna-teatro-tarambana",
+    "source": "esmadrid",
+    "categories": [
+      "danza",
+      "infantil",
+      "teatro"
+    ],
+    "formato": "puntual",
+    "lid": "f8a954ec"
+  },
+  "60947fd81f6cdca7": {
+    "title": "Ciclo Breve: Two Girls One Cake + Fino Qui",
+    "description": "Espectáculo compuesto por dos piezas cortas que exploran, a través del humor y la emoción, los rituales cotidianos y los deseos pendientes. Las historias retratan la complejidad del amor y el paso del tiempo desde una perspectiva íntima y cercana.",
+    "start_time": "18:00:00",
+    "url": "https://www.lausina.es/sala/programacion/6a3fe1a3cdd0501e32eaf381/1785081600000",
+    "price": "Desde 13 €",
+    "image": "images/events/be93f106d21a.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/1dyYwTZ_hxSHcPlzeMDRbW-Y6zxxyGlTLTlSWWTsEdI/mtime:1784205505/sites/default/files/eventos/eventos/cb_dd26_-_macomad_2.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/hckcQyqq8EmEiyms3cXBbKF6i_hHTQ9TYNj3be32DMQ/mtime:1784205522/sites/default/files/eventos/eventos/ciclo_breve_d26.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/ciclo-breve-two-girls-one-cake-fino-qui-usina",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "comedia"
+    ],
+    "formato": "festival",
+    "lid": "9b2ba2ac"
   }
 }
