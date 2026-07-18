@@ -6,13 +6,6 @@
     "latitude": 40.424723,
     "longitude": -3.717977
   },
-  "ccc906e4": {
-    "location_name": "Auditorio y sala de exposiciones Paco de Lucía (Latina)",
-    "address": "AVENIDA LAS AGUILAS 2",
-    "district": "Latina",
-    "latitude": 40.38493929920335,
-    "longitude": -3.7641963952601154
-  },
   "9c620465": {
     "location_name": "Espacio de Igualdad Juana Doña. Arganzuela",
     "address": "PASEO CHOPERA 10",
@@ -55,12 +48,12 @@
     "latitude": 40.39420907754556,
     "longitude": -3.744687315765447
   },
-  "dbe08552": {
-    "location_name": "Centro Cultural Auditorio Parque El Paraíso (San Blas - Canillejas)",
-    "address": "AVENIDA ARCENTALES 4",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.42997621103139,
-    "longitude": -3.6221773579444596
+  "fdc5567c": {
+    "location_name": "Centro Sociocultural Alberto Sánchez (Puente de Vallecas)",
+    "address": "CALLE RISCO DE PELOCHE 14",
+    "district": "PuenteDeVallecas",
+    "latitude": 40.393619022093546,
+    "longitude": -3.6556016835101834
   },
   "1b4b08af": {
     "location_name": "Espacio de Igualdad Clara Campoamor. Villaverde",
@@ -89,12 +82,6 @@
     "district": "Moncloa-Aravaca",
     "latitude": 40.41789950036311,
     "longitude": -3.7309390858931137
-  },
-  "fd38aa9f": {
-    "location_name": "Glorieta de San Víctor",
-    "address": "Glorieta de San Víctor, 1, Arganzuela",
-    "latitude": 40.4050094,
-    "longitude": -3.7105118
   },
   "bc288b4d": {
     "location_name": "Salas de exposiciones Conde Duque",
@@ -137,13 +124,6 @@
     "latitude": 40.41902261618159,
     "longitude": -3.692188193693138
   },
-  "4710abd1": {
-    "location_name": "Centro Cultural Galileo (Chamberí)",
-    "address": "CALLE GALILEO 39",
-    "district": "Chamberi",
-    "latitude": 40.433719454283505,
-    "longitude": -3.7104468992841753
-  },
   "7ff9694b": {
     "location_name": "Auditorio de la Plaza de Chamberí - Templete",
     "district": "Distrito",
@@ -156,13 +136,6 @@
     "district": "PuenteDeVallecas",
     "latitude": 40.3957812018463,
     "longitude": -3.6670346724676173
-  },
-  "040b80fc": {
-    "location_name": "Espacio de Igualdad Nieves Torres. Chamartín",
-    "address": "CALLE ENRIQUE JARDIEL PONCELA 8",
-    "district": "Chamartin",
-    "latitude": 40.46088981165102,
-    "longitude": -3.6700689174427326
   },
   "e818a933": {
     "location_name": "Auditorio al aire libre. Parque Aluche",
@@ -255,12 +228,11 @@
     "latitude": 40.41878362561595,
     "longitude": -3.6866519471003647
   },
-  "4cacfccd": {
-    "location_name": "Casa de México",
-    "address": "CALLE ALBERTO AGUILERA 20",
-    "district": "Chamberi",
-    "latitude": 40.430110282172656,
-    "longitude": -3.7095487700127783
+  "438080e7": {
+    "location_name": "Fundación Casa de México en España",
+    "address": "de Alberto Aguilera, 20",
+    "latitude": 40.4301378,
+    "longitude": -3.7092035
   },
   "6ba590e1": {
     "location_name": "Espacio de Igualdad Gloria Fuertes. Vicálvaro",
@@ -318,19 +290,19 @@
     "latitude": 40.37128211425518,
     "longitude": -3.6292460351699867
   },
+  "040b80fc": {
+    "location_name": "Espacio de Igualdad Nieves Torres. Chamartín",
+    "address": "CALLE ENRIQUE JARDIEL PONCELA 8",
+    "district": "Chamartin",
+    "latitude": 40.46088981165102,
+    "longitude": -3.6700689174427326
+  },
   "9b3eae76": {
     "location_name": "Espacio de Igualdad Dulce Chacón. Villaverde",
     "address": "CALLE TORDEGRILLOS 32",
     "district": "Villaverde",
     "latitude": 40.344107374451525,
     "longitude": -3.7166081132911537
-  },
-  "7c1958bc": {
-    "location_name": "Edificio Sociocultural Marta Escudero Díaz-Tejeiro (Villaverde)",
-    "address": "CALLE CALCIO 1",
-    "district": "Villaverde",
-    "latitude": 40.35118703272002,
-    "longitude": -3.679345889376551
   },
   "5b0073c9": {
     "location_name": "Biblioteca Pública Municipal Iván de Vargas (Centro)",
@@ -360,6 +332,13 @@
     "latitude": 40.374166248648216,
     "longitude": -3.7032220308808577
   },
+  "1a009f5e": {
+    "location_name": "Plaza de Daoíz y Velarde",
+    "address": "PLAZA DAOIZ Y VELARDE 2",
+    "district": "Retiro",
+    "latitude": 40.402190438836826,
+    "longitude": -3.6772826298329093
+  },
   "272832c8": {
     "location_name": "Auditorio al aire libre. Parque Lineal del Manzanares",
     "address": "CAMINO PERALES 48",
@@ -387,6 +366,13 @@
     "district": "Tetuan",
     "latitude": 40.46900764611639,
     "longitude": -3.697595691925329
+  },
+  "4710abd1": {
+    "location_name": "Centro Cultural Galileo (Chamberí)",
+    "address": "CALLE GALILEO 39",
+    "district": "Chamberi",
+    "latitude": 40.433719454283505,
+    "longitude": -3.7104468992841753
   },
   "be0f5543": {
     "location_name": "Templete del Parque del Retiro",
@@ -486,13 +472,6 @@
     "latitude": 40.451737,
     "longitude": -3.781915
   },
-  "a7eb6f63": {
-    "location_name": "Biblioteca Pública Municipal San Fermín (Usera)",
-    "address": "AVENIDA SAN FERMIN 10",
-    "district": "Usera",
-    "latitude": 40.3711623444796,
-    "longitude": -3.692742821990015
-  },
   "398d56b6": {
     "location_name": "Centro Intergeneracional Río Esmeralda",
     "address": "CALLE RIO ESMERALDA 15",
@@ -510,6 +489,13 @@
     "district": "Salamanca",
     "latitude": 40.4249721516942,
     "longitude": -3.689948085098791
+  },
+  "dbe08552": {
+    "location_name": "Centro Cultural Auditorio Parque El Paraíso (San Blas - Canillejas)",
+    "address": "AVENIDA ARCENTALES 4",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.42997621103139,
+    "longitude": -3.6221773579444596
   },
   "9c07c98c": {
     "location_name": "Espacio Cultural Núñez de Balboa, 40 (Salamanca)",
@@ -546,19 +532,19 @@
     "latitude": 40.42737760210632,
     "longitude": -3.7106116887809817
   },
-  "77b83e41": {
-    "location_name": "Parque Santa Eugenia",
-    "address": "CALLE Puentelarra 13",
-    "district": "VillaDeVallecas",
-    "latitude": 40.38131130575197,
-    "longitude": -3.608459149580722
-  },
   "b1f7c00c": {
     "location_name": "Teatro Español",
     "address": "CALLE PRINCIPE 25",
     "district": "Centro",
     "latitude": 40.414828532240946,
     "longitude": -3.700164949543688
+  },
+  "a610a2bf": {
+    "location_name": "Auditorio al aire libre Berlín",
+    "address": "CALLE SAN ERNESTO 10",
+    "district": "Chamartin",
+    "latitude": 40.449208447370104,
+    "longitude": -3.6755539136331894
   },
   "354d0096": {
     "location_name": "Centro Deportivo Municipal Peñagrande GoFit",
@@ -635,10 +621,24 @@
     "latitude": 40.49042200599307,
     "longitude": -3.6553467891079854
   },
+  "dbc8993b": {
+    "location_name": "Parque Eva Duarte",
+    "address": "CALLE DOCTOR GOMEZ ULLA 9",
+    "district": "Salamanca",
+    "latitude": 40.42985671996897,
+    "longitude": -3.668031432543624
+  },
   "6dd5948c": {
     "location_name": "Parque Huerta de la Salud",
     "address": "CALLE MAR DE LAS ANTILLAS 8",
     "district": "Hortaleza"
+  },
+  "6159d396": {
+    "location_name": "Auditorio al aire libre. Parque Amós Acero",
+    "address": "CALLE SIERRA DE ALQUIFE 20",
+    "district": "PuenteDeVallecas",
+    "latitude": 40.38840925271774,
+    "longitude": -3.666129894495819
   },
   "28cc7d13": {
     "location_name": "Biblioteca Pública Municipal Francisco Umbral (Villaverde)",
@@ -659,6 +659,13 @@
     "address": "de Amaniel, 29",
     "latitude": 40.4281043,
     "longitude": -3.7097008
+  },
+  "a7eb6f63": {
+    "location_name": "Biblioteca Pública Municipal San Fermín (Usera)",
+    "address": "AVENIDA SAN FERMIN 10",
+    "district": "Usera",
+    "latitude": 40.3711623444796,
+    "longitude": -3.692742821990015
   },
   "83d70b16": {
     "location_name": "Parque de Villa Rosa-Paco Caño",
@@ -681,13 +688,6 @@
     "latitude": 40.47508343631223,
     "longitude": -3.645482
   },
-  "dbc8993b": {
-    "location_name": "Parque Eva Duarte",
-    "address": "CALLE DOCTOR GOMEZ ULLA 9",
-    "district": "Salamanca",
-    "latitude": 40.42985671996897,
-    "longitude": -3.668031432543624
-  },
   "868d318d": {
     "location_name": "Parque de Berlín",
     "address": "AVENIDA RAMON Y CAJAL 2",
@@ -701,13 +701,6 @@
     "district": "Moncloa-Aravaca",
     "latitude": 40.43179642724134,
     "longitude": -3.7281634896577027
-  },
-  "53979c9c": {
-    "location_name": "Parque Enrique Tierno Galván",
-    "address": "CALLE MENESES 4",
-    "district": "Arganzuela",
-    "latitude": 40.39210151448589,
-    "longitude": -3.681620654746187
   },
   "c8b7e48c": {
     "location_name": "Centro Municipal de Mayores Miguel Delibes",
@@ -723,12 +716,12 @@
     "latitude": 40.45999848510341,
     "longitude": -3.6148888706303586
   },
-  "99232b4b": {
-    "location_name": "Parroquia Santa Teresa y Santa Isabel",
-    "address": "GLORIETA PINTOR SOROLLA 2",
-    "district": "Chamberi",
-    "latitude": 40.435084849120955,
-    "longitude": -3.6991442520833915
+  "a471d651": {
+    "location_name": "Biblioteca Pública Municipal Vicálvaro",
+    "address": "CALLE VILLARDONDIEGO 36",
+    "district": "Vicalvaro",
+    "latitude": 40.405283650744316,
+    "longitude": -3.6086278232922804
   },
   "63c0a6a0": {
     "location_name": "Centro Sociocultural Teresa de Calcuta (Barajas)",
@@ -779,13 +772,6 @@
     "latitude": 40.39928542551079,
     "longitude": -3.636600379403484
   },
-  "1a009f5e": {
-    "location_name": "Plaza de Daoíz y Velarde",
-    "address": "PLAZA DAOIZ Y VELARDE 2",
-    "district": "Retiro",
-    "latitude": 40.402190438836826,
-    "longitude": -3.6772826298329093
-  },
   "31352bed": {
     "location_name": "Imprenta Municipal. Artes del libro",
     "address": "CALLE CONCEPCION JERONIMA 15",
@@ -814,26 +800,12 @@
     "latitude": 40.46333523949564,
     "longitude": -3.657291981994152
   },
-  "2bf6dbd1": {
-    "location_name": "Instituto Geográfico Nacional y Centro Nacional de Información Geográfica",
-    "address": "CALLE GENERAL IBA&amp;Ntilde;EZ DE IBERO 3",
-    "district": "Chamberi",
-    "latitude": 40.44558068567235,
-    "longitude": -3.710304333164841
-  },
   "75f92d7a": {
     "location_name": "Cementerio de Nuestra Señora de la Almudena",
     "address": "AVENIDA DAROCA 90",
     "district": "CiudadLineal",
     "latitude": 40.431386380971894,
     "longitude": -3.6590535229397676
-  },
-  "7f7d0281": {
-    "location_name": "Centro Deportivo Municipal Estadio de Atletismo Vallehermoso (Dirección General de Deporte)",
-    "address": "CALLE MELQUIADES ALVAREZ 10",
-    "district": "Chamberi",
-    "latitude": 40.441913031255396,
-    "longitude": -3.710700237505622
   },
   "97e16db3": {
     "location_name": "Parque de don David Pérez y don Miguel Ángel González",
@@ -1195,9 +1167,6 @@
     "latitude": 40.4204426,
     "longitude": -3.7017177
   },
-  "f019fdda": {
-    "location_name": "Capitol Gran Vía"
-  },
   "6666116c": {
     "location_name": "Casa Árabe",
     "address": "de Alcalá, 62",
@@ -1293,12 +1262,6 @@
     "address": "Complutense, s/n",
     "latitude": 40.447298141613,
     "longitude": -3.726317882538
-  },
-  "faef8eee": {
-    "location_name": "Galería Elvira González",
-    "address": "de los Hermanos Alvárez Quintero , 1",
-    "latitude": 40.4272699,
-    "longitude": -3.6976072
   },
   "e9af25a5": {
     "location_name": "Museo ICO",
@@ -1492,6 +1455,12 @@
     "latitude": 40.4299874,
     "longitude": -3.6808178
   },
+  "f019fdda": {
+    "location_name": "Capitol Gran Vía",
+    "address": "Gran Vía, 41",
+    "latitude": 40.4204502,
+    "longitude": -3.7066308
+  },
   "e80eae3e": {
     "location_name": "Real Coliseo de Carlos III",
     "address": "Floridablanca, 20",
@@ -1631,6 +1600,12 @@
     "latitude": 40.3997348,
     "longitude": -3.6906652
   },
+  "fd38aa9f": {
+    "location_name": "Glorieta de San Víctor",
+    "address": "Glorieta de San Víctor, 1, Arganzuela",
+    "latitude": 40.4050094,
+    "longitude": -3.7105118
+  },
   "30576c7b": {
     "location_name": "Parque de Atracciones",
     "address": "Casa de Campo, s/n",
@@ -1648,5 +1623,11 @@
     "address": "de Zurita, 20",
     "latitude": 40.4096355,
     "longitude": -3.6992038
+  },
+  "d2add564": {
+    "location_name": "Escenario Puerta del Ángel",
+    "address": "del Embarcadero, Recinto Ferial de la Casa de Campo",
+    "latitude": 40.416926850471,
+    "longitude": -3.727669715881
   }
 }
