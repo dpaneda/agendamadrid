@@ -3041,6 +3041,20 @@
     "price": "0€",
     "formato": "puntual"
   },
+  "6c5726667e3b2c79": {
+    "title": "Cine: Furiosa (Saga Mad Max)",
+    "description": "Proyección de la película de 2024 dirigida por George Miller. Narra la historia de la joven Furiosa en un mundo postapocalíptico.",
+    "start_time": "22:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=38db13a08c30f910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "gratis"
+    ],
+    "price": "0€",
+    "formato": "puntual",
+    "lid": "a2273ec8"
+  },
   "4ea715b2f88be82f": {
     "title": "Taller de Gestión Emocional",
     "start_time": "10:00:00",
@@ -5880,6 +5894,19 @@
     "description": "Ejercicios prácticos de memoria diseñados para mantener la agilidad mental en el día a día. Dinámicas grupales para entrenar la atención y el recuerdo.",
     "formato": "exposicion",
     "lid": "f14ce3db"
+  },
+  "e2dccc04786444af": {
+    "title": "Quedada de cine: La vida secreta de Walter Mitty",
+    "description": "Proyección especial de la película 'La vida secreta de Walter Mitty' organizada por la Biblioteca José Saramago.",
+    "start_time": "11:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=2a9329f006c2b910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "gratis"
+    ],
+    "formato": "puntual",
+    "lid": "439b2cee"
   },
   "f26e263b5f43a0c9": {
     "title": "Itinerario interpretativo en la Quinta de Torre Arias",
@@ -9164,6 +9191,31 @@
     "formato": "exposicion",
     "lid": "5cb800a8"
   },
+  "922e2c1719729184": {
+    "title": "Mercado de Productores Villa de Vallecas",
+    "description": "Espacio de venta de productos locales agroalimentarios que conecta directamente a productores con consumidores. El mercado ofrece una selección de alimentos artesanos y ecológicos junto a actividades de ocio y música en vivo.",
+    "start_time": "10:00:00",
+    "address": "Avenida del Ensanche de Vallecas 69",
+    "latitude": 40.363793,
+    "longitude": -3.5986466,
+    "url": "https://fecoma.coop/mercado-de-productores-villa-de-vallecas/",
+    "price": "Gratis",
+    "image": "images/events/61b144db29e9.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/Iu18lsbU_46ibyBGig8oJKyan4xefATbH-wDZPffToc/mtime:1727101358/sites/default/files/eventos/eventos/mercado_de_productores_villa_de_vallecas_1.jpeg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/AQixisyAohrMWYAeA6E81FO_MtmgFRcwQSxTxq1bq-0/mtime:1727101406/sites/default/files/eventos/eventos/mercado_de_productores_villa_de_vallecas_2.jpeg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/nBory2e8rsI7anc0nBXk2qx6P2-PoMVW34q4FbqUSRY/mtime:1727101450/sites/default/files/eventos/eventos/mercado_de_productores_villa_de_vallecas_3.jpeg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/AWD5S99IZ1tQiMiW0tXf2gL_dNo0EBux1kLCc2AKNZg/mtime:1727101488/sites/default/files/eventos/eventos/mercado_de_productores_villa_de_vallecas_4.jpeg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/mercado-productores-villa-vallecas",
+    "source": "esmadrid",
+    "categories": [
+      "mercados",
+      "gastronomía"
+    ],
+    "is_multi_event": true,
+    "formato": "exposicion"
+  },
   "a2ba04a6f5f5101f": {
     "title": "Antonio Ballester Moreno. El cielo y la tierra",
     "description": "El artista Antonio Ballester Moreno presenta una muestra que dialoga con las colecciones del centro mediante una conversación entre producciones amateurs y obras de arte contemporáneo. La exposición explora la construcción del paisaje y la capacidad creativa colectiva en un espacio que fusiona lo cotidiano con lo artístico.",
@@ -9624,21 +9676,6 @@
     "formato": "festival",
     "lid": "7fb49dd2"
   },
-  "f346e8deede9d52a": {
-    "title": "Vitrina CERO. ¿Verdadero o falso? La ficción de la autenticidad en las falsificaciones del siglo XIX",
-    "description": "El Museo Arqueológico Nacional presenta una selección de piezas falsas o de dudosa autenticidad que forman parte de su colección. La muestra explora el contexto histórico del coleccionismo del siglo XIX y el auge de las falsificaciones en dicha época.",
-    "start_time": "09:30:00",
-    "url": "https://www.man.es/man/exposiciones/vitrina0/20260414-vitrina0-verdadero-o-falso.html",
-    "price": "3 €",
-    "image": "images/events/06033eccb12c.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/verdadero-o-falso-ficcion-autenticidad-falsificaciones-siglo-xix-museo-arqueologico-nacional",
-    "source": "esmadrid",
-    "categories": [
-      "exposiciones"
-    ],
-    "formato": "exposicion",
-    "lid": "df925a11"
-  },
   "eb5c227eb6e3cb2d": {
     "title": "Tría Áurea",
     "description": "Programa de visitas que permite explorar tres hitos del barroco madrileño: la Iglesia de San Antonio de los Alemanes, el Monasterio de las Comendadoras de Santiago y la Iglesia de San Plácido. Los visitantes pueden descubrir espacios sacros históricos que custodian importantes colecciones artísticas y joyas arquitectónicas.",
@@ -10001,25 +10038,6 @@
     ],
     "formato": "exposicion",
     "lid": "868a1c03"
-  },
-  "6505ecffbfa49e21": {
-    "title": "El jardín quemado",
-    "description": "El dramaturgo Juan Mayorga presenta un drama que explora la memoria, el pasado y la reflexión ética tras un conflicto bélico. La obra se desarrolla como un duelo intelectual y moral entre los protagonistas en un sanatorio psiquiátrico.",
-    "start_time": "18:30:00",
-    "url": "https://www.teatroabadia.com/espectaculo/el-jardin-quemado/",
-    "price": "Desde 19 €",
-    "image": "images/events/e2aaa549d6eb.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/HsinYzkonnzu_GWhBI9l5Ln9Vy_ZJksbrEJbCPvR9nY/mtime:1765809902/sites/default/files/eventos/eventos/el-jardin-quemado-2.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/bmHGOyTQiX6AwUPYBz0P3zlJmSTyNZ-x3vzSX0sjngY/mtime:1765809885/sites/default/files/eventos/eventos/el-jardin-quemado.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/jardin-quemado-teatro-abadia",
-    "source": "esmadrid",
-    "categories": [
-      "teatro"
-    ],
-    "formato": "exposicion",
-    "lid": "b7019de4"
   },
   "d01c8c0783324b6a": {
     "title": "Endometriosis. Laia Abril (PHotoESPAÑA 2026)",
@@ -11551,21 +11569,6 @@
     "formato": "exposicion",
     "lid": "8c5e05a1"
   },
-  "7eeb10545be2e432": {
-    "title": "Alejandro y el eunuco persa",
-    "description": "La obra explora la faceta más íntima y vulnerable del conquistador Alejandro Magno, alejándose de su imagen heroica para profundizar en sus afectos y deseos personales. La trama se articula en torno a su relación con Bagoas y otros personajes clave, planteando una reflexión sobre el poder y la soledad.",
-    "start_time": "20:00:00",
-    "url": "https://www.teatrobellasartes.es/obra-de-teatro/alejandro-y-el-eunuco-persa/",
-    "price": "Desde 22,50 €",
-    "image": "images/events/fc85536adbdc.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/alejandro-eunuco-persa-teatro-bellas-artes",
-    "source": "esmadrid",
-    "categories": [
-      "teatro"
-    ],
-    "formato": "puntual",
-    "lid": "5f3f83ad"
-  },
   "574d10738fb2cc4b": {
     "title": "Descubre el universo TRIGGER",
     "description": "Exposición autoguiada que explica de forma didáctica cómo afecta el cambio climático a nuestra salud y qué medidas tomar ante este desafío. El recorrido permite descubrir historias y conocimientos sobre resiliencia climática a través de diversos personajes repartidos por el espacio.",
@@ -11715,40 +11718,6 @@
     ],
     "formato": "exposicion",
     "lid": "4ab76119"
-  },
-  "2cc5bff2bd3a2daa": {
-    "title": "Chayanne",
-    "description": "El artista puertorriqueño regresa a España con su gira Bailemos Otra Vez, un espectáculo vibrante que combina sus grandes éxitos atemporales con nuevas composiciones. El show cuenta con una cuidada producción audiovisual y un elenco de músicos y bailarines de alto nivel.",
-    "start_time": "21:00:00",
-    "url": "https://www.movistararena.es/informacion?evento=chayanne-bailemos-otra-vez-2026",
-    "price": "Desde 85 €",
-    "image": "images/events/c2be986245cd.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/chayanne-movistar-arena",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "formato": "puntual",
-    "lid": "1f1e0e14"
-  },
-  "2b79f51b2311a3c0": {
-    "title": "Nu Genea Live Band / Gilsons",
-    "description": "Una jornada que reúne propuestas internacionales de fusión que combinan funk, música disco, electrónica y ritmos brasileños. El concierto ofrece una propuesta que equilibra la tradición musical con sonidos contemporáneos y globales.",
-    "start_time": "19:30:00",
-    "url": "https://nochesdelbotanico.com/conciertos/nu-genea-live-band-gilsons",
-    "price": "Desde 35 €",
-    "image": "images/events/8663a011d6f6.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/oZnHsL4lQs8HgCCQ7ZCVHcekNNqtirVamJWhI6tqLB4/mtime:1777985626/sites/default/files/eventos/eventos/nu_genea_live_band.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/c966Gc2RZ0pK8O6H33K7QX9mwMM37YBiaeH_YwDENz4/mtime:1777985657/sites/default/files/eventos/eventos/gilsons.png"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/nu-genea-live-band-gilsons-jardin-botanico-universidad-complutense",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "formato": "puntual",
-    "lid": "82e42bdc"
   },
   "906b8b3b4076ca0d": {
     "title": "Babasónicos / El Zar",
@@ -12114,21 +12083,6 @@
     "formato": "exposicion",
     "lid": "50107e1c"
   },
-  "0ff603e3f7c0902e": {
-    "title": "IV Copa del Mundo Hyundai Madrid 2026",
-    "description": "El torneo reúne a cerca de 400 deportistas internacionales para competir en pruebas de tiro con arco. Es una oportunidad para presenciar jornadas clasificatorias, eliminatorias y finales individuales y por equipos de la élite mundial.",
-    "start_time": "09:30:00",
-    "url": "https://www.federarco.es/competiciones/competiciones-25-26/copa-del-mundo-hyundai-de-tiro-con-arco-madrid-2026",
-    "price": "Desde 10 €",
-    "image": "images/events/c4216b9921cd.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/copa-mundo-hyundai-madrid-estadio-vallehermoso-estadio-nacional-complutense",
-    "source": "esmadrid",
-    "categories": [
-      "deportes"
-    ],
-    "formato": "puntual",
-    "lid": "e097f20e"
-  },
   "fded75660aa67b73": {
     "title": "My Chemical Romance",
     "description": "La banda estadounidense de rock ofrece un concierto exclusivo en Madrid como parte de su gira The Black Parade 2026. Este evento conmemora el 20 aniversario del emblemático tercer álbum de estudio del grupo.",
@@ -12451,26 +12405,6 @@
     ],
     "formato": "exposicion",
     "lid": "c05dd0a1"
-  },
-  "f7a9d41ca89b74e2": {
-    "title": "LegendFest - Queen is Back",
-    "description": "Un espectáculo que recrea con fidelidad los conciertos originales de la banda británica Queen con un despliegue de música en directo. El montaje cuenta con una caracterización impecable del vocalista Freddie Mercury y un repaso a los grandes éxitos del grupo.",
-    "start_time": "20:30:00",
-    "url": "https://gruposmedia.com/cartelera/legendfest-queen-is-back/#sinopsis",
-    "price": "25 €",
-    "image": "images/events/931b1cf04cad.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/MPu6pO0xj_d-BUGlG9ZjrRse1HDjCOA909ugQggiBTQ/mtime:1782209267/sites/default/files/eventos/eventos/queen-is-back09.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/sTLDGV5Bc3-6GkFpTHZwbkPKQ1IcNC9wOwCfObN5Tlw/mtime:1782209255/sites/default/files/eventos/eventos/queen-is-back08.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/legendfest-queen-back-capitol-gran-via",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "is_multi_event": true,
-    "formato": "festival",
-    "lid": "f019fdda"
   },
   "dc750b9ab900007d": {
     "title": "Rasleela, una odisea de Bollywood",
@@ -12896,26 +12830,6 @@
     "formato": "puntual",
     "lid": "50107e1c"
   },
-  "49811a3bc52e3cca": {
-    "title": "Los ojos que habitan en mí",
-    "description": "Obra documental de biodrama que reflexiona sobre la construcción de la identidad y cómo nos definimos a través de la mirada ajena. La pieza explora la relación entre la experiencia personal y la ficción en un montaje que cuestiona el origen de nuestra propia esencia.",
-    "start_time": "20:30:00",
-    "url": "https://teatro.bululu2120.com/los-ojos-que-habitan-en-mi-sala-bululu/",
-    "price": "12 €",
-    "image": "images/events/5375d29554a8.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/5GhK4D10XO4qDQjrbc-kHz-5H4mEDTiDVwd8C2PNYfw/mtime:1782631812/sites/default/files/eventos/eventos/los-ojos-que-habitan-en-mi.jpeg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/Adi9oEeipLEJS0vcbb1I_-5fgI9dge5RGXKZ0dXBQn0/mtime:1782631847/sites/default/files/eventos/eventos/los-ojos-que-habitan-en-mi-2.jpeg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/XLcslFC608YHy1XAKnooeVkhWkhFx3kmWj1gBuF28-8/mtime:1782631864/sites/default/files/eventos/eventos/los-ojos-que-habitan-en-mi-3.jpeg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/ojos-habitan-mi-bululu-2120",
-    "source": "esmadrid",
-    "categories": [
-      "teatro"
-    ],
-    "formato": "exposicion",
-    "lid": "db7a4d60"
-  },
   "4eb8b8a165a1c936": {
     "title": "Diana Krall",
     "description": "La reconocida pianista y cantante de jazz ofrece un concierto repasando los temas más destacados de su exitosa carrera musical. El recital incluye una selección de joyas del Gran Cancionero Americano que han definido su trayectoria.",
@@ -13271,27 +13185,6 @@
     "is_multi_event": true,
     "formato": "festival",
     "lid": "2c118b55"
-  },
-  "ba46c2b52f3a635b": {
-    "title": "Solas a dos",
-    "description": "Dos piezas de teatro y danza exploran cómo la socialización de género moldea los cuerpos y las emociones. Las obras cuestionan los modelos impuestos y reivindican la escucha del propio cuerpo ante la presión productiva.",
-    "start_time": "12:30:00",
-    "url": "https://www.lausina.es/sala/programacion/6a2d92260b75626f899908f8/1783852200000",
-    "price": "13,31 €",
-    "image": "images/events/83c2606538c3.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/CalCYUyDSw7336v1r9MbCo-CT7jS7uimlRTniYC83Qw/mtime:1783239846/sites/default/files/eventos/eventos/solas-a-dos.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/y02NDD8MjfxCOaRhSwJaaS6zsteXW2e0yo-mIrtp5Pc/mtime:1783239861/sites/default/files/eventos/eventos/solas-a-dos-2.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/solas-dos-usina",
-    "source": "esmadrid",
-    "categories": [
-      "teatro",
-      "danza"
-    ],
-    "is_multi_event": true,
-    "formato": "puntual",
-    "lid": "9b2ba2ac"
   },
   "100ab13b139801d8": {
     "title": "Zarzuela - La verbena de la Paloma",
@@ -13701,5 +13594,26 @@
     ],
     "formato": "exposicion",
     "lid": "db7a4d60"
+  },
+  "2567adfc634cb9e3": {
+    "title": "Illustraciencia 13",
+    "description": "Esta exposición presenta las obras seleccionadas del 13er Premio de Ilustración Científica y de la Naturaleza, un certamen internacional que promueve la ilustración como herramienta de comunicación científica. La muestra combina el rigor de la investigación con la sensibilidad artística para explorar especies animales, vegetales y fenómenos naturales.",
+    "start_time": "10:00:00",
+    "url": "https://www.mncn.csic.es/es/visita-el-mncn/exposiciones/illustraciencia-13",
+    "price": "Desde 3,50 €",
+    "image": "images/events/2acbb2000a2b.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/OUzjNHoXmtJit9rMrnOTpvksTPxogCICkXqxS5JExmQ/mtime:1784535715/sites/default/files/eventos/eventos/ilustraciencia_13_3.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/tfVQa-fz0suIi2tGvP5kwHRyQwhN26QTSJWc-mS-TF4/mtime:1784535749/sites/default/files/eventos/eventos/illustraciencia_13_2.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/G2lbFqol3AYq6j116GLkxzUC1kvOEWPBzAf6Vc-_4RM/mtime:1784535774/sites/default/files/eventos/eventos/illustraciencia_13.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/illustraciencia-13-museo-nacional-ciencias-naturales",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "accesible"
+    ],
+    "formato": "exposicion",
+    "lid": "bebd45c9"
   }
 }
