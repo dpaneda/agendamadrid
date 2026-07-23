@@ -83,6 +83,13 @@
     "latitude": 40.395326406887946,
     "longitude": -3.721622686264932
   },
+  "212de84d": {
+    "location_name": "Espacio de Igualdad Elena Arnedo Soriano. Retiro",
+    "address": "CALLE ARREGUI Y ARUEJ 31",
+    "district": "Retiro",
+    "latitude": 40.40254931370529,
+    "longitude": -3.668092320219012
+  },
   "02b25093": {
     "location_name": "Centro de Información y Educación Ambiental de Casa de Campo",
     "address": "PARQUE CASA DE CAMPO (JUNTO AL EMBARCADERO DEL LAGO)",
@@ -264,13 +271,6 @@
     "latitude": 40.433291625973624,
     "longitude": -3.6105662311927453
   },
-  "22840c10": {
-    "location_name": "Espacio de Igualdad Lucrecia Pérez. Fuencarral-El Pardo",
-    "address": "CALLE MANRESA 1",
-    "district": "Fuencarral-ElPardo",
-    "latitude": 40.49120609425076,
-    "longitude": -3.6916379633219116
-  },
   "32296fa0": {
     "location_name": "Espacio de Igualdad María Moliner. Villa de Vallecas",
     "address": "CALLE HONRUBIA 4",
@@ -320,19 +320,19 @@
     "latitude": 40.374166248648216,
     "longitude": -3.7032220308808577
   },
-  "272832c8": {
-    "location_name": "Auditorio al aire libre. Parque Lineal del Manzanares",
-    "address": "CAMINO PERALES 48",
-    "district": "Usera",
-    "latitude": 40.3798409552755,
-    "longitude": -3.69049519373178
-  },
   "1a009f5e": {
     "location_name": "Plaza de Daoíz y Velarde",
     "address": "PLAZA DAOIZ Y VELARDE 2",
     "district": "Retiro",
     "latitude": 40.402190438836826,
     "longitude": -3.6772826298329093
+  },
+  "272832c8": {
+    "location_name": "Auditorio al aire libre. Parque Lineal del Manzanares",
+    "address": "CAMINO PERALES 48",
+    "district": "Usera",
+    "latitude": 40.3798409552755,
+    "longitude": -3.69049519373178
   },
   "5920ebfe": {
     "location_name": "Auditorio Municipal Las Trece Rosas",
@@ -397,6 +397,13 @@
     "latitude": 40.42585800515975,
     "longitude": -3.689601594290468
   },
+  "22840c10": {
+    "location_name": "Espacio de Igualdad Lucrecia Pérez. Fuencarral-El Pardo",
+    "address": "CALLE MANRESA 1",
+    "district": "Fuencarral-ElPardo",
+    "latitude": 40.49120609425076,
+    "longitude": -3.6916379633219116
+  },
   "f2ea2a80": {
     "location_name": "Gran Vía de Villaverde",
     "address": "AVENIDA GRAN VIA DE VILLAVERDE 20",
@@ -459,13 +466,6 @@
     "district": "Moncloa-Aravaca",
     "latitude": 40.451737,
     "longitude": -3.781915
-  },
-  "398d56b6": {
-    "location_name": "Centro Intergeneracional Río Esmeralda",
-    "address": "CALLE RIO ESMERALDA 15",
-    "district": "PuenteDeVallecas",
-    "latitude": 40.382903228859135,
-    "longitude": -3.6520658390631127
   },
   "314e4d23": {
     "location_name": "Parque de el Pueblo de El Pardo",
@@ -568,13 +568,6 @@
     "latitude": 40.433719454283505,
     "longitude": -3.7104468992841753
   },
-  "212de84d": {
-    "location_name": "Espacio de Igualdad Elena Arnedo Soriano. Retiro",
-    "address": "CALLE ARREGUI Y ARUEJ 31",
-    "district": "Retiro",
-    "latitude": 40.40254931370529,
-    "longitude": -3.668092320219012
-  },
   "13acb8c9": {
     "location_name": "Centro Cultural Casa de Vacas",
     "address": "de Colombia, 1",
@@ -616,6 +609,13 @@
     "latitude": 40.393429973468265,
     "longitude": -3.6183833916362733
   },
+  "ffb69028": {
+    "location_name": "Auditorio al Aire Libre Recinto Ferial Vicálvaro",
+    "address": "PASEO POLIDEPORTIVO 142",
+    "district": "Vicalvaro",
+    "latitude": 40.40612285515847,
+    "longitude": -3.5967208460494637
+  },
   "c6c5db82": {
     "location_name": "Centro Cultural Sanchinarro - Hispanidad (Hortaleza)",
     "address": "CALLE PRINCESA DE EBOLI 29",
@@ -623,12 +623,33 @@
     "latitude": 40.49042200599307,
     "longitude": -3.6553467891079854
   },
+  "6159d396": {
+    "location_name": "Auditorio al aire libre. Parque Amós Acero",
+    "address": "CALLE SIERRA DE ALQUIFE 20",
+    "district": "PuenteDeVallecas",
+    "latitude": 40.38840925271774,
+    "longitude": -3.666129894495819
+  },
   "28cc7d13": {
     "location_name": "Biblioteca Pública Municipal Francisco Umbral (Villaverde)",
     "address": "CALLE CALCIO 1",
     "district": "Villaverde",
     "latitude": 40.35118703272002,
     "longitude": -3.679345889376551
+  },
+  "97e16db3": {
+    "location_name": "Parque de don David Pérez y don Miguel Ángel González",
+    "address": "CALLE DIONISIO INCA YUPANQUI 8",
+    "district": "Hortaleza",
+    "latitude": 40.461621132349094,
+    "longitude": -3.6281020785174873
+  },
+  "398d56b6": {
+    "location_name": "Centro Intergeneracional Río Esmeralda",
+    "address": "CALLE RIO ESMERALDA 15",
+    "district": "PuenteDeVallecas",
+    "latitude": 40.382903228859135,
+    "longitude": -3.6520658390631127
   },
   "5989b7b0": {
     "location_name": "Museo ABC",
@@ -642,6 +663,13 @@
     "district": "Usera",
     "latitude": 40.3711623444796,
     "longitude": -3.692742821990015
+  },
+  "c20aaa12": {
+    "location_name": "Auditorio al aire libre. Parque de Canillejas",
+    "address": "CALLE NECTAR 32",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.442611374955234,
+    "longitude": -3.611167964373918
   },
   "2280f84e": {
     "location_name": "Centro Cultural Puerta de Toledo (Centro)",
@@ -732,13 +760,6 @@
     "address": "CALLE MAR DE LAS ANTILLAS 8",
     "district": "Hortaleza"
   },
-  "c20aaa12": {
-    "location_name": "Auditorio al aire libre. Parque de Canillejas",
-    "address": "CALLE NECTAR 32",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.442611374955234,
-    "longitude": -3.611167964373918
-  },
   "0402c527": {
     "location_name": "Aula ambiental La Cabaña del Retiro",
     "address": "PASEO FERNAN NUÑEZ 10",
@@ -801,13 +822,6 @@
     "district": "CiudadLineal",
     "latitude": 40.431386380971894,
     "longitude": -3.6590535229397676
-  },
-  "97e16db3": {
-    "location_name": "Parque de don David Pérez y don Miguel Ángel González",
-    "address": "CALLE DIONISIO INCA YUPANQUI 8",
-    "district": "Hortaleza",
-    "latitude": 40.461621132349094,
-    "longitude": -3.6281020785174873
   },
   "4ec30898": {
     "location_name": "Centro Cultural Las Californias (Retiro)",
@@ -1556,12 +1570,6 @@
     "address": "de Ramírez de Prado, 3",
     "latitude": 40.3997348,
     "longitude": -3.6906652
-  },
-  "fd38aa9f": {
-    "location_name": "Glorieta de San Víctor",
-    "address": "Glorieta de San Víctor, 1, Arganzuela",
-    "latitude": 40.4050094,
-    "longitude": -3.7105118
   },
   "30576c7b": {
     "location_name": "Parque de Atracciones",
