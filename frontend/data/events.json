@@ -2636,14 +2636,15 @@
     "lid": "77b83e41"
   },
   "efbfc4b6a5302917": {
-    "title": "Teatro: Farsa y licencia de la reina castiza",
+    "title": "Farsa y licencia de la Reina Castiza",
     "start_time": "19:30:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7f119517495c7910VgnVCM1000001d4a900aRCRD",
     "source": "esmadrid,madrid_agenda",
     "categories": [
       "teatro"
     ],
-    "description": "Representación teatral de esta clásica pieza que satiriza la realidad social y política. Una obra imprescindible de la dramaturgia española.",
+    "description": "Adaptación de la obra de Valle-Inclán que ofrece una sátira despiadada sobre la corrupción y la decadencia de la España isabelina. Un retrato teatral donde la política, la monarquía y el pueblo se funden en un carnaval grotesco lleno de ironía.",
+    "price": "Desde 18 €",
     "formato": "exposicion",
     "lid": "b1f7c00c"
   },
@@ -2778,17 +2779,15 @@
   },
   "afc36fd2adeeccd4": {
     "title": "Gloria Fuertes (hoy)",
-    "description": "Espectáculo musical o recital basado en la obra de la poeta Gloria Fuertes.",
+    "description": "Exposición que recorre la vida y la obra de la poetisa Gloria Fuertes a través de sus poemas y fotografías personales. La muestra explora sus reflexiones sobre temas universales y su mirada hacia la realidad social del siglo XX.",
     "start_time": "16:00:00",
     "url": "https://casalector.fundaciongsr.org/gloria-fuertes-hoy/",
-    "price": "0",
+    "price": "Gratis",
     "image": "images/events/81915be752c9.jpg",
     "source_url": "https://www.esmadrid.com/agenda/gloria-fuertes-hoy-casa-lector-matadero",
     "source": "esmadrid,madrid_agenda",
     "categories": [
-      "conciertos",
-      "literatura",
-      "gratis"
+      "exposiciones"
     ],
     "formato": "exposicion",
     "lid": "38e0e792"
@@ -3026,10 +3025,10 @@
   },
   "e5cb5fca9436dc97": {
     "title": "Home Sweet Home",
-    "description": "Exposición artística de Bryan Bucheli abierta al público general.",
+    "description": "El artista Bryan Bucheli presenta una serie pictórica que aborda la representación de los espacios domésticos y la tensión entre el lujo y la realidad cotidiana. La muestra explora la relación entre espacio, identidad y construcción social a través de 22 obras.",
     "start_time": "10:00:00",
     "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/El-Ayuntamiento/Retiro/Programacion-cultural-de-Retiro/Agenda-de-actividades-en-Retiro/Home-Sweet-Home/?vgnextfmt=default&vgnextoid=76d13477341aa910VgnVCM100000891ecb1aRCRD&vgnextchannel=3f4cedf006a51910",
-    "price": "Entrada gratuita",
+    "price": "Gratis",
     "image": "images/events/f71d51028d7b.jpg",
     "_image_candidates": [
       "https://estaticos.esmadrid.com/cdn/farfuture/x541ChNGEc5OSdO4O9LalyXwlnoaoHU7FP2F8Fi-Q9Y/mtime:1782729384/sites/default/files/eventos/eventos/home_sweet_home1.jpeg",
@@ -3039,8 +3038,7 @@
     "source_url": "https://www.esmadrid.com/agenda/home-sweet-home-centro-cultural-casa-vacas",
     "source": "esmadrid,madrid_agenda",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "formato": "exposicion",
     "lid": "13acb8c9"
@@ -3246,20 +3244,34 @@
   },
   "08eb3d2ff285d925": {
     "title": "Isabel Gómez Liebre. Albino, de todos los terrores, la terrible blancura",
-    "description": "Exposición individual de la artista Isabel Gómez Liebre. Una propuesta centrada en el concepto de la blancura y la identidad.",
+    "description": "Una instalación site specific que reflexiona sobre el albinismo como territorio de tensión simbólica, política y corporal. La obra utiliza la imagen de un elefante albino y superficies reflectantes para integrar al espectador en una experiencia sobre la visibilidad y la anomalía.",
     "start_time": "10:00:00",
     "url": "https://www.centrocentro.org/exposicion/isabel-gomez-liebre-albino-de-todos-los-terrores-la-terrible-blancura",
-    "price": "Entrada gratuita",
+    "price": "Gratis",
     "image": "images/events/4b27f820dc69.jpg",
     "source_url": "https://www.esmadrid.com/agenda/isabel-gomez-liebre-albino-todos-terrores-terrible-blancura-centrocentro",
     "source": "esmadrid,madrid_agenda",
     "categories": [
-      "destacado",
-      "exposiciones",
-      "gratis"
+      "exposiciones"
     ],
     "formato": "exposicion",
     "lid": "bb29009c"
+  },
+  "2a22aad896f91aba": {
+    "title": "Itinerario botánico: La Dehesa",
+    "start_time": "10:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=f556097bcb30f910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "visitas guiadas",
+      "gratis",
+      "aire libre",
+      "naturaleza"
+    ],
+    "description": "Recorrido guiado para descubrir las plantas más singulares del sur de La Dehesa.",
+    "formato": "puntual",
+    "lid": "1a7c6818"
   },
   "2c5682de5dfe0f3e": {
     "title": "Itinerario guiado: Jardín El Capricho",
@@ -3520,6 +3532,20 @@
     "formato": "puntual",
     "lid": "297b23a2"
   },
+  "4ac3cd9169381179": {
+    "title": "Cine: La buena suerte",
+    "description": "Proyección de la película de Gracia Querejeta protagonizada por Hugo Silva. Una historia de reinvención personal y búsqueda de nuevas oportunidades.",
+    "start_time": "22:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=6982cc57db79e910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "gratis"
+    ],
+    "price": "Gratis",
+    "formato": "puntual",
+    "lid": "f2b4174f"
+  },
   "08d743467acacf05": {
     "title": "La cara oculta de La Dehesa",
     "start_time": "10:00:00",
@@ -3571,7 +3597,8 @@
     "categories": [
       "teatro"
     ],
-    "description": "Adaptación teatral del clásico del cine español.",
+    "description": "Adaptación teatral de la clásica comedia satírica de Luis García-Berlanga dirigida por Juan Echanove. La obra ofrece una reflexión mordaz sobre las estructuras de poder, las apariencias y la corrupción en la sociedad española.",
+    "price": "Desde 6 €",
     "formato": "exposicion",
     "lid": "b1f7c00c"
   },
@@ -4424,17 +4451,15 @@
   },
   "4b0c988bcf3c9df3": {
     "title": "MÍRAME. Retratos y retratistas en la Colección ABC",
-    "description": "Exposición que realiza un recorrido por el mundo del retrato de prensa a través de más de doscientas ilustraciones. La muestra explora la evolución de este género artístico en la histórica Colección ABC.",
+    "description": "La exposición recorre la historia del retrato de prensa a través de más de 200 ilustraciones publicadas en el diario ABC y la revista Blanco y Negro. La muestra analiza la evolución del género artístico desde representaciones costumbristas y sociales hasta enfoques más subjetivos y modernos.",
     "start_time": "11:00:00",
     "url": "https://museo.abc.es/exposiciones/2026/02/mirame-retratos-y-retratistas-en-la-coleccion-abc/1218054",
-    "price": "0",
+    "price": "--",
     "image": "images/events/fd1e7959b69e.jpg",
     "source_url": "https://www.esmadrid.com/agenda/mirame-retratos-retratistas-coleccion-abc-museo-abc",
     "source": "esmadrid,madrid_agenda",
     "categories": [
-      "exposiciones",
-      "fotografía",
-      "gratis"
+      "exposiciones"
     ],
     "formato": "exposicion",
     "lid": "5989b7b0"
@@ -4677,17 +4702,15 @@
     "lid": "c2271205"
   },
   "9875dce1ab13cde5": {
-    "title": "Nada Espontáneo. Una mirada a los 90",
+    "title": "Nada espontáneo. Una mirada a los 90",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=0e24a96682bae910VgnVCM200000f921e388RCRD",
     "source": "esmadrid,madrid_agenda",
     "categories": [
       "exposiciones",
-      "conferencias",
-      "gratis"
+      "fotografía"
     ],
-    "description": "Ciclo temático que explora la cultura, el arte y la sociedad de la década de los 90. Un programa que agrupa diversas actividades sobre la estética y los cambios del fin de siglo.",
-    "price": "0",
-    "is_multi_event": true,
+    "description": "Exposición fotográfica de Jesús Ugalde que reúne retratos de figuras icónicas de la música española y del cine durante la década de los 90. La muestra incluye instantáneas inéditas y momentos únicos capturados en la trayectoria del autor.",
+    "price": "Gratis",
     "formato": "exposicion",
     "lid": "620aba3b"
   },
@@ -5099,6 +5122,20 @@
     "description": "Sesiones dedicadas al desarrollo emocional y herramientas de psicología práctica. Un espacio de aprendizaje enfocado en el bienestar individual.",
     "formato": "exposicion",
     "lid": "a471d651"
+  },
+  "9420bd2af6d89ad6": {
+    "title": "Cine: Psicosis",
+    "description": "Proyección del clásico del suspense de Alfred Hitchcock sobre Marion Crane. Una obra maestra del cine de terror y thriller psicológico.",
+    "start_time": "22:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=67372656cf22f910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "gratis"
+    ],
+    "price": "gratis",
+    "formato": "puntual",
+    "lid": "354d0096"
   },
   "ac17df6b0e4f5768": {
     "title": "Punto de intercambio de libros gratuito",
@@ -5622,6 +5659,19 @@
     "formato": "exposicion",
     "lid": "5e4b8cb1"
   },
+  "80b6259b14e5fe72": {
+    "title": "Obra: Si tuviera un huevo",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=dede172e150be910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "infantil"
+    ],
+    "description": "Representación teatral o espectáculo infantil.",
+    "formato": "puntual",
+    "lid": "07486b5c"
+  },
   "3c810d9ad16e9f21": {
     "title": "Cine: Sin instrucciones",
     "description": "Proyección cinematográfica recomendada para mayores de 7 años en la calle Primitiva Gañán.",
@@ -6021,6 +6071,20 @@
     "price": "0",
     "formato": "exposicion",
     "lid": "849518af"
+  },
+  "ec1216e678e0ac69": {
+    "title": "Taller de Cestería con acículas de pino",
+    "start_time": "10:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5cb70908a6ade910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "description": "Aprende la técnica artesanal de cestería utilizando elementos naturales como las acículas de pino. Un taller práctico sobre artesanía tradicional.",
+    "price": "gratis",
+    "formato": "puntual",
+    "lid": "02b25093"
   },
   "334c5f3328ad8cb0": {
     "title": "Taller: Detective botánico",
@@ -8221,10 +8285,10 @@
   },
   "354eb4e41986949e": {
     "title": "Exposición Pelo de tormenta - Homenaje a Francisco Nieva",
-    "description": "Exposición dedicada a conmemorar y explorar la figura y el legado artístico del dramaturgo Francisco Nieva.",
+    "description": "La muestra conmemora el décimo aniversario del fallecimiento de Francisco Nieva y el estreno de una de sus obras más emblemáticas. La exposición reúne vestuario original, material fotográfico y documentación sobre el proceso creativo de la pieza.",
     "start_time": "10:00:00",
     "url": "https://www.teatrofernangomez.es/actividades/exposicion-pelo-de-tormenta-homenaje-francisco-nieva",
-    "price": "Entrada libre hasta completar aforo",
+    "price": "Gratis",
     "image": "images/events/32f20e6b66fb.jpg",
     "_image_candidates": [
       "https://estaticos.esmadrid.com/cdn/farfuture/GlX2dtSz-bEdp3kuNq2tZMDfNs33z44cGcZub9SWlQI/mtime:1774349296/sites/default/files/eventos/eventos/pelo_de_tormenta.png",
@@ -8233,8 +8297,7 @@
     "source_url": "https://www.esmadrid.com/agenda/exposicion-pelo-tormenta-homenaje-francisco-nieva-fernan-gomez-centro-cultural-villa",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "teatro"
+      "exposiciones"
     ],
     "formato": "exposicion",
     "lid": "c9c45e0d"
@@ -8643,28 +8706,6 @@
     "location_name": "Varios espacios",
     "is_multi_event": true,
     "formato": "exposicion"
-  },
-  "4d2c0264c98bc651": {
-    "title": "VANG VIII. Músicas en vanguardia",
-    "description": "Ciclo de conciertos dedicado a los nuevos discursos de lo sonoro que explora formas vanguardistas de crear, entender y transmitir la música. El programa propone un acercamiento a piezas experimentales que aprovechan el poder sonoro para transformar la percepción.",
-    "start_time": "19:30:00",
-    "url": "https://www.centrocentro.org/musica/vang-VIII-musicas-en-vanguardia",
-    "price": "10 €",
-    "image": "images/events/ebdeb112b732.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/TgfucN4JdUA8AqzNxNeiFz9mW3YwDqp-4-2AJMTd0jM/mtime:1769081052/sites/default/files/eventos/eventos/vang._musicas_en_vanguardia.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/TkzM7-X61BcC7MTjJ9NHMdqtRcxiSzNgIzegdSul7xQ/mtime:1769081492/sites/default/files/eventos/eventos/jurg_frey_y_phill_niblock_-_cuartetos_de_cuerda.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/oe_vEJTl4MzV8GutBSG6rCxxvDSekQpS5COqPhxpyLE/mtime:1769081698/sites/default/files/eventos/eventos/_vacio_-_musica_de_ustvolskaya_y_feldman_en_dialogo_con_musica_barroca._marino_formenti.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/QNasVty0zoDAf74Bt5KTaaRdNYO-X0o6pQKayOceCYw/mtime:1769081810/sites/default/files/eventos/eventos/maryanne_amacher_-_plaything.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/vang-musicas-vanguardia-centrocentro",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "is_multi_event": true,
-    "formato": "festival",
-    "lid": "bb29009c"
   },
   "e6c07ad4198c1b50": {
     "title": "Bernarda y Poncia (Silencio, nadie diga nada)",
@@ -10237,27 +10278,6 @@
     "formato": "exposicion",
     "lid": "2fd09bb6"
   },
-  "3c62178b76f91f85": {
-    "title": "La folclórica del siglo XXI",
-    "description": "Este certamen artístico busca reinterpretar la tradición de la canción popular mediante una serie de verbenas contemporáneas. El evento tiene como objetivo encontrar a la figura que mejor encarne la esencia y el carácter de la folclórica en la actualidad.",
-    "url": "https://larevoltosa.es/folclorica-s-xxi",
-    "price": "Gratis",
-    "image": "images/events/f2d5ea53e163.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/ilu0L7bdoA_1R1Mk7_cfcFAYQehdTO1eFiWHm83qWlo/mtime:1779802811/sites/default/files/eventos/eventos/certamen-folclorica-sxxi-ljg-2.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/c8qRoAqAN3S7l09ZVBR-usobDkawtnL9PIpdKYajQZA/mtime:1779802659/sites/default/files/eventos/eventos/rosalinda_galan_0.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/01tIgTC0ass2_pe4rXfXz_u9_FW9MZSbsc-Zt2sAku8/mtime:1779802826/sites/default/files/eventos/eventos/la_folclorica_del_siglo_xxi.png"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/folclorica-siglo-xxi-plaza-cine-verano-bombilla",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos",
-      "fiestas"
-    ],
-    "is_multi_event": true,
-    "formato": "festival",
-    "lid": "2c0dd596"
-  },
   "1dfcb6c14edc0f28": {
     "title": "Mujeres de ingenio. Plumas de Oro en el Siglo de las Letras",
     "description": "La exposición rinde homenaje a las escritoras del Siglo de Oro mediante la exhibición de retratos, libros y manuscritos originales. El recorrido analiza el papel de la mujer creadora en diferentes ámbitos sociales, desde la corte hasta los conventos.",
@@ -10706,25 +10726,6 @@
     "formato": "exposicion",
     "lid": "6249eafd"
   },
-  "f0dcef7ef591ff74": {
-    "title": "Noches de verano CaixaForum Madrid",
-    "description": "Una amplia programación estival que incluye una variada oferta de conciertos, espectáculos de danza, artes escénicas, magia y talleres. Los ciclos combinan diferentes disciplinas como el rock, el jazz, la percusión y propuestas de movimiento para todos los públicos.",
-    "url": "https://caixaforum.org/es/madrid/noches-de-verano",
-    "price": "Consultar programación",
-    "image": "images/events/c7d3440fd942.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/noches-verano-caixaforum-madrid",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos",
-      "teatro",
-      "danza",
-      "talleres",
-      "magia"
-    ],
-    "is_multi_event": true,
-    "formato": "exposicion",
-    "lid": "3c29714c"
-  },
   "a079cf40fd07e016": {
     "title": "Los reconocimientos",
     "description": "La exposición propone una reflexión sobre las colecciones del Museo del Traje y los procesos internos de conservación a través de una selección de objetos cotidianos. El proyecto plantea un recorrido experimental que conecta la historia de la institución con la memoria colectiva de los últimos dos siglos.",
@@ -11038,40 +11039,6 @@
     "is_multi_event": true,
     "formato": "festival",
     "lid": "e80eae3e"
-  },
-  "a0bf0476816ec950": {
-    "title": "WACT/Europe Silver Meeting Madrid 2026",
-    "description": "Esta prueba internacional de atletismo reúne a un destacado elenco de figuras nacionales e internacionales en la pista del Estadio Vallehermoso. El evento forma parte del circuito Continental Tour Silver de World Athletics.",
-    "start_time": "18:30:00",
-    "url": "https://www.atletismomadrid.com/",
-    "price": "Desde 10 €",
-    "image": "images/events/f31749d0f3f4.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/tpuf4tl451BakUCGEEELFmIWPQYZEzOHIZek4rbCUzg/mtime:1779693011/sites/default/files/eventos/eventos/_wact_europe_silver_meeting_madrid_2026.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/6W1t16OikTk5-lsNMtcy2C2jbjQNzNHoxwWcEutoBb8/mtime:1566205247/sites/default/files/recursosturisticos/deporte/estadio_vallehermoso_panoramica_rfef.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/meeting-atletismo-madrid",
-    "source": "esmadrid",
-    "categories": [
-      "deportes"
-    ],
-    "formato": "puntual",
-    "lid": "e097f20e"
-  },
-  "245b161f377a3fc4": {
-    "title": "Belle & Sebastian",
-    "description": "La banda escocesa presenta un concierto basado en su influyente álbum 'If You're Feeling Sinister' junto a una selección de sus éxitos más reconocidos. El espectáculo forma parte de su trayectoria que fusiona influencias del indie británico con elementos de pop y rock.",
-    "start_time": "22:00:00",
-    "url": "https://nochesdelbotanico.com/conciertos/belle-sebastian",
-    "price": "Entradas agotadas",
-    "image": "images/events/c0d57bc1bf85.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/belle-sebastian-jardin-botanico-universidad-complutense",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "formato": "puntual",
-    "lid": "82e42bdc"
   },
   "3fcbcc23def91330": {
     "title": "Visitas teatralizadas nocturnas al Cementerio de la Almudena",
@@ -12286,40 +12253,6 @@
     "formato": "exposicion",
     "lid": "ce6a0c87"
   },
-  "a23c3c53be352ff1": {
-    "title": "Feid vs. Ferxxo",
-    "description": "El cantante colombiano de reguetón presenta su nuevo proyecto musical explorando la dualidad de sus dos identidades artísticas. El espectáculo combina canciones sentimentales con ritmos enérgicos en una propuesta diseñada para revolucionar la música urbana.",
-    "start_time": "19:00:00",
-    "url": "https://www.movistararena.es/programacion/evento/feid-vs-ferxxo-falxo-tour/16-7-2026/20:30",
-    "price": "Entradas agotadas",
-    "image": "images/events/6c6d9eca6e39.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/feid-vs-ferxxo-movistar-arena",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "formato": "puntual",
-    "lid": "1f1e0e14"
-  },
-  "b03318f08d6baa13": {
-    "title": "Arganzuela a la luz de las velas",
-    "description": "Celebración cultural en el distrito de Arganzuela iluminada por velas. Una experiencia atmosférica abierta a todos los vecinos.",
-    "start_time": "22:00:00",
-    "address": "Glorieta de San Víctor, 1, Arganzuela",
-    "latitude": 40.4050094,
-    "longitude": -3.7105118,
-    "url": "https://diario.madrid.es/blog/notas-de-prensa/arganzuela-volvera-a-iluminarse-con-la-magia-de-las-velas-acompanada-de-musica-pop-internacional/",
-    "price": "Gratis",
-    "image": "images/events/0f9b08001578.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/arganzuela-luz-velas-glorieta-san-victor",
-    "source": "esmadrid",
-    "categories": [
-      "fiestas",
-      "gratis",
-      "aire libre"
-    ],
-    "formato": "puntual"
-  },
   "1f89a1251d5e44b3": {
     "title": "Junior H",
     "description": "El artista referente del regional mexicano urbano llega a Madrid presentando su tour internacional Latinoamérica en Lágrimas. Su propuesta musical destaca por fusionar los corridos tumbados con influencias de la música alternativa.",
@@ -12449,26 +12382,6 @@
     ],
     "formato": "exposicion",
     "lid": "df925a11"
-  },
-  "af9cd87c5aa0c172": {
-    "title": "El hambre imposible",
-    "description": "Una performance que explora el concepto del estigma y cuestiona la idea de normalidad mediante la autoficción y la creación sonora en directo. La pieza reivindica las experiencias situadas en los márgenes sociales a través de un lenguaje multidisciplinar.",
-    "start_time": "21:00:00",
-    "url": "https://teatrodelbarrio.com/el-hambre-imposible/",
-    "price": "16 €",
-    "image": "images/events/ad87e4b3047e.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/pFkfGulB8GK3jDSFGyRVQFxNaxvumkCdyZxu5TLLLZ8/mtime:1783754960/sites/default/files/eventos/eventos/el-hambre-imposible.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/9DfS63GQi7ZVuARlHZRDvTlwUuQgk1uV5-m7uQKD-TA/mtime:1783754977/sites/default/files/eventos/eventos/el-hambre-imposible-2.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/hambre-imposible-teatro-barrio",
-    "source": "esmadrid",
-    "categories": [
-      "teatro",
-      "danza"
-    ],
-    "formato": "puntual",
-    "lid": "f9c4232a"
   },
   "06f5faaae836b1f0": {
     "title": "Tartufo el cofrade",
