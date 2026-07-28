@@ -111,6 +111,13 @@
     "latitude": 40.41902261618159,
     "longitude": -3.692188193693138
   },
+  "07486b5c": {
+    "location_name": "Teatro de Títeres de El Retiro",
+    "address": "AVENIDA MÉXICO 4",
+    "district": "Retiro",
+    "latitude": 40.41878362561595,
+    "longitude": -3.6866519471003647
+  },
   "f2b4174f": {
     "location_name": "Instalación Deportiva Municipal Básica Parque El Calero",
     "address": "CALLE VIRGEN DE NURIA 4",
@@ -187,13 +194,6 @@
     "district": "Fuencarral-ElPardo",
     "latitude": 40.49504564211655,
     "longitude": -3.6880070256093758
-  },
-  "07486b5c": {
-    "location_name": "Teatro de Títeres de El Retiro",
-    "address": "AVENIDA MÉXICO 4",
-    "district": "Retiro",
-    "latitude": 40.41878362561595,
-    "longitude": -3.6866519471003647
   },
   "6ba590e1": {
     "location_name": "Espacio de Igualdad Gloria Fuertes. Vicálvaro",
@@ -1080,12 +1080,6 @@
     "latitude": 40.4342799,
     "longitude": -3.6862284
   },
-  "d5e60251": {
-    "location_name": "Teatro Alcázar",
-    "address": "de Alcalá, 20",
-    "latitude": 40.4177853,
-    "longitude": -3.6990893
-  },
   "3a82f95a": {
     "location_name": "Jardín Banca March",
     "address": "de Castelló, 75",
@@ -1308,6 +1302,12 @@
     "latitude": 40.4415537,
     "longitude": -3.7065042
   },
+  "d5e60251": {
+    "location_name": "Teatro Alcázar",
+    "address": "de Alcalá, 20",
+    "latitude": 40.4176725,
+    "longitude": -3.6988372
+  },
   "ce6a0c87": {
     "location_name": "Real Jardín Botánico",
     "address": "de Murillo, 2",
@@ -1355,12 +1355,6 @@
     "address": "de Daroca, 90",
     "latitude": 40.4247569,
     "longitude": -3.6465092
-  },
-  "50107e1c": {
-    "location_name": "Teatro Real",
-    "address": "de Isabel II, s/n",
-    "latitude": 40.418299121798,
-    "longitude": -3.710589408875
   },
   "3b56e983": {
     "location_name": "Plaza de toros Monumental de Las Ventas",
@@ -1421,6 +1415,12 @@
     "address": "de Brasil, 5",
     "latitude": 40.4543434,
     "longitude": -3.6940523
+  },
+  "50107e1c": {
+    "location_name": "Teatro Real",
+    "address": "de Isabel II, s/n",
+    "latitude": 40.4182929,
+    "longitude": -3.7093626
   },
   "9a5be362": {
     "location_name": "Palacio Vistalegre Arena",
@@ -1530,5 +1530,11 @@
     "address": "Teresa de Calcuta, s/n",
     "latitude": 40.3239098,
     "longitude": -3.713966
+  },
+  "9d15f421": {
+    "location_name": "Estadio Bernabéu",
+    "address": "de Concha Espina, 1",
+    "latitude": 40.4524318,
+    "longitude": -3.6868084
   }
 }

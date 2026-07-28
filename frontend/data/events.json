@@ -370,6 +370,24 @@
     "formato": "exposicion",
     "lid": "e232e586"
   },
+  "b7e507f7b30caff5": {
+    "title": "Cine infantil: Bambi",
+    "start_time": "21:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=cb8e172e150be910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "cine",
+      "infantil"
+    ],
+    "dates": [
+      "2026-08-27",
+      "2026-08-28"
+    ],
+    "description": "Proyección de la clásica película de animación infantil Bambi. Ideal para disfrutar en familia.",
+    "formato": "puntual",
+    "lid": "07486b5c"
+  },
   "1aed3cbe87b86440": {
     "title": "Taller de búsqueda de empleo para mujeres",
     "start_time": "10:30:00",
@@ -7429,29 +7447,6 @@
     "formato": "exposicion",
     "lid": "4869348f"
   },
-  "f5332175337b2a0a": {
-    "title": "Ilustres ignorantes",
-    "description": "Javier Coronas, Javier Cansado y Pepe Colubi protagonizan una delirante discusión humorística cargada de improvisación. El espectáculo combina respuestas absurdas con rigor científico sobre temas que varían entre la metafísica y la cultura suburbana.",
-    "start_time": "22:30:00",
-    "url": "https://gruposmedia.com/cartelera/ilustres-ignorantes/",
-    "price": "Desde 22 €",
-    "image": "images/events/929fbf0add80.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/egpu4EYOtPyyaLwcdktminpqWVIhbQ8i_zsuZmxrdEE/mtime:1665663475/sites/default/files/eventos/eventos/ilustres_ignorantes.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/WO3KvLd-WhM7-bk64Gbt5qMk4fEkzk4SB07Pg6dyx4g/mtime:1574064721/sites/default/files/eventos/eventos/ilustres-ignorantes12.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/TAQxZ0D3tpQw9AwSrrkRcJp7r6_o4wd9LBQhqKbDkbE/mtime:1487808341/sites/default/files/agenda/eventos/ilustres11_1420734547.193.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/9bdLJ8qmCuBT2F2ak8xdQfNniGAVzxoa6HrCCnVCJ1o/mtime:1487808256/sites/default/files/agenda/eventos/ilustres1_1420734612.244.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/ilustres-ignorantes-teatro-cofidis-alcazar",
-    "source": "esmadrid",
-    "categories": [
-      "teatro",
-      "comedia"
-    ],
-    "is_multi_event": true,
-    "formato": "festival",
-    "lid": "d5e60251"
-  },
   "22e3c27ff1a64547": {
     "title": "Mercado de Productores Valdebebas",
     "description": "Productores y artesanos de cercanía ofrecen alimentos cultivados, criados o procesados de kilómetro cero. El espacio incluye puestos de productos frescos y una carpa de actividades con música, talleres y degustaciones.",
@@ -9693,22 +9688,6 @@
     "formato": "exposicion",
     "lid": "ecdf816e"
   },
-  "d53aad3b4998f7ba": {
-    "title": "Il trovatore",
-    "description": "El Teatro Real presenta esta icónica ópera de Giuseppe Verdi que narra la trágica historia de amor y venganza entre el Conde de Luna y el trovador Manrico. La obra explora conflictos familiares y secretos del pasado bajo una puesta en escena dirigida por Francisco Negrín.",
-    "start_time": "19:30:00",
-    "url": "https://www.teatroreal.es/es/espectaculo/il-trovatore",
-    "price": "Desde 18 €",
-    "image": "images/events/b7734ef24d34.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/il-trovatore-teatro-real",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos",
-      "ópera"
-    ],
-    "formato": "exposicion",
-    "lid": "50107e1c"
-  },
   "e28f4cdb50e0ec38": {
     "title": "Cénate Las Ventas 2026",
     "description": "Iniciativa lúdica y gastronómica que acompaña al Certamen de Novilladas Nocturnas, destacando los productos con marca de calidad de la Comunidad de Madrid. El evento cuenta con un mercado de productos madrileños instalado en las galerías y terrazas de la plaza.",
@@ -9729,21 +9708,6 @@
     "is_multi_event": true,
     "formato": "festival",
     "lid": "3b56e983"
-  },
-  "71dbdc0b5c7a5f69": {
-    "title": "ZZ Top",
-    "description": "El legendario trío estadounidense de blues rock y hard rock repasa sus grandes éxitos en una actuación icónica. La banda despliega su sonido inconfundible y su trayectoria de más de cinco décadas sobre el escenario.",
-    "start_time": "21:30:00",
-    "url": "https://nochesdelbotanico.com/conciertos/zz-top",
-    "price": "Entradas agotadas",
-    "image": "images/events/9458b829708f.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/zz-top-jardin-botanico-universidad-complutense",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "formato": "puntual",
-    "lid": "82e42bdc"
   },
   "42e72027221917b8": {
     "title": "Antón Casamor: luz y escultura",
@@ -11164,5 +11128,66 @@
     ],
     "formato": "puntual",
     "lid": "d0b9c3cf"
+  },
+  "88c9cf74f7590028": {
+    "title": "El mundo de Van Gogh",
+    "description": "Una experiencia inmersiva que recorre la vida y obra de Vincent van Gogh mediante proyecciones en movimiento y música original. El espectador se sumerge en un relato en primera persona que explora el universo interno y la trayectoria del pintor.",
+    "url": "https://www.nomadmuseo.es/van-gogh/",
+    "price": "Desde 14,10 €",
+    "image": "images/events/3996daedc2b0.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/o9Y57Stv1LH7dlG5QI8iLOJkCsDmweZhhsvThmwFC0s/mtime:1785219782/sites/default/files/eventos/eventos/imgi_2_el_mundo_de_vangogh_1240x480_0.jpeg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/zdXrAMmlOihRZZrkAsxqhk9hFC1OS0HtOpK4ezN0pLk/mtime:1706188689/sites/default/files/eventos/eventos/el_mundo_de_van_gogh1.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/8YibqaHcbUUbOVIFguU7hH9A3ZmMg6J68G5Igu6MRt8/mtime:1706188704/sites/default/files/eventos/eventos/el_mundo_de_van_gogh2.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/W-i9-2e32kvZOcpltIlb2hGJWyCruDtpYW-uEvgk3Gc/mtime:1706188716/sites/default/files/eventos/eventos/el_mundo_de_van_gogh3.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/ZDlzGMB6zr1vh9O2Snw6tMIVIampMMA7ffjyk59FdJk/mtime:1706188729/sites/default/files/eventos/eventos/el_mundo_de_van_gogh4.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/8aCfYu8vN2yWnA240HI0gA59As5VOQa4bmr63cfC4iU/mtime:1706188743/sites/default/files/eventos/eventos/el_mundo_de_van_gogh5.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/zNtBmcNVgZson_PjSesADXvlaFKLvD7owcorFXebmVk/mtime:1706188759/sites/default/files/eventos/eventos/el_mundo_de_van_gogh6.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/jUg_C-psWitJnIxvea1ZlXzwWkQPEBwba0yh6my_cjA/mtime:1706188771/sites/default/files/eventos/eventos/el_mundo_de_van_gogh7.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/mundo-van-gogh-nomad-museo-inmersivo",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones"
+    ],
+    "formato": "exposicion",
+    "lid": "e9c8b9e8"
+  },
+  "937a3844d3be0332": {
+    "title": "Camino a la meca",
+    "description": "Claudio Tolcachir dirige esta adaptación de la obra de Athol Fugard que explora la determinación personal y la búsqueda de la verdad a través del arte. La pieza cuenta con un reparto encabezado por Lola Herrera en una historia ambientada en la Sudáfrica del apartheid.",
+    "start_time": "20:00:00",
+    "url": "https://www.teatrobellasartes.es/obra-de-teatro/camino-a-la-meca/",
+    "price": "Desde 14,50 €",
+    "image": "images/events/7ebf23baf62c.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/PDAfx1m-bOITXOuwSfFHm3oRtqaz3sFhDZeRBgVF6P8/mtime:1744011810/sites/default/files/eventos/eventos/camino-a-la-meca-6.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/_NQliKFlAbrmSc2zYGAXXlLnKi0VdLwcycNVU1pqt90/mtime:1744011715/sites/default/files/eventos/eventos/camino_a_la_meca.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/pDZZSK5y5K_ddOumWrsAXO-GFXW1z8LIpvOK1HItJb0/mtime:1744011793/sites/default/files/eventos/eventos/camino-a-la-meca-4.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/v1muqQoxyuShm4vpEXZK3HLZwH2gCCJGdJu52Tg4Xi4/mtime:1734786540/sites/default/files/eventos/eventos/camino-a-la-meca.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/camino-meca-teatro-bellas-artes",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "accesible"
+    ],
+    "formato": "exposicion",
+    "lid": "5f3f83ad"
+  },
+  "53d58e9fe0b023d7": {
+    "title": "Real Madrid - Real Sociedad (LALIGA EA SPORTS)",
+    "description": "El conjunto blanco recibe al equipo donostiarra para disputar el primer partido en casa de la nueva temporada liguera. Un encuentro de fútbol competitivo en el estadio madridista.",
+    "start_time": "21:00:00",
+    "url": "https://www.realmadrid.com/es-ES",
+    "price": "Consultar página oficial",
+    "image": "images/events/9739f198df5a.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/real-madrid-real-sociedad-laliga-ea-sports-estadio-bernabeu",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "9d15f421"
   }
 }
