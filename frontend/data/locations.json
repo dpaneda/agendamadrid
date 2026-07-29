@@ -34,26 +34,19 @@
     "latitude": 40.473659104975354,
     "longitude": -3.592395079190456
   },
-  "e232e586": {
-    "location_name": "Espacio de Igualdad María Zambrano. Chamberí",
-    "address": "CALLE ANDRES MELLADO 44",
-    "district": "Chamberi",
-    "latitude": 40.433958260960964,
-    "longitude": -3.7143358486689415
-  },
-  "1b4b08af": {
-    "location_name": "Espacio de Igualdad Clara Campoamor. Villaverde",
-    "address": "CALLE MARIA MARTINEZ OVIOL 12",
-    "district": "Villaverde",
-    "latitude": 40.35087114162283,
-    "longitude": -3.691508909255186
-  },
   "7fb097ff": {
     "location_name": "Espacio de Igualdad María Telo. Moratalaz",
     "address": "CALLE CAMINO DE LOS VINATEROS 51",
     "district": "Moratalaz",
     "latitude": 40.41087442118042,
     "longitude": -3.6538891267077664
+  },
+  "bae04585": {
+    "location_name": "Parque Juan Carlos I",
+    "address": "GLORIETA S.A.R. DON JUAN DE BORBON Y BATTEMBERG, 5 5",
+    "district": "Barajas",
+    "latitude": 40.45999848510341,
+    "longitude": -3.6148888706303586
   },
   "1a630411": {
     "location_name": "Espacio de Igualdad Lourdes Hernández. Carabanchel",
@@ -111,6 +104,13 @@
     "latitude": 40.41902261618159,
     "longitude": -3.692188193693138
   },
+  "e232e586": {
+    "location_name": "Espacio de Igualdad María Zambrano. Chamberí",
+    "address": "CALLE ANDRES MELLADO 44",
+    "district": "Chamberi",
+    "latitude": 40.433958260960964,
+    "longitude": -3.7143358486689415
+  },
   "07486b5c": {
     "location_name": "Teatro de Títeres de El Retiro",
     "address": "AVENIDA MÉXICO 4",
@@ -125,12 +125,12 @@
     "latitude": 40.43580006579458,
     "longitude": -3.6532953172963816
   },
-  "9c620465": {
-    "location_name": "Espacio de Igualdad Juana Doña. Arganzuela",
-    "address": "PASEO CHOPERA 10",
-    "district": "Arganzuela",
-    "latitude": 40.39307289237465,
-    "longitude": -3.699005654074825
+  "22840c10": {
+    "location_name": "Espacio de Igualdad Lucrecia Pérez. Fuencarral-El Pardo",
+    "address": "CALLE MANRESA 1",
+    "district": "Fuencarral-ElPardo",
+    "latitude": 40.49120609425076,
+    "longitude": -3.6916379633219116
   },
   "d75ccb20": {
     "location_name": "Colegio Público Pío XII",
@@ -230,19 +230,19 @@
     "latitude": 40.37128211425518,
     "longitude": -3.6292460351699867
   },
+  "9c620465": {
+    "location_name": "Espacio de Igualdad Juana Doña. Arganzuela",
+    "address": "PASEO CHOPERA 10",
+    "district": "Arganzuela",
+    "latitude": 40.39307289237465,
+    "longitude": -3.699005654074825
+  },
   "297b23a2": {
     "location_name": "Espacio de Igualdad Lucía Sánchez Saornil. San Blas-Canillejas",
     "address": "PLAZA EURIPIDES 1",
     "district": "SanBlas-Canillejas",
     "latitude": 40.449003967549075,
     "longitude": -3.6069161377213526
-  },
-  "9b3eae76": {
-    "location_name": "Espacio de Igualdad Dulce Chacón. Villaverde",
-    "address": "CALLE TORDEGRILLOS 32",
-    "district": "Villaverde",
-    "latitude": 40.344107374451525,
-    "longitude": -3.7166081132911537
   },
   "b0b9722e": {
     "location_name": "Espacio de Igualdad Hermanas Mirabal. Tetuán",
@@ -258,12 +258,12 @@
     "latitude": 40.42299730556785,
     "longitude": -3.6625213630031794
   },
-  "040b80fc": {
-    "location_name": "Espacio de Igualdad Nieves Torres. Chamartín",
-    "address": "CALLE ENRIQUE JARDIEL PONCELA 8",
-    "district": "Chamartin",
-    "latitude": 40.46088981165102,
-    "longitude": -3.6700689174427326
+  "272832c8": {
+    "location_name": "Auditorio al aire libre. Parque Lineal del Manzanares",
+    "address": "CAMINO PERALES 48",
+    "district": "Usera",
+    "latitude": 40.3798409552755,
+    "longitude": -3.69049519373178
   },
   "1a009f5e": {
     "location_name": "Plaza de Daoíz y Velarde",
@@ -272,26 +272,12 @@
     "latitude": 40.402190438836826,
     "longitude": -3.6772826298329093
   },
-  "272832c8": {
-    "location_name": "Auditorio al aire libre. Parque Lineal del Manzanares",
-    "address": "CAMINO PERALES 48",
-    "district": "Usera",
-    "latitude": 40.3798409552755,
-    "longitude": -3.69049519373178
-  },
   "5920ebfe": {
     "location_name": "Auditorio Municipal Las Trece Rosas",
     "address": "CALLE MONTE DE MONTJUICH 7",
     "district": "VillaDeVallecas",
     "latitude": 40.38024953878224,
     "longitude": -3.6175290483217055
-  },
-  "be0f5543": {
-    "location_name": "Templete del Parque del Retiro",
-    "address": "PLAZA MAESTRO VILLA 1",
-    "district": "Retiro",
-    "latitude": 40.41941736281525,
-    "longitude": -3.6850082736557983
   },
   "5ce42a5d": {
     "location_name": "Auditorio al aire libre. Parque de la Vaguada",
@@ -307,12 +293,12 @@
     "latitude": 40.42577054821346,
     "longitude": -3.700845660719608
   },
-  "fef6f71f": {
-    "location_name": "Jardín del Bulevar de Peña Gorbea",
-    "address": "CALLE PEÑA GORBEA 17",
-    "district": "PuenteDeVallecas",
-    "latitude": 40.3957812018463,
-    "longitude": -3.6670346724676173
+  "9b3eae76": {
+    "location_name": "Espacio de Igualdad Dulce Chacón. Villaverde",
+    "address": "CALLE TORDEGRILLOS 32",
+    "district": "Villaverde",
+    "latitude": 40.344107374451525,
+    "longitude": -3.7166081132911537
   },
   "956860a1": {
     "location_name": "Templete de la Música. Parque del Oeste",
@@ -335,12 +321,12 @@
     "latitude": 40.392680212409495,
     "longitude": -3.7593572957930554
   },
-  "f2ea2a80": {
-    "location_name": "Gran Vía de Villaverde",
-    "address": "AVENIDA GRAN VIA DE VILLAVERDE 20",
-    "district": "Villaverde",
-    "latitude": 40.34116767593691,
-    "longitude": -3.703560372663084
+  "040b80fc": {
+    "location_name": "Espacio de Igualdad Nieves Torres. Chamartín",
+    "address": "CALLE ENRIQUE JARDIEL PONCELA 8",
+    "district": "Chamartin",
+    "latitude": 40.46088981165102,
+    "longitude": -3.6700689174427326
   },
   "1c1352bf": {
     "location_name": "Biblioteca Pública Municipal David Gistau (Salamanca)",
@@ -375,13 +361,6 @@
     "district": "Hortaleza",
     "latitude": 40.47098300036034,
     "longitude": -3.6393251567222045
-  },
-  "d5698254": {
-    "location_name": "Parque del Pueblo del Pardo",
-    "address": "AVENIDA GUARDIA 4",
-    "district": "Fuencarral-ElPardo",
-    "latitude": 40.5186002228516,
-    "longitude": -3.7753787533567573
   },
   "ebf96d4f": {
     "location_name": "Centro Cultural Quinta del Berro - Rafael Altamira (Salamanca)",
@@ -464,13 +443,6 @@
     "latitude": 40.38131130575197,
     "longitude": -3.608459149580722
   },
-  "b1f7c00c": {
-    "location_name": "Teatro Español",
-    "address": "CALLE PRINCIPE 25",
-    "district": "Centro",
-    "latitude": 40.414828532240946,
-    "longitude": -3.700164949543688
-  },
   "354d0096": {
     "location_name": "Centro Deportivo Municipal Peñagrande GoFit",
     "address": "AVENIDA MONFORTE DE LEMOS 184",
@@ -505,12 +477,6 @@
     "latitude": 40.44844757572015,
     "longitude": -3.598099871155595
   },
-  "13acb8c9": {
-    "location_name": "Centro Cultural Casa de Vacas",
-    "address": "de Colombia, 1",
-    "latitude": 40.4190657,
-    "longitude": -3.6840531
-  },
   "8d90c6ff": {
     "location_name": "Centro Cultural Clara del Rey - Museo ABC (Centro)",
     "address": "CALLE AMANIEL 29",
@@ -524,6 +490,13 @@
     "district": "Salamanca",
     "latitude": 40.42985671996897,
     "longitude": -3.668031432543624
+  },
+  "1b4b08af": {
+    "location_name": "Espacio de Igualdad Clara Campoamor. Villaverde",
+    "address": "CALLE MARIA MARTINEZ OVIOL 12",
+    "district": "Villaverde",
+    "latitude": 40.35087114162283,
+    "longitude": -3.691508909255186
   },
   "7e673f1f": {
     "location_name": "Parque Emperatriz María de Austria",
@@ -546,13 +519,6 @@
     "latitude": 40.393429973468265,
     "longitude": -3.6183833916362733
   },
-  "ffb69028": {
-    "location_name": "Auditorio al Aire Libre Recinto Ferial Vicálvaro",
-    "address": "PASEO POLIDEPORTIVO 142",
-    "district": "Vicalvaro",
-    "latitude": 40.40612285515847,
-    "longitude": -3.5967208460494637
-  },
   "c6c5db82": {
     "location_name": "Centro Cultural Sanchinarro - Hispanidad (Hortaleza)",
     "address": "CALLE PRINCESA DE EBOLI 29",
@@ -560,19 +526,19 @@
     "latitude": 40.49042200599307,
     "longitude": -3.6553467891079854
   },
+  "d5698254": {
+    "location_name": "Parque del Pueblo del Pardo",
+    "address": "AVENIDA GUARDIA 4",
+    "district": "Fuencarral-ElPardo",
+    "latitude": 40.5186002228516,
+    "longitude": -3.7753787533567573
+  },
   "65a790aa": {
     "location_name": "Espacio de Igualdad Berta Cáceres. Usera",
     "address": "CALLE GRAN AVENIDA 14",
     "district": "Usera",
     "latitude": 40.36902428128397,
     "longitude": -3.710212677306876
-  },
-  "6159d396": {
-    "location_name": "Auditorio al aire libre. Parque Amós Acero",
-    "address": "CALLE SIERRA DE ALQUIFE 20",
-    "district": "PuenteDeVallecas",
-    "latitude": 40.38840925271774,
-    "longitude": -3.666129894495819
   },
   "28cc7d13": {
     "location_name": "Biblioteca Pública Municipal Francisco Umbral (Villaverde)",
@@ -616,13 +582,6 @@
     "latitude": 40.442611374955234,
     "longitude": -3.611167964373918
   },
-  "22840c10": {
-    "location_name": "Espacio de Igualdad Lucrecia Pérez. Fuencarral-El Pardo",
-    "address": "CALLE MANRESA 1",
-    "district": "Fuencarral-ElPardo",
-    "latitude": 40.49120609425076,
-    "longitude": -3.6916379633219116
-  },
   "2280f84e": {
     "location_name": "Centro Cultural Puerta de Toledo (Centro)",
     "address": "AVENIDA GRAN VIA DE SAN FRANCISCO 2",
@@ -664,13 +623,6 @@
     "district": "Villaverde",
     "latitude": 40.35881548932917,
     "longitude": -3.688387122923563
-  },
-  "bae04585": {
-    "location_name": "Parque Juan Carlos I",
-    "address": "GLORIETA S.A.R. DON JUAN DE BORBON Y BATTEMBERG, 5 5",
-    "district": "Barajas",
-    "latitude": 40.45999848510341,
-    "longitude": -3.6148888706303586
   },
   "a471d651": {
     "location_name": "Biblioteca Pública Municipal Vicálvaro",
@@ -781,13 +733,6 @@
     "district": "Retiro",
     "latitude": 40.397021560779024,
     "longitude": -3.6738766514153163
-  },
-  "0402c527": {
-    "location_name": "Aula ambiental La Cabaña del Retiro",
-    "address": "PASEO FERNAN NUÑEZ 10",
-    "district": "Retiro",
-    "latitude": 40.40912277790706,
-    "longitude": -3.6793179644920584
   },
   "d1471516": {
     "location_name": "Parque de la Montaña. Junto a Templo de Debod (Moncloa-Aravaca)",
@@ -1254,6 +1199,12 @@
     "latitude": 40.4254782,
     "longitude": -3.7078981
   },
+  "b1f7c00c": {
+    "location_name": "Teatro Español",
+    "address": "del Príncipe, 25",
+    "latitude": 40.414945992798,
+    "longitude": -3.700187802315
+  },
   "dc35bc1f": {
     "location_name": "Real Academia de Bellas Artes de San Fernando",
     "address": "de Alcalá, 13",
@@ -1446,6 +1397,12 @@
     "latitude": 40.4351546,
     "longitude": -3.6971056
   },
+  "13acb8c9": {
+    "location_name": "Centro Cultural Casa de Vacas",
+    "address": "de Colombia, 1",
+    "latitude": 40.4190657,
+    "longitude": -3.6840531
+  },
   "1f1e0e14": {
     "location_name": "Movistar Arena (WiZink Center)",
     "address": "de Felipe II, s/n",
@@ -1521,7 +1478,7 @@
   },
   "d197c111": {
     "location_name": "Campo de Fútbol de Vallecas",
-    "address": "del Payaso Fofó, s/n",
+    "address": "Calle del Payaso Fofó, s/n, 28018 Madrid",
     "latitude": 40.3875992,
     "longitude": -3.6602826
   },
@@ -1536,5 +1493,17 @@
     "address": "de Concha Espina, 1",
     "latitude": 40.4524318,
     "longitude": -3.6868084
+  },
+  "e7d6d4c4": {
+    "location_name": "Fuente de Cibeles",
+    "address": "de Cibeles, s/n",
+    "latitude": 40.4194892,
+    "longitude": -3.6932914
+  },
+  "623ebc12": {
+    "location_name": "Las Tablas",
+    "address": "de España, 9",
+    "latitude": 40.4220352,
+    "longitude": -3.7137064
   }
 }
