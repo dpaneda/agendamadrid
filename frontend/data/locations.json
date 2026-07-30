@@ -62,6 +62,13 @@
     "latitude": 40.40254931370529,
     "longitude": -3.668092320219012
   },
+  "02b25093": {
+    "location_name": "Centro de Información y Educación Ambiental de Casa de Campo",
+    "address": "PARQUE CASA DE CAMPO (JUNTO AL EMBARCADERO DEL LAGO)",
+    "district": "Moncloa-Aravaca",
+    "latitude": 40.41789950036311,
+    "longitude": -3.7309390858931137
+  },
   "bc288b4d": {
     "location_name": "Salas de exposiciones Conde Duque",
     "address": "CALLE CONDE DUQUE 9",
@@ -202,13 +209,6 @@
     "latitude": 40.4068543436,
     "longitude": -3.612732759798518
   },
-  "a2273ec8": {
-    "location_name": "Parque Roma",
-    "address": "CALLE JUAN ESPLANDIU 4",
-    "district": "Retiro",
-    "latitude": 40.41641041087398,
-    "longitude": -3.662606100328213
-  },
   "439b2cee": {
     "location_name": "Biblioteca Pública Municipal José Saramago (Fuencarral-El Pardo)",
     "address": "AVENIDA MONFORTE DE LEMOS 38",
@@ -258,19 +258,19 @@
     "latitude": 40.42299730556785,
     "longitude": -3.6625213630031794
   },
-  "272832c8": {
-    "location_name": "Auditorio al aire libre. Parque Lineal del Manzanares",
-    "address": "CAMINO PERALES 48",
-    "district": "Usera",
-    "latitude": 40.3798409552755,
-    "longitude": -3.69049519373178
-  },
   "1a009f5e": {
     "location_name": "Plaza de Daoíz y Velarde",
     "address": "PLAZA DAOIZ Y VELARDE 2",
     "district": "Retiro",
     "latitude": 40.402190438836826,
     "longitude": -3.6772826298329093
+  },
+  "272832c8": {
+    "location_name": "Auditorio al aire libre. Parque Lineal del Manzanares",
+    "address": "CAMINO PERALES 48",
+    "district": "Usera",
+    "latitude": 40.3798409552755,
+    "longitude": -3.69049519373178
   },
   "5920ebfe": {
     "location_name": "Auditorio Municipal Las Trece Rosas",
@@ -307,13 +307,6 @@
     "latitude": 40.42344341691355,
     "longitude": -3.7159940054784806
   },
-  "02b25093": {
-    "location_name": "Centro de Información y Educación Ambiental de Casa de Campo",
-    "address": "PARQUE CASA DE CAMPO (JUNTO AL EMBARCADERO DEL LAGO)",
-    "district": "Moncloa-Aravaca",
-    "latitude": 40.41789950036311,
-    "longitude": -3.7309390858931137
-  },
   "e818a933": {
     "location_name": "Auditorio al aire libre. Parque Aluche",
     "address": "CALLE ILLESCAS 149",
@@ -328,6 +321,10 @@
     "latitude": 40.46088981165102,
     "longitude": -3.6700689174427326
   },
+  "314e4d23": {
+    "location_name": "Parque de el Pueblo de El Pardo",
+    "district": "Distrito"
+  },
   "1c1352bf": {
     "location_name": "Biblioteca Pública Municipal David Gistau (Salamanca)",
     "address": "AVENIDA TOREROS 5",
@@ -341,6 +338,13 @@
     "district": "Tetuan",
     "latitude": 40.45749513485957,
     "longitude": -3.710539712535917
+  },
+  "a2273ec8": {
+    "location_name": "Parque Roma",
+    "address": "CALLE JUAN ESPLANDIU 4",
+    "district": "Retiro",
+    "latitude": 40.41641041087398,
+    "longitude": -3.662606100328213
   },
   "1a7c6818": {
     "location_name": "Centro de Información y Educación Ambiental de Dehesa de la Villa",
@@ -362,16 +366,17 @@
     "latitude": 40.47098300036034,
     "longitude": -3.6393251567222045
   },
+  "6dd5948c": {
+    "location_name": "Parque Huerta de la Salud",
+    "address": "CALLE MAR DE LAS ANTILLAS 8",
+    "district": "Hortaleza"
+  },
   "ebf96d4f": {
     "location_name": "Centro Cultural Quinta del Berro - Rafael Altamira (Salamanca)",
     "address": "CALLE ENRIQUE D'ALMONTE 1",
     "district": "Salamanca",
     "latitude": 40.42206923419431,
     "longitude": -3.6629608041639368
-  },
-  "314e4d23": {
-    "location_name": "Parque de el Pueblo de El Pardo",
-    "district": "Distrito"
   },
   "f799769f": {
     "location_name": "Centro Cultural Eduardo Úrculo (Tetuán)",
@@ -505,6 +510,20 @@
     "latitude": 40.382311100280766,
     "longitude": -3.7227552919050586
   },
+  "db46a17d": {
+    "location_name": "Parque de Las Cruces",
+    "address": "AVENIDA POBLADOS 74",
+    "district": "Carabanchel",
+    "latitude": 40.37746689917427,
+    "longitude": -3.7547689345277977
+  },
+  "0402c527": {
+    "location_name": "Aula ambiental La Cabaña del Retiro",
+    "address": "PASEO FERNAN NUÑEZ 10",
+    "district": "Retiro",
+    "latitude": 40.40912277790706,
+    "longitude": -3.6793179644920584
+  },
   "12355570": {
     "location_name": "Biblioteca Pública Municipal Eugenio Trías. Casa de Fieras de El Retiro (Retiro)",
     "address": "PASEO FERNÁN NÚÑEZ 24",
@@ -518,6 +537,13 @@
     "district": "Vicalvaro",
     "latitude": 40.393429973468265,
     "longitude": -3.6183833916362733
+  },
+  "ffb69028": {
+    "location_name": "Auditorio al Aire Libre Recinto Ferial Vicálvaro",
+    "address": "PASEO POLIDEPORTIVO 142",
+    "district": "Vicalvaro",
+    "latitude": 40.40612285515847,
+    "longitude": -3.5967208460494637
   },
   "c6c5db82": {
     "location_name": "Centro Cultural Sanchinarro - Hispanidad (Hortaleza)",
@@ -539,6 +565,13 @@
     "district": "Usera",
     "latitude": 40.36902428128397,
     "longitude": -3.710212677306876
+  },
+  "6159d396": {
+    "location_name": "Auditorio al aire libre. Parque Amós Acero",
+    "address": "CALLE SIERRA DE ALQUIFE 20",
+    "district": "PuenteDeVallecas",
+    "latitude": 40.38840925271774,
+    "longitude": -3.666129894495819
   },
   "28cc7d13": {
     "location_name": "Biblioteca Pública Municipal Francisco Umbral (Villaverde)",
@@ -659,11 +692,6 @@
     "latitude": 40.39245798191536,
     "longitude": -3.6972067902718897
   },
-  "6dd5948c": {
-    "location_name": "Parque Huerta de la Salud",
-    "address": "CALLE MAR DE LAS ANTILLAS 8",
-    "district": "Hortaleza"
-  },
   "4f409aab": {
     "location_name": "Salón y sala de exposiciones en Junta Municipal de Usera",
     "address": "AVENIDA RAFAELA YBARRA 41",
@@ -677,13 +705,6 @@
     "district": "Moratalaz",
     "latitude": 40.39928542551079,
     "longitude": -3.636600379403484
-  },
-  "ca84f24f": {
-    "location_name": "Biblioteca Pública Municipal Pablo Neruda (Ciudad Lineal)",
-    "address": "CALLE ASCAO 4",
-    "district": "CiudadLineal",
-    "latitude": 40.42941133441142,
-    "longitude": -3.6416899839787695
   },
   "31352bed": {
     "location_name": "Imprenta Municipal. Artes del libro",
@@ -727,6 +748,13 @@
     "latitude": 40.431386380971894,
     "longitude": -3.6590535229397676
   },
+  "97507349": {
+    "location_name": "Biblioteca Pública Municipal Mario Vargas Llosa (Centro)",
+    "address": "CALLE BARCELO 4",
+    "district": "Centro",
+    "latitude": 40.426642215368176,
+    "longitude": -3.699722994908341
+  },
   "4ec30898": {
     "location_name": "Centro Cultural Las Californias (Retiro)",
     "address": "CALLE LUIS PEIDRO 2",
@@ -740,6 +768,13 @@
     "district": "Moncloa-Aravaca",
     "latitude": 40.424723,
     "longitude": -3.717977
+  },
+  "ca84f24f": {
+    "location_name": "Biblioteca Pública Municipal Pablo Neruda (Ciudad Lineal)",
+    "address": "CALLE ASCAO 4",
+    "district": "CiudadLineal",
+    "latitude": 40.42941133441142,
+    "longitude": -3.6416899839787695
   },
   "1d11f16a": {
     "location_name": "Biblioteca Pública Municipal María Lejárraga (Hortaleza)",
@@ -922,12 +957,6 @@
     "address": "de Amaniel, 29",
     "latitude": 40.4281043,
     "longitude": -3.7097008
-  },
-  "5e67a282": {
-    "location_name": "Fundación Canal. Sala Mateo Inurria",
-    "address": "de Mateo Inurria, 2",
-    "latitude": 40.4659647,
-    "longitude": -3.6880118
   },
   "3c29714c": {
     "location_name": "CaixaForum Madrid",
@@ -1289,12 +1318,6 @@
     "latitude": 40.423387716953,
     "longitude": -3.712166547775
   },
-  "4ab76119": {
-    "location_name": "Teatro de la Zarzuela",
-    "address": "de Jovellanos, 4",
-    "latitude": 40.417129,
-    "longitude": -3.6973724
-  },
   "c559b35b": {
     "location_name": "Leica Gallery Madrid",
     "address": "de José Ortega y Gasset, 34",
@@ -1505,5 +1528,11 @@
     "address": "de España, 9",
     "latitude": 40.4220352,
     "longitude": -3.7137064
+  },
+  "64e131b4": {
+    "location_name": "Wurlitzer Ballroom",
+    "address": "de las Tres Cruces, 12",
+    "latitude": 40.4196952,
+    "longitude": -3.7024371
   }
 }
