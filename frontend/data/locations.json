@@ -293,6 +293,12 @@
     "latitude": 40.42577054821346,
     "longitude": -3.700845660719608
   },
+  "1a7c6818": {
+    "location_name": "Centro de Información y Educación Ambiental de Dehesa de la Villa",
+    "district": "Moncloa-Aravaca",
+    "latitude": 40.45914104116349,
+    "longitude": -3.718270563679269
+  },
   "9b3eae76": {
     "location_name": "Espacio de Igualdad Dulce Chacón. Villaverde",
     "address": "CALLE TORDEGRILLOS 32",
@@ -345,12 +351,6 @@
     "district": "Retiro",
     "latitude": 40.41641041087398,
     "longitude": -3.662606100328213
-  },
-  "1a7c6818": {
-    "location_name": "Centro de Información y Educación Ambiental de Dehesa de la Villa",
-    "district": "Moncloa-Aravaca",
-    "latitude": 40.45914104116349,
-    "longitude": -3.718270563679269
   },
   "74ef50ff": {
     "location_name": "El Capricho de la Alameda Osuna",
@@ -940,12 +940,6 @@
     "latitude": 40.422252413672,
     "longitude": -3.695547580719
   },
-  "044f7fc6": {
-    "location_name": "Gran Teatro CaixaBank Príncipe Pío",
-    "address": "de San Vicente, 44",
-    "latitude": 40.420888390866,
-    "longitude": -3.718807697296
-  },
   "296a3885": {
     "location_name": "AC Recoletos",
     "address": "Recoletos, 18",
@@ -1270,6 +1264,12 @@
     "latitude": 40.4144227,
     "longitude": -3.697431
   },
+  "044f7fc6": {
+    "location_name": "Gran Teatro CaixaBank Príncipe Pío",
+    "address": "de San Vicente, 44",
+    "latitude": 40.4209943,
+    "longitude": -3.7187873
+  },
   "fc2a84be": {
     "location_name": "Teatro Fígaro",
     "address": "del Doctor Cortezo, 5",
@@ -1330,12 +1330,6 @@
     "latitude": 40.4247569,
     "longitude": -3.6465092
   },
-  "3b56e983": {
-    "location_name": "Plaza de toros Monumental de Las Ventas",
-    "address": "de Alcalá , 237",
-    "latitude": 40.4322742,
-    "longitude": -3.6632745
-  },
   "ac61e979": {
     "location_name": "Fundación Olivar de Castillejo",
     "address": "Menéndez Pidal, 3",
@@ -1378,30 +1372,6 @@
     "latitude": 40.413466,
     "longitude": -3.7036766
   },
-  "9d5eb577": {
-    "location_name": "La Riviera",
-    "address": "Bajo de la Virgen del Puerto, s/n",
-    "latitude": 40.4133013,
-    "longitude": -3.7219371
-  },
-  "98f49d45": {
-    "location_name": "Moby Dick",
-    "address": "de Brasil, 5",
-    "latitude": 40.4543434,
-    "longitude": -3.6940523
-  },
-  "50107e1c": {
-    "location_name": "Teatro Real",
-    "address": "de Isabel II, s/n",
-    "latitude": 40.4182929,
-    "longitude": -3.7093626
-  },
-  "9a5be362": {
-    "location_name": "Palacio Vistalegre Arena",
-    "address": "de Utebo , 1",
-    "latitude": 40.3862023,
-    "longitude": -3.7379421
-  },
   "fc67cb12": {
     "location_name": "Biblioteca Nacional",
     "address": "de Recoletos, 20 - 22",
@@ -1413,6 +1383,18 @@
     "address": "del Doctor Esquerdo, 36",
     "latitude": 40.4226158,
     "longitude": -3.6691645
+  },
+  "9a5be362": {
+    "location_name": "Palacio Vistalegre Arena",
+    "address": "de Utebo , 1",
+    "latitude": 40.3862023,
+    "longitude": -3.7379421
+  },
+  "50107e1c": {
+    "location_name": "Teatro Real",
+    "address": "de Isabel II, s/n",
+    "latitude": 40.4184102,
+    "longitude": -3.7093957
   },
   "097cd5fb": {
     "location_name": "Teatro Amaya",
@@ -1463,17 +1445,23 @@
     "latitude": 40.421432,
     "longitude": -3.7536663
   },
-  "9b2ba2ac": {
-    "location_name": "La Usina",
-    "address": "de Palos de la Frontera, 4",
-    "latitude": 40.4025525,
-    "longitude": -3.6999978
+  "9d5eb577": {
+    "location_name": "La Riviera",
+    "address": "Bajo de la Virgen del Puerto, s/n",
+    "latitude": 40.4133013,
+    "longitude": -3.7219371
   },
   "f8a954ec": {
     "location_name": "Teatro Tarambana",
     "address": "Dolores Armengot , 31",
     "latitude": 40.3857668,
     "longitude": -3.7432537
+  },
+  "9b2ba2ac": {
+    "location_name": "La Usina",
+    "address": "de Palos de la Frontera, 4",
+    "latitude": 40.4025525,
+    "longitude": -3.6999978
   },
   "d2add564": {
     "location_name": "Escenario Puerta del Ángel",
