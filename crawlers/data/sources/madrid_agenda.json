@@ -144,31 +144,6 @@
     "id": "76076e60cdd0325f"
   },
   {
-    "title": "Activamente",
-    "description": null,
-    "start_date": "2026-07-03",
-    "end_date": "2026-07-31",
-    "start_time": "10:30:00",
-    "end_time": null,
-    "location_name": "Espacio de Igualdad Ana Orantes. Barajas",
-    "address": "CALLE PLAYA DE SAN JUAN 6",
-    "district": "Barajas",
-    "latitude": 40.473659104975354,
-    "longitude": -3.592395079190456,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=cd837e415adfe910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "talleres",
-      "gratis"
-    ],
-    "schedule": {
-      "4": [
-        "10:30:00"
-      ]
-    },
-    "id": "47e79b7692e28dd5"
-  },
-  {
     "title": "Actívate en el agua: nos vamos a la piscina",
     "description": null,
     "start_date": "2026-08-07",
@@ -195,23 +170,38 @@
   },
   {
     "title": "Actividades infantiles",
-    "description": "FIESTA DE INICIO DE CURSO DE CHAMBERÍ   Viernes 11 de septiembre   De 17 a 20 h.   Plaza de Chamberí      ¡Fiesta de Vuelta al Cole en Chamberí! El verano llega a su fin, pero… ¡la diversión continúa! Te invitamos a celebrar el inicio del nuevo curso con una tarde inolvidable en la Fiesta de Vuelta al Cole, un evento pensado con mucho cariño para los más pequeños de la casa y para disfrutar en familia.",
-    "start_date": "2026-09-11",
-    "end_date": "2026-09-11",
-    "start_time": "17:00:00",
+    "description": "Campamentos urbanos en el distrito de chamberi Campamento Juvenil. de 13 a 17 años, en el Centro de Servicios Sociales Maria Esquivias",
+    "start_date": "2026-07-01",
+    "end_date": "2026-08-31",
+    "start_time": "08:30:00",
     "end_time": null,
-    "location_name": null,
-    "address": null,
-    "district": null,
-    "latitude": null,
-    "longitude": null,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=4f7b52a777e6e910VgnVCM100000891ecb1aRCRD",
+    "location_name": "Centro de Servicios Sociales Marta Esquivias Tallada",
+    "address": "CALLE PONTEVEDRA 1",
+    "district": "Chamberi",
+    "latitude": 40.43455855726328,
+    "longitude": -3.7104868511329454,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c4a2b04916e6e910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
-      "otros",
-      "gratis"
+      "otros"
     ],
-    "schedule": null,
+    "schedule": {
+      "0": [
+        "08:30:00"
+      ],
+      "1": [
+        "08:30:00"
+      ],
+      "2": [
+        "08:30:00"
+      ],
+      "3": [
+        "08:30:00"
+      ],
+      "4": [
+        "08:30:00"
+      ]
+    },
     "id": "63f8676c996b08f1"
   },
   {
@@ -240,32 +230,6 @@
       "5": []
     },
     "id": "1ec2548f2e58fb82"
-  },
-  {
-    "title": "Actividades mensuales de los centros de mayores del distrito Fuencarral - El Pardo",
-    "description": null,
-    "start_date": "2026-07-01",
-    "end_date": "2026-07-31",
-    "start_time": null,
-    "end_time": null,
-    "location_name": null,
-    "address": null,
-    "district": null,
-    "latitude": null,
-    "longitude": null,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8292ee6b7e71f910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "otros"
-    ],
-    "schedule": {
-      "0": [],
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": []
-    },
-    "id": "53d931b35dde9a6f"
   },
   {
     "title": "Actividades mensuales de los centros de mayores del distrito Vicálvaro",
@@ -314,6 +278,35 @@
     ],
     "schedule": null,
     "id": "58b42a5a4f20cc8e"
+  },
+  {
+    "title": "Agosto contigo 2026",
+    "description": null,
+    "start_date": "2026-08-01",
+    "end_date": "2026-08-31",
+    "start_time": null,
+    "end_time": null,
+    "location_name": "Centro Deportivo Municipal Barajas",
+    "address": "AVENIDA LOGROÑO 70",
+    "district": "Barajas",
+    "latitude": 40.46301382809657,
+    "longitude": -3.587693324074623,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7ca59cf8d27bf910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "deportes",
+      "gratis"
+    ],
+    "schedule": {
+      "0": [],
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": []
+    },
+    "id": "bd35ba8e763f8efb"
   },
   {
     "title": "Agosto entre líneas: escritura creativa I",
@@ -401,6 +394,31 @@
     ],
     "schedule": null,
     "id": "8c98350e822551f7"
+  },
+  {
+    "title": "Amigas de las letras. Club de lectura",
+    "description": null,
+    "start_date": "2026-08-06",
+    "end_date": "2026-08-27",
+    "start_time": "11:00:00",
+    "end_time": null,
+    "location_name": "Espacio de Igualdad Carme Chacón. Hortaleza",
+    "address": "CALLE MATAPOZUELOS 2",
+    "district": "Hortaleza",
+    "latitude": 40.46155641637237,
+    "longitude": -3.6501714580414126,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c12c060d607bf910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "literatura",
+      "gratis"
+    ],
+    "schedule": {
+      "3": [
+        "11:00:00"
+      ]
+    },
+    "id": "f313ffc2a14ea9f6"
   },
   {
     "title": "Amor de don Perlimplín con Belisa en su jardín",
@@ -631,14 +649,14 @@
     "description": "En el parque de El Retiro se pueden encontrar cerca de 170 especies distintas de árboles, un verdadero tesoro de Biodiversidad en pleno centro de Madrid. Durante este itinerario, se muestran de forma sencilla las técnicas empleadas en botánica para el reconocimiento de especies. Para ello, se caracterizan las especies más representativas del parque, comentando sus usos tradicionales, leyendas y curiosidades. Se presta especial atención a los árboles singulares del parque como el Ahuehuete del...",
     "start_date": "2026-08-13",
     "end_date": "2026-08-27",
-    "start_time": "10:00:00",
+    "start_time": "19:00:00",
     "end_time": null,
     "location_name": "Centro de Educación Ambiental El Retiro",
     "address": "PASEO FERNAN NUÑEZ 2",
     "district": "Retiro",
     "latitude": 40.40943503279114,
     "longitude": -3.6861797800993257,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=31af9ea9aeb09810VgnVCM1000001d4a900aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=63342407bb777910VgnVCM2000001f4a900aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "otros",
@@ -811,35 +829,6 @@
     "id": "bb4c9194baae9070"
   },
   {
-    "title": "Aula de verano 2026",
-    "description": null,
-    "start_date": "2026-07-20",
-    "end_date": "2026-07-31",
-    "start_time": null,
-    "end_time": null,
-    "location_name": "Centro de Servicios Sociales Entrevías",
-    "address": "CALLE YUSTE 8",
-    "district": "PuenteDeVallecas",
-    "latitude": 40.37572771376372,
-    "longitude": -3.6682776697165496,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=6052dff0126ae910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "otros",
-      "gratis"
-    ],
-    "schedule": {
-      "0": [],
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": [],
-      "6": []
-    },
-    "id": "49ea3e75a7581a6d"
-  },
-  {
     "title": "Autocuidado a través del movimiento. Espacio de Igualdad María de Maeztu",
     "description": null,
     "start_date": "2026-08-06",
@@ -863,31 +852,6 @@
       ]
     },
     "id": "d3837de0d76d3be6"
-  },
-  {
-    "title": "Autocuidado desde el movimiento. Espacio de Igualdad Emilia Pardo Bazán",
-    "description": null,
-    "start_date": "2026-07-03",
-    "end_date": "2026-07-31",
-    "start_time": "12:00:00",
-    "end_time": null,
-    "location_name": "Espacio de Igualdad Emilia Pardo Bazán. Ciudad Lineal",
-    "address": "AVENIDA BADAJOZ 60",
-    "district": "CiudadLineal",
-    "latitude": 40.442311100791215,
-    "longitude": -3.6534806246311913,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=0f43bbe3111c1910VgnVCM1000001d4a900aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "talleres",
-      "gratis"
-    ],
-    "schedule": {
-      "4": [
-        "12:00:00"
-      ]
-    },
-    "id": "9060278f98be2d8d"
   },
   {
     "title": "Avelino Sala",
@@ -1903,8 +1867,8 @@
   {
     "title": "Chapucea con las glorias",
     "description": null,
-    "start_date": "2026-07-10",
-    "end_date": "2026-07-31",
+    "start_date": "2026-08-07",
+    "end_date": "2026-08-28",
     "start_time": "10:00:00",
     "end_time": null,
     "location_name": "Espacio de Igualdad Gloria Fuertes. Vicálvaro",
@@ -1912,7 +1876,7 @@
     "district": "Vicalvaro",
     "latitude": 40.4068543436,
     "longitude": -3.612732759798518,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=2ef692446421f910VgnVCM200000f921e388RCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a7aab5d0353af910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "talleres",
@@ -2092,27 +2056,6 @@
     ],
     "schedule": null,
     "id": "63e63f5270ba3d45"
-  },
-  {
-    "title": "Cinefórum en colaboración con Directed By Women Spain. Cortos sobre el amor romántico",
-    "description": "Visionaremos cortometrajes feministas dirigidos por mujeres en torno al tema del amor romántico. Posteriormente reflexionaremos sobre la temática abordada.",
-    "start_date": "2026-07-31",
-    "end_date": "2026-07-31",
-    "start_time": "10:00:00",
-    "end_time": null,
-    "location_name": "Espacio de Igualdad Juana Doña. Arganzuela",
-    "address": "PASEO CHOPERA 10",
-    "district": "Arganzuela",
-    "latitude": 40.39307289237465,
-    "longitude": -3.699005654074825,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=3de94d23d672f910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "cine",
-      "gratis"
-    ],
-    "schedule": null,
-    "id": "ebfc0387cfdc5329"
   },
   {
     "title": "Cinefórum en colaboración con Directed By Women Spain. Cortos sobre historias generacionales (madres e hijas)",
@@ -2682,6 +2625,27 @@
     "id": "e0a2677ff5af1824"
   },
   {
+    "title": "CONECTA-TEC II. Taller de competencia digitales",
+    "description": "Taller práctico y divertido para parendes, crear y desarrolarse con confianza en el mundo digital.",
+    "start_date": "2026-09-26",
+    "end_date": "2026-09-26",
+    "start_time": "11:00:00",
+    "end_time": null,
+    "location_name": null,
+    "address": null,
+    "district": null,
+    "latitude": null,
+    "longitude": null,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=924c4be1e17bf910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "d742742973701d26"
+  },
+  {
     "title": "Conoce las aves de la Dehesa: ruta ornitológica",
     "description": null,
     "start_date": "2026-08-30",
@@ -2772,6 +2736,27 @@
       ]
     },
     "id": "c1dfe8e1eac62471"
+  },
+  {
+    "title": "Consultorio informático en el Espacio de Igualdad Hermanas Mirabal",
+    "description": null,
+    "start_date": "2026-08-11",
+    "end_date": "2026-08-11",
+    "start_time": "10:00:00",
+    "end_time": null,
+    "location_name": "Espacio de Igualdad Hermanas Mirabal. Tetuán",
+    "address": "CALLE BRAVO MURILLO 133",
+    "district": "Tetuan",
+    "latitude": 40.45012255255781,
+    "longitude": -3.7037047897267947,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=df13d0f56f6bf910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "e9ef263a0b676d86"
   },
   {
     "title": "Coquetas y fabulosas",
@@ -3019,6 +3004,32 @@
     "id": "c74ad2142588fe7d"
   },
   {
+    "title": "Damien Jalet en Centro Danza Matadero",
+    "description": null,
+    "start_date": "2026-09-05",
+    "end_date": "2027-01-23",
+    "start_time": null,
+    "end_time": null,
+    "location_name": "Centro Danza Matadero - CDM",
+    "address": "PASEO CHOPERA 14",
+    "district": "Arganzuela",
+    "latitude": 40.39245798191536,
+    "longitude": -3.6972067902718897,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=b0409cc93e7bf910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "danza"
+    ],
+    "schedule": {
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": []
+    },
+    "id": "552eb3de5fba8f78"
+  },
+  {
     "title": "Danza libre y trabajo corporal",
     "description": null,
     "start_date": "2026-08-06",
@@ -3067,6 +3078,27 @@
       ]
     },
     "id": "b68107167fcf51de"
+  },
+  {
+    "title": "Danza.Gabriela Goodwyn Ballet",
+    "description": "Compañía: Gabriela Goodwyn Ballet.     Sipnosis: El alumnado del curso para adultos de Gabriela Goodwin Ballet, interpretará, junto a su profesora, directora y coreógrafa, piezas clásicas de Ballet como la Bella y la Bestia o Paquita.   Edad recomendada: mayores de 5 años.",
+    "start_date": "2026-09-05",
+    "end_date": "2026-09-05",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural el Torito (Moratalaz)",
+    "address": "AVENIDA MORATALAZ 130",
+    "district": "Moratalaz",
+    "latitude": 40.40610655994401,
+    "longitude": -3.646521482592748,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=4b245279607bf910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "danza",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "0daffa4d8e130e77"
   },
   {
     "title": "De amores y miedos - Chamberi",
@@ -3206,27 +3238,6 @@
     "id": "e1091de2c42974d4"
   },
   {
-    "title": "Del Revés 2",
-    "description": "Del Revés 2, 2024.  Apta para todos los públicos.  Distintivo especialmente recomendado para la infancia.",
-    "start_date": "2026-07-31",
-    "end_date": "2026-07-31",
-    "start_time": "22:30:00",
-    "end_time": null,
-    "location_name": "Auditorio al aire libre. Parque Aluche",
-    "address": "CALLE ILLESCAS 149",
-    "district": "Latina",
-    "latitude": 40.392680212409495,
-    "longitude": -3.7593572957930554,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=488c47511d4de910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "cine",
-      "gratis"
-    ],
-    "schedule": null,
-    "id": "0d97b93203c4df4b"
-  },
-  {
     "title": "Deportes de raqueta",
     "description": "Edades: de 8 a 14 años. De 11 a 13 horas. Jornada deportiva para conocer deportes de raqueta. Acceso libre y gratuito. Sin inscripción.",
     "start_date": "2026-10-24",
@@ -3327,17 +3338,17 @@
   },
   {
     "title": "Día de la Movilidad",
-    "description": "De 10 a 14 h      El próximo 20 de septiembre se han programado muchas actividades destinadas a celebrar el Día de la Movilidad. Entre ellas, te proponemos una ruta de marcha nórdica para conocer este deporte, o acercarte al Circuito de Seguridad Vial o participar en la vuelta en bici a Chamberí.    ¡Elige la opción que más te apetezca o, si te ves con ganas, participa en todas ellas!",
+    "description": "CIRCUITO DE SEGURIDAD VIAL       De 11 a 14 h     Paseo de San Francisco de Sales      Trae tu bicicleta, patines o patinete! ¡Aprende y diviértete sobre ruedas! Trae tu bici, patines o patinete y pon a prueba tus habilidades en un circuito pensado para todas las edades. Una oportunidad perfecta para mejorar tu seguridad vial mientras lo pasas en grande. ¡Ven con ganas de disfrutar y participar!",
     "start_date": "2026-09-20",
     "end_date": "2026-09-20",
-    "start_time": "10:00:00",
+    "start_time": "11:00:00",
     "end_time": null,
     "location_name": null,
     "address": null,
     "district": null,
     "latitude": null,
     "longitude": null,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a7f1f4d59337e910VgnVCM100000891ecb1aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=e876551e8437e910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "otros",
@@ -3370,8 +3381,8 @@
   {
     "title": "Dibujamos y pintamos mandalas",
     "description": null,
-    "start_date": "2026-07-03",
-    "end_date": "2026-07-31",
+    "start_date": "2026-08-07",
+    "end_date": "2026-08-28",
     "start_time": "10:00:00",
     "end_time": null,
     "location_name": "Espacio de Igualdad Gloria Fuertes. Vicálvaro",
@@ -3379,7 +3390,7 @@
     "district": "Vicalvaro",
     "latitude": 40.4068543436,
     "longitude": -3.612732759798518,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d04a93a4bac1f910VgnVCM100000891ecb1aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=fdc859c4e53af910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "talleres",
@@ -4334,27 +4345,6 @@
     "id": "36dc9d2504c554b1"
   },
   {
-    "title": "El tablero escondido del Capricho: público familiar",
-    "description": "Itinerario guiado por el espacio verde madrileño de la mano de un educador ambiental. Identificaremos los caprichos de la Duquesa, así como algunas de las especies vegetales con conforman el espacio. Actividad dirigida a público familiar, con menores de entre 7 y 12 años.  Duración estimada: aproximadamente 2 horas.     Necesaria inscripción previa.  Para más información y reservas de esta actividad, la forma de contacto es a través de:  Correo electrónico: proambiental@madrid.es  Teléfono: 9...",
-    "start_date": "2026-07-31",
-    "end_date": "2026-07-31",
-    "start_time": "10:30:00",
-    "end_time": null,
-    "location_name": "El Capricho de la Alameda Osuna",
-    "address": "PASEO ALAMEDA DE OSUNA 25",
-    "district": "Barajas",
-    "latitude": 40.45446361509569,
-    "longitude": -3.6000964360303476,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=cfba9ad065bac810VgnVCM1000001d4a900aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "otros",
-      "gratis"
-    ],
-    "schedule": null,
-    "id": "758930981ff6a9cc"
-  },
-  {
     "title": "El tablero escondido en El Capricho: público familiar",
     "description": "Itinerario guiado por el espacio verde madrileño de la mano de un educador ambiental. Identificaremos los caprichos de la Duquesa, así como algunas de las especies vegetales con conforman el espacio. Actividad dirigida a público familiar, con menores de entre 7 y 12 años.  Duración estimada: aproximadamente 2 horas.    Necesaria inscripción previa.  Para más información y reservas de esta actividad, la forma de contacto es a través de:  Correo electrónico: proambiental@madrid.es  Teléfono: 91...",
     "start_date": "2026-09-04",
@@ -4479,31 +4469,6 @@
     ],
     "schedule": null,
     "id": "6fc50302de61a877"
-  },
-  {
-    "title": "Emociones, mujeres y su representación en el arte",
-    "description": null,
-    "start_date": "2026-07-10",
-    "end_date": "2026-07-31",
-    "start_time": "10:30:00",
-    "end_time": null,
-    "location_name": "Espacio de Igualdad Lourdes Hernández. Carabanchel",
-    "address": "CALLE COMANDANTE FONTANES 8",
-    "district": "Carabanchel",
-    "latitude": 40.395326406887946,
-    "longitude": -3.721622686264932,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=2aabc70c7db4f910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "talleres",
-      "gratis"
-    ],
-    "schedule": {
-      "4": [
-        "10:30:00"
-      ]
-    },
-    "id": "61ffee64d01a0d56"
   },
   {
     "title": "Empaque - Chamartín",
@@ -4653,6 +4618,48 @@
     "id": "2600b88ebeacf739"
   },
   {
+    "title": "Endometriosis. Sesión I",
+    "description": null,
+    "start_date": "2026-08-11",
+    "end_date": "2026-08-11",
+    "start_time": "11:00:00",
+    "end_time": null,
+    "location_name": "Espacio de Igualdad María Moliner. Villa de Vallecas",
+    "address": "CALLE HONRUBIA 4",
+    "district": "VillaDeVallecas",
+    "latitude": 40.37128211425518,
+    "longitude": -3.6292460351699867,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=f96c37895a7bf910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "54a14ca5c5b2903e"
+  },
+  {
+    "title": "Endometriosis. Sesión II: el dolor silenciado 1860 - 2026 de Laia Abril (Exposición PhotoSpain)",
+    "description": null,
+    "start_date": "2026-08-12",
+    "end_date": "2026-08-12",
+    "start_time": "11:00:00",
+    "end_time": null,
+    "location_name": "Espacio de Igualdad María Moliner. Villa de Vallecas",
+    "address": "CALLE HONRUBIA 4",
+    "district": "VillaDeVallecas",
+    "latitude": 40.37128211425518,
+    "longitude": -3.6292460351699867,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c09237895a7bf910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "9c1ebd7e752289c1"
+  },
+  {
     "title": "Enlazadas",
     "description": "Tributo a los grandes ballets de finales del siglo XIX y principios del XX: 'La Bayadere', 'El carnaval de los animales', 'El pájaro de fuego'... entre otros , que se presentan en una puesta en escena a través de un lenguaje contemporáneo, sutil y delicado al comienzo, incrementando la tensión en su desarrollo y enérgico al final.  Enlazadas es el resultado del camino tejido en distintos campos de danza: clásico, jazz, contemporáneo, oriental, persa y armenio. Articulado desde la poética de l...",
     "start_date": "2026-09-19",
@@ -4792,29 +4799,32 @@
     "id": "4f7fcba77dcd4a3d"
   },
   {
-    "title": "Escritura emocional",
+    "title": "Escritura creativa",
     "description": null,
-    "start_date": "2026-07-03",
-    "end_date": "2026-07-31",
-    "start_time": "11:00:00",
+    "start_date": "2026-08-17",
+    "end_date": "2026-08-19",
+    "start_time": "12:00:00",
     "end_time": null,
-    "location_name": "Espacio de Igualdad Carme Chacón. Hortaleza",
-    "address": "CALLE MATAPOZUELOS 2",
-    "district": "Hortaleza",
-    "latitude": 40.46155641637237,
-    "longitude": -3.6501714580414126,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a1a7c4cbb364f910VgnVCM100000891ecb1aRCRD",
+    "location_name": "Espacio de Igualdad María Moliner. Villa de Vallecas",
+    "address": "CALLE HONRUBIA 4",
+    "district": "VillaDeVallecas",
+    "latitude": 40.37128211425518,
+    "longitude": -3.6292460351699867,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c36937895a7bf910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
-      "otros",
+      "talleres",
       "gratis"
     ],
     "schedule": {
-      "4": [
-        "11:00:00"
+      "0": [
+        "12:00:00"
+      ],
+      "2": [
+        "12:00:00"
       ]
     },
-    "id": "64e41fdeb9f30820"
+    "id": "883015420571f7c0"
   },
   {
     "title": "Esculturas desconocidas del Retiro I",
@@ -4884,6 +4894,27 @@
     "id": "2b8661efc4786fc0"
   },
   {
+    "title": "Espacio mensual para el recuerdo de las mujeres, niñas y niños, víctimas de violencia machista",
+    "description": null,
+    "start_date": "2026-08-27",
+    "end_date": "2026-08-27",
+    "start_time": "12:00:00",
+    "end_time": null,
+    "location_name": "Espacio de Igualdad Carme Chacón. Hortaleza",
+    "address": "CALLE MATAPOZUELOS 2",
+    "district": "Hortaleza",
+    "latitude": 40.46155641637237,
+    "longitude": -3.6501714580414126,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=584658001a0c7910VgnVCM2000001f4a900aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "64f04523d115a2b0"
+  },
+  {
     "title": "Espectáculo de flamenco. Cía Quejío",
     "description": "Quejí(o) es un espectáculo flamenco que propone un recorrido por la esencia del cante, el baile y el compás, con una puesta en escena directa, intensa y fiel a la tradición. La voz de Roberto Lorente actúa como eje del espectáculo, guiando cada número desde el respeto a los estilos clásicos y la emoción propia del flamenco más auténtico. El baile, a cargo de María Montes e Isabel Pérez, aporta fuerza, elegancia y contraste escénico, alternando momentos de intensidad y sobriedad según el carác...",
     "start_date": "2026-08-14",
@@ -4903,27 +4934,6 @@
     ],
     "schedule": null,
     "id": "bd8234f9cd029371"
-  },
-  {
-    "title": "Espectáculo de flamenco: 'Alas al viento'. Cía Danza.com",
-    "description": "El espectáculo flamenco de  Cía  . Danza.com- Cuadro Flamenco ofrece un recorrido de 60 minutos por los distintos palos del flamenco, mostrando la riqueza y variedad de este arte con una puesta en escena llena de energía, pasión y duende. A través del cante profundo de La Negri, el virtuosismo en el baile de Raquel Novellón y Pilar Díaz, el ritmo inconfundible de El Tachu en el cajón y la sensibilidad musical de Fernando García-Rico en el violín y la guitarra, se construye un espectáculo que ...",
-    "start_date": "2026-07-31",
-    "end_date": "2026-07-31",
-    "start_time": "20:00:00",
-    "end_time": null,
-    "location_name": "Auditorio al aire libre. Parque de la Vaguada",
-    "address": "PASEO VAGUADA 13",
-    "district": "Fuencarral-ElPardo",
-    "latitude": 40.48016602497203,
-    "longitude": -3.7112978051427574,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=19004e0c73ca7910VgnVCM2000001f4a900aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "danza",
-      "gratis"
-    ],
-    "schedule": null,
-    "id": "3dcac8556ff07016"
   },
   {
     "title": "Espectáculo de flamenco: 'Tacones Rojos'. Cía Novellón",
@@ -5063,76 +5073,6 @@
     "id": "eee08d1515fdd441"
   },
   {
-    "title": "Estiramos y reflexionamos: Nuestra relación con el deporte",
-    "description": null,
-    "start_date": "2026-07-31",
-    "end_date": "2026-07-31",
-    "start_time": "10:00:00",
-    "end_time": null,
-    "location_name": "Espacio de Igualdad Lucía Sánchez Saornil. San Blas-Canillejas",
-    "address": "PLAZA EURIPIDES 1",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.449003967549075,
-    "longitude": -3.6069161377213526,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=9047a12165f5f910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "talleres",
-      "gratis"
-    ],
-    "schedule": null,
-    "id": "9fe7b2dbf820873f"
-  },
-  {
-    "title": "Estrenos Cineteca",
-    "description": null,
-    "start_date": "2024-09-05",
-    "end_date": "2026-07-31",
-    "start_time": null,
-    "end_time": null,
-    "location_name": "Cineteca Madrid",
-    "address": "PLAZA LEGAZPI 8",
-    "district": "Arganzuela",
-    "latitude": 40.39130985242181,
-    "longitude": -3.6958028442054074,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=0e63fc6a6f343910VgnVCM1000001d4a900aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "cine"
-    ],
-    "schedule": {
-      "0": [],
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": [],
-      "6": []
-    },
-    "id": "dbfdfeea7fb9402e"
-  },
-  {
-    "title": "Eternos 70. Tributo a la música española",
-    "description": "Dúo Binotti- Tavares Concierto homenaje a grandes artistas de la música española de los años 70, con cancionesque marcaron a varias generaciones y siguen siendo clásicos hoy. Beatrice Binotti y DavidTavares ofrecen un recital emotivo y cercano que invita a viajar musicalmente a esa época. Elrepertorio incluye temas de Nino Bravo, Cecilia, Mari Trini, Camilo Sesto, Jeanette, Mocedades,Luis Aguilé, Dúo Dinámico, Fórmula V y Julio Iglesias. Todos los públicos. Duración: 60 minutos.",
-    "start_date": "2026-07-31",
-    "end_date": "2026-07-31",
-    "start_time": "20:00:00",
-    "end_time": null,
-    "location_name": "Centro Cultural Emilia Pardo Bazán (Salamanca)",
-    "address": "CALLE GOYA 1",
-    "district": "Salamanca",
-    "latitude": 40.42585800515975,
-    "longitude": -3.689601594290468,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8d8d0ef8c58fe910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "conciertos",
-      "gratis"
-    ],
-    "schedule": null,
-    "id": "b22d92e002ecd5e2"
-  },
-  {
     "title": "Eurocosmos. Taller de Planisferios",
     "description": "De 11 a 14 horas. De 8 a 14 años. Actividad infantil para descubrir el cielo y crear un planisferio estelar.  Acceso libre.  Sin inscripción. Ocio saludable.",
     "start_date": "2026-09-20",
@@ -5239,35 +5179,6 @@
     "id": "89abc08578a93fd3"
   },
   {
-    "title": "Exposición conjunta de pintura pinceladas cruzadas",
-    "description": "Beatriz Martínez Ríos, Nuria Mejía Ruiz,Kattamayo Mejái Tres artistas unidas por trayectorias vitales muy distintas convierten la pintura en un lenguaje para expresar emociones, memoria y diversidad.Sus obras dialogan con la poesía, la naturaleza, el cuerpo y la experiencia personal, abordando temas como la herida, la reparación y la reconstrucción. La exposición ofrece una mirada plural y sensible donde el arte se convierte en una herramienta de comunicación, denuncia y transformación.",
-    "start_date": "2026-07-01",
-    "end_date": "2026-07-31",
-    "start_time": null,
-    "end_time": null,
-    "location_name": "Centro Cultural Quinta del Berro - Rafael Altamira (Salamanca)",
-    "address": "CALLE ENRIQUE D'ALMONTE 1",
-    "district": "Salamanca",
-    "latitude": 40.42206923419431,
-    "longitude": -3.6629608041639368,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a600c5d2d78fe910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "exposiciones",
-      "gratis"
-    ],
-    "schedule": {
-      "0": [],
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": [],
-      "6": []
-    },
-    "id": "111d9798bd209406"
-  },
-  {
     "title": "Exposición de acuarelas Umbrales In-Ex-Terior",
     "description": "Alejandra Bonmatí Arnau.  'Umbrales' explora los espacios de tránsito como lugares de conexión entre el mundo interior y exterior.  Terrazas, ventanales, estaciones o cafeterías se presentan como escenarios que protegen, exponen e invitan a la reflexión. La muestra propone una mirada al movimiento mental, espiritual y creativo que surge en estos contextos habitables.",
     "start_date": "2026-08-01",
@@ -5297,36 +5208,9 @@
     "id": "da58ea850c4f90cc"
   },
   {
-    "title": "Exposición de Pintura `¿Y tú que Pintas?´",
-    "description": "Del alumnado de la clase de adultos de la Escuela de Pintura `Entre Tuercas y Pinceles´.  Una exposición que nace de la emoción, la imaginación y la necesidad de expresarse a través del arte. Cada obra que forma parte de esta muestra es un reflejo único de quien la crea: miradas, recuerdos, sentimientos, sueños y formas distintas de entender el mundo. El alumnado de la clase de adultos de la escuela de pintura Entre Tuercas y Pinceles, presenta un recorrido lleno de color, textura y sensibili...",
-    "start_date": "2026-06-01",
-    "end_date": "2026-07-31",
-    "start_time": null,
-    "end_time": null,
-    "location_name": "Centro Sociocultural Marconi (Villaverde)",
-    "address": "ACCESO COLONIA MARCONI 4",
-    "district": "Villaverde",
-    "latitude": 40.3347558542528,
-    "longitude": -3.7008037217338274,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=e461cda93f96e910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "exposiciones",
-      "gratis"
-    ],
-    "schedule": {
-      "0": [],
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": []
-    },
-    "id": "40e60cef0d7ccb80"
-  },
-  {
     "title": "Exposición Pedro Denche",
-    "description": "El Centro Cultural acoge una exposición de pinturas de Pedro Denche, artista especializado en paisajesurbanos y patrimonio histórico. Sus obras, de estilo figurativo y realista, destacan por el cuidado de la luz,la arquitectura y los detalles. A través de plazas, monumentos y rincones emblemáticos, el autor transmitela belleza y la identidad de los lugares representados. Una muestra que invita a contemplar el entorno desde una perspectiva artística y cercana.",
-    "start_date": "2026-08-02",
+    "description": "AVISO: Se pospone el inicio de esta exposición al miércoles 06 de agosto. Disculpen las molestias.   El Centro Cultural acoge una exposición de pinturas de Pedro Denche, artista especializado en paisajesurbanos y patrimonio histórico. Sus obras, de estilo figurativo y realista, destacan por el cuidado de la luz,la arquitectura y los detalles. A través de plazas, monumentos y rincones emblemáticos, el autor transmitela belleza y la identidad de los lugares representados. Una muestra que invita...",
+    "start_date": "2026-08-06",
     "end_date": "2026-08-30",
     "start_time": null,
     "end_time": null,
@@ -5435,34 +5319,6 @@
       "6": []
     },
     "id": "96e5d9ffa3f49231"
-  },
-  {
-    "title": "Exposiciones en el distrito de Tetuán",
-    "description": null,
-    "start_date": "2026-06-05",
-    "end_date": "2026-07-31",
-    "start_time": null,
-    "end_time": null,
-    "location_name": null,
-    "address": null,
-    "district": null,
-    "latitude": null,
-    "longitude": null,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c3d75a901579e910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "exposiciones",
-      "gratis"
-    ],
-    "schedule": {
-      "0": [],
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": []
-    },
-    "id": "4794496a4a41847e"
   },
   {
     "title": "Exposición: Compositoras españolas: medio siglo de creación musical",
@@ -5643,6 +5499,34 @@
     "id": "aa8885d22a3fcc95"
   },
   {
+    "title": "Expresión corporal y teatral",
+    "description": null,
+    "start_date": "2026-08-18",
+    "end_date": "2026-08-20",
+    "start_time": "09:00:00",
+    "end_time": null,
+    "location_name": "Espacio de Igualdad María Moliner. Villa de Vallecas",
+    "address": "CALLE HONRUBIA 4",
+    "district": "VillaDeVallecas",
+    "latitude": 40.37128211425518,
+    "longitude": -3.6292460351699867,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c9e5268a697bf910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "gratis"
+    ],
+    "schedule": {
+      "1": [
+        "09:00:00"
+      ],
+      "3": [
+        "09:00:00"
+      ]
+    },
+    "id": "ed0128c49a1e54f9"
+  },
+  {
     "title": "F1: La película",
     "description": "Joseph Kosinski  Duración: 155 min.  Edad recomendada:  A partir de 12 años Sonny Hayes fue el fenómeno más prometedor de la Fórmula 1 en la década de 1990, hasta que un accidente en la pista acabó prácticamente con su carrera. Treinta años después es un piloto nómada a sueldo al que contacta su antiguo compañero de equipo, Rubén Cervantes, propietario de un equipo de Fórmula 1 al borde de la quiebra. Rubén convence a Sonny para volver a la categoría reina del automovilismo y tener una última...",
     "start_date": "2026-08-07",
@@ -5712,7 +5596,7 @@
   {
     "title": "Fanzine: historia de una vida",
     "description": null,
-    "start_date": "2026-08-27",
+    "start_date": "2026-08-20",
     "end_date": "2026-08-27",
     "start_time": "10:00:00",
     "end_time": null,
@@ -5727,7 +5611,11 @@
       "talleres",
       "gratis"
     ],
-    "schedule": null,
+    "schedule": {
+      "3": [
+        "10:00:00"
+      ]
+    },
     "id": "e511a24b04018138"
   },
   {
@@ -6210,6 +6098,34 @@
     "id": "f878cee6e23daf17"
   },
   {
+    "title": "Glass Bottom Ferry",
+    "description": null,
+    "start_date": "2026-10-02",
+    "end_date": "2026-10-04",
+    "start_time": null,
+    "end_time": null,
+    "location_name": "Cineteca Madrid",
+    "address": "PLAZA LEGAZPI 8",
+    "district": "Arganzuela",
+    "latitude": 40.39130985242181,
+    "longitude": -3.6958028442054074,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5e84d0f56f6bf910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "destacado"
+    ],
+    "schedule": {
+      "0": [],
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": []
+    },
+    "id": "8a79f6c22697fc82"
+  },
+  {
     "title": "Gloria Fuertes (hoy)",
     "description": null,
     "start_date": "2026-03-03",
@@ -6555,27 +6471,6 @@
     "id": "b323d7552da8b6b7"
   },
   {
-    "title": "Héroes en Central Park. En la calle Primitiva Gañán",
-    "description": "Para todos los públicos.  Duración: 130 minutos. En la calle Primitiva Gañán.",
-    "start_date": "2026-07-31",
-    "end_date": "2026-07-31",
-    "start_time": "22:30:00",
-    "end_time": null,
-    "location_name": null,
-    "address": null,
-    "district": null,
-    "latitude": null,
-    "longitude": null,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=720c6ad3be12f910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "cine",
-      "gratis"
-    ],
-    "schedule": null,
-    "id": "e06ed562deea0b14"
-  },
-  {
     "title": "Historia de una escalera",
     "description": null,
     "start_date": "2027-01-15",
@@ -6726,7 +6621,7 @@
   },
   {
     "title": "II Edición de Chamberí en Clave de Sol",
-    "description": "CINEMA SAX        Jardines Alejandro Muñoz   Revenga   (C/ Blasco de Garay, 31)   20:30 h       Música de cine por CINEMA SAX . Este concierto nos traslada al mundo del celuloide desde la voz del saxofón. Un repertorio que atraviesa el tiempo y ha quedado grabado en nuestra memoria colectiva. Una experiencia que evoca imágenes, escenas, historias y recuerdos a través del poder mágico de las grandes bandas sonoras.",
+    "description": "T-LENOIR      Parque Enrique Herreros   (C/ Bravo Murillo, 49)   20:30 h     Música rock por T- LENOIR. Música con base en el rock pero con pasión por el funk, el soul, el blues, la música latina..",
     "start_date": "2026-08-01",
     "end_date": "2026-09-12",
     "start_time": "20:30:00",
@@ -6736,7 +6631,7 @@
     "district": null,
     "latitude": null,
     "longitude": null,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5c2523f355e6e910VgnVCM100000891ecb1aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=bf2e23f355e6e910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "otros",
@@ -6893,30 +6788,6 @@
       ]
     },
     "id": "0d8c9431320b94c5"
-  },
-  {
-    "title": "In ex terior. Umbrales",
-    "description": "Exposición de acuarela contemporánea IN-EX-TERIOR (UMBRALES).   Autora: Alejandra Bonmatí Arnau. En esta exposición la autora plantea la idea de los 'umbrales', como lugares de tránsito, no solo espacial o temporal, sino de lo introspectivo (interior) a lo que se nos presenta desde fuera (lo que debemos abordar para avanzar o para conectar con el mundo).Las terrazas, cornisas, ventanales y otros espacios arquitectónicos que favorecen esa experiencia de 'umbral', las estaciones de tren, cafete...",
-    "start_date": "2026-07-01",
-    "end_date": "2026-07-31",
-    "start_time": null,
-    "end_time": null,
-    "location_name": "Centro Cultural Clara del Rey - Museo ABC (Centro)",
-    "address": "CALLE AMANIEL 29",
-    "district": "Centro",
-    "latitude": 40.42741340671151,
-    "longitude": -3.7095381101739444,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=6e4249e2d8d1f910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "exposiciones",
-      "gratis"
-    ],
-    "schedule": {
-      "5": [],
-      "6": []
-    },
-    "id": "3992b723be9ac7e2"
   },
   {
     "title": "Incontrolable",
@@ -7258,7 +7129,7 @@
   },
   {
     "title": "Jardín El Capricho (itinerario interpretativo)",
-    "description": "Itinerario guiado por el espacio verde madrileño de la mano de un educador ambiental. Identificaremos los caprichos de la Duquesa, así como algunas de las especies vegetales con conforman el espacio. Actividad dirigida a público adulto (mayores de 18 años)  Duración estimada: aproximadamente 3 horas.    Necesaria inscripción previa.  Para más información y reservas de esta actividad, la forma de contacto es a través de:  Correo electrónico: proambiental@madrid.es  Teléfono: 915 478 473  El ho...",
+    "description": "Itinerario guiado por el espacio verde madrileño de la mano de un educador ambiental. Identificaremos los caprichos de la Duquesa, así como algunas de las especies vegetales que conforman el espacio. Actividad dirigida a público adulto (mayores de 18 años)  Duración estimada: aproximadamente 3 horas.     Necesaria inscripción previa.  Para más información y reservas de esta actividad, la forma de contacto es a través de:  Correo electrónico: proambiental@madrid.es  Teléfono: 915 478 473  El h...",
     "start_date": "2026-08-07",
     "end_date": "2026-09-25",
     "start_time": "10:00:00",
@@ -7268,7 +7139,7 @@
     "district": "Barajas",
     "latitude": 40.45446361509569,
     "longitude": -3.6000964360303476,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c46a9ad065bac810VgnVCM1000001d4a900aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=10799ad065bac810VgnVCM1000001d4a900aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "otros",
@@ -7515,27 +7386,6 @@
     "id": "1756fe9924dd98db"
   },
   {
-    "title": "Jurassic World: el renacer",
-    "description": "Cinco años después de Jurassic World: Dominion, una expedición se aventura en remotas regiones ecuatoriales para extraer ADN de tres enormes criaturas prehistóricas, con el objetivo de lograr un avance médico revolucionario.  Año: 2025  Director: Gareth Edwards  Duración: 134 min  Edad: No recomendada para menores de 12 años",
-    "start_date": "2026-07-31",
-    "end_date": "2026-07-31",
-    "start_time": "22:15:00",
-    "end_time": null,
-    "location_name": null,
-    "address": null,
-    "district": null,
-    "latitude": null,
-    "longitude": null,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=ba074bb9bb63f910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "cine",
-      "gratis"
-    ],
-    "schedule": null,
-    "id": "3af1ad827fcb17a4"
-  },
-  {
     "title": "La Bomba del Tiempo - Latina",
     "description": null,
     "start_date": "2026-10-08",
@@ -7634,7 +7484,7 @@
   {
     "title": "La cena",
     "description": "Director. Daniel Gómez Pereira. España, 2025. 106 minutos. Mario Casas, Alberto San Juan, Nora Hernández. Comedia. No recomendada para menores de 12 años. Dos semanas después del fin de la Guerra Civil, Franco solicita una cena en el Hotel Palace. Un maître meticuloso y prisioneros republicanos expertos en cocina deben preparar el banquete... con algo más que un menú tramándose en la cocina.  En la plaza del Cine. Calle de la Fantasía, 13.",
-    "start_date": "2026-07-31",
+    "start_date": "2026-08-28",
     "end_date": "2026-08-28",
     "start_time": "21:45:00",
     "end_time": null,
@@ -7650,10 +7500,6 @@
       "gratis"
     ],
     "schedule": null,
-    "dates": [
-      "2026-07-31",
-      "2026-08-28"
-    ],
     "id": "13e837ea5f2410d6"
   },
   {
@@ -7898,6 +7744,27 @@
     ],
     "schedule": null,
     "id": "1896bec672e41c9f"
+  },
+  {
+    "title": "La noche internacional de los murciélagos",
+    "description": null,
+    "start_date": "2026-08-30",
+    "end_date": "2026-08-30",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro de Información y Educación Ambiental de Dehesa de la Villa",
+    "address": null,
+    "district": "Moncloa-Aravaca",
+    "latitude": 40.45914104116349,
+    "longitude": -3.718270563679269,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=799fa9d4ef7bf910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "fca73245a53a85e9"
   },
   {
     "title": "La profanación de Don Juan (Delirio de Buñuel, Dalí y Lorca)",
@@ -8159,27 +8026,6 @@
     "id": "1375374a459bb571"
   },
   {
-    "title": "Las madres también paramos: ¡nos vamos a la piscina!",
-    "description": null,
-    "start_date": "2026-07-31",
-    "end_date": "2026-07-31",
-    "start_time": "10:00:00",
-    "end_time": null,
-    "location_name": "Espacio de Igualdad María de Maeztu. Latina",
-    "address": "CALLE MARCELINO CASTILLO 29",
-    "district": "Latina",
-    "latitude": 40.39420907754556,
-    "longitude": -3.744687315765447,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=b286b704a921f910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "talleres",
-      "gratis"
-    ],
-    "schedule": null,
-    "id": "3b1df3e64ef8fb8a"
-  },
-  {
     "title": "Las marionetas de la Dehesa y sus cuentos",
     "description": null,
     "start_date": "2026-09-13",
@@ -8199,27 +8045,6 @@
     ],
     "schedule": null,
     "id": "5b8acf9decae27d6"
-  },
-  {
-    "title": "Las Noches de Vicálvaro. Ana Margarida",
-    "description": "Cantante portuguesa de fado, combina tradición y nuevas sonoridades en una trayectoria marcada por el teatro musical y las músicas del mundo. Ganadora del Premio Revelación en la Gala de Fado de Oporto en 2008, ha desarrollado una sólida carrera internacional actuando en destacados escenarios.",
-    "start_date": "2026-07-31",
-    "end_date": "2026-07-31",
-    "start_time": "22:00:00",
-    "end_time": null,
-    "location_name": "Parque Este de Valdebernardo",
-    "address": "AVENIDA DEMOCRACIA 25",
-    "district": "Vicalvaro",
-    "latitude": 40.393429973468265,
-    "longitude": -3.6183833916362733,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=6a2b10b1839fe910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "conciertos",
-      "gratis"
-    ],
-    "schedule": null,
-    "id": "696520e6d393ba9a"
   },
   {
     "title": "Las Noches de Vicálvaro. Ginel",
@@ -8370,8 +8195,8 @@
   {
     "title": "Lengua de signos española (LSE). Rompiendo barreras",
     "description": null,
-    "start_date": "2026-07-03",
-    "end_date": "2026-07-31",
+    "start_date": "2026-08-07",
+    "end_date": "2026-08-28",
     "start_time": "12:00:00",
     "end_time": null,
     "location_name": "Espacio de Igualdad María Zambrano. Chamberí",
@@ -8379,7 +8204,7 @@
     "district": "Chamberi",
     "latitude": 40.433958260960964,
     "longitude": -3.7143358486689415,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=b84eb4d990b5f910VgnVCM100000891ecb1aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=2517d0f56f6bf910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "talleres",
@@ -8471,17 +8296,17 @@
   },
   {
     "title": "Lilo y Stich",
-    "description": "Proyección de película.    Año: 2025 - Estados Unidos.   Duración: 105 minutos.  Edad recomendada para todos los públicos.   Dirección: Dean Fleischer-Camp.  Sinopsis: Remake en imagen real de 'Lilo &amp;amp; Stitch'. Narra la hi toria de una niña hawaiana solitaria y un extraterrestre fugitivo que la ayuda a recomponer su rota familia.   Entrada libre hasta completar aforo.",
+    "description": "De Dean Fleischer-Camp. Con Chris Sanders, Zach Galifianakis, Billy Magnussen.  Recomendada para todos los públicos.  Remake en imagen real de ‘Lilo &amp;amp; Stitch’. Narra la historia de una niña hawaiana solitaria y un extraterrestre fugitivo que la ayuda a recomponer su familia rota.",
     "start_date": "2026-08-01",
     "end_date": "2026-08-15",
     "start_time": "22:00:00",
     "end_time": null,
-    "location_name": "Plaza de Daoíz y Velarde",
-    "address": "PLAZA DAOIZ Y VELARDE 2",
-    "district": "Retiro",
-    "latitude": 40.402190438836826,
-    "longitude": -3.6772826298329093,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=db2877ff9930f910VgnVCM200000f921e388RCRD",
+    "location_name": "Auditorio al Aire Libre Recinto Ferial Vicálvaro",
+    "address": "PASEO POLIDEPORTIVO 142",
+    "district": "Vicalvaro",
+    "latitude": 40.40612285515847,
+    "longitude": -3.5967208460494637,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=552b93a4bac1f910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "cine",
@@ -8819,7 +8644,7 @@
   {
     "title": "Los pecadores",
     "description": "De Ryan Coogler    Tratando de dejar atrás sus problemáticas aunque exitosas vidas en Chicago, dos hermanos gemelos (Jordan) regresan a su pueblo natal para empezar de nuevo montando un club de blues, solo para descubrir que un mal aún mayor les espera para darles la bienvenida.     No recomendada para menores de 16 años",
-    "start_date": "2026-07-31",
+    "start_date": "2026-08-09",
     "end_date": "2026-08-09",
     "start_time": "22:00:00",
     "end_time": null,
@@ -8835,25 +8660,21 @@
       "gratis"
     ],
     "schedule": null,
-    "dates": [
-      "2026-07-31",
-      "2026-08-09"
-    ],
     "id": "da9c7c261155aac9"
   },
   {
     "title": "Los tipos malos 2",
-    "description": "De Pierre Perifel, JP Sans. Animación.    Un genial equipo de animales que no respetan la ley, los ahora muy reformados Tipos Malos, se esfuerzan (mucho, muchísimo) en ser buenos, pero se ven envueltos involuntariamente en un golpe de envergadura mundial planeado por un inesperado grupo de criminales: las Tipas Malas.     Apta para todos los públicos y especialmente recomendada para la infancia",
+    "description": null,
     "start_date": "2026-08-01",
     "end_date": "2026-08-15",
-    "start_time": "22:00:00",
+    "start_time": "22:15:00",
     "end_time": null,
-    "location_name": "Instalación Deportiva Municipal Básica Parque El Calero",
-    "address": "CALLE VIRGEN DE NURIA 4",
-    "district": "CiudadLineal",
-    "latitude": 40.43580006579458,
-    "longitude": -3.6532953172963816,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=58fccc57db79e910VgnVCM200000f921e388RCRD",
+    "location_name": "Parque Eva Duarte",
+    "address": "CALLE DOCTOR GOMEZ ULLA 9",
+    "district": "Salamanca",
+    "latitude": 40.42985671996897,
+    "longitude": -3.668031432543624,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c201578e0420f910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "cine",
@@ -9166,27 +8987,6 @@
     ],
     "schedule": null,
     "id": "a98452c42981bf37"
-  },
-  {
-    "title": "Mamma Mía!",
-    "description": "Año: 2008 Duración: 108 min. País: Reino Unido  Género: Musical, comedia, comedia romántica, música, bodas y película de culto.  Sinopsis: Versión cinematográfica del popular musical de ABBA. Una joven (Amanda Seyfried) que ha crecido en una pequeña isla griega, ha sido educada por una madre rebelde y poco convencional (Streep), que siempre se ha negado a revelarle la identidad de su padre. Cuando, por fin, parece que la joven está a punto de saberlo, aparecen tres posibles candidatos (Brosna...",
-    "start_date": "2026-07-31",
-    "end_date": "2026-07-31",
-    "start_time": "22:00:00",
-    "end_time": null,
-    "location_name": "Parque del Pueblo del Pardo",
-    "address": "AVENIDA GUARDIA 4",
-    "district": "Fuencarral-ElPardo",
-    "latitude": 40.5186002228516,
-    "longitude": -3.7753787533567573,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=6053342dd4d1f910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "cine",
-      "gratis"
-    ],
-    "schedule": null,
-    "id": "d977c5664c962d72"
   },
   {
     "title": "Mandalas: despeja tu mente",
@@ -9787,18 +9587,18 @@
     "id": "49343559f1c7b025"
   },
   {
-    "title": "Misión imposible: sentencia final",
-    "description": "El agente Ethan Hunt continúa su misión de impedir que Gabriel controle el tecnológicamente omnipotente programa de IA conocido como 'la Entidad'.  Año: 2025  Director: Christopher McQuarrie  Duración: 169 min  Edad: No recomendada para menores de 12 años.",
+    "title": "Misión imposible: Sentencia final",
+    "description": "De Christopher McQuarrie. Con Tom Cruise, Simon Pegg, Rebecca Ferguson.  Recomendada a partir de doce años.  El agente Ethan Hunt continúa su misión de impedir que Gabriel controle el tecnológicamente omnipotente programa de IA conocido como ‘the Entity’. Octava entrega de la franquicia 'Misión Imposible', continuación de 'Dead Reckoning Part One'.",
     "start_date": "2026-08-07",
     "end_date": "2026-08-22",
     "start_time": "22:15:00",
     "end_time": null,
-    "location_name": "Parque de Salvador Allende",
-    "address": "CALLE SALVADOR ALLENDE 3",
-    "district": "Carabanchel",
-    "latitude": 40.364341448699825,
-    "longitude": -3.757402071835875,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7dd9cfac9f63f910VgnVCM200000f921e388RCRD",
+    "location_name": "Auditorio al aire libre. Parque de Canillejas",
+    "address": "CALLE NECTAR 32",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.442611374955234,
+    "longitude": -3.611167964373918,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5a8436ea9eabe910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "cine",
@@ -9902,6 +9702,31 @@
     "id": "06464d5abfd20203"
   },
   {
+    "title": "Móviles. Espacio de Igualdad María Moliner",
+    "description": null,
+    "start_date": "2026-08-04",
+    "end_date": "2026-08-18",
+    "start_time": "11:00:00",
+    "end_time": null,
+    "location_name": "Espacio de Igualdad María Moliner. Villa de Vallecas",
+    "address": "CALLE HONRUBIA 4",
+    "district": "VillaDeVallecas",
+    "latitude": 40.37128211425518,
+    "longitude": -3.6292460351699867,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=eed637895a7bf910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "schedule": {
+      "1": [
+        "11:00:00"
+      ]
+    },
+    "id": "c0c75a8e41e00205"
+  },
+  {
     "title": "Movimiento y meditación en el Parque Valdebernardo",
     "description": null,
     "start_date": "2026-08-03",
@@ -9952,17 +9777,17 @@
   },
   {
     "title": "Mufasa, el rey león",
-    "description": "De Barry Jenkins. Animación    Rafiki, Timón y Pumba le cuentan la leyenda de Mufasa a la joven cachorro de león Kiara, hija de Simba y Nala. La historia se cuenta en flashbacks y presenta a Mufasa como un cachorro huérfano, perdido y solo hasta que conoce a un simpático león llamado Taka, heredero de un linaje real. Este encuentro casual pone en marcha un viaje de un extraordinario grupo de inadaptados que buscan su destino. Y sus vínculos se pondrán a prueba mientras trabajan juntos para es...",
+    "description": null,
     "start_date": "2026-08-01",
     "end_date": "2026-08-22",
-    "start_time": "22:00:00",
+    "start_time": "22:15:00",
     "end_time": null,
-    "location_name": "Instalación Deportiva Municipal Básica Parque El Calero",
-    "address": "CALLE VIRGEN DE NURIA 4",
-    "district": "CiudadLineal",
-    "latitude": 40.43580006579458,
-    "longitude": -3.6532953172963816,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=f082cc57db79e910VgnVCM200000f921e388RCRD",
+    "location_name": "Parque Eva Duarte",
+    "address": "CALLE DOCTOR GOMEZ ULLA 9",
+    "district": "Salamanca",
+    "latitude": 40.42985671996897,
+    "longitude": -3.668031432543624,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=cf6d6f5ae820f910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "cine",
@@ -10017,27 +9842,6 @@
     ],
     "schedule": null,
     "id": "f95276d89dc6e5dd"
-  },
-  {
-    "title": "Mulán",
-    "description": "Mulán lo arriesga todo por amor a su familia y a su país hasta convertirse en una de las mayores guerreras de la historia de China. Cuando el emperador decreta que un hombre de cada familia debe servir en el Ejército Imperial para defender al país de los invasores del norte, Hua Mulán, la hija mayor de un condecorado guerrero, decide ocupar el lugar de su padre enfermo. Haciéndose pasar por un hombre, Hua Jun, se enfrenta a constantes desafíos y deberá aprender a canalizar su fuerza interior ...",
-    "start_date": "2026-07-31",
-    "end_date": "2026-07-31",
-    "start_time": "22:00:00",
-    "end_time": null,
-    "location_name": "Parque de Villa Rosa-Paco Caño",
-    "address": "CALLE ACONCAGUA 2",
-    "district": "Hortaleza",
-    "latitude": 40.468674190501815,
-    "longitude": -3.631588640594873,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=55bc07a260cae910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "cine",
-      "gratis"
-    ],
-    "schedule": null,
-    "id": "56b946e59e4c28ab"
   },
   {
     "title": "Mulán (2020)",
@@ -10675,31 +10479,6 @@
     "id": "78af58fd46113cb2"
   },
   {
-    "title": "Parque y Salud - Deporte en la calle - Distrito de Villaverde",
-    "description": "Disfruta de una experiencia completa al aire libre. Camina, muévete y activa tu cuerpo en cada sesión llena de energía y bienestar. Comenzaremos con un paseo relajante de aproximadamente una hora, seguido de una variedad de actividades como gimnasia de mantenimiento, juegos tradicionales, zumba y yoga. Es la oportunidad perfecta para cuidar tu salud y divertirte. ¡Te esperamos!  &#55357;&#56518; Martes y miércoles de 10:30 a 12:30 horas:     ➡️ IDB Los Rosales : Avenida de Los Rosales, nº 133...",
-    "start_date": "2025-10-01",
-    "end_date": "2026-07-31",
-    "start_time": "17:00:00",
-    "end_time": null,
-    "location_name": "Centro Municipal de Mayores Miguel Delibes",
-    "address": "AVENIDA FELICIDAD 26",
-    "district": "Villaverde",
-    "latitude": 40.35881548932917,
-    "longitude": -3.688387122923563,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=da1785aaf3e4a910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "deportes",
-      "gratis"
-    ],
-    "schedule": {
-      "3": [
-        "17:00:00"
-      ]
-    },
-    "id": "5cb74827fb9ea6f2"
-  },
-  {
     "title": "Paseo histórico Prado Recoletos I",
     "description": "A lo largo de 2 horas se recorre uno de los entornos más emblemáticos de Madrid, la primera parte del Eje Prado-Recoletos, cuyos terrenos originalmente pertenecían a los Jardines de El Buen Retiro. Durante este recorrido se realiza un profundo análisis de dos de sus facetas más llamativas: la evolución histórica de este particular entorno y la riqueza botánica del mismo. Dirigido a público adulto.  Duración estimada: aproximadamente 2 horas.     Necesaria inscripción previa.  La inscripción s...",
     "start_date": "2026-09-10",
@@ -10746,6 +10525,27 @@
     "id": "132aa2eb412fbe69"
   },
   {
+    "title": "Paseo por el Parque Tierno Galván y visita al Planetario",
+    "description": null,
+    "start_date": "2026-08-03",
+    "end_date": "2026-08-03",
+    "start_time": "10:00:00",
+    "end_time": null,
+    "location_name": "Espacio de Igualdad Emilia Pardo Bazán. Ciudad Lineal",
+    "address": "AVENIDA BADAJOZ 60",
+    "district": "CiudadLineal",
+    "latitude": 40.442311100791215,
+    "longitude": -3.6534806246311913,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=dbe2060d607bf910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "8c6db78bd32080b8"
+  },
+  {
     "title": "Pateando la Dehesa, un viaje a través de la historia de Madrid",
     "description": null,
     "start_date": "2026-09-06",
@@ -10765,6 +10565,34 @@
     ],
     "schedule": null,
     "id": "5c66276bd2e930e2"
+  },
+  {
+    "title": "Paula Comitre",
+    "description": null,
+    "start_date": "2026-11-06",
+    "end_date": "2026-11-07",
+    "start_time": null,
+    "end_time": null,
+    "location_name": "Centro Danza Matadero - CDM",
+    "address": "PASEO CHOPERA 14",
+    "district": "Arganzuela",
+    "latitude": 40.39245798191536,
+    "longitude": -3.6972067902718897,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=31a4dfa83d7bf910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "danza"
+    ],
+    "schedule": {
+      "0": [],
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": []
+    },
+    "id": "2effaaaf9e4cd5eb"
   },
   {
     "title": "Pedaleando en verde. Conoce la Dehesa en bici",
@@ -10853,34 +10681,6 @@
     ],
     "schedule": null,
     "id": "3ba833f5c6e4661d"
-  },
-  {
-    "title": "Permanencia del instante pasado",
-    "description": "Exposición.   Inauguración Domingo 5 de julio a las 12.   Edad: Todos los públicos.  Sinopsis: A partir de paisajes habitados y recordados, esta exposición reflexiona sobre la impermanencia, la memoria y el vínculo entre ser humano y naturaleza. Las obras surgen del deseo de detener un instante fugaz y conservar su huella emocional, recordándonos que tanto nosotros como el paisaje estamos en constante transformación.",
-    "start_date": "2026-07-01",
-    "end_date": "2026-07-31",
-    "start_time": null,
-    "end_time": null,
-    "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
-    "address": "CALLE DOCTOR TOLOSA LATOUR 16",
-    "district": "Usera",
-    "latitude": 40.374166248648216,
-    "longitude": -3.7032220308808577,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=bdd11ee6635de910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "exposiciones",
-      "gratis"
-    ],
-    "schedule": {
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": [],
-      "6": []
-    },
-    "id": "c4db1fb6a3976df2"
   },
   {
     "title": "Permiso para pausar",
@@ -11111,34 +10911,6 @@
       "6": []
     },
     "id": "212c506d472aafa5"
-  },
-  {
-    "title": "Piragüismo por Madrid 2025/2026",
-    "description": null,
-    "start_date": "2025-09-01",
-    "end_date": "2026-07-31",
-    "start_time": null,
-    "end_time": null,
-    "location_name": "Parque Juan Carlos I",
-    "address": "GLORIETA S.A.R. DON JUAN DE BORBON Y BATTEMBERG, 5 5",
-    "district": "Barajas",
-    "latitude": 40.45999848510341,
-    "longitude": -3.6148888706303586,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=cd1f1059466a7910VgnVCM2000001f4a900aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "deportes"
-    ],
-    "schedule": {
-      "0": [],
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": [],
-      "6": []
-    },
-    "id": "46bbdc7f78e45f0b"
   },
   {
     "title": "Planeta funerario",
@@ -11411,6 +11183,27 @@
     "id": "6f9feff50f234810"
   },
   {
+    "title": "Presentación del libro. El libro de Drox.",
+    "description": "Título: El libro de Drox.     Autor: Marcos Igual.    Editorial:   Ilusostudio Editorial.    Sinopsis: En la remota isla de Negalia, bajo el manto de la luna y la primera tormenta en meses, una pequeña posada sirve de refugio a siete seres muy dispares. Aunque todavía no se conocen, esa noche descubrirán que comparten un objetivo común: investigar la aparición de unos demonios que arrasan pueblos enteros sin dejar supervivientes. Juntos se embarcarán en la que, probablemente, sea la mayor y m...",
+    "start_date": "2026-09-03",
+    "end_date": "2026-09-03",
+    "start_time": "19:00:00",
+    "end_time": null,
+    "location_name": "Centro Cultural el Torito (Moratalaz)",
+    "address": "AVENIDA MORATALAZ 130",
+    "district": "Moratalaz",
+    "latitude": 40.40610655994401,
+    "longitude": -3.646521482592748,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8f4b5279607bf910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conferencias",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "40d839caa9652605"
+  },
+  {
     "title": "Programación Temporada 2026 / 2027",
     "description": null,
     "start_date": "2026-09-01",
@@ -11541,35 +11334,6 @@
       "6": []
     },
     "id": "ac17df6b0e4f5768"
-  },
-  {
-    "title": "Puntos de intercambio de libros",
-    "description": null,
-    "start_date": "2025-11-25",
-    "end_date": "2026-07-31",
-    "start_time": null,
-    "end_time": null,
-    "location_name": "Centro Cultural Gloria Fuertes (Barajas)",
-    "address": "AVENIDA LOGROÑO 179",
-    "district": "Barajas",
-    "latitude": 40.4606308732073,
-    "longitude": -3.59366944150524,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=461b77bc410ca910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "otros",
-      "gratis"
-    ],
-    "schedule": {
-      "0": [],
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": [],
-      "6": []
-    },
-    "id": "15c52658649d9cfa"
   },
   {
     "title": "Puntos de intercambio gratuitos de libros en los Centros Culturales de Barajas",
@@ -12254,6 +12018,26 @@
     "id": "9866aba6274ac650"
   },
   {
+    "title": "Rufus T. Firefly",
+    "description": null,
+    "start_date": "2027-01-22",
+    "end_date": "2027-01-22",
+    "start_time": "20:00:00",
+    "end_time": null,
+    "location_name": "Teatro Circo Price",
+    "address": "RONDA ATOCHA 35",
+    "district": "Arganzuela",
+    "latitude": 40.40596936645757,
+    "longitude": -3.698589986849812,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a19fa9b57e6bf910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "destacado"
+    ],
+    "schedule": null,
+    "id": "ad17fa1995d9abf6"
+  },
+  {
     "title": "Ruta interpretativa por el Parque Forestal de Valdemingómez (sábados)",
     "description": null,
     "start_date": "2026-09-05",
@@ -12695,35 +12479,6 @@
     "id": "2bd05d74d8de7a84"
   },
   {
-    "title": "Señal del vacío. Por Sami Shaldoum",
-    "description": "Horario de lunes a viernes de 10:30 a 13:30 y de 16:30 a 19:30 horas.  Edad recomendada: todos los públicos. Entrada libre.  Sinopsis: El artista Sami Shaldoum, vecino del distrito, trata de entender la realidad del mundo través de la creatividad y el simbolismo. Una exposición totalmente cautivadora.",
-    "start_date": "2026-06-16",
-    "end_date": "2026-07-31",
-    "start_time": null,
-    "end_time": null,
-    "location_name": "Salón y sala de exposiciones en Junta Municipal de Usera",
-    "address": "AVENIDA RAFAELA YBARRA 41",
-    "district": "Usera",
-    "latitude": 40.3823867401053,
-    "longitude": -3.710861696949648,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=f0b6568972e6e910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "exposiciones",
-      "gratis"
-    ],
-    "schedule": {
-      "0": [],
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": [],
-      "6": []
-    },
-    "id": "7f99b328027a9748"
-  },
-  {
     "title": "Servicio de Asesoramiento de Vivienda",
     "description": "El Ayuntamiento de Madrid en colaboración con el Ilustre Colegio de Abogados de Madrid, ofrece al ciudadano el Servicio de Asesoramiento de Vivienda (SAV). Son puntos de atención para información y asesoramiento jurídico en materia de vivienda de la Ciudad de Madrid sobre marco normativo de vivienda protegida, comunidad de propietarios, cooperativas y comunidad de bienes en relación con la vivienda, tributación, gestión notarial, registral y catastral, alquiler, compraventa y conación de vivi...",
     "start_date": "2025-10-09",
@@ -12893,48 +12648,6 @@
     ],
     "schedule": null,
     "id": "cd48e83478358de0"
-  },
-  {
-    "title": "Sirat, trance en el desierto",
-    "description": "De Oliver Laxe. Con Sergi López y Bruno Nuñez.    Un padre y su hijo viajan a Marruecos para buscar a la hija desaparecida en el ambiente de las raves. Siguiendo a un grupo de jóvenes hasta una fiesta en el desierto, se adentran en un mundo desconocido con la esperanza de encontrarla.     No recomendada para menores de 16 años",
-    "start_date": "2026-07-31",
-    "end_date": "2026-07-31",
-    "start_time": "22:00:00",
-    "end_time": null,
-    "location_name": "Instalación Deportiva Municipal Básica Parque El Calero",
-    "address": "CALLE VIRGEN DE NURIA 4",
-    "district": "CiudadLineal",
-    "latitude": 40.43580006579458,
-    "longitude": -3.6532953172963816,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=290dcc57db79e910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "cine",
-      "gratis"
-    ],
-    "schedule": null,
-    "id": "0b094df47e309509"
-  },
-  {
-    "title": "Sirât. Trance en el desierto",
-    "description": null,
-    "start_date": "2026-07-31",
-    "end_date": "2026-07-31",
-    "start_time": "22:15:00",
-    "end_time": null,
-    "location_name": "Parque Eva Duarte",
-    "address": "CALLE DOCTOR GOMEZ ULLA 9",
-    "district": "Salamanca",
-    "latitude": 40.42985671996897,
-    "longitude": -3.668031432543624,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=b770578e0420f910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "cine",
-      "gratis"
-    ],
-    "schedule": null,
-    "id": "af44782adb07fb23"
   },
   {
     "title": "Smoked bourbon",
@@ -13344,27 +13057,6 @@
     "id": "ea585febbe47c991"
   },
   {
-    "title": "Taller de Cianotipia",
-    "description": null,
-    "start_date": "2026-07-31",
-    "end_date": "2026-07-31",
-    "start_time": "10:30:00",
-    "end_time": null,
-    "location_name": "Centro de Educación Ambiental El Retiro",
-    "address": "PASEO FERNAN NUÑEZ 2",
-    "district": "Retiro",
-    "latitude": 40.40943503279114,
-    "longitude": -3.6861797800993257,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5adab2de0feee910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "otros",
-      "gratis"
-    ],
-    "schedule": null,
-    "id": "7664bb6487147f6e"
-  },
-  {
     "title": "Taller de ciencia y experimentos",
     "description": "De 8 a 14 años. Actividad científica con experimentos adaptados al público infantil.  Acceso libre.  Sin inscripción. Ocio saludable.  De 11 a 14 horas en la plaza de los Ojos de la Mezquita (San Fermín).",
     "start_date": "2026-09-27",
@@ -13470,6 +13162,49 @@
     "id": "a8b4e184ea7f15a9"
   },
   {
+    "title": "Taller de escritura creativa, con Javier Arriero",
+    "description": null,
+    "start_date": "2026-10-13",
+    "end_date": "2026-10-29",
+    "start_time": "18:30:00",
+    "end_time": null,
+    "location_name": "Biblioteca Pública Municipal Miguel Delibes (Moratalaz)",
+    "address": "CALLE ARROYO BELINCOSO 11",
+    "district": "Moratalaz",
+    "latitude": 40.40971737692924,
+    "longitude": -3.6529822109115133,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=53f71fe32d7bf910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "schedule": {
+      "0": [
+        "18:30:00"
+      ],
+      "1": [
+        "18:30:00"
+      ],
+      "2": [
+        "18:30:00"
+      ],
+      "3": [
+        "18:30:00"
+      ],
+      "4": [
+        "18:30:00"
+      ],
+      "5": [
+        "18:30:00"
+      ],
+      "6": [
+        "18:30:00"
+      ]
+    },
+    "id": "7030b1c9615c5272"
+  },
+  {
     "title": "Taller de fotobordado - Villa de Vallecas",
     "description": null,
     "start_date": "2026-11-26",
@@ -13492,7 +13227,7 @@
   },
   {
     "title": "Taller de huerto familiar",
-    "description": "El huerto es una herramienta didáctica muy atractiva para trabajar la concienciación ambiental, los hábitos saludables y las relaciones sociales. Los más pequeños disfrutarán en contacto con la tierra y aprenderán valores como la responsabilidad y el trabajo colaborativo. Se realizarán las tareas necesarias para mantener el huerto en esta época. Actividades para familias con menores de entre 6 y 12 años.  Duración estimada: aproximadamente 1 hora y media.     Necesaria inscripción previa. La ...",
+    "description": "El huerto es una herramienta didáctica muy atractiva para trabajar la concienciación ambiental, los hábitos saludables y las relaciones sociales. Los más pequeños disfrutan en contacto con la tierra y aprenden valores como la responsabilidad y el trabajo colaborativo. Se realizarán las tareas necesarias para mantener el huerto en esta época del año. Dirigido a familias con menores de 6 a 12 años.  Duración estimada: aproximadamente 1 hora y media.    Necesaria inscripción previa. La inscripci...",
     "start_date": "2026-08-16",
     "end_date": "2026-09-27",
     "start_time": "10:30:00",
@@ -13502,7 +13237,7 @@
     "district": "Retiro",
     "latitude": 40.40943503279114,
     "longitude": -3.6861797800993257,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=bc6bef951fa33810VgnVCM1000001d4a900aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=e1761f7a68a33810VgnVCM1000001d4a900aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "otros",
@@ -13564,6 +13299,30 @@
       ]
     },
     "id": "5b64dddf28894dae"
+  },
+  {
+    "title": "Taller de Memoria en la Biblioteca Miguel Delibes",
+    "description": null,
+    "start_date": "2026-10-06",
+    "end_date": "2027-06-09",
+    "start_time": null,
+    "end_time": null,
+    "location_name": "Biblioteca Pública Municipal Miguel Delibes (Moratalaz)",
+    "address": "CALLE ARROYO BELINCOSO 11",
+    "district": "Moratalaz",
+    "latitude": 40.40971737692924,
+    "longitude": -3.6529822109115133,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=3343336f3e7bf910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "schedule": {
+      "1": [],
+      "2": []
+    },
+    "id": "9a08b85ca24e2e18"
   },
   {
     "title": "Taller de observación de estrellas",
@@ -13796,20 +13555,20 @@
   },
   {
     "title": "Talleres Sábados Locos",
-    "description": "VIAJE AL ESPACIO   Pase 1 de 11 a 12h (edades de 3 a 7 años)   Pase 2 de 12 a 13h (edades de 8 a 12 años)   Cía. Astro Afición   Actividad gratuita. Máximo de 30 personas/pase   Edad recomendada: De 3 a 12 años (Menores de 5  años acompañados por adultos)   Duración: 60 minutos     Sinopsis: Viaje al espacio es una experiencia astronómica completa para los más pequeños, quienes disfrutarán de un planetario 360.... La experiencia consta de un recorrido por el espacio y un taller de constelacio...",
+    "description": "Los 'Sábados Locos' son una propuesta lúdica y participativa diseñada para los más pequeños, acompañados por un adulto, que quieren jugar, crear y explorar juntos. Estos encuentros convierten cuatro talleres dinámicos en una experiencia divertida, organizada y siempre cambiante.    Cada sesión está estructurada para que 60 niños participen rotativamente en dos talleres distintos, de modo que cada media hora cambian de actividad y experimentan todas las propuestas creativas programadas. Una de...",
     "start_date": "2026-09-19",
     "end_date": "2026-09-26",
-    "start_time": "11:00:00",
+    "start_time": "11:30:00",
     "end_time": null,
     "location_name": "Centro Cultural Galileo (Chamberí)",
     "address": "CALLE GALILEO 39",
     "district": "Chamberi",
     "latitude": 40.433719454283505,
     "longitude": -3.7104468992841753,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=75edafe29cd6e910VgnVCM200000f921e388RCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=f8a2a9262ad6e910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
-      "otros",
+      "teatro",
       "gratis"
     ],
     "schedule": null,
@@ -14059,6 +13818,27 @@
     "id": "26e6c00a01ec0c87"
   },
   {
+    "title": "Tarde de bicis",
+    "description": "Desde el Punto Juvenil, queremos tener una tarde diferente. Se el más rápido y reserva tu plaza.",
+    "start_date": "2026-09-15",
+    "end_date": "2026-09-15",
+    "start_time": "17:00:00",
+    "end_time": null,
+    "location_name": null,
+    "address": null,
+    "district": null,
+    "latitude": null,
+    "longitude": null,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=b217060d607bf910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "deportes",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "2e9be2d2d3dddf56"
+  },
+  {
     "title": "Tatuajes Temporales",
     "description": "De 17:30 a 21:30 horas.   Actividad gratuita para jóvenes de 14 a 30 años. Acceso libre y sin inscripción previa, enmarcada en un programa de ocio saludable.",
     "start_date": "2026-09-26",
@@ -14103,31 +13883,6 @@
       ]
     },
     "id": "fff368c995c8682d"
-  },
-  {
-    "title": "Teatro corporal",
-    "description": null,
-    "start_date": "2026-07-03",
-    "end_date": "2026-07-31",
-    "start_time": "12:00:00",
-    "end_time": null,
-    "location_name": "Espacio de Igualdad Carme Chacón. Hortaleza",
-    "address": "CALLE MATAPOZUELOS 2",
-    "district": "Hortaleza",
-    "latitude": 40.46155641637237,
-    "longitude": -3.6501714580414126,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5a269ff08214f910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "talleres",
-      "gratis"
-    ],
-    "schedule": {
-      "4": [
-        "12:00:00"
-      ]
-    },
-    "id": "340dea31f715df55"
   },
   {
     "title": "Teatro. Cyrano de Bergerac",
@@ -14986,6 +14741,40 @@
     "id": "7533c5467abf93af"
   },
   {
+    "title": "Verano de serie con mirada de mujer",
+    "description": null,
+    "start_date": "2026-08-04",
+    "end_date": "2026-08-07",
+    "start_time": "12:00:00",
+    "end_time": null,
+    "location_name": "Espacio de Igualdad María Moliner. Villa de Vallecas",
+    "address": "CALLE HONRUBIA 4",
+    "district": "VillaDeVallecas",
+    "latitude": 40.37128211425518,
+    "longitude": -3.6292460351699867,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8cbcc3507b7bf910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "schedule": {
+      "1": [
+        "12:00:00"
+      ],
+      "2": [
+        "12:00:00"
+      ],
+      "3": [
+        "12:00:00"
+      ],
+      "4": [
+        "12:00:00"
+      ]
+    },
+    "id": "40fba1682a38a7b3"
+  },
+  {
     "title": "Veranos de la Villa en Villaverde",
     "description": null,
     "start_date": "2026-06-15",
@@ -15168,6 +14957,27 @@
     "id": "2f7a7d3ccd320cd0"
   },
   {
+    "title": "Visita al Museo de Historia de Madrid",
+    "description": null,
+    "start_date": "2026-08-13",
+    "end_date": "2026-08-13",
+    "start_time": "10:00:00",
+    "end_time": null,
+    "location_name": "Espacio de Igualdad Emilia Pardo Bazán. Ciudad Lineal",
+    "address": "AVENIDA BADAJOZ 60",
+    "district": "CiudadLineal",
+    "latitude": 40.442311100791215,
+    "longitude": -3.6534806246311913,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=1936060d607bf910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "81bf630bad6edaec"
+  },
+  {
     "title": "Visita Guiada",
     "description": "Visita Guiada: El Defensor del Pueblo   Lugar de encuentro: Calle Zurbano,42  Hora: 11 h.  Plazas: 25 personas.  Inscripciones: a partir del 18 de septiembre a las 9 h, a través del siguiente enlace.",
     "start_date": "2026-09-25",
@@ -15212,6 +15022,27 @@
       ]
     },
     "id": "421dc1b6142c80e2"
+  },
+  {
+    "title": "Visita guiada al Museo Nacional Centro de Arte Reina Sofía",
+    "description": null,
+    "start_date": "2026-08-07",
+    "end_date": "2026-08-07",
+    "start_time": "10:00:00",
+    "end_time": null,
+    "location_name": "Espacio de Igualdad Juana Doña. Arganzuela",
+    "address": "PASEO CHOPERA 10",
+    "district": "Arganzuela",
+    "latitude": 40.39307289237465,
+    "longitude": -3.699005654074825,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=4fb9d97eb4fcd910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "373a0e62d6bf980e"
   },
   {
     "title": "Visitas familiares al Parque Tecnológico de Valdemingómez (taller medioambiental)",
@@ -15485,33 +15316,6 @@
     "id": "aaeb4ddecb82a6e6"
   },
   {
-    "title": "XIII Verano Retiro sur",
-    "description": null,
-    "start_date": "2026-07-01",
-    "end_date": "2026-07-31",
-    "start_time": null,
-    "end_time": null,
-    "location_name": "Centro Cultural Las Californias (Retiro)",
-    "address": "CALLE LUIS PEIDRO 2",
-    "district": "Retiro",
-    "latitude": 40.397021560779024,
-    "longitude": -3.6738766514153163,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5bbb352890edd910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "infantil",
-      "gratis"
-    ],
-    "schedule": {
-      "0": [],
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": []
-    },
-    "id": "6d2291aedcf1ad8b"
-  },
-  {
     "title": "XUsera Play Fest",
     "description": "De 8 a 14 años. Festival de bienvenida con juegos y actividades en movimiento para niñas y niños.  Acceso libre.  Sin inscripción. Ocio saludable.  De 11 a 14 horas en la plaza del Pueblo (Orcasur).",
     "start_date": "2026-09-12",
@@ -15601,6 +15405,26 @@
     ],
     "schedule": null,
     "id": "29924a3819f9b671"
+  },
+  {
+    "title": "Yerai Cortés",
+    "description": null,
+    "start_date": "2027-01-20",
+    "end_date": "2027-01-20",
+    "start_time": "20:00:00",
+    "end_time": null,
+    "location_name": "Teatro Circo Price",
+    "address": "RONDA ATOCHA 35",
+    "district": "Arganzuela",
+    "latitude": 40.40596936645757,
+    "longitude": -3.698589986849812,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=b69f98813b6bf910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "destacado"
+    ],
+    "schedule": null,
+    "id": "476afd5b8cdb922b"
   },
   {
     "title": "Yerma",
@@ -15735,31 +15559,6 @@
     "id": "edfc09a35c04b0f6"
   },
   {
-    "title": "Yo quiero bailar...",
-    "description": null,
-    "start_date": "2026-07-03",
-    "end_date": "2026-07-31",
-    "start_time": "10:30:00",
-    "end_time": null,
-    "location_name": "Espacio de Igualdad Carme Chacón. Hortaleza",
-    "address": "CALLE MATAPOZUELOS 2",
-    "district": "Hortaleza",
-    "latitude": 40.46155641637237,
-    "longitude": -3.6501714580414126,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=ee5091cfe954f910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "danza",
-      "gratis"
-    ],
-    "schedule": {
-      "4": [
-        "10:30:00"
-      ]
-    },
-    "id": "e301d69bec809a4e"
-  },
-  {
     "title": "Yoga y armonía",
     "description": null,
     "start_date": "2026-08-10",
@@ -15811,27 +15610,6 @@
       ]
     },
     "id": "8ff55d7a8ddaa031"
-  },
-  {
-    "title": "Zepita Cantacuentos",
-    "description": "PROGRAMACIÓN INFANTIL TEATRO -CLOWN Carmen Olivera Espectáculo interactivo para contar las historias que cuentan las canciones y de cantar las historias que cuentan los cuentos. Canciones de María Elena Walsh, del cancionero popular español, y fábulas de Lafontaine, apoyadas con acordeón, guitarra, concertina, panderos y maracas. Recomendado a partir de cuatro años. Intérprete Lengua de signos.",
-    "start_date": "2026-07-31",
-    "end_date": "2026-07-31",
-    "start_time": "20:00:00",
-    "end_time": null,
-    "location_name": "Parque de la Montaña. Junto a Templo de Debod (Moncloa-Aravaca)",
-    "address": "PARQUE DE LA MONTAÑA 0",
-    "district": "Moncloa-Aravaca",
-    "latitude": 40.424723,
-    "longitude": -3.717977,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=df53737566d1f910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "teatro",
-      "gratis"
-    ],
-    "schedule": null,
-    "id": "15d31fbe50d74c37"
   },
   {
     "title": "'A caballitos' con Roberto Mezquita",
@@ -16204,14 +15982,14 @@
     "description": "Éxtasis Místico se presenta como una experiencia inclusiva, contemporánea y profundamente sensorial, articulada a partir de una cuidada selección de textos de autoras místicas del Siglo de Oro, como Santa Teresa de Jesús y Sor Juana Inés de la Cruz. La pieza invita al espectador a sumergirse en un universo evocador donde la palabra, la música y las artes visuales dialogan con el legado de estas figuras memorables.   Dirección: Paula Rodriguez. Dramaturgia: Paula Rodriguez a partir de textos d...",
     "start_date": "2026-08-06",
     "end_date": "2026-08-25",
-    "start_time": "18:00:00",
+    "start_time": "17:15:00",
     "end_time": null,
     "location_name": "Museo de San Isidro. Los Orígenes de Madrid",
     "address": "PLAZA SAN ANDRES 2",
     "district": "Centro",
     "latitude": 40.41207900253883,
     "longitude": -3.7108161027466378,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=2f99717d065de910VgnVCM200000f921e388RCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7b9f1205255de910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "teatro",
@@ -16223,6 +16001,27 @@
       "2026-08-25"
     ],
     "id": "832ce4a45d4304e0"
+  },
+  {
+    "title": "'Florece nuestro jardín'",
+    "description": "¿Sabíais que hay historias que florecen y que pueden enseñarnos grandes cosas? Pues una vez más, necesitamos tu ayuda para hacer florecer el jardín de nuestra biblioteca San Fermín. Ven a este cuentacuentos con actividad para descubrir algunas historias que nos darán el secreto de cómo hacerlo.  A partir de 4 años. Es necesario realizar inscripción previa, desde el 5 de agosto hasta el 2 de septiembre, en este enlace.",
+    "start_date": "2026-09-03",
+    "end_date": "2026-09-03",
+    "start_time": "12:00:00",
+    "end_time": null,
+    "location_name": "Biblioteca Pública Municipal San Fermín (Usera)",
+    "address": "AVENIDA SAN FERMIN 10",
+    "district": "Usera",
+    "latitude": 40.3711623444796,
+    "longitude": -3.692742821990015,
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=0dece9900c7bf910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "schedule": null,
+    "id": "d15af0316e92c767"
   },
   {
     "title": "'FresquiCine' en la Biblioteca David Gistau",
@@ -16302,14 +16101,14 @@
     "description": "Marzo de 1621. Han cerrado los corrales de comedias en señal de luto por la muerte del Rey Felipe III. Tres jóvenes actores se resisten a que el teatro desaparezca y deciden representar clandestinamente cuatro romances populares para un público que arriesga tanto como ellos asistiendo. Varios compañeros no llegan y la Guardia Real acecha. ¿Podrán representar? ¿Pueden tres jóvenes comediantes ser el núcleo de la resistencia?   Dirección: Kai Massieu. Dramaturgia: Alexis Becker. Intérpretes: El...",
     "start_date": "2026-08-05",
     "end_date": "2026-08-05",
-    "start_time": "18:00:00",
+    "start_time": "17:15:00",
     "end_time": null,
     "location_name": "Museo de San Isidro. Los Orígenes de Madrid",
     "address": "PLAZA SAN ANDRES 2",
     "district": "Centro",
     "latitude": 40.41207900253883,
     "longitude": -3.7108161027466378,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=30e5717d065de910VgnVCM200000f921e388RCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=4733a606b35de910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "teatro",
@@ -16517,35 +16316,6 @@
       ]
     },
     "id": "26191418c8639449"
-  },
-  {
-    "title": "'S.XVIII, Reinas y Reyes'",
-    "description": null,
-    "start_date": "2026-07-01",
-    "end_date": "2026-07-31",
-    "start_time": null,
-    "end_time": null,
-    "location_name": "Biblioteca Pública Municipal Benito Pérez Galdós (Centro)",
-    "address": "CALLE CONDE DUQUE 9",
-    "district": "Centro",
-    "latitude": 40.42738668300474,
-    "longitude": -3.7105999955473625,
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=9e54b6e15aade910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "exposiciones",
-      "gratis"
-    ],
-    "schedule": {
-      "0": [],
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": [],
-      "6": []
-    },
-    "id": "18a6f6cb6115975d"
   },
   {
     "title": "'Tardes de juegos' en Miguel Delibes",
