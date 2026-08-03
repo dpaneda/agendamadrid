@@ -331,6 +331,13 @@
     "location_name": "Parque de el Pueblo de El Pardo",
     "district": "Distrito"
   },
+  "b32cd0eb": {
+    "location_name": "Centro Cultural José Luis López Vázquez (San Blas - Canillejas)",
+    "address": "CALLE FEBRERO 4",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.446826729909155,
+    "longitude": -3.5727382893523254
+  },
   "1c1352bf": {
     "location_name": "Biblioteca Pública Municipal David Gistau (Salamanca)",
     "address": "AVENIDA TOREROS 5",
@@ -384,6 +391,13 @@
     "district": "SanBlas-Canillejas",
     "latitude": 40.42997621103139,
     "longitude": -3.6221773579444596
+  },
+  "4710abd1": {
+    "location_name": "Centro Cultural Galileo (Chamberí)",
+    "address": "CALLE GALILEO 39",
+    "district": "Chamberi",
+    "latitude": 40.433719454283505,
+    "longitude": -3.7104468992841753
   },
   "bc9e186b": {
     "location_name": "Centro Cultural Emilia Pardo Bazán (Salamanca)",
@@ -440,13 +454,6 @@
     "latitude": 40.374166248648216,
     "longitude": -3.7032220308808577
   },
-  "4710abd1": {
-    "location_name": "Centro Cultural Galileo (Chamberí)",
-    "address": "CALLE GALILEO 39",
-    "district": "Chamberi",
-    "latitude": 40.433719454283505,
-    "longitude": -3.7104468992841753
-  },
   "dbc8993b": {
     "location_name": "Parque Eva Duarte",
     "address": "CALLE DOCTOR GOMEZ ULLA 9",
@@ -496,12 +503,12 @@
     "latitude": 40.393429973468265,
     "longitude": -3.6183833916362733
   },
-  "ffb69028": {
-    "location_name": "Auditorio al Aire Libre Recinto Ferial Vicálvaro",
-    "address": "PASEO POLIDEPORTIVO 142",
-    "district": "Vicalvaro",
-    "latitude": 40.40612285515847,
-    "longitude": -3.5967208460494637
+  "1a009f5e": {
+    "location_name": "Plaza de Daoíz y Velarde",
+    "address": "PLAZA DAOIZ Y VELARDE 2",
+    "district": "Retiro",
+    "latitude": 40.402190438836826,
+    "longitude": -3.6772826298329093
   },
   "c6c5db82": {
     "location_name": "Centro Cultural Sanchinarro - Hispanidad (Hortaleza)",
@@ -516,13 +523,6 @@
     "district": "Fuencarral-ElPardo",
     "latitude": 40.5186002228516,
     "longitude": -3.7753787533567573
-  },
-  "1a009f5e": {
-    "location_name": "Plaza de Daoíz y Velarde",
-    "address": "PLAZA DAOIZ Y VELARDE 2",
-    "district": "Retiro",
-    "latitude": 40.402190438836826,
-    "longitude": -3.6772826298329093
   },
   "65a790aa": {
     "location_name": "Espacio de Igualdad Berta Cáceres. Usera",
@@ -699,12 +699,6 @@
     "latitude": 40.397074625115906,
     "longitude": -3.7664885474841556
   },
-  "79932781": {
-    "location_name": "Filmoteca Española",
-    "address": "de la Magdalena, 10",
-    "latitude": 40.412287059178,
-    "longitude": -3.702210187912
-  },
   "1e352ee3": {
     "location_name": "COAM",
     "address": "de Hortaleza, 63",
@@ -722,12 +716,6 @@
     "address": "de República de Cuba, 4",
     "latitude": 40.4136275,
     "longitude": -3.6820393
-  },
-  "6b08727e": {
-    "location_name": "Nuevo Teatro Alcalá",
-    "address": "de Jorge Juan, 62",
-    "latitude": 40.423395884533,
-    "longitude": -3.678274154663
   },
   "e28cdcb5": {
     "location_name": "Teatro Apolo",
@@ -830,12 +818,6 @@
     "address": "Mayor",
     "latitude": 40.415513708485,
     "longitude": -3.707402944565
-  },
-  "f8afdb46": {
-    "location_name": "Teatro Soho Madrid",
-    "address": "de España, 6, 1 planta",
-    "latitude": 40.4226029,
-    "longitude": -3.7119024
   },
   "5b0ad2a4": {
     "location_name": "Real Academia de Medicina",
@@ -987,12 +969,6 @@
     "latitude": 40.419292,
     "longitude": -3.7058932
   },
-  "e2ed1fa1": {
-    "location_name": "Instituto Cervantes",
-    "address": "de Alcalá, 49",
-    "latitude": 40.419341,
-    "longitude": -3.695351
-  },
   "24774762": {
     "location_name": "Instituto Cultural de México en España",
     "address": "de San Jerónimo, 46",
@@ -1004,12 +980,6 @@
     "address": "del Prado, 8",
     "latitude": 40.4160406,
     "longitude": -3.6949254
-  },
-  "7b154a93": {
-    "location_name": "Residencia de Estudiantes",
-    "address": "del Pinar, 21-23",
-    "latitude": 40.4406757,
-    "longitude": -3.6879973
   },
   "59c4658b": {
     "location_name": "Depósito elevado de Plaza de Castilla",
@@ -1119,18 +1089,6 @@
     "latitude": 40.4254782,
     "longitude": -3.7078981
   },
-  "b1f7c00c": {
-    "location_name": "Teatro Español",
-    "address": "del Príncipe, 25",
-    "latitude": 40.414945992798,
-    "longitude": -3.700187802315
-  },
-  "dc35bc1f": {
-    "location_name": "Real Academia de Bellas Artes de San Fernando",
-    "address": "de Alcalá, 13",
-    "latitude": 40.4179384,
-    "longitude": -3.7007453
-  },
   "0d7b035c": {
     "location_name": "Teatro Rialto",
     "address": "Gran Vía, 54",
@@ -1155,12 +1113,6 @@
     "latitude": 40.4144227,
     "longitude": -3.697431
   },
-  "044f7fc6": {
-    "location_name": "Gran Teatro CaixaBank Príncipe Pío",
-    "address": "de San Vicente, 44",
-    "latitude": 40.4209943,
-    "longitude": -3.7187873
-  },
   "fc2a84be": {
     "location_name": "Teatro Fígaro",
     "address": "del Doctor Cortezo, 5",
@@ -1172,12 +1124,6 @@
     "address": "de Filipinas, 11",
     "latitude": 40.4415537,
     "longitude": -3.7065042
-  },
-  "d5e60251": {
-    "location_name": "Teatro Alcázar",
-    "address": "de Alcalá, 20",
-    "latitude": 40.4176725,
-    "longitude": -3.6988372
   },
   "ce6a0c87": {
     "location_name": "Real Jardín Botánico",
@@ -1227,6 +1173,12 @@
     "latitude": 40.4590724,
     "longitude": -3.6829776
   },
+  "dc35bc1f": {
+    "location_name": "Real Academia de Bellas Artes de San Fernando",
+    "address": "de Alcalá, 13",
+    "latitude": 40.4179384,
+    "longitude": -3.7007453
+  },
   "62680f0b": {
     "location_name": "Fundación Ortega - Marañón",
     "address": "de Fortuny, 53",
@@ -1269,12 +1221,6 @@
     "latitude": 40.4226158,
     "longitude": -3.6691645
   },
-  "f019fdda": {
-    "location_name": "Capitol Gran Vía",
-    "address": "Gran Vía, 41",
-    "latitude": 40.4204502,
-    "longitude": -3.7066308
-  },
   "097cd5fb": {
     "location_name": "Teatro Amaya",
     "address": "del General Martínez Campos, 9",
@@ -1286,6 +1232,12 @@
     "address": "de Isabel II, s/n",
     "latitude": 40.418299121798,
     "longitude": -3.710589408875
+  },
+  "044f7fc6": {
+    "location_name": "Gran Teatro CaixaBank Príncipe Pío",
+    "address": "de San Vicente, 44",
+    "latitude": 40.4210107,
+    "longitude": -3.7186172
   },
   "1f1e0e14": {
     "location_name": "Movistar Arena (WiZink Center)",
@@ -1302,12 +1254,6 @@
   "93c8a15d": {
     "location_name": "Real Jardín Botánico Alfonso XIII",
     "address": "Av. Complutense, s/n, 28040 Madrid"
-  },
-  "2c118b55": {
-    "location_name": "DT Espacio Escénico",
-    "address": "de la Reina, 9",
-    "latitude": 40.4205184,
-    "longitude": -3.7002514
   },
   "dab2e412": {
     "location_name": "El Águila",
@@ -1326,18 +1272,6 @@
     "address": "Bajo de la Virgen del Puerto, s/n",
     "latitude": 40.4133013,
     "longitude": -3.7219371
-  },
-  "f8a954ec": {
-    "location_name": "Teatro Tarambana",
-    "address": "Dolores Armengot , 31",
-    "latitude": 40.3857668,
-    "longitude": -3.7432537
-  },
-  "9b2ba2ac": {
-    "location_name": "La Usina",
-    "address": "de Palos de la Frontera, 4",
-    "latitude": 40.4025525,
-    "longitude": -3.6999978
   },
   "d2add564": {
     "location_name": "Escenario Puerta del Ángel",
@@ -1410,5 +1344,11 @@
     "address": "Arquitectura, s/n",
     "latitude": 40.3394716,
     "longitude": -3.7627478
+  },
+  "027f0347": {
+    "location_name": "Teatros del Canal",
+    "address": "de Cea Bermúdez, 1",
+    "latitude": 40.4382782,
+    "longitude": -3.705182
   }
 }
