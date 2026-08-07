@@ -794,11 +794,11 @@
     "latitude": 40.398749783694,
     "longitude": -3.691465258598
   },
-  "f53c237b": {
-    "location_name": "Teatro Gran Vía",
-    "address": "de Gran Vía, 66",
-    "latitude": 40.4223941,
-    "longitude": -3.7088716
+  "7fb49dd2": {
+    "location_name": "Pequeño Teatro Gran Vía",
+    "address": "Gran Vía, 66",
+    "latitude": 40.422430061313,
+    "longitude": -3.708958625794
   },
   "305c5b59": {
     "location_name": "Escuela Superior de Ingenieros de Minas",
@@ -830,6 +830,12 @@
     "latitude": 40.4206267,
     "longitude": -3.6882458
   },
+  "313506e8": {
+    "location_name": "Barrio de las Letras",
+    "address": "Santa Ana, s/n",
+    "latitude": 40.4147025,
+    "longitude": -3.7008389
+  },
   "2cbd1ab4": {
     "location_name": "Sala Canal de Isabel II de la Comunidad de Madrid",
     "address": "de Santa Engracia, 125",
@@ -847,6 +853,12 @@
     "address": "de Bailén, 8",
     "latitude": 40.4159416,
     "longitude": -3.7150162
+  },
+  "20f77603": {
+    "location_name": "Museo Nacional Thyssen-Bornemisza",
+    "address": "del Prado, 8",
+    "latitude": 40.4160406,
+    "longitude": -3.6949254
   },
   "f7e9c29a": {
     "location_name": "Plaza Mayor de Madrid",
@@ -926,6 +938,12 @@
     "latitude": 40.44255,
     "longitude": -3.6862379
   },
+  "d2e1acfd": {
+    "location_name": "Gran Teatro Pavón",
+    "address": "de Embajadores, 9",
+    "latitude": 40.4099859,
+    "longitude": -3.7061463
+  },
   "9d921ff1": {
     "location_name": "Carabanchel",
     "address": "Calle del Petirrojo, 34",
@@ -943,12 +961,6 @@
     "address": "de Montalbán, 12",
     "latitude": 40.4177983,
     "longitude": -3.6897806
-  },
-  "d2e1acfd": {
-    "location_name": "Gran Teatro Pavón",
-    "address": "de Embajadores, 9",
-    "latitude": 40.4099859,
-    "longitude": -3.7061463
   },
   "0706fc4c": {
     "location_name": "Iglesia de San Antonio de los Alemanes",
@@ -1015,12 +1027,6 @@
     "address": "de San Jerónimo, 46",
     "latitude": 40.4158953,
     "longitude": -3.6971466
-  },
-  "20f77603": {
-    "location_name": "Museo Nacional Thyssen-Bornemisza",
-    "address": "del Prado, 8",
-    "latitude": 40.4160406,
-    "longitude": -3.6949254
   },
   "59c4658b": {
     "location_name": "Depósito elevado de Plaza de Castilla",
@@ -1268,23 +1274,11 @@
     "latitude": 40.4351546,
     "longitude": -3.6971056
   },
-  "50107e1c": {
-    "location_name": "Teatro Real",
-    "address": "de Isabel II, s/n",
-    "latitude": 40.418299121798,
-    "longitude": -3.710589408875
-  },
   "044f7fc6": {
     "location_name": "Gran Teatro CaixaBank Príncipe Pío",
     "address": "de San Vicente, 44",
     "latitude": 40.4210107,
     "longitude": -3.7186172
-  },
-  "2b9a4735": {
-    "location_name": "Estadio Riyadh Air Metropolitano",
-    "address": "de Luis Aragonés, s/n",
-    "latitude": 40.436299422388,
-    "longitude": -3.599481582642
   },
   "93c8a15d": {
     "location_name": "Real Jardín Botánico Alfonso XIII",
@@ -1325,6 +1319,12 @@
     "address": "del Mar de las Antillas, 8 (Parque Huerta de la Salud)",
     "latitude": 40.4753178,
     "longitude": -3.6465498
+  },
+  "2b9a4735": {
+    "location_name": "Estadio Riyadh Air Metropolitano",
+    "address": "de Luis Aragonés, s/n",
+    "latitude": 40.4422045,
+    "longitude": -3.6029759
   },
   "d197c111": {
     "location_name": "Campo de Fútbol de Vallecas",
@@ -1392,6 +1392,12 @@
     "latitude": 40.4909933,
     "longitude": -3.8992646
   },
+  "50107e1c": {
+    "location_name": "Teatro Real",
+    "address": "de Isabel II, s/n",
+    "latitude": 40.4184102,
+    "longitude": -3.7093957
+  },
   "6b08727e": {
     "location_name": "Nuevo Teatro Alcalá",
     "address": "de Jorge Juan, 62",
@@ -1430,5 +1436,11 @@
   },
   "c60cef6f": {
     "location_name": "Varios espacios de Madrid"
+  },
+  "9e51fca2": {
+    "location_name": "Puente de Toledo",
+    "address": "Marqués de Vadillo",
+    "latitude": 40.3976058,
+    "longitude": -3.7156739
   }
 }
