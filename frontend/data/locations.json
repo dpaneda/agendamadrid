@@ -265,13 +265,6 @@
     "latitude": 40.4068543436,
     "longitude": -3.612732759798518
   },
-  "57f49789": {
-    "location_name": "Biblioteca Pública Municipal José Hierro (San Blas-Canillejas)",
-    "address": "CALLE MARIA SEVILLA DIAGO 15",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.433291625973624,
-    "longitude": -3.6105662311927453
-  },
   "9c620465": {
     "location_name": "Espacio de Igualdad Juana Doña. Arganzuela",
     "address": "PASEO CHOPERA 10",
@@ -608,6 +601,13 @@
     "latitude": 40.461621132349094,
     "longitude": -3.6281020785174873
   },
+  "6bac6bd1": {
+    "location_name": "Parque de Salvador Allende",
+    "address": "CALLE SALVADOR ALLENDE 3",
+    "district": "Carabanchel",
+    "latitude": 40.364341448699825,
+    "longitude": -3.757402071835875
+  },
   "354d0096": {
     "location_name": "Centro Deportivo Municipal Peñagrande GoFit",
     "address": "AVENIDA MONFORTE DE LEMOS 184",
@@ -657,13 +657,6 @@
     "latitude": 40.44245748722783,
     "longitude": -3.6217095632137375
   },
-  "6bac6bd1": {
-    "location_name": "Parque de Salvador Allende",
-    "address": "CALLE SALVADOR ALLENDE 3",
-    "district": "Carabanchel",
-    "latitude": 40.364341448699825,
-    "longitude": -3.757402071835875
-  },
   "a2cd4cc7": {
     "location_name": "Parque Tecnológico Valdemingómez",
     "address": "CARRETERA VALDEMINGOMEZ 201",
@@ -677,6 +670,13 @@
     "district": "Moratalaz",
     "latitude": 40.39928542551079,
     "longitude": -3.636600379403484
+  },
+  "57f49789": {
+    "location_name": "Biblioteca Pública Municipal José Hierro (San Blas-Canillejas)",
+    "address": "CALLE MARIA SEVILLA DIAGO 15",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.433291625973624,
+    "longitude": -3.6105662311927453
   },
   "31352bed": {
     "location_name": "Imprenta Municipal. Artes del libro",
@@ -732,6 +732,13 @@
     "district": "VillaDeVallecas",
     "latitude": 40.37381855452167,
     "longitude": -3.623151468598157
+  },
+  "acc32168": {
+    "location_name": "Biblioteca Pública Municipal Dámaso Alonso (Chamartín)",
+    "address": "CALLE MANUEL FERRERO 1",
+    "district": "Chamartin",
+    "latitude": 40.467453379213175,
+    "longitude": -3.6846112774442705
   },
   "b2aea691": {
     "location_name": "Biblioteca Pública Municipal Ángel González (Latina)",
@@ -980,12 +987,6 @@
     "address": "de la Puebla , 22",
     "latitude": 40.422464774016,
     "longitude": -3.703680038452
-  },
-  "4869348f": {
-    "location_name": "Teatro Serrano",
-    "address": "de Serrano, 104",
-    "latitude": 40.4342799,
-    "longitude": -3.6862284
   },
   "3a82f95a": {
     "location_name": "Jardín Banca March",
@@ -1427,5 +1428,10 @@
     "address": "de Gustavo Adolfo Bécquer, 64",
     "latitude": 40.5134295,
     "longitude": -3.4094629
+  },
+  "93a3239f": {
+    "location_name": "Varios emplazamientos",
+    "latitude": 40.4233216,
+    "longitude": -3.6886687
   }
 }

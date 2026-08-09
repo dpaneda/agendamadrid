@@ -817,22 +817,6 @@
     "formato": "festival",
     "lid": "439b2cee"
   },
-  "038781069ff168f9": {
-    "title": "Cine de verano en la Biblioteca José Hierro",
-    "start_time": "17:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8f9bc5d2d78fe910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "cine",
-      "gratis",
-      "aire libre"
-    ],
-    "description": "Proyecciones cinematográficas al aire libre organizadas por la biblioteca durante la temporada estival. Acceso gratuito para todo el público.",
-    "price": "0",
-    "is_multi_event": true,
-    "formato": "festival",
-    "lid": "57f49789"
-  },
   "48934c316db849d1": {
     "title": "Cine para pensar la justicia",
     "start_time": "10:00:00",
@@ -1450,6 +1434,19 @@
     "formato": "puntual",
     "lid": "040b80fc"
   },
+  "9eb15b046e5e11cc": {
+    "title": "Directed by women Spain 2026",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=271d4212372af910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado"
+    ],
+    "description": "Ciclo o festival dedicado a visibilizar y promover el cine realizado por mujeres. Incluye una diversa programación de obras y actividades.",
+    "is_multi_event": true,
+    "formato": "festival",
+    "lid": "95a62894"
+  },
   "24dac5911a27a923": {
     "title": "Discoteca móvil: DJ Felices",
     "description": "Sesión de música dinámica y participativa con el DJ Álvaro Felices.",
@@ -1613,19 +1610,6 @@
     "price": "0",
     "formato": "puntual",
     "lid": "aac81ce4"
-  },
-  "b745a5358de7ac5a": {
-    "title": "Cine: El agente secreto",
-    "description": "Proyección del film de Kleber Mendonça Filho sobre un hombre que busca redención en el Brasil de 1977.",
-    "start_time": "22:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=fceccc57db79e910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "cine",
-      "gratis"
-    ],
-    "formato": "puntual",
-    "lid": "f2b4174f"
   },
   "f097c80ab35e7bf0": {
     "title": "Proyección: El apartamento",
@@ -2319,10 +2303,6 @@
       "cine",
       "gratis"
     ],
-    "dates": [
-      "2026-08-07",
-      "2026-08-08"
-    ],
     "formato": "puntual",
     "lid": "77b83e41"
   },
@@ -2413,25 +2393,10 @@
     "is_multi_event": true,
     "formato": "puntual"
   },
-  "134ece7c1dce4b42": {
-    "title": "Fiestas de San Cayetano",
-    "description": "Tradicionales fiestas de barrio con actuaciones castizas y sesiones de DJ.",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=93206562a78af910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "fiestas",
-      "conciertos",
-      "aire libre",
-      "gratis"
-    ],
-    "price": "0",
-    "is_multi_event": true,
-    "formato": "puntual"
-  },
   "cde123062be5619a": {
     "title": "Fiestas de San Lorenzo",
     "description": "Programa festivo que incluye actividades infantiles, música en directo y tributos.",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=852fb8a0decaf910VgnVCM200000f921e388RCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7520b8a0decaf910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "fiestas",
@@ -2596,19 +2561,6 @@
       "gratis"
     ],
     "price": "0",
-    "formato": "puntual"
-  },
-  "8241c5bde0569c36": {
-    "title": "Cine: Gremlins",
-    "description": "Proyección del clásico de 1984 de Estados Unidos. Narra la historia de Billy y su extraña criatura, un mogwai.",
-    "start_time": "22:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=f5dae0b05d22f910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "cine",
-      "gratis"
-    ],
-    "price": "0€",
     "formato": "puntual"
   },
   "be25cf363ac7662a": {
@@ -2953,25 +2905,6 @@
     "price": "Gratis",
     "formato": "puntual",
     "lid": "02b25093"
-  },
-  "99bde3113add0ae6": {
-    "title": "Jardín El Capricho: Itinerario interpretativo",
-    "description": "Visita guiada por un educador ambiental para conocer la historia y la biodiversidad vegetal de este histórico jardín madrileño.",
-    "start_time": "10:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=10799ad065bac810VgnVCM1000001d4a900aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "visitas guiadas",
-      "gratis"
-    ],
-    "dates": [
-      "2026-08-07",
-      "2026-09-11",
-      "2026-09-25"
-    ],
-    "price": "Gratis",
-    "formato": "puntual",
-    "lid": "74ef50ff"
   },
   "84726f2cb465e6a9": {
     "title": "Jardines escondidos: De Nuevos Ministerios a la Fundación Juan March",
@@ -3426,20 +3359,17 @@
   "dfce4f736c89a306": {
     "title": "Cine: Lilo & Stitch",
     "description": "Proyección de la película de Dean Fleischer-Camp para todos los públicos.",
-    "start_time": "22:15:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7d616dd05d63f910VgnVCM200000f921e388RCRD",
+    "start_time": "22:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=6e72cc57db79e910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "cine",
       "gratis",
       "infantil"
     ],
-    "dates": [
-      "2026-08-07",
-      "2026-08-29"
-    ],
     "price": "0",
-    "formato": "puntual"
+    "formato": "puntual",
+    "lid": "f2b4174f"
   },
   "354613d2bd92fac4": {
     "title": "Cine: Little Amélie",
@@ -3611,8 +3541,9 @@
   },
   "771f7d5dbbb2dc70": {
     "title": "Cine de verano: Los tipos malos 2",
+    "description": "Película de animación donde un grupo de animales reformados intenta hacer el bien. Apta para todos los públicos.",
     "start_time": "22:15:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c201578e0420f910VgnVCM200000f921e388RCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=dcc1f8f439ede910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "cine",
@@ -3620,27 +3551,7 @@
       "aire libre",
       "infantil"
     ],
-    "dates": [
-      "2026-08-07",
-      "2026-08-15"
-    ],
-    "description": "Película de animación donde un grupo de animales reformados intenta hacer el bien. Apta para todos los públicos.",
-    "formato": "puntual",
-    "lid": "dbc8993b"
-  },
-  "56604916a6cb2fbd": {
-    "title": "Los tipos malos II",
-    "description": "Secuela de animación que sigue las aventuras de un equipo de animales reformados. Duración: 103 minutos.",
-    "start_time": "22:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=669aa8247b22f910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "cine",
-      "gratis",
-      "infantil"
-    ],
-    "formato": "puntual",
-    "lid": "d5698254"
+    "formato": "puntual"
   },
   "d251b47d613e15a1": {
     "title": "Madrid colecciona: 50 colecciones de arte contemporáneo",
@@ -3888,38 +3799,19 @@
     "formato": "exposicion",
     "lid": "7fb097ff"
   },
-  "7fb1568d4535ba6d": {
-    "title": "Taller de Mindfulness y relajación: Verano sin estrés",
-    "start_time": "10:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=975890b8692af910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "talleres",
-      "gratis",
-      "bienestar"
-    ],
-    "description": "Identifica los factores de estrés estival y aprende técnicas prácticas de relajación. Sesión enfocada en recuperar la calma y el equilibrio interior.",
-    "price": "gratis",
-    "formato": "puntual",
-    "lid": "2a930101"
-  },
   "fbc75c5169d8928e": {
     "title": "Misión imposible: Sentencia final",
     "description": "El agente Ethan Hunt continúa su misión de impedir que Gabriel controle una peligrosa tecnología. Película de acción dirigida por Christopher McQuarrie y protagonizada por Tom Cruise.",
     "start_time": "22:15:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5a8436ea9eabe910VgnVCM200000f921e388RCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7dd9cfac9f63f910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "cine",
       "gratis"
     ],
-    "dates": [
-      "2026-08-07",
-      "2026-08-22"
-    ],
     "price": "0",
     "formato": "puntual",
-    "lid": "c20aaa12"
+    "lid": "6bac6bd1"
   },
   "529b182b5aaee6d0": {
     "title": "Modelo integrados restaurativo: Presentación y exposición",
@@ -4124,21 +4016,6 @@
     "description": "Actividad cultural diseñada especialmente para el público infantil.",
     "formato": "puntual",
     "lid": "07486b5c"
-  },
-  "14cda33c53ebe246": {
-    "title": "Orquesta Tierra",
-    "description": "Espectáculo musical dinámico con un repertorio que abarca desde jazz y pasodobles hasta salsa y pop.",
-    "start_time": "20:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=1f004e0c73ca7910VgnVCM2000001f4a900aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "conciertos",
-      "danza",
-      "gratis"
-    ],
-    "price": "gratis",
-    "formato": "puntual",
-    "lid": "5ce42a5d"
   },
   "32c9881d2894838e": {
     "title": "Orquesta Yakarta",
@@ -4426,6 +4303,19 @@
     "formato": "exposicion",
     "lid": "13acb8c9"
   },
+  "9ddf362c0b0ce887": {
+    "title": "Planeta funerario: Cosmovisiones y antropología de la muerte",
+    "description": "Conferencia dirigida por Juanca Romero Hasmen sobre la antropología de la muerte. Actividad recomendada para público adulto.",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d0938dfacaf8c910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conferencias",
+      "gratis"
+    ],
+    "formato": "puntual",
+    "lid": "13acb8c9"
+  },
   "50573c20006c47b2": {
     "title": "Cine: Pobres criaturas",
     "description": "Proyección de la película de 2023 sobre una joven revivida por un brillante científico. Comedia dramática con tintes de ciencia ficción y realismo mágico.",
@@ -4467,21 +4357,6 @@
     "description": "Aprende los conceptos fundamentales para el mantenimiento y reparación de tu bicicleta. Incluye consejos prácticos sobre ajustes y seguridad vial.",
     "formato": "puntual",
     "lid": "1a7c6818"
-  },
-  "0780df9a23c9124f": {
-    "title": "Taller: Pon un huerto en tu balcón",
-    "start_time": "11:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=f6673f9daa62f910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "talleres",
-      "gratis",
-      "naturaleza"
-    ],
-    "description": "Sesión práctica sobre cómo cultivar un huerto urbano en espacios reducidos. Aprende las claves para mantener plantas en tu terraza.",
-    "price": "gratis",
-    "formato": "puntual",
-    "lid": "c2271205"
   },
   "6f9feff50f234810": {
     "title": "Taller de cerámica: Portainciensos de arcilla",
@@ -5052,25 +4927,6 @@
     "formato": "exposicion",
     "lid": "22840c10"
   },
-  "d808ee31fed5c21b": {
-    "title": "Senda botánica por la Casa de Campo",
-    "description": "Itinerario de aproximadamente 4 km para descubrir la flora dominante y las especies vegetales del Parque de la Casa de Campo.",
-    "start_time": "09:30:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=21b45a26d68d8810VgnVCM1000001d4a900aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "visitas guiadas",
-      "gratis",
-      "naturaleza"
-    ],
-    "dates": [
-      "2026-08-07",
-      "2026-09-12"
-    ],
-    "price": "gratis",
-    "formato": "puntual",
-    "lid": "02b25093"
-  },
   "a62f745dae4c6e08": {
     "title": "Senda guiada: El uso de las plantas",
     "description": "Itinerario botánico por los Jardines del Retiro para conocer el uso de diversas especies vegetales.",
@@ -5143,21 +4999,6 @@
     "price": "0",
     "formato": "puntual",
     "lid": "65a790aa"
-  },
-  "6a16ea14259b8c1d": {
-    "title": "Taller: Sexualidad y género: desmontando aprendizajes",
-    "start_time": "10:30:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5ec0ddbdb87af910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "talleres",
-      "bienestar",
-      "gratis"
-    ],
-    "description": "Sesión participativa dedicada a deconstruir prejuicios y aprender sobre la diversidad de género.",
-    "price": "0",
-    "formato": "puntual",
-    "lid": "297b23a2"
   },
   "80b6259b14e5fe72": {
     "title": "Obra: Si tuviera un huevo",
@@ -5242,19 +5083,15 @@
   "380f4b5d28b3fb27": {
     "title": "Sorda",
     "description": "Ángela, una mujer sorda, se enfrenta a sus miedos frente a la maternidad junto a su pareja. Cortometraje dirigido por Eva Libertad.",
-    "start_time": "22:15:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a6a836ea9eabe910VgnVCM200000f921e388RCRD",
+    "start_time": "22:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5c72cc57db79e910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "cine",
       "gratis"
     ],
-    "dates": [
-      "2026-08-07",
-      "2026-08-30"
-    ],
     "formato": "puntual",
-    "lid": "dbe08552"
+    "lid": "f2b4174f"
   },
   "21a8d2237975fecf": {
     "title": "Stage-on the road",
@@ -5297,19 +5134,6 @@
     ],
     "formato": "puntual",
     "lid": "272832c8"
-  },
-  "7c35f6b978f006d6": {
-    "title": "Cine: Superman",
-    "description": "Proyección de la clásica película de superhéroes recomendada para mayores de 12 años en la calle Primitiva Gañán.",
-    "start_time": "22:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a45d6ad3be12f910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "cine",
-      "gratis"
-    ],
-    "price": "0",
-    "formato": "puntual"
   },
   "98629a7863967240": {
     "title": "Proyección de la película Suspiria",
@@ -5936,21 +5760,6 @@
     "formato": "exposicion",
     "lid": "32296fa0"
   },
-  "40fba1682a38a7b3": {
-    "title": "Verano de serie con mirada de mujer",
-    "start_time": "12:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8cbcc3507b7bf910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "talleres",
-      "cine",
-      "gratis"
-    ],
-    "description": "Ciclo de talleres o visionados que analizan las series de televisión desde una perspectiva de género.",
-    "is_multi_event": true,
-    "formato": "puntual",
-    "lid": "32296fa0"
-  },
   "97b05e6a5ee296b5": {
     "title": "Veranos de la Villa en Villaverde",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=aa55881beface910VgnVCM100000891ecb1aRCRD",
@@ -6054,21 +5863,6 @@
     "formato": "exposicion",
     "lid": "5b0073c9"
   },
-  "373a0e62d6bf980e": {
-    "title": "Visita guiada al Museo Nacional Centro de Arte Reina Sofía",
-    "start_time": "10:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=4fb9d97eb4fcd910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "exposiciones",
-      "visitas guiadas",
-      "gratis"
-    ],
-    "description": "Recorrido especializado por las salas del Museo Reina Sofía. Una forma estructurada de profundizar en su colección de arte moderno y contemporáneo.",
-    "price": "0",
-    "formato": "puntual",
-    "lid": "9c620465"
-  },
   "1e8f38bb5e146470": {
     "title": "Visitas guiadas a CentroCentro",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a9dbd981f4ab5810VgnVCM1000001d4a900aRCRD",
@@ -6095,19 +5889,6 @@
     "description": "Recorrido nocturno dramatizado por el histórico Cementerio de Nuestra Señora de la Almudena. Una experiencia única que combina historia y teatro.",
     "formato": "exposicion",
     "lid": "75f92d7a"
-  },
-  "86c12ba6737d0873": {
-    "title": "Proyección de la película Wolfgang",
-    "description": "Cine gratuito con la historia de un niño superdotado con trastorno del espectro autista. Un drama sobre la superación personal y la vida familiar.",
-    "start_time": "22:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=6c7d07a260cae910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "cine",
-      "gratis"
-    ],
-    "price": "0",
-    "formato": "puntual"
   },
   "2580f94cc0df7827": {
     "title": "X Bienal de Arte Contemporáneo de Fundación ONCE",
@@ -6208,6 +5989,27 @@
     "price": "0",
     "formato": "exposicion",
     "lid": "212de84d"
+  },
+  "7c312e1caeb8204f": {
+    "title": "'Amasando cuentos' con Silvina Rodríguez",
+    "description": "Sesión de cuentacuentos que sumerge a los niños en mundos imaginarios llenos de aventuras y personajes divertidos.",
+    "start_time": "17:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=6c7a75f3dd39f910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "literatura",
+      "gratis"
+    ],
+    "dates": [
+      "2026-09-08",
+      "2026-09-09",
+      "2026-09-10",
+      "2026-09-17"
+    ],
+    "price": "0",
+    "formato": "puntual",
+    "lid": "acc32168"
   },
   "a8756c9874228bfd": {
     "title": "Taller de fomento lector: Atrapa y Lee",
@@ -7839,21 +7641,6 @@
     "is_multi_event": true,
     "formato": "festival",
     "lid": "0706fc4c"
-  },
-  "f07a4a4ebe269334": {
-    "title": "La Celestina",
-    "description": "El Aedo Teatro presenta una adaptación contemporánea del clásico de Fernando de Rojas que explora el papel de la mujer en la Edad Media. La obra utiliza a Elicia como narradora para ofrecer una nueva perspectiva sobre la famosa historia de amor y tragedia.",
-    "start_time": "13:00:00",
-    "url": "https://teatroserrano.com/",
-    "price": "Desde 15 €",
-    "image": "images/events/23aa48ece765.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/celestina-teatro-serrano",
-    "source": "esmadrid",
-    "categories": [
-      "teatro"
-    ],
-    "formato": "exposicion",
-    "lid": "4869348f"
   },
   "3f8256c7195352bf": {
     "title": "El cuadro del hambre",
@@ -9656,28 +9443,6 @@
     "formato": "exposicion",
     "lid": "438080e7"
   },
-  "d10b21c551af2e72": {
-    "title": "La Terraza Magnética 2026. Cartografías de la noche",
-    "description": "Ciclo que combina cine al aire libre y conciertos de música experimental contemporánea en una terraza urbana. La programación explora el concepto de la noche como espacio de tránsito, pérdida y transformación.",
-    "start_time": "22:00:00",
-    "url": "https://www.lacasaencendida.es/ciclo/la-terraza-magnetica-2026-cartografias-de-la-noche",
-    "price": "Desde 4 €",
-    "image": "images/events/4c6cde749810.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/u_xeIldbCkHz3hU4MiKTitby0_xlchkwPM5kPIxM0Gc/mtime:1780496926/sites/default/files/eventos/eventos/ltm-1.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/SEFx9cD-nWg_PHrbPqAMx-KHbRFTY4_JI5AiFJk1NOw/mtime:1780496945/sites/default/files/eventos/eventos/la_casa_encendida_la_terraza_magnetica_guzman_infanzon.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/terraza-magnetica-casa-encendida",
-    "source": "esmadrid",
-    "categories": [
-      "cine",
-      "conciertos",
-      "aire libre"
-    ],
-    "is_multi_event": true,
-    "formato": "festival",
-    "lid": "31e63917"
-  },
   "f28b120a4f51215e": {
     "title": "La Universidad Pública Pinta Malasaña. II edición",
     "description": "Exposición que recoge los murales creados por alumnos de Bellas Artes de las universidades públicas madrileñas durante el festival de arte urbano. La muestra explora temáticas de denuncia social, crítica cultural y reflexión sobre la identidad urbana actual.",
@@ -11182,5 +10947,42 @@
       "deportes"
     ],
     "formato": "puntual"
+  },
+  "5f44816fe2aadcce": {
+    "title": "OMODA Madrid es Moda 2026",
+    "description": "Evento dedicado a la moda de autor que celebra la creatividad española a través de desfiles y presentaciones de destacados diseñadores y firmas. La programación pone en valor los oficios artesanales y la labor de los profesionales que transforman ideas en colecciones.",
+    "url": "https://madridesmoda.com/",
+    "price": "Consultar página oficial",
+    "image": "images/events/86bd6e918e10.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/bDbHqFTb6FcPlYLiZ8-jlAU4qoOMO2lK8HqniF9kAFY/mtime:1786110563/sites/default/files/eventos/eventos/omoda_madrid_es_moda_2026_0.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/b0mqdiOTMqkVNlPrYlN8QK4PvjpzVDy2U2BPgJQVFHo/mtime:1786110600/sites/default/files/eventos/eventos/omoda_madrid_es_moda_0.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/_hFXo8rcARuOLgM7gZTXNByjUjKv0LFk5-bpgBTMvgg/mtime:1772528764/sites/default/files/eventos/eventos/omoda_madrid_es_moda.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/omoda-madrid-es-moda",
+    "source": "esmadrid",
+    "categories": [
+      "otros"
+    ],
+    "is_multi_event": true,
+    "formato": "festival",
+    "lid": "93a3239f"
+  },
+  "c0e41e8c76a828dc": {
+    "title": "Semana de la Moda de Madrid 2026",
+    "description": "La capital se convierte en el epicentro del diseño español con una programación que combina desfiles, presentaciones y encuentros culturales. El evento integra la pasarela profesional con la industria y la vida ciudadana a través de diversas propuestas creativas.",
+    "start_time": "19:00:00",
+    "latitude": 40.4167754,
+    "longitude": -3.7037902,
+    "url": "https://madridesmoda.com/",
+    "price": "--",
+    "image": "images/events/e84d42e7a364.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/semana-de-la-moda-madrid",
+    "source": "esmadrid",
+    "categories": [
+      "otros"
+    ],
+    "is_multi_event": true,
+    "formato": "festival"
   }
 }
