@@ -97,19 +97,19 @@
     "latitude": 40.392279999540044,
     "longitude": -3.684956957448299
   },
-  "040b80fc": {
-    "location_name": "Espacio de Igualdad Nieves Torres. Chamartín",
-    "address": "CALLE ENRIQUE JARDIEL PONCELA 8",
-    "district": "Chamartin",
-    "latitude": 40.46088981165102,
-    "longitude": -3.6700689174427326
-  },
   "314b42da": {
     "location_name": "Espacio de Igualdad María de Maeztu. Latina",
     "address": "CALLE MARCELINO CASTILLO 29",
     "district": "Latina",
     "latitude": 40.39420907754556,
     "longitude": -3.744687315765447
+  },
+  "040b80fc": {
+    "location_name": "Espacio de Igualdad Nieves Torres. Chamartín",
+    "address": "CALLE ENRIQUE JARDIEL PONCELA 8",
+    "district": "Chamartin",
+    "latitude": 40.46088981165102,
+    "longitude": -3.6700689174427326
   },
   "bb29009c": {
     "location_name": "CentroCentro",
@@ -124,6 +124,13 @@
     "district": "PuenteDeVallecas",
     "latitude": 40.3957812018463,
     "longitude": -3.6670346724676173
+  },
+  "9b3eae76": {
+    "location_name": "Espacio de Igualdad Dulce Chacón. Villaverde",
+    "address": "CALLE TORDEGRILLOS 32",
+    "district": "Villaverde",
+    "latitude": 40.344107374451525,
+    "longitude": -3.7166081132911537
   },
   "07486b5c": {
     "location_name": "Teatro de Títeres de El Retiro",
@@ -146,6 +153,13 @@
     "latitude": 40.473659104975354,
     "longitude": -3.592395079190456
   },
+  "b0b9722e": {
+    "location_name": "Espacio de Igualdad Hermanas Mirabal. Tetuán",
+    "address": "CALLE BRAVO MURILLO 133",
+    "district": "Tetuan",
+    "latitude": 40.45012255255781,
+    "longitude": -3.7037047897267947
+  },
   "c6c5db82": {
     "location_name": "Centro Cultural Sanchinarro - Hispanidad (Hortaleza)",
     "address": "CALLE PRINCESA DE EBOLI 29",
@@ -166,13 +180,6 @@
     "district": "CiudadLineal",
     "latitude": 40.43580006579458,
     "longitude": -3.6532953172963816
-  },
-  "22840c10": {
-    "location_name": "Espacio de Igualdad Lucrecia Pérez. Fuencarral-El Pardo",
-    "address": "CALLE MANRESA 1",
-    "district": "Fuencarral-ElPardo",
-    "latitude": 40.49120609425076,
-    "longitude": -3.6916379633219116
   },
   "c4d94593": {
     "location_name": "Centro Cultural Ciudad Pegaso (San Blas - Canillejas)",
@@ -258,6 +265,13 @@
     "latitude": 40.4068543436,
     "longitude": -3.612732759798518
   },
+  "22840c10": {
+    "location_name": "Espacio de Igualdad Lucrecia Pérez. Fuencarral-El Pardo",
+    "address": "CALLE MANRESA 1",
+    "district": "Fuencarral-ElPardo",
+    "latitude": 40.49120609425076,
+    "longitude": -3.6916379633219116
+  },
   "9c620465": {
     "location_name": "Espacio de Igualdad Juana Doña. Arganzuela",
     "address": "PASEO CHOPERA 10",
@@ -306,20 +320,6 @@
     "latitude": 40.45914104116349,
     "longitude": -3.718270563679269
   },
-  "9b3eae76": {
-    "location_name": "Espacio de Igualdad Dulce Chacón. Villaverde",
-    "address": "CALLE TORDEGRILLOS 32",
-    "district": "Villaverde",
-    "latitude": 40.344107374451525,
-    "longitude": -3.7166081132911537
-  },
-  "b0b9722e": {
-    "location_name": "Espacio de Igualdad Hermanas Mirabal. Tetuán",
-    "address": "CALLE BRAVO MURILLO 133",
-    "district": "Tetuan",
-    "latitude": 40.45012255255781,
-    "longitude": -3.7037047897267947
-  },
   "395f476b": {
     "location_name": "Centro Dotacional Integrado Arganzuela Ángel del Río",
     "address": "CALLE CANARIAS 17",
@@ -359,20 +359,6 @@
     "latitude": 40.446826729909155,
     "longitude": -3.5727382893523254
   },
-  "bb95d4b7": {
-    "location_name": "Parque El Calero",
-    "address": "CALLE JOSE DEL HIERRO 1",
-    "district": "CiudadLineal",
-    "latitude": 40.43555222953495,
-    "longitude": -3.6519351470803567
-  },
-  "1c1352bf": {
-    "location_name": "Biblioteca Pública Municipal David Gistau (Salamanca)",
-    "address": "AVENIDA TOREROS 5",
-    "district": "Salamanca",
-    "latitude": 40.43199309720514,
-    "longitude": -3.670929243543714
-  },
   "f754924c": {
     "location_name": "Biblioteca Pública Municipal Manuel Vázquez Montalbán (Tetuán)",
     "address": "CALLE FRANCOS RODRIGUEZ 67",
@@ -408,6 +394,13 @@
     "latitude": 40.45446361509569,
     "longitude": -3.6000964360303476
   },
+  "e21dd741": {
+    "location_name": "Templete 'José Menese'",
+    "address": "PLAZA HUARTE DE SAN JUAN 1",
+    "district": "Latina",
+    "latitude": 40.412941426753434,
+    "longitude": -3.725711256326908
+  },
   "6dd5948c": {
     "location_name": "Parque Huerta de la Salud",
     "address": "CALLE MAR DE LAS ANTILLAS 8",
@@ -419,13 +412,6 @@
     "district": "Tetuan",
     "latitude": 40.46900764611639,
     "longitude": -3.697595691925329
-  },
-  "e21dd741": {
-    "location_name": "Templete 'José Menese'",
-    "address": "PLAZA HUARTE DE SAN JUAN 1",
-    "district": "Latina",
-    "latitude": 40.412941426753434,
-    "longitude": -3.725711256326908
   },
   "dbe08552": {
     "location_name": "Centro Cultural Auditorio Parque El Paraíso (San Blas - Canillejas)",
@@ -475,6 +461,13 @@
     "district": "Centro",
     "latitude": 40.42737760210632,
     "longitude": -3.7106116887809817
+  },
+  "df0f2429": {
+    "location_name": "Auditorio al aire libre. Pilar García Peña (Parque Pinar del Rey)",
+    "address": "CARRETERA CANILLAS 1",
+    "district": "Hortaleza",
+    "latitude": 40.46333523949564,
+    "longitude": -3.657291981994152
   },
   "9dd9d421": {
     "location_name": "Centro Sociocultural Cánovas del Castillo (Usera)",
@@ -615,6 +608,13 @@
     "latitude": 40.47508343631223,
     "longitude": -3.645482
   },
+  "1c1352bf": {
+    "location_name": "Biblioteca Pública Municipal David Gistau (Salamanca)",
+    "address": "AVENIDA TOREROS 5",
+    "district": "Salamanca",
+    "latitude": 40.43199309720514,
+    "longitude": -3.670929243543714
+  },
   "7bbd9a86": {
     "location_name": "Parque del Oeste",
     "address": "PASEO CAMOENS Y VALERO 4",
@@ -699,12 +699,12 @@
     "latitude": 40.413896825498995,
     "longitude": -3.7054692169323364
   },
-  "849518af": {
-    "location_name": "Centro Deportivo Municipal Moratalaz",
-    "address": "CALLE VALDEBERNARDO 2",
-    "district": "Moratalaz",
-    "latitude": 40.39885854572339,
-    "longitude": -3.632432290214539
+  "6c2d0122": {
+    "location_name": "Centro Deportivo Municipal Margot Moles",
+    "address": "PASEO POLIDEPORTIVO 3",
+    "district": "Vicalvaro",
+    "latitude": 40.40914061858403,
+    "longitude": -3.603264732850392
   },
   "77b83e41": {
     "location_name": "Parque Santa Eugenia",
@@ -1487,5 +1487,41 @@
     "address": "de Bernardino Obregón, 18",
     "latitude": 40.404034,
     "longitude": -3.699996
+  },
+  "72c7b587": {
+    "location_name": "ABC Serrano",
+    "address": "de Serrano , 61",
+    "latitude": 40.4319053,
+    "longitude": -3.6874425
+  },
+  "4dbba6ce": {
+    "location_name": "Calle Ortega y Gasset",
+    "address": "Ortega y Gasset",
+    "latitude": 40.4301418,
+    "longitude": -3.6802139
+  },
+  "a87000ce": {
+    "location_name": "Ilunion Pío XII",
+    "address": "Avda. Pío XII, 77, 28016, Madrid",
+    "latitude": 40.4689291,
+    "longitude": -3.6740104
+  },
+  "9a5be362": {
+    "location_name": "Palacio Vistalegre Arena",
+    "address": "de Utebo , 1",
+    "latitude": 40.3862023,
+    "longitude": -3.7379421
+  },
+  "971e403e": {
+    "location_name": "Pequeño Cine Estudio",
+    "address": "de Magallanes, 1",
+    "latitude": 40.4323809,
+    "longitude": -3.7054967
+  },
+  "d4736963": {
+    "location_name": "Teatro Eslava",
+    "address": "del Arenal, 11",
+    "latitude": 40.417157606387,
+    "longitude": -3.706563413143
   }
 }
