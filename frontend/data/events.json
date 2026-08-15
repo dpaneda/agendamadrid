@@ -195,6 +195,21 @@
     "price": "0",
     "formato": "puntual"
   },
+  "6f210fb476b85129": {
+    "title": "Animación infantil participativa de calle",
+    "description": "Evento de animación al aire libre con la compañía 'A Divertirse', recomendado para niños a partir de 3 años. Se celebra en la vía pública para fomentar la participación.",
+    "start_time": "18:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=dc9d97063e9de910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "infantil",
+      "aire libre",
+      "gratis"
+    ],
+    "price": "0",
+    "formato": "puntual"
+  },
   "170f43511aae5020": {
     "title": "Anoche conquisté Tebas",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=6eb73f229b7af910VgnVCM100000891ecb1aRCRD",
@@ -2775,6 +2790,20 @@
       "gratis"
     ],
     "formato": "puntual"
+  },
+  "c4542f3813170c3f": {
+    "title": "Homenaje a José Ignacio Cabrujas",
+    "description": "Lectura dramatizada con un elenco destacado en memoria de la obra de José Ignacio Cabrujas.",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=9fa5817478bba910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "conciertos",
+      "gratis"
+    ],
+    "formato": "puntual",
+    "lid": "13acb8c9"
   },
   "43770b2ae8c57809": {
     "title": "HOP!",
@@ -8283,6 +8312,31 @@
     "formato": "exposicion",
     "lid": "12f732ab"
   },
+  "46fc8c3c3585e245": {
+    "title": "Mercado Productores Alcobendas",
+    "description": "Mercado que reúne a productores artesanos de la Comunidad de Madrid con una selección de alimentos de proximidad, ecológicos y de calidad. El evento cuenta además con música en vivo y animación infantil.",
+    "start_time": "10:00:00",
+    "address": "Paseo de Valdelasfuentes",
+    "latitude": 40.550215,
+    "longitude": -3.6532028,
+    "url": "https://www.instagram.com/madrid_productores/?hl=es",
+    "price": "Gratis",
+    "image": "images/events/35635a99b8ef.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/-rDVEqJLGDejFqpZ36LetP4JGLmuwSJ7ASOI5HigExo/mtime:1570108787/sites/default/files/eventos/eventos/cartel-mercado-productores-web.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/T25R2VRGdNNuWOFtulIuQ4C9e88G6BqrWvZ9eIsHB6M/mtime:1648469017/sites/default/files/eventos/eventos/mercado_productores_alcobendas.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/GtBRd4NpeINWQ_cNgUUDehpo3Qo6Z9CXmdmXR5rN4zQ/mtime:1648469073/sites/default/files/eventos/eventos/mercado_productores_alcobendas1_0.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/VhEVbGq-iSrjBFw-_hsTDIseZQRmsUNmp5EiMAkCgE0/mtime:1648469112/sites/default/files/eventos/eventos/mercado_productores_alcobendas2.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/mercado-productores-alcobendas",
+    "source": "esmadrid",
+    "categories": [
+      "gastronomía",
+      "otros"
+    ],
+    "is_multi_event": true,
+    "formato": "festival"
+  },
   "c821ebde26a66d0a": {
     "title": "Las ingenieras domésticas y la revolución de la cocina",
     "description": "La exposición analiza cómo las investigadoras norteamericanas de los siglos XIX y XX transformaron el espacio doméstico integrándolo en el orden económico y social. Se explora el diseño y la racionalización de la casa desde la perspectiva femenina para mejorar la eficiencia del trabajo en el hogar.",
@@ -12202,5 +12256,48 @@
     ],
     "formato": "puntual",
     "lid": "b6140322"
+  },
+  "3665ec6d31c6d10d": {
+    "title": "The Black Keys",
+    "description": "El dúo de rock estadounidense presenta su nuevo álbum en una cita que repasa sus grandes éxitos musicales. Este concierto supone el regreso de la banda a los escenarios de Madrid en el marco de su gira mundial.",
+    "start_time": "21:00:00",
+    "url": "https://www.movistararena.es/informacion?evento=the-black-keys-peaches-n-kream-world-tour-2026",
+    "price": "Desde 73,50 €",
+    "image": "images/events/64408127140b.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/black-keys-movistar-arena",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "1f1e0e14"
+  },
+  "738ceb694406dcfc": {
+    "title": "Real Madrid - Rayo Vallecano (LALIGA EA SPORTS)",
+    "description": "El conjunto blanco afronta un emocionante derbi contra el equipo vallecano. Se trata de un encuentro oficial de la competición LALIGA EA SPORTS.",
+    "url": "https://www.realmadrid.com/es-ES/calendario?filter-football=primer-equipo-masculino",
+    "price": "Consultar página oficial",
+    "image": "images/events/2ab7e50c78a1.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/real-madrid-rayo-vallecano-laliga-ea-sports-estadio-bernabeu",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "9d15f421"
+  },
+  "11ee5b2ee6a4686d": {
+    "title": "Getafe CF - RC Deportivo de la Coruña (LALIGA EA SPORTS)",
+    "description": "Los madrileños reciben en casa al equipo gallego que esta temporada recupera su presencia en la máxima categoría del fútbol español.",
+    "url": "https://www.getafecf.com/partidos/temporada-2026-2027-laliga-ea-sports-5-getafe-cf-vs-rc-deportivo-2963",
+    "price": "Consultar página oficial",
+    "image": "images/events/4653f87c0ed8.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/getafe-cf-rc-deportivo-coruna-laliga-ea-sports-coliseum",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "d0b9c3cf"
   }
 }
