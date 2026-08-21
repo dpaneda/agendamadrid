@@ -27,6 +27,13 @@
     "latitude": 40.40943503279114,
     "longitude": -3.6861797800993257
   },
+  "22840c10": {
+    "location_name": "Espacio de Igualdad Lucrecia Pérez. Fuencarral-El Pardo",
+    "address": "CALLE MANRESA 1",
+    "district": "Fuencarral-ElPardo",
+    "latitude": 40.49120609425076,
+    "longitude": -3.6916379633219116
+  },
   "fef6f71f": {
     "location_name": "Jardín del Bulevar de Peña Gorbea",
     "address": "CALLE PEÑA GORBEA 17",
@@ -160,6 +167,13 @@
     "latitude": 40.41878362561595,
     "longitude": -3.6866519471003647
   },
+  "3eb06d5c": {
+    "location_name": "Auditorio al aire libre. Carlos Jiménez de Parga",
+    "address": "AVENIDA RAFAEL ALBERTI 13",
+    "district": "PuenteDeVallecas",
+    "latitude": 40.389928882222264,
+    "longitude": -3.6382448554479936
+  },
   "439b2cee": {
     "location_name": "Biblioteca Pública Municipal José Saramago (Fuencarral-El Pardo)",
     "address": "AVENIDA MONFORTE DE LEMOS 38",
@@ -187,12 +201,12 @@
     "latitude": 40.49042200599307,
     "longitude": -3.6553467891079854
   },
-  "65a790aa": {
-    "location_name": "Espacio de Igualdad Berta Cáceres. Usera",
-    "address": "CALLE GRAN AVENIDA 14",
-    "district": "Usera",
-    "latitude": 40.36902428128397,
-    "longitude": -3.710212677306876
+  "5b0073c9": {
+    "location_name": "Biblioteca Pública Municipal Iván de Vargas (Centro)",
+    "address": "CALLE SAN JUSTO 5",
+    "district": "Centro",
+    "latitude": 40.41410290844665,
+    "longitude": -3.7098591212735883
   },
   "c4d94593": {
     "location_name": "Centro Cultural Ciudad Pegaso (San Blas - Canillejas)",
@@ -214,13 +228,6 @@
     "district": "Barajas",
     "latitude": 40.460302151327085,
     "longitude": -3.5912198696737083
-  },
-  "a99cbc39": {
-    "location_name": "Instalación Deportiva Municipal Básica Torrespaña (Fuente del Berro)",
-    "address": "CALLE ALCALDE SAINZ DE BARANDA 94",
-    "district": "Salamanca",
-    "latitude": 40.42121783502117,
-    "longitude": -3.6607653462118437
   },
   "02a50fe5": {
     "location_name": "Colegio Público República de Venezuela",
@@ -249,13 +256,6 @@
     "district": "Villaverde",
     "latitude": 40.350886994103284,
     "longitude": -3.6914981254409645
-  },
-  "c2271205": {
-    "location_name": "Espacio de Igualdad Emilia Pardo Bazán. Ciudad Lineal",
-    "address": "AVENIDA BADAJOZ 60",
-    "district": "CiudadLineal",
-    "latitude": 40.442311100791215,
-    "longitude": -3.6534806246311913
   },
   "5bd98e30": {
     "location_name": "Instalación Deportiva Municipal Básica Circuito de Automodelismo",
@@ -292,6 +292,13 @@
     "latitude": 40.36691109856854,
     "longitude": -3.6164419466246676
   },
+  "4c99e2c3": {
+    "location_name": "Centro Danza Matadero - CDM",
+    "address": "PASEO CHOPERA 14",
+    "district": "Arganzuela",
+    "latitude": 40.39245798191536,
+    "longitude": -3.6972067902718897
+  },
   "1d11f16a": {
     "location_name": "Biblioteca Pública Municipal María Lejárraga (Hortaleza)",
     "address": "CALLE PRINCESA DE EBOLI 29",
@@ -299,26 +306,12 @@
     "latitude": 40.49041562546542,
     "longitude": -3.655356751728003
   },
-  "22840c10": {
-    "location_name": "Espacio de Igualdad Lucrecia Pérez. Fuencarral-El Pardo",
-    "address": "CALLE MANRESA 1",
-    "district": "Fuencarral-ElPardo",
-    "latitude": 40.49120609425076,
-    "longitude": -3.6916379633219116
-  },
   "9c620465": {
     "location_name": "Espacio de Igualdad Juana Doña. Arganzuela",
     "address": "PASEO CHOPERA 10",
     "district": "Arganzuela",
     "latitude": 40.39307289237465,
     "longitude": -3.699005654074825
-  },
-  "5b0073c9": {
-    "location_name": "Biblioteca Pública Municipal Iván de Vargas (Centro)",
-    "address": "CALLE SAN JUSTO 5",
-    "district": "Centro",
-    "latitude": 40.41410290844665,
-    "longitude": -3.7098591212735883
   },
   "af116271": {
     "location_name": "Quinta de la Fuente del Berro",
@@ -375,12 +368,26 @@
     "latitude": 40.40242416544921,
     "longitude": -3.6954440062549017
   },
-  "4c99e2c3": {
-    "location_name": "Centro Danza Matadero - CDM",
-    "address": "PASEO CHOPERA 14",
-    "district": "Arganzuela",
-    "latitude": 40.39245798191536,
-    "longitude": -3.6972067902718897
+  "32296fa0": {
+    "location_name": "Espacio de Igualdad María Moliner. Villa de Vallecas",
+    "address": "CALLE HONRUBIA 4",
+    "district": "VillaDeVallecas",
+    "latitude": 40.37128211425518,
+    "longitude": -3.6292460351699867
+  },
+  "65a790aa": {
+    "location_name": "Espacio de Igualdad Berta Cáceres. Usera",
+    "address": "CALLE GRAN AVENIDA 14",
+    "district": "Usera",
+    "latitude": 40.36902428128397,
+    "longitude": -3.710212677306876
+  },
+  "c2271205": {
+    "location_name": "Espacio de Igualdad Emilia Pardo Bazán. Ciudad Lineal",
+    "address": "AVENIDA BADAJOZ 60",
+    "district": "CiudadLineal",
+    "latitude": 40.442311100791215,
+    "longitude": -3.6534806246311913
   },
   "40c9bbca": {
     "location_name": "Centro Cultural el Torito (Moratalaz)",
@@ -395,13 +402,6 @@
     "district": "Usera",
     "latitude": 40.37558213858424,
     "longitude": -3.71245854352948
-  },
-  "32296fa0": {
-    "location_name": "Espacio de Igualdad María Moliner. Villa de Vallecas",
-    "address": "CALLE HONRUBIA 4",
-    "district": "VillaDeVallecas",
-    "latitude": 40.37128211425518,
-    "longitude": -3.6292460351699867
   },
   "1c1352bf": {
     "location_name": "Biblioteca Pública Municipal David Gistau (Salamanca)",
@@ -427,13 +427,6 @@
     "district": "SanBlas-Canillejas",
     "latitude": 40.446826729909155,
     "longitude": -3.5727382893523254
-  },
-  "f754924c": {
-    "location_name": "Biblioteca Pública Municipal Manuel Vázquez Montalbán (Tetuán)",
-    "address": "CALLE FRANCOS RODRIGUEZ 67",
-    "district": "Tetuan",
-    "latitude": 40.45749513485957,
-    "longitude": -3.710539712535917
   },
   "b1f7c00c": {
     "location_name": "Teatro Español",
@@ -489,6 +482,13 @@
     "latitude": 40.46900764611639,
     "longitude": -3.697595691925329
   },
+  "0745535a": {
+    "location_name": "Parque Olof Palme",
+    "address": "CALLE CERECINOS 1",
+    "district": "Usera",
+    "latitude": 40.38439900273861,
+    "longitude": -3.7129519968429445
+  },
   "4710abd1": {
     "location_name": "Centro Cultural Galileo (Chamberí)",
     "address": "CALLE GALILEO 39",
@@ -543,13 +543,6 @@
     "district": "Usera",
     "latitude": 40.3711623444796,
     "longitude": -3.692742821990015
-  },
-  "a2273ec8": {
-    "location_name": "Parque Roma",
-    "address": "CALLE JUAN ESPLANDIU 4",
-    "district": "Retiro",
-    "latitude": 40.41641041087398,
-    "longitude": -3.662606100328213
   },
   "38e0e792": {
     "location_name": "Casa del Lector (Matadero)",
@@ -619,13 +612,6 @@
     "district": "Retiro",
     "latitude": 40.40912277790706,
     "longitude": -3.6793179644920584
-  },
-  "3eb06d5c": {
-    "location_name": "Auditorio al aire libre. Carlos Jiménez de Parga",
-    "address": "AVENIDA RAFAEL ALBERTI 13",
-    "district": "PuenteDeVallecas",
-    "latitude": 40.389928882222264,
-    "longitude": -3.6382448554479936
   },
   "f2b4174f": {
     "location_name": "Instalación Deportiva Municipal Básica Parque El Calero",
@@ -795,6 +781,13 @@
     "latitude": 40.433291625973624,
     "longitude": -3.6105662311927453
   },
+  "97507349": {
+    "location_name": "Biblioteca Pública Municipal Mario Vargas Llosa (Centro)",
+    "address": "CALLE BARCELO 4",
+    "district": "Centro",
+    "latitude": 40.426642215368176,
+    "longitude": -3.699722994908341
+  },
   "31352bed": {
     "location_name": "Imprenta Municipal. Artes del libro",
     "address": "CALLE CONCEPCION JERONIMA 15",
@@ -835,13 +828,6 @@
     "district": "CiudadLineal",
     "latitude": 40.431386380971894,
     "longitude": -3.6590535229397676
-  },
-  "97507349": {
-    "location_name": "Biblioteca Pública Municipal Mario Vargas Llosa (Centro)",
-    "address": "CALLE BARCELO 4",
-    "district": "Centro",
-    "latitude": 40.426642215368176,
-    "longitude": -3.699722994908341
   },
   "98191d2e": {
     "location_name": "Centro Deportivo Municipal Miguel Guillén Prim",
@@ -933,13 +919,6 @@
     "district": "SanBlas-Canillejas",
     "latitude": 40.44640229188281,
     "longitude": -3.6117933204271098
-  },
-  "4890119b": {
-    "location_name": "Biblioteca Pública Municipal Aluche (Latina)",
-    "address": "CALLE CAMARENA 10",
-    "district": "Latina",
-    "latitude": 40.39597072367931,
-    "longitude": -3.7562716852987847
   },
   "1e352ee3": {
     "location_name": "COAM",
@@ -1163,6 +1142,12 @@
     "latitude": 40.3907951,
     "longitude": -3.7462663
   },
+  "4869348f": {
+    "location_name": "Teatro Serrano",
+    "address": "de Serrano, 104",
+    "latitude": 40.4342799,
+    "longitude": -3.6862284
+  },
   "12f732ab": {
     "location_name": "Artespacio Plot Point",
     "address": "de Ercilla, 29",
@@ -1175,23 +1160,29 @@
     "latitude": 40.4177983,
     "longitude": -3.6897806
   },
-  "4869348f": {
-    "location_name": "Teatro Serrano",
-    "address": "de Serrano, 104",
-    "latitude": 40.4342799,
-    "longitude": -3.6862284
-  },
   "d197c111": {
     "location_name": "Campo de Fútbol de Vallecas",
     "address": "Calle del Payaso Fofó, s/n",
     "latitude": 40.392239566217,
     "longitude": -3.658685982227
   },
+  "d4736963": {
+    "location_name": "Teatro Eslava",
+    "address": "del Arenal, 11",
+    "latitude": 40.4171056,
+    "longitude": -3.7065076
+  },
   "3a82f95a": {
     "location_name": "Jardín Banca March",
     "address": "de Castelló, 75",
     "latitude": 40.4305839,
     "longitude": -3.6814985
+  },
+  "d5e60251": {
+    "location_name": "Teatro Alcázar",
+    "address": "de Alcalá, 20",
+    "latitude": 40.4177853,
+    "longitude": -3.6990893
   },
   "86b6d704": {
     "location_name": "Museo Cerralbo",
@@ -1204,6 +1195,9 @@
     "address": "de Fuencarral, 3",
     "latitude": 40.4204426,
     "longitude": -3.7017177
+  },
+  "f019fdda": {
+    "location_name": "Capitol Gran Vía"
   },
   "0706fc4c": {
     "location_name": "Iglesia de San Antonio de los Alemanes",
@@ -1675,12 +1669,6 @@
     "latitude": 40.4323809,
     "longitude": -3.7054967
   },
-  "d4736963": {
-    "location_name": "Teatro Eslava",
-    "address": "del Arenal, 11",
-    "latitude": 40.417157606387,
-    "longitude": -3.706563413143
-  },
   "f12f5981": {
     "location_name": "Villaverde",
     "address": "de Carmen Bruguera, 8",
@@ -1749,5 +1737,11 @@
     "address": "de Legazpi, 8",
     "latitude": 40.3910873,
     "longitude": -3.6981435
+  },
+  "24318159": {
+    "location_name": "Circuito de Madrid Jarama-RACE",
+    "address": "A-1, km 28",
+    "latitude": 40.616037374242,
+    "longitude": -3.584032058716
   }
 }
