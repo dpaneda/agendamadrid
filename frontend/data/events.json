@@ -1137,6 +1137,19 @@
     "formato": "exposicion",
     "lid": "b0b9722e"
   },
+  "d89a73ca155208c0": {
+    "title": "Club de lectura 'Gata Cattana' en Espacio de Igualdad Lucrecia Pérez",
+    "start_time": "12:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c4cddc08dd80c910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "literatura",
+      "gratis"
+    ],
+    "description": "Espacio de encuentro literario para explorar obras con perspectiva de género y conciencia social. Un punto de reunión para los amantes de la lectura.",
+    "formato": "puntual",
+    "lid": "22840c10"
+  },
   "3a4ba1c1995b5f71": {
     "title": "Cluedo de árboles en Fuente del Berro",
     "start_time": "10:30:00",
@@ -3184,6 +3197,21 @@
     "formato": "festival",
     "lid": "13acb8c9"
   },
+  "b5fb0e5734a1c891": {
+    "title": "III Congreso Iberoamericano de Alzheimer y VI Premios AFADE",
+    "description": "Encuentro profesional y social dedicado a la concienciación y el reconocimiento en la lucha contra el Alzheimer. Incluye la entrega de premios anuales de la asociación AFADE.",
+    "start_time": "16:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=0f9ddcc0cf976910VgnVCM2000001f4a900aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conferencias",
+      "gratis"
+    ],
+    "price": "gratis",
+    "is_multi_event": true,
+    "formato": "puntual",
+    "lid": "a0c50125"
+  },
   "4442e4d96d70a196": {
     "title": "III Escuela de espectadores Sénior",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=feecb67bd31be910VgnVCM200000f921e388RCRD",
@@ -4251,6 +4279,21 @@
     "price": "gratis",
     "formato": "puntual",
     "lid": "7fb097ff"
+  },
+  "8ee7bf5df2e3786f": {
+    "title": "Conferencia sobre Marilyn Monroe",
+    "description": "Una charla sobre la vida y trayectoria de Norma Jeane, icono del cine clásico de Hollywood. Parte del ciclo dedicado a las divas del séptimo arte.",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=ff49b478e95ff910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conferencias",
+      "cine",
+      "gratis"
+    ],
+    "price": "0",
+    "formato": "puntual",
+    "lid": "fdc5567c"
   },
   "22767c15684b990e": {
     "title": "Cine: Materialistas",
@@ -13744,5 +13787,86 @@
     ],
     "formato": "exposicion",
     "lid": "d5e60251"
+  },
+  "7b7d640d50949d3d": {
+    "title": "Ibercaja Madrid Corre por Madrid 2026",
+    "description": "Esta popular carrera popular recorre los puntos más emblemáticos del centro de la ciudad promoviendo el deporte entre la ciudadanía. La edición de este año rinde un homenaje cultural a la Generación del 27.",
+    "start_time": "09:00:00",
+    "url": "https://madridcorrepormadrid.org/",
+    "price": "Desde 18,60 €",
+    "image": "images/events/2bd67f54588a.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/twidBaRhVpYuBxOAmD0P42DS30LZp_De0P_q2ohBkGQ/mtime:1781599410/sites/default/files/eventos/eventos/corre_por.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/fWiPpe7HoMLyc3edLM-Tbxh3NH-t-5zNqW5rGyj-4n8/mtime:1781599305/sites/default/files/eventos/eventos/ibercaja_madrid_corre_por_madrid.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/TknDExu3EhphkZqA6KbdktFSJ_EVXC0b4vrpaWSQ40s/mtime:1781599343/sites/default/files/eventos/eventos/ibercaja_madrid_corre_por_madrid_2.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/9m5Tu1TDOYf8VnJUAJZWhHsB3IG2YwcwNmbEh4bYVM4/mtime:1722945396/sites/default/files/eventos/eventos/madrid_corre_por_madrid__0.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/madrid-corre-madrid",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "69cfba74"
+  },
+  "2661f35559064509": {
+    "title": "Festival Somos Infinitos",
+    "description": "Un encuentro dedicado a la literatura romántica que celebra la lectura como una experiencia compartida. Incluye encuentros con autores, firmas de libros, dinámicas participativas y zonas de actividades inmersivas.",
+    "start_time": "15:00:00",
+    "url": "https://www.penguinlibros.com/es/content/1724-festival-somos-infinitos",
+    "price": "Desde 19,95 €",
+    "image": "images/events/eba5b7448e78.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/festival-somos-infinitos-gran-teatro-caixabank-principe-pio",
+    "source": "esmadrid",
+    "categories": [
+      "literatura",
+      "otros"
+    ],
+    "is_multi_event": true,
+    "formato": "festival",
+    "lid": "044f7fc6"
+  },
+  "69ad4f083fb32a11": {
+    "title": "Atlético de Madrid - Real Madrid (LALIGA EA SPORTS)",
+    "description": "Se trata de un encuentro deportivo correspondiente a la jornada de LaLiga entre el Atlético de Madrid y el Real Madrid. Es un duelo caracterizado por la rivalidad y la pasión futbolística en la capital.",
+    "url": "https://www.atleticodemadrid.com/ ",
+    "price": "Consultar página oficial",
+    "image": "images/events/b1566d0447a7.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/atletico-madrid-real-madrid-laliga-ea-sports-estadio-riyadh-air-metropolitano",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "2b9a4735"
+  },
+  "d6f1f36fd3c18faa": {
+    "title": "White Denim",
+    "description": "La banda estadounidense de rock presenta en directo los temas de su decimotercer trabajo de estudio. El concierto destaca por la capacidad del grupo para fusionar estilos que van desde el garage rock y el indie hasta el funk y el soul.",
+    "start_time": "21:00:00",
+    "url": "https://whitedenimmusic.com/",
+    "price": "Desde 30,20 €",
+    "image": "images/events/50159bb5a590.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/white-denim-sol",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "8e9bc286"
+  },
+  "686522420bcbd3a6": {
+    "title": "CD Leganés - Granada CF (LALIGA HYPERMOTION)",
+    "description": "El conjunto madrileño recibe al equipo granadino en una nueva jornada de la competición liguera. El encuentro se disputa en el Estadio Municipal de Butarque bajo la dirección técnica de José Rojo Martín 'Pacheta'.",
+    "url": "https://www.cdleganes.com/partidos",
+    "price": "Consultar página oficial",
+    "image": "images/events/f94b98454bf7.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/cd-leganes-granada-cf-laliga-hypermotion-estadio-municipal-butarque",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "2f59b0c5"
   }
 }
