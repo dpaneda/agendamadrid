@@ -89,6 +89,27 @@ def keyword_tags(title):
     return [tag for tag, rx in _KEYWORD_TAGS.items() if rx.search(t)]
 
 
+_FREE_PRICE_WORDS = ("gratis", "gratuito", "gratuita", "entrada libre", "acceso libre", "acceso gratuito")
+
+
+def _price_is_free(price):
+    p = str(price or "").strip().lower()
+    return p in ("0", "0 €", "0€", "free") or any(w in p for w in _FREE_PRICE_WORDS)
+
+
+def ensure_price_tags(event):
+    """Derive tags from the final price field.
+
+    The LLM enrichment replaces the scraper's categories, losing factual
+    price-derived tags like 'gratis'. Re-derive them from the merged price so
+    they always survive.
+    """
+    cats = event.setdefault("categories", [])
+    if _price_is_free(event.get("price")) and "gratis" not in cats:
+        cats.append("gratis")
+    return event
+
+
 def classify_format(event, duration_days):
     """Bucket de formato: 'festival', 'exposicion' o 'puntual' (excluyente, por prioridad)."""
     if _FESTIVAL_RE.search(event.get("title") or ""):
@@ -441,6 +462,7 @@ def run():
         for tag in keyword_tags(ev.get("title", "")):
             if tag not in cats:
                 cats.append(tag)
+        ensure_price_tags(ev)
 
     # Generate calendar from raw events (with original dates and schedules)
     min_date, max_date = calendar_window()
