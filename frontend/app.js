@@ -336,6 +336,25 @@ function fmtTime(t) {
   const p = t.split(":");
   return p.length >= 2 ? p[0].padStart(2, "0") + ":" + p[1] : "";
 }
+
+// Parse "H:MM" / "HH:MM[:SS]" to minutes since midnight, or null if invalid.
+// Data mixes formats ("9:30:00", "09:30"), so raw string compare mis-sorts.
+function timeMinutes(t) {
+  if (!t) return null;
+  const m = /^\s*(\d{1,2}):(\d{1,2})(?::\d{1,2})?\s*$/.exec(String(t));
+  if (!m) return null;
+  const h = +m[1], min = +m[2];
+  return (h < 24 && min < 60) ? h * 60 + min : null;
+}
+
+// Chronological compare; events with no valid time sort last.
+function cmpTime(a, b) {
+  const ta = timeMinutes(a), tb = timeMinutes(b);
+  if (ta === null && tb === null) return 0;
+  if (ta === null) return 1;
+  if (tb === null) return -1;
+  return ta - tb;
+}
 let selectedDate = (function() {
   // On initial load, prefer URL path (SEO entry point), then sessionStorage, then today
   const pathMatch = window.location.pathname.match(/\/(\d{4}-\d{2}-\d{2})\/?$/);
@@ -963,7 +982,7 @@ function getFilteredDayEvents() {
     filtered.sort((a, b) => {
       const aFree = a.categories.includes("gratis") ? 0 : 1;
       const bFree = b.categories.includes("gratis") ? 0 : 1;
-      return aFree - bFree || (a.start_time || "99:99").localeCompare(b.start_time || "99:99");
+      return aFree - bFree || cmpTime(a.start_time, b.start_time);
     });
   } else if (activeSort === "distancia") {
     filtered.sort((a, b) => {
@@ -973,20 +992,20 @@ function getFilteredDayEvents() {
       const db = (userLatLng && b.latitude && b.longitude)
         ? haversineDistance(userLatLng.lat, userLatLng.lng, parseFloat(b.latitude), parseFloat(b.longitude))
         : 99999;
-      return da - db;
+      return da - db || cmpTime(a.start_time, b.start_time);
     });
   } else if (activeSort === "descripcion") {
     filtered.sort((a, b) => {
       const aHas = a.description ? 0 : 1;
       const bHas = b.description ? 0 : 1;
-      return aHas - bHas || (a.start_time || "99:99").localeCompare(b.start_time || "99:99");
+      return aHas - bHas || cmpTime(a.start_time, b.start_time) || a.title.localeCompare(b.title);
     });
   } else {
-    filtered.sort((a, b) => {
-      const ta = a.start_time || "99:99";
-      const tb = b.start_time || "99:99";
-      return ta.localeCompare(tb) || a.title.localeCompare(b.title);
-    });
+    // Same start hour: group by end hour so displayed ranges look tidy, then title.
+    filtered.sort((a, b) =>
+      cmpTime(a.start_time, b.start_time) ||
+      (timeMinutes(a.end_time) ?? 9999) - (timeMinutes(b.end_time) ?? 9999) ||
+      a.title.localeCompare(b.title));
   }
   return filtered;
 }
@@ -1029,7 +1048,7 @@ function renderSearchList() {
   // Sort by date then time so the date-grouped sections render in chronological order
   _searchResults.sort((a, b) =>
     (a.start_date || "9999-99-99").localeCompare(b.start_date || "9999-99-99") ||
-    (a.start_time || "99:99").localeCompare(b.start_time || "99:99"));
+    cmpTime(a.start_time, b.start_time));
   if (!_searchResults.length) {
     container.innerHTML = `<p class='empty-state'>No se encontraron eventos para "${esc(queryInput ? queryInput.value : activeSearch)}"</p>`;
     return;
