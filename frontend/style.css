@@ -380,8 +380,9 @@ header[hidden] {
 .filters-col {
   flex: 0 0 220px;
   position: sticky;
-  top: 1rem;
-  max-height: calc(100vh - 2rem);
+  /* Stick below the sticky header; --header-h is kept in sync from JS. */
+  top: calc(var(--header-h, 48px) + 1rem);
+  max-height: calc(100vh - var(--header-h, 48px) - 2rem);
   overflow-y: auto;
   display: flex;
   flex-direction: column;

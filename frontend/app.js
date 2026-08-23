@@ -579,6 +579,15 @@ async function init() {
 
 }
 
+// Keep --header-h in sync so sticky elements (filters column) offset below the
+// sticky header instead of sliding under it.
+function syncHeaderH() {
+  const header = document.querySelector("header");
+  if (!header) return;
+  document.documentElement.style.setProperty("--header-h", `${header.offsetHeight}px`);
+}
+window.addEventListener("resize", syncHeaderH);
+
 function setView(view) {
   currentView = view;
   document.body.dataset.view = view;
@@ -595,6 +604,7 @@ function setView(view) {
   document.getElementById("user-container").hidden = view !== "user";
   document.querySelector("header").hidden = view === "user" && window.innerWidth <= 640;
   document.querySelector(".filter-bar").style.display = view === "user" ? "none" : "";
+  syncHeaderH();
   renderFormatoCards();
   renderTagsSidebar();
   renderFiltersCol();
