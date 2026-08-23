@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r crawlers/requirements.txt
-          pip install pytest ruff
+          pip install pytest "ruff==0.15.16"
 
       - name: Lint
         run: python -m ruff check crawlers/ tests/
