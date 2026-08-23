@@ -501,10 +501,9 @@ async function init() {
 
   function doSearch() {
     activeSearch = searchInput.value.trim().toLowerCase();
-    if (!activeSearch) { render(); return; }
-    if (currentView === "map") { renderMap(); return; }
-    if (currentView === "cal") { renderCalendar(); return; }
-    renderSearchList();
+    // Full render so layout chrome (filters column, formato cards) stays in
+    // sync with search state instead of changing on the next interaction.
+    render();
   }
 
   // renderSearchList / _renderSearchPage are defined at module scope (used by render() too).
@@ -999,21 +998,23 @@ function _searchDateLabel(ds) {
   return label.charAt(0).toUpperCase() + label.slice(1);
 }
 
-// Search is global across all dates. Each unique event is shown once, tagged with
-// its first upcoming date, and results are grouped under date headers.
+// Search is global across upcoming dates (today onwards). Each event is shown
+// once at its next upcoming date, grouped under date headers, honoring the
+// same filters as the day list (hidden/seen, excluded tags, location, source).
 function renderSearchList() {
   const container = document.getElementById("events-container");
   const queryInput = document.getElementById("search-input");
+  const today = dateStr(new Date());
+  const dates = Object.keys(calendarData).filter(ds => ds >= today).sort();
   const seen = new Set();
   _searchResults = [];
-  for (const [eid, ev] of Object.entries(allEvents)) {
-    if (seen.has(eid) || !matchesSearch(ev)) continue;
-    seen.add(eid);
-    // First upcoming calendar date for this event
-    const firstDate = Object.keys(calendarData).sort().find(ds =>
-      (calendarData[ds] || []).some(e => e.event_id === eid));
-    const entry = firstDate ? (calendarData[firstDate] || []).find(e => e.event_id === eid) : {};
-    _searchResults.push({ ...ev, ...entry, id: eid, start_date: firstDate || "" });
+  for (const ds of dates) {
+    const dayEvents = _applyListFilters(_getDayEvents(ds));
+    for (const ev of dayEvents) {
+      if (seen.has(ev.id)) continue;
+      seen.add(ev.id);
+      _searchResults.push(ev);
+    }
   }
   // Sort by date then time so the date-grouped sections render in chronological order
   _searchResults.sort((a, b) =>
@@ -1028,7 +1029,7 @@ function renderSearchList() {
 
 function _renderSearchPage(container, count) {
   const showing = Math.min(count, _searchResults.length);
-  let html = `<p class="search-result-count">${_searchResults.length} resultado${_searchResults.length !== 1 ? "s" : ""} en todas las fechas${showing < _searchResults.length ? ` (mostrando ${showing})` : ""}</p>`;
+  let html = `<p class="search-result-count">${_searchResults.length} resultado${_searchResults.length !== 1 ? "s" : ""} en próximas fechas${showing < _searchResults.length ? ` (mostrando ${showing})` : ""}</p>`;
   let lastDate = null;
   for (let i = 0; i < showing; i++) {
     const ev = _searchResults[i];
