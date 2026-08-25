@@ -48,6 +48,13 @@
     "latitude": 40.39130985242181,
     "longitude": -3.6958028442054074
   },
+  "040b80fc": {
+    "location_name": "Espacio de Igualdad Nieves Torres. Chamartín",
+    "address": "CALLE ENRIQUE JARDIEL PONCELA 8",
+    "district": "Chamartin",
+    "latitude": 40.46088981165102,
+    "longitude": -3.6700689174427326
+  },
   "1a630411": {
     "location_name": "Espacio de Igualdad Lourdes Hernández. Carabanchel",
     "address": "CALLE COMANDANTE FONTANES 8",
@@ -104,13 +111,6 @@
     "latitude": 40.39420907754556,
     "longitude": -3.744687315765447
   },
-  "040b80fc": {
-    "location_name": "Espacio de Igualdad Nieves Torres. Chamartín",
-    "address": "CALLE ENRIQUE JARDIEL PONCELA 8",
-    "district": "Chamartin",
-    "latitude": 40.46088981165102,
-    "longitude": -3.6700689174427326
-  },
   "297b23a2": {
     "location_name": "Espacio de Igualdad Lucía Sánchez Saornil. San Blas-Canillejas",
     "address": "PLAZA EURIPIDES 1",
@@ -124,13 +124,6 @@
     "district": "Retiro",
     "latitude": 40.41902261618159,
     "longitude": -3.692188193693138
-  },
-  "5ce42a5d": {
-    "location_name": "Auditorio al aire libre. Parque de la Vaguada",
-    "address": "PASEO VAGUADA 13",
-    "district": "Fuencarral-ElPardo",
-    "latitude": 40.48016602497203,
-    "longitude": -3.7112978051427574
   },
   "07486b5c": {
     "location_name": "Teatro de Títeres de El Retiro",
@@ -389,6 +382,13 @@
     "latitude": 40.38272687240551,
     "longitude": -3.7123340121838933
   },
+  "5ce42a5d": {
+    "location_name": "Auditorio al aire libre. Parque de la Vaguada",
+    "address": "PASEO VAGUADA 13",
+    "district": "Fuencarral-ElPardo",
+    "latitude": 40.48016602497203,
+    "longitude": -3.7112978051427574
+  },
   "314e4d23": {
     "location_name": "Parque de el Pueblo de El Pardo",
     "district": "Distrito"
@@ -446,13 +446,6 @@
     "district": "Usera",
     "latitude": 40.36969488211539,
     "longitude": -3.7081179166391824
-  },
-  "f799769f": {
-    "location_name": "Centro Cultural Eduardo Úrculo (Tetuán)",
-    "address": "PLAZA DONOSO 5",
-    "district": "Tetuan",
-    "latitude": 40.46900764611639,
-    "longitude": -3.697595691925329
   },
   "0745535a": {
     "location_name": "Parque Olof Palme",
@@ -578,13 +571,6 @@
     "latitude": 40.468674190501815,
     "longitude": -3.631588640594873
   },
-  "aac81ce4": {
-    "location_name": "Centro Sociocultural Valverde (Fuencarral - El Pardo)",
-    "address": "PLAZA ISLAS AZORES 1",
-    "district": "Fuencarral-ElPardo",
-    "latitude": 40.49504564211655,
-    "longitude": -3.6880070256093758
-  },
   "db46a17d": {
     "location_name": "Parque de Las Cruces",
     "address": "AVENIDA POBLADOS 74",
@@ -606,12 +592,19 @@
     "latitude": 40.40912277790706,
     "longitude": -3.6793179644920584
   },
-  "f2b4174f": {
-    "location_name": "Instalación Deportiva Municipal Básica Parque El Calero",
-    "address": "CALLE VIRGEN DE NURIA 4",
-    "district": "CiudadLineal",
-    "latitude": 40.43580006579458,
-    "longitude": -3.6532953172963816
+  "aac81ce4": {
+    "location_name": "Centro Sociocultural Valverde (Fuencarral - El Pardo)",
+    "address": "PLAZA ISLAS AZORES 1",
+    "district": "Fuencarral-ElPardo",
+    "latitude": 40.49504564211655,
+    "longitude": -3.6880070256093758
+  },
+  "6d0e53b1": {
+    "location_name": "Centro Cultural Lope de Vega (Puente de Vallecas)",
+    "address": "CALLE CONCEJO DE TEVERGA 1",
+    "district": "PuenteDeVallecas",
+    "latitude": 40.386296991431074,
+    "longitude": -3.671858416387963
   },
   "12355570": {
     "location_name": "Biblioteca Pública Municipal Eugenio Trías. Casa de Fieras de El Retiro (Retiro)",
@@ -619,6 +612,13 @@
     "district": "Retiro",
     "latitude": 40.4166091081099,
     "longitude": -3.6795930368034804
+  },
+  "f2b4174f": {
+    "location_name": "Instalación Deportiva Municipal Básica Parque El Calero",
+    "address": "CALLE VIRGEN DE NURIA 4",
+    "district": "CiudadLineal",
+    "latitude": 40.43580006579458,
+    "longitude": -3.6532953172963816
   },
   "dbc8993b": {
     "location_name": "Parque Eva Duarte",
@@ -634,13 +634,6 @@
     "latitude": 40.38024953878224,
     "longitude": -3.6175290483217055
   },
-  "dbe08552": {
-    "location_name": "Centro Cultural Auditorio Parque El Paraíso (San Blas - Canillejas)",
-    "address": "AVENIDA ARCENTALES 4",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.42997621103139,
-    "longitude": -3.6221773579444596
-  },
   "28cc7d13": {
     "location_name": "Biblioteca Pública Municipal Francisco Umbral (Villaverde)",
     "address": "CALLE CALCIO 1",
@@ -648,12 +641,12 @@
     "latitude": 40.35118703272002,
     "longitude": -3.679345889376551
   },
-  "97e16db3": {
-    "location_name": "Parque de don David Pérez y don Miguel Ángel González",
-    "address": "CALLE DIONISIO INCA YUPANQUI 8",
-    "district": "Hortaleza",
-    "latitude": 40.461621132349094,
-    "longitude": -3.6281020785174873
+  "dbe08552": {
+    "location_name": "Centro Cultural Auditorio Parque El Paraíso (San Blas - Canillejas)",
+    "address": "AVENIDA ARCENTALES 4",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.42997621103139,
+    "longitude": -3.6221773579444596
   },
   "922e2c17": {
     "location_name": "Mercado de Productores Villa de Vallecas",
@@ -661,27 +654,6 @@
     "district": "VillaDeVallecas",
     "latitude": 40.36372961110359,
     "longitude": -3.598761647346733
-  },
-  "6bac6bd1": {
-    "location_name": "Parque de Salvador Allende",
-    "address": "CALLE SALVADOR ALLENDE 3",
-    "district": "Carabanchel",
-    "latitude": 40.364341448699825,
-    "longitude": -3.757402071835875
-  },
-  "c20aaa12": {
-    "location_name": "Auditorio al aire libre. Parque de Canillejas",
-    "address": "CALLE NECTAR 32",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.442611374955234,
-    "longitude": -3.611167964373918
-  },
-  "6d0e53b1": {
-    "location_name": "Centro Cultural Lope de Vega (Puente de Vallecas)",
-    "address": "CALLE CONCEJO DE TEVERGA 1",
-    "district": "PuenteDeVallecas",
-    "latitude": 40.386296991431074,
-    "longitude": -3.671858416387963
   },
   "354d0096": {
     "location_name": "Centro Deportivo Municipal Peñagrande GoFit",
@@ -696,6 +668,20 @@
     "district": "Hortaleza",
     "latitude": 40.47508343631223,
     "longitude": -3.645482
+  },
+  "868d318d": {
+    "location_name": "Parque de Berlín",
+    "address": "AVENIDA RAMON Y CAJAL 2",
+    "district": "Chamartin",
+    "latitude": 40.45150372849227,
+    "longitude": -3.6760645355093797
+  },
+  "5673f627": {
+    "location_name": "Museo Lázaro Galdiano",
+    "address": "CALLE SERRANO 122",
+    "district": "Salamanca",
+    "latitude": 40.43675593917329,
+    "longitude": -3.6861820403705816
   },
   "1fc654e8": {
     "location_name": "Planta de transformación de residuos vegetales de Migas Calientes",
@@ -767,6 +753,13 @@
     "latitude": 40.426642215368176,
     "longitude": -3.699722994908341
   },
+  "f3bebf71": {
+    "location_name": "Biblioteca Pública Municipal María Zambrano (Tetuán)",
+    "address": "PLAZA DONOSO 5",
+    "district": "Tetuan",
+    "latitude": 40.46903299144094,
+    "longitude": -3.6976620067964996
+  },
   "31352bed": {
     "location_name": "Imprenta Municipal. Artes del libro",
     "address": "CALLE CONCEPCION JERONIMA 15",
@@ -780,13 +773,6 @@
     "district": "Hortaleza",
     "latitude": 40.4787279264401,
     "longitude": -3.6527183525553006
-  },
-  "77b83e41": {
-    "location_name": "Parque Santa Eugenia",
-    "address": "CALLE Puentelarra 13",
-    "district": "VillaDeVallecas",
-    "latitude": 40.38131130575197,
-    "longitude": -3.608459149580722
   },
   "cf38b0cd": {
     "location_name": "Nave 10 Matadero (antes Naves del Español)",
@@ -815,19 +801,19 @@
     "latitude": 40.397074625115906,
     "longitude": -3.7664885474841556
   },
-  "06d8226f": {
-    "location_name": "Biblioteca Pública Municipal La Chata (Carabanchel)",
-    "address": "CALLE GENERAL RICARDOS 252",
-    "district": "Carabanchel",
-    "latitude": 40.38330593504341,
-    "longitude": -3.7420633861175796
-  },
   "09e2acfe": {
     "location_name": "Biblioteca Pública Municipal Ciudad Lineal (Ciudad Lineal)",
     "address": "CALLE HERMANOS GARCIA NOBLEJAS 14",
     "district": "CiudadLineal",
     "latitude": 40.43644651057092,
     "longitude": -3.6372924261150033
+  },
+  "06d8226f": {
+    "location_name": "Biblioteca Pública Municipal La Chata (Carabanchel)",
+    "address": "CALLE GENERAL RICARDOS 252",
+    "district": "Carabanchel",
+    "latitude": 40.38330593504341,
+    "longitude": -3.7420633861175796
   },
   "5a2ec7ad": {
     "location_name": "Biblioteca Pública Municipal Francisco Ibáñez (Chamartín)",
@@ -871,13 +857,6 @@
     "latitude": 40.40971737692924,
     "longitude": -3.6529822109115133
   },
-  "f3bebf71": {
-    "location_name": "Biblioteca Pública Municipal María Zambrano (Tetuán)",
-    "address": "PLAZA DONOSO 5",
-    "district": "Tetuan",
-    "latitude": 40.46903299144094,
-    "longitude": -3.6976620067964996
-  },
   "5ec0d445": {
     "location_name": "Biblioteca Pública Municipal Francisco Ayala (Vicálvaro)",
     "address": "BULEVAR INDALECIO PRIETO 21",
@@ -905,6 +884,13 @@
     "district": "SanBlas-Canillejas",
     "latitude": 40.44640229188281,
     "longitude": -3.6117933204271098
+  },
+  "8df27ab6": {
+    "location_name": "Biblioteca Pública Municipal La Elipa (Ciudad Lineal)",
+    "address": "CALLE NUESTRA SE&amp;Ntilde;ORA DEL VILLAR 6",
+    "district": "CiudadLineal",
+    "latitude": 40.42343352863466,
+    "longitude": -3.6518288644365704
   },
   "1e352ee3": {
     "location_name": "COAM",
@@ -1287,12 +1273,6 @@
     "latitude": 40.4227242,
     "longitude": -3.6923964
   },
-  "5673f627": {
-    "location_name": "Museo Lázaro Galdiano",
-    "address": "de Serrano, 122",
-    "latitude": 40.4369701,
-    "longitude": -3.6857313
-  },
   "e9c8b9e8": {
     "location_name": "Nomad Museo Inmersivo",
     "address": "Gran Vía, 78",
@@ -1521,8 +1501,8 @@
     "latitude": 40.2871621,
     "longitude": -3.8223884
   },
-  "7e021704": {
-    "location_name": "Estadio Municipal de Butarque",
+  "2f59b0c5": {
+    "location_name": "Estadio Ontime Butarque",
     "address": "Arquitectura, s/n",
     "latitude": 40.3394716,
     "longitude": -3.7627478
@@ -1735,12 +1715,6 @@
     "address": "Castellana, 133",
     "latitude": 40.46,
     "longitude": -3.69
-  },
-  "2f59b0c5": {
-    "location_name": "Estadio Ontime Butarque",
-    "address": "Arquitectura, s/n",
-    "latitude": 40.340302,
-    "longitude": -3.760473
   },
   "94a66118": {
     "location_name": "Auditorio Nacional de Música",
