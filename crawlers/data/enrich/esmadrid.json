@@ -46179,5 +46179,95 @@
         "20:00:00"
       ]
     }
+  },
+  "30f513019ef532fa": {
+    "title": "Beermad - Madrid Craft Beer Festival 2026",
+    "description": "Feria de la cerveza artesana que reúne a numerosos productores locales y nacionales para degustar variedades craft. El evento se complementa con una oferta gastronómica de street food y actuaciones musicales en directo.",
+    "price": "Gratis",
+    "location_name": "Avenida del Planetario",
+    "address": "Avenida del Planetario esquina a C/",
+    "start_date": "2026-09-25",
+    "end_date": "2026-09-27",
+    "categories": [
+      "conciertos",
+      "ferias",
+      "gastronomía",
+      "gratis"
+    ],
+    "is_multi_event": true
+  },
+  "28808b93e29d3651": {
+    "title": "Zucchero (Madrid Live Experience 2026)",
+    "description": "El legendario músico italiano Zucchero presenta su gira internacional repasando sus grandes éxitos y trayectoria musical. El artista ofrece un directo que refleja una carrera global marcada por colaboraciones con grandes figuras de la música.",
+    "price": "Desde 61,60 €",
+    "location_name": "Gran Teatro CaixaBank Príncipe Pío",
+    "address": "Cuesta de San Vicente, 44",
+    "start_date": "2026-09-25",
+    "categories": [
+      "conciertos"
+    ],
+    "schedule": {
+      "0": [
+        "21:00:00"
+      ],
+      "1": [
+        "21:00:00"
+      ],
+      "2": [
+        "21:00:00"
+      ],
+      "3": [
+        "21:00:00"
+      ],
+      "4": [
+        "21:00:00"
+      ],
+      "5": [
+        "21:00:00"
+      ],
+      "6": [
+        "21:00:00"
+      ]
+    }
+  },
+  "45314941e2579eaa": {
+    "title": "Madrid Salvaje 2026",
+    "description": "Este festival reúne a los artistas más relevantes de la escena rap y trap nacional junto a talentos emergentes del género. El evento ofrece una experiencia completa con conciertos, exhibiciones de skate, graffiti y opciones gastronómicas.",
+    "price": "Desde 48 €",
+    "location_name": "Estadio Ontime Butarque",
+    "address": "Arquitectura, s/n, 28918 Leganés",
+    "start_date": "2026-09-25",
+    "end_date": "2026-09-26",
+    "categories": [
+      "conciertos"
+    ],
+    "is_multi_event": true
+  },
+  "b2a1213d4cc0049b": {
+    "title": "Pinocchio(live)#3",
+    "description": "La directora y artista francesa Alice Laloy presenta una performance que combina teatro, coreografía y artes visuales para reflexionar sobre los límites entre lo vivo y lo inanimado. El montaje utiliza la historia de Collodi para explorar la transformación corporal y la frontera entre lo humano y la marioneta.",
+    "price": "25 €",
+    "location_name": "Teatro Valle-Inclán",
+    "address": "Plaza de Ana Diosdado, s/n",
+    "start_date": "2026-09-25",
+    "end_date": "2026-09-27",
+    "categories": [
+      "teatro",
+      "danza"
+    ],
+    "schedule": {
+      "3": [
+        "20:00:00",
+        "21:10:00"
+      ],
+      "4": [
+        "20:00:00",
+        "21:10:00"
+      ],
+      "6": [
+        "12:00:00",
+        "13:10:00"
+      ]
+    }
   }
 }
