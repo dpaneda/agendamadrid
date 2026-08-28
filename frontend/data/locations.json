@@ -76,6 +76,13 @@
     "latitude": 40.46088981165102,
     "longitude": -3.6700689174427326
   },
+  "ebf96d4f": {
+    "location_name": "Centro Cultural Quinta del Berro - Rafael Altamira (Salamanca)",
+    "address": "CALLE ENRIQUE D'ALMONTE 1",
+    "district": "Salamanca",
+    "latitude": 40.42206923419431,
+    "longitude": -3.6629608041639368
+  },
   "f14ce3db": {
     "location_name": "Espacio de Igualdad Carme Chacón. Hortaleza",
     "address": "CALLE MATAPOZUELOS 2",
@@ -89,13 +96,6 @@
     "district": "Centro",
     "latitude": 40.42739911262292,
     "longitude": -3.710589286287491
-  },
-  "ebf96d4f": {
-    "location_name": "Centro Cultural Quinta del Berro - Rafael Altamira (Salamanca)",
-    "address": "CALLE ENRIQUE D'ALMONTE 1",
-    "district": "Salamanca",
-    "latitude": 40.42206923419431,
-    "longitude": -3.6629608041639368
   },
   "13acb8c9": {
     "location_name": "Centro Cultural Casa de Vacas (Retiro)",
@@ -313,6 +313,13 @@
     "latitude": 40.3711623444796,
     "longitude": -3.692742821990015
   },
+  "5ce42a5d": {
+    "location_name": "Auditorio al aire libre. Parque de la Vaguada",
+    "address": "PASEO VAGUADA 13",
+    "district": "Fuencarral-ElPardo",
+    "latitude": 40.48016602497203,
+    "longitude": -3.7112978051427574
+  },
   "1d11f16a": {
     "location_name": "Biblioteca Pública Municipal María Lejárraga (Hortaleza)",
     "address": "CALLE PRINCESA DE EBOLI 29",
@@ -431,13 +438,6 @@
     "latitude": 40.38272687240551,
     "longitude": -3.7123340121838933
   },
-  "5ce42a5d": {
-    "location_name": "Auditorio al aire libre. Parque de la Vaguada",
-    "address": "PASEO VAGUADA 13",
-    "district": "Fuencarral-ElPardo",
-    "latitude": 40.48016602497203,
-    "longitude": -3.7112978051427574
-  },
   "314e4d23": {
     "location_name": "Parque de el Pueblo de El Pardo",
     "district": "Distrito"
@@ -455,6 +455,13 @@
     "district": "Latina",
     "latitude": 40.38493929920335,
     "longitude": -3.7641963952601154
+  },
+  "7a200743": {
+    "location_name": "Jardín del Paseo Federico García Lorca",
+    "address": "PASEO FEDERICO GARCIA LORCA 21",
+    "district": "VillaDeVallecas",
+    "latitude": 40.37740868500615,
+    "longitude": -3.6206400361863036
   },
   "b1f7c00c": {
     "location_name": "Teatro Español",
@@ -600,6 +607,13 @@
     "latitude": 40.374166248648216,
     "longitude": -3.7032220308808577
   },
+  "ffd56673": {
+    "location_name": "Parque de la Casa de Campo",
+    "address": "PASEO PUERTA DEL ANGEL 1",
+    "district": "Moncloa-Aravaca",
+    "latitude": 40.41472407139105,
+    "longitude": -3.7301857404819767
+  },
   "fdc5567c": {
     "location_name": "Centro Sociocultural Alberto Sánchez (Puente de Vallecas)",
     "address": "CALLE RISCO DE PELOCHE 14",
@@ -628,6 +642,13 @@
     "latitude": 40.382311100280766,
     "longitude": -3.7227552919050586
   },
+  "53979c9c": {
+    "location_name": "Parque Enrique Tierno Galván",
+    "address": "CALLE MENESES 4",
+    "district": "Arganzuela",
+    "latitude": 40.39210151448589,
+    "longitude": -3.681620654746187
+  },
   "db46a17d": {
     "location_name": "Parque de Las Cruces",
     "address": "AVENIDA POBLADOS 74",
@@ -655,6 +676,13 @@
     "district": "Retiro",
     "latitude": 40.397021560779024,
     "longitude": -3.6738766514153163
+  },
+  "77f82d83": {
+    "location_name": "Centro Cultural El Pozo del tío Raimundo (Puente de Vallecas)",
+    "address": "AVENIDA GLORIETAS 19",
+    "district": "PuenteDeVallecas",
+    "latitude": 40.37381624358889,
+    "longitude": -3.6599325731670977
   },
   "aac81ce4": {
     "location_name": "Centro Sociocultural Valverde (Fuencarral - El Pardo)",
@@ -1069,6 +1097,12 @@
     "address": "de Bailén, 8",
     "latitude": 40.4159416,
     "longitude": -3.7150162
+  },
+  "f9c4232a": {
+    "location_name": "Teatro del Barrio",
+    "address": "de Zurita, 20",
+    "latitude": 40.4096362,
+    "longitude": -3.6991806
   },
   "20f77603": {
     "location_name": "Museo Nacional Thyssen-Bornemisza",
@@ -1505,12 +1539,6 @@
     "latitude": 40.421432,
     "longitude": -3.7536663
   },
-  "f9c4232a": {
-    "location_name": "Teatro del Barrio",
-    "address": "de Zurita, 20",
-    "latitude": 40.4096362,
-    "longitude": -3.6991806
-  },
   "d2add564": {
     "location_name": "Escenario Puerta del Ángel",
     "address": "del Embarcadero, Recinto Ferial de la Casa de Campo",
@@ -1803,5 +1831,11 @@
     "address": "de Ana Diosdado, s/n",
     "latitude": 40.4083829,
     "longitude": -3.7006353
+  },
+  "3541f04d": {
+    "location_name": "El Sótano",
+    "address": "de las Maldonadas, 6",
+    "latitude": 40.4109981,
+    "longitude": -3.707788
   }
 }
