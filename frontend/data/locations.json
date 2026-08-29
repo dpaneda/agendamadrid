@@ -55,13 +55,6 @@
     "latitude": 40.46301382809657,
     "longitude": -3.587693324074623
   },
-  "e232e586": {
-    "location_name": "Espacio de Igualdad María Zambrano. Chamberí",
-    "address": "CALLE ANDRES MELLADO 44",
-    "district": "Chamberi",
-    "latitude": 40.433958260960964,
-    "longitude": -3.7143358486689415
-  },
   "95a62894": {
     "location_name": "Cineteca Madrid",
     "address": "PLAZA LEGAZPI 8",
@@ -83,13 +76,6 @@
     "latitude": 40.42206923419431,
     "longitude": -3.6629608041639368
   },
-  "f14ce3db": {
-    "location_name": "Espacio de Igualdad Carme Chacón. Hortaleza",
-    "address": "CALLE MATAPOZUELOS 2",
-    "district": "Hortaleza",
-    "latitude": 40.46155641637237,
-    "longitude": -3.6501714580414126
-  },
   "824774c3": {
     "location_name": "Centro de Cultura Contemporánea CondeDuque",
     "address": "CALLE CONDE DUQUE 9",
@@ -103,13 +89,6 @@
     "district": "Retiro",
     "latitude": 40.41906571939961,
     "longitude": -3.684053112760816
-  },
-  "1a630411": {
-    "location_name": "Espacio de Igualdad Lourdes Hernández. Carabanchel",
-    "address": "CALLE COMANDANTE FONTANES 8",
-    "district": "Carabanchel",
-    "latitude": 40.395326406887946,
-    "longitude": -3.721622686264932
   },
   "02b25093": {
     "location_name": "Centro de Información y Educación Ambiental de Casa de Campo",
@@ -132,12 +111,19 @@
     "latitude": 40.392279999540044,
     "longitude": -3.684956957448299
   },
-  "297b23a2": {
-    "location_name": "Espacio de Igualdad Lucía Sánchez Saornil. San Blas-Canillejas",
-    "address": "PLAZA EURIPIDES 1",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.449003967549075,
-    "longitude": -3.6069161377213526
+  "1a630411": {
+    "location_name": "Espacio de Igualdad Lourdes Hernández. Carabanchel",
+    "address": "CALLE COMANDANTE FONTANES 8",
+    "district": "Carabanchel",
+    "latitude": 40.395326406887946,
+    "longitude": -3.721622686264932
+  },
+  "fdc5567c": {
+    "location_name": "Centro Sociocultural Alberto Sánchez (Puente de Vallecas)",
+    "address": "CALLE RISCO DE PELOCHE 14",
+    "district": "PuenteDeVallecas",
+    "latitude": 40.393619022093546,
+    "longitude": -3.6556016835101834
   },
   "bb29009c": {
     "location_name": "CentroCentro",
@@ -146,12 +132,12 @@
     "latitude": 40.41902261618159,
     "longitude": -3.692188193693138
   },
-  "07486b5c": {
-    "location_name": "Teatro de Títeres de El Retiro",
-    "address": "AVENIDA MÉXICO 4",
-    "district": "Retiro",
-    "latitude": 40.41878362561595,
-    "longitude": -3.6866519471003647
+  "d5698254": {
+    "location_name": "Parque del Pueblo del Pardo",
+    "address": "AVENIDA GUARDIA 4",
+    "district": "Fuencarral-ElPardo",
+    "latitude": 40.5186002228516,
+    "longitude": -3.7753787533567573
   },
   "3eb06d5c": {
     "location_name": "Auditorio al aire libre. Carlos Jiménez de Parga",
@@ -187,13 +173,6 @@
     "latitude": 40.40596936645757,
     "longitude": -3.698589986849812
   },
-  "b0b9722e": {
-    "location_name": "Espacio de Igualdad Hermanas Mirabal. Tetuán",
-    "address": "CALLE BRAVO MURILLO 133",
-    "district": "Tetuan",
-    "latitude": 40.45012255255781,
-    "longitude": -3.7037047897267947
-  },
   "c6c5db82": {
     "location_name": "Centro Cultural Sanchinarro - Hispanidad (Hortaleza)",
     "address": "CALLE PRINCESA DE EBOLI 29",
@@ -207,6 +186,13 @@
     "district": "Centro",
     "latitude": 40.41410290844665,
     "longitude": -3.7098591212735883
+  },
+  "65a790aa": {
+    "location_name": "Espacio de Igualdad Berta Cáceres. Usera",
+    "address": "CALLE GRAN AVENIDA 14",
+    "district": "Usera",
+    "latitude": 40.36902428128397,
+    "longitude": -3.710212677306876
   },
   "c4d94593": {
     "location_name": "Centro Cultural Ciudad Pegaso (San Blas - Canillejas)",
@@ -327,6 +313,20 @@
     "latitude": 40.49041562546542,
     "longitude": -3.655356751728003
   },
+  "297b23a2": {
+    "location_name": "Espacio de Igualdad Lucía Sánchez Saornil. San Blas-Canillejas",
+    "address": "PLAZA EURIPIDES 1",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.449003967549075,
+    "longitude": -3.6069161377213526
+  },
+  "07486b5c": {
+    "location_name": "Teatro de Títeres de El Retiro",
+    "address": "AVENIDA MÉXICO 4",
+    "district": "Retiro",
+    "latitude": 40.41878362561595,
+    "longitude": -3.6866519471003647
+  },
   "ca84f24f": {
     "location_name": "Biblioteca Pública Municipal Pablo Neruda (Ciudad Lineal)",
     "address": "CALLE ASCAO 4",
@@ -347,13 +347,6 @@
     "district": "Salamanca",
     "latitude": 40.42299730556785,
     "longitude": -3.6625213630031794
-  },
-  "314b42da": {
-    "location_name": "Espacio de Igualdad María de Maeztu. Latina",
-    "address": "CALLE MARCELINO CASTILLO 29",
-    "district": "Latina",
-    "latitude": 40.39420907754556,
-    "longitude": -3.744687315765447
   },
   "7fb097ff": {
     "location_name": "Espacio de Igualdad María Telo. Moratalaz",
@@ -382,19 +375,26 @@
     "latitude": 40.473659104975354,
     "longitude": -3.592395079190456
   },
-  "9b3eae76": {
-    "location_name": "Espacio de Igualdad Dulce Chacón. Villaverde",
-    "address": "CALLE TORDEGRILLOS 32",
-    "district": "Villaverde",
-    "latitude": 40.344107374451525,
-    "longitude": -3.7166081132911537
-  },
   "73b313ed": {
     "location_name": "Jardines de El Buen Retiro",
     "address": "PLAZA INDEPENDENCIA 7",
     "district": "Retiro",
     "latitude": 40.41964087412762,
     "longitude": -3.68793370943788
+  },
+  "b0b9722e": {
+    "location_name": "Espacio de Igualdad Hermanas Mirabal. Tetuán",
+    "address": "CALLE BRAVO MURILLO 133",
+    "district": "Tetuan",
+    "latitude": 40.45012255255781,
+    "longitude": -3.7037047897267947
+  },
+  "f14ce3db": {
+    "location_name": "Espacio de Igualdad Carme Chacón. Hortaleza",
+    "address": "CALLE MATAPOZUELOS 2",
+    "district": "Hortaleza",
+    "latitude": 40.46155641637237,
+    "longitude": -3.6501714580414126
   },
   "395f476b": {
     "location_name": "Centro Dotacional Integrado Arganzuela Ángel del Río",
@@ -463,6 +463,13 @@
     "latitude": 40.37740868500615,
     "longitude": -3.6206400361863036
   },
+  "c9c45e0d": {
+    "location_name": "Fernán Gómez Centro Cultural de la Villa",
+    "address": "PLAZA COLON 4",
+    "district": "Salamanca",
+    "latitude": 40.4249721516942,
+    "longitude": -3.689948085098791
+  },
   "b1f7c00c": {
     "location_name": "Teatro Español",
     "address": "CALLE PRINCIPE 25",
@@ -476,13 +483,6 @@
     "district": "PuenteDeVallecas",
     "latitude": 40.38903628994235,
     "longitude": -3.6665321826830297
-  },
-  "c9c45e0d": {
-    "location_name": "Fernán Gómez Centro Cultural de la Villa",
-    "address": "PLAZA COLON 4",
-    "district": "Salamanca",
-    "latitude": 40.4249721516942,
-    "longitude": -3.689948085098791
   },
   "74ef50ff": {
     "location_name": "El Capricho de la Alameda Osuna",
@@ -510,19 +510,19 @@
     "address": "CALLE MAR DE LAS ANTILLAS 8",
     "district": "Hortaleza"
   },
-  "c2271205": {
-    "location_name": "Espacio de Igualdad Emilia Pardo Bazán. Ciudad Lineal",
-    "address": "AVENIDA BADAJOZ 60",
-    "district": "CiudadLineal",
-    "latitude": 40.442311100791215,
-    "longitude": -3.6534806246311913
-  },
   "212de84d": {
     "location_name": "Espacio de Igualdad Elena Arnedo Soriano. Retiro",
     "address": "CALLE ARREGUI Y ARUEJ 31",
     "district": "Retiro",
     "latitude": 40.40254931370529,
     "longitude": -3.668092320219012
+  },
+  "9b3eae76": {
+    "location_name": "Espacio de Igualdad Dulce Chacón. Villaverde",
+    "address": "CALLE TORDEGRILLOS 32",
+    "district": "Villaverde",
+    "latitude": 40.344107374451525,
+    "longitude": -3.7166081132911537
   },
   "9e350e28": {
     "location_name": "Centro Cultural Meseta de Orcasitas (Usera)",
@@ -537,6 +537,13 @@
     "district": "PuenteDeVallecas",
     "latitude": 40.386296991431074,
     "longitude": -3.671858416387963
+  },
+  "e232e586": {
+    "location_name": "Espacio de Igualdad María Zambrano. Chamberí",
+    "address": "CALLE ANDRES MELLADO 44",
+    "district": "Chamberi",
+    "latitude": 40.433958260960964,
+    "longitude": -3.7143358486689415
   },
   "0745535a": {
     "location_name": "Parque Olof Palme",
@@ -565,13 +572,6 @@
     "district": "Salamanca",
     "latitude": 40.42585800515975,
     "longitude": -3.689601594290468
-  },
-  "65a790aa": {
-    "location_name": "Espacio de Igualdad Berta Cáceres. Usera",
-    "address": "CALLE GRAN AVENIDA 14",
-    "district": "Usera",
-    "latitude": 40.36902428128397,
-    "longitude": -3.710212677306876
   },
   "e2457581": {
     "location_name": "Biblioteca Musical Víctor Espinós",
@@ -614,19 +614,19 @@
     "latitude": 40.41472407139105,
     "longitude": -3.7301857404819767
   },
-  "fdc5567c": {
-    "location_name": "Centro Sociocultural Alberto Sánchez (Puente de Vallecas)",
-    "address": "CALLE RISCO DE PELOCHE 14",
-    "district": "PuenteDeVallecas",
-    "latitude": 40.393619022093546,
-    "longitude": -3.6556016835101834
-  },
   "a0c50125": {
     "location_name": "Centro Cultural Fernando de los Ríos (Latina)",
     "address": "CALLE CAMARENA 10",
     "district": "Latina",
     "latitude": 40.395739032378984,
     "longitude": -3.7566163518635967
+  },
+  "c2271205": {
+    "location_name": "Espacio de Igualdad Emilia Pardo Bazán. Ciudad Lineal",
+    "address": "AVENIDA BADAJOZ 60",
+    "district": "CiudadLineal",
+    "latitude": 40.442311100791215,
+    "longitude": -3.6534806246311913
   },
   "83d70b16": {
     "location_name": "Parque de Villa Rosa-Paco Caño",
@@ -733,19 +733,19 @@
     "latitude": 40.35118703272002,
     "longitude": -3.679345889376551
   },
+  "314b42da": {
+    "location_name": "Espacio de Igualdad María de Maeztu. Latina",
+    "address": "CALLE MARCELINO CASTILLO 29",
+    "district": "Latina",
+    "latitude": 40.39420907754556,
+    "longitude": -3.744687315765447
+  },
   "1b70d3a3": {
     "location_name": "Centro Deportivo Municipal San Blas",
     "address": "AVENIDA HELLIN 47",
     "district": "SanBlas-Canillejas",
     "latitude": 40.428933838154435,
     "longitude": -3.615229739080561
-  },
-  "dbe08552": {
-    "location_name": "Centro Cultural Auditorio Parque El Paraíso (San Blas - Canillejas)",
-    "address": "AVENIDA ARCENTALES 4",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.42997621103139,
-    "longitude": -3.6221773579444596
   },
   "922e2c17": {
     "location_name": "Mercado de Productores Villa de Vallecas",
@@ -887,6 +887,20 @@
     "latitude": 40.4787279264401,
     "longitude": -3.6527183525553006
   },
+  "9939bcd7": {
+    "location_name": "Sala de Exposiciones Maruja Mallo (Retiro)",
+    "address": "PLAZA DAOIZ Y VELARDE 2",
+    "district": "Retiro",
+    "latitude": 40.402190438836826,
+    "longitude": -3.6772826298329093
+  },
+  "dbe08552": {
+    "location_name": "Centro Cultural Auditorio Parque El Paraíso (San Blas - Canillejas)",
+    "address": "AVENIDA ARCENTALES 4",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.42997621103139,
+    "longitude": -3.6221773579444596
+  },
   "cf38b0cd": {
     "location_name": "Nave 10 Matadero (antes Naves del Español)",
     "address": "de la Chopera, 14",
@@ -921,13 +935,6 @@
     "latitude": 40.43644651057092,
     "longitude": -3.6372924261150033
   },
-  "acc32168": {
-    "location_name": "Biblioteca Pública Municipal Dámaso Alonso (Chamartín)",
-    "address": "CALLE MANUEL FERRERO 1",
-    "district": "Chamartin",
-    "latitude": 40.467453379213175,
-    "longitude": -3.6846112774442705
-  },
   "eb02bd78": {
     "location_name": "Biblioteca Pública Municipal Pío Baroja (Arganzuela)",
     "address": "CALLE ARGANDA 12",
@@ -941,6 +948,13 @@
     "district": "Usera",
     "latitude": 40.366768324753416,
     "longitude": -3.701141063083806
+  },
+  "3fa55718": {
+    "location_name": "Biblioteca Pública Municipal Ana María Matute (Carabanchel)",
+    "address": "CALLE ISAAC ALBENIZ 1",
+    "district": "Carabanchel",
+    "latitude": 40.39786734087938,
+    "longitude": -3.720088245008897
   },
   "f754924c": {
     "location_name": "Biblioteca Pública Municipal Manuel Vázquez Montalbán (Tetuán)",
@@ -956,19 +970,19 @@
     "latitude": 40.40971737692924,
     "longitude": -3.6529822109115133
   },
-  "3fa55718": {
-    "location_name": "Biblioteca Pública Municipal Ana María Matute (Carabanchel)",
-    "address": "CALLE ISAAC ALBENIZ 1",
-    "district": "Carabanchel",
-    "latitude": 40.39786734087938,
-    "longitude": -3.720088245008897
-  },
   "108da3ee": {
     "location_name": "Biblioteca Pública Municipal Huerta de la Salud (Hortaleza)",
     "address": "CALLE MAR DE LAS ANTILLAS 10",
     "district": "Hortaleza",
     "latitude": 40.47571688103069,
     "longitude": -3.64667257750353
+  },
+  "95641ab4": {
+    "location_name": "Biblioteca Pública Municipal Canillejas (San Blas-Canillejas)",
+    "address": "CALLE BOLTAÑA 23",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.44640229188281,
+    "longitude": -3.6117933204271098
   },
   "8df27ab6": {
     "location_name": "Biblioteca Pública Municipal La Elipa (Ciudad Lineal)",
