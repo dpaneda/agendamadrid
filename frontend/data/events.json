@@ -76,8 +76,8 @@
   "63f8676c996b08f1": {
     "title": "Fiesta de inicio de curso en Chamberí",
     "description": "Celebración popular en la plaza de Chamberí con actividades recreativas para celebrar la vuelta al cole. Un punto de encuentro para familias tras el verano.",
-    "start_time": "17:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=4f7b52a777e6e910VgnVCM100000891ecb1aRCRD",
+    "start_time": "08:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c4a2b04916e6e910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "ferias",
@@ -85,7 +85,8 @@
       "gratis"
     ],
     "price": "0",
-    "formato": "puntual"
+    "formato": "exposicion",
+    "lid": "d4e2d934"
   },
   "1ec2548f2e58fb82": {
     "title": "Actividades mensuales centros de mayores - Distrito Centro",
@@ -556,20 +557,6 @@
     "formato": "exposicion",
     "lid": "95a62894"
   },
-  "b7e507f7b30caff5": {
-    "title": "Cine infantil: Bambi",
-    "description": "Proyección de la clásica película de animación infantil Bambi. Ideal para disfrutar en familia.",
-    "start_time": "22:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=fcbfa8247b22f910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "teatro",
-      "cine",
-      "infantil"
-    ],
-    "formato": "puntual",
-    "lid": "d5698254"
-  },
   "d35d1e12a14753f7": {
     "title": "Concierto: Banda de Música Familiar 'Arigato'",
     "description": "Propuesta musical que combina cuentos infantiles con canciones para fomentar la lectura. Un espectáculo diseñado para el disfrute y aprendizaje desde edades muy tempranas.",
@@ -851,20 +838,6 @@
     "formato": "puntual",
     "lid": "95a62894"
   },
-  "2f177ce5dd57d5a8": {
-    "title": "Concierto infantil: Canta Conmigo",
-    "description": "Espectáculo musical diseñado para público infantil con una duración de 60 minutos. Se celebra en la explanada del Ensanche de Vallecas.",
-    "start_time": "21:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5e70fd55cbede910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "conciertos",
-      "infantil",
-      "gratis"
-    ],
-    "price": "0",
-    "formato": "puntual"
-  },
   "41a9d294e4339be2": {
     "title": "Espectáculo de títeres: Caperucita de colores",
     "description": "Representación interactiva de títeres donde los niños ayudan a Caperucita a esquivar al lobo en el bosque.",
@@ -1040,20 +1013,6 @@
     "description": "Actuación del reconocido pianista de jazz, referente en la fusión con el flamenco. Un encuentro magistral con la música.",
     "formato": "puntual",
     "lid": "824774c3"
-  },
-  "7d65200a63bf4758": {
-    "title": "Taller: Chapucea con las glorias",
-    "start_time": "10:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a7aab5d0353af910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "talleres",
-      "gratis"
-    ],
-    "description": "Actividad creativa de carácter práctico y gratuito para aprender habilidades manuales. Dirigido a diversos públicos.",
-    "price": "0",
-    "formato": "exposicion",
-    "lid": "6ba590e1"
   },
   "e4a736036ef0808a": {
     "title": "Concierto: Charanga La Reserva",
@@ -1319,20 +1278,6 @@
     "formato": "puntual",
     "lid": "9c620465"
   },
-  "85fa22e39432836d": {
-    "title": "Cinefórum: Documental Cecilia Bartolomé",
-    "start_time": "11:30:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8bd42f3a0b7af910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "cine",
-      "gratis"
-    ],
-    "description": "Visionado del documental sobre Cecilia Bartolomé con posterior reflexión temática.",
-    "price": "0",
-    "formato": "puntual",
-    "lid": "297b23a2"
-  },
   "a851aebbb5303df6": {
     "title": "Cinefórum: Las mejores películas de la historia",
     "start_time": "11:00:00",
@@ -1363,19 +1308,6 @@
     "price": "0",
     "formato": "puntual",
     "lid": "05a2048c"
-  },
-  "68925cf043e92f25": {
-    "title": "Claudette",
-    "start_time": "21:30:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=01f9ea4110e10a10VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "infantil",
-      "teatro"
-    ],
-    "description": "Espectáculo infantil con enfoque pedagógico y lúdico para toda la familia. Teatro diseñado para el disfrute y entretenimiento de los más pequeños.",
-    "formato": "puntual",
-    "lid": "07486b5c"
   },
   "70987f33e185f499": {
     "title": "Taller: Claves de la nómina y remuneración",
@@ -1429,6 +1361,19 @@
     "description": "Grupo de lectura para mejorar la comprensión y expresión en lengua inglesa. Una oportunidad para comentar obras literarias en un ambiente distendido.",
     "formato": "exposicion",
     "lid": "5b0073c9"
+  },
+  "138fe356a77fb04c": {
+    "title": "Club de lectura novela gráfica en la Biblioteca Manuel Vázquez Montalbán",
+    "start_time": "14:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=0c1c2d8d56439910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "literatura",
+      "gratis"
+    ],
+    "description": "Club especializado en el análisis de novelas gráficas y cómics. Ideal para quienes disfrutan de la narrativa visual y el arte secuencial.",
+    "formato": "exposicion",
+    "lid": "f754924c"
   },
   "d89a73ca155208c0": {
     "title": "Club de lectura 'Gata Cattana' en Espacio de Igualdad Lucrecia Pérez",
@@ -1526,6 +1471,32 @@
     "formato": "puntual",
     "lid": "af116271"
   },
+  "02c82d4e66867fcb": {
+    "title": "Colecciones de lo ajeno",
+    "description": "Una exploración sobre el fetichismo de coleccionar imágenes de todas las épocas y formatos. Analiza la fascinación humana por hallar, salvaguardar y recrear archivos visuales.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=418d50d922740a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "exposiciones",
+      "fotografía",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
+  },
+  "0117c527856be3e1": {
+    "title": "Colectivo Neozoon: navegar, observar, reeditar",
+    "description": "El colectivo Neozoon presenta su lectura crítica sobre las redes sociales y la ciudadanía digital. A través de remontajes rítmicos, cuestionan cómo nos nutrimos de la información en la red.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7d8d50d922740a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "exposiciones",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
+  },
   "73ebb890525ff2c8": {
     "title": "Taller de desayunos creativos 'Colorful breakfast'",
     "start_time": "10:15:00",
@@ -1594,21 +1565,6 @@
     "formato": "puntual",
     "lid": "c4d94593"
   },
-  "4dda2753ff104780": {
-    "title": "Concierto de Chaito y Palosanto",
-    "description": "Actuación de música flamenco-fusión en la calle Primitiva Gañán.",
-    "start_time": "22:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=1eb16ad3be12f910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "conciertos",
-      "flamenco",
-      "gratis",
-      "aire libre"
-    ],
-    "price": "0",
-    "formato": "puntual"
-  },
   "d35e4c93c33119a3": {
     "title": "Concierto de copla por Manuel Segura",
     "start_time": "20:30:00",
@@ -1676,20 +1632,6 @@
       "gratis"
     ],
     "formato": "puntual"
-  },
-  "db5a6afcc5997e89": {
-    "title": "Taller Conecta: aprende a usar tu móvil",
-    "start_time": "10:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=87643fb575cff910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "talleres",
-      "gratis"
-    ],
-    "description": "Sesión práctica destinada a mejorar las habilidades digitales en el uso de teléfonos móviles. Aprende a gestionar tus aplicaciones y funciones básicas.",
-    "price": "gratis",
-    "formato": "exposicion",
-    "lid": "9c620465"
   },
   "58bc16205907a962": {
     "title": "Conferencias culturales de AJAM",
@@ -1765,19 +1707,6 @@
     "price": "0",
     "formato": "puntual",
     "lid": "13acb8c9"
-  },
-  "3ef83346871f5c54": {
-    "title": "Taller deportivo Coquetas y fabulosas",
-    "start_time": "12:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=1895e7f71264f910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "deportes",
-      "gratis"
-    ],
-    "description": "Actividad deportiva diseñada para fomentar el movimiento y la autoestima. Sesión enfocada en el bienestar físico y personal.",
-    "formato": "exposicion",
-    "lid": "f14ce3db"
   },
   "513cc7257d03319f": {
     "title": "Taller: Coral por la igualdad",
@@ -1894,8 +1823,9 @@
   },
   "86c798c2ae309bc3": {
     "title": "Curso junior de ficción sonora",
+    "description": "Taller formativo orientado a jóvenes para aprender sobre la creación y producción de relatos mediante ficción sonora.",
     "start_time": "17:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=87583b000f5df910VgnVCM100000891ecb1aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=9a82ea4110e10a10VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "talleres",
@@ -1906,9 +1836,8 @@
       "2026-10-24",
       "2026-11-21"
     ],
-    "description": "Taller formativo orientado a jóvenes para aprender sobre la creación y producción de relatos mediante ficción sonora.",
     "formato": "puntual",
-    "lid": "38e0e792"
+    "lid": "95a62894"
   },
   "89f04d204427d77c": {
     "title": "Concierto: Dadu & Javi 'Música al Mundo'",
@@ -1951,22 +1880,6 @@
     "is_multi_event": true,
     "formato": "puntual",
     "lid": "95a62894"
-  },
-  "cdf0542e68b48e2b": {
-    "title": "Danzando en el parque",
-    "start_time": "10:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=dbcbb8f919bef910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "danza",
-      "naturaleza",
-      "aire libre",
-      "talleres",
-      "gratis"
-    ],
-    "description": "Taller participativo de danza que invita a moverse en un entorno natural al aire libre.",
-    "formato": "puntual",
-    "lid": "7fb097ff"
   },
   "fffbe53146ff1ac3": {
     "title": "Danzando libre",
@@ -2139,8 +2052,8 @@
   "acab3f9fb4e75dd7": {
     "title": "Jornada: Día de la Movilidad",
     "description": "Programa de actividades lúdicas y deportivas, incluyendo rutas de marcha nórdica, para celebrar la movilidad sostenible.",
-    "start_time": "10:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a7f1f4d59337e910VgnVCM100000891ecb1aRCRD",
+    "start_time": "11:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=e876551e8437e910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "deportes",
@@ -2206,33 +2119,6 @@
     "formato": "exposicion",
     "lid": "1a630411"
   },
-  "7f84a8f0f6481666": {
-    "title": "Dibujamos y pintamos mandalas",
-    "start_time": "10:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=fdc859c4e53af910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "talleres",
-      "gratis"
-    ],
-    "description": "Taller creativo para aprender a dibujar y colorear mandalas como herramienta de relajación.",
-    "price": "0",
-    "formato": "exposicion",
-    "lid": "6ba590e1"
-  },
-  "33476da2189a2723": {
-    "title": "Taller de dibujo consciente",
-    "start_time": "10:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8a2599e25e7af910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "talleres",
-      "gratis"
-    ],
-    "description": "Técnicas de dibujo sencillo orientadas a fomentar la relajación y la calma mental. Un taller para la expresión artística sin presión.",
-    "formato": "puntual",
-    "lid": "040b80fc"
-  },
   "449d18a3069d50bc": {
     "title": "Taller de Dibujo y relajación",
     "start_time": "18:00:00",
@@ -2291,21 +2177,6 @@
     "is_multi_event": true,
     "formato": "festival",
     "lid": "95a62894"
-  },
-  "24dac5911a27a923": {
-    "title": "Discoteca móvil: DJ Felices",
-    "description": "Sesión de música dinámica y participativa con el DJ Álvaro Felices.",
-    "start_time": "19:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=75304e0c73ca7910VgnVCM2000001f4a900aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "conciertos",
-      "danza",
-      "gratis"
-    ],
-    "price": "0",
-    "formato": "puntual",
-    "lid": "5ce42a5d"
   },
   "eb7a5ec558999118": {
     "title": "Discoteca móvil: DJ Iria",
@@ -2616,6 +2487,19 @@
     "formato": "puntual",
     "lid": "95a62894"
   },
+  "d87f0ffd7fd295f8": {
+    "title": "El proceso de construcción documental: De la idea a la pantalla",
+    "description": "Taller práctico sobre cómo transformar una realidad compleja en un relato cinematográfico universal. Toma como referencia películas premiadas para analizar el desarrollo documental.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=df54ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "talleres",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
+  },
   "b13b35923d40d293": {
     "title": "El retablo de las maravillas",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8e24f0af8962f910VgnVCM100000891ecb1aRCRD",
@@ -2655,6 +2539,18 @@
     ],
     "formato": "puntual",
     "lid": "02e88678"
+  },
+  "a71b581585789028": {
+    "title": "El silencio de otros",
+    "description": "Documental que revela la lucha de las víctimas del régimen de Franco en busca de justicia. Un testimonio grabado durante seis años sobre la memoria histórica.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d704ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
   },
   "8be7b42a094af20d": {
     "title": "El suelo, un paseo por la vida",
@@ -2806,6 +2702,19 @@
     "formato": "puntual",
     "lid": "95a62894"
   },
+  "e4e03acf861441c6": {
+    "title": "Encuentro by Women: La creación de una serie o película",
+    "description": "Análisis profesional sobre el proceso de creación cinematográfica, desde el guion hasta el montaje final. Se pone el foco en aspectos técnicos como el casting y la construcción del relato.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=be24ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "conferencias",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
+  },
   "67d55067c6a59003": {
     "title": "Encuentro con el público: 'Un señor... cualquiera'",
     "description": "Coloquio tras la función donde los espectadores pueden dialogar directamente con el elenco artístico. Un espacio para profundizar en la obra y el proceso creativo.",
@@ -2875,35 +2784,6 @@
     "formato": "exposicion",
     "lid": "9b3eae76"
   },
-  "db52465e82e00304": {
-    "title": "Entre risas y redes",
-    "start_time": "10:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c773307edf5df910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "talleres",
-      "gratis",
-      "comedia"
-    ],
-    "description": "Taller dinámico sobre el uso de redes sociales y humor.",
-    "price": "0",
-    "formato": "puntual",
-    "lid": "22840c10"
-  },
-  "9d1349b3f8e3d570": {
-    "title": "Taller: Entre tertulias y anécdotas",
-    "start_time": "11:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=348a04db00fff910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "talleres",
-      "gratis"
-    ],
-    "description": "Espacio de encuentro social para compartir historias y experiencias en un ambiente distendido. Ideal para fomentar la participación y el diálogo comunitario.",
-    "price": "gratis",
-    "formato": "exposicion",
-    "lid": "b0b9722e"
-  },
   "a2425f3290ba6380": {
     "title": "Entreparques: Ruta del agua de Legazpi a Hospital Doce de Octubre",
     "description": "Itinerario guiado de 5 km para descubrir puntos emblemáticos de la gestión del agua en Madrid. Acompañados por un educador ambiental.",
@@ -2913,10 +2793,6 @@
     "categories": [
       "visitas guiadas",
       "gratis"
-    ],
-    "dates": [
-      "2026-08-28",
-      "2026-09-06"
     ],
     "formato": "puntual"
   },
@@ -2985,6 +2861,18 @@
     "description": "Acto comunitario de homenaje y visibilidad para las mujeres, niñas y niños víctimas de la violencia machista.",
     "formato": "puntual",
     "lid": "f14ce3db"
+  },
+  "84c31a2dd4d2a747": {
+    "title": "Este cuerpo mío",
+    "description": "Rafael y Carolina se embarcan en un viaje emocional en busca de reconciliación y aceptación personal. Una historia centrada en la amistad y el autodescubrimiento.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=64f3ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
   },
   "193322a859e4be43": {
     "title": "Concierto de Esther Merino",
@@ -3330,7 +3218,7 @@
   "a24267f6b3f3f39c": {
     "title": "Fiestas de La Melonera 2026",
     "description": "Celebración popular en Madrid Río con juegos participativos, talleres infantiles y exhibiciones caninas. Ideal para disfrutar en familia al aire libre.",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=53d55a7edde10a10VgnVCM200000f921e388RCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=b6c75a7edde10a10VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "fiestas",
@@ -3453,6 +3341,18 @@
     "price": "0",
     "formato": "puntual",
     "lid": "c4d94593"
+  },
+  "4a5cf03320528b03": {
+    "title": "Flores para Antonio",
+    "description": "La actriz Alba Flores busca la verdad sobre la vida y legado de su padre, el legendario músico Antonio Flores. Un retrato íntimo sobre la memoria familiar y el arte.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=afd3ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
   },
   "6690f706c30cb279": {
     "title": "Forqué, el oficio de hacer cine",
@@ -3769,6 +3669,19 @@
     "formato": "puntual",
     "lid": "13acb8c9"
   },
+  "6be10954fe6108af": {
+    "title": "Homo e-sapiens",
+    "description": "Programa de cine que analiza el archivo audiovisual fragmentado en internet a través de la obra de la artista Natalie Bookchin. Reflexión sobre la identidad en la era de los medios digitales.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7a9d50d922740a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado"
+    ],
+    "is_multi_event": true,
+    "formato": "puntual",
+    "lid": "95a62894"
+  },
   "43770b2ae8c57809": {
     "title": "HOP!",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=f6708282589de910VgnVCM200000f921e388RCRD",
@@ -3806,21 +3719,6 @@
     "formato": "puntual",
     "lid": "97fd06dd"
   },
-  "fc31e32fa007cecf": {
-    "title": "Taller de monólogos: Humor para desobedientes",
-    "start_time": "11:30:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=b3a7a2796f9ff910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "talleres",
-      "comedia",
-      "gratis"
-    ],
-    "description": "Taller práctico orientado a aprender las bases de la creación de monólogos de humor. Un espacio para desarrollar habilidades cómicas y expresivas.",
-    "price": "0",
-    "formato": "exposicion",
-    "lid": "1a630411"
-  },
   "358767388cedaebd": {
     "title": "I Certamen de Teatro Clásico de Chamberí",
     "description": "Ciclo de representaciones teatrales dedicado a la riqueza y vigencia del teatro clásico.",
@@ -3852,7 +3750,7 @@
     "title": "II Edición de Chamberí en Clave de Sol",
     "description": "Concierto a cargo de CINEMA SAX con repertorio de música de cine en los Jardines Alejandro Muñoz Revenga.",
     "start_time": "20:30:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5c2523f355e6e910VgnVCM100000891ecb1aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8cb8b04916e6e910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "conciertos",
@@ -4024,22 +3922,6 @@
     "formato": "exposicion",
     "lid": "1a630411"
   },
-  "a0a4101a599fcafe": {
-    "title": "Iniciación a la ornitología en La Cabaña del Retiro",
-    "start_time": "09:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=328103bfa9f00a10VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "visitas guiadas",
-      "naturaleza",
-      "aire libre",
-      "gratis"
-    ],
-    "description": "Visita guiada para aprender a identificar las aves que habitan en el Parque del Retiro. Una actividad didáctica para conocer la biodiversidad local.",
-    "price": "gratis",
-    "formato": "puntual",
-    "lid": "c2271205"
-  },
   "718343679885ee72": {
     "title": "Instrucciones para un sueño colectivo",
     "start_time": "19:00:00",
@@ -4201,7 +4083,7 @@
     "title": "Jardín El Capricho: Itinerario interpretativo",
     "description": "Visita guiada por un educador ambiental para conocer la historia y la biodiversidad vegetal de este histórico jardín madrileño.",
     "start_time": "10:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=98f89ad065bac810VgnVCM1000001d4a900aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=10799ad065bac810VgnVCM1000001d4a900aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "visitas guiadas",
@@ -4459,9 +4341,9 @@
     "formato": "puntual",
     "lid": "4ec30898"
   },
-  "73610af5dbf75344": {
-    "title": "Julián y Pendorcho: Espectáculo de circo",
-    "description": "Divertido show de circo donde el payaso Pendorcho intenta preparar una función perfecta junto al Señor Julián.",
+  "dd52107285df9596": {
+    "title": "Julián Pendorcho",
+    "description": "Un espectáculo de circo protagonizado por un payaso en prácticas que intenta preparar una función perfecta. Una propuesta cómica ideal para el público familiar.",
     "start_time": "17:30:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=9687ebcee7830a10VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
@@ -4515,6 +4397,18 @@
     "formato": "puntual",
     "lid": "95a62894"
   },
+  "6907162e1311e975": {
+    "title": "La casa y el ternero",
+    "description": "Un diario filmado que registra la vida cotidiana de una cineasta entre finales de 2023 y mediados de 2024. Explora las banalidades y eventos del entorno doméstico.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=9314ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
+  },
   "a18315a8effbf4c5": {
     "title": "La cebra Camila: Espectáculo intercultural",
     "description": "Espectáculo infantil que narra la historia de una cebra que aprende a superar sus miedos a la diferencia. Una propuesta dentro del ciclo Vallefantásticas.",
@@ -4530,18 +4424,6 @@
     "is_multi_event": true,
     "formato": "puntual",
     "lid": "77f82d83"
-  },
-  "13e837ea5f2410d6": {
-    "title": "La cena",
-    "description": "Película dirigida por Daniel Gómez Pereira ambientada tras la Guerra Civil. Recomendada a partir de 12 años.",
-    "start_time": "21:45:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=b238e1ee88a5f910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "cine",
-      "gratis"
-    ],
-    "formato": "puntual"
   },
   "4fe628852c08f6ee": {
     "title": "Charla astronómica: Una mirada al cosmos",
@@ -4611,6 +4493,20 @@
     "description": "Visita guiada gratuita por el entorno natural y agrícola de la Dehesa.",
     "formato": "puntual",
     "lid": "1a7c6818"
+  },
+  "2d569bbeeae3bc4b": {
+    "title": "La infinita fiesta final",
+    "description": "Ciclo de cine que aborda temas como el cambio climático y el deshielo a través de una selección de obras visuales. Una reflexión sobre la supervivencia y el futuro del planeta.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=939d50d922740a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "naturaleza",
+      "destacado"
+    ],
+    "is_multi_event": true,
+    "formato": "puntual",
+    "lid": "95a62894"
   },
   "623555d4f59c9edd": {
     "title": "Teatro: 'La madre' de Máximo Gorki",
@@ -4833,20 +4729,6 @@
     "formato": "puntual",
     "lid": "63e95416"
   },
-  "1741eabc136b7cca": {
-    "title": "Taller: Lengua de signos española (LSE)",
-    "start_time": "12:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=2517d0f56f6bf910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "talleres",
-      "gratis",
-      "accesible"
-    ],
-    "description": "Curso básico para acercarse a la lengua de signos y romper barreras de comunicación. Una actividad inclusiva para fomentar la accesibilidad.",
-    "formato": "exposicion",
-    "lid": "e232e586"
-  },
   "8fccb8cd94307654": {
     "title": "Taller: Let's practice english",
     "start_time": "18:30:00",
@@ -4905,6 +4787,18 @@
     "formato": "puntual",
     "lid": "f2b4174f"
   },
+  "0321a0d5be1ada7d": {
+    "title": "Llámame Sinsorga",
+    "description": "Irantzu Varela y Andrea Momoitio presentan un show transgresor que desafía los roles de género establecidos en el mundo laboral. Una propuesta cómica y reivindicativa.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=e974ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "comedia",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
+  },
   "f1bb32c6b098dcbc": {
     "title": "Lolipop Rock",
     "description": "Espectáculo musical familiar al aire libre con los LoliPop en el Parque de las Cataratas.",
@@ -4919,20 +4813,6 @@
     ],
     "price": "0",
     "formato": "puntual"
-  },
-  "7c0fd644af68823a": {
-    "title": "Cine de verano: Los domingos",
-    "start_time": "22:15:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=aece6f5ae820f910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "cine",
-      "gratis",
-      "aire libre"
-    ],
-    "description": "Proyección de la película de Alauda Ruiz de Azúa. Narra la historia de una joven brillante ante su decisión universitaria.",
-    "formato": "puntual",
-    "lid": "dbc8993b"
   },
   "805a5b7d8b3e7a46": {
     "title": "Cine de verano: Los futbolísimos 2. El misterio del tesoro pirata",
@@ -4976,6 +4856,21 @@
     "description": "Taller práctico de jardinería y concienciación ambiental diseñado para niños.",
     "formato": "puntual",
     "lid": "02e88678"
+  },
+  "749e4368f77ba68f": {
+    "title": "Conferencia: Los monumentos de los Jardines del Buen Retiro",
+    "description": "Recorrido histórico y cultural por los monumentos dedicados a ilustres literatos en el Parque del Retiro.",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=20731efd3196e910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conferencias",
+      "patrimonio",
+      "gratis"
+    ],
+    "price": "0€",
+    "formato": "puntual",
+    "lid": "13acb8c9"
   },
   "bd8d768274bcef72": {
     "title": "Los tres cerditos",
@@ -5263,6 +5158,19 @@
     "price": "0",
     "formato": "puntual"
   },
+  "6f1bc90adb714c95": {
+    "title": "Madrid, villa y coche. Tramo II",
+    "description": "Itinerario guiado por el Madrid del siglo XX analizando sus cambios urbanísticos y de transporte.",
+    "start_time": "10:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=244dd9a1fe930910VgnVCM2000001f4a900aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "price": "0",
+    "formato": "puntual"
+  },
   "648c896eb86e6c71": {
     "title": "Magia y desvaríos varios",
     "description": "Espectáculo familiar que combina magia, clown y comedia visual.",
@@ -5321,20 +5229,6 @@
     "formato": "exposicion",
     "lid": "1a630411"
   },
-  "2e0b8668c3336266": {
-    "title": "Taller de manualidades veraniegas",
-    "start_time": "10:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=99e43f229b7af910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "talleres",
-      "gratis"
-    ],
-    "description": "Actividad creativa temática para realizar objetos artesanales propios del verano. Un espacio divertido para pasar la mañana realizando proyectos manuales.",
-    "price": "gratis",
-    "formato": "exposicion",
-    "lid": "314b42da"
-  },
   "30406fd749be758b": {
     "title": "Taller de bordado: Mapa personal",
     "start_time": "11:30:00",
@@ -5361,6 +5255,19 @@
     ],
     "price": "0",
     "formato": "exposicion"
+  },
+  "851d0bc3b6432d8c": {
+    "title": "Mares",
+    "description": "El relato de una pareja que se enfrenta a una dura prueba física y emocional en su deseo de ser madres. Un documental que explora los límites de la fertilidad.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8de3ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "bienestar",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
   },
   "feb672bc9b24d66c": {
     "title": "Espectáculo de la Compañía María Pagés",
@@ -5408,20 +5315,16 @@
   "22767c15684b990e": {
     "title": "Cine: Materialistas",
     "description": "Proyección de la película de Celine Song sobre una casamentera en Nueva York.",
-    "start_time": "22:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=e682cc57db79e910VgnVCM200000f921e388RCRD",
+    "start_time": "21:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=fda6e764105ff910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "cine",
       "gratis"
     ],
-    "dates": [
-      "2026-08-28",
-      "2026-09-11"
-    ],
     "price": "0",
     "formato": "puntual",
-    "lid": "f2b4174f"
+    "lid": "fdc5567c"
   },
   "50cd75d389313856": {
     "title": "Taller: Maternidades diversas y movimiento libre del bebé",
@@ -5453,19 +5356,6 @@
     "price": "0",
     "formato": "puntual",
     "lid": "05a2048c"
-  },
-  "dec5e9b5b50dcc6d": {
-    "title": "Cine al aire libre: Menudas piezas",
-    "description": "Proyección de la película Menudas piezas en la plaza de la Corrala. Duración de 98 minutos para mayores de 12 años.",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=07d9cb3a44240a10VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "cine",
-      "gratis",
-      "aire libre"
-    ],
-    "price": "gratis",
-    "formato": "puntual"
   },
   "a8445e9654cf0873": {
     "title": "Campaña Mercadea: Villa de Vallecas",
@@ -5573,6 +5463,18 @@
     "price": "gratis",
     "formato": "exposicion",
     "lid": "bb29009c"
+  },
+  "b133978f6e3a2012": {
+    "title": "Miss Jobson",
+    "description": "Retrato íntimo de Diane Jobson, figura clave en la vida de Bob Marley y defensora de derechos. Un análisis sobre el paso del tiempo y el peso del legado personal.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=fec3ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
   },
   "669a345c3fbc80b5": {
     "title": "Presentación del Modelo integrador restaurativo",
@@ -5775,6 +5677,21 @@
     "formato": "puntual",
     "lid": "354d0096"
   },
+  "284e1d25b7f006ec": {
+    "title": "Visita guiada al Observatorio contra la Violencia Doméstica y de Género",
+    "start_time": "10:15:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a86b6fb6d5b9f810VgnVCM1000001d4a900aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "conferencias",
+      "gratis"
+    ],
+    "description": "Visita informativa para conocer las funciones y el trabajo realizado por el Observatorio contra la Violencia Doméstica y de Género.",
+    "price": "0",
+    "formato": "puntual",
+    "lid": "314b42da"
+  },
   "687a704f314f5d40": {
     "title": "Notas desafinadas: Tarde de karaoke",
     "start_time": "18:00:00",
@@ -5788,6 +5705,21 @@
     "price": "gratis",
     "formato": "puntual",
     "lid": "1a630411"
+  },
+  "9708820dcc7ca22f": {
+    "title": "Taller: Fisioterapia de suelo pélvico",
+    "start_time": "17:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8ec7ea43f5240a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "bienestar",
+      "gratis"
+    ],
+    "description": "Sesión práctica y formativa sobre salud integral enfocada en la fisioterapia de suelo pélvico. Actividad gratuita dentro del programa de bienestar.",
+    "price": "0",
+    "formato": "puntual",
+    "lid": "65a790aa"
   },
   "874fc9719078d628": {
     "title": "Taller: Nutrición y emociones",
@@ -5862,17 +5794,6 @@
     "description": "Performance destacada que explora el movimiento y la expresión corporal a través de la danza.",
     "formato": "puntual",
     "lid": "95a62894"
-  },
-  "9c8e5ba9dd7c9d55": {
-    "title": "Ovejero: Memoria del color",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=03f70e745664f910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "exposiciones"
-    ],
-    "description": "Exposición centrada en la obra y el uso del color del artista Ovejero. Una muestra retrospectiva sobre su legado visual.",
-    "formato": "exposicion",
-    "lid": "3166d913"
   },
   "32d744e3957d15d5": {
     "title": "Paco del Pozo en concierto",
@@ -6252,20 +6173,6 @@
     "formato": "puntual",
     "lid": "6d0e53b1"
   },
-  "b0698bfe6fcb9185": {
-    "title": "Cine: Policán",
-    "description": "Película infantil sobre un superhéroe nacido de la unión quirúrgica entre un policía y su perro. Un relato de aventuras para salvar la ciudad.",
-    "start_time": "22:15:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=f88afb5d9e63f910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "cine",
-      "gratis",
-      "infantil"
-    ],
-    "price": "gratis",
-    "formato": "puntual"
-  },
   "de70fa60cac227cb": {
     "title": "Pop: Coro Alderaán",
     "description": "Concierto gratuito de música coral a cargo del Coro Alderaán. Se requiere recogida previa de invitaciones.",
@@ -6307,20 +6214,6 @@
     "formato": "exposicion",
     "lid": "32296fa0"
   },
-  "6f9feff50f234810": {
-    "title": "Taller de cerámica: Portainciensos de arcilla",
-    "start_time": "10:30:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=46947d82a77af910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "talleres",
-      "gratis"
-    ],
-    "description": "Aprende técnicas básicas de modelado en arcilla para crear tu propio portainciensos. Un taller creativo para iniciarse en el trabajo manual con barro.",
-    "price": "gratis",
-    "formato": "puntual",
-    "lid": "9c620465"
-  },
   "f9a9165a8211a393": {
     "title": "Presentación de la temporada en Conde Duque",
     "start_time": "11:00:00",
@@ -6336,6 +6229,18 @@
     "is_multi_event": true,
     "formato": "festival",
     "lid": "824774c3"
+  },
+  "8c7d88e90240222b": {
+    "title": "Presentación de VISOR",
+    "description": "Presentación del archivo digital de cine feminista que recopila medio millar de obras audiovisuales. Un proyecto impulsado por la Plataforma By Women.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c9d3ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "conferencias"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
   },
   "40d839caa9652605": {
     "title": "Presentación del libro 'El libro de Drox'",
@@ -6585,6 +6490,19 @@
     "formato": "puntual",
     "lid": "13acb8c9"
   },
+  "d89d3c9fa3ed9df8": {
+    "title": "Taller: Recursos teatrales en el aula",
+    "description": "Formación artística diseñada para docentes con foco en ejercicios teatrales aplicados a la educación. Un espacio para explorar la pedagogía a través del teatro.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=e5f2b8a40e240a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "teatro",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "c9c45e0d"
+  },
   "3db023a82ca7234f": {
     "title": "Reencuentros: Concierto de Manuel Valencia Segarra",
     "description": "Recital que incluye obras de Johann Sebastian Bach y Ludwig Van Beethoven interpretadas por Manuel Valencia Segarra.",
@@ -6693,7 +6611,8 @@
   },
   "b626910b8e42bf32": {
     "title": "Ronda de libros",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5a0ebea376bcf910VgnVCM100000891ecb1aRCRD",
+    "description": "Actividad de fomento a la lectura y encuentro literario.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8e72ea4110e10a10VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "literatura"
@@ -6703,9 +6622,8 @@
       "2026-10-10",
       "2026-11-28"
     ],
-    "description": "Actividad de fomento a la lectura y encuentro literario.",
     "formato": "puntual",
-    "lid": "38e0e792"
+    "lid": "95a62894"
   },
   "5e5b9a77b63d0a56": {
     "title": "Rosa María Martínez: Recorrido por grandes éxitos de la ópera",
@@ -7031,6 +6949,110 @@
     "formato": "exposicion",
     "lid": "5e4b8cb1"
   },
+  "77f36b842dd980c2": {
+    "title": "Sesión de cortometrajes 1 - DbWS 2026",
+    "description": "Selección de cortometrajes centrados en historias de la postguerra y narrativas personales. Parte del programa del festival DbWS 2026.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=85e3ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado"
+    ],
+    "is_multi_event": true,
+    "formato": "puntual",
+    "lid": "95a62894"
+  },
+  "bea7a3650c4de061": {
+    "title": "Sesión de cortometrajes 2 - DbWS 2026",
+    "description": "Bloque de cortometrajes que exploran temas de superación, violencia y vínculos emocionales con los animales. Parte del programa del festival DbWS 2026.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=4bf3ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado"
+    ],
+    "is_multi_event": true,
+    "formato": "puntual",
+    "lid": "95a62894"
+  },
+  "2854302ade2870a0": {
+    "title": "Sesión de cortometrajes 3 - DbWS 2026",
+    "description": "Sesión dedicada a dramas personales y familiares, narrados a través del formato corto. Parte del programa del festival DbWS 2026.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=bd04ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado"
+    ],
+    "is_multi_event": true,
+    "formato": "puntual",
+    "lid": "95a62894"
+  },
+  "c235831f9da0890c": {
+    "title": "Sesión de cortometrajes 4 - DbWS 2026",
+    "description": "Sesión experimental de animación documental centrada en el coleccionismo y la curiosidad. Parte del programa del festival DbWS 2026.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=b634ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado"
+    ],
+    "is_multi_event": true,
+    "formato": "puntual",
+    "lid": "95a62894"
+  },
+  "307cd99b890b634d": {
+    "title": "Sesión de cortometrajes 5 - DbWS 2026",
+    "description": "Ciclo de cortos que abordan la complejidad de los cuidados familiares y las decisiones difíciles. Parte del programa del festival DbWS 2026.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c254ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado"
+    ],
+    "is_multi_event": true,
+    "formato": "puntual",
+    "lid": "95a62894"
+  },
+  "33bc342d764592b5": {
+    "title": "Sesión de cortometrajes 6 - DbWS 2026",
+    "description": "Proyección del cortometraje 'No hay camino' de Luciana Espinoza Hoempler. Explora el cruce del Tapón del Darién, una peligrosa zona selvática entre Colombia y Panamá.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=bb64ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
+  },
+  "19b6ea0d6e6f0218": {
+    "title": "Sesión de cortometrajes 7 - DbWS 2026",
+    "description": "Proyección del cortometraje 'Esto no es una piscina de verano' de Luz Soria. Una obra experimental que reflexiona sobre la memoria a través de escenas cotidianas.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a174ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
+  },
+  "40e90a721785c234": {
+    "title": "Sevillanas en el Espacio de Igualdad Lucrecia Pérez",
+    "start_time": "18:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=bac3899605320a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "danza",
+      "gratis",
+      "flamenco"
+    ],
+    "description": "Clase o actividad de baile centrada en las sevillanas en un entorno comunitario.",
+    "price": "0",
+    "formato": "puntual",
+    "lid": "22840c10"
+  },
   "9449fedae633ca6c": {
     "title": "SOLO - Moncloa - Aravaca",
     "start_time": "20:00:00",
@@ -7328,16 +7350,12 @@
   "a0b9dd4450e9429e": {
     "title": "Taller de iniciación a la ornitología",
     "start_time": "09:30:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=e1ee421763fde910VgnVCM200000f921e388RCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=93ee421763fde910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "talleres",
       "gratis",
       "naturaleza"
-    ],
-    "dates": [
-      "2026-08-28",
-      "2026-09-13"
     ],
     "description": "Sesión educativa enfocada en el aprendizaje sobre el mundo de las aves y su observación.",
     "price": "0€",
@@ -7648,8 +7666,8 @@
   "ed9e12994cd6e9f5": {
     "title": "Talleres Sábados Locos",
     "description": "Ciclo de actividades infantiles creativas y educativas para niños de 3 a 12 años. Incluye sesiones temáticas como el viaje al espacio.",
-    "start_time": "11:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=75edafe29cd6e910VgnVCM200000f921e388RCRD",
+    "start_time": "11:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=f8a2a9262ad6e910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "talleres",
@@ -7702,20 +7720,6 @@
     "categories": [
       "talleres",
       "infantil",
-      "gratis"
-    ],
-    "price": "gratis",
-    "formato": "puntual",
-    "lid": "02b25093"
-  },
-  "0ed05fb19fe947d8": {
-    "title": "Taller: El mundo de los murciélagos",
-    "description": "Sesión divulgativa sobre la biodiversidad de la Casa de Campo centrándose en los murciélagos. Conoce el papel fundamental de estos mamíferos en el ecosistema.",
-    "start_time": "20:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7d6cee1ea9457910VgnVCM2000001f4a900aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "talleres",
       "gratis"
     ],
     "price": "gratis",
@@ -8329,19 +8333,17 @@
     "formato": "exposicion",
     "lid": "bb29009c"
   },
-  "06507cd2c32801fe": {
-    "title": "Cine al aire libre: Los Tipos malos 2 en Villaverde Alto",
-    "description": "Proyección de cine en el Bulevar de San Jenaro. Entrada libre hasta completar aforo.",
-    "start_time": "22:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7eb6bd88db04f910VgnVCM100000891ecb1aRCRD",
+  "36a3f8e9df43d3e4": {
+    "title": "Videojuegos para el día a día, ocio digital y bienestar",
+    "start_time": "10:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=14d096d88b96f910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
-      "teatro",
-      "cine",
       "gratis",
-      "aire libre"
+      "bienestar",
+      "otros"
     ],
-    "price": "gratis",
+    "description": "Jornada sobre uso saludable de los videojuegos y su impacto en el bienestar cotidiano, celebrada en San Blas-Canillejas.",
     "formato": "puntual"
   },
   "2f7a7d3ccd320cd0": {
@@ -8503,6 +8505,31 @@
     "description": "Recorrido nocturno dramatizado por el histórico Cementerio de Nuestra Señora de la Almudena. Una experiencia única que combina historia y teatro.",
     "formato": "exposicion",
     "lid": "75f92d7a"
+  },
+  "2807c459d7158e35": {
+    "title": "Voces del cine europeo contemporáneo: Gala Hernández López y Elena López Riera",
+    "description": "Encuentro y proyección del cortometraje '10K', que sigue la historia de un joven que sueña con el éxito económico. Un análisis sobre el desarrollo personal y las aspiraciones contemporáneas.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=f104ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "conferencias",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
+  },
+  "dbbd62e5930c5281": {
+    "title": "We Die",
+    "description": "Reflexión audiovisual sobre la cultura de la muerte y los rituales mortuorios desde perspectivas contrastadas. Un análisis del imaginario colectivo sobre el final de la vida.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7954ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
   },
   "e2da7fc5ff26fbaf": {
     "title": "Webinario: 20 usos de la lana y más",
@@ -8717,6 +8744,10 @@
       "aire libre",
       "gratis"
     ],
+    "dates": [
+      "2026-09-08",
+      "2026-09-18"
+    ],
     "formato": "puntual",
     "lid": "fdc5567c"
   },
@@ -8848,7 +8879,7 @@
     "title": "Cuentacuentos en inglés: A Taste of the Moon con Mamen Storyteller",
     "description": "Sesión de cuentacuentos infantil en inglés para viajar a mundos mágicos y vivir aventuras. Una actividad lúdica ideal para que los niños disfruten de la narración oral.",
     "start_time": "18:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d42f72e1112bf910VgnVCM100000891ecb1aRCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=e0d872e1112bf910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "infantil",
@@ -8860,7 +8891,7 @@
       "2026-09-30"
     ],
     "formato": "puntual",
-    "lid": "12355570"
+    "lid": "867ee94b"
   },
   "404a0817a936201a": {
     "title": "Cuentacuentos en inglés: A Taste of the Moon con Mamen Storyteller",
@@ -8892,8 +8923,8 @@
   "7c312e1caeb8204f": {
     "title": "'Amasando cuentos' con Silvina Rodríguez",
     "description": "Sesión de cuentacuentos que sumerge a los niños en mundos imaginarios llenos de aventuras y personajes divertidos.",
-    "start_time": "18:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=2569a029003af910VgnVCM200000f921e388RCRD",
+    "start_time": "17:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=6c7a75f3dd39f910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "infantil",
@@ -8907,7 +8938,7 @@
     ],
     "price": "0",
     "formato": "puntual",
-    "lid": "06d8226f"
+    "lid": "acc32168"
   },
   "a8756c9874228bfd": {
     "title": "Taller de fomento lector: Atrapa y Lee",
@@ -9033,8 +9064,8 @@
   "74f3d9c25198a552": {
     "title": "'Cuentos de empezar y no terminar' con Pingüi",
     "description": "Cuentacuentos dinámico que invita a la participación infantil a través de tramas llenas de humor y emoción.",
-    "start_time": "18:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=60af9125cb2af910VgnVCM200000f921e388RCRD",
+    "start_time": "11:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=e748ee94992af910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "infantil",
@@ -9047,7 +9078,22 @@
     ],
     "price": "0",
     "formato": "puntual",
-    "lid": "3fa55718"
+    "lid": "1d11f16a"
+  },
+  "40d89ab42ca2f209": {
+    "title": "'De colores' con Andrea Ortúzar",
+    "description": "Sesión de estimulación literaria para bebés basada en cuentos que exploran la diversidad y el color.",
+    "start_time": "17:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c9e30871038af910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "literatura",
+      "gratis"
+    ],
+    "price": "0",
+    "formato": "puntual",
+    "lid": "f3bebf71"
   },
   "0ca7f4aedf17c6dd": {
     "title": "El búho y el elefante con Nelson Calderón",
@@ -9165,20 +9211,6 @@
     "formato": "puntual",
     "lid": "a7eb6f63"
   },
-  "c9b9efdf25cfcdfa": {
-    "title": "Ciclo de cine: FresquiCine en la Biblioteca David Gistau",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=0ada524c8371f910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "cine",
-      "gratis"
-    ],
-    "description": "Programación de proyecciones cinematográficas al aire libre o en sala dentro de la biblioteca. Una selección variada de títulos para disfrutar en comunidad.",
-    "price": "0",
-    "is_multi_event": true,
-    "formato": "festival",
-    "lid": "1c1352bf"
-  },
   "f0dd55173074a29d": {
     "title": "Charla-taller: Gestión emocional",
     "start_time": "18:00:00",
@@ -9227,7 +9259,7 @@
     "title": "Cuentacuentos: 'La algarabía de las ranas' con Yoana Siri",
     "description": "Sesión de cuentacuentos para disfrutar de historias mágicas y personajes divertidos en la biblioteca. Una actividad infantil llena de emoción y mundos imaginarios.",
     "start_time": "18:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=af72a300ee2af910VgnVCM200000f921e388RCRD",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=b208b21daa39f910VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "infantil",
@@ -9240,7 +9272,7 @@
     ],
     "price": "0",
     "formato": "puntual",
-    "lid": "439b2cee"
+    "lid": "e2457581"
   },
   "f2e54ad01c100daa": {
     "title": "Conferencia: La civilización del Valle del Indo",
@@ -9529,6 +9561,18 @@
     "formato": "puntual",
     "lid": "1d11f16a"
   },
+  "017160ef31f72778": {
+    "title": "(Im)perfectas ópticas de la representación",
+    "description": "Proyección de 'Living Archaeology in Gaza' del grupo Forensic Architecture. El filme utiliza tecnologías arquitectónicas para investigar contextos de conflicto.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a88d50d922740a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
+  },
   "846dc11da1174fb3": {
     "title": "Taller: ¡Ahora nos toca jugar! Juegos de mesa",
     "start_time": "11:00:00",
@@ -9557,6 +9601,19 @@
     "price": "gratis",
     "formato": "puntual",
     "lid": "22840c10"
+  },
+  "11bd17062adca87c": {
+    "title": "¡Corre, salta, vuela! Cortometrajes de animación infantil",
+    "description": "Sesión de cine de animación dirigida a público familiar creada por directoras mujeres. Una propuesta lúdica y educativa en el marco del Directed by Women Spain.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=b564ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "infantil",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
   },
   "0808eed0dd94d96d": {
     "title": "Taller: ¡Nos vamos a la piscina! Espacio de Igualdad Lourdes Hernández",
@@ -9716,18 +9773,6 @@
     ],
     "formato": "puntual",
     "lid": "0402c527"
-  },
-  "571dfd0d1f4964f4": {
-    "title": "Proyección de la película ¿Quién es quién?",
-    "description": "Comedia dirigida por Hugo Martín Cuervo que narra un divertido intercambio familiar. Es un remake español de la película francesa Le sens de la famille.",
-    "start_time": "22:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=163107a260cae910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "cine",
-      "gratis"
-    ],
-    "formato": "puntual"
   },
   "1a4a5f0b9f570df4": {
     "title": "¿Te pagan lo que te corresponde? Aprende a leer tu nómina",
@@ -11646,6 +11691,21 @@
     ],
     "formato": "exposicion",
     "lid": "4abde3ad"
+  },
+  "cfea7562200f99f2": {
+    "title": "Rawayana",
+    "description": "La banda venezolana presenta su nuevo álbum y gira mundial con una fusión de géneros como reggae, funk y rock. El conjunto destaca por su estilo vibrante y letras reflexivas que exploran desde la sátira social hasta la alegría de vivir.",
+    "start_time": "20:30:00",
+    "url": "https://www.movistararena.es/informacion?evento=rawayana-d-nde-es-el-after-world-tour",
+    "price": "Entradas agotadas",
+    "image": "images/events/fddc98dc0799.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/rawayana-movistar-arena",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "exposicion",
+    "lid": "1f1e0e14"
   },
   "ac0ede3b035986e9": {
     "title": "Migrar. Historias de Movimiento, Pertenencia y Transformación",
@@ -16511,5 +16571,21 @@
     ],
     "formato": "puntual",
     "lid": "2f59b0c5"
+  },
+  "e49b617d47fdafc4": {
+    "title": "Gerónimo Rauch",
+    "description": "El artista argentino celebra 26 años de trayectoria con un espectáculo retrospectivo que repasa los papeles más emblemáticos de su carrera. Un concierto único que recorre tanto sus éxitos en musicales internacionales como su repertorio como solista.",
+    "start_time": "20:30:00",
+    "url": "https://rooftoplirico.com/es/cartelera/geronimo-rauch-26-anos-en-escena",
+    "price": "Desde 32 €",
+    "image": "images/events/5811a37ebe46.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/geronimo-rauch-teatro-calderon",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos",
+      "musicales"
+    ],
+    "formato": "puntual",
+    "lid": "c05dd0a1"
   }
 }
