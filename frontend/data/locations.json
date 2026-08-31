@@ -41,13 +41,6 @@
     "latitude": 40.3957812018463,
     "longitude": -3.6670346724676173
   },
-  "d4e2d934": {
-    "location_name": "Centro de Servicios Sociales Marta Esquivias Tallada",
-    "address": "CALLE PONTEVEDRA 1",
-    "district": "Chamberi",
-    "latitude": 40.43455855726328,
-    "longitude": -3.7104868511329454
-  },
   "c5e23990": {
     "location_name": "Parque Lineal de Palomeras",
     "address": "AVENIDA ALBUFERA 293",
@@ -375,6 +368,13 @@
     "latitude": 40.473659104975354,
     "longitude": -3.592395079190456
   },
+  "3f386eb8": {
+    "location_name": "Biblioteca Pública Municipal Gloria Fuertes (Barajas)",
+    "address": "AVENIDA LOGROÑO 179",
+    "district": "Barajas",
+    "latitude": 40.46055947228695,
+    "longitude": -3.5937461811785347
+  },
   "73b313ed": {
     "location_name": "Jardines de El Buen Retiro",
     "address": "PLAZA INDEPENDENCIA 7",
@@ -403,6 +403,13 @@
     "latitude": 40.37128211425518,
     "longitude": -3.6292460351699867
   },
+  "38e0e792": {
+    "location_name": "Casa del Lector",
+    "address": "PASEO CHOPERA 14",
+    "district": "Arganzuela",
+    "latitude": 40.39245798191536,
+    "longitude": -3.6972067902718897
+  },
   "40c9bbca": {
     "location_name": "Centro Cultural el Torito (Moratalaz)",
     "address": "AVENIDA MORATALAZ 130",
@@ -423,10 +430,6 @@
     "district": "Usera",
     "latitude": 40.38272687240551,
     "longitude": -3.7123340121838933
-  },
-  "314e4d23": {
-    "location_name": "Parque de el Pueblo de El Pardo",
-    "district": "Distrito"
   },
   "b32cd0eb": {
     "location_name": "Centro Cultural José Luis López Vázquez (San Blas - Canillejas)",
@@ -497,11 +500,6 @@
     "district": "Latina",
     "latitude": 40.412941426753434,
     "longitude": -3.725711256326908
-  },
-  "6dd5948c": {
-    "location_name": "Parque Huerta de la Salud",
-    "address": "CALLE MAR DE LAS ANTILLAS 8",
-    "district": "Hortaleza"
   },
   "212de84d": {
     "location_name": "Espacio de Igualdad Elena Arnedo Soriano. Retiro",
@@ -600,12 +598,6 @@
     "latitude": 40.38627312379031,
     "longitude": -3.700074755609488
   },
-  "38e0e792": {
-    "location_name": "Casa del Lector (Matadero)",
-    "address": "de la Chopera, 14",
-    "latitude": 40.3923033,
-    "longitude": -3.69743
-  },
   "9335e955": {
     "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
     "address": "CALLE DOCTOR TOLOSA LATOUR 16",
@@ -683,13 +675,6 @@
     "latitude": 40.37381624358889,
     "longitude": -3.6599325731670977
   },
-  "aac81ce4": {
-    "location_name": "Centro Sociocultural Valverde (Fuencarral - El Pardo)",
-    "address": "PLAZA ISLAS AZORES 1",
-    "district": "Fuencarral-ElPardo",
-    "latitude": 40.49504564211655,
-    "longitude": -3.6880070256093758
-  },
   "12355570": {
     "location_name": "Biblioteca Pública Municipal Eugenio Trías. Casa de Fieras de El Retiro (Retiro)",
     "address": "PASEO FERNÁN NÚÑEZ 24",
@@ -703,20 +688,6 @@
     "district": "Carabanchel",
     "latitude": 40.38330593504341,
     "longitude": -3.7420633861175796
-  },
-  "f2b4174f": {
-    "location_name": "Instalación Deportiva Municipal Básica Parque El Calero",
-    "address": "CALLE VIRGEN DE NURIA 4",
-    "district": "CiudadLineal",
-    "latitude": 40.43580006579458,
-    "longitude": -3.6532953172963816
-  },
-  "5920ebfe": {
-    "location_name": "Auditorio Municipal Las Trece Rosas",
-    "address": "CALLE MONTE DE MONTJUICH 7",
-    "district": "VillaDeVallecas",
-    "latitude": 40.38024953878224,
-    "longitude": -3.6175290483217055
   },
   "28cc7d13": {
     "location_name": "Biblioteca Pública Municipal Francisco Umbral (Villaverde)",
@@ -738,13 +709,6 @@
     "district": "VillaDeVallecas",
     "latitude": 40.36372961110359,
     "longitude": -3.598761647346733
-  },
-  "dbc8993b": {
-    "location_name": "Parque Eva Duarte",
-    "address": "CALLE DOCTOR GOMEZ ULLA 9",
-    "district": "Salamanca",
-    "latitude": 40.42985671996897,
-    "longitude": -3.668031432543624
   },
   "1b4b08af": {
     "location_name": "Espacio de Igualdad Clara Campoamor. Villaverde",
@@ -809,6 +773,13 @@
     "latitude": 40.443385945708435,
     "longitude": -3.6182513751654133
   },
+  "5920ebfe": {
+    "location_name": "Auditorio Municipal Las Trece Rosas",
+    "address": "CALLE MONTE DE MONTJUICH 7",
+    "district": "VillaDeVallecas",
+    "latitude": 40.38024953878224,
+    "longitude": -3.6175290483217055
+  },
   "a2cd4cc7": {
     "location_name": "Parque Tecnológico Valdemingómez",
     "address": "CARRETERA VALDEMINGOMEZ 201",
@@ -829,6 +800,13 @@
     "district": "Moncloa-Aravaca",
     "latitude": 40.42425096551599,
     "longitude": -3.716531855540272
+  },
+  "f2b4174f": {
+    "location_name": "Instalación Deportiva Municipal Básica Parque El Calero",
+    "address": "CALLE VIRGEN DE NURIA 4",
+    "district": "CiudadLineal",
+    "latitude": 40.43580006579458,
+    "longitude": -3.6532953172963816
   },
   "57f49789": {
     "location_name": "Biblioteca Pública Municipal José Hierro (San Blas-Canillejas)",
@@ -886,13 +864,6 @@
     "latitude": 40.402190438836826,
     "longitude": -3.6772826298329093
   },
-  "dbe08552": {
-    "location_name": "Centro Cultural Auditorio Parque El Paraíso (San Blas - Canillejas)",
-    "address": "AVENIDA ARCENTALES 4",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.42997621103139,
-    "longitude": -3.6221773579444596
-  },
   "cf38b0cd": {
     "location_name": "Nave 10 Matadero (antes Naves del Español)",
     "address": "de la Chopera, 14",
@@ -927,26 +898,12 @@
     "latitude": 40.397074625115906,
     "longitude": -3.7664885474841556
   },
-  "867ee94b": {
-    "location_name": "Biblioteca Pública Municipal Miguel Delibes (Moratalaz)",
-    "address": "CALLE ARROYO BELINCOSO 11",
-    "district": "Moratalaz",
-    "latitude": 40.40971737692924,
-    "longitude": -3.6529822109115133
-  },
   "09e2acfe": {
     "location_name": "Biblioteca Pública Municipal Ciudad Lineal (Ciudad Lineal)",
     "address": "CALLE HERMANOS GARCIA NOBLEJAS 14",
     "district": "CiudadLineal",
     "latitude": 40.43644651057092,
     "longitude": -3.6372924261150033
-  },
-  "acc32168": {
-    "location_name": "Biblioteca Pública Municipal Dámaso Alonso (Chamartín)",
-    "address": "CALLE MANUEL FERRERO 1",
-    "district": "Chamartin",
-    "latitude": 40.467453379213175,
-    "longitude": -3.6846112774442705
   },
   "eb02bd78": {
     "location_name": "Biblioteca Pública Municipal Pío Baroja (Arganzuela)",
@@ -955,12 +912,26 @@
     "latitude": 40.40003652682007,
     "longitude": -3.7074488154950584
   },
+  "867ee94b": {
+    "location_name": "Biblioteca Pública Municipal Miguel Delibes (Moratalaz)",
+    "address": "CALLE ARROYO BELINCOSO 11",
+    "district": "Moratalaz",
+    "latitude": 40.40971737692924,
+    "longitude": -3.6529822109115133
+  },
   "80116606": {
     "location_name": "Biblioteca Pública Municipal Gabriel García Márquez (Usera)",
     "address": "PLAZA PUEBLO 2",
     "district": "Usera",
     "latitude": 40.366768324753416,
     "longitude": -3.701141063083806
+  },
+  "5ec0d445": {
+    "location_name": "Biblioteca Pública Municipal Francisco Ayala (Vicálvaro)",
+    "address": "BULEVAR INDALECIO PRIETO 21",
+    "district": "Vicalvaro",
+    "latitude": 40.39982891410407,
+    "longitude": -3.621281890570377
   },
   "3fa55718": {
     "location_name": "Biblioteca Pública Municipal Ana María Matute (Carabanchel)",
@@ -1117,6 +1088,12 @@
     "latitude": 40.4096362,
     "longitude": -3.6991806
   },
+  "044f7fc6": {
+    "location_name": "Gran Teatro CaixaBank Príncipe Pío",
+    "address": "de San Vicente, 44",
+    "latitude": 40.4205269,
+    "longitude": -3.7185721
+  },
   "20f77603": {
     "location_name": "Museo Nacional Thyssen-Bornemisza",
     "address": "del Prado, 8",
@@ -1140,12 +1117,6 @@
     "address": "del Barquillo, 24",
     "latitude": 40.422252413672,
     "longitude": -3.695547580719
-  },
-  "044f7fc6": {
-    "location_name": "Gran Teatro CaixaBank Príncipe Pío",
-    "address": "de San Vicente, 44",
-    "latitude": 40.420888390866,
-    "longitude": -3.718807697296
   },
   "296a3885": {
     "location_name": "AC Recoletos",
@@ -1260,6 +1231,12 @@
     "address": "del Arenal, 11",
     "latitude": 40.4171056,
     "longitude": -3.7065076
+  },
+  "7bbd9a86": {
+    "location_name": "Parque del Oeste",
+    "address": "de Moret, 2",
+    "latitude": 40.4343542,
+    "longitude": -3.7214585
   },
   "3a82f95a": {
     "location_name": "Jardín Banca March",
@@ -1564,18 +1541,6 @@
     "latitude": 40.4019632,
     "longitude": -3.6964942
   },
-  "2b9a4735": {
-    "location_name": "Estadio Riyadh Air Metropolitano",
-    "address": "de Luis Aragonés, s/n",
-    "latitude": 40.436299422388,
-    "longitude": -3.599481582642
-  },
-  "d0b9c3cf": {
-    "location_name": "Coliseum",
-    "address": "Teresa de Calcuta, s/n",
-    "latitude": 40.3239098,
-    "longitude": -3.713966
-  },
   "9d15f421": {
     "location_name": "Estadio Bernabéu",
     "address": "de Concha Espina, 1",
@@ -1593,6 +1558,12 @@
     "address": "de España, 9",
     "latitude": 40.4220352,
     "longitude": -3.7137064
+  },
+  "2b9a4735": {
+    "location_name": "Estadio Riyadh Air Metropolitano",
+    "address": "de Luis Aragonés, s/n",
+    "latitude": 40.436299422388,
+    "longitude": -3.599481582642
   },
   "9d5eb577": {
     "location_name": "La Riviera",
@@ -1617,12 +1588,6 @@
     "address": "de Cea Bermúdez, 1",
     "latitude": 40.4382782,
     "longitude": -3.705182
-  },
-  "ae09ed1c": {
-    "location_name": "CC Gran Plaza 2",
-    "address": "C. de los Químicos, 1",
-    "latitude": 40.4909933,
-    "longitude": -3.8992646
   },
   "50107e1c": {
     "location_name": "Teatro Real",
@@ -1686,6 +1651,12 @@
     "address": "de Gustavo Adolfo Bécquer, 64",
     "latitude": 40.5134295,
     "longitude": -3.4094629
+  },
+  "d0b9c3cf": {
+    "location_name": "Coliseum",
+    "address": "Teresa de Calcuta, s/n",
+    "latitude": 40.325730691238,
+    "longitude": -3.714945316315
   },
   "93a3239f": {
     "location_name": "Varios emplazamientos",
@@ -1850,5 +1821,11 @@
     "address": "de las Maldonadas, 6",
     "latitude": 40.4109981,
     "longitude": -3.707788
+  },
+  "2472b01a": {
+    "location_name": "Sala de Exposiciones del Banco de España",
+    "address": "de Alcalá, 48",
+    "latitude": 40.4183113,
+    "longitude": -3.6948933
   }
 }
