@@ -1,14 +1,18 @@
 {
   "17aafb1db52678d8": {
     "title": "25 años del Museo de San Isidro. Los Orígenes de Madrid",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=92684dde03f7f910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
+    "description": "Exposición conmemorativa sobre la historia y los orígenes de la ciudad de Madrid en el Museo de San Isidro.",
+    "start_time": "10:00:00",
+    "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/Cultura-ocio-y-deporte/25-anos-del-Museo-de-San-Isidro-Los-Origenes-de-Madrid/?vgnextfmt=default&vgnextoid=39b35c3f9fe7f910VgnVCM200000f921e388RCRD&vgnextchannel=7911f073808fe410VgnVCM2000000c205a0aRCRD&",
+    "price": "Gratuito",
+    "image": "images/events/12ef488a66d0.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/25-anos-museo-san-isidro-origenes-madrid-museo-san-isidro",
+    "source": "esmadrid,madrid_agenda",
     "categories": [
       "exposiciones",
       "gratis",
       "patrimonio"
     ],
-    "description": "Exposición conmemorativa sobre la historia y los orígenes de la ciudad de Madrid en el Museo de San Isidro.",
     "formato": "exposicion",
     "lid": "0d332ccb"
   },
@@ -218,6 +222,19 @@
     "price": "0",
     "formato": "puntual",
     "lid": "ebf96d4f"
+  },
+  "8b3a2fd1b5b4be07": {
+    "title": "Altar de muertos 2026",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=b3e575b71bd10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "destacado",
+      "exposiciones",
+      "patrimonio"
+    ],
+    "description": "Exposición tradicional conmemorativa por el Día de Muertos. Una representación cultural que honra la memoria de los difuntos.",
+    "formato": "exposicion",
+    "lid": "c9c45e0d"
   },
   "6f210fb476b85129": {
     "title": "Animación infantil participativa de calle",
@@ -1232,6 +1249,20 @@
     "formato": "puntual",
     "lid": "1d11f16a"
   },
+  "6bd0256e17057526": {
+    "title": "Cine infantil: Mary Poppins",
+    "description": "La llegada de una niñera mágica cambia por completo la dinámica de una familia londinense a principios del siglo XX.",
+    "start_time": "18:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d5fe724b972dc910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "infantil",
+      "gratis"
+    ],
+    "formato": "puntual",
+    "lid": "1d11f16a"
+  },
   "64a1329662cee5bc": {
     "title": "Cine molón | 35 FCM-PNR",
     "start_time": "17:30:00",
@@ -1832,6 +1863,18 @@
     "formato": "exposicion",
     "lid": "32296fa0"
   },
+  "bb097c44e35915bf": {
+    "title": "Curso anual de cómic",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=314f90718a1df910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "literatura"
+    ],
+    "description": "Formación integral para el aprendizaje de las técnicas de narrativa y dibujo de cómic. Curso de larga duración para aficionados al género.",
+    "formato": "exposicion",
+    "lid": "38e0e792"
+  },
   "bfd3c3e0d571f4a9": {
     "title": "Curso anual de Cómic para niños",
     "description": "Curso formativo de cómic para edades comprendidas entre 8 y 12 años en la Casa del Lector. Taller de creación y expresión artística.",
@@ -1840,6 +1883,40 @@
     "source": "madrid_agenda",
     "categories": [
       "infantil",
+      "talleres"
+    ],
+    "formato": "exposicion",
+    "lid": "95a62894"
+  },
+  "e058bf7387a17c0f": {
+    "title": "Curso anual de Ficción Sonora: Proyectos",
+    "description": "Curso práctico sobre los roles necesarios para producir una ficción sonora. Orientado a la puesta en marcha de proyectos de audio en directo o grabados.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=64e2ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "cine"
+    ],
+    "formato": "exposicion",
+    "lid": "95a62894"
+  },
+  "f339d4ca5d1befbf": {
+    "title": "Curso de Ficción Sonora: Nivel Iniciación",
+    "description": "Programa anual de formación en ficción sonora centrado en la técnica y la creación de relatos orales. Inscripciones disponibles por trimestres.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d872ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres"
+    ],
+    "formato": "exposicion",
+    "lid": "95a62894"
+  },
+  "f40cd8e49ac034a6": {
+    "title": "Curso de Ficción Sonora: Nivel Intermedio",
+    "description": "Continuación avanzada del curso de iniciación con foco en técnica y construcción narrativa. Formación práctica anual organizada por trimestres.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=aab2ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
       "talleres"
     ],
     "formato": "exposicion",
@@ -1862,6 +1939,19 @@
     "description": "Taller formativo orientado a jóvenes para aprender sobre la creación y producción de relatos mediante ficción sonora.",
     "formato": "puntual",
     "lid": "38e0e792"
+  },
+  "97d080d68226b4d7": {
+    "title": "Cursos gratuitos de golf, tenis y pádel 2026-2027",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=378ee0a8b0320a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "deportes",
+      "gratis"
+    ],
+    "description": "Programa de formación deportiva gratuita para la temporada 2026-2027.",
+    "price": "0€",
+    "is_multi_event": true,
+    "formato": "festival"
   },
   "89f04d204427d77c": {
     "title": "Concierto: Dadu & Javi 'Música al Mundo'",
@@ -1930,6 +2020,19 @@
     ],
     "formato": "puntual",
     "lid": "40c9bbca"
+  },
+  "92fbbb688675c9a2": {
+    "title": "De amores y miedos (Chamberí)",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=2a7696d88b96f910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros",
+      "gratis"
+    ],
+    "description": "Representación o actividad cultural gratuita en el distrito de Chamberí.",
+    "formato": "puntual",
+    "lid": "4710abd1"
   },
   "eb678beab5888c1b": {
     "title": "Visita guiada: De Casa de Campo a Madrid Río I",
@@ -2522,6 +2625,17 @@
     "formato": "puntual",
     "lid": "95a62894"
   },
+  "20b7e1dcd5589e7d": {
+    "title": "El público",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=439328907c62f910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro"
+    ],
+    "description": "Representación teatral de la obra dramática escrita por Federico García Lorca.",
+    "formato": "exposicion",
+    "lid": "c9c45e0d"
+  },
   "b13b35923d40d293": {
     "title": "El retablo de las maravillas",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8e24f0af8962f910VgnVCM100000891ecb1aRCRD",
@@ -3005,6 +3119,20 @@
     ],
     "formato": "exposicion",
     "lid": "ebf96d4f"
+  },
+  "3fb416169462e4c7": {
+    "title": "Exposición de Zentangle: espacio Zen",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=48c2f3073fbdf910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "exposiciones",
+      "gratis",
+      "bienestar"
+    ],
+    "description": "Muestra artística centrada en la técnica de dibujo Zentangle para fomentar el bienestar.",
+    "price": "0",
+    "formato": "exposicion",
+    "lid": "439b2cee"
   },
   "6610164da8453b25": {
     "title": "Exposición de acuarelas de Francisco José Carvajal Álvaro",
@@ -7746,6 +7874,18 @@
     "price": "gratis",
     "formato": "exposicion",
     "lid": "5b0073c9"
+  },
+  "35b44f1afe554a89": {
+    "title": "Teatro de Grandeza: Arte, Arquitectura y Ciudad en el Madrid Barroco",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=007775b71bd10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "destacado",
+      "patrimonio"
+    ],
+    "description": "Explora el concepto de 'Teatro de Grandeza' a través del arte, la arquitectura y el urbanismo del Madrid Barroco. Descubre cómo la ciudad se transformó en un escenario monumental durante este periodo.",
+    "formato": "exposicion",
+    "lid": "c9c45e0d"
   },
   "4ef61fdb919ca236": {
     "title": "Teatro: Cyrano de Bergerac",
@@ -16579,5 +16719,121 @@
     ],
     "formato": "puntual",
     "lid": "044f7fc6"
+  },
+  "fed5b1780330b178": {
+    "title": "Real Madrid - Inter de Milán (UEFA Champions League. Fase Liga. Jornada 1)",
+    "description": "Encuentro de la máxima competición europea entre el Real Madrid y el Inter de Milán. Ambos clubes históricos se enfrentan en esta jornada de la fase liga de la UEFA Champions League.",
+    "start_time": "21:00:00",
+    "url": "https://www.realmadrid.com/es-ES/futbol/partidos/champions-league/real-madrid-internazionale/08-09-2026",
+    "price": "Consultar página oficial",
+    "image": "images/events/fe6a9d6a10e1.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/real-madrid-inter-milan-uefa-champions-league-estadio-bernabeu",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "9d15f421"
+  },
+  "d1490a67498a9673": {
+    "title": "Lo que el cuerpo sabe - CRECE 2026",
+    "description": "Espectáculo colectivo de circo contemporáneo que utiliza acrobacias, equilibrios y disciplinas aéreas para explorar las emociones humanas. La pieza integra teatro y danza para relatar experiencias personales a través del cuerpo como principal herramienta de expresión.",
+    "start_time": "20:00:00",
+    "url": "https://www.teatrocircoprice.es/programacion/proyecto-crece-2026",
+    "price": "14 €",
+    "image": "images/events/fcec1418882f.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/lo-cuerpo-sabe-crece-2026-teatro-circo-price",
+    "source": "esmadrid",
+    "categories": [
+      "circo",
+      "teatro",
+      "danza"
+    ],
+    "formato": "puntual",
+    "lid": "e411800a"
+  },
+  "b705f40d7fc80cec": {
+    "title": "Complementarios 2026",
+    "description": "Exposición colectiva que explora el espacio intermedio entre la artesanía y la industria a través del diseño de moda y accesorios. La muestra pone en valor el proceso creativo, los materiales y la convivencia entre la tradición y la innovación técnica.",
+    "start_time": "11:00:00",
+    "url": "https://www.dimad.org/agenda/complementarios-2026",
+    "price": "Gratis",
+    "image": "images/events/8c68ddd2ddcb.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/ZKF1vubNdrMJLEHKIGAvSBB2fWQaT3pFZZpTlRVLY30/mtime:1788260428/sites/default/files/eventos/eventos/complementarios5.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/iFbc9ppcjUPdPrRyKK66YtUzSghlKUcVRoTb9lInDW4/mtime:1788260526/sites/default/files/eventos/eventos/complementarios_3_0.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/Aom4s4--lYAzhP0iPJlKVRr7Y4ioMgfThgkR9MsrtdU/mtime:1788260494/sites/default/files/eventos/eventos/complementarios_4_0.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/5KuG9p4lUXb8D3JldSZPOsfgtLvCPcaf6Yf-1QH7vEw/mtime:1788260558/sites/default/files/eventos/eventos/complementarios_2.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/complementarios-2026-central-diseno",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "formato": "exposicion",
+    "lid": "a9858871"
+  },
+  "126e8286b767d74d": {
+    "title": "Voces que no ves",
+    "description": "La compañía Pepa Plana presenta un espectáculo de clown que combina humor y poesía para reinventar los clásicos del circo desde una perspectiva femenina. Las artistas recuperan y transforman roles tradicionales a través de escenas que exploran la superación de situaciones inesperadas mediante la imaginación.",
+    "url": "https://www.teatrocircoprice.es/programacion/compania-pepa-plana",
+    "price": "16 €",
+    "image": "images/events/efc06155cc81.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/voces-no-ves-teatro-circo-price",
+    "source": "esmadrid",
+    "categories": [
+      "circo",
+      "teatro",
+      "comedia",
+      "infantil"
+    ],
+    "formato": "puntual",
+    "lid": "e411800a"
+  },
+  "7ace478e3bccad76": {
+    "title": "Los Amados",
+    "description": "Un concierto teatral que combina música en vivo, humor y teatralidad para rendir homenaje a las icónicas composiciones de Carlos Gardel y Alfredo Le Pera. El espectáculo presenta un recorrido por clásicos del repertorio argentino con arreglos de ritmos latinoamericanos.",
+    "start_time": "20:00:00",
+    "url": "https://gruposmedia.com/cartelera/los-amados/",
+    "price": "Desde 23,43 €",
+    "image": "images/events/5a11eff14914.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/48izLBvWiSJchoQcaxVXTobQzJOelOOjBnAVcPpcXiY/mtime:1776698469/sites/default/files/eventos/eventos/los_amados.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/-qFchfWPDm-8rvJUfZEMd9jmt4wgyEXSsHsKF3hydPw/mtime:1776698515/sites/default/files/eventos/eventos/los_amados2.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/amados-pequeno-teatro-gran-via",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos",
+      "teatro",
+      "comedia"
+    ],
+    "formato": "puntual",
+    "lid": "7fb49dd2"
+  },
+  "a613948779eee4e9": {
+    "title": "Cayetana. Grande de España",
+    "description": "Exposición dedicada a la figura de la XVIII duquesa de Alba que explora su contribución a la conservación del legado histórico y artístico de la Casa de Alba. La muestra reúne más de 200 piezas, incluyendo obras de arte, objetos personales y documentos que recorren su biografía y labor de mecenazgo.",
+    "start_time": "10:00:00",
+    "url": "https://www.palaciodeliria.com/actividades-exposiciones-madrid/exposicion-cayetana-duquesa-de-alba",
+    "price": "Desde 13 €",
+    "image": "images/events/627ee7615500.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/Yjai73wd9ns5nnokT6sAC26OqxXHNE8s9GHN2j3tFLs/mtime:1783425010/sites/default/files/eventos/eventos/cayetana._grande_de_espana_0.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/HZ1rX0Wq42XnHsxv4t9BJFm_7Fv2zLd_5rWLzQmXbe8/mtime:1786001402/sites/default/files/eventos/eventos/cayetana.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/DGVgokM8D9_r4Ms_rMtaNUSOKqLe8phIJtB-35sFDro/mtime:1786001495/sites/default/files/eventos/eventos/cayetana2.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/N2WPYqjWGe7mLDyl_DjMhI2hycprCOMSsn5Pna2jE8s/mtime:1786001555/sites/default/files/eventos/eventos/cayetana_grande.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/my89iFCyHsqNcsZFhmmcMfy4cxEQo5bOl229ZWPELX8/mtime:1776953594/sites/default/files/eventos/eventos/cayetana._grande_de_espana_02_palacio_de_liria.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/8adqVgbkviMHSAh7kUZuOBGelX1k9FBn4LLqRebLEvc/mtime:1776954341/sites/default/files/eventos/eventos/imagen_de_cayetana._grande_de_espana_en_el_palacio_de_las_duenas_sevilla.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/cayetana-grande-espana-palacio-liria",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "fotografía"
+    ],
+    "formato": "exposicion",
+    "lid": "a39f00f6"
   }
 }

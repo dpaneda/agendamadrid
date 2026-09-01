@@ -1,10 +1,9 @@
 {
   "0d332ccb": {
     "location_name": "Museo de San Isidro. Los Orígenes de Madrid",
-    "address": "PLAZA SAN ANDRES 2",
-    "district": "Centro",
-    "latitude": 40.41207900253883,
-    "longitude": -3.7108161027466378
+    "address": "de San Andrés, 2",
+    "latitude": 40.4120833,
+    "longitude": -3.7110676
   },
   "c3355e2c": {
     "location_name": "Centro Cultural Buenavista (Salamanca)",
@@ -75,6 +74,13 @@
     "district": "Salamanca",
     "latitude": 40.42206923419431,
     "longitude": -3.6629608041639368
+  },
+  "c9c45e0d": {
+    "location_name": "Fernán Gómez Centro Cultural de la Villa",
+    "address": "PLAZA COLON 4",
+    "district": "Salamanca",
+    "latitude": 40.4249721516942,
+    "longitude": -3.689948085098791
   },
   "824774c3": {
     "location_name": "Centro de Cultura Contemporánea CondeDuque",
@@ -417,6 +423,13 @@
     "latitude": 40.40610655994401,
     "longitude": -3.646521482592748
   },
+  "4710abd1": {
+    "location_name": "Centro Cultural Galileo (Chamberí)",
+    "address": "CALLE GALILEO 39",
+    "district": "Chamberi",
+    "latitude": 40.433719454283505,
+    "longitude": -3.7104468992841753
+  },
   "7f9397e2": {
     "location_name": "Centro Deportivo Municipal Orcasitas",
     "address": "AVENIDA RAFAELA YBARRA 52",
@@ -451,13 +464,6 @@
     "district": "VillaDeVallecas",
     "latitude": 40.37740868500615,
     "longitude": -3.6206400361863036
-  },
-  "c9c45e0d": {
-    "location_name": "Fernán Gómez Centro Cultural de la Villa",
-    "address": "PLAZA COLON 4",
-    "district": "Salamanca",
-    "latitude": 40.4249721516942,
-    "longitude": -3.689948085098791
   },
   "b1f7c00c": {
     "location_name": "Teatro Español",
@@ -549,13 +555,6 @@
     "district": "Usera",
     "latitude": 40.38439900273861,
     "longitude": -3.7129519968429445
-  },
-  "4710abd1": {
-    "location_name": "Centro Cultural Galileo (Chamberí)",
-    "address": "CALLE GALILEO 39",
-    "district": "Chamberi",
-    "latitude": 40.433719454283505,
-    "longitude": -3.7104468992841753
   },
   "9c07c98c": {
     "location_name": "Espacio Cultural Núñez de Balboa, 40 (Salamanca)",
@@ -1827,5 +1826,17 @@
     "address": "de Alcalá, 48",
     "latitude": 40.4183113,
     "longitude": -3.6948933
+  },
+  "a9858871": {
+    "location_name": "Central de diseño (Matadero)",
+    "address": "de la Chopera, 14",
+    "latitude": 40.3914147,
+    "longitude": -3.6972004
+  },
+  "a39f00f6": {
+    "location_name": "Palacio de Liria",
+    "address": "de la Princesa, 20",
+    "latitude": 40.427732729479,
+    "longitude": -3.712424039841
   }
 }
