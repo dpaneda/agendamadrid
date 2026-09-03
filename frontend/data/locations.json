@@ -736,6 +736,12 @@
     "latitude": 40.40912277790706,
     "longitude": -3.6793179644920584
   },
+  "41cfd2ba": {
+    "location_name": "Conde Duque",
+    "address": "del Conde Duque, 11",
+    "latitude": 40.427887,
+    "longitude": -3.710802
+  },
   "4ec30898": {
     "location_name": "Centro Cultural Las Californias (Retiro)",
     "address": "CALLE LUIS PEIDRO 2",
@@ -777,6 +783,13 @@
     "district": "VillaDeVallecas",
     "latitude": 40.36372961110359,
     "longitude": -3.598761647346733
+  },
+  "17475429": {
+    "location_name": "Colegio Público República de Brasil",
+    "address": "AVENIDA FUEROS 34",
+    "district": "Usera",
+    "latitude": 40.37043939785913,
+    "longitude": -3.6899302716018574
   },
   "868d318d": {
     "location_name": "Parque de Berlín",
@@ -1096,6 +1109,12 @@
     "latitude": 40.4420396,
     "longitude": -3.7005144
   },
+  "d5e60251": {
+    "location_name": "Teatro Alcázar",
+    "address": "de Alcalá, 20",
+    "latitude": 40.4177853,
+    "longitude": -3.6990893
+  },
   "529045ed": {
     "location_name": "Teatro Lara",
     "address": "Baja de San Pablo, 15",
@@ -1282,17 +1301,17 @@
     "latitude": 40.4177983,
     "longitude": -3.6897806
   },
+  "0706fc4c": {
+    "location_name": "Iglesia de San Antonio de los Alemanes",
+    "address": "de la Puebla , 22",
+    "latitude": 40.422464774016,
+    "longitude": -3.703680038452
+  },
   "2f59b0c5": {
     "location_name": "Estadio Ontime Butarque",
     "address": "Arquitectura, s/n",
     "latitude": 40.3394716,
     "longitude": -3.7627478
-  },
-  "d5e60251": {
-    "location_name": "Teatro Alcázar",
-    "address": "de Alcalá, 20",
-    "latitude": 40.4177853,
-    "longitude": -3.6990893
   },
   "d4736963": {
     "location_name": "Teatro Eslava",
@@ -1326,12 +1345,6 @@
   },
   "f019fdda": {
     "location_name": "Capitol Gran Vía"
-  },
-  "0706fc4c": {
-    "location_name": "Iglesia de San Antonio de los Alemanes",
-    "address": "de la Puebla , 22",
-    "latitude": 40.4224508,
-    "longitude": -3.7036394
   },
   "4ff22a87": {
     "location_name": "Ciudad Real Madrid",
@@ -1609,12 +1622,6 @@
     "latitude": 40.4019632,
     "longitude": -3.6964942
   },
-  "9d15f421": {
-    "location_name": "Estadio Bernabéu",
-    "address": "de Concha Espina, 1",
-    "latitude": 40.4524318,
-    "longitude": -3.6868084
-  },
   "e7d6d4c4": {
     "location_name": "Fuente de Cibeles",
     "address": "de Cibeles, s/n",
@@ -1645,6 +1652,12 @@
     "latitude": 40.2871621,
     "longitude": -3.8223884
   },
+  "9d15f421": {
+    "location_name": "Estadio Bernabéu",
+    "address": "de Concha Espina, 1",
+    "latitude": 40.4530417,
+    "longitude": -3.6883549
+  },
   "027f0347": {
     "location_name": "Teatros del Canal",
     "address": "de Cea Bermúdez, 1",
@@ -1656,12 +1669,6 @@
     "address": "de Isabel II, s/n",
     "latitude": 40.4184102,
     "longitude": -3.7093957
-  },
-  "41cfd2ba": {
-    "location_name": "Conde Duque",
-    "address": "del Conde Duque, 11",
-    "latitude": 40.427887,
-    "longitude": -3.710802
   },
   "b7019de4": {
     "location_name": "Teatro de La Abadía",
@@ -1919,5 +1926,41 @@
     "address": "de Brasil, 5",
     "latitude": 40.454490836811,
     "longitude": -3.693975806236
+  },
+  "79932781": {
+    "location_name": "Filmoteca Española",
+    "address": "de la Magdalena, 10",
+    "latitude": 40.4123174,
+    "longitude": -3.7021827
+  },
+  "a5caa848": {
+    "location_name": "Centro Cultural Paco Rabal",
+    "address": "de Felipe de Diego, 13",
+    "latitude": 40.3794678,
+    "longitude": -3.6612928
+  },
+  "5e098d10": {
+    "location_name": "Nave 0 (Matadero)",
+    "address": "de Legazpi , 8",
+    "latitude": 40.3910873,
+    "longitude": -3.6981435
+  },
+  "22fd9956": {
+    "location_name": "UMusic Hotel Teatro Albéniz",
+    "address": "de la Paz, 11",
+    "latitude": 40.4153478,
+    "longitude": -3.7041116
+  },
+  "a6035e83": {
+    "location_name": "Sala de Arte Joven de la Comunidad de Madrid",
+    "address": "de América, 13",
+    "latitude": 40.4385164,
+    "longitude": -3.6764022
+  },
+  "70e71b4a": {
+    "location_name": "Espacio COAM"
+  },
+  "0717a59e": {
+    "location_name": "Capilla de Palacio Real y Teatro Real Carlos III, Aranjuez"
   }
 }

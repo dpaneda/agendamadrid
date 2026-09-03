@@ -791,6 +791,18 @@
     "formato": "puntual",
     "lid": "95a62894"
   },
+  "6ceebf70ce90b1b4": {
+    "title": "Buenas Noches, Buenos Aires (Latina)",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=832396d88b96f910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros",
+      "gratis"
+    ],
+    "description": "Evento cultural gratuito desarrollado en el distrito de Latina.",
+    "formato": "puntual"
+  },
   "bc954060603b9f7a": {
     "title": "Café filosófico",
     "start_time": "11:00:00",
@@ -2822,6 +2834,19 @@
     "formato": "puntual",
     "lid": "0519b2e3"
   },
+  "0e27ab634a6e64ec": {
+    "title": "Exposición: Dinoramas fantásticos",
+    "start_time": "11:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=43189174e07cf910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "exposiciones",
+      "infantil"
+    ],
+    "description": "Muestra creativa centrada en el mundo de los dinosaurios a través de representaciones artísticas. Una propuesta visual para todos los públicos.",
+    "formato": "puntual",
+    "lid": "38e0e792"
+  },
   "d6fab68ea9506759": {
     "title": "Exposición: Divergentes",
     "description": "Muestra fotográfica de la Fundación Funprodami que busca romper estereotipos sobre la discapacidad.",
@@ -4232,6 +4257,20 @@
     "formato": "puntual",
     "lid": "95a62894"
   },
+  "09e16313474d086a": {
+    "title": "Gala Saniclown 2026",
+    "description": "Evento benéfico y gala de circo y humor organizada por la asociación Saniclown.",
+    "start_time": "18:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=bbf80428dd4bd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "circo",
+      "gratis"
+    ],
+    "price": "0",
+    "formato": "puntual",
+    "lid": "e411800a"
+  },
   "46b0cdae9ea01c02": {
     "title": "Taller de Género y finanzas",
     "start_time": "17:30:00",
@@ -4272,6 +4311,19 @@
     "price": "0",
     "formato": "exposicion",
     "lid": "22840c10"
+  },
+  "b376f792c232b810": {
+    "title": "Glass Bottom Ferry. Sobre fronteras y utopías sumergidas",
+    "start_time": "20:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d3ab1163ea230a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "exposiciones",
+      "destacado"
+    ],
+    "description": "Propuesta artística y cultural que reflexiona sobre conceptos contemporáneos de fronteras y utopías. Una mirada crítica al entorno actual.",
+    "formato": "puntual",
+    "lid": "95a62894"
   },
   "afc36fd2adeeccd4": {
     "title": "Gloria Fuertes (hoy)",
@@ -4931,6 +4983,19 @@
     "formato": "festival",
     "lid": "13acb8c9"
   },
+  "66c36dfac1e84c15": {
+    "title": "Jacinto Esteva: Sesión de cortometrajes",
+    "description": "Proyección especial dedicada a la obra cinematográfica de Jacinto Esteva.",
+    "start_time": "19:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a031ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "destacado",
+      "cine"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
+  },
   "99bde3113add0ae6": {
     "title": "Jardín El Capricho: Itinerario interpretativo",
     "description": "Visita guiada por un educador ambiental para conocer la historia y la biodiversidad vegetal de este histórico jardín madrileño.",
@@ -5110,16 +5175,19 @@
   },
   "369c5b6a1d93cece": {
     "title": "Juan López",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=0eaa7591cd28e910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
+    "description": "Presentación musical del artista Juan López.",
+    "start_time": "10:00:00",
+    "url": "https://www.condeduquemadrid.es/actividades/juan-lopez",
+    "price": "gratis",
+    "image": "images/events/2aeee998393b.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/juan-lopez-conde-duque",
+    "source": "esmadrid,madrid_agenda",
     "categories": [
       "conciertos",
       "gratis"
     ],
-    "description": "Presentación musical del artista Juan López.",
-    "price": "gratis",
     "formato": "exposicion",
-    "lid": "824774c3"
+    "lid": "41cfd2ba"
   },
   "0848e965f2651cd0": {
     "title": "Cuentacuentos: Juego de elfos",
@@ -6398,6 +6466,23 @@
     "price": "0",
     "formato": "puntual"
   },
+  "1908bc2388ee1474": {
+    "title": "Misión bienestar: cuidamos nuestra mente",
+    "description": "Programa integral de actividades diseñado para adolescentes de 8 a 14 años enfocado en la salud mental y el bienestar.",
+    "start_time": "16:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d0a4c5663db50a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "bienestar",
+      "infantil",
+      "otros",
+      "gratis"
+    ],
+    "price": "gratis",
+    "is_multi_event": true,
+    "formato": "puntual",
+    "lid": "17475429"
+  },
   "b133978f6e3a2012": {
     "title": "Miss Jobson",
     "description": "Retrato íntimo de Diane Jobson, figura clave en la vida de Bob Marley y defensora de derechos. Un análisis sobre el paso del tiempo y el peso del legado personal.",
@@ -6409,6 +6494,22 @@
     ],
     "formato": "puntual",
     "lid": "95a62894"
+  },
+  "d1e9fda1c78a4360": {
+    "title": "Misterios inmersivos: los casos del dragón",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=680084f3da0df910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros"
+    ],
+    "dates": [
+      "2026-10-03",
+      "2026-11-21",
+      "2026-12-12"
+    ],
+    "description": "Actividad inmersiva para resolver enigmas y casos misteriosos.",
+    "formato": "puntual",
+    "lid": "38e0e792"
   },
   "669a345c3fbc80b5": {
     "title": "Presentación del Modelo integrador restaurativo",
@@ -8170,6 +8271,19 @@
     "formato": "puntual",
     "lid": "e232e586"
   },
+  "3b13637a7ba760fc": {
+    "title": "Sueños encantados en Barajas",
+    "start_time": "12:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5cce07c48ce00a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros",
+      "gratis"
+    ],
+    "description": "Programa de actividades culturales y lúdicas en el distrito de Barajas. Espacio dedicado al ocio para todas las edades.",
+    "is_multi_event": true,
+    "formato": "puntual"
+  },
   "5291e776e8a1c169": {
     "title": "Sueños encantados en Fuencarral",
     "start_time": "13:00:00",
@@ -9112,6 +9226,21 @@
     "formato": "puntual",
     "lid": "40c9bbca"
   },
+  "09529ec4c1bbd17b": {
+    "title": "Teatro: Las brujas de Salem",
+    "description": "Montaje de la obra de Arthur Miller sobre los juicios de Salem. Un drama intenso sobre el fanatismo y la paranoia colectiva.",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=b467a00f14e8f910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "gratis",
+      "aire libre"
+    ],
+    "price": "gratis",
+    "formato": "puntual",
+    "lid": "40c9bbca"
+  },
   "6fed85ae93bfc068": {
     "title": "Teatro: Back Up de Cía. Interpretarte Teatro",
     "description": "La compañía Interpretarte Teatro presenta 'Back Up', una obra escrita por Esperanza de la Encarnación y Rafael Campos. La trama cruza las vidas de Olivier, un hipermnésico, y Sol, una arquitecta.",
@@ -9316,6 +9445,20 @@
     "price": "0",
     "formato": "puntual",
     "lid": "fef6f71f"
+  },
+  "92e4b44a74ec8619": {
+    "title": "Doble Programa: 'The Traveller' y 'Hate to Love'",
+    "description": "Disfruta de un doble programa artístico que combina las propuestas 'The Traveller' y 'Hate to Love'. Una oportunidad para explorar diferentes expresiones creativas en una misma velada.",
+    "start_time": "20:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=0400ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "destacado",
+      "danza",
+      "teatro"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
   },
   "f6f665f0c774b8ae": {
     "title": "Espectáculo infantil: Tito el bromista",
@@ -11709,6 +11852,26 @@
     "is_multi_event": true,
     "formato": "exposicion"
   },
+  "9c08fe00d56c9b76": {
+    "title": "Un Dios salvaje",
+    "description": "Una obra que explora con humor y agudeza los conflictos sociales, familiares y la naturaleza humana a través de una reunión entre dos parejas. La trama deriva en un enfrentamiento donde los personajes revelan su verdadera naturaleza al intentar resolver un incidente entre sus hijos.",
+    "start_time": "20:00:00",
+    "url": "https://gruposmedia.com/cartelera/un-dios-salvaje/",
+    "price": "Desde 16 €",
+    "image": "images/events/877ce43b24b9.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/t1XV078-OrNI-MAte0mxS1yHABYnlRc9XCjTQYgPggg/mtime:1771344326/sites/default/files/eventos/eventos/un-dios-salvaje-13.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/H6czIw7SXRizwd_CRCiSX0v2XPBfun-lv0QjhWUyJG8/mtime:1771344339/sites/default/files/eventos/eventos/un-dios-salvaje-10.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/vOeoFub30R9_OywJaQTXW9foS_dkW7O_AfIC5MxGEk8/mtime:1754480901/sites/default/files/eventos/eventos/imgi_21_un-dios-salvaje-cartel.jpeg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/un-dios-salvaje-teatro-alcazar",
+    "source": "esmadrid",
+    "categories": [
+      "teatro"
+    ],
+    "formato": "exposicion",
+    "lid": "d5e60251"
+  },
   "6a64ac2a48904e75": {
     "title": "La madre que me parió",
     "description": "Una comedia que explora con humor las relaciones entre madres e hijas y el miedo a terminar pareciéndose a las progenitoras. La obra presenta a tres mujeres que, durante la boda de una amiga, comparten secretos y vivencias sobre la maternidad y la identidad.",
@@ -12904,6 +13067,29 @@
     ],
     "formato": "exposicion",
     "lid": "d2e1acfd"
+  },
+  "6038c323537696b0": {
+    "title": "Festival Internacional de Órgano 2026",
+    "description": "Ciclo de recitales de órgano protagonizados por músicos de diversas nacionalidades que interpretan piezas clásicas en un entorno histórico. Un encuentro musical benéfico que recorre diferentes facetas del repertorio organístico.",
+    "start_time": "20:00:00",
+    "url": "https://realhermandaddelrefugio.org/calendario-de-eventos/festival-internacional-de-organo-san-antonio-de-los-alemanes-2026/",
+    "price": "12 €",
+    "image": "images/events/2707bfc39571.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/tTJRvcfQGbkaiLL68NiYSpDZ2RpD5oQmqk-0ddKGf5I/mtime:1743161364/sites/default/files/eventos/eventos/festival_internacional_de_organo2_2.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/JumgsdPW_eUHEgdD8fNbqBYEbnAXvkkD7NNYjpR9PAU/mtime:1743161344/sites/default/files/eventos/eventos/festival_internacional_de_organo2.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/Ze6q2Fsr8IJ0Su1QavIsWzxHaLkh8g3fxhGLAWaTvZw/mtime:1743161331/sites/default/files/eventos/eventos/festival_internacional_de_organo_3.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/HtIJSdotXAnAyqNYq98kmasBtCUETrSRe4dLpvPceqw/mtime:1714463216/sites/default/files/eventos/eventos/festival_internacional_de_organo_2.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/9Wy-78MmHPU8F-bqMf8GL67jQ7rI-x_QsZuWfe4Exoc/mtime:1656937355/sites/default/files/eventos/eventos/festival_internacional_de_organo_0.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/festival-internacional-organo-iglesia-san-antonio-alemanes",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "is_multi_event": true,
+    "formato": "festival",
+    "lid": "0706fc4c"
   },
   "f07a4a4ebe269334": {
     "title": "La Celestina",
@@ -15651,21 +15837,6 @@
     ],
     "formato": "exposicion",
     "lid": "5f3f83ad"
-  },
-  "53d58e9fe0b023d7": {
-    "title": "Real Madrid - Real Sociedad (LALIGA EA SPORTS)",
-    "description": "El conjunto blanco recibe al equipo donostiarra para disputar el primer partido en casa de la nueva temporada liguera. Un encuentro de fútbol competitivo en el estadio madridista.",
-    "start_time": "21:00:00",
-    "url": "https://www.realmadrid.com/es-ES",
-    "price": "Consultar página oficial",
-    "image": "images/events/9739f198df5a.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/real-madrid-real-sociedad-laliga-ea-sports-estadio-bernabeu",
-    "source": "esmadrid",
-    "categories": [
-      "deportes"
-    ],
-    "formato": "puntual",
-    "lid": "9d15f421"
   },
   "316f69a9a990175a": {
     "title": "Abierto por Restauración: La Fuente de Cibeles",
@@ -18422,6 +18593,21 @@
     "formato": "exposicion",
     "lid": "2d435404"
   },
+  "e9ec662dfa01058b": {
+    "title": "Obras de paso. Retrato de Emilia Pardo Bazán",
+    "description": "Exposición centrada en el retrato de la escritora Emilia Pardo Bazán que destaca su labor como filántropa y difusora del patrimonio cultural. La muestra subraya su papel en la protección de saberes, monumentos y yacimientos arqueológicos.",
+    "start_time": "09:30:00",
+    "url": "https://www.cultura.gob.es/mcerralbo/exposiciones/exposiciones/proximamente/obrasdepaso-emilia-pardo-bazan.html",
+    "price": "3 €",
+    "image": "images/events/9b7d6dc057fa.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/obras-paso-retrato-emilia-pardo-bazan-museo-cerralbo",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones"
+    ],
+    "formato": "exposicion",
+    "lid": "86b6d704"
+  },
   "6b9e367c5d3e743f": {
     "title": "The Circle Project. Bouchra Khalili",
     "description": "Esta exposición analiza el Movimiento de Trabajadores Árabes y su lucha por la igualdad de derechos a través de una selección de obras de la artista marroquí-francesa Bouchra Khalili. La muestra integra videoinstalaciones y carteles murales que exploran las historias silenciadas de la emancipación colectiva y la imaginación cívica.",
@@ -18549,5 +18735,289 @@
     ],
     "formato": "puntual",
     "lid": "98f49d45"
+  },
+  "62f03d1c4b36aceb": {
+    "title": "IX SMIF - Festival de Imagen en Movimiento Asiático en Madrid",
+    "description": "El festival presenta una selección de largometrajes asiáticos con especial atención a los clásicos del cine de Hong Kong de los años 80 y 90. El programa incluye además proyecciones de realizadores emergentes y encuentros académicos entre estudiantes.",
+    "url": "https://smifest.com/",
+    "price": "3 €",
+    "image": "images/events/4b7807350b03.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/Jrv5wOHIgabuDiBlyfFpxuW9m9VN-DkL_nKXHPzjCHM/mtime:1788348155/sites/default/files/eventos/eventos/ix_smif_-_festival_de_imagen_en_movimiento_asiatico_en_madrid.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/QIdQfv2X0Gypp1UIhLmrNERk5DoJva-CGD358j6uSQ0/mtime:1788347962/sites/default/files/eventos/eventos/ix_smif_2026_-_festival_de_imagen_en_movimiento_asiatico_en_madrid.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/smif-festival-imagen-movimiento-asiatico-madrid-filmoteca-espanola",
+    "source": "esmadrid",
+    "categories": [
+      "cine"
+    ],
+    "is_multi_event": true,
+    "formato": "festival",
+    "lid": "79932781"
+  },
+  "60b79b451a02492e": {
+    "title": "XIII BETA PUBLICA - Muestra Coreográfica Internacional",
+    "description": "Evento internacional que reúne siete propuestas coreográficas contemporáneas de diversos países, junto a una pieza de apertura y clases magistrales. La muestra busca fomentar la creación coreográfica y acercar la danza al público general.",
+    "start_time": "09:30:00",
+    "url": "https://www.betapublica.org/muestra-coreografica/",
+    "price": "--",
+    "image": "images/events/1548d948c17f.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/beta-publica-muestra-coreografica-internacional-centro-cultural-paco-rabal",
+    "source": "esmadrid",
+    "categories": [
+      "danza",
+      "teatro"
+    ],
+    "formato": "puntual",
+    "lid": "a5caa848"
+  },
+  "1dc739df97b71941": {
+    "title": "Patricia Donn - A cuerda y tacón",
+    "description": "La bailarina presenta un viaje escénico donde el flamenco de raíz se encuentra con la elegancia contemporánea. Un recorrido por los grandes palos flamencos que integra la danza con violín, guitarra, voz y percusiones.",
+    "start_time": "20:00:00",
+    "url": "https://www.granteatropavon.com/",
+    "price": "Desde 21,50 €",
+    "image": "images/events/39ad87d4d054.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/patricia-donn-cuerda-tacon-gran-teatro-pavon",
+    "source": "esmadrid",
+    "categories": [
+      "flamenco",
+      "danza",
+      "teatro"
+    ],
+    "formato": "exposicion",
+    "lid": "d2e1acfd"
+  },
+  "bc8c7113eaa76099": {
+    "title": "Bailad, bailad, malditos. Carlos Aires",
+    "description": "El artista Carlos Aires presenta una instalación site specific que combina elementos escultóricos y sensoriales dentro de un espacio industrial. La obra invita al espectador a recorrer un paisaje sonoro y visual marcado por la ruina, la euforia y el desasosiego.",
+    "start_time": "17:00:00",
+    "url": "https://www.mataderomadrid.org/programacion/exposicion-bailad-bailad-malditos-de-carlos-aires",
+    "price": "Gratis",
+    "image": "images/events/26d817e4f421.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/bailad-bailad-malditos-carlos-aires-nave-0-matadero-madrid",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "formato": "exposicion",
+    "lid": "5e098d10"
+  },
+  "ef49f8aa1e7ecec3": {
+    "title": "Kaze",
+    "description": "El rapero español ofrece su único concierto del año, consolidándose como uno de los nombres más influyentes de la escena urbana. La cita supone su primera gran actuación en solitario en este emblemático recinto madrileño.",
+    "start_time": "18:30:00",
+    "url": "https://www.movistararena.es/programacion/evento/kaze/18-9-2026/20:00",
+    "price": "Desde 32 €",
+    "image": "images/events/1bd9f5483aa7.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/kaze-movistar-arena",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "1f1e0e14"
+  },
+  "88f74a76d9c7430b": {
+    "title": "Diego Ramos. Homenaje a Julio Iglesias",
+    "description": "Espectáculo que rinde un homenaje escénico a la extraordinaria carrera musical del cantante español Julio Iglesias. El artista Diego Ramos interpreta temas emblemáticos a través de una cuidada producción y una elegante puesta en escena.",
+    "start_time": "20:00:00",
+    "url": "https://www.umusic-hotels.com/es/umusic-hotel-madrid/teatro-albeniz",
+    "price": "Desde 36,95 €",
+    "image": "images/events/cdaefe47a534.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/shCF_i5IUSbycR92LbTUsUrEjsV4y6_DgknwWrkcZ_Y/mtime:1788358928/sites/default/files/eventos/eventos/diego_ramos._homenaje_a_julio_iglesias1.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/pwbY1yma5JB8o0auPaGeV4J3YmzIP0v-M4dNr_MXwKQ/mtime:1788358647/sites/default/files/eventos/eventos/diego_ramos._homenaje_a_julio_iglesias.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/diego-ramos-homenaje-julio-iglesias-umusic-hotel-teatro-albeniz",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "22fd9956"
+  },
+  "89ebcbd6ff7470b9": {
+    "title": "Circuitos 2026",
+    "description": "Esta exposición colectiva reúne los trabajos de los diez ganadores de la convocatoria anual de artes plásticas para jóvenes creadores. La muestra invita a explorar el proceso creativo y el valor de lo invisible a través de diversas disciplinas artísticas.",
+    "start_time": "11:00:00",
+    "url": "https://www.comunidad.madrid/actividades/2026/exposicion-circuitos-2026",
+    "price": "Gratis",
+    "image": "images/events/7dbabb62884b.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/circuitos-2026-sala-arte-joven",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "formato": "exposicion",
+    "lid": "a6035e83"
+  },
+  "1d3f895bb913caac": {
+    "title": "La Noche del Deporte Madrid 2026",
+    "description": "Evento deportivo de ocio saludable que ofrece exhibiciones de más de 20 disciplinas físicas y actividades recreativas para todas las edades. La programación incluye desde simuladores y deportes de raqueta hasta danza urbana y zonas de videojuegos en diversos espacios públicos de la ciudad.",
+    "start_time": "20:00:00",
+    "url": "https://www.lanochedeldeportemadrid.es/",
+    "price": "Gratis",
+    "image": "images/events/cae4c9269b60.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/noche-deporte-madrid",
+    "source": "esmadrid",
+    "categories": [
+      "deportes",
+      "gratis"
+    ],
+    "formato": "puntual",
+    "lid": "3737ef68"
+  },
+  "0d0c1d243c3aae87": {
+    "title": "XXIII Semana Internacional de la Arquitectura 2026",
+    "description": "El evento ofrece la oportunidad de conocer el patrimonio arquitectónico de la ciudad a través de una amplia programación de exposiciones, conferencias e itinerarios urbanos. Se incluyen diversas actividades que permiten explorar edificios emblemáticos y profundizar en el ámbito del urbanismo.",
+    "url": "https://www.semanaarquitecturamadrid.com/",
+    "price": "Gratis",
+    "image": "images/events/4a7be26e244d.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/wBRfr-W_UfeY0A5nzwYLBj3H5MJ4AVxyqwxPko7TSCE/mtime:1727081629/sites/default/files/eventos/eventos/ampliacion-reina-sofia.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/pD1KzNCXEjzp6usOzmjOaO6HFAPWuVCGChd4pXrR6T8/mtime:1695197688/sites/default/files/recursosturisticos/infoturistica/reforma_santiagobernabeu.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/2OgtFtRwd7CuyE_CFmI9dW7xE51R_OxdBHni-SXr6wM/mtime:1582025425/sites/default/files/recursosturisticos/infoturistica/palacio_fernan_nunez_1.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/semana-arquitectura",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "conferencias",
+      "patrimonio",
+      "talleres",
+      "visitas guiadas",
+      "gratis"
+    ],
+    "is_multi_event": true,
+    "formato": "exposicion",
+    "lid": "70e71b4a"
+  },
+  "8fa19ffe0f247d77": {
+    "title": "Evanescence",
+    "description": "La banda estadounidense de rock liderada por Amy Lee interpretará sus mayores éxitos contando con Poppy y Nova Twins como teloneras (Palacio Vistalegre Arena.",
+    "start_time": "21:30:00",
+    "url": "https://www.palaciovistalegre.com/event/evanescence-2026/",
+    "price": "Entradas agotadas",
+    "image": "images/events/029943326f31.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/evanescence-palacio-vistalegre-arena",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "9a5be362"
+  },
+  "3c638a8e896edab5": {
+    "title": "Guitarricadelafuente",
+    "description": "El cantautor español presenta su gira Spanish Leather Closing Chapter, cerrando la etapa de su segundo álbum. El espectáculo fusiona el folclore español y latinoamericano con una visión contemporánea y audaz.",
+    "start_time": "21:00:00",
+    "url": "https://www.guitarricadelafuente.com/",
+    "price": "Desde 41,26 €",
+    "image": "images/events/43ce40ceea26.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/guitarricadelafuente-movistar-arena",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "1f1e0e14"
+  },
+  "fd990c068f035440": {
+    "title": "Valeria Lynch",
+    "description": "La cantante argentina ofrece un concierto repasando los grandes éxitos de su extensa trayectoria musical. El espectáculo destaca por la potencia vocal de la artista y la fuerza de su interpretación en directo.",
+    "start_time": "21:00:00",
+    "url": "https://www.valerialynch.com.ar/",
+    "price": "44 €",
+    "image": "images/events/4372741d0636.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/valeria-lynch-sala-wagon",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "b1ac68ff"
+  },
+  "94b8302bf4140d43": {
+    "title": "Hispanidad 2026",
+    "description": "Celebración de la lengua y las culturas hispanas a través de una amplia programación cultural. Incluye actividades de música, literatura, cine, folclore, arte y gastronomía distribuidas por toda la región.",
+    "url": "https://www.comunidad.madrid/hispanidad-2026",
+    "price": "Gratis",
+    "image": "images/events/612e56442565.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/nbPOmBVvO8vZ3WxEXXkTru7MT3s9g0bSVwj-gb5GVXI/mtime:1784703722/sites/default/files/eventos/eventos/hispnidad_2026.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/1QVe_t8Od-UaYsFtOSMnKekKoFJ5eclasiu8FCoQOlo/mtime:1769690025/sites/default/files/eventos/eventos/cabalgata_de_la_hispanidad_2025.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/hispanidad-madrid",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos",
+      "literatura",
+      "cine",
+      "gastronomía",
+      "gratis",
+      "teatro",
+      "flamenco",
+      "exposiciones",
+      "deportes",
+      "patrimonio"
+    ],
+    "location_name": "Varios espacios",
+    "is_multi_event": true,
+    "formato": "exposicion"
+  },
+  "11d54e960e0771b3": {
+    "title": "XXXIII Música Antigua Aranjuez 2026",
+    "description": "El Festival Música Antigua Aranjuez celebra su XXXIII edición con una programación que reúne a algunas de las grandes figuras de la interpretación histórica, marcada por estrenos nacionales y la presencia de destacados nombres del panorama internacional. Propone un recorrido por el repertorio barroco que combina recuperación patrimonial, investigación musicológica y excelencia interpretativa.",
+    "url": "https://musicaantiguaaranjuez.com/",
+    "price": "Consultar página oficial",
+    "image": "images/events/0f5bfaa1088b.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/8KmJobqsFLQGi_KxD2cbsK8QMWRgQvxupdCkC3DBZIg/mtime:1786970423/sites/default/files/eventos/eventos/imgi_3_foto-klaus-feichtenberg-e1785763128588-1343x1000.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/-aWfQAQ6SBsUC579_-aEs4Et90qGcncwZDWMijbwitA/mtime:1786970497/sites/default/files/eventos/eventos/imgi_5_obs-vidas-paralelas-c-sonia-ferrer-2-1271x1000.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/Gdosu5SsApz_sXFX4MC5sm95AyHqb_ttHA7_IgQBYWY/mtime:1786970577/sites/default/files/eventos/eventos/imgi_11_dsc_00121111-1-1521x1000.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/festival-musica-antigua-aranjuez",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos",
+      "patrimonio"
+    ],
+    "is_multi_event": true,
+    "formato": "festival",
+    "lid": "0717a59e"
+  },
+  "0a6a124c03f4624e": {
+    "title": "Film Symphony Orchestra. Odisea",
+    "description": "La Film Symphony Orchestra presenta un viaje épico donde mundos fantásticos y bandas sonoras icónicas del cine cobran vida a través de la música. La formación interpreta temas legendarios de películas inolvidables bajo la dirección de Constantino Martínez-Orts.",
+    "start_time": "19:30:00",
+    "url": "https://auditorionacional.inaem.gob.es/es/programacion/film-symphony-orchestra-odisea",
+    "price": "Desde 38 €",
+    "image": "images/events/c368d859db1e.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/film-symphony-orchestra-odisea-auditorio-nacional-musica",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "94a66118"
+  },
+  "03dfdb16d7b7aef2": {
+    "title": "Locuras paralelas",
+    "description": "Una comedia psicológica que narra el encuentro entre dos parejas cuyas vidas se entrelazan en un espacio físico imposible. La obra explora los límites de la realidad, la identidad y el azar a través de una puesta en escena sugerente y provocadora.",
+    "start_time": "17:00:00",
+    "url": "https://www.granteatropavon.com/",
+    "price": "Desde 19,50 €",
+    "image": "images/events/93f41f8684c5.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/locuras-paralelas-gran-teatro-pavon",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "comedia"
+    ],
+    "formato": "exposicion",
+    "lid": "d2e1acfd"
   }
 }
