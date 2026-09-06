@@ -211,6 +211,18 @@
     "price": "0",
     "formato": "puntual"
   },
+  "2faab3f1fe79c0ff": {
+    "title": "Al compás de Dobemol",
+    "description": "Sesiones de música para bebés donde se fomenta la interacción a través de la voz y el movimiento. Actividades lúdicas diseñadas para disfrutar en familia.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d482ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "conciertos"
+    ],
+    "formato": "exposicion",
+    "lid": "95a62894"
+  },
   "e9f23cf1118a2fe7": {
     "title": "Al pan, pan (Centro)",
     "start_time": "18:00:00",
@@ -1522,6 +1534,21 @@
     "formato": "festival",
     "lid": "212de84d"
   },
+  "6f5084d95d872292": {
+    "title": "Ciclo de conferencias sobre historia con Miguel Arenas",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7057ecf29020e910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conferencias",
+      "gratis"
+    ],
+    "description": "Serie de charlas divulgativas centradas en temas históricos de la mano de expertos.",
+    "price": "0",
+    "is_multi_event": true,
+    "formato": "festival",
+    "lid": "5b0073c9"
+  },
   "10d1994e7b68ae32": {
     "title": "Ciclo ensaya Coralia",
     "description": "Ciclo de música coral organizado por Coro Amar. Una oportunidad para disfrutar de ensayos abiertos y música vocal.",
@@ -2021,6 +2048,19 @@
     "description": "Espacio de encuentro literario para explorar obras con perspectiva de género y conciencia social. Un punto de reunión para los amantes de la lectura.",
     "formato": "puntual",
     "lid": "22840c10"
+  },
+  "a7bda2d8a53486c2": {
+    "title": "Club de Lectura 'Letras esenciales'",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d6dca72bfdb50a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "literatura",
+      "gratis",
+      "talleres"
+    ],
+    "description": "Únete al club de lectura 'Letras esenciales' para participar en atractivas conversaciones literarias. Esta actividad es gratuita y abierta a todos los participantes.",
+    "formato": "exposicion",
+    "lid": "06d8226f"
   },
   "31ca2fe46d7978dc": {
     "title": "Club de lectura: 'Ocaso en las columnas de Hércules'",
@@ -2777,6 +2817,22 @@
     "price": "0€",
     "is_multi_event": true,
     "formato": "festival"
+  },
+  "737922a0ec7da699": {
+    "title": "Cursos trimestrales de Historia del Arte y Cultural",
+    "description": "Ciclo formativo impartido los martes y miércoles entre octubre y diciembre. Ofrece formación divulgativa sobre Historia del Arte e Historia Cultural.",
+    "start_time": "17:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=147ab73df998f910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conferencias",
+      "talleres",
+      "gratis"
+    ],
+    "price": "gratis",
+    "is_multi_event": true,
+    "formato": "exposicion",
+    "lid": "9e9db1a1"
   },
   "89f04d204427d77c": {
     "title": "Concierto: Dadu & Javi 'Música al Mundo'",
@@ -7256,6 +7312,21 @@
     "formato": "puntual",
     "lid": "05a2048c"
   },
+  "e0f7ee968a277aec": {
+    "title": "Taller de meditación para principiantes",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=dc9447cc91660a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis",
+      "bienestar"
+    ],
+    "description": "Sesión introductoria para aprender técnicas básicas de meditación y relajación.",
+    "price": "0€",
+    "formato": "exposicion",
+    "lid": "a7eb6f63"
+  },
   "4ba53b3bdabad156": {
     "title": "Meditación y Mindfulness",
     "start_time": "18:00:00",
@@ -9159,6 +9230,22 @@
     "formato": "puntual",
     "lid": "0402c527"
   },
+  "09dc027286d42259": {
+    "title": "Senda Botánica Guiada: Las Leyendas de Pradolongo",
+    "description": "Descubre las fascinantes leyendas asociadas a las plantas en esta senda botánica por Pradolongo. Una actividad gratuita y didáctica, apta para público general a partir de 7 años con reserva previa.",
+    "start_time": "10:15:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=85cfb35ceec50a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "naturaleza",
+      "gratis",
+      "visitas guiadas",
+      "infantil"
+    ],
+    "price": "gratis",
+    "formato": "puntual",
+    "lid": "9335e955"
+  },
   "da2c117cef9c9e81": {
     "title": "Senderismo urbano: De la Dehesa al parque Rodríguez Sahagún",
     "start_time": "10:00:00",
@@ -9792,6 +9879,19 @@
     "formato": "puntual",
     "lid": "9335e955"
   },
+  "9a08b85ca24e2e18": {
+    "title": "Taller de Memoria en la Biblioteca Miguel Delibes",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=3343336f3e7bf910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis",
+      "bienestar"
+    ],
+    "description": "Actividad de estimulación cognitiva para trabajar la memoria en un entorno bibliotecario.",
+    "formato": "exposicion",
+    "lid": "867ee94b"
+  },
   "9b7c618aeabfa08a": {
     "title": "Taller de observación astronómica",
     "start_time": "21:30:00",
@@ -10190,6 +10290,18 @@
     "price": "gratis",
     "formato": "puntual",
     "lid": "02e88678"
+  },
+  "77204a96eb3bc449": {
+    "title": "Taller: Teatro de biblioteca. Seminario de dramaturgia",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5d2c4f89331be910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "teatro"
+    ],
+    "description": "Seminario especializado en técnicas de escritura teatral dentro del ámbito bibliotecario. Formación para interesados en el mundo de la dramaturgia.",
+    "formato": "exposicion",
+    "lid": "4c99e2c3"
   },
   "2e9be2d2d3dddf56": {
     "title": "Tarde de bicis",
@@ -12305,6 +12417,20 @@
     "price": "0",
     "formato": "puntual",
     "lid": "f3bebf71"
+  },
+  "caf9d987b27e105d": {
+    "title": "Desde el campo a la ciudad: una revolución silenciosa",
+    "start_time": "18:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=1d7908ea31cdf910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "description": "Presentación cultural sobre la transformación social y el fenómeno de la migración del campo a la ciudad. Un evento reflexivo sobre la evolución de nuestro entorno.",
+    "price": "0",
+    "formato": "puntual",
+    "lid": "439b2cee"
   },
   "0ca7f4aedf17c6dd": {
     "title": "El búho y el elefante con Nelson Calderón",
@@ -15652,27 +15778,6 @@
     "formato": "exposicion",
     "lid": "2fd09bb6"
   },
-  "0ea37704817f54b0": {
-    "title": "Nosaltres no tenim por, nosaltres som. Colita (PHotoESPAÑA 2026)",
-    "description": "La exposición reúne el reportaje fotográfico de la primera manifestación LGTBI+ celebrada en España en 1977. La muestra recupera imágenes de alto valor documental que capturan la lucha y la visibilidad colectiva en el espacio público.",
-    "start_time": "10:00:00",
-    "url": "https://phe.es/exposicion/nosaltres-no-tenim-por-nosaltres-som/",
-    "price": "Gratis",
-    "image": "images/events/ab36181a332b.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/EDGUm32TaEgDZTG-ULTgJd7LW5PWV1PkthHqcsItWuQ/mtime:1777987323/sites/default/files/eventos/eventos/colita_1.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/oe8JoiRHsbj7pb1ZTWs305Jg-PU7oxYsu6tAgC0rPDU/mtime:1777987310/sites/default/files/eventos/eventos/colita2.png"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/nosaltres-no-tenim-nosaltres-som-colita-centre-cultural-llibreria-blanquerna",
-    "source": "esmadrid",
-    "categories": [
-      "exposiciones",
-      "fotografía",
-      "gratis"
-    ],
-    "formato": "exposicion",
-    "lid": "d16522a8"
-  },
   "759fe70b488d6ddc": {
     "title": "Espectros. Enigmas de la mirada (PHotoESPAÑA 2026)",
     "description": "Exposición colectiva que reúne el trabajo de siete fotógrafos mexicanos para explorar la capacidad de la fotografía como territorio de imaginación y cuestionamiento de lo visible. La muestra propone un espacio de contemplación sensorial donde el sentido de la obra reside en las resonancias afectivas del espectador.",
@@ -16633,28 +16738,6 @@
     "formato": "exposicion",
     "lid": "ecdf816e"
   },
-  "65b7660db01115d2": {
-    "title": "Las noches clásicas del Olivar 2026",
-    "description": "Ciclo de conciertos de música clásica al aire libre que tiene lugar en un entorno natural rodeado de olivos centenarios. La programación incluye diversas formaciones y recitales de jóvenes talentos durante las noches estivales.",
-    "start_time": "19:00:00",
-    "url": "https://olivardecastillejo.com/",
-    "price": "23 €",
-    "image": "images/events/368ff7ceed16.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/ERvu-dawY2j1FDmm_52HGT7fHs0EtmAaOJkucCc5RnE/mtime:1782116408/sites/default/files/eventos/eventos/las_noches_clasicas_del_olivar.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/x5Ow-PPiR5YwRvmUIRKmRtY-nUz6cyUJp-RgZQclWsk/mtime:1717599788/sites/default/files/eventos/eventos/las_noches_clasicas_del_olivar_0.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/y-r3vlZ8Afmp95pHme5AU0b6O7nuolyXvHQ0P5T9ywk/mtime:1717599808/sites/default/files/eventos/eventos/las_noches_clasicas_del_olivar_2.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/KqqnpRatlSBw9YuwvM3iKgoH46G7MWYHiJs6hTH3Mag/mtime:1653559728/sites/default/files/eventos/eventos/olivar4.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/noches-clasicas-olivar-olivar-castillejo",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "is_multi_event": true,
-    "formato": "festival",
-    "lid": "ac61e979"
-  },
   "08f8cdc425935528": {
     "title": "Los Moreno, fotógrafos de arte",
     "description": "Exposición que presenta una selección de obras de los fotógrafos Mariano y Vicente Moreno procedentes de los fondos de la Academia. La muestra explora el legado de esta casa fotográfica dedicada a la reproducción de obras de arte y retratos de personalidades.",
@@ -16891,31 +16974,6 @@
     ],
     "formato": "exposicion",
     "lid": "044f7fc6"
-  },
-  "816d7303d8b09b89": {
-    "title": "Veranos en el Parque 2026",
-    "description": "Una programación cultural que aúna teatro, circo para familias y cine al aire libre. Incluye además las actuaciones del Ballet Español de la Comunidad de Madrid.",
-    "url": "https://www.comunidad.madrid/actividades/2026/veranos-parque-2026",
-    "price": "Gratis",
-    "image": "images/events/44b4985ef809.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/pFbSG-UORXA4y3GZ1JOAnutTSK-SkIhc6vCTFOUqK_o/mtime:1783064577/sites/default/files/eventos/eventos/veranos_en_el_parque_2026.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/qaAd6eB8ac_JT74dYzRIjJgGaRGvr0ALpHXdeYNe9vg/mtime:1720441334/sites/default/files/eventos/eventos/veranos_en_el_parque.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/Dwu-8A3IkVvDIBFPpMrgUgEXzxn19kbEa-m_IHMKCVE/mtime:1783065089/sites/default/files/eventos/eventos/patrimonio.png"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/veranos-en-el-parque-parque-santander",
-    "source": "esmadrid",
-    "categories": [
-      "teatro",
-      "cine",
-      "danza",
-      "circo",
-      "gratis",
-      "infantil"
-    ],
-    "is_multi_event": true,
-    "formato": "festival",
-    "lid": "662ce9f8"
   },
   "7659957b73b8d122": {
     "title": "Isabel Matoses. La imagen recuperada",
@@ -17375,21 +17433,6 @@
     ],
     "formato": "puntual",
     "lid": "2b9a4735"
-  },
-  "ac1729e02329a8a1": {
-    "title": "Hermanos Gutierrez",
-    "description": "El grupo compuesto por los hermanos Estevan y Alejandro Gutiérrez presenta su nuevo trabajo discográfico en una experiencia musical instrumental. La banda ofrece una propuesta sonora que fusiona sus raíces latinas tradicionales con matices modernos.",
-    "start_time": "20:30:00",
-    "url": "https://salariviera.com/event/hermanos-gutierrez/ ",
-    "price": "Desde 51 €",
-    "image": "images/events/55a468f12de8.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/hermanos-gutierrez-riviera",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "formato": "puntual",
-    "lid": "9d5eb577"
   },
   "a5a7a781ed042f6b": {
     "title": "Madrid CFF - Granada CF (Liga F Moeve)",
