@@ -302,6 +302,19 @@
     "formato": "exposicion",
     "lid": "c9c45e0d"
   },
+  "cf07fb5645018c02": {
+    "title": "Amílcar",
+    "start_time": "19:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5da4a7f03d240a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "destacado"
+    ],
+    "description": "Representación teatral de la obra Amílcar.",
+    "formato": "puntual",
+    "lid": "95a62894"
+  },
   "6f210fb476b85129": {
     "title": "Animación infantil participativa de calle",
     "description": "Evento de animación al aire libre con la compañía 'A Divertirse', recomendado para niños a partir de 3 años. Se celebra en la vía pública para fomentar la participación.",
@@ -540,6 +553,19 @@
     "price": "Gratis",
     "formato": "exposicion",
     "lid": "040b80fc"
+  },
+  "809a8c1267db8e3f": {
+    "title": "August So Tragic and Tender",
+    "description": "Ciclo de proyecciones cinematográficas en la Sala Azcona y Sala Borau. Una selección curada de cine con pases programados en diversos horarios.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=1520ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "destacado",
+      "cine"
+    ],
+    "is_multi_event": true,
+    "formato": "festival",
+    "lid": "95a62894"
   },
   "e2f68848481e2fd3": {
     "title": "Taller: Aula de informática (Mañana)",
@@ -1880,6 +1906,19 @@
     "formato": "puntual",
     "lid": "22840c10"
   },
+  "811641499c501eda": {
+    "title": "Club de Lectura 'Grandes Amigos'",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7e1884b3f6750a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "literatura",
+      "gratis",
+      "talleres"
+    ],
+    "description": "Un club de lectura dedicado a 'Grandes Amigos' que ofrece un espacio para la discusión literaria. La participación en esta actividad es gratuita.",
+    "formato": "exposicion",
+    "lid": "5a2ec7ad"
+  },
   "a7bda2d8a53486c2": {
     "title": "Club de Lectura 'Letras esenciales'",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d6dca72bfdb50a10VgnVCM200000f921e388RCRD",
@@ -3207,13 +3246,22 @@
     "lid": "95a62894"
   },
   "e7c1d35502e61c5c": {
-    "title": "Teatro: Duermen bajo las aguas",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=991cced0f196e910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
+    "title": "Duermen bajo las aguas",
+    "description": "Representación teatral de la obra Duermen bajo las aguas.",
+    "start_time": "18:30:00",
+    "url": "https://www.teatroespanol.es/duermen-bajo-las-aguas-0",
+    "price": "General: 10 €",
+    "image": "images/events/703007da0e99.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/t8HOYta76LTLNBAHOP8FSl-HXIaymCBKaFd4vtPNKBI/mtime:1763977755/sites/default/files/eventos/eventos/duermen_bajo_las_aguas_-_la_petite_mort.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/Ta3JbLclTKKYB1Qa_DPEFvq6b2PrDiZRTtDagLX19FU/mtime:1763977767/sites/default/files/eventos/eventos/duermen_bajo_las_aguas_-_la_petite_mort2.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/h7zhUtelvvJ5INsqx33_-_kA2SuCFepn-5I4xGRbbs4/mtime:1753955645/sites/default/files/eventos/eventos/duermen-bajo-las-aguas.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/duermen-aguas-teatro-espanol",
+    "source": "esmadrid,madrid_agenda",
     "categories": [
       "teatro"
     ],
-    "description": "Representación teatral de la obra Duermen bajo las aguas.",
     "formato": "exposicion",
     "lid": "b1f7c00c"
   },
@@ -4777,6 +4825,18 @@
     "formato": "puntual",
     "lid": "95a62894"
   },
+  "17815640be4b2fcf": {
+    "title": "Galas Circo Atayde",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=926de3ca4e0df910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "circo",
+      "destacado"
+    ],
+    "description": "Espectáculo de artes circenses con acróbatas y números de gran formato. Una propuesta destacada de entretenimiento familiar.",
+    "formato": "exposicion",
+    "lid": "e411800a"
+  },
   "46b0cdae9ea01c02": {
     "title": "Taller de Género y finanzas",
     "start_time": "17:30:00",
@@ -5250,7 +5310,7 @@
     "description": "Ciclo de conferencias especializadas sobre poder femenino, sexualidad y relaciones culturales en el antiguo Egipto. Evento académico de acceso gratuito.",
     "start_time": "10:00:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=99c65c4116fbd910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
+    "source": "esmadrid,madrid_agenda",
     "categories": [
       "conferencias",
       "gratis"
@@ -6301,6 +6361,22 @@
     "formato": "exposicion",
     "lid": "13dc04c6"
   },
+  "abd51e44cf38b750": {
+    "title": "Las Tertulias de Eirene Editorial",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=fd29667ceba70a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conferencias",
+      "literatura",
+      "gratis"
+    ],
+    "description": "Encuentros literarios y conferencias organizados por Eirene Editorial.",
+    "price": "0",
+    "is_multi_event": true,
+    "formato": "puntual",
+    "lid": "06d8226f"
+  },
   "9f201ff23847e34d": {
     "title": "Cine infantil: Lassie, una nueva aventura",
     "description": "Proyección de la película alemana de 2023 sobre las nuevas peripecias de la famosa perra Lassie.",
@@ -6414,6 +6490,20 @@
     "description": "Sesión grupal para conectar con la voz propia a través del canto compartido. Un taller enfocado en la expresión y la liberación emocional.",
     "formato": "puntual",
     "lid": "c2271205"
+  },
+  "da6e0bc0481c9d1f": {
+    "title": "Taller de literatura y escritura creativa",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=dfcd7ca6f7160a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis",
+      "literatura"
+    ],
+    "description": "Sesión enfocada en técnicas de escritura creativa y apreciación literaria.",
+    "price": "0€",
+    "formato": "exposicion",
+    "lid": "3f386eb8"
   },
   "0321a0d5be1ada7d": {
     "title": "Llámame Sinsorga",
@@ -7259,7 +7349,7 @@
     "title": "Moscú no existe",
     "start_time": "19:30:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=55464c45b472f910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
+    "source": "esmadrid,madrid_agenda",
     "categories": [
       "teatro"
     ],
@@ -7470,6 +7560,19 @@
     "price": "gratis",
     "formato": "puntual",
     "lid": "f799769f"
+  },
+  "926d2243f013375f": {
+    "title": "Natividad Zaro. En voz alta",
+    "description": "Documental que rescata la figura de la polifacética actriz, dramaturga y productora Natividad Zaro. Un recorrido por su legado junto a figuras de la generación del 27.",
+    "start_time": "19:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=fc40ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
   },
   "ee098af223d7fc0f": {
     "title": "Exposición fotográfica: Naturaleza Detenida y Cuatro Elementos",
@@ -8732,6 +8835,19 @@
     "price": "gratis",
     "formato": "puntual",
     "lid": "22840c10"
+  },
+  "830e036849221d68": {
+    "title": "Runa Simi",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=211aaa3b5c910a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "destacado",
+      "teatro"
+    ],
+    "description": "Espectáculo cultural destacado enfocado en la revalorización de la lengua y cultura quechua.",
+    "formato": "puntual",
+    "lid": "95a62894"
   },
   "627f50636c809619": {
     "title": "Ruta interpretativa por el Parque Forestal de Valdemingómez",
@@ -14944,6 +15060,20 @@
     "formato": "exposicion",
     "lid": "f23f45f9"
   },
+  "a1523dbf10178d49": {
+    "title": "Madrid CFF - Sevilla FC Femenino (Liga F Moeve)",
+    "description": "Las jugadoras del Madrid CFF se enfrentan al Sevilla FC en un partido correspondiente a la Liga F. El encuentro mide a las madrileñas contra el conjunto hispalense en territorio local.",
+    "url": "https://madridcff.com/",
+    "price": "Consultar página oficial",
+    "image": "images/events/742676ef1b57.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/madrid-cff-sevilla-fc-femenino-liga-f-moeve-estadio-fernando-torres",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "exposicion",
+    "lid": "5f977f5a"
+  },
   "bd4112aaad77b478": {
     "title": "Un instante atrapado en bronce: patrimonio recuperado",
     "description": "El Museo Arqueológico Nacional expone dos excepcionales grupos escultóricos romanos tallados en bronce, datados entre los siglos I a. C. y II d. C. y procedentes del sur peninsular. Estas piezas, que representan a dos niñas jugando, fueron recuperadas tras haber sido sacadas ilícitamente del país.",
@@ -15027,21 +15157,6 @@
     ],
     "formato": "exposicion",
     "lid": "044f7fc6"
-  },
-  "ac0ede3b035986e9": {
-    "title": "Migrar. Historias de Movimiento, Pertenencia y Transformación",
-    "description": "Esta exposición analiza las experiencias de migración y desplazamiento a través de objetos e imágenes que exploran procesos de adaptación y memoria. La muestra reflexiona sobre cómo la movilidad humana influye en la configuración de identidades y modos de vida.",
-    "start_time": "20:00:00",
-    "url": "https://www.esmadrid.com/agenda/migrar-historias-movimiento-pertenencia-transformacion-museo-nacional-antropologia",
-    "price": "3 €",
-    "image": "images/events/6e4e94537e91.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/migrar-historias-movimiento-pertenencia-transformacion-museo-nacional-antropologia",
-    "source": "esmadrid",
-    "categories": [
-      "exposiciones"
-    ],
-    "formato": "exposicion",
-    "lid": "c7782429"
   },
   "464343845123f475": {
     "title": "Arcade Origins: el comienzo de la industria del videojuego",
@@ -17513,7 +17628,7 @@
     "categories": [
       "conciertos"
     ],
-    "formato": "puntual",
+    "formato": "exposicion",
     "lid": "0d71ace6"
   },
   "2020a440c5ea5752": {
@@ -20383,7 +20498,7 @@
   },
   "f357f8f98a58fe35": {
     "title": "Real Madrid - Paris Saint-Germain (UEFA Women's Champions League. Jornada 1)",
-    "description": "Las jugadoras del Real Madrid disputan el primer partido de la competición ante el equipo francés de Paulo César (Estadio Alfredo Di Stéfano. 22 septiembre).",
+    "description": "Las jugadoras del Real Madrid disputan el primer partido de la competición europea recibiendo al equipo francés. El encuentro se celebra en el Estadio Alfredo Di Stéfano.",
     "start_time": "21:00:00",
     "url": "https://www.realmadrid.com/es-ES/futbol/partidos/womens-champions-league/real-madrid-paris-saint-germain/22-09-2026",
     "price": "Consultar página oficial",
@@ -20478,5 +20593,250 @@
     ],
     "formato": "puntual",
     "lid": "7399986c"
+  },
+  "73631ce3e6ceec54": {
+    "title": "Loitsuja – Conjuros",
+    "description": "Exposición colectiva que explora la relación con la naturaleza, los rituales y las creencias populares a través de diversas disciplinas artísticas contemporáneas. La muestra reúne obras de cinco artistas finlandeses que utilizan textiles, acuarelas y vídeo para interpretar la magia en la vida cotidiana.",
+    "start_time": "18:00:00",
+    "url": "https://madrid.fi/loitsuja-conjuros-arte-magia-y-naturaleza-para-celebrar-30-anos-creando-puentes-culturales/",
+    "price": "Gratis",
+    "image": "images/events/ae4ce1d005dc.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/ZwemViIPjQWfgeh1d-jvs3KWMzRoynlnRZjFMvFMOB8/mtime:1788878278/sites/default/files/eventos/eventos/conjuros.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/1pSn3Oat4h4G_-GlQhiF1YmjeF-2OdWNKg3x2zfcvLY/mtime:1788878387/sites/default/files/eventos/eventos/loitsuja_-_conjuros.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/p5-Cta7ntKE6cOyZ0bQSgN243ELVgE4x8cdwgJj1EyM/mtime:1788878953/sites/default/files/eventos/eventos/satu_rautiainen.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/loitsuja-conjuros-galeria-instituto-iberoamericano-finlandia",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "formato": "exposicion",
+    "lid": "3f39be02"
+  },
+  "acc0e394ab946f19": {
+    "title": "GILDA FEST by Rita’s",
+    "description": "Un encuentro gastronómico al aire libre donde degustar más de 50 variedades de gildas junto a vermut, pinchos y propuestas de restauración. El evento incluye además conciertos, sesiones de DJ, mercado gourmet y diversas actividades de ocio.",
+    "start_time": "12:00:00",
+    "url": "https://ritas.es/eventos/gilda-fest-by-ritas/",
+    "price": "10 €",
+    "image": "images/events/84f8e2b63944.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/gilda-fest-ritas-autocine-madrid",
+    "source": "esmadrid",
+    "categories": [
+      "gastronomía",
+      "conciertos",
+      "aire libre",
+      "mercados"
+    ],
+    "formato": "puntual",
+    "lid": "4da9be7c"
+  },
+  "08476f2a5668de9c": {
+    "title": "Atlético de Madrid - DUX Logroño (Liga F Moeve)",
+    "description": "Las jugadoras del Atlético de Madrid reciben al equipo logroñés en una nueva jornada de la competición de fútbol femenino. El encuentro cuenta con la dirección técnica de David González para las madrileñas.",
+    "start_time": "18:00:00",
+    "url": "https://www.atleticodemadrid.com/avisame-de-entradas-femenino?partido=atletico-de-madrid-femenino-dux-logrono-3",
+    "price": "Consultar página oficial",
+    "image": "images/events/acfc9f0e596d.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/atletico-madrid-dux-logrono-liga-f-moeve-centro-deportivo-alcala-henares",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "c3c68494"
+  },
+  "a18e356d5336fca4": {
+    "title": "Real Madrid CF - Valencia CF (Liga F Moeve)",
+    "description": "Las blanquinegras entrenadas por Mikel Crespo visitan el campo de las merengues en la cuarta jornada de la competición liguera.",
+    "start_time": "20:30:00",
+    "url": "https://www.realmadrid.com/es-ES/futbol/partidos/primera-division-femenina/real-madrid-valencia/19-09-2026",
+    "price": "Consultar página oficial",
+    "image": "images/events/8cbe095e517f.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/real-madrid-cf-valencia-cf-liga-f-moeve-estadio-alfredo-di-stefano",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "4ff22a87"
+  },
+  "9392d9e0d5ebfb1e": {
+    "title": "Real Madrid Juvenil A - Santiago Wanderers (Final de la Copa Intercontinental sub-20)",
+    "description": "El Real Madrid Juvenil A se enfrenta al Santiago Wanderers en la final de la Copa Intercontinental sub-20. El encuentro mide a los campeones de la UEFA Youth League frente a los vencedores de la Conmebol Libertadores.",
+    "start_time": "12:30:00",
+    "url": "https://www.realmadrid.com/es-ES/noticias/futbol/cantera-masculina/actualidad/no-te-pierdas-la-final-de-la-copa-intercontinental-sub-20-el-19-de-septiembre-en-el-bernabeu-07-09-2026",
+    "price": "Desde 15 €",
+    "image": "images/events/c597479a7101.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/real-madrid-juvenil-santiago-wanderers-final-copa-intercontinental-sub-20-estadio-bernabeu",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "9d15f421"
+  },
+  "23d2d1dc1cbc3daa": {
+    "title": "Dreaming Bubbles",
+    "description": "El artista italiano Pierpaolo Laconi presenta un espectáculo visual centrado en la creación y manipulación de burbujas de jabón junto a la bailarina Gessica Alfieri. Una obra que combina trucos y una banda sonora diseñada para cautivar tanto a adultos como a niños.",
+    "start_time": "12:30:00",
+    "url": "https://gruposmedia.com/cartelera/dreaming-bubbles/#sinopsis",
+    "price": "Desde 19,17 €",
+    "image": "images/events/0d2c3c2605bf.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/LeSGkhbVmc3RoRBjSXdDdNMmE4v_yOC-37HdCMpRY10/mtime:1788949852/sites/default/files/eventos/eventos/bubbles.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/EkUAfz7Oq2xcFYqMiq9XoRxM3kbbzP_IPT48W9tqt94/mtime:1788949735/sites/default/files/eventos/eventos/dreaming.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/P_mapSmdxQSUENQGvl30rIXh0YC9Ouvkt7LHSLe0E0I/mtime:1788949782/sites/default/files/eventos/eventos/dream.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/dreaming-bubbles-teatro-figaro",
+    "source": "esmadrid",
+    "categories": [
+      "infantil",
+      "teatro",
+      "comedia"
+    ],
+    "formato": "puntual",
+    "lid": "fc2a84be"
+  },
+  "874cc5ad794e2083": {
+    "title": "Madrid CFF - Deportivo Alavés Gloriosas (Liga F Moeve)",
+    "description": "El Madrid CFF recibe en una nueva jornada de liga a las jugadoras del Deportivo Alavés, conocidas como las Gloriosas. El encuentro se disputa en el Estadio Fernando Torres.",
+    "start_time": "18:30:00",
+    "url": "https://madridcff.com/",
+    "price": "Consultar página oficial",
+    "image": "images/events/d8e031effac5.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/madrid-cff-deportivo-alaves-gloriosas-liga-f-moeve-estadio-fernando-torres",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "5f977f5a"
+  },
+  "0d646f612459e4aa": {
+    "title": "Madrid Comedy Festival 2026",
+    "description": "Festival internacional de comedia que reúne más de 35 espectáculos de monólogos, improvisación y storytelling. El evento cuenta con 70 cómicos de 25 nacionalidades que actúan en diversos idiomas.",
+    "url": "https://madridcomedyfestival.com/",
+    "price": "Consultar página oficial",
+    "image": "images/events/908cb9505138.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/madrid-comedy-festival",
+    "source": "esmadrid",
+    "categories": [
+      "comedia",
+      "teatro"
+    ],
+    "is_multi_event": true,
+    "formato": "festival",
+    "lid": "65fc56fa"
+  },
+  "59f24d55099fc602": {
+    "title": "Madrid CFF - Athletic Club Bilbao (Liga F Moeve)",
+    "description": "Encuentro deportivo de fútbol femenino correspondiente a la sexta jornada de la Liga F Moeve. El equipo madrileño recibe al conjunto bilbaíno en el Estadio Fernando Torres.",
+    "url": "https://madridcff.com/",
+    "price": "Consultar página oficial",
+    "image": "images/events/55ca9cefd57b.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/madrid-cff-athletic-club-bilbao-liga-f-moeve-estadio-fernando-torres",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "5f977f5a"
+  },
+  "430b4b59d2422d35": {
+    "title": "Primal Fear",
+    "description": "La banda alemana de power metal presenta en directo los temas de su nuevo álbum junto a los éxitos de sus más de veinticinco años de carrera. La actuación destaca por su combinación de riffs demoledores y melodías contundentes propias del heavy metal internacional.",
+    "start_time": "19:00:00",
+    "url": "https://primalfear.de/",
+    "price": "33 €",
+    "image": "images/events/2a3f6290691f.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/primal-fear-sala-wagon",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "884c022f"
+  },
+  "4b75653e0b41678f": {
+    "title": "El Tri",
+    "description": "La legendaria banda mexicana de rock celebra su trayectoria con un potente directo en su nueva gira internacional. El grupo repasa sus más de cinco décadas de carrera interpretando sus grandes éxitos y temas emblemáticos del rock en español.",
+    "start_time": "20:00:00",
+    "url": "https://www.eltri.com.mx/",
+    "price": "Desde 44 €",
+    "image": "images/events/78da8a710992.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/fugfmkR0ldF8ZfGjGMSA35PgzBCyFNybmMXL4u1xOsk/mtime:1777391877/sites/default/files/eventos/eventos/el_tri.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/m7DEkUMsnd0TPA6O-jhj5AKjYU_g24ODFKPtq1fFZ6A/mtime:1777391954/sites/default/files/eventos/eventos/dragon.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/tri-riviera",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "9d5eb577"
+  },
+  "af8cc33eec2f1cad": {
+    "title": "César Fernández Arias. Laboratorio de creación",
+    "description": "Retrospectiva que recorre cinco décadas de producción artística de César Fernández Arias a través de pinturas, esculturas, dibujos y otros objetos. La muestra explora el universo creativo y la faceta pedagógica de uno de los referentes del arte español contemporáneo.",
+    "start_time": "11:00:00",
+    "url": "https://www.ucm.es/cultura/cesar-fernandez-arias-laboratorio-de-creacion",
+    "price": "Gratis",
+    "image": "images/events/bcdc1ae90eff.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/B5l9HtS5YKKsoNEMUJxXUymTZNrU4bEHfAPvqKpRd6Q/mtime:1785412992/sites/default/files/eventos/eventos/cesar_fernandez_arias._laboratorio_de_creacion_0.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/Px3ESOszMWcBaEjnpnpBjKhRshIoDM9SWSGrNBKOYLY/mtime:1785412740/sites/default/files/eventos/eventos/paramecios.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/uvrz0_E87eOWp7MUUSUdvzEcIS858fTslrnXQtTBdYk/mtime:1785412874/sites/default/files/eventos/eventos/velero.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/nXSFF4cIEZXN12_TGIJmdQsDj60-v31jeiotOSP3gr4/mtime:1785412093/sites/default/files/eventos/eventos/la_biblioteca_1990._cesar_fernandez_arias.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/HJhWG_AOxz6Hmk0lCt1leas4IT3fbB6EJLTL-NKBoo4/mtime:1785412147/sites/default/files/eventos/eventos/coeur.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/cesar-fernandez-arias-laboratorio-creacion-c-arte-c",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "formato": "exposicion",
+    "lid": "24d0cdde"
+  },
+  "38e19c8bcdb18071": {
+    "title": "Real Madrid - Partizán de Belgrado (Euroliga. Jornada 4)",
+    "description": "El Partizán de Belgrado, club histórico del baloncesto serbio y europeo, se enfrenta al Real Madrid en la competición de la Euroliga. Un encuentro deportivo de alto nivel que reúne a dos de los equipos más laureados del continente.",
+    "start_time": "20:45:00",
+    "url": "https://www.realmadrid.com/es-ES/baloncesto/partidos/euroliga/real-madrid-partizan-mozzart-bet-belgrade/08-10-2026",
+    "price": "Consultar página oficial",
+    "image": "images/events/3da27e7f82e0.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/real-madrid-partizan-belgrado-euroliga-jornada-4-movistar-arena",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "1f1e0e14"
+  },
+  "e7ad93c0375a39c0": {
+    "title": "ICTUS (Anatomía de «La última lección» de Castelao)",
+    "description": "La compañía Chévere presenta un montaje que combina ficción y documentación para reflexionar sobre la memoria individual y colectiva. La obra explora la historia de la represión en Galicia tomando como eje el último cuadro de Alfonso R. Castelao.",
+    "start_time": "18:00:00",
+    "url": "https://dramatico.inaem.gob.es/evento/ictus-anatomia-de-la-ultima-leccion-de-castelao-ictus-anatomia-de-a-derradeira-leicion-de-castelao/",
+    "price": "25 €",
+    "image": "images/events/f5e278b178e6.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/IlRAhkgfxqAYrC08E2E3C8lVpHsmTGegflUyRYOV0KM/mtime:1785819256/sites/default/files/eventos/eventos/ictus-anatomia-de-la-ultima-leccion-de-castelao.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/L07wPEi65svhnLJLm6V0wyroDGYfM-npkyPI3isG4uY/mtime:1785819270/sites/default/files/eventos/eventos/ictus-anatomia-de-la-ultima-leccion-de-castelao-2.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/zPet0yFFS_Bo5camyh8sVPpdVtWm5Fy_irWWJBR6ZoI/mtime:1785819285/sites/default/files/eventos/eventos/ictus-anatomia-de-la-ultima-leccion-de-castelao-3.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/uNcXVElSVO5SK2XQYVMskq4s1_bYmXD97hTN4iWUpAo/mtime:1785819297/sites/default/files/eventos/eventos/ictus-anatomia-de-la-ultima-leccion-de-castelao-4.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/ictus-anatomia-ultima-leccion-castelao-teatro-valle-inclan",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "accesible"
+    ],
+    "formato": "exposicion",
+    "lid": "e42e13eb"
   }
 }

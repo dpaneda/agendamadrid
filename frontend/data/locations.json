@@ -395,6 +395,13 @@
     "latitude": 40.45749513485957,
     "longitude": -3.710539712535917
   },
+  "5a2ec7ad": {
+    "location_name": "Biblioteca Pública Municipal Francisco Ibáñez (Chamartín)",
+    "address": "CALLE MANTUANO 51",
+    "district": "Chamartin",
+    "latitude": 40.44810636195716,
+    "longitude": -3.6762309620097398
+  },
   "06d8226f": {
     "location_name": "Biblioteca Pública Municipal La Chata (Carabanchel)",
     "address": "CALLE GENERAL RICARDOS 252",
@@ -408,13 +415,6 @@
     "district": "CiudadLineal",
     "latitude": 40.42941133441142,
     "longitude": -3.6416899839787695
-  },
-  "5a2ec7ad": {
-    "location_name": "Biblioteca Pública Municipal Francisco Ibáñez (Chamartín)",
-    "address": "CALLE MANTUANO 51",
-    "district": "Chamartin",
-    "latitude": 40.44810636195716,
-    "longitude": -3.6762309620097398
   },
   "af116271": {
     "location_name": "Quinta de la Fuente del Berro",
@@ -564,10 +564,9 @@
   },
   "b1f7c00c": {
     "location_name": "Teatro Español",
-    "address": "CALLE PRINCIPE 25",
-    "district": "Centro",
-    "latitude": 40.414828532240946,
-    "longitude": -3.700164949543688
+    "address": "del Príncipe, 25",
+    "latitude": 40.414945992798,
+    "longitude": -3.700187802315
   },
   "ccc906e4": {
     "location_name": "Auditorio y sala de exposiciones Paco de Lucía (Latina)",
@@ -1417,6 +1416,12 @@
   "f019fdda": {
     "location_name": "Capitol Gran Vía"
   },
+  "5f977f5a": {
+    "location_name": "Estadio Fernando Torres",
+    "address": "Cam. del Molino",
+    "latitude": 40.2871621,
+    "longitude": -3.8223884
+  },
   "6666116c": {
     "location_name": "Casa Árabe",
     "address": "de Alcalá, 62",
@@ -1434,12 +1439,6 @@
     "address": "de Felipe II, s/n",
     "latitude": 40.4238597,
     "longitude": -3.6718421
-  },
-  "c7782429": {
-    "location_name": "Museo Nacional de Antropología",
-    "address": "de Alfonso XII, 68",
-    "latitude": 40.4077713,
-    "longitude": -3.6890236
   },
   "79b10898": {
     "location_name": "OXO. Museo del Videojuego en Madrid",
@@ -1626,6 +1625,12 @@
     "address": "Casa de Campo, s/n",
     "latitude": 40.421432,
     "longitude": -3.7536663
+  },
+  "c7782429": {
+    "location_name": "Museo Nacional de Antropología",
+    "address": "de Alfonso XII, 68",
+    "latitude": 40.4077713,
+    "longitude": -3.6890236
   },
   "d2add564": {
     "location_name": "Escenario Puerta del Ángel",
@@ -2020,5 +2025,26 @@
     "address": "de la Castellana, 214",
     "latitude": 40.4636363,
     "longitude": -3.6889212
+  },
+  "3f39be02": {
+    "location_name": "Instituto Iberoamericano de Finlandia",
+    "address": "de San Agustín, 7",
+    "latitude": 40.4148308,
+    "longitude": -3.6967746
+  },
+  "4da9be7c": {
+    "location_name": "Autocine Madrid",
+    "address": "de la Isla de Java, 2",
+    "latitude": 40.4868805,
+    "longitude": -3.6779757
+  },
+  "65fc56fa": {
+    "location_name": "Varias sedes"
+  },
+  "884c022f": {
+    "location_name": "Sala Wagon",
+    "address": "de Agustín de Foxa, s/n",
+    "latitude": 40.4760991,
+    "longitude": -3.6820196
   }
 }
