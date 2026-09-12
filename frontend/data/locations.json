@@ -1,4 +1,11 @@
 {
+  "12355570": {
+    "location_name": "Biblioteca Pública Municipal Eugenio Trías. Casa de Fieras de El Retiro (Retiro)",
+    "address": "PASEO FERNÁN NÚÑEZ 24",
+    "district": "Retiro",
+    "latitude": 40.4166091081099,
+    "longitude": -3.6795930368034804
+  },
   "0d332ccb": {
     "location_name": "Museo de San Isidro. Los Orígenes de Madrid",
     "address": "de San Andrés, 2",
@@ -172,13 +179,6 @@
     "latitude": 40.392279999540044,
     "longitude": -3.684956957448299
   },
-  "1a630411": {
-    "location_name": "Espacio de Igualdad Lourdes Hernández. Carabanchel",
-    "address": "CALLE COMANDANTE FONTANES 8",
-    "district": "Carabanchel",
-    "latitude": 40.395326406887946,
-    "longitude": -3.721622686264932
-  },
   "9b3eae76": {
     "location_name": "Espacio de Igualdad Dulce Chacón. Villaverde",
     "address": "CALLE TORDEGRILLOS 32",
@@ -318,12 +318,26 @@
     "latitude": 40.36691109856854,
     "longitude": -3.6164419466246676
   },
+  "36a8a46c": {
+    "location_name": "Centro Sociocultural San Cristóbal de los Ángeles (Villaverde)",
+    "address": "PLAZA PINAZO 9",
+    "district": "Villaverde",
+    "latitude": 40.34268360439146,
+    "longitude": -3.6914402549812873
+  },
   "4c99e2c3": {
     "location_name": "Centro Danza Matadero - CDM",
     "address": "PASEO CHOPERA 14",
     "district": "Arganzuela",
     "latitude": 40.39245798191536,
     "longitude": -3.6972067902718897
+  },
+  "303984c9": {
+    "location_name": "Museo de Historia de Madrid",
+    "address": "CALLE FUENCARRAL 78",
+    "district": "Centro",
+    "latitude": 40.42577054821346,
+    "longitude": -3.700845660719608
   },
   "3c67bbc4": {
     "location_name": "Centro Cultural San Francisco La Prensa (Carabanchel)",
@@ -492,13 +506,6 @@
     "latitude": 40.375587353517446,
     "longitude": -3.7069589796324833
   },
-  "12355570": {
-    "location_name": "Biblioteca Pública Municipal Eugenio Trías. Casa de Fieras de El Retiro (Retiro)",
-    "address": "PASEO FERNÁN NÚÑEZ 24",
-    "district": "Retiro",
-    "latitude": 40.4166091081099,
-    "longitude": -3.6795930368034804
-  },
   "79c2f491": {
     "location_name": "Auditorio Joaquín Rosado (Moncloa-Aravaca)",
     "address": "CALLE SANTA POLA 22",
@@ -541,6 +548,13 @@
     "latitude": 40.39245798191536,
     "longitude": -3.6972067902718897
   },
+  "1a630411": {
+    "location_name": "Espacio de Igualdad Lourdes Hernández. Carabanchel",
+    "address": "CALLE COMANDANTE FONTANES 8",
+    "district": "Carabanchel",
+    "latitude": 40.395326406887946,
+    "longitude": -3.721622686264932
+  },
   "4710abd1": {
     "location_name": "Centro Cultural Galileo (Chamberí)",
     "address": "CALLE GALILEO 39",
@@ -568,6 +582,13 @@
     "district": "Usera",
     "latitude": 40.37558213858424,
     "longitude": -3.71245854352948
+  },
+  "06e5ef28": {
+    "location_name": "Junta Municipal del Distrito de Usera",
+    "address": "AVENIDA RAFAELA YBARRA 41",
+    "district": "Usera",
+    "latitude": 40.3823867401053,
+    "longitude": -3.710861696949648
   },
   "6ba590e1": {
     "location_name": "Espacio de Igualdad Gloria Fuertes. Vicálvaro",
@@ -750,19 +771,6 @@
     "latitude": 40.42585800515975,
     "longitude": -3.689601594290468
   },
-  "303984c9": {
-    "location_name": "Museo de Historia de Madrid",
-    "address": "CALLE FUENCARRAL 78",
-    "district": "Centro",
-    "latitude": 40.42577054821346,
-    "longitude": -3.700845660719608
-  },
-  "7ff9694b": {
-    "location_name": "Auditorio de la Plaza de Chamberí - Templete",
-    "district": "Distrito",
-    "latitude": 40.43277092586933,
-    "longitude": -3.6970484720506938
-  },
   "804b5e7b": {
     "location_name": "Auditorio Municipal el Espinillo",
     "address": "CALLE TERTULIA 5",
@@ -776,6 +784,12 @@
     "district": "Moncloa-Aravaca",
     "latitude": 40.41472407139105,
     "longitude": -3.7301857404819767
+  },
+  "7ff9694b": {
+    "location_name": "Auditorio de la Plaza de Chamberí - Templete",
+    "district": "Distrito",
+    "latitude": 40.43277092586933,
+    "longitude": -3.6970484720506938
   },
   "a0c50125": {
     "location_name": "Centro Cultural Fernando de los Ríos (Latina)",
@@ -818,13 +832,6 @@
     "district": "Barajas",
     "latitude": 40.45446361509569,
     "longitude": -3.6000964360303476
-  },
-  "22a0d9bd": {
-    "location_name": "Jardines del Campo del Moro",
-    "address": "PASEO VIRGEN DEL PUERTO 1",
-    "district": "Centro",
-    "latitude": 40.41884303920882,
-    "longitude": -3.719998772058356
   },
   "0402c527": {
     "location_name": "Aula ambiental La Cabaña del Retiro",
@@ -944,12 +951,12 @@
     "latitude": 40.43675593917329,
     "longitude": -3.6861820403705816
   },
-  "1fc654e8": {
-    "location_name": "Planta de transformación de residuos vegetales de Migas Calientes",
-    "address": "AUTOVIA M-30 2200",
-    "district": "Moncloa-Aravaca",
-    "latitude": 40.445355536117184,
-    "longitude": -3.7399742609916697
+  "31352bed": {
+    "location_name": "Imprenta Municipal. Artes del libro",
+    "address": "CALLE CONCEPCION JERONIMA 15",
+    "district": "Centro",
+    "latitude": 40.413896825498995,
+    "longitude": -3.7054692169323364
   },
   "a2cd4cc7": {
     "location_name": "Parque Tecnológico Valdemingómez",
@@ -964,13 +971,6 @@
     "district": "Barajas",
     "latitude": 40.455320740232835,
     "longitude": -3.5876301858469386
-  },
-  "8d347f8b": {
-    "location_name": "Quinta de Torre Arias",
-    "address": "CALLE ALCALA 551",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.443385945708435,
-    "longitude": -3.6182513751654133
   },
   "b6232969": {
     "location_name": "Parque Lineal del Manzanares (Usera - Pte de Vallecas)",
@@ -1013,13 +1013,6 @@
     "district": "Usera",
     "latitude": 40.38627312379031,
     "longitude": -3.700074755609488
-  },
-  "31352bed": {
-    "location_name": "Imprenta Municipal. Artes del libro",
-    "address": "CALLE CONCEPCION JERONIMA 15",
-    "district": "Centro",
-    "latitude": 40.413896825498995,
-    "longitude": -3.7054692169323364
   },
   "57f49789": {
     "location_name": "Biblioteca Pública Municipal José Hierro (San Blas-Canillejas)",
@@ -1097,20 +1090,6 @@
     "latitude": 40.43644651057092,
     "longitude": -3.6372924261150033
   },
-  "acc32168": {
-    "location_name": "Biblioteca Pública Municipal Dámaso Alonso (Chamartín)",
-    "address": "CALLE MANUEL FERRERO 1",
-    "district": "Chamartin",
-    "latitude": 40.467453379213175,
-    "longitude": -3.6846112774442705
-  },
-  "80116606": {
-    "location_name": "Biblioteca Pública Municipal Gabriel García Márquez (Usera)",
-    "address": "PLAZA PUEBLO 2",
-    "district": "Usera",
-    "latitude": 40.366768324753416,
-    "longitude": -3.701141063083806
-  },
   "5ec0d445": {
     "location_name": "Biblioteca Pública Municipal Francisco Ayala (Vicálvaro)",
     "address": "BULEVAR INDALECIO PRIETO 21",
@@ -1138,13 +1117,6 @@
     "district": "Villaverde",
     "latitude": 40.35118703272002,
     "longitude": -3.679345889376551
-  },
-  "108da3ee": {
-    "location_name": "Biblioteca Pública Municipal Huerta de la Salud (Hortaleza)",
-    "address": "CALLE MAR DE LAS ANTILLAS 10",
-    "district": "Hortaleza",
-    "latitude": 40.47571688103069,
-    "longitude": -3.64667257750353
   },
   "95641ab4": {
     "location_name": "Biblioteca Pública Municipal Canillejas (San Blas-Canillejas)",
