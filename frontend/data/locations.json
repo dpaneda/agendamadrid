@@ -423,19 +423,19 @@
     "latitude": 40.45224710166,
     "longitude": -3.658029027767765
   },
-  "f754924c": {
-    "location_name": "Biblioteca Pública Municipal Manuel Vázquez Montalbán (Tetuán)",
-    "address": "CALLE FRANCOS RODRIGUEZ 67",
-    "district": "Tetuan",
-    "latitude": 40.45749513485957,
-    "longitude": -3.710539712535917
-  },
   "5a2ec7ad": {
     "location_name": "Biblioteca Pública Municipal Francisco Ibáñez (Chamartín)",
     "address": "CALLE MANTUANO 51",
     "district": "Chamartin",
     "latitude": 40.44810636195716,
     "longitude": -3.6762309620097398
+  },
+  "f754924c": {
+    "location_name": "Biblioteca Pública Municipal Manuel Vázquez Montalbán (Tetuán)",
+    "address": "CALLE FRANCOS RODRIGUEZ 67",
+    "district": "Tetuan",
+    "latitude": 40.45749513485957,
+    "longitude": -3.710539712535917
   },
   "06d8226f": {
     "location_name": "Biblioteca Pública Municipal La Chata (Carabanchel)",
@@ -1456,12 +1456,6 @@
     "latitude": 40.4305839,
     "longitude": -3.6814985
   },
-  "86b6d704": {
-    "location_name": "Museo Cerralbo",
-    "address": "de Ventura Rodríguez, 17",
-    "latitude": 40.4237979,
-    "longitude": -3.7144623
-  },
   "868a1c03": {
     "location_name": "Espacio Fundación Telefónica",
     "address": "de Fuencarral, 3",
@@ -1567,6 +1561,12 @@
     "latitude": 40.4301378,
     "longitude": -3.7092035
   },
+  "86b6d704": {
+    "location_name": "Museo Cerralbo",
+    "address": "de Ventura Rodríguez, 17",
+    "latitude": 40.4237979,
+    "longitude": -3.7144623
+  },
   "bebd45c9": {
     "location_name": "Museo Nacional de Ciencias Naturales",
     "address": "de José Gutierrez Abascal, 2",
@@ -1621,12 +1621,6 @@
     "latitude": 40.4299874,
     "longitude": -3.6808178
   },
-  "ecdf816e": {
-    "location_name": "Cementerio de La Almudena",
-    "address": "de Daroca, 90",
-    "latitude": 40.4247569,
-    "longitude": -3.6465092
-  },
   "dc35bc1f": {
     "location_name": "Real Academia de Bellas Artes de San Fernando",
     "address": "de Alcalá, 13",
@@ -1638,12 +1632,6 @@
     "address": "de Venezuela, 2",
     "latitude": 40.4151851,
     "longitude": -3.6819343
-  },
-  "60383778": {
-    "location_name": "Teatro La Latina",
-    "address": "de la Cebada, 2",
-    "latitude": 40.411445654305,
-    "longitude": -3.708760142326
   },
   "fc67cb12": {
     "location_name": "Biblioteca Nacional",
@@ -1699,12 +1687,6 @@
     "latitude": 40.4194892,
     "longitude": -3.6932914
   },
-  "623ebc12": {
-    "location_name": "Las Tablas",
-    "address": "de España, 9",
-    "latitude": 40.4220352,
-    "longitude": -3.7137064
-  },
   "027f0347": {
     "location_name": "Teatros del Canal",
     "address": "de Cea Bermúdez, 1",
@@ -1729,38 +1711,8 @@
     "latitude": 40.4400973,
     "longitude": -3.7289688
   },
-  "fc2a84be": {
-    "location_name": "Teatro Fígaro",
-    "address": "del Doctor Cortezo, 5",
-    "latitude": 40.413466,
-    "longitude": -3.7036766
-  },
-  "b1ac68ff": {
-    "location_name": "Lab theClub",
-    "address": "de Agustín de Foxa, s/n",
-    "latitude": 40.4760991,
-    "longitude": -3.6820196
-  },
   "c60cef6f": {
     "location_name": "Varios espacios de Madrid"
-  },
-  "9e51fca2": {
-    "location_name": "Puente de Toledo",
-    "address": "Marqués de Vadillo",
-    "latitude": 40.3976058,
-    "longitude": -3.7156739
-  },
-  "4ff22a87": {
-    "location_name": "Ciudad Real Madrid",
-    "address": "de Fuerzas Armadas, 402",
-    "latitude": 40.4801027,
-    "longitude": -3.6129891
-  },
-  "c3c68494": {
-    "location_name": "Centro Deportivo Alcalá de Henares",
-    "address": "de Gustavo Adolfo Bécquer, 64",
-    "latitude": 40.5134295,
-    "longitude": -3.4094629
   },
   "d0b9c3cf": {
     "location_name": "Coliseum",
@@ -1826,6 +1778,12 @@
     "address": "de Carmen Bruguera, 8",
     "latitude": 40.3891153,
     "longitude": -3.7019903
+  },
+  "60383778": {
+    "location_name": "Teatro La Latina",
+    "address": "de la Cebada, 2",
+    "latitude": 40.411436,
+    "longitude": -3.7087536
   },
   "3cb28b4b": {
     "location_name": "Universidad Autónoma de Madrid (Campus Cantoblanco)",
@@ -1925,6 +1883,12 @@
     "address": "de Isabel II, s/n",
     "latitude": 40.4184102,
     "longitude": -3.7093957
+  },
+  "b1ac68ff": {
+    "location_name": "Lab theClub",
+    "address": "de Agustín de Foxa, s/n",
+    "latitude": 40.4760991,
+    "longitude": -3.6820196
   },
   "94c2d0f2": {
     "location_name": "Fundación MAPFRE. Sala Recoletos",
@@ -2039,6 +2003,12 @@
     "latitude": 40.424982,
     "longitude": -3.6898922
   },
+  "fc2a84be": {
+    "location_name": "Teatro Fígaro",
+    "address": "del Doctor Cortezo, 5",
+    "latitude": 40.413466,
+    "longitude": -3.7036766
+  },
   "4ab76119": {
     "location_name": "Teatro de la Zarzuela",
     "address": "de Jovellanos, 4",
@@ -2051,6 +2021,12 @@
     "latitude": 40.4636363,
     "longitude": -3.6889212
   },
+  "4ff22a87": {
+    "location_name": "Ciudad Real Madrid",
+    "address": "de Fuerzas Armadas, 402",
+    "latitude": 40.4817285,
+    "longitude": -3.6112151
+  },
   "3f39be02": {
     "location_name": "Instituto Iberoamericano de Finlandia",
     "address": "de San Agustín, 7",
@@ -2062,6 +2038,12 @@
     "address": "de la Isla de Java, 2",
     "latitude": 40.4868805,
     "longitude": -3.6779757
+  },
+  "c3c68494": {
+    "location_name": "Centro Deportivo Alcalá de Henares",
+    "address": "de Gustavo Adolfo Bécquer, 64",
+    "latitude": 40.5082938,
+    "longitude": -3.3608554
   },
   "65fc56fa": {
     "location_name": "Varias sedes"
@@ -2119,5 +2101,35 @@
     "address": "de Murillo, 2",
     "latitude": 40.4122193,
     "longitude": -3.6919986
+  },
+  "a39a77f1": {
+    "location_name": "Teatro Lagrada",
+    "address": "de Ercilla, 20",
+    "latitude": 40.4026932,
+    "longitude": -3.7029826
+  },
+  "4b4d8238": {
+    "location_name": "Teatro Pradillo",
+    "address": "de Pradillo, 12",
+    "latitude": 40.4485,
+    "longitude": -3.6747226
+  },
+  "f8a954ec": {
+    "location_name": "Teatro Tarambana",
+    "address": "Dolores Armengot , 31",
+    "latitude": 40.3857668,
+    "longitude": -3.7432537
+  },
+  "9b2ba2ac": {
+    "location_name": "La Usina",
+    "address": "de Palos de la Frontera, 4",
+    "latitude": 40.4025525,
+    "longitude": -3.6999978
+  },
+  "fac2126c": {
+    "location_name": "Intruso Bar",
+    "address": "de Augusto Figueroa, 3",
+    "latitude": 40.4230766,
+    "longitude": -3.7003548
   }
 }
