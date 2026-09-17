@@ -235,6 +235,18 @@
     "formato": "exposicion",
     "lid": "040b80fc"
   },
+  "bc54aef7558029fc": {
+    "title": "Concierto de Alejandro y María Laura (Chamartín)",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=e9a196d88b96f910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "description": "Presentación musical del dúo Alejandro y María Laura en el distrito de Chamartín.",
+    "formato": "puntual"
+  },
   "b5cb0f5bb13ad3d9": {
     "title": "Alicia en el País de las Maravillas - Cía. La Maleta de Los Cuentos",
     "description": "Espectáculo infantil donde Alicia vive aventuras alocadas junto a personajes fantásticos. Una adaptación teatral que sumerge a los más pequeños en un mundo mágico.",
@@ -1070,6 +1082,20 @@
     "description": "Muestra dedicada a la obra y legado de la cineasta Cecilia Bartolomé.",
     "formato": "puntual",
     "lid": "95a62894"
+  },
+  "2280f84eab1627a3": {
+    "title": "Muestra de danza en el Centro Cultural Puerta de Toledo",
+    "description": "Exhibición de diversos grupos de baile, coros rocieros y casas regionales. Un mosaico de cultura popular y folclore.",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=9f1820e8bf3dd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "danza",
+      "conciertos"
+    ],
+    "is_multi_event": true,
+    "formato": "puntual",
+    "lid": "2280f84e"
   },
   "fe22c3253ea1f1c6": {
     "title": "Visita al Centro de Interpretación del Paisaje de la Luz",
@@ -3650,6 +3676,19 @@
     "formato": "exposicion",
     "lid": "c9c45e0d"
   },
+  "2ea5fc83bbd47110": {
+    "title": "Empaque (Hortaleza)",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=0fe196d88b96f910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros",
+      "gratis"
+    ],
+    "description": "Evento cultural de acceso libre en el distrito de Hortaleza.",
+    "formato": "puntual",
+    "lid": "c6c5db82"
+  },
   "0f0030df883067c8": {
     "title": "Empléate: iniciando el rumbo laboral",
     "start_time": "11:00:00",
@@ -5641,6 +5680,19 @@
     "formato": "exposicion",
     "lid": "e2457581"
   },
+  "c371d4e18a95456f": {
+    "title": "Jugar el arte en familia",
+    "description": "Actividad creativa donde niños y niñas exploran un espacio de juego diseñado para la experimentación artística. Un lugar para descubrir la creatividad de forma colectiva.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=e272ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "talleres",
+      "destacado"
+    ],
+    "formato": "exposicion",
+    "lid": "95a62894"
+  },
   "dd52107285df9596": {
     "title": "Julián Pendorcho",
     "description": "Un espectáculo de circo protagonizado por un payaso en prácticas que intenta preparar una función perfecta. Una propuesta cómica ideal para el público familiar.",
@@ -6693,6 +6745,18 @@
     "formato": "exposicion",
     "lid": "4c99e2c3"
   },
+  "6d528d83792b36e3": {
+    "title": "Marnie, la ladrona",
+    "description": "Proyección destacada del clásico del cine de Alfred Hitchcock.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=bdf1ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "destacado",
+      "cine"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
+  },
   "8ee7bf5df2e3786f": {
     "title": "Conferencia sobre Marilyn Monroe",
     "description": "Una charla sobre la vida y trayectoria de Norma Jeane, icono del cine clásico de Hollywood. Parte del ciclo dedicado a las divas del séptimo arte.",
@@ -6985,6 +7049,19 @@
     ],
     "formato": "puntual",
     "lid": "95a62894"
+  },
+  "58c2727eaea54734": {
+    "title": "Taller de modelado de arcilla",
+    "description": "Actividad de iniciación a la cerámica y al modelado de barro dirigida a público infantil. Fomenta la expresión artística y la destreza manual.",
+    "start_time": "11:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=3bf06a4e72f6f910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "infantil",
+      "gratis"
+    ],
+    "formato": "puntual"
   },
   "83379719f6cd62c6": {
     "title": "Taller: Monográfico de emociones - La rabia",
@@ -7770,6 +7847,19 @@
     "is_multi_event": true,
     "formato": "festival",
     "lid": "9dd69f2b"
+  },
+  "094def849dbabee4": {
+    "title": "Planeta Tierra",
+    "start_time": "12:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=6cf9c3cc9e060a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "naturaleza"
+    ],
+    "description": "Actividad educativa diseñada para explorar conceptos sobre nuestro planeta.",
+    "formato": "puntual",
+    "lid": "07486b5c"
   },
   "ba001315d6063adf": {
     "title": "Festival: Encuentro en Plaza Arturo Barea",
@@ -9646,6 +9736,21 @@
     "is_multi_event": true,
     "formato": "exposicion"
   },
+  "a2a969c431c299c2": {
+    "title": "Talleres Gente Menuda - 3º Trimestre 2026",
+    "description": "Programa de talleres para familias con niños y niñas de 4 a 10 años en el Centro Cultural Clara del Rey.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d8c91039af080a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "infantil",
+      "gratis"
+    ],
+    "price": "gratis",
+    "is_multi_event": true,
+    "formato": "exposicion",
+    "lid": "8d90c6ff"
+  },
   "3241fd172ff93736": {
     "title": "Talleres para colegios - Curso 26/27",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=1a540da96d320a10VgnVCM100000891ecb1aRCRD",
@@ -11026,6 +11131,18 @@
     "description": "Recorrido guiado para conocer la historia y el funcionamiento de los relojes de sol situados en el barrio de Moscardó. Una visita cultural sobre patrimonio e instrumentos astronómicos.",
     "price": "gratis",
     "formato": "puntual"
+  },
+  "d1dc33e4c4d82957": {
+    "title": "Warren Sonbert. Sesión de cortometrajes I",
+    "description": "Ciclo dedicado a la obra cinematográfica del cineasta experimental Warren Sonbert. Proyección de una selección de sus piezas cortas.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=3704a7f03d240a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
   },
   "e2da7fc5ff26fbaf": {
     "title": "Webinario: 20 usos de la lana y más",
@@ -13574,6 +13691,28 @@
     ],
     "formato": "exposicion",
     "lid": "3c29714c"
+  },
+  "067bd5d66e86067c": {
+    "title": "We Will Rock You, el musical",
+    "description": "Musical inspirado en las canciones de Queen que narra la historia de un futuro distópico donde la música está prohibida. La obra cuenta con éxitos icónicos del grupo británico y una puesta en escena que recrea la esencia de la banda.",
+    "url": "https://wewillrockyou.es/",
+    "price": "Desde 25 €",
+    "image": "images/events/acf9cf4b41b0.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/tLyO-4STs0nAD5_IJtEGT3ZkvnGHb1of8rLTCX_dT6E/mtime:1714404669/sites/default/files/eventos/eventos/we-will-rock-you-musical-4.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/9_jm9oZzXnsebj-cytdiorOwa_Auye0BilJ1nMSv8Zo/mtime:1639399051/sites/default/files/eventos/eventos/we_1.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/43QI_Km1M9dhTQw63n3yXpdqjUHe7lDMFW2VKfaXc6A/mtime:1639399100/sites/default/files/eventos/eventos/we_will_1.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/MTr0Bc_uI0fkHVB70jwT6UekFhazwi1uyGRAPqT-f1c/mtime:1634115680/sites/default/files/eventos/eventos/we_0.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/3W8KD9AP5oevlPA33l3E4aEs8lUnokoBXWgYzQUjn1o/mtime:1634115699/sites/default/files/eventos/eventos/we_will_0.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/he0wxj1GffhBjwFKoQo3r2PsbGCiUvpe88QHW3tYZFc/mtime:1634115655/sites/default/files/eventos/eventos/rock_you.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/we-will-rock-you-musical-gran-teatro-caixabank-principe-pio",
+    "source": "esmadrid",
+    "categories": [
+      "teatro"
+    ],
+    "formato": "exposicion",
+    "lid": "044f7fc6"
   },
   "322d4554ec3d9335": {
     "title": "WAH Madrid",
@@ -16607,22 +16746,6 @@
     ],
     "formato": "exposicion",
     "lid": "9940699e"
-  },
-  "7d881974e7e73e03": {
-    "title": "Estoy enfadada, estoy rabiosa",
-    "description": "Un montaje de danza que explora la pérdida del hogar y las consecuencias íntimas de un exilio forzado. La pieza reflexiona sobre la relación entre el cuerpo y los espacios que habitamos a través de un lenguaje coreográfico sensible.",
-    "start_time": "18:30:00",
-    "url": "https://www.teatroscanal.com/espectaculo/paloma-diaz-la-permanente/",
-    "price": "20 €",
-    "image": "images/events/2e443c5e54ba.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/estoy-enfadada-estoy-rabiosa-teatros-canal",
-    "source": "esmadrid",
-    "categories": [
-      "teatro",
-      "danza"
-    ],
-    "formato": "puntual",
-    "lid": "027f0347"
   },
   "2df59d6878f39f4d": {
     "title": "Nuria Fergó",
@@ -20896,5 +21019,165 @@
     ],
     "formato": "puntual",
     "lid": "027f0347"
+  },
+  "e5271f0842b7e5fe": {
+    "title": "Botánica doméstica",
+    "description": "Exposición que reúne una selección de pinturas, dibujos e ilustraciones del artista plástico Jorge Bayo centradas en el mundo vegetal. La muestra explora la representación artística de la naturaleza a partir de la observación de lo cotidiano y del entorno del Real Jardín Botánico.",
+    "start_time": "10:00:00",
+    "url": "https://rjb.csic.es/evento/exposicion-botanica-domestica/",
+    "price": "Desde 4 €",
+    "image": "images/events/9f08f8f70af8.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/npczjazdLLMN-Vm_vYNdFMDNUpdTqxGab4UvSRJNfss/mtime:1789569430/sites/default/files/eventos/eventos/fragmento_de_la_obra_de_jorge_bayo.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/tPQaRHvONu9t9ALzszd0aIQhxQaHvlEzMhCIHIjwT34/mtime:1789569606/sites/default/files/eventos/eventos/botanica_domestica.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/botanica-domestica-real-jardin-botanico",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "naturaleza"
+    ],
+    "formato": "exposicion",
+    "lid": "ce6a0c87"
+  },
+  "b7df210ab5995688": {
+    "title": "Juegos de jardín",
+    "description": "Exposición fotográfica de Sergio de Luz que explora la pareidolia, invitando al público a descubrir formas y figuras sugeridas entre las plantas del jardín. El proyecto propone un juego abierto entre la naturaleza, la fotografía y la percepción visual del espectador.",
+    "start_time": "10:00:00",
+    "url": "https://rjb.csic.es/evento/exposicion-juegos-de-jardin/",
+    "price": "Desde 4 €",
+    "image": "images/events/0c9feb617955.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/skxJy6WRFoz992AO1rw5VUbRluUr83NDOxX2sG7bwAo/mtime:1789570782/sites/default/files/eventos/eventos/fragmento_de_wing_of_desire_de_juegos_de_jardin_de_sergio_de_luz.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/NCX8j-Mx-MPAX7iyLJK-6QwBNs9mS0yJ1928GU5QOSY/mtime:1789570812/sites/default/files/eventos/eventos/fragmento_de_octopussy_de_juegos_de_jardin_de_sergio_de_luz.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/juegos-jardin-real-jardin-botanico",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "fotografía"
+    ],
+    "formato": "exposicion",
+    "lid": "ce6a0c87"
+  },
+  "769ffa8277ab64db": {
+    "title": "Semana Europea de la Movilidad",
+    "description": "El evento promueve alternativas de transporte público, movilidad activa y el desarrollo de una ciudad más sostenible. Incluye una programación diversa con actividades educativas, ambientales, deportivas y divulgativas para todas las edades.",
+    "url": "https://diario.madrid.es/blog/notas-de-prensa/vuelve-la-semana-europea-de-la-movilidad-a-las-calles-de-madrid-con-su-gran-fiesta-central-el-20-de-septiembre-en-el-eje-atocha-cibeles/",
+    "price": "Gratis",
+    "image": "images/events/18b863666b01.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/semana-europea-movilidad-madrid",
+    "source": "esmadrid",
+    "categories": [
+      "accesible",
+      "deportes",
+      "talleres",
+      "gratis"
+    ],
+    "is_multi_event": true,
+    "formato": "puntual",
+    "lid": "1ff6e002"
+  },
+  "2f1ffbcac4cc57a6": {
+    "title": "Museo de Memorias Inconstantes",
+    "description": "La exposición reflexiona sobre la naturaleza dinámica de la memoria a través de quince obras de la Colección Generaciones 2000-2024. La muestra articula fragmentos de experiencias personales para explorar la relación entre el recuerdo y la creación artística.",
+    "start_time": "10:00:00",
+    "url": "https://www.esmadrid.com/agenda/museo-memorias-inconstantes-casa-encendida",
+    "price": "Gratis",
+    "image": "images/events/47c7e5904e3e.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/museo-memorias-inconstantes-casa-encendida",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "fotografía",
+      "gratis"
+    ],
+    "formato": "exposicion",
+    "lid": "31e63917"
+  },
+  "4526157ffd3d6503": {
+    "title": "La Verbena del Mercado",
+    "description": "El evento ofrece una jornada dedicada a la degustación de bocados exclusivos y fusiones efímeras creadas por los puestos del mercado y chefs invitados. La experiencia se completa con música en directo, actividades gastronómicas y un ambiente festivo.",
+    "start_time": "12:00:00",
+    "url": "https://eventos.mercadovallehermoso.es/",
+    "price": "Desde 11 €",
+    "image": "images/events/9d047d9634af.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/verbena-mercado-mercado-vallehermoso",
+    "source": "esmadrid",
+    "categories": [
+      "gastronomía",
+      "fiestas"
+    ],
+    "formato": "puntual",
+    "lid": "e6256c59"
+  },
+  "056a8ee53143a6cf": {
+    "title": "A Place to Dance",
+    "description": "Pieza de danza que nace del encuentro entre la coreógrafa Poliana Lima y la artista flamenca Yinka Esi Graves. La obra utiliza el diálogo rítmico y la sonoridad corporal para invitar al público a participar en un acto de pertenencia y transformación del espacio.",
+    "start_time": "19:30:00",
+    "url": "https://www.condeduquemadrid.es/actividades/poliana-lima-y-yinka-esi-graves-place-dance",
+    "price": "Desde 18 €",
+    "image": "images/events/a0516a78ebd3.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/jMk_cygij2TRn3XaA-ekZlu81ECIshNzQRSI6vzcOzs/mtime:1789631064/sites/default/files/eventos/eventos/a_place_to_dance.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/_a0VH1uMts-RwoBDwXiVfG4PPEvYoOUX8vqoS8geeWc/mtime:1789631076/sites/default/files/eventos/eventos/place.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/0yl_u7U_NrDQDe-3PlCY_UDWc4Kenv6EOvaS2uOUY60/mtime:1789631091/sites/default/files/eventos/eventos/place_be.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/place-dance-conde-duque",
+    "source": "esmadrid",
+    "categories": [
+      "danza",
+      "teatro",
+      "flamenco"
+    ],
+    "formato": "puntual",
+    "lid": "41cfd2ba"
+  },
+  "27b9753f15226743": {
+    "title": "Un Pingüino en mi Ascensor",
+    "description": "El dúo madrileño de nasal-pop ofrece una actuación para celebrar 40 años de trayectoria musical. El espectáculo consiste en un repaso por sus mejores temas y un repertorio coreable.",
+    "start_time": "20:00:00",
+    "url": "https://www.movistararena.es/programacion/evento/un-ping-ino-en-mi-ascensor",
+    "price": "Desde 30,80 €",
+    "image": "images/events/4305fa28e891.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/pinguino-mi-ascensor-sala-movistar-arena",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "1f1e0e14"
+  },
+  "0d3352c5439bf326": {
+    "title": "La transición estética. España, 1960-2020",
+    "description": "La exposición ofrece un recorrido visual por el arte español de las últimas seis décadas, explorando la evolución desde la modernidad hasta las prácticas contemporáneas. La muestra reúne diversas disciplinas como pintura, escultura, instalación y medios audiovisuales para analizar las tensiones estéticas que han configurado el arte en España.",
+    "start_time": "10:00:00",
+    "url": "https://www.march.es/es/madrid/exposiciones/transicion-estetica-espana-1960-2020",
+    "price": "Gratis",
+    "image": "images/events/3adf28ee1e72.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/transicion-estetica-espana-1960-2020-fundacion-juan-march",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "fotografía",
+      "gratis"
+    ],
+    "formato": "exposicion",
+    "lid": "a4d7ea30"
+  },
+  "fe2a7bdd26c727a0": {
+    "title": "Diario Vivo: Historias que nutren",
+    "description": "Una experiencia de periodismo escénico donde personas reales comparten historias sobre contextos humanitarios complejos. El espectáculo combina narración oral, música en directo y una cuidada puesta en escena.",
+    "start_time": "21:30:00",
+    "url": "https://accioncontraelhambre.org/es/historias-que-nutren ",
+    "price": "Desde 20 €",
+    "image": "images/events/13c405f2015b.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/diario-vivo-historias-nutren-circulo-bellas-artes-teatro-fernando-rojas",
+    "source": "esmadrid",
+    "categories": [
+      "teatro"
+    ],
+    "formato": "puntual",
+    "lid": "5f3f83ad"
   }
 }
