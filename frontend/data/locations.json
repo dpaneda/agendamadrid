@@ -47,6 +47,13 @@
     "latitude": 40.34750435286862,
     "longitude": -3.6756560101604467
   },
+  "040b80fc": {
+    "location_name": "Espacio de Igualdad Nieves Torres. Chamartín",
+    "address": "CALLE ENRIQUE JARDIEL PONCELA 8",
+    "district": "Chamartin",
+    "latitude": 40.46088981165102,
+    "longitude": -3.6700689174427326
+  },
   "c5e23990": {
     "location_name": "Parque Lineal de Palomeras",
     "address": "AVENIDA ALBUFERA 293",
@@ -67,13 +74,6 @@
     "district": "Arganzuela",
     "latitude": 40.39130985242181,
     "longitude": -3.6958028442054074
-  },
-  "040b80fc": {
-    "location_name": "Espacio de Igualdad Nieves Torres. Chamartín",
-    "address": "CALLE ENRIQUE JARDIEL PONCELA 8",
-    "district": "Chamartin",
-    "latitude": 40.46088981165102,
-    "longitude": -3.6700689174427326
   },
   "ebf96d4f": {
     "location_name": "Centro Cultural Quinta del Berro - Rafael Altamira (Salamanca)",
@@ -207,12 +207,26 @@
     "latitude": 40.41902261618159,
     "longitude": -3.692188193693138
   },
+  "f07e42d3": {
+    "location_name": "Centro Cultural Zazuar (Villa de Vallecas)",
+    "address": "CALLE ZAZUAR 4",
+    "district": "VillaDeVallecas",
+    "latitude": 40.38281866921273,
+    "longitude": -3.6061377076487906
+  },
   "3eb06d5c": {
     "location_name": "Auditorio al aire libre. Carlos Jiménez de Parga",
     "address": "AVENIDA RAFAEL ALBERTI 13",
     "district": "PuenteDeVallecas",
     "latitude": 40.389928882222264,
     "longitude": -3.6382448554479936
+  },
+  "5920ebfe": {
+    "location_name": "Auditorio Municipal Las Trece Rosas",
+    "address": "CALLE MONTE DE MONTJUICH 7",
+    "district": "VillaDeVallecas",
+    "latitude": 40.38024953878224,
+    "longitude": -3.6175290483217055
   },
   "439b2cee": {
     "location_name": "Biblioteca Pública Municipal José Saramago (Fuencarral-El Pardo)",
@@ -240,6 +254,13 @@
     "district": "Tetuan",
     "latitude": 40.46900764611639,
     "longitude": -3.697595691925329
+  },
+  "e2457581": {
+    "location_name": "Biblioteca Musical Víctor Espinós",
+    "address": "CALLE CONDE DUQUE 9",
+    "district": "Centro",
+    "latitude": 40.42737760210632,
+    "longitude": -3.7106116887809817
   },
   "e411800a": {
     "location_name": "Teatro Circo Price",
@@ -269,6 +290,13 @@
     "latitude": 40.44844757572015,
     "longitude": -3.598099871155595
   },
+  "2c0e1e82": {
+    "location_name": "Parque Entrevías Forestal",
+    "address": "RONDA DEL SUR 8",
+    "district": "PuenteDeVallecas",
+    "latitude": 40.36782603611024,
+    "longitude": -3.6670181171393064
+  },
   "2280f84e": {
     "location_name": "Centro Cultural Puerta de Toledo (Centro)",
     "address": "AVENIDA GRAN VIA DE SAN FRANCISCO 2",
@@ -282,6 +310,13 @@
     "district": "PuenteDeVallecas",
     "latitude": 40.39701982315709,
     "longitude": -3.655239797848888
+  },
+  "f6706f88": {
+    "location_name": "Teatro Municipal de Vallecas",
+    "address": "CALLE PASO DE VILLAMANRIQUE 3",
+    "district": "VillaDeVallecas",
+    "latitude": 40.37762362093048,
+    "longitude": -3.6229095774784765
   },
   "7fb097ff": {
     "location_name": "Espacio de Igualdad María Telo. Moratalaz",
@@ -409,6 +444,13 @@
     "latitude": 40.44810636195716,
     "longitude": -3.6762309620097398
   },
+  "80116606": {
+    "location_name": "Biblioteca Pública Municipal Gabriel García Márquez (Usera)",
+    "address": "PLAZA PUEBLO 2",
+    "district": "Usera",
+    "latitude": 40.366768324753416,
+    "longitude": -3.701141063083806
+  },
   "f754924c": {
     "location_name": "Biblioteca Pública Municipal Manuel Vázquez Montalbán (Tetuán)",
     "address": "CALLE FRANCOS RODRIGUEZ 67",
@@ -450,13 +492,6 @@
     "district": "PuenteDeVallecas",
     "latitude": 40.395023959810636,
     "longitude": -3.665554302127492
-  },
-  "5920ebfe": {
-    "location_name": "Auditorio Municipal Las Trece Rosas",
-    "address": "CALLE MONTE DE MONTJUICH 7",
-    "district": "VillaDeVallecas",
-    "latitude": 40.38024953878224,
-    "longitude": -3.6175290483217055
   },
   "867ee94b": {
     "location_name": "Biblioteca Pública Municipal Miguel Delibes (Moratalaz)",
@@ -639,13 +674,6 @@
     "latitude": 40.446826729909155,
     "longitude": -3.5727382893523254
   },
-  "e2457581": {
-    "location_name": "Biblioteca Musical Víctor Espinós",
-    "address": "CALLE CONDE DUQUE 9",
-    "district": "Centro",
-    "latitude": 40.42737760210632,
-    "longitude": -3.7106116887809817
-  },
   "b1f7c00c": {
     "location_name": "Teatro Español",
     "address": "del Príncipe, 25",
@@ -708,19 +736,19 @@
     "latitude": 40.38131130575197,
     "longitude": -3.608459149580722
   },
+  "7b2029f7": {
+    "location_name": "Centro Cultural Nicolás Salmerón (Chamartín)",
+    "address": "CALLE MANTUANO 51",
+    "district": "Chamartin",
+    "latitude": 40.44834125150792,
+    "longitude": -3.6761992414203526
+  },
   "c6c5db82": {
     "location_name": "Centro Cultural Sanchinarro - Hispanidad (Hortaleza)",
     "address": "CALLE PRINCESA DE EBOLI 29",
     "district": "Hortaleza",
     "latitude": 40.49042200599307,
     "longitude": -3.6553467891079854
-  },
-  "65a790aa": {
-    "location_name": "Espacio de Igualdad Berta Cáceres. Usera",
-    "address": "CALLE GRAN AVENIDA 14",
-    "district": "Usera",
-    "latitude": 40.36902428128397,
-    "longitude": -3.710212677306876
   },
   "bcf3fae2": {
     "location_name": "Faro de la Moncloa",
@@ -833,26 +861,19 @@
     "latitude": 40.395739032378984,
     "longitude": -3.7566163518635967
   },
-  "7b2029f7": {
-    "location_name": "Centro Cultural Nicolás Salmerón (Chamartín)",
-    "address": "CALLE MANTUANO 51",
-    "district": "Chamartin",
-    "latitude": 40.44834125150792,
-    "longitude": -3.6761992414203526
-  },
-  "7e673f1f": {
-    "location_name": "Parque Emperatriz María de Austria",
-    "address": "CALLE VIA LUSITANA 3",
-    "district": "Carabanchel",
-    "latitude": 40.382311100280766,
-    "longitude": -3.7227552919050586
-  },
   "53979c9c": {
     "location_name": "Parque Enrique Tierno Galván",
     "address": "CALLE MENESES 4",
     "district": "Arganzuela",
     "latitude": 40.39210151448589,
     "longitude": -3.681620654746187
+  },
+  "a2cd4cc7": {
+    "location_name": "Parque Tecnológico Valdemingómez",
+    "address": "CARRETERA VALDEMINGOMEZ 201",
+    "district": "VillaDeVallecas",
+    "latitude": 40.337870856032524,
+    "longitude": -3.5813821771569554
   },
   "74ef50ff": {
     "location_name": "El Capricho de la Alameda Osuna",
@@ -951,6 +972,13 @@
     "latitude": 40.37043939785913,
     "longitude": -3.6899302716018574
   },
+  "65a790aa": {
+    "location_name": "Espacio de Igualdad Berta Cáceres. Usera",
+    "address": "CALLE GRAN AVENIDA 14",
+    "district": "Usera",
+    "latitude": 40.36902428128397,
+    "longitude": -3.710212677306876
+  },
   "9068c482": {
     "location_name": "Centro Deportivo Municipal Plata y Castañar",
     "address": "PASEO PLATA Y CASTAÑAR 7",
@@ -992,13 +1020,6 @@
     "latitude": 40.413896825498995,
     "longitude": -3.7054692169323364
   },
-  "a2cd4cc7": {
-    "location_name": "Parque Tecnológico Valdemingómez",
-    "address": "CARRETERA VALDEMINGOMEZ 201",
-    "district": "VillaDeVallecas",
-    "latitude": 40.337870856032524,
-    "longitude": -3.5813821771569554
-  },
   "63c0a6a0": {
     "location_name": "Centro Sociocultural Teresa de Calcuta (Barajas)",
     "address": "PLAZA NAVIO 4",
@@ -1006,19 +1027,19 @@
     "latitude": 40.455320740232835,
     "longitude": -3.5876301858469386
   },
-  "0418b21d": {
-    "location_name": "Centro Cultural Casa del Reloj (Arganzuela)",
-    "address": "PASEO CHOPERA 6",
-    "district": "Arganzuela",
-    "latitude": 40.39466755008527,
-    "longitude": -3.700396761468562
-  },
   "5e4b8cb1": {
     "location_name": "Centro Sociocultural Juvenil de Moratalaz",
     "address": "CALLE FUENTE CARRANTONA 10",
     "district": "Moratalaz",
     "latitude": 40.39928542551079,
     "longitude": -3.636600379403484
+  },
+  "0418b21d": {
+    "location_name": "Centro Cultural Casa del Reloj (Arganzuela)",
+    "address": "PASEO CHOPERA 6",
+    "district": "Arganzuela",
+    "latitude": 40.39466755008527,
+    "longitude": -3.700396761468562
   },
   "650748ec": {
     "location_name": "Templo de Debod",
@@ -1103,6 +1124,12 @@
     "latitude": 40.45999848510341,
     "longitude": -3.6148888706303586
   },
+  "7505ff95": {
+    "location_name": "Explanada Puente del Rey",
+    "address": "del Rey",
+    "latitude": 40.4188408,
+    "longitude": -3.7216859
+  },
   "a610a2bf": {
     "location_name": "Auditorio al aire libre Berlín",
     "address": "CALLE SAN ERNESTO 10",
@@ -1131,19 +1158,19 @@
     "latitude": 40.425256682855846,
     "longitude": -3.725725718176111
   },
-  "09e2acfe": {
-    "location_name": "Biblioteca Pública Municipal Ciudad Lineal (Ciudad Lineal)",
-    "address": "CALLE HERMANOS GARCIA NOBLEJAS 14",
-    "district": "CiudadLineal",
-    "latitude": 40.43644651057092,
-    "longitude": -3.6372924261150033
-  },
   "3fa55718": {
     "location_name": "Biblioteca Pública Municipal Ana María Matute (Carabanchel)",
     "address": "CALLE ISAAC ALBENIZ 1",
     "district": "Carabanchel",
     "latitude": 40.39786734087938,
     "longitude": -3.720088245008897
+  },
+  "09e2acfe": {
+    "location_name": "Biblioteca Pública Municipal Ciudad Lineal (Ciudad Lineal)",
+    "address": "CALLE HERMANOS GARCIA NOBLEJAS 14",
+    "district": "CiudadLineal",
+    "latitude": 40.43644651057092,
+    "longitude": -3.6372924261150033
   },
   "f3bebf71": {
     "location_name": "Biblioteca Pública Municipal María Zambrano (Tetuán)",
@@ -1159,13 +1186,6 @@
     "latitude": 40.39982891410407,
     "longitude": -3.621281890570377
   },
-  "28cc7d13": {
-    "location_name": "Biblioteca Pública Municipal Francisco Umbral (Villaverde)",
-    "address": "CALLE CALCIO 1",
-    "district": "Villaverde",
-    "latitude": 40.35118703272002,
-    "longitude": -3.679345889376551
-  },
   "70f1779a": {
     "location_name": "Biblioteca Pública Municipal Portazgo (Puente de Vallecas)",
     "address": "CALLE CANTALAPIEDRA 11",
@@ -1179,6 +1199,13 @@
     "district": "CiudadLineal",
     "latitude": 40.42343352863466,
     "longitude": -3.6518288644365704
+  },
+  "28cc7d13": {
+    "location_name": "Biblioteca Pública Municipal Francisco Umbral (Villaverde)",
+    "address": "CALLE CALCIO 1",
+    "district": "Villaverde",
+    "latitude": 40.35118703272002,
+    "longitude": -3.679345889376551
   },
   "d8052c1c": {
     "location_name": "Centro Cultural José Luis Sampedro (Latina)",
@@ -1604,12 +1631,6 @@
     "latitude": 40.4144227,
     "longitude": -3.697431
   },
-  "b346de2e": {
-    "location_name": "Galería de Cristal (Palacio de Cibeles)",
-    "address": "de Montalbán, 1",
-    "latitude": 40.4182856,
-    "longitude": -3.69169
-  },
   "e7a6dc9e": {
     "location_name": "Sala Alcalá 31 de la Comunidad de Madrid",
     "address": "de Alcalá, 31",
@@ -1688,12 +1709,6 @@
     "latitude": 40.416926850471,
     "longitude": -3.727669715881
   },
-  "db7a4d60": {
-    "location_name": "Bululú 2120",
-    "address": "de Canarias, 16",
-    "latitude": 40.4019632,
-    "longitude": -3.6964942
-  },
   "e7d6d4c4": {
     "location_name": "Fuente de Cibeles",
     "address": "de Cibeles, s/n",
@@ -1726,11 +1741,6 @@
   },
   "c60cef6f": {
     "location_name": "Varios espacios de Madrid"
-  },
-  "93a3239f": {
-    "location_name": "Varios emplazamientos",
-    "latitude": 40.4233216,
-    "longitude": -3.6886687
   },
   "9940699e": {
     "location_name": "Teatro Marquina",
@@ -1768,12 +1778,6 @@
     "latitude": 40.4689291,
     "longitude": -3.6740104
   },
-  "9a5be362": {
-    "location_name": "Palacio Vistalegre Arena",
-    "address": "de Utebo , 1",
-    "latitude": 40.3862023,
-    "longitude": -3.7379421
-  },
   "971e403e": {
     "location_name": "Pequeño Cine Estudio",
     "address": "de Magallanes, 1",
@@ -1791,6 +1795,12 @@
     "address": "de la Cebada, 2",
     "latitude": 40.411436,
     "longitude": -3.7087536
+  },
+  "9a5be362": {
+    "location_name": "Palacio Vistalegre Arena",
+    "address": "de Utebo , 1",
+    "latitude": 40.3862023,
+    "longitude": -3.7379421
   },
   "3cb28b4b": {
     "location_name": "Universidad Autónoma de Madrid (Campus Cantoblanco)",
@@ -2011,6 +2021,12 @@
     "latitude": 40.4281099,
     "longitude": -3.6901699
   },
+  "b346de2e": {
+    "location_name": "Galería de Cristal (Palacio de Cibeles)",
+    "address": "de Montalbán, 1",
+    "latitude": 40.4183806,
+    "longitude": -3.6918174
+  },
   "61c10e5d": {
     "location_name": "Varios locales",
     "latitude": 40.424982,
@@ -2127,6 +2143,12 @@
     "latitude": 40.4026932,
     "longitude": -3.7029826
   },
+  "db7a4d60": {
+    "location_name": "Bululú 2120",
+    "address": "de Canarias, 16",
+    "latitude": 40.4019632,
+    "longitude": -3.6964942
+  },
   "4b4d8238": {
     "location_name": "Teatro Pradillo",
     "address": "de Pradillo, 12",
@@ -2191,5 +2213,29 @@
     "address": "de Castelló, 77",
     "latitude": 40.431236303945,
     "longitude": -3.681406974793
+  },
+  "1fbee8ae": {
+    "location_name": "Centro Cultural de China en Madrid",
+    "address": "del General Pardiñas, 73",
+    "latitude": 40.4340721,
+    "longitude": -3.6783231
+  },
+  "b814f038": {
+    "location_name": "Teatro Sanpol",
+    "address": "de San Pol de Mar, 1",
+    "latitude": 40.4239339,
+    "longitude": -3.7270082
+  },
+  "f8afdb46": {
+    "location_name": "Teatro Soho Madrid",
+    "address": "de España, 6, 1 planta",
+    "latitude": 40.4226029,
+    "longitude": -3.7119024
+  },
+  "730b291b": {
+    "location_name": "Cines Embajadores",
+    "address": "de Santa María de la Cabeza, 5",
+    "latitude": 40.400842,
+    "longitude": -3.6984769
   }
 }
