@@ -116,6 +116,13 @@
     "latitude": 40.46644791330993,
     "longitude": -3.7190034169332566
   },
+  "f91fa53f": {
+    "location_name": "Centro Cultural Buero Vallejo (San Blas - Canillejas)",
+    "address": "CALLE BOLTAÑA 27",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.44477474902185,
+    "longitude": -3.6129105844633775
+  },
   "13acb8c9": {
     "location_name": "Centro Cultural Casa de Vacas (Retiro)",
     "address": "PASEO COLOMBIA 1",
@@ -367,6 +374,13 @@
     "latitude": 40.39164455403764,
     "longitude": -3.717137582860074
   },
+  "b1a47d14": {
+    "location_name": "Centro Sociocultural Francisco Fatou (Villa de Vallecas)",
+    "address": "CALLE MANUEL VELEZ 10",
+    "district": "VillaDeVallecas",
+    "latitude": 40.37959032098656,
+    "longitude": -3.62310875744905
+  },
   "127a1864": {
     "location_name": "Centro Cultural La Vaguada (Fuencarral - El Pardo)",
     "address": "AVENIDA MONFORTE DE LEMOS 38",
@@ -430,19 +444,19 @@
     "latitude": 40.44864332758775,
     "longitude": -3.704513191828797
   },
-  "523428da": {
-    "location_name": "Centro Cultural San Juan Bautista (Ciudad Lineal)",
-    "address": "CALLE SAN NEMESIO 4",
-    "district": "CiudadLineal",
-    "latitude": 40.45224710166,
-    "longitude": -3.658029027767765
-  },
   "5a2ec7ad": {
     "location_name": "Biblioteca Pública Municipal Francisco Ibáñez (Chamartín)",
     "address": "CALLE MANTUANO 51",
     "district": "Chamartin",
     "latitude": 40.44810636195716,
     "longitude": -3.6762309620097398
+  },
+  "523428da": {
+    "location_name": "Centro Cultural San Juan Bautista (Ciudad Lineal)",
+    "address": "CALLE SAN NEMESIO 4",
+    "district": "CiudadLineal",
+    "latitude": 40.45224710166,
+    "longitude": -3.658029027767765
   },
   "80116606": {
     "location_name": "Biblioteca Pública Municipal Gabriel García Márquez (Usera)",
@@ -540,13 +554,6 @@
     "district": "Distrito",
     "latitude": 40.375587353517446,
     "longitude": -3.7069589796324833
-  },
-  "73b313ed": {
-    "location_name": "Jardines de El Buen Retiro",
-    "address": "PLAZA INDEPENDENCIA 7",
-    "district": "Retiro",
-    "latitude": 40.41964087412762,
-    "longitude": -3.68793370943788
   },
   "8ef7add6": {
     "location_name": "Hemeroteca Municipal",
@@ -750,6 +757,13 @@
     "latitude": 40.49042200599307,
     "longitude": -3.6553467891079854
   },
+  "6d0e53b1": {
+    "location_name": "Centro Cultural Lope de Vega (Puente de Vallecas)",
+    "address": "CALLE CONCEJO DE TEVERGA 1",
+    "district": "PuenteDeVallecas",
+    "latitude": 40.386296991431074,
+    "longitude": -3.671858416387963
+  },
   "bcf3fae2": {
     "location_name": "Faro de la Moncloa",
     "address": "AVENIDA MEMORIA 2",
@@ -763,20 +777,6 @@
     "district": "Usera",
     "latitude": 40.37738097077752,
     "longitude": -3.715659887802671
-  },
-  "79c2f491": {
-    "location_name": "Auditorio Joaquín Rosado (Moncloa-Aravaca)",
-    "address": "CALLE SANTA POLA 22",
-    "district": "Moncloa-Aravaca",
-    "latitude": 40.432243310641894,
-    "longitude": -3.7366613378902462
-  },
-  "6d0e53b1": {
-    "location_name": "Centro Cultural Lope de Vega (Puente de Vallecas)",
-    "address": "CALLE CONCEJO DE TEVERGA 1",
-    "district": "PuenteDeVallecas",
-    "latitude": 40.386296991431074,
-    "longitude": -3.671858416387963
   },
   "dac4ad46": {
     "location_name": "Instalación Deportiva Municipal Básica Pump Track de Butarque",
@@ -860,6 +860,13 @@
     "district": "Latina",
     "latitude": 40.395739032378984,
     "longitude": -3.7566163518635967
+  },
+  "7e673f1f": {
+    "location_name": "Parque Emperatriz María de Austria",
+    "address": "CALLE VIA LUSITANA 3",
+    "district": "Carabanchel",
+    "latitude": 40.382311100280766,
+    "longitude": -3.7227552919050586
   },
   "53979c9c": {
     "location_name": "Parque Enrique Tierno Galván",
@@ -979,6 +986,13 @@
     "latitude": 40.36902428128397,
     "longitude": -3.710212677306876
   },
+  "79c2f491": {
+    "location_name": "Auditorio Joaquín Rosado (Moncloa-Aravaca)",
+    "address": "CALLE SANTA POLA 22",
+    "district": "Moncloa-Aravaca",
+    "latitude": 40.432243310641894,
+    "longitude": -3.7366613378902462
+  },
   "9068c482": {
     "location_name": "Centro Deportivo Municipal Plata y Castañar",
     "address": "PASEO PLATA Y CASTAÑAR 7",
@@ -1026,6 +1040,20 @@
     "district": "Barajas",
     "latitude": 40.455320740232835,
     "longitude": -3.5876301858469386
+  },
+  "dae5bf11": {
+    "location_name": "Parque Quinta de los Molinos",
+    "address": "CALLE ALCALA 527",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.44245748722783,
+    "longitude": -3.6217095632137375
+  },
+  "8d347f8b": {
+    "location_name": "Quinta de Torre Arias",
+    "address": "CALLE ALCALA 551",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.443385945708435,
+    "longitude": -3.6182513751654133
   },
   "5e4b8cb1": {
     "location_name": "Centro Sociocultural Juvenil de Moratalaz",
@@ -1110,6 +1138,13 @@
     "district": "Barajas",
     "latitude": 40.46301382809657,
     "longitude": -3.587693324074623
+  },
+  "6ebb77f9": {
+    "location_name": "Auditorio Municipal al aire libre Lola Camarena",
+    "address": "AVENIDA LA GAVIA 13",
+    "district": "VillaDeVallecas",
+    "latitude": 40.37447621683769,
+    "longitude": -3.6101291550314283
   },
   "cf38b0cd": {
     "location_name": "Nave 10 Matadero (antes Naves del Español)",
@@ -1268,6 +1303,12 @@
     "latitude": 40.4420396,
     "longitude": -3.7005144
   },
+  "044f7fc6": {
+    "location_name": "Gran Teatro CaixaBank Príncipe Pío",
+    "address": "de San Vicente, 44",
+    "latitude": 40.420888390866,
+    "longitude": -3.718807697296
+  },
   "d5e60251": {
     "location_name": "Teatro Alcázar",
     "address": "de Alcalá, 20",
@@ -1369,12 +1410,6 @@
     "address": "del Prado, 36",
     "latitude": 40.4111951,
     "longitude": -3.693625
-  },
-  "044f7fc6": {
-    "location_name": "Gran Teatro CaixaBank Príncipe Pío",
-    "address": "de San Vicente, 44",
-    "latitude": 40.420888390866,
-    "longitude": -3.718807697296
   },
   "ed301dfc": {
     "location_name": "IFEMA MADRID",
@@ -1495,6 +1530,12 @@
     "address": "de Castelló, 75",
     "latitude": 40.4305839,
     "longitude": -3.6814985
+  },
+  "d0b9c3cf": {
+    "location_name": "Coliseum",
+    "address": "Teresa de Calcuta, s/n",
+    "latitude": 40.3239098,
+    "longitude": -3.713966
   },
   "868a1c03": {
     "location_name": "Espacio Fundación Telefónica",
@@ -1814,12 +1855,6 @@
     "latitude": 40.414427,
     "longitude": -3.7379076
   },
-  "d0b9c3cf": {
-    "location_name": "Coliseum",
-    "address": "Teresa de Calcuta, s/n",
-    "latitude": 40.3239098,
-    "longitude": -3.713966
-  },
   "8e9bc286": {
     "location_name": "El Sol",
     "address": "de los Jardines, 3",
@@ -2095,12 +2130,6 @@
     "latitude": 40.4158953,
     "longitude": -3.6971466
   },
-  "dc26b20c": {
-    "location_name": "Sala Vesta",
-    "address": "del Barquillo, 29,",
-    "latitude": 40.4230078,
-    "longitude": -3.6956555
-  },
   "50b7e303": {
     "location_name": "Biblioteca Regional de la Comunidad de Madrid Joaquín Leguina",
     "address": "de Ramírez de Prado, 3",
@@ -2124,6 +2153,12 @@
     "address": "Salida y meta localizadas en avenida Menéndez Pelayo, 33",
     "latitude": 40.41822,
     "longitude": -3.678332
+  },
+  "dc26b20c": {
+    "location_name": "Sala Vesta",
+    "address": "del Barquillo, 29,",
+    "latitude": 40.4230078,
+    "longitude": -3.6956555
   },
   "e6855de5": {
     "location_name": "Teatro Príncipe Gran Vía",
@@ -2237,5 +2272,17 @@
     "address": "de Santa María de la Cabeza, 5",
     "latitude": 40.400842,
     "longitude": -3.6984769
+  },
+  "62680f0b": {
+    "location_name": "Fundación Ortega - Marañón",
+    "address": "de Fortuny, 53",
+    "latitude": 40.4348973,
+    "longitude": -3.6906978
+  },
+  "e795bdd1": {
+    "location_name": "Parroquia de Santa Cruz",
+    "address": "de Atocha, 6",
+    "latitude": 40.4145721,
+    "longitude": -3.7051763
   }
 }
