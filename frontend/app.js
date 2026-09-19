@@ -126,13 +126,18 @@ document.addEventListener("click", e => {
   }
 });
 
-// Estilos vectoriales (MapLibre GL via OpenFreeMap). Sin key y gratis.
-// Positron se queda como recordatorio de que antiguamente usabamos
-// raster tiles de CARTO (que ahora requieren key).
+// Estilos vectoriales (MapLibre GL). OpenFreeMap sin key y gratis.
+// CARTO (los mismos Positron/Dark/Voyager) se manda igual que los raster:
+// la key como ?key= en la URL del estilo. Positron como recordatorio de que
+// antiguamente usabamos raster tiles de CARTO (que ahora requieren key).
+const CARTO_KEY = "cb1_3qf3_1_150e779755586a94f36b9fb1";
 const MAP_STYLES = {
   light:   { label: "Claro",   url: "https://tiles.openfreemap.org/styles/positron" },
   dark:    { label: "Oscuro",  url: "https://tiles.openfreemap.org/styles/dark" },
   voyager: { label: "Voyager", url: "https://tiles.openfreemap.org/styles/liberty" },
+  carto_light:   { label: "Claro (CARTO)",   url: "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json?key=" + CARTO_KEY },
+  carto_dark:    { label: "Oscuro (CARTO)",  url: "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json?key=" + CARTO_KEY },
+  carto_voyager: { label: "Voyager (CARTO)", url: "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json?key=" + CARTO_KEY },
 };
 
 // Firebase sync (optional — works without login)
@@ -677,10 +682,12 @@ function initMap() {
   });
   new LocateCtrl().addTo(map);
   const tileKey = Settings.get("mapTile", "voyager");
+  const tileStyle = MAP_STYLES[tileKey] || MAP_STYLES.light;
+  const isCarto = tileStyle.url.includes("basemaps.cartocdn.com");
   baseLayer = L.maplibreGL({
-    style: MAP_STYLES[tileKey]?.url || MAP_STYLES.light.url,
+    style: tileStyle.url,
     attributionControl: {
-      customAttribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://openfreemap.org">OpenFreeMap</a>',
+      customAttribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="' + (isCarto ? "https://carto.com/attributions" : "https://openfreemap.org") + '">' + (isCarto ? "CARTO" : "OpenFreeMap") + '</a>',
     },
   }).addTo(map);
   markersLayer = L.layerGroup().addTo(map);
