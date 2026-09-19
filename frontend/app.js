@@ -126,10 +126,13 @@ document.addEventListener("click", e => {
   }
 });
 
-const MAP_TILES = {
-  light:   { label: "Claro",   url: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" },
-  dark:    { label: "Oscuro",  url: "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png" },
-  voyager: { label: "Voyager", url: "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png" },
+// Estilos vectoriales (MapLibre GL via OpenFreeMap). Sin key y gratis.
+// Positron se queda como recordatorio de que antiguamente usabamos
+// raster tiles de CARTO (que ahora requieren key).
+const MAP_STYLES = {
+  light:   { label: "Claro",   url: "https://tiles.openfreemap.org/styles/positron" },
+  dark:    { label: "Oscuro",  url: "https://tiles.openfreemap.org/styles/dark" },
+  voyager: { label: "Voyager", url: "https://tiles.openfreemap.org/styles/liberty" },
 };
 
 // Firebase sync (optional — works without login)
@@ -380,7 +383,7 @@ let activeSearch = "";
 let activeFormato = sessionStorage.getItem("activeFormato") || "";
 let activeTagFilter = [];
 let currentView = sessionStorage.getItem("currentView") || "list";
-let map = null, markersLayer = null, mapAutofit = false, tileLayer = null;
+let map = null, markersLayer = null, mapAutofit = false, baseLayer = null;
 let picker = null;
 let userLatLng = null;
 let _searchResults = [];   // global search results (across all dates)
@@ -674,9 +677,11 @@ function initMap() {
   });
   new LocateCtrl().addTo(map);
   const tileKey = Settings.get("mapTile", "voyager");
-  tileLayer = L.tileLayer(MAP_TILES[tileKey]?.url || MAP_TILES.light.url, {
-    attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-    maxZoom: 19,
+  baseLayer = L.maplibreGL({
+    style: MAP_STYLES[tileKey]?.url || MAP_STYLES.light.url,
+    attributionControl: {
+      customAttribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://openfreemap.org">OpenFreeMap</a>',
+    },
   }).addTo(map);
   markersLayer = L.layerGroup().addTo(map);
 
@@ -1351,7 +1356,7 @@ function renderUserView() {
   const currentTheme = Settings.get("theme", "clasico");
 
   const tilesHtml = customDropdown("mapTile",
-    Object.entries(MAP_TILES).map(([key, t]) => ({ value: key, label: t.label })),
+    Object.entries(MAP_STYLES).map(([key, t]) => ({ value: key, label: t.label })),
     currentTile, "applyMapTile");
 
   const sources = [...new Set(allData.flatMap(ev => (ev.source || "").split(",").filter(Boolean)))].sort();
@@ -1504,7 +1509,7 @@ function goToUserFilter(filter) {
 
 function applyMapTile(key) {
   Settings.set("mapTile", key);
-  if (tileLayer) tileLayer.setUrl(MAP_TILES[key].url);
+  if (baseLayer?.getMaplibreMap) baseLayer.getMaplibreMap().setStyle(MAP_STYLES[key].url);
   renderUserView();
 }
 
