@@ -126,15 +126,12 @@ document.addEventListener("click", e => {
   }
 });
 
-// Estilos vectoriales (MapLibre GL). OpenFreeMap sin key y gratis.
-// CARTO (los mismos Positron/Dark/Voyager) se manda igual que los raster:
-// la key como ?key= en la URL del estilo. Positron como recordatorio de que
-// antiguamente usabamos raster tiles de CARTO (que ahora requieren key).
+// Estilos vectoriales (MapLibre GL). OpenFreeMap sin key; CARTO requiere key.
 const CARTO_KEY = "cb1_3qf3_1_150e779755586a94f36b9fb1";
 const MAP_STYLES = {
-  light:   { label: "Claro",   url: "https://tiles.openfreemap.org/styles/positron" },
-  dark:    { label: "Oscuro",  url: "https://tiles.openfreemap.org/styles/dark" },
-  voyager: { label: "Voyager", url: "https://tiles.openfreemap.org/styles/liberty" },
+  light:   { label: "Claro (OpenFreeMap)",   url: "https://tiles.openfreemap.org/styles/positron" },
+  dark:    { label: "Oscuro (OpenFreeMap)",  url: "https://tiles.openfreemap.org/styles/dark" },
+  voyager: { label: "Voyager (OpenFreeMap)", url: "https://tiles.openfreemap.org/styles/liberty" },
   carto_light:   { label: "Claro (CARTO)",   url: "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json?key=" + CARTO_KEY },
   carto_dark:    { label: "Oscuro (CARTO)",  url: "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json?key=" + CARTO_KEY },
   carto_voyager: { label: "Voyager (CARTO)", url: "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json?key=" + CARTO_KEY },
