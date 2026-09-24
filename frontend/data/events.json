@@ -1,17 +1,16 @@
 {
   "17aafb1db52678d8": {
     "title": "25 años del Museo de San Isidro. Los Orígenes de Madrid",
-    "description": "Exposición conmemorativa sobre la historia y los orígenes de la ciudad de Madrid en el Museo de San Isidro.",
+    "description": "El museo presenta una selección de quince piezas que recorren la historia de la institución y sus hitos de investigación a lo largo de sus veinticinco años. La muestra propone una narrativa donde las propias piezas explican su contribución al conocimiento de los orígenes de la ciudad.",
     "start_time": "10:00:00",
     "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/Cultura-ocio-y-deporte/25-anos-del-Museo-de-San-Isidro-Los-Origenes-de-Madrid/?vgnextfmt=default&vgnextoid=39b35c3f9fe7f910VgnVCM200000f921e388RCRD&vgnextchannel=7911f073808fe410VgnVCM2000000c205a0aRCRD&",
-    "price": "Gratuito",
+    "price": "Gratis",
     "image": "images/events/12ef488a66d0.jpg",
     "source_url": "https://www.esmadrid.com/agenda/25-anos-museo-san-isidro-origenes-madrid-museo-san-isidro",
     "source": "esmadrid,madrid_agenda",
     "categories": [
       "exposiciones",
-      "gratis",
-      "patrimonio"
+      "gratis"
     ],
     "formato": "exposicion",
     "lid": "0d332ccb"
@@ -1237,15 +1236,16 @@
     "lid": "a15e3fff"
   },
   "459a825cd7e8a48e": {
-    "title": "Concierto de Chano Domínguez",
+    "title": "Chano Domínguez",
     "start_time": "20:00:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=09a97591cd28e910VgnVCM200000f921e388RCRD",
     "source": "esmadrid,madrid_agenda",
     "categories": [
       "conciertos",
-      "flamenco"
+      "cine"
     ],
-    "description": "Actuación del reconocido pianista de jazz, referente en la fusión con el flamenco. Un encuentro magistral con la música.",
+    "description": "El pianista Chano Domínguez acompaña en directo con una nueva propuesta musical la proyección del clásico cinematográfico El amor brujo. El artista interpreta interludios originales que dialogan con la narrativa de la película de Francisco Rovira Beleta.",
+    "price": "24 €",
     "formato": "puntual",
     "lid": "824774c3"
   },
@@ -2140,6 +2140,21 @@
     "formato": "exposicion",
     "lid": "5a2ec7ad"
   },
+  "4f682b71153ffa91": {
+    "title": "Proyección: Coco",
+    "description": "Película de animación sobre Miguel, un joven que sueña con convertirse en músico desafiando las tradiciones de su familia.",
+    "start_time": "12:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=589fdb76c53b0a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "infantil",
+      "gratis"
+    ],
+    "price": "gratis",
+    "formato": "puntual",
+    "lid": "05a2048c"
+  },
   "f1eb5d18d6915f5f": {
     "title": "Espectáculo: Cóctel de Manu Mansilla",
     "description": "Espectáculo de títeres para adultos y adolescentes que explora la condición humana con humor ácido. Una puesta en escena poética desde Argentina.",
@@ -2528,6 +2543,19 @@
     "formato": "exposicion",
     "lid": "040b80fc"
   },
+  "ab9961e2e5ad3732": {
+    "title": "Corazón de Agua (Retiro)",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=250396d88b96f910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros",
+      "gratis"
+    ],
+    "description": "Evento de carácter cultural celebrado en el distrito de Retiro.",
+    "formato": "puntual",
+    "lid": "13acb8c9"
+  },
   "be95e6237c06e13c": {
     "title": "Programa de Correr por Madrid 2026-2027",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=acd5c3dea898f910VgnVCM100000891ecb1aRCRD",
@@ -2552,6 +2580,26 @@
     "price": "Gratis",
     "formato": "puntual",
     "lid": "f91fa53f"
+  },
+  "f0cddaf63fc323a2": {
+    "title": "Taller: Crea tus propios libros",
+    "description": "Actividad infantil de encuadernación creativa donde los niños diseñan sus propias historias. Fomenta la literatura y la creatividad manual.",
+    "start_time": "12:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c6c2b54d414b0a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "talleres",
+      "literatura",
+      "gratis"
+    ],
+    "dates": [
+      "2026-10-24",
+      "2026-11-21"
+    ],
+    "price": "Gratis",
+    "formato": "puntual",
+    "lid": "31352bed"
   },
   "9fe878d78efe2d97": {
     "title": "Taller de creación de instrumentos de percusión",
@@ -2866,6 +2914,20 @@
     "formato": "puntual",
     "lid": "1b4b08af"
   },
+  "eea64a71e7e1073a": {
+    "title": "Concierto: Del Caribe a la Patagonia",
+    "description": "Viaje musical a través de los ritmos latinoamericanos con composiciones de Gardel, Lecuona y Villalobos. Un repertorio que une Caribe y Patagonia.",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=35833893f4ba0a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "price": "gratis",
+    "formato": "puntual",
+    "lid": "f07e42d3"
+  },
   "11c760770c69242b": {
     "title": "Taller: Del tacto a la expresión",
     "description": "Experiencia sensorial que conecta la naturaleza y el patrimonio local mediante la expresión corporal y manual. Actividad familiar que requiere reserva.",
@@ -2909,6 +2971,20 @@
     ],
     "formato": "exposicion",
     "lid": "8d90c6ff"
+  },
+  "da21002ed800bbf0": {
+    "title": "Jornada de deportes de raqueta",
+    "description": "Actividad deportiva para jóvenes de 8 a 14 años enfocada en el aprendizaje y práctica de deportes de raqueta.",
+    "start_time": "11:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=cc636a4e72f6f910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "deportes",
+      "infantil",
+      "gratis"
+    ],
+    "formato": "puntual",
+    "lid": "e2814fc5"
   },
   "dec537732998f643": {
     "title": "Deportes para el Barrio",
@@ -3189,10 +3265,10 @@
   },
   "e7c1d35502e61c5c": {
     "title": "Duermen bajo las aguas",
-    "description": "Representación teatral de la obra Duermen bajo las aguas.",
+    "description": "La obra narra la historia de una joven en la Barcelona de principios del siglo XX cuya vida cambia drásticamente tras la irrupción de la guerra. La pieza explora temas como la resiliencia humana, la búsqueda de esperanza y la fuerza de la amistad ante la adversidad.",
     "start_time": "18:30:00",
     "url": "https://www.teatroespanol.es/duermen-bajo-las-aguas-0",
-    "price": "General: 10 €",
+    "price": "10 €",
     "image": "images/events/703007da0e99.jpg",
     "_image_candidates": [
       "https://estaticos.esmadrid.com/cdn/farfuture/t8HOYta76LTLNBAHOP8FSl-HXIaymCBKaFd4vtPNKBI/mtime:1763977755/sites/default/files/eventos/eventos/duermen_bajo_las_aguas_-_la_petite_mort.jpg",
@@ -3291,6 +3367,21 @@
     "formato": "exposicion",
     "lid": "b0b9722e"
   },
+  "410b1aaf4dc74822": {
+    "title": "El baúl viajero",
+    "description": "Dos intrépidos viajeros recorren el mundo llenando su baúl con valores como la amistad y la tolerancia. Una obra teatral que utiliza cuentos para transmitir enseñanzas vitales.",
+    "start_time": "18:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8da30b378fea0a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "infantil",
+      "gratis"
+    ],
+    "price": "0",
+    "formato": "puntual",
+    "lid": "f6706f88"
+  },
   "d4ecd1de867ce14f": {
     "title": "El cafecito del mes",
     "start_time": "16:30:00",
@@ -3363,14 +3454,15 @@
     "lid": "6d0e53b1"
   },
   "373c937ee87d026a": {
-    "title": "Teatro: El nudo gordiano",
+    "title": "El nudo gordiano",
     "start_time": "19:30:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=0878ced0f196e910VgnVCM200000f921e388RCRD",
     "source": "esmadrid,madrid_agenda",
     "categories": [
       "teatro"
     ],
-    "description": "Representación teatral de drama contemporáneo.",
+    "description": "Una madre y una profesora se enfrentan en un duelo dramático semanas después de un trágico suceso escolar. La obra explora los límites de la educación, la culpa y el amor materno a través de un intenso thriller verbal.",
+    "price": "Desde 18 €",
     "formato": "exposicion",
     "lid": "b1f7c00c"
   },
@@ -3420,10 +3512,10 @@
   },
   "20b7e1dcd5589e7d": {
     "title": "El público",
-    "description": "Representación teatral de la obra dramática escrita por Federico García Lorca.",
+    "description": "Adaptación teatral dirigida por Alfonso Zurro sobre la obra surrealista de Federico García Lorca que cuestiona la conciencia humana y la libertad. El montaje explora los deseos reprimidos y la identidad a través de una propuesta escénica innovadora.",
     "start_time": "19:00:00",
     "url": "https://www.teatrofernangomez.es/actividades/el-publico-0",
-    "price": "Entrada general: 22 €\nTarifa reducida: 18 € \nAmigos TFG: 15 €\nGrupos (+ de 20): 17 €",
+    "price": "22 €",
     "image": "images/events/35b8150f5277.jpg",
     "source_url": "https://www.esmadrid.com/agenda/publico-fernan-gomez-centro-cultural-villa",
     "source": "esmadrid,madrid_agenda",
@@ -4722,9 +4814,11 @@
     "source": "esmadrid,madrid_agenda",
     "categories": [
       "circo",
-      "destacado"
+      "teatro",
+      "infantil"
     ],
-    "description": "Espectáculo de artes circenses con acróbatas y números de gran formato. Una propuesta destacada de entretenimiento familiar.",
+    "description": "La compañía mexicana presenta un espectáculo que combina la herencia del circo clásico con una puesta en escena contemporánea y música en vivo. La producción incluye números de acrobacias y disciplinas circenses en un montaje diseñado para todos los públicos.",
+    "price": "Desde 17 €",
     "formato": "exposicion",
     "lid": "e411800a"
   },
@@ -4918,6 +5012,19 @@
     "formato": "puntual",
     "lid": "040b80fc"
   },
+  "ac081de1f977469c": {
+    "title": "Guerrero",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5b4496d88b96f910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "danza",
+      "gratis"
+    ],
+    "description": "Espectáculo de danza que explora la fuerza y el movimiento corporal en una puesta en escena única.",
+    "price": "0€",
+    "formato": "puntual"
+  },
   "146b5bcb61b5aad4": {
     "title": "Taller: Hábitos saludables que transforman tu bienestar",
     "start_time": "18:00:00",
@@ -4954,7 +5061,8 @@
     "categories": [
       "deportes"
     ],
-    "description": "Evento deportivo de alto rendimiento que recorre diversos parajes de Madrid. Una prueba exigente para atletas de triatlón.",
+    "description": "Prueba deportiva de triatlón que comprende tres modalidades: Short, Half (Campeonato de Madrid de Media Distancia) y Half Aquabike. El recorrido combina tramos de natación en el lago, ciclismo y carrera a pie por el entorno de la Casa de Campo.",
+    "price": "Desde 70 €",
     "formato": "puntual",
     "lid": "ffd56673"
   },
@@ -5023,6 +5131,21 @@
     "price": "Gratis",
     "formato": "exposicion",
     "lid": "7fb097ff"
+  },
+  "8f0cc17a9cddeee1": {
+    "title": "Historia de una Muñeca Abandonada - Teatro Silfo",
+    "description": "Obra teatral basada en el texto de Alfonso Sastre que cuestiona la propiedad y el cuidado afectivo. Una historia conmovedora sobre una muñeca que pasa de mano en mano.",
+    "start_time": "18:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=ad5497cc9bea0a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "infantil",
+      "gratis"
+    ],
+    "price": "0",
+    "formato": "puntual",
+    "lid": "6d0e53b1"
   },
   "6dd4fbc9dbc3f412": {
     "title": "Historia del boxeo en España por Manolo Calvo",
@@ -5612,15 +5735,15 @@
   },
   "369c5b6a1d93cece": {
     "title": "Juan López",
-    "description": "Presentación musical del artista Juan López.",
+    "description": "Una intervención artística site-specific que convierte la arquitectura del espacio en un lenguaje propio a través del sonido, la imagen y la escultura. La muestra explora la relación entre el pasado disciplinario del edificio y el presente mediante elementos sensoriales.",
     "start_time": "10:00:00",
     "url": "https://www.condeduquemadrid.es/actividades/juan-lopez",
-    "price": "gratis",
+    "price": "Gratis",
     "image": "images/events/2aeee998393b.jpg",
     "source_url": "https://www.esmadrid.com/agenda/juan-lopez-conde-duque",
     "source": "esmadrid,madrid_agenda",
     "categories": [
-      "conciertos",
+      "exposiciones",
       "gratis"
     ],
     "formato": "exposicion",
@@ -5746,6 +5869,21 @@
     "formato": "exposicion",
     "lid": "040b80fc"
   },
+  "626e813cd17d4241": {
+    "title": "Kay Robot - Ameztu Teatro",
+    "description": "Obra teatral infantil sobre un niño que, por miedo al futuro, decide aprender a construir robots. Una historia sobre la tecnología vista desde la infancia.",
+    "start_time": "13:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=dd0397cc9bea0a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "infantil",
+      "gratis"
+    ],
+    "price": "0",
+    "formato": "puntual",
+    "lid": "350798c9"
+  },
   "c85a4dae59f0c7b7": {
     "title": "Ciclo de percusión: La Bomba del Tiempo",
     "start_time": "19:00:00",
@@ -5805,6 +5943,21 @@
     "price": "0€",
     "formato": "puntual",
     "lid": "bc9e186b"
+  },
+  "2b73d713c911449c": {
+    "title": "La Danza del Metal",
+    "description": "Instalación artística e interactiva que combina elementos de juego y circo mediante el uso de metal y materiales reciclados. Una experiencia visual y participativa.",
+    "start_time": "10:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=ea0097cc9bea0a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis",
+      "circo"
+    ],
+    "price": "0",
+    "formato": "puntual",
+    "lid": "350798c9"
   },
   "e0aaf573c5b1a003": {
     "title": "La dolce magia",
@@ -6179,6 +6332,17 @@
     "formato": "puntual",
     "lid": "6d0e53b1"
   },
+  "869203189063674d": {
+    "title": "Lali Aygüadé Company",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=f7185a847243a910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "danza"
+    ],
+    "description": "Espectáculo de danza contemporánea.",
+    "formato": "puntual",
+    "lid": "4c99e2c3"
+  },
   "81f290eb0b940ed7": {
     "title": "Conferencia: Las colonias de Madrid",
     "description": "El autor Pedro Zuazua Gil ofrece una charla sobre la historia y el urbanismo de las colonias de Madrid.",
@@ -6193,6 +6357,20 @@
     "price": "0€",
     "formato": "puntual",
     "lid": "ebf96d4f"
+  },
+  "3a142e85e411d002": {
+    "title": "Las Corrientes",
+    "description": "Tras un viaje a Suiza, Lina regresa a Buenos Aires donde un cambio interno hace aflorar un pasado que creía superado.",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d4b69204e2fa0a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "gratis"
+    ],
+    "price": "0",
+    "formato": "puntual",
+    "lid": "f91fa53f"
   },
   "8ad8ae530bdaac30": {
     "title": "Las mejores historias jamás contadas: Los grandes embaucadores",
@@ -6281,6 +6459,18 @@
     "price": "gratis",
     "formato": "puntual",
     "lid": "402a0176"
+  },
+  "2a656148e00f910a": {
+    "title": "Concierto: Lê Quan Ninh",
+    "start_time": "19:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=0d75c7b4fc1bf910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos"
+    ],
+    "description": "Presentación musical del artista Lê Quan Ninh.",
+    "formato": "puntual",
+    "lid": "bb29009c"
   },
   "0ce22aa9313874b5": {
     "title": "Lecturas dramatizadas",
@@ -7002,6 +7192,20 @@
     "formato": "puntual",
     "lid": "65a790aa"
   },
+  "4ec1e14760238242": {
+    "title": "Circo: Montando el circo",
+    "description": "El director de 'El gran circus' se enfrenta a un problema cuando sus artistas deciden instalarse permanentemente en la ciudad.",
+    "start_time": "18:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=31aa69da383c0a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "circo",
+      "aire libre",
+      "gratis"
+    ],
+    "price": "gratis",
+    "formato": "puntual"
+  },
   "8f5af1784280d19b": {
     "title": "MoscARTdo: Taller de Swing",
     "description": "Taller de iniciación al baile swing para jóvenes, fomentando el ocio activo y el aprendizaje de ritmos de danza social.",
@@ -7023,7 +7227,8 @@
     "categories": [
       "teatro"
     ],
-    "description": "Obra de teatro contemporánea.",
+    "description": "Una pieza teatral que funde cuatro grandes obras de Antón Chéjov para construir un retrato contemporáneo sobre la incertidumbre y el desencanto. El montaje explora los conflictos del siglo XXI a través de personajes que enfrentan la pérdida de ideales y la ansiedad colectiva.",
+    "price": "20 €",
     "formato": "exposicion",
     "lid": "c9c45e0d"
   },
@@ -7146,6 +7351,20 @@
     "formato": "puntual",
     "lid": "c2271205"
   },
+  "3199bfbbf0f3c369": {
+    "title": "Multiverso: club de lectura de cómic juvenil",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=844dd12b33c50a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "literatura",
+      "gratis"
+    ],
+    "description": "Punto de encuentro para jóvenes lectores donde compartir impresiones y recomendaciones sobre el mundo del cómic.",
+    "price": "gratis",
+    "is_multi_event": true,
+    "formato": "festival",
+    "lid": "5b0073c9"
+  },
   "b71e676991b615d4": {
     "title": "Música con corazón",
     "description": "Recital musical destinado a conectar emocionalmente con el público.",
@@ -7202,17 +7421,16 @@
     "lid": "c2271205"
   },
   "9875dce1ab13cde5": {
-    "title": "Nada Espontáneo. Una mirada a los 90",
+    "title": "Nada espontáneo. Una mirada a los 90",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=0e24a96682bae910VgnVCM200000f921e388RCRD",
     "source": "esmadrid,madrid_agenda",
     "categories": [
       "exposiciones",
-      "conferencias",
+      "fotografía",
       "gratis"
     ],
-    "description": "Ciclo temático que explora la cultura, el arte y la sociedad de la década de los 90. Un programa que agrupa diversas actividades sobre la estética y los cambios del fin de siglo.",
-    "price": "0",
-    "is_multi_event": true,
+    "description": "Exposición fotográfica de Jesús Ugalde que reúne retratos de figuras icónicas de la música española y del cine durante la década de los 90. La muestra incluye instantáneas inéditas y momentos únicos capturados en la trayectoria del autor.",
+    "price": "Gratis",
     "formato": "exposicion",
     "lid": "95a62894"
   },
@@ -7703,7 +7921,8 @@
     "categories": [
       "teatro"
     ],
-    "description": "Representación teatral contemporánea que explora la identidad y el entorno personal.",
+    "description": "Una obra que explora el viaje emocional de una actriz hacia la recuperación tras un colapso provocado por sus adicciones. El montaje plantea una profunda reflexión sobre el dolor, el deseo de sanar y la fragilidad humana.",
+    "price": "Desde 6 €",
     "formato": "exposicion",
     "lid": "b1f7c00c"
   },
@@ -7875,6 +8094,21 @@
     "formato": "festival",
     "lid": "824774c3"
   },
+  "1377b5885e3559e5": {
+    "title": "Pon tu corazón. Nina Theatre",
+    "description": "Espectáculo de títeres sin palabras con estética de cabaret, apto para público familiar. Una propuesta internacional que utiliza objetos cotidianos para narrar historias.",
+    "start_time": "12:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=fba197cc9bea0a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis",
+      "teatro"
+    ],
+    "price": "0",
+    "formato": "puntual",
+    "lid": "350798c9"
+  },
   "de70fa60cac227cb": {
     "title": "Pop: Coro Alderaán",
     "description": "Concierto gratuito de música coral a cargo del Coro Alderaán. Se requiere recogida previa de invitaciones.",
@@ -7901,6 +8135,19 @@
     "description": "Sesión grupal para aprender técnicas vocales y disfrutar de la música coral.",
     "formato": "exposicion",
     "lid": "32296fa0"
+  },
+  "56f1ec950b1336ba": {
+    "title": "Power Station",
+    "description": "Documental inspirador sobre cómo vecinos de una calle transforman su comunidad mediante la energía solar. Un ejemplo de revolución energética local.",
+    "start_time": "20:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=569bb375a2ea0a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
   },
   "017739d680f763a2": {
     "title": "Presentación del libro: Mi torero III",
@@ -8404,6 +8651,19 @@
     "formato": "puntual",
     "lid": "02b25093"
   },
+  "9e322e6349a52f73": {
+    "title": "Rock & Music: Tributo a los clásicos",
+    "description": "Concierto en directo con una selección de grandes éxitos del rock y el pop interpretados por músicos profesionales.",
+    "start_time": "18:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=ae761cb8b93b0a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "price": "0",
+    "formato": "puntual"
+  },
   "4581ecec149488a1": {
     "title": "Rodrigo García: Están jodidos / Dicen que se alegran",
     "start_time": "19:30:00",
@@ -8831,6 +9091,35 @@
     "price": "0€",
     "formato": "puntual",
     "lid": "69302fef"
+  },
+  "a8bdd78064e7f928": {
+    "title": "Super Nature",
+    "description": "Obra cinematográfica colaborativa filmada en Super 8 que celebra nuestra conexión con el medio ambiente. Un ensayo visual sobre la naturaleza.",
+    "start_time": "19:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=ee9bb375a2ea0a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado",
+      "naturaleza"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
+  },
+  "b3885cf7d4b3bda8": {
+    "title": "Taller de creación de Títeres - Festival Titirimadroño",
+    "description": "Actividad creativa de marionetas en colaboración con la Asociación Barró. Forma parte del programa cultural del Festival Titirimadroño en Puente de Vallecas.",
+    "start_time": "11:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=dcc097cc9bea0a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis",
+      "talleres"
+    ],
+    "price": "0",
+    "formato": "festival",
+    "lid": "6d0e53b1"
   },
   "d3b0515e94a27792": {
     "title": "Taller Creativo Infantil de Lengua Macedonia",
@@ -9694,15 +9983,15 @@
   },
   "35b44f1afe554a89": {
     "title": "Teatro de grandeza. Arte, arquitectura y ciudad en el Madrid Barroco",
-    "description": "Explora el concepto de 'Teatro de Grandeza' a través del arte, la arquitectura y el urbanismo del Madrid Barroco. Descubre cómo la ciudad se transformó en un escenario monumental durante este periodo.",
+    "description": "Esta exposición explora el esplendor artístico, arquitectónico y urbanístico del Madrid de los siglos XVI a XVIII. La muestra reúne más de 180 obras procedentes de prestigiosas instituciones culturales nacionales e internacionales.",
     "start_time": "10:00:00",
     "url": "https://www.teatrofernangomez.es/actividades/teatro-de-grandeza-arte-arquitectura-y-ciudad-en-el-madrid-barroco",
-    "price": "Acceso libre y gratuito",
+    "price": "Gratis",
     "image": "images/events/5a3b5f4a5db5.jpg",
     "source_url": "https://www.esmadrid.com/agenda/teatro-grandeza-arte-arquitectura-ciudad-madrid-barroco-teatro-fernan-gomez-centro-cultural",
     "source": "esmadrid,madrid_agenda",
     "categories": [
-      "destacado",
+      "exposiciones",
       "patrimonio",
       "gratis"
     ],
@@ -10066,6 +10355,24 @@
     "formato": "puntual",
     "lid": "c6d98224"
   },
+  "d547759727787b13": {
+    "title": "Festival de Títeres a cielo abierto 2026",
+    "start_time": "12:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=131ac3cc9e060a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "teatro",
+      "aire libre",
+      "destacado",
+      "gratis"
+    ],
+    "description": "Ciclo de representaciones de teatro de marionetas al aire libre para público infantil.",
+    "price": "0",
+    "is_multi_event": true,
+    "formato": "festival",
+    "lid": "07486b5c"
+  },
   "633f7e03103d82e4": {
     "title": "tocajugarMADERA - Vicalvaro",
     "start_time": "17:00:00",
@@ -10281,16 +10588,15 @@
   },
   "6400558ee1a43f29": {
     "title": "Un señor... cualquiera",
-    "description": "Representación teatral que explora la cotidianidad a través de un personaje singular. Obra destacada de la cartelera actual.",
+    "description": "La obra rescata un texto de la escritora Mercedes Pinto perteneciente a la Generación del 27, cuestionando las convenciones sociales y defendiendo la independencia de la mujer. Es un alegato artístico que utiliza recursos como personajes simbólicos y teatro de títeres para denunciar el conformismo burgués.",
     "start_time": "19:30:00",
     "url": "https://www.teatrofernangomez.es/actividades/un-senorcualquiera",
-    "price": "Entrada general: 20 €Carné joven, mayores de 65, familia numerosa, discapacidad y acompañante, desempleados y carné de bibliotecas municipales de Madrid: 16 €Amigos TFG: 14 €Grupos (+ de 20): 15 €Discapacidad y acompañante: 16 €Personas con movilidad reducida y acompañante: 14,5 €Menores de 14 años: 15 €",
+    "price": "20 €",
     "image": "images/events/60e7c50cb4e1.jpg",
     "source_url": "https://www.esmadrid.com/agenda/senor-cualquiera-fernan-gomez-centro-cultural-villa",
     "source": "esmadrid,madrid_agenda",
     "categories": [
       "teatro",
-      "destacado",
       "gratis"
     ],
     "formato": "exposicion",
@@ -10425,16 +10731,17 @@
   },
   "4de930ccc8344752": {
     "title": "Verborrea",
-    "description": "Evento de artes escénicas o monólogos de temática contemporánea.",
+    "description": "Este es el estreno absoluto de Verborrea, el nuevo proyecto de Pablo Remón, protagonizado por Javier Cámara, Israel Elejalde, Marta Nieto y Emilio Tomé. La obra reconstruye el universo de una ficticia banda punk de los años 80 para reflexionar sobre el paso del tiempo, los sueños incumplidos y la amistad.",
     "start_time": "19:30:00",
     "url": "https://www.nave10matadero.es/actividades/verborrea",
-    "price": "15,75 - 21 €",
+    "price": "Desde 15,75 €",
     "image": "images/events/a4d5b73e47ba.jpg",
     "source_url": "https://www.esmadrid.com/agenda/verborrea-nave-10-matadero",
     "source": "esmadrid,madrid_agenda",
     "categories": [
       "teatro",
-      "comedia"
+      "comedia",
+      "accesible"
     ],
     "formato": "exposicion",
     "lid": "cf38b0cd"
@@ -10511,6 +10818,20 @@
     "price": "0",
     "formato": "puntual",
     "lid": "05a2048c"
+  },
+  "b6d0b73e2aeaf1de": {
+    "title": "Viaje cultural: Ocaña y Yepes",
+    "description": "Visita guiada a los municipios de Ocaña y Yepes, centrada en el patrimonio histórico y cultural de la zona. Inscripciones disponibles en el Centro Cultural Zazuar con posterior sorteo de plazas.",
+    "start_time": "08:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=529cd1f04c3b0a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "patrimonio",
+      "gratis"
+    ],
+    "formato": "puntual",
+    "lid": "f07e42d3"
   },
   "c2c17e4ca39cd3b4": {
     "title": "Viaje cultural: Valle de los Neandertales y Monasterio de El Paular",
@@ -10827,23 +11148,9 @@
     "formato": "exposicion",
     "lid": "97507349"
   },
-  "85045ffa7f22634a": {
-    "title": "XVI Carrera Menudos Corazones 2026 - Bimbo Global Race",
-    "start_time": "09:30:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=27909e13a3b70a10VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "deportes",
-      "destacado"
-    ],
-    "description": "Evento deportivo solidario que promueve la actividad física y el apoyo a la causa de la asociación Menudos Corazones. Carrera abierta a participantes de distintas edades.",
-    "price": "Consultar inscripción",
-    "formato": "puntual",
-    "lid": "bae04585"
-  },
   "b6a3d0f96ee15fc4": {
     "title": "XVII Carrera Popular del Corazón 2026",
-    "description": "Evento deportivo de gran escala enfocado en la promoción de la salud cardiovascular. Una cita tradicional para corredores de todos los niveles.",
+    "description": "Evento deportivo solidario que promueve la vida sana y la prevención de las enfermedades cardiovasculares mediante diversas pruebas atléticas. Incluye modalidades de carrera, marcha popular y actividades infantiles adaptadas para todas las edades.",
     "start_time": "09:00:00",
     "url": "https://www.carrerapopulardelcorazon.com/",
     "price": "Inscripción carrera presencial\nInscripción carrera virtual",
@@ -10856,9 +11163,8 @@
     "source": "esmadrid,madrid_agenda",
     "categories": [
       "deportes",
-      "bienestar"
+      "infantil"
     ],
-    "is_multi_event": true,
     "formato": "puntual",
     "lid": "7505ff95"
   },
@@ -10898,6 +11204,19 @@
     ],
     "description": "Notificación sobre el sorteo de la letra para la adjudicación de plazas en los talleres públicos del periodo 2026-2027.",
     "formato": "exposicion"
+  },
+  "d36dd92ad7085d2e": {
+    "title": "Proyección: Yanuni",
+    "description": "Documental sobre la lucha de la líder indígena Juma Xipaia en defensa de la Amazonia. Un relato sobre resistencia frente a la explotación ilegal.",
+    "start_time": "20:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=2e5bb375a2ea0a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
   },
   "edfc09a35c04b0f6": {
     "title": "Yincana extrema: desafío climático",
@@ -12325,16 +12644,15 @@
   },
   "afc36fd2adeeccd4": {
     "title": "Gloria Fuertes (hoy)",
-    "description": "Espectáculo musical o recital basado en la obra de la poeta Gloria Fuertes.",
+    "description": "Exposición que recorre la vida y la obra de la poetisa Gloria Fuertes a través de sus poemas y fotografías personales. La muestra explora sus reflexiones sobre temas universales y su mirada hacia la realidad social del siglo XX.",
     "start_time": "16:00:00",
     "url": "https://casalector.fundaciongsr.org/gloria-fuertes-hoy/",
-    "price": "0",
+    "price": "Gratis",
     "image": "images/events/81915be752c9.jpg",
     "source_url": "https://www.esmadrid.com/agenda/gloria-fuertes-hoy-casa-lector-matadero",
     "source": "esmadrid",
     "categories": [
-      "conciertos",
-      "literatura",
+      "exposiciones",
       "gratis"
     ],
     "formato": "exposicion",
@@ -12705,19 +13023,19 @@
   },
   "bd8d768274bcef72": {
     "title": "Los tres cerditos",
-    "description": "Versión teatral del clásico cuento infantil a cargo de la Cía. Tropos Teatro. Una historia familiar sobre el esfuerzo y la astucia.",
+    "description": "Una propuesta teatral infantil que combina humor y ternura con canciones para enseñar valores como el esfuerzo y el compañerismo. El espectáculo busca ofrecer una experiencia mágica y educativa para disfrutar en familia.",
     "start_time": "11:00:00",
     "url": "https://www.teatrosohomadrid.com/es/ficha-espectaculo.php?7dbd5da1",
-    "price": "gratis",
+    "price": "Desde 10 €",
     "image": "images/events/bec43566bae0.jpg",
     "source_url": "https://www.esmadrid.com/agenda/tres-cerditos-teatro-soho-madrid",
     "source": "esmadrid",
     "categories": [
-      "infantil",
       "teatro",
-      "gratis"
+      "infantil"
     ],
-    "formato": "exposicion",
+    "is_multi_event": true,
+    "formato": "festival",
     "lid": "f8afdb46"
   },
   "58a48d6cef5ea395": {
@@ -13669,21 +13987,6 @@
     ],
     "formato": "exposicion",
     "lid": "4869348f"
-  },
-  "d5ccc83261bc715b": {
-    "title": "Rayo Vallecano - RCD Espanyol (LALIGA EA SPORTS)",
-    "description": "Los madrileños reciben en casa al conjunto barcelonés en un encuentro correspondiente a la competición de liga. El partido enfrenta a ambos equipos en el estadio del Rayo Vallecano.",
-    "start_time": "19:00:00",
-    "url": "https://www.rayovallecano.es/partidos/temporada-2026-2027-laliga-ea-sports-6-rayo-vallecano-vs-rcd-espanyol-de-barcelona-2978",
-    "price": "Consultar página oficial",
-    "image": "images/events/87ad14cc62be.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/rayo-vallecano-rcd-espanyol-laliga-ea-sports-estadio-butarque",
-    "source": "esmadrid",
-    "categories": [
-      "deportes"
-    ],
-    "formato": "exposicion",
-    "lid": "2f59b0c5"
   },
   "f5332175337b2a0a": {
     "title": "Ilustres ignorantes",
@@ -15320,26 +15623,6 @@
     "formato": "exposicion",
     "lid": "df925a11"
   },
-  "af9cd87c5aa0c172": {
-    "title": "El hambre imposible",
-    "description": "Una performance que explora el concepto del estigma y cuestiona la idea de normalidad mediante la autoficción y la creación sonora en directo. La pieza reivindica las experiencias situadas en los márgenes sociales a través de un lenguaje multidisciplinar.",
-    "start_time": "21:00:00",
-    "url": "https://teatrodelbarrio.com/el-hambre-imposible/",
-    "price": "16 €",
-    "image": "images/events/ad87e4b3047e.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/pFkfGulB8GK3jDSFGyRVQFxNaxvumkCdyZxu5TLLLZ8/mtime:1783754960/sites/default/files/eventos/eventos/el-hambre-imposible.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/9DfS63GQi7ZVuARlHZRDvTlwUuQgk1uV5-m7uQKD-TA/mtime:1783754977/sites/default/files/eventos/eventos/el-hambre-imposible-2.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/hambre-imposible-teatro-barrio",
-    "source": "esmadrid",
-    "categories": [
-      "teatro",
-      "danza"
-    ],
-    "formato": "exposicion",
-    "lid": "f9c4232a"
-  },
   "2567adfc634cb9e3": {
     "title": "Illustraciencia 13",
     "description": "Esta exposición presenta las obras seleccionadas del 13er Premio de Ilustración Científica y de la Naturaleza, un certamen internacional que promueve la ilustración como herramienta de comunicación científica. La muestra combina el rigor de la investigación con la sensibilidad artística para explorar especies animales, vegetales y fenómenos naturales.",
@@ -15546,10 +15829,10 @@
   },
   "f1a67b30718c934a": {
     "title": "Vendrán los alienígenas y tendrán tus ojos",
-    "description": "Evento de exhibición artística con propuestas vanguardistas.",
+    "description": "Esta obra fusiona el teatro íntimo con la ciencia ficción para explorar los límites del deseo, el cuerpo y las relaciones afectivas. A través de un estilo poético, el montaje reflexiona sobre la política de los afectos y la crisis del amor en el mundo contemporáneo.",
     "start_time": "19:30:00",
     "url": "https://www.nave10matadero.es/actividades/vendran-los-alienigenas-y-tendran-tus-ojos",
-    "price": "Gratis",
+    "price": "Desde 15,75 €",
     "image": "images/events/aa07c2dfa236.jpg",
     "_image_candidates": [
       "https://estaticos.esmadrid.com/cdn/farfuture/-BQDF001ZO9H2gK8LF5k8Ue_n4IJ5MgqwGBCXhKA2ck/mtime:1781189493/sites/default/files/eventos/eventos/alien.png",
@@ -15559,8 +15842,8 @@
     "source_url": "https://www.esmadrid.com/agenda/vendran-alienigenas-tendran-tus-ojos-nave-10-matadero",
     "source": "esmadrid",
     "categories": [
-      "exposiciones",
-      "gratis"
+      "teatro",
+      "danza"
     ],
     "formato": "exposicion",
     "lid": "cf38b0cd"
@@ -15986,21 +16269,6 @@
     "formato": "festival",
     "lid": "e42e9264"
   },
-  "353d1993e13adf12": {
-    "title": "Kitty, Daisy & Lewis",
-    "description": "El trío británico presenta un directo que repasa su trayectoria musical, caracterizada por una enérgica mezcla de sonidos rock’n’roll, swing y country. La actuación destaca por la versatilidad de los artistas al tocar múltiples instrumentos y su pasión por los ritmos clásicos.",
-    "start_time": "21:00:00",
-    "url": "https://www.kittydaisyandlewis.com/",
-    "price": "Desde 30,50 €",
-    "image": "images/events/ff20865d7f11.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/kitty-daisy-lewis-sala-mon-live",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "formato": "puntual",
-    "lid": "871b85d1"
-  },
   "cc22371d2c2332e5": {
     "title": "DroneArt Show: Harry Potter™",
     "description": "Espectáculo multisensorial que recrea momentos icónicos del universo Harry Potter mediante 1200 drones sincronizados con bandas sonoras originales. La experiencia al aire libre se complementa con música en directo y efectos lumínicos interactivos.",
@@ -16024,20 +16292,6 @@
     ],
     "formato": "exposicion",
     "lid": "e2c2b499"
-  },
-  "6d887aae839b0c3d": {
-    "title": "Atlético de Madrid - Club Atlético Osasuna (LALIGA EA SPORTS)",
-    "description": "El conjunto colchonero disputa la sexta jornada de liga recibiendo al club rojillo en el estadio. El encuentro forma parte del calendario oficial de la temporada de fútbol.",
-    "url": "https://www.atleticodemadrid.com/ ",
-    "price": "Consultar página oficial",
-    "image": "images/events/ad1cc420550b.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/atletico-madrid-club-atletico-osasuna-laliga-ea-sports-estadio-metropolitano",
-    "source": "esmadrid",
-    "categories": [
-      "deportes"
-    ],
-    "formato": "puntual",
-    "lid": "2b9a4735"
   },
   "9ef91ee12e6a88ce": {
     "title": "Surge Madrid 2026",
@@ -16166,9 +16420,9 @@
   },
   "d0ccef301f4ad0ce": {
     "title": "L.E.V. Matadero 2026",
-    "description": "Festival internacional de electrónica visual y arte digital. Un evento paraguas que reúne múltiples performances, instalaciones y conciertos.",
+    "description": "Un festival dedicado a la creación sonora electrónica, el arte digital y las realidades extendidas que explora los vínculos entre cuerpo, tecnología y entorno digital. El evento presenta un recorrido por propuestas contemporáneas mediante instalaciones, experiencias inmersivas, conciertos y performances audiovisuales.",
     "url": "https://levfestival.com/",
-    "price": "gratis",
+    "price": "Consultar página oficial",
     "image": "images/events/ef1e57ec7896.jpg",
     "_image_candidates": [
       "https://estaticos.esmadrid.com/cdn/farfuture/XmQFimM8JcjKK0lV_fPuXUyeBPxBCcGjdT3qD1PmhB4/mtime:1785236907/sites/default/files/eventos/eventos/lev_2206.png",
@@ -16179,10 +16433,10 @@
     "source_url": "https://www.esmadrid.com/agenda/lev-matadero-matadero-madrid",
     "source": "esmadrid",
     "categories": [
-      "destacado",
-      "gratis",
       "conciertos",
-      "exposiciones"
+      "exposiciones",
+      "danza",
+      "teatro"
     ],
     "is_multi_event": true,
     "formato": "puntual",
@@ -16324,7 +16578,7 @@
   },
   "2fb427babf88d1dd": {
     "title": "Antonio Arias",
-    "description": "Actuación en directo del músico y compositor granadino Antonio Arias. Disfruta de una velada musical única con uno de los referentes del rock independiente español.",
+    "description": "El músico presenta un proyecto que fusiona el rock alternativo con la espiritualidad y los ritmos de la música gnawa del norte de África. Una propuesta artística que explora la conexión entre lo espiritual y lo terrenal a través del trance musical.",
     "start_time": "20:00:00",
     "url": "https://www.condeduquemadrid.es/actividades/antonio-arias-mapa-del-trance",
     "price": "22 €",
@@ -16478,13 +16732,10 @@
   },
   "7b7d640d50949d3d": {
     "title": "Ibercaja Madrid Corre por Madrid 2026",
-    "description": "Evento deportivo anual de running que recorre las calles emblemáticas de Madrid. Carrera popular abierta a la participación ciudadana.",
+    "description": "Esta popular carrera popular recorre los puntos más emblemáticos del centro de la ciudad promoviendo el deporte entre la ciudadanía. La edición de este año rinde un homenaje cultural a la Generación del 27.",
     "start_time": "09:00:00",
-    "address": "Castellana, 133",
-    "latitude": 40.46,
-    "longitude": -3.69,
     "url": "https://madridcorrepormadrid.org/",
-    "price": "Dorsales 1 – 5000 (o hasta el 30 de junio 2026): 18,60 € (2€ donativo solidario)\nDorsales 5001 – 10 000 (o desde el 30 de junio 2026): 20,60 € (2€ donativo solidario)\nConsultar página oficial",
+    "price": "Desde 18,60 €",
     "image": "images/events/2bd67f54588a.jpg",
     "_image_candidates": [
       "https://estaticos.esmadrid.com/cdn/farfuture/twidBaRhVpYuBxOAmD0P42DS30LZp_De0P_q2ohBkGQ/mtime:1781599410/sites/default/files/eventos/eventos/corre_por.png",
@@ -16495,10 +16746,10 @@
     "source_url": "https://www.esmadrid.com/agenda/madrid-corre-madrid",
     "source": "esmadrid",
     "categories": [
-      "deportes",
-      "destacado"
+      "deportes"
     ],
-    "formato": "puntual"
+    "formato": "puntual",
+    "lid": "69cfba74"
   },
   "2661f35559064509": {
     "title": "Festival Somos Infinitos",
@@ -20653,5 +20904,235 @@
     ],
     "formato": "puntual",
     "lid": "1f1e0e14"
+  },
+  "823e9bc8115b5950": {
+    "title": "El Sueño de Nirina",
+    "description": "Esta ópera, nacida en Madagascar y protagonizada por jóvenes artistas, fusiona música y danza como herramientas de transformación social. La obra es un proyecto colaborativo que conecta culturas a través de una historia creada a partir de las experiencias reales de sus intérpretes.",
+    "start_time": "20:00:00",
+    "url": "https://www.umusic-hotels.com/es/umusic-hotel-madrid/teatro-albeniz",
+    "price": "Desde 20 €",
+    "image": "images/events/0b1b19535ab2.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/sueno-nirina-umusic-hotel-teatro-albeniz",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos",
+      "danza",
+      "teatro",
+      "ópera"
+    ],
+    "formato": "puntual",
+    "lid": "22fd9956"
+  },
+  "94dec0be353f7011": {
+    "title": "Música que nos une",
+    "description": "La Capilla Musical de San Antonio de los Alemanes interpreta un amplio repertorio que abarca desde el Renacimiento hasta el siglo XXI. El programa incluye diversos géneros como arias de ópera, lied, zarzuela, canción popular y música de cine.",
+    "start_time": "20:00:00",
+    "url": "https://realhermandaddelrefugio.org/calendario-de-eventos/musica-que-nos-une-concierto/",
+    "price": "12 €",
+    "image": "images/events/20187d246124.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/musica-nos-iglesia-san-antonio-alemanes",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "0706fc4c"
+  },
+  "e3ddb20f42092db0": {
+    "title": "XVI Carrera Menudos Corazones – Bimbo Global Race",
+    "description": "Una carrera benéfica para todos los públicos, incluyendo distancias competitivas y marchas familiares, en favor de los niños con problemas de corazón. El evento fomenta la participación deportiva en un entorno natural para familias y corredores de todas las edades.",
+    "start_time": "09:30:00",
+    "url": "https://www.carreramenudoscorazones.es/",
+    "price": "9,60 €",
+    "image": "images/events/70dffd353be4.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/carrera-menudos-corazones-parque-juan-carlos-i",
+    "source": "esmadrid,madrid_agenda",
+    "categories": [
+      "deportes",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "bae04585"
+  },
+  "a95b7579cdf917b1": {
+    "title": "Clarence Bekker Band + Quentin Moore",
+    "description": "El músico Clarence Bekker ofrece un concierto de soul y funk acompañado por su banda, seguido de la actuación del artista Quentin Moore. La velada contará con sonidos que fusionan el soul moderno con matices funky y retro.",
+    "start_time": "22:00:00",
+    "url": "https://salaclamores.es/eventos/clarence-bekker-band-quentin-moore-soul-funk-clamores-madrid-viernes-2-octubre-2026",
+    "price": "18,70 €",
+    "image": "images/events/34251d0856fb.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/clarence-bekker-band-quentin-moore-clamores",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "1f1d6ca1"
+  },
+  "7c8b410cd8bfc4e2": {
+    "title": "San Patricio Big Band",
+    "description": "Un concierto que repasa grandes éxitos del jazz y el blues bajo la dirección musical de Juan Ramón Callejas. El espectáculo reúne a músicos profesionales y amateurs en una propuesta de alta calidad artística.",
+    "start_time": "12:30:00",
+    "url": "https://salaclamores.es/eventos/san-patricio-big-band-jazz-sabado-3-octubre-2026-clamores-live-concierto-madrid",
+    "price": "Desde 13,20 €",
+    "image": "images/events/f66299919ab7.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/san-patricio-big-band-clamores",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "1f1d6ca1"
+  },
+  "8a654d890648727c": {
+    "title": "CD Leganés - Córdoba CF (LALIGA HYPERMOTION)",
+    "description": "El equipo pepinero recibe en su estadio al equipo de Córdoba en una nueva jornada de la Segunda División. Un encuentro de competición oficial de fútbol.",
+    "start_time": "20:30:00",
+    "url": "https://www.cdleganes.com/partidos",
+    "price": "Consultar página oficial",
+    "image": "images/events/6982742b7de0.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/cd-leganes-cordoba-cf-laliga-hypermotion-estadio-butarque",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "2f59b0c5"
+  },
+  "9c512aab6b966fba": {
+    "title": "Elena Jiménez. Me das tus manos. Archivo de mujeres creadoras",
+    "description": "Un proyecto escultórico y de investigación artística que construye un archivo sensible mediante el moldeado en escayola de manos de mujeres creadoras. La muestra propone un diálogo entre cuerpo y materia para explorar la memoria, la identidad y las trayectorias vitales de sus participantes.",
+    "start_time": "10:00:00",
+    "url": "https://www.centrocentro.org/exposicion/elena-jimenez",
+    "price": "Gratis",
+    "image": "images/events/70f810772dc7.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/elena-jimenez-me-das-tus-manos-archivo-mujeres-creadoras-centrocentro",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "formato": "exposicion",
+    "lid": "bb29009c"
+  },
+  "4bff12bb02120893": {
+    "title": "Juana González. Indómita pintura",
+    "description": "Exposición que explora los límites entre lo barroco, el surrealismo y el expresionismo a través de obras pictóricas, dibujos y piezas escultóricas. La muestra profundiza en los impulsos del imaginario de la artista mediante composiciones cargadas de simbolismo y fantasía.",
+    "start_time": "10:00:00",
+    "url": "https://www.centrocentro.org/exposicion/juana-gonzalez",
+    "price": "Gratis",
+    "image": "images/events/c4c81fcc7fe5.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/juana-gonzalez-indomita-pintura-centrocentro",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "formato": "exposicion",
+    "lid": "bb29009c"
+  },
+  "754fcf0c646a7705": {
+    "title": "Querido Evan Hansen",
+    "description": "Este musical premiado, contemporáneo y de vocación intergeneracional cuenta la historia de Evan Hansen, un joven de 17 años con trastorno de ansiedad social que busca encontrar su lugar. A lo largo de la obra, el protagonista transita por cuestiones como la identidad, la conexión y la aceptación en un entorno marcado por el aislamiento.",
+    "start_time": "20:30:00",
+    "url": "https://queridoevanhansen.com/ ",
+    "price": "Desde 25 €",
+    "image": "images/events/5108ac4c3d80.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/querido-evan-hansen-teatro-rialto",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "musicales"
+    ],
+    "formato": "exposicion",
+    "lid": "0d7b035c"
+  },
+  "20b1a800aa4f9442": {
+    "title": "La Fuga",
+    "description": "La banda cántabra de rock urbano celebra más de tres décadas sobre los escenarios repasando sus canciones más emblemáticas junto a temas recientes. La propuesta combina guitarras contundentes con letras honestas que han conectado con varias generaciones a lo largo de su trayectoria.",
+    "start_time": "21:00:00",
+    "url": "https://lafuga.net/",
+    "price": "Entradas agotadas",
+    "image": "images/events/cb2d22a5b83d.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/fuga-riviera",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "9d5eb577"
+  },
+  "89fad5e826df98a6": {
+    "title": "Aión (CND)",
+    "description": "La Compañía Nacional de Danza presenta un espectáculo que reflexiona sobre el tiempo a través del movimiento, integrando lenguajes coreográficos desde la tradición clásica hasta la contemporaneidad. El montaje muestra la evolución del movimiento mediante un diálogo constante entre herencia e innovación.",
+    "start_time": "19:30:00",
+    "url": "https://teatrodelazarzuela.inaem.gob.es/es/temporada/danza-2026-2027/aion",
+    "price": "Desde 25 €",
+    "image": "images/events/2bf7e20df02e.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/aion-cnd-teatro-zarzuela",
+    "source": "esmadrid",
+    "categories": [
+      "danza",
+      "teatro"
+    ],
+    "formato": "exposicion",
+    "lid": "4ab76119"
+  },
+  "6b66852e1f9cf783": {
+    "title": "Congreso ESMO Madrid 2026",
+    "description": "Este congreso reúne a expertos internacionales, investigadores y profesionales para presentar los últimos avances en el tratamiento del cáncer. El evento ofrece un amplio programa educativo y oportunidades de intercambio de ideas sobre innovación tecnológica y terapia oncológica.",
+    "url": "https://www.esmo.org/meeting-calendar/esmo-congress-2026",
+    "price": "Consultar página oficial",
+    "image": "images/events/c25b5738924f.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/congreso-esmo-madrid-ifema-madrid",
+    "source": "esmadrid",
+    "categories": [
+      "ferias"
+    ],
+    "formato": "puntual",
+    "lid": "ed301dfc"
+  },
+  "6a50f19261b8109a": {
+    "title": "Parlamento",
+    "description": "Estreno en Madrid de la obra de la compañía argentina Piel de Lava, que plantea una mirada crítica sobre la teatralidad de los discursos políticos contemporáneos a través de un escenario distópico. Cuatro diputadas permanecen en una nave en órbita, mientras el mundo que deberían representar arde bajo ellas, explorando la frontera entre política y representación.",
+    "start_time": "19:30:00",
+    "url": "https://www.condeduquemadrid.es/actividades/compania-piel-de-lava-parlamento",
+    "price": "18 €",
+    "image": "images/events/55bc148ac626.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/7IEq8DOL7dIOdMkW7WwZgnHSAj-gVtZVo9ONhhC3cgo/mtime:1789818805/sites/default/files/eventos/eventos/parlamento.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/rXelhyrnSfKBipnaWk_0oA8q6z52JDr4tlN_7jOxe6w/mtime:1789818824/sites/default/files/eventos/eventos/parlamento-2.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/m1Dfo3sJm1kjUg-UDGKOyU2X5sp709KNqLLjPGbAfNk/mtime:1789818839/sites/default/files/eventos/eventos/parlamento-3.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/x-sHv2WDHAQtyzidjGw7WcsDQ_K6gJ7iSsWVh7YcAnA/mtime:1789818854/sites/default/files/eventos/eventos/parlamento-4.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/parlamento-conde-duque",
+    "source": "esmadrid",
+    "categories": [
+      "teatro"
+    ],
+    "formato": "puntual",
+    "lid": "41cfd2ba"
+  },
+  "d8cb78d91a6d6288": {
+    "title": "Jazz Círculo",
+    "description": "La temporada 2026/27 de Jazz Círculo reúne siete conciertos que recorren el jazz contemporáneo, la raíz mediterránea, la escena europea y el diálogo con otras músicas. El ciclo convoca a figuras consolidadas del jazz nacional con algunas de las propuestas actuales de la escena internacional.",
+    "start_time": "20:00:00",
+    "url": "https://www.circulobellasartes.com/espectaculos/jazz-circulo-27/",
+    "price": "Desde 17 €",
+    "image": "images/events/fe6657064fde.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/jjdIBMhLMb_ECxSBc93E_9HSlivziW4Ex-X8LLfoHfY/mtime:1786953514/sites/default/files/eventos/eventos/jazz_circulo.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/GHbbnPec7RVrnMxIp1K_uY1exfydliyz26yksueqaRo/mtime:1786953757/sites/default/files/eventos/eventos/lucia_rey_quartet.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/WJixVzx6DZJWhG1MlTFtv72vaDD5HURWFI_sCJXZ_G0/mtime:1786953828/sites/default/files/eventos/eventos/alba_careta_group.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/It3LnMA-_bFkbTlcEJMnMTnS1PJGnpqvsTHUwMy2FEA/mtime:1786953896/sites/default/files/eventos/eventos/sheila_blanco_y_federico_lechner_tango_jazz_trio.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/jazz-circulo-teatro-fernando-rojas",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "is_multi_event": true,
+    "formato": "puntual",
+    "lid": "5f3f83ad"
   }
 }
