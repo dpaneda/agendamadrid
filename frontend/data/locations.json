@@ -1259,12 +1259,6 @@
     "latitude": 40.4184049,
     "longitude": -3.703234
   },
-  "2fd09bb6": {
-    "location_name": "Museo Reina Sofía",
-    "address": "de Santa Isabel, 52",
-    "latitude": 40.4079189,
-    "longitude": -3.6945566
-  },
   "bd45b78f": {
     "location_name": "SOLO Independencia",
     "address": "de la Independencia, 5",
@@ -1433,6 +1427,12 @@
     "latitude": 40.401977082034,
     "longitude": -3.702038526535
   },
+  "50107e1c": {
+    "location_name": "Teatro Real",
+    "address": "de Isabel II, s/n",
+    "latitude": 40.4184102,
+    "longitude": -3.7093957
+  },
   "8ca210f1": {
     "location_name": "Museo Nacional de Artes Decorativas",
     "address": "de Montalbán, 12",
@@ -1549,6 +1549,12 @@
     "address": "de Cibeles, 2",
     "latitude": 40.4203039,
     "longitude": -3.6916235
+  },
+  "2fd09bb6": {
+    "location_name": "Museo Reina Sofía",
+    "address": "de Santa Isabel, 52",
+    "latitude": 40.4084389,
+    "longitude": -3.6941036
   },
   "86b6d704": {
     "location_name": "Museo Cerralbo",
@@ -1718,18 +1724,6 @@
     "latitude": 40.3319159,
     "longitude": -3.7067466
   },
-  "9d5eb577": {
-    "location_name": "La Riviera",
-    "address": "Bajo de la Virgen del Puerto, s/n",
-    "latitude": 40.4133013,
-    "longitude": -3.7219371
-  },
-  "7399986c": {
-    "location_name": "Galileo Galilei",
-    "address": "de Galileo, 100",
-    "latitude": 40.4385159,
-    "longitude": -3.7096388
-  },
   "027f0347": {
     "location_name": "Teatros del Canal",
     "address": "de Cea Bermúdez, 1",
@@ -1742,17 +1736,17 @@
     "latitude": 40.4459662,
     "longitude": -3.6776947
   },
-  "50107e1c": {
-    "location_name": "Teatro Real",
-    "address": "de Isabel II, s/n",
-    "latitude": 40.4184102,
-    "longitude": -3.7093957
-  },
   "b1ac68ff": {
     "location_name": "Lab theClub",
     "address": "de Agustín de Foxa, s/n",
     "latitude": 40.4760991,
     "longitude": -3.6820196
+  },
+  "9d5eb577": {
+    "location_name": "La Riviera",
+    "address": "Bajo de la Virgen del Puerto, s/n",
+    "latitude": 40.4133013,
+    "longitude": -3.7219371
   },
   "94c2d0f2": {
     "location_name": "Fundación MAPFRE. Sala Recoletos",
@@ -1932,6 +1926,12 @@
     "address": "de Fuerzas Armadas, 402",
     "latitude": 40.4817285,
     "longitude": -3.6112151
+  },
+  "7399986c": {
+    "location_name": "Galileo Galilei",
+    "address": "de Galileo, 100",
+    "latitude": 40.4385159,
+    "longitude": -3.7096388
   },
   "3f39be02": {
     "location_name": "Instituto Iberoamericano de Finlandia",
@@ -2191,5 +2191,23 @@
     "address": "de Céa Bermúdez, 21",
     "latitude": 40.4386443,
     "longitude": -3.7095096
+  },
+  "cfdf6f71": {
+    "location_name": "Espacio Abierto Quinta de los Molinos",
+    "address": "de Juan Ignacio Luca de Tena , 20",
+    "latitude": 40.4475712,
+    "longitude": -3.6293005
+  },
+  "b33d4362": {
+    "location_name": "Real Sociedad Fotográfica",
+    "address": "de los Tres Peces, 2",
+    "latitude": 40.4107029,
+    "longitude": -3.7005591
+  },
+  "4da9be7c": {
+    "location_name": "Autocine Madrid",
+    "address": "de la Isla de Java, 2",
+    "latitude": 40.486893,
+    "longitude": -3.6779918
   }
 }
