@@ -9033,8 +9033,11 @@
     "source": "madrid_agenda",
     "categories": [
       "talleres",
-      "gratis"
+      "gratis",
+      "cine"
     ],
+    "description": "Taller dedicado al análisis del papel y la evolución de las mujeres en la industria cinematográfica española.",
+    "price": "gratis",
     "formato": "puntual",
     "lid": "65a790aa"
   },
@@ -9089,8 +9092,11 @@
     "source": "madrid_agenda",
     "categories": [
       "talleres",
-      "gratis"
+      "gratis",
+      "literatura"
     ],
+    "description": "Taller enfocado en explorar y poner en valor el legado literario y las voces de diversas autoras.",
+    "price": "gratis",
     "formato": "puntual",
     "lid": "65a790aa"
   },
@@ -9219,14 +9225,15 @@
     "lid": "06d8226f"
   },
   "6d61792dcae0c5f6": {
-    "title": "Línea creativa",
-    "description": "Exposición de pintura de : YOLANDA QUINTERO, AGAPITO MARTÍN, RAFI LAVADO, OLGA GRACIA, AZUCENA CALVO Y ISABEL ALONSO. Lugar: Sala de Exposiciones y Patio de Cristales (Calle Botica, 7 y 10) Horario de lunes a viernes: De 10:00 a 13:30 y de 16:00 a 20:00 horas.",
+    "title": "Línea creativa: Exposición colectiva",
+    "description": "Exposición de pintura colectiva que reúne obras de artistas como Yolanda Quintero, Agapito Martín y otros.",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=26eb49e8316f0a10VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "exposiciones",
       "gratis"
     ],
+    "price": "gratis",
     "formato": "exposicion",
     "lid": "3262edc1"
   },
@@ -9277,7 +9284,7 @@
   },
   "aee81a51b36ecd01": {
     "title": "Los boleros de mi vida",
-    "description": "Dúo Albalate-Líapi.   Edad recomendada: todos los públicos.  Sinopsis: Concierto de boleros, rancheras y algún cuplé donde se crea un espacio íntimo y profundo a través de la música. Reflexionamos musicalmente sobre esas canciones que nos llegan al alma atravesando nuestras emociones. Os invitamos a este viaje musical de la mano del dúo formado por Gloria Albalate (actriz y cantante) y por Melina Líapi (piano).",
+    "description": "Concierto íntimo a cargo del dúo Albalate-Líapi con un repertorio de boleros, rancheras y cuplés.",
     "start_time": "18:30:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7a327fbe041f0a10VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
@@ -9285,6 +9292,7 @@
       "conciertos",
       "gratis"
     ],
+    "price": "gratis",
     "formato": "puntual",
     "lid": "74b38acb"
   },
@@ -9366,19 +9374,22 @@
   },
   "cea172d8b63f0ca5": {
     "title": "Los misterios ambientales de la calle Bailén",
-    "description": "Itinerario guiado en el que se interpretará el espacio comprendido entre el actual parque de la Cornisa y la plaza de Oriente. Durante el recorrido se mostrará la transformación verde de la calle de Bailén como laboratorio urbano a partir del derribo de diferentes edificios históricos. Actividad dirigida a público adulto.  Duración estimada: aproximadamente 2 horas y media.     Necesaria inscripción previa.  Para más información y reservas de esta actividad, la forma de contacto es a través d...",
+    "description": "Itinerario guiado por el entorno del parque de la Cornisa y la plaza de Oriente para descubrir su transformación verde.",
     "start_time": "10:00:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=06e359067b1de810VgnVCM1000001d4a900aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "visitas guiadas",
-      "gratis"
+      "gratis",
+      "naturaleza",
+      "patrimonio"
     ],
+    "price": "gratis",
     "formato": "puntual"
   },
   "03e7aa07a048d8c7": {
-    "title": "Los pájaros",
-    "description": "Cine: 'Los pájaros'. 1963. Melanie, una joven rica y snob de la alta sociedad de San Francisco, conoce casualmente enuna pajarería al abogado Mitch Brenner. Él, que conoce por la prensa la alocada vida de Melanie, la trata con indiferencia y se va de la tienda dejándola bastante irritada. Ella, que no está acostumbrada a que la traten así, encarga unos periquitos y se presenta en la casa de la madre de Mitch, en Bodega Bay. En cuanto llega, los pájaros, enloquecidos, empiezan a atacar salvaje...",
+    "title": "Cine: Los pájaros (1963)",
+    "description": "Proyección del clásico de suspense dirigido por Alfred Hitchcock sobre una extraña invasión de aves.",
     "start_time": "18:30:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=eb30a6986a7e0a10VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
@@ -9386,6 +9397,7 @@
       "cine",
       "gratis"
     ],
+    "price": "gratis",
     "formato": "puntual",
     "lid": "5651c399"
   },
@@ -9493,16 +9505,20 @@
     "lid": "8ef7add6"
   },
   "2f4ea8e3bf100293": {
-    "title": "L'OM IMPREBIS- Actividades pedagógicas",
+    "title": "L'OM IMPREBIS: Actividades pedagógicas",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=85b9fb59df1f0a10VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
+      "talleres",
+      "teatro",
       "destacado"
     ],
     "dates": [
       "2026-10-15",
       "2026-10-29"
     ],
+    "description": "Programa educativo y de mediación cultural desarrollado por la compañía L'OM Imprebís.",
+    "is_multi_event": true,
     "formato": "puntual",
     "lid": "c9c45e0d"
   },
@@ -9563,7 +9579,7 @@
   },
   "c9281387c32e6fca": {
     "title": "Magia de cerca: Por un puñado de plátanos",
-    "description": "Asociación Magosfera, presenta 'Magia de cerca: Por un puñado de plátanos'. Recogida de invitaciones en el CC El Madroño.  Edad recomendad: A partir de 14 años.",
+    "description": "Espectáculo de magia íntima a cargo de la Asociación Magosfera. Edad recomendada a partir de 14 años.",
     "start_time": "19:00:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=84910ab0397f0a10VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
@@ -9571,6 +9587,7 @@
       "magia",
       "gratis"
     ],
+    "price": "gratis",
     "formato": "puntual",
     "lid": "9c4ab070"
   },
@@ -9652,14 +9669,17 @@
   },
   "ba6f81ecaf14c15a": {
     "title": "Manuelita, mi casa es el mundo",
-    "description": "MULTILATINA 21 DISTRITOS   Galaxias Creativas, presenta, 'Manuelita, mi casa es el mundo'. Una aventura musical.    Te invitamos a descubrir esta versión original que reinterpreta con una mirada contemporánea la historia de uno de los personajes más queridos de la cultura argentina.      Edad recomendada: a partir de 3 años.",
+    "description": "Propuesta escénica multidisciplinar que reinterpreta una aventura musical desde una perspectiva contemporánea.",
     "start_time": "12:00:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=3f6b7346c7cfd910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "danza",
-      "gratis"
+      "gratis",
+      "infantil",
+      "musicales"
     ],
+    "price": "gratis",
     "formato": "puntual",
     "lid": "ccc906e4"
   },
@@ -9717,8 +9737,8 @@
     "lid": "4c99e2c3"
   },
   "9ac688dc3ab347b0": {
-    "title": "Marinero de luces', homenaje a Isabel Pantoja",
-    "description": "A cargo de Inma Paniagua.Duración: 60 minutos. Edad recomendada: todos los públicos.",
+    "title": "Marinero de luces: Homenaje a Isabel Pantoja",
+    "description": "Concierto tributo a Isabel Pantoja interpretado por Inma Paniagua.",
     "start_time": "19:00:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7857080a5b7e0a10VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
@@ -9726,6 +9746,7 @@
       "conciertos",
       "gratis"
     ],
+    "price": "gratis",
     "formato": "puntual",
     "lid": "f799769f"
   },
@@ -9768,14 +9789,17 @@
     "lid": "f6706f88"
   },
   "64446ba78a966364": {
-    "title": "Maternidades diversas. Primeros auxilios pediátricos: acciones frente a un atragantamiento",
+    "title": "Primeros auxilios pediátricos: Atragantamientos",
     "start_time": "17:00:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=668ca3abd27f0a10VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "talleres",
-      "gratis"
+      "gratis",
+      "bienestar"
     ],
+    "description": "Taller práctico sobre cómo actuar ante situaciones de emergencia pediátrica por atragantamiento.",
+    "price": "gratis",
     "formato": "puntual",
     "lid": "1a630411"
   },
@@ -9998,6 +10022,8 @@
       "gratis",
       "bienestar"
     ],
+    "description": "Sesión práctica orientada a aprender técnicas de relajación y control del estrés diario.",
+    "price": "gratis",
     "formato": "exposicion",
     "lid": "2a930101"
   },
@@ -10011,6 +10037,8 @@
       "gratis",
       "bienestar"
     ],
+    "description": "Taller de bienestar enfocado en el autocuidado y la atención plena en las relaciones personales.",
+    "price": "gratis",
     "formato": "puntual",
     "lid": "1a630411"
   },
@@ -10030,13 +10058,15 @@
   },
   "2e6a62f7fba55dcc": {
     "title": "Miradas líquidas. El vínculo que nos une",
-    "description": "'Miradas líquidas. El vínculo que nos une', de María Jesús Hernández.    Humanos y mascotas tenemos en común la expresividad de nuestra mirada. Los ojos nos interpelan, nos reclaman y a través de ellos compartimos emoción, deseos y sentimientos.    Esta exposición de obras en acuarela centrada en las miradas, parte de un estilo figurativo realista y persigue la expresividad a través del color, la mancha y la pincelada suelta.",
+    "description": "Exposición fotográfica de María Jesús Hernández sobre la expresividad en las miradas de humanos y mascotas.",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d46fa277ed0b7910VgnVCM2000001f4a900aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "exposiciones",
-      "gratis"
+      "gratis",
+      "fotografía"
     ],
+    "price": "gratis",
     "formato": "exposicion",
     "lid": "d8052c1c"
   },
@@ -10136,14 +10166,17 @@
     "lid": "95a62894"
   },
   "c5cbaaa027bee47b": {
-    "title": "Mitologías Modernas: Ouka Leele and Co. Exposición",
+    "title": "Mitologías Modernas: Ouka Leele and Co.",
     "start_time": "10:00:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c9b94206cf6f0a10VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "exposiciones",
-      "gratis"
+      "gratis",
+      "fotografía"
     ],
+    "description": "Exposición dedicada al universo creativo de Ouka Leele y su influencia en el arte contemporáneo.",
+    "price": "gratis",
     "formato": "puntual",
     "lid": "65a790aa"
   },
@@ -10162,7 +10195,7 @@
   },
   "74aa8b07202d6075": {
     "title": "Modern Choir",
-    "description": "Modern Choir es un gran coro de música moderna en España creado y dirigido por la artista y arreglista Marina Rubio, compuesto por un centenar de jóvenes adultos y famoso por ganar un pase de oro en el programa Got Talent España.",
+    "description": "Actuación del gran coro de música moderna compuesto por jóvenes adultos y dirigido por Marina Rubio.",
     "start_time": "19:00:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=1802fe25d86f0a10VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
@@ -10170,6 +10203,7 @@
       "conciertos",
       "gratis"
     ],
+    "price": "gratis",
     "formato": "puntual",
     "lid": "a0c50125"
   },
@@ -10322,16 +10356,18 @@
     "lid": "a7eb6f63"
   },
   "b381c5d6b7e18583": {
-    "title": "Monólogo: 'Rumor de olas'",
-    "description": "CONMEMORACIÓN DÍA DE LAS ESCRITORAS A cargo de Silvina Rodríguez. Narración oral en la que se entrelazan las vidas de cuatro mujeres artistas - Alfonsina Storni, Clarice Lispector, Margarita Xirgu y Frida Kahlo -  como un 'rumor de olas' llegado del otro lado del océano. Inspirado en la colección 'Antiprincesas'. Espectáculo de narración oral dirigido a público adulto.",
+    "title": "Monólogo: Rumor de olas",
+    "description": "Narración oral que entrelaza las vidas y trayectorias de cuatro destacadas mujeres artistas.",
     "start_time": "18:30:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c9d75e8b74ce0a10VgnVCM100000891ecb1aRCRD",
     "source": "madrid_agenda",
     "categories": [
       "teatro",
       "gratis",
+      "literatura",
       "comedia"
     ],
+    "price": "gratis",
     "formato": "puntual",
     "lid": "ab545dfb"
   },
@@ -10369,8 +10405,11 @@
     "source": "madrid_agenda",
     "categories": [
       "talleres",
-      "gratis"
+      "gratis",
+      "bienestar"
     ],
+    "description": "Taller enfocado en el trabajo corporal y la conciencia física como vía de bienestar.",
+    "price": "gratis",
     "formato": "exposicion",
     "lid": "2a930101"
   },
@@ -10490,14 +10529,15 @@
   },
   "84a90ba64990fc44": {
     "title": "Música coral para la memoria, el color y el tránsito",
-    "description": "A cargo de El Coro!. Director Ángel Chirinos.El Coro!, con 'Música coral para la memoria, el color y el tránsito', brinda una selección de piezas en torno a esas tres ideas. La primera parte está dedicada a piezas sobre recordar, ya sea el pasado en un momento trascendental, como el inmortal Ave verum corpus de W. A. Mozart, o lo colectivo y lo tradicional, como es el caso del Anda jaleo que recopiló y edito el gran Federico García Lorca. La segunda sección la integran piezas que evocan la pl...",
+    "description": "Recital coral a cargo de El Coro! con una selección de piezas centradas en la memoria y el tránsito.",
     "start_time": "19:00:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8639080a5b7e0a10VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
-      "cine",
+      "conciertos",
       "gratis"
     ],
+    "price": "gratis",
     "formato": "puntual",
     "lid": "5651c399"
   },
@@ -22224,29 +22264,6 @@
     "formato": "exposicion",
     "lid": "a39f00f6"
   },
-  "e26cfbd7d684f7ba": {
-    "title": "Emociones en peligro. Fotografías de Tim Flach",
-    "description": "Esta exposición presenta 34 retratos de especies animales amenazadas realizados por el fotógrafo Tim Flach para invitar a la reflexión sobre la biodiversidad. Las imágenes buscan conectar emocionalmente al público con la naturaleza y fomentar la conciencia sobre la preservación del mundo natural.",
-    "url": "https://www.afundacion.org/es/agenda/evento/exposicion-emociones-en-peligro-fotografias-de-tim-flach/",
-    "price": "Gratis",
-    "image": "images/events/6ee536c67f6a.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/BtD-90j-rfi2toUSpyDRqqVj0D5IPZydFyd0VnHd5Wg/mtime:1788337883/sites/default/files/eventos/eventos/emociones_en_peligro_2.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/AwBA6-6YAeXvm44dH0zXBDBCClFqP2ZuYQarwURofAo/mtime:1788337786/sites/default/files/eventos/eventos/emociones_en_peligro_5.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/ovJBuw7Uo4GTkpZjLKZXZDEX7Ubj8tPN7S-fZsF1hBU/mtime:1788337828/sites/default/files/eventos/eventos/emociones_en_peligro_4.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/GVRHQItbS4nozyRLkAXrlAQ9C2APkO0-8EusEyLh0Ec/mtime:1788337855/sites/default/files/eventos/eventos/emociones_en_peligro_3.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/8QFoyVbgzuZcpijdgyCNGT0XFWAdaDu6yiCXAeUo5j8/mtime:1788337908/sites/default/files/eventos/eventos/emociones_en_peligro_0.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/emociones-peligro-fotografias-tim-flach-parque-retiro",
-    "source": "esmadrid",
-    "categories": [
-      "exposiciones",
-      "fotografía",
-      "gratis"
-    ],
-    "formato": "exposicion",
-    "lid": "2d435404"
-  },
   "e9ec662dfa01058b": {
     "title": "Obras de paso. Retrato de Emilia Pardo Bazán",
     "description": "Exposición centrada en el retrato de la escritora Emilia Pardo Bazán que destaca su labor como filántropa y difusora del patrimonio cultural. La muestra subraya su papel en la protección de saberes, monumentos y yacimientos arqueológicos.",
@@ -23306,21 +23323,6 @@
     ],
     "formato": "exposicion",
     "lid": "5673f627"
-  },
-  "0ba5de41398bde12": {
-    "title": "Grupo Firme",
-    "description": "La banda mexicana de regional presenta su gira La Primera Europeda 2026, ofreciendo un espectáculo lleno de ritmo y energía. El concierto contará con la interpretación de sus grandes éxitos internacionales que los han consolidado como referentes de la música latina actual.",
-    "start_time": "20:00:00",
-    "url": "https://www.movistararena.es/programacion/evento/grupo-firme-la-primera-europeda-2026",
-    "price": "Desde 38,50 €",
-    "image": "images/events/a19fe5e77b6e.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/grupo-firme-movistar-arena",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "formato": "puntual",
-    "lid": "1f1e0e14"
   },
   "9a4b83207afd04d2": {
     "title": "Fundación Scherzo. Daniel Hope & Marie Sophie Hauzel",
@@ -24660,26 +24662,6 @@
     ],
     "formato": "puntual",
     "lid": "4b4d8238"
-  },
-  "dc7b140a7690c950": {
-    "title": "El 5to ángel",
-    "description": "Una tragedia surrealista que explora el naufragio y el aislamiento de un grupo de personas de clase privilegiada tras quedar encerradas en un salón. La obra reflexiona sobre las convenciones sociales, los instintos humanos y la desintegración de la tradición burguesa.",
-    "start_time": "22:00:00",
-    "url": "https://www.lausina.es/sala/programacion/6a638e31df16e74d9b65bfe9/1788552000000",
-    "price": "13 €",
-    "image": "images/events/86ec95e9cdf5.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/ccZrn1bv2Wj787ZJ0s8vG0G1BTSeXMANs5kSrGXzD5g/mtime:1789966402/sites/default/files/eventos/eventos/el-5to-angel.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/WWHiylHyxkRifjUz0dk6rLkC-9uV9YKgKvWujg5kkGQ/mtime:1789966433/sites/default/files/eventos/eventos/el-5to-angel-3.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/5K-MWkFB2sSm_tkKdp-49gihNauw-szpsFJRLMIWfT0/mtime:1789966451/sites/default/files/eventos/eventos/el-5to-angel-2.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/5to-angel-usina",
-    "source": "esmadrid",
-    "categories": [
-      "teatro"
-    ],
-    "formato": "puntual",
-    "lid": "9b2ba2ac"
   },
   "bba74eb91d78a762": {
     "title": "Coneja",
@@ -26684,5 +26666,146 @@
     ],
     "formato": "puntual",
     "lid": "027f0347"
+  },
+  "210e8c927e1fd526": {
+    "title": "Ayer intenté suicidarme",
+    "description": "La compañía La Joie de la Colina explora el impacto del suicidio a través de cuatro perspectivas distintas que profundizan en las emociones y experiencias de los implicados. La obra analiza tanto las luchas internas individuales como la forma en que este tema es percibido por el entorno cercano y la sociedad.",
+    "start_time": "20:30:00",
+    "url": "https://teatro.bululu2120.com/ayer-intente-suicidarme-sala-bululu/",
+    "price": "12 €",
+    "image": "images/events/511606058c65.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/oCFeVVvJyHgUL8DMM6JJr-rz9Hmg-tbsqyLJApLmqVA/mtime:1790942540/sites/default/files/eventos/eventos/ayer_intente_suicidarme_con_logo_bululu_-_2026_a3.jpeg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/iFnWmGS6igTxU4wSBQIBiqS-8nq_hB_DB6xgYpIC6-k/mtime:1790942568/sites/default/files/eventos/eventos/ayer_intente_suicidarme_8.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/ayer-intente-suicidarme-bululu2120",
+    "source": "esmadrid",
+    "categories": [
+      "teatro"
+    ],
+    "formato": "exposicion",
+    "lid": "db7a4d60"
+  },
+  "46c9983f753602ba": {
+    "title": "Carrera de la Ciencia (CSIC) 2026",
+    "description": "Se trata de una carrera popular de 10 kilómetros que une la práctica deportiva con la divulgación científica. El recorrido discurre por un entorno urbano y está oficialmente homologado por la Federación de Atletismo de Madrid.",
+    "start_time": "09:00:00",
+    "url": "https://www.carreradelaciencia.com/",
+    "price": "Desde 15,60 €",
+    "image": "images/events/aced6eb2c73d.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/wNaeatpe4rrC30iD53j9mhBUZ_EjczyAKQ8dzk9A6fo/mtime:1790946678/sites/default/files/eventos/eventos/ciencia.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/mbbvWPEccPvokgqApaKiGePLlD2OGX3naEWojPSH2M0/mtime:1758888369/sites/default/files/eventos/eventos/carrera_de_la_ciencia.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/carrera-ciencia-csic-calle-serrano",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "a4e5a508"
+  },
+  "8a2c877e5c15455c": {
+    "title": "III Carrera Solidaria Ruta 091 Madrid",
+    "description": "Se trata de una prueba deportiva solidaria cuyos beneficios se destinan a la Fundación Contigo contra el cáncer de la mujer. El recorrido transcurre por los entornos naturales de la Casa de Campo de Madrid.",
+    "start_time": "11:00:00",
+    "url": "https://ruta091.es/carrera/carrera-solidaria-ruta-091-madrid-2025",
+    "price": "Desde 17 €",
+    "image": "images/events/648fa0c63833.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/carrera-solidaria-ruta-091-madrid",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "7505ff95"
+  },
+  "39f384ab85823de8": {
+    "title": "No Te Va Gustar",
+    "description": "La banda uruguaya de rock presenta su duodécimo álbum de estudio, Florece en el Caos, en una actuación que repasa sus temas más exitosos. El grupo destaca por fusionar diversos géneros musicales como el reggae, el folk, la murga y el ska.",
+    "start_time": "20:00:00",
+    "url": "https://livelasventas.com/es/eventos/concierto-no-te-va-gustar/",
+    "price": "Desde 38,30 €",
+    "image": "images/events/ad21e2f4bbd5.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/no-te-va-gustar-live-ventas",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "3b56e983"
+  },
+  "cc5927a97e8d6ebd": {
+    "title": "Go Figure - Compañía Sharon Fridman",
+    "description": "Espectáculo de danza contemporánea que explora la diversidad funcional y las posibilidades del movimiento desde la diferencia. La pieza convierte el escenario en un espacio de encuentro donde los cuerpos dialogan a partir de sus singularidades.",
+    "start_time": "18:00:00",
+    "url": "https://www.teatroscanal.com/espectaculo/sharon-fridman-go-figure/",
+    "price": "Desde 9 €",
+    "image": "images/events/2e654edda1ef.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/go-figure-compania-sharon-fridman-teatros-canal",
+    "source": "esmadrid",
+    "categories": [
+      "danza",
+      "teatro"
+    ],
+    "formato": "puntual",
+    "lid": "027f0347"
+  },
+  "d01a8d764cd91e99": {
+    "title": "Real Madrid - Recoletas Salud San Pablo Burgos (Liga Endesa. Jornada 6)",
+    "description": "El conjunto blanco recibe en su terreno de juego al equipo dirigido por el técnico Porfi Fisac en una nueva jornada de la liga. Se trata de un encuentro oficial de baloncesto de alto nivel competitivo.",
+    "start_time": "12:30:00",
+    "url": "https://www.realmadrid.com/es-ES/baloncesto/partidos/liga-endesa/real-madrid-recoletas-salud-san-pablo-burgos/01-11-2026",
+    "price": "Consultar página oficial",
+    "image": "images/events/ad3df81f18d0.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/real-madrid-recoletas-salud-san-pablo-burgos-liga-endesa-jornada-6-movistar-arena",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "1f1e0e14"
+  },
+  "8c6edce3010388f4": {
+    "title": "Madrid CFF - Deportivo Abanca (Liga F Moeve)",
+    "description": "Encuentro de fútbol femenino correspondiente a una nueva jornada de la competición de la Liga F. El partido enfrenta al equipo madrileño contra el conjunto gallego.",
+    "url": "https://madridcff.com/",
+    "price": "Consultar página oficial",
+    "image": "images/events/f1ea3e493081.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/madrid-cf-femenino-deportivo-abanca-liga-f-moeve-campo-futbol-fernando-torres",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "109271c3"
+  },
+  "00a817fdfb44a7b6": {
+    "title": "Getafe CF - Sevilla FC (LALIGA EA SPORTS)",
+    "description": "El cuadro madrileño dirigido por José Bordalás recibe la visita del equipo sevillista en la competición de liga. Se trata de un encuentro oficial de fútbol en el marco de LALIGA EA SPORTS.",
+    "url": "https://www.getafecf.com/partidos/temporada-2026-2027-laliga-ea-sports-11-getafe-cf-vs-sevilla-fc-3025",
+    "price": "Consultar página oficial",
+    "image": "images/events/3b4a711864a8.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/getafe-cf-sevilla-fc-laliga-ea-sports-coliseum",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "d0b9c3cf"
+  },
+  "b887143f71764e01": {
+    "title": "Rayo Vallecano - RC Celta de Vigo (LALIGA EA SPORTS)",
+    "description": "El Rayo Vallecano se enfrenta al RC Celta de Vigo en un encuentro correspondiente a la jornada de LALIGA EA SPORTS. El partido se disputará en el Estadio Ontime Butarque.",
+    "url": "https://www.rayovallecano.es/partidos/temporada-2026-2027-laliga-ea-sports-11-rayo-vallecano-vs-celta-3028",
+    "price": "Consultar página oficial",
+    "image": "images/events/81f93f8aab0b.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/rayo-vallecano-rc-celta-vigo-laliga-ea-sports-estadio-butarque",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "2f59b0c5"
   }
 }
