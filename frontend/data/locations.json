@@ -47,13 +47,6 @@
     "latitude": 40.374166248648216,
     "longitude": -3.7032220308808577
   },
-  "32296fa0": {
-    "location_name": "Espacio de Igualdad María Moliner. Villa de Vallecas",
-    "address": "CALLE HONRUBIA 4",
-    "district": "VillaDeVallecas",
-    "latitude": 40.37128211425518,
-    "longitude": -3.6292460351699867
-  },
   "824774c3": {
     "location_name": "Centro de Cultura Contemporánea CondeDuque",
     "address": "CALLE CONDE DUQUE 9",
@@ -255,6 +248,13 @@
     "district": "Retiro",
     "latitude": 40.40254931370529,
     "longitude": -3.668092320219012
+  },
+  "b0b9722e": {
+    "location_name": "Espacio de Igualdad Hermanas Mirabal. Tetuán",
+    "address": "CALLE BRAVO MURILLO 133",
+    "district": "Tetuan",
+    "latitude": 40.45012255255781,
+    "longitude": -3.7037047897267947
   },
   "1b4b08af": {
     "location_name": "Espacio de Igualdad Clara Campoamor. Villaverde",
@@ -654,13 +654,6 @@
     "latitude": 40.45425391757006,
     "longitude": -3.600336224968592
   },
-  "b0b9722e": {
-    "location_name": "Espacio de Igualdad Hermanas Mirabal. Tetuán",
-    "address": "CALLE BRAVO MURILLO 133",
-    "district": "Tetuan",
-    "latitude": 40.45012255255781,
-    "longitude": -3.7037047897267947
-  },
   "e232e586": {
     "location_name": "Espacio de Igualdad María Zambrano. Chamberí",
     "address": "CALLE ANDRES MELLADO 44",
@@ -793,6 +786,13 @@
     "district": "Tetuan",
     "latitude": 40.46903299144094,
     "longitude": -3.6976620067964996
+  },
+  "b2aea691": {
+    "location_name": "Biblioteca Pública Municipal Ángel González (Latina)",
+    "address": "CALLE GRANJA DE TORREHERMOSA 1",
+    "district": "Latina",
+    "latitude": 40.397074625115906,
+    "longitude": -3.7664885474841556
   },
   "b470f69d": {
     "location_name": "Centro Cultural Federico Chueca (Hortaleza)",
@@ -1003,26 +1003,19 @@
     "latitude": 40.346369432374594,
     "longitude": -3.7085146991266473
   },
-  "7c1958bc": {
-    "location_name": "Edificio Sociocultural Marta Escudero Díaz-Tejeiro (Villaverde)",
-    "address": "CALLE CALCIO 1",
-    "district": "Villaverde",
-    "latitude": 40.35118703272002,
-    "longitude": -3.679345889376551
-  },
-  "b2aea691": {
-    "location_name": "Biblioteca Pública Municipal Ángel González (Latina)",
-    "address": "CALLE GRANJA DE TORREHERMOSA 1",
-    "district": "Latina",
-    "latitude": 40.397074625115906,
-    "longitude": -3.7664885474841556
-  },
   "76d6f7b2": {
     "location_name": "Centro Sociocultural Miguel de Cervantes (San Blas - Canillejas)",
     "address": "CALLE ALIAGA 5",
     "district": "SanBlas-Canillejas",
     "latitude": 40.4366557020283,
     "longitude": -3.6113517282299217
+  },
+  "398d56b6": {
+    "location_name": "Centro Intergeneracional Río Esmeralda",
+    "address": "CALLE RIO ESMERALDA 15",
+    "district": "PuenteDeVallecas",
+    "latitude": 40.382903228859135,
+    "longitude": -3.6520658390631127
   },
   "5ce42a5d": {
     "location_name": "Auditorio al aire libre. Parque de la Vaguada",
@@ -1226,6 +1219,13 @@
     "latitude": 40.45150372849227,
     "longitude": -3.6760645355093797
   },
+  "7bbd9a86": {
+    "location_name": "Parque del Oeste",
+    "address": "PASEO CAMOENS Y VALERO 4",
+    "district": "Moncloa-Aravaca",
+    "latitude": 40.43179642724134,
+    "longitude": -3.7281634896577027
+  },
   "a4ed4ef4": {
     "location_name": "Centro Municipal de Mayores Villalonso",
     "address": "CALLE VILLALONSO 12",
@@ -1323,6 +1323,12 @@
     "latitude": 40.41840451709118,
     "longitude": -3.68434349797176
   },
+  "cf38b0cd": {
+    "location_name": "Nave 10 Matadero (antes Naves del Español)",
+    "address": "de la Chopera, 14",
+    "latitude": 40.3914147,
+    "longitude": -3.6972004
+  },
   "eb02bd78": {
     "location_name": "Biblioteca Pública Municipal Pío Baroja (Arganzuela)",
     "address": "CALLE ARGANDA 12",
@@ -1378,12 +1384,6 @@
     "district": "Salamanca",
     "latitude": 40.437141038651475,
     "longitude": -3.660887719467943
-  },
-  "cf38b0cd": {
-    "location_name": "Nave 10 Matadero (antes Naves del Español)",
-    "address": "de la Chopera, 14",
-    "latitude": 40.3914147,
-    "longitude": -3.6972004
   },
   "51a665b6": {
     "location_name": "Archivo de Villa",
@@ -1700,12 +1700,6 @@
     "latitude": 40.4171056,
     "longitude": -3.7065076
   },
-  "7bbd9a86": {
-    "location_name": "Parque del Oeste",
-    "address": "de Moret, 2",
-    "latitude": 40.4343542,
-    "longitude": -3.7214585
-  },
   "3a82f95a": {
     "location_name": "Jardín Banca March",
     "address": "de Castelló, 75",
@@ -1976,12 +1970,6 @@
     "latitude": 40.4156207,
     "longitude": -3.70072
   },
-  "0d71ace6": {
-    "location_name": "Sala Villanos",
-    "address": "de Bernardino Obregón, 18",
-    "latitude": 40.404034,
-    "longitude": -3.699996
-  },
   "2472b01a": {
     "location_name": "Sala de Exposiciones del Banco de España",
     "address": "de Alcalá, 48",
@@ -2169,6 +2157,12 @@
     "address": "del Barquillo, 29,",
     "latitude": 40.4230078,
     "longitude": -3.6956555
+  },
+  "0d71ace6": {
+    "location_name": "Sala Villanos",
+    "address": "de Bernardino Obregón, 18",
+    "latitude": 40.4039502,
+    "longitude": -3.7002267
   },
   "e6855de5": {
     "location_name": "Teatro Príncipe Gran Vía",
@@ -2489,5 +2483,11 @@
   },
   "2f73d4ee": {
     "location_name": "Sede pendiente de confirmación"
+  },
+  "a0e7ae45": {
+    "location_name": "IFEMA Palacio Municipal",
+    "address": "de la Capital de España, 7",
+    "latitude": 40.462266409026,
+    "longitude": -3.616358041763
   }
 }
