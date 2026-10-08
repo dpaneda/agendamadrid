@@ -1,4 +1,18 @@
 {
+  "831e9d28ec3a8b1c": {
+    "title": "19ª edición Mi Primer Festival de Cine",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a32c600f78a80a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "infantil",
+      "destacado"
+    ],
+    "description": "Festival cinematográfico dedicado al público infantil y juvenil. Proyecciones de películas y cortometrajes seleccionados para todas las edades.",
+    "is_multi_event": true,
+    "formato": "festival",
+    "lid": "824774c3"
+  },
   "17aafb1db52678d8": {
     "title": "25 años del Museo de San Isidro. Los Orígenes de Madrid",
     "description": "El museo presenta una selección de quince piezas que recorren la historia de la institución y sus hitos de investigación a lo largo de sus veinticinco años. La muestra propone una narrativa donde las propias piezas explican su contribución al conocimiento de los orígenes de la ciudad.",
@@ -1226,6 +1240,22 @@
     ],
     "formato": "puntual",
     "lid": "77f82d83"
+  },
+  "e23e0cc6ccca3eae": {
+    "title": "Ruta Barranco de la Zorra",
+    "description": "Recorrido circular de 8 kilómetros por una zona desconocida y poco transitada del parque. Permite observar vestigios históricos de la zona oeste.",
+    "start_time": "10:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a51b7ae2130fa810VgnVCM2000001f4a900aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "naturaleza",
+      "aire libre",
+      "patrimonio",
+      "gratis"
+    ],
+    "price": "Gratis",
+    "formato": "puntual",
+    "lid": "02b25093"
   },
   "9071a33e825fa533": {
     "title": "Exposición: Comercios históricos del Barrio de El Pilar",
@@ -4803,6 +4833,20 @@
     "formato": "festival",
     "lid": "a77bed0e"
   },
+  "b2d8c014c14cf472": {
+    "title": "Concierto: De la opereta al vals",
+    "description": "Selección de piezas vienesas y europeas incluyendo obras de Strauss y Chaikovski. Una tarde dedicada a la tradición musical clásica europea.",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8db43893f4ba0a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "price": "gratis",
+    "formato": "puntual",
+    "lid": "f07e42d3"
+  },
   "b302e0ec2a85295f": {
     "title": "De Raíces y Ramas",
     "description": "Espectáculo que fusiona baile flamenco, danza española y música de raíz popular. Se celebra en la plaza de Puerto Rubio.",
@@ -5206,6 +5250,18 @@
     "price": "0",
     "formato": "puntual",
     "lid": "f799769f"
+  },
+  "3c943b593bf5c6d5": {
+    "title": "Proyección de cine: Don’t Call Me Mama",
+    "description": "Drama noruego sobre una mujer que inicia un romance clandestino con un solicitante de asilo.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=cc910552cd011a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
   },
   "cd7053592ac83173": {
     "title": "Dos en Raya: Teatro y Magia",
@@ -9282,6 +9338,18 @@
     "formato": "puntual",
     "lid": "350798c9"
   },
+  "fb47da0324bb28bc": {
+    "title": "Kukuryku",
+    "start_time": "12:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=2ea4fa46443b0a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil"
+    ],
+    "description": "Espectáculo diseñado para el público infantil.",
+    "formato": "puntual",
+    "lid": "07486b5c"
+  },
   "d4b2b4e2a9deaa50": {
     "title": "La bomba de tiempo",
     "start_time": "19:00:00",
@@ -10891,14 +10959,16 @@
     "lid": "05a2048c"
   },
   "cb97cdb4da54736c": {
-    "title": "Obra de teatro: Me casé por alegría",
+    "title": "Me casé por alegría",
     "start_time": "19:30:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=6f49e0d7b396e910VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
+    "source": "esmadrid,madrid_agenda",
     "categories": [
-      "teatro"
+      "teatro",
+      "comedia"
     ],
-    "description": "Representación teatral de la obra Me casé por alegría.",
+    "description": "Fran Weber adapta la ácida comedia de Natalia Ginzburg que explora las complejidades del amor y la convivencia en pareja. La obra refleja, a través de la ironía y los gestos cotidianos, los retos de construir una vida en común entre dos caracteres opuestos.",
+    "price": "18 €",
     "formato": "exposicion",
     "lid": "b1f7c00c"
   },
@@ -12603,6 +12673,22 @@
     "formato": "puntual",
     "lid": "95a62894"
   },
+  "7959e0662df400f4": {
+    "title": "Pimpiringallo: Palabras en juego",
+    "description": "Taller de animación a la lectura que enseña claves prácticas para memorizar y narrar cuentos y poesías.",
+    "start_time": "12:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=6440b54d414b0a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "talleres",
+      "literatura",
+      "gratis"
+    ],
+    "price": "gratis",
+    "formato": "puntual",
+    "lid": "31352bed"
+  },
   "c260624d3f467b63": {
     "title": "Taller: Pinta tu abanico",
     "description": "Actividad creativa para jóvenes de 8 a 14 años donde aprenderán a decorar abanicos. Se realiza en la plaza de la Asociación con acceso libre y gratuito.",
@@ -12859,6 +12945,17 @@
     "description": "Espacio creativo dedicado a la expresión artística mediante actividades prácticas.",
     "formato": "exposicion",
     "lid": "9b3eae76"
+  },
+  "d205cb776a82c0c9": {
+    "title": "Cine: Póstumo",
+    "description": "Dolores y Luis descubren su vínculo familiar a través de un encuentro sobrenatural con tintes de realismo mágico. Un relato sobre la reconciliación y el pasado.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=3de10552cd011a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
   },
   "56f1ec950b1336ba": {
     "title": "Power Station",
@@ -13638,6 +13735,20 @@
     ],
     "formato": "puntual",
     "lid": "95a62894"
+  },
+  "3a1ec2d17fe08d89": {
+    "title": "Rossita",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=25689d24356cf910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros",
+      "gratis"
+    ],
+    "description": "Espectáculo artístico de variedades.",
+    "price": "0€",
+    "formato": "puntual",
+    "lid": "395f476b"
   },
   "5c1f6801e874d312": {
     "title": "Roxy & Fred",
@@ -15222,6 +15333,20 @@
     ],
     "formato": "puntual"
   },
+  "be506cf3cffba3fd": {
+    "title": "Taller: La escritura a través de la Historia",
+    "description": "Actividad en el marco de la Semana de la Ciencia que explora el origen y la evolución de la escritura como herramienta humana. Descubre cómo conservamos la historia.",
+    "start_time": "11:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=86ca246bfeb01a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "price": "0",
+    "formato": "puntual",
+    "lid": "0d332ccb"
+  },
   "8a546d5a2bb0c03d": {
     "title": "Taller 'Archivo de pequeñas maravillas'",
     "start_time": "18:00:00",
@@ -15532,6 +15657,17 @@
     "description": "Seminario especializado en técnicas de escritura teatral dentro del ámbito bibliotecario. Formación para interesados en el mundo de la dramaturgia.",
     "formato": "exposicion",
     "lid": "4c99e2c3"
+  },
+  "c56ce59709a81e22": {
+    "title": "Cine: Tangles",
+    "description": "Sarah abandona su vida como activista en San Francisco para regresar a su pequeña y conservadora ciudad natal. Un relato sobre la confrontación con el pasado y las raíces.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=14f10552cd011a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
   },
   "f15c8fe1f2bdbc5c": {
     "title": "Concierto: Tango & Chamamé",
@@ -16880,6 +17016,26 @@
     "price": "0",
     "formato": "exposicion"
   },
+  "ac06197f725ef808": {
+    "title": "Vengo a medida para tu bien - Tetuán",
+    "start_time": "11:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=fb5e896eecf70a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros",
+      "gratis"
+    ],
+    "dates": [
+      "2026-11-07",
+      "2026-11-14",
+      "2026-11-21",
+      "2026-11-28"
+    ],
+    "description": "Actividad cultural desarrollada en el distrito de Tetuán.",
+    "price": "gratis",
+    "formato": "puntual",
+    "lid": "f799769f"
+  },
   "4de930ccc8344752": {
     "title": "Verborrea",
     "description": "Este es el estreno absoluto de Verborrea, el nuevo proyecto de Pablo Remón, protagonizado por Javier Cámara, Israel Elejalde, Marta Nieto y Emilio Tomé. La obra reconstruye el universo de una ficticia banda punk de los años 80 para reflexionar sobre el paso del tiempo, los sueños incumplidos y la amistad.",
@@ -17007,6 +17163,22 @@
     "price": "0",
     "formato": "puntual",
     "lid": "c2271205"
+  },
+  "01bdb87aa2d165d6": {
+    "title": "Videojuegos para el día a día en Puente de Vallecas",
+    "start_time": "11:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d1b2a49c8ee00a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "bienestar",
+      "conferencias",
+      "gratis"
+    ],
+    "description": "Charla y taller sobre el uso saludable de los videojuegos en el ocio digital. Se explora cómo el gaming puede contribuir positivamente al bienestar.",
+    "price": "gratis",
+    "formato": "puntual",
+    "lid": "398d56b6"
   },
   "0bd5ead32640fb16": {
     "title": "Viernes noche y ahora que hago yo con esto",
@@ -17587,6 +17759,18 @@
     "price": "0",
     "formato": "puntual",
     "lid": "79c2f491"
+  },
+  "6eee217e38ce426a": {
+    "title": "Woman Unknown",
+    "description": "Marie, una niñera que trabaja para un rico viudo, oculta un secreto oscuro relacionado con su pasado durante la Segunda Guerra Mundial. Un drama sobre la identidad y las sombras ocultas.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d8f10552cd011a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
   },
   "2580f94cc0df7827": {
     "title": "X Bienal de Arte Contemporáneo de Fundación ONCE",
@@ -19065,6 +19249,19 @@
     "formato": "exposicion",
     "lid": "2a930101"
   },
+  "633c58890b5f52bb": {
+    "title": "Proyección: ¡Hola, Frida!",
+    "start_time": "12:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=3fe745d6f6cf0a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "gratis"
+    ],
+    "description": "Película sobre la vida y obra de la artista Frida Kahlo. Sesión cinematográfica abierta al público.",
+    "formato": "puntual",
+    "lid": "61a0fba7"
+  },
   "e6eba23949359973": {
     "title": "Taller participativo: ¡Tu opinión importa!",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=cac6ea4110e10a10VgnVCM200000f921e388RCRD",
@@ -19340,25 +19537,6 @@
     "is_multi_event": true,
     "formato": "festival",
     "lid": "e2c2b499"
-  },
-  "e54e3abcf027a519": {
-    "title": "Viajar en el tiempo: 85 años de publicidad de Renfe",
-    "description": "La exposición muestra un recorrido por la memoria visual de Renfe a través de carteles, anuncios y mensajes publicitarios seleccionados desde 1941 hasta la actualidad. La muestra analiza la evolución de la compañía ferroviaria en paralelo a la transformación social, económica y cultural del país.",
-    "start_time": "09:30:00",
-    "url": "https://www.museodelferrocarril.org/exposiciones/viajar-en-el-tiempo/",
-    "price": "7 €",
-    "image": "images/events/a85f4e538b3b.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/rfGfP2QmFxjOK3ukiHYWT5ienaWAlaEJy-RbT9wlsAs/mtime:1766135923/sites/default/files/eventos/eventos/cartel-expo-publi_web1.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/8QnxnNHbiEIHPw_gDpQZQdmT7_siYz8e_fPNN-JccF0/mtime:1766135953/sites/default/files/eventos/eventos/viajetiempo_03.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/viajar-tiempo-85-anos-publicidad-renfe-museo-ferrocarril",
-    "source": "esmadrid",
-    "categories": [
-      "exposiciones"
-    ],
-    "formato": "exposicion",
-    "lid": "0e7756d3"
   },
   "3cd376504e5e40de": {
     "title": "Corta el Cable Rojo",
@@ -21248,6 +21426,22 @@
     "formato": "exposicion",
     "lid": "3c29714c"
   },
+  "456991d0fd35bd86": {
+    "title": "Golpe a golpe, verso a verso",
+    "description": "Propuesta escénica que fusiona las canciones de Joan Manuel Serrat con la obra poética de Antonio Machado. Un viaje emocional que explora la memoria, la intimidad y el exilio a través de la música y la interpretación.",
+    "start_time": "21:00:00",
+    "url": "https://www.teatroinfantaisabel.es/obra/golpe-a-golpe-verso-a-verso/",
+    "price": "Desde 44 €",
+    "image": "images/events/5f5ab2eb9e05.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/golpe-golpe-verso-verso-teatro-infanta-isabel",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "musicales"
+    ],
+    "formato": "exposicion",
+    "lid": "8c5e05a1"
+  },
   "c03e74d85cf6ea8f": {
     "title": "El Greco, Velázquez, Goya: La Triada Inmortal",
     "description": "Una experiencia inmersiva que explora la evolución del arte español mediante proyecciones en alta definición, gráficos animados y una banda sonora envolvente. La exposición celebra el legado de tres maestros fundamentales de la pintura occidental a través de un recorrido visual y educativo.",
@@ -21291,29 +21485,6 @@
     ],
     "formato": "exposicion",
     "lid": "303984c9"
-  },
-  "3ccdb478db9bd28b": {
-    "title": "Everybody loves to Cha Cha Cha. Bego Antón (PHotoESPAÑA 2026)",
-    "description": "Exposición que explora el universo del Musical Canine Freestyle, donde mujeres y perros bailan juntos al ritmo de la música. Es una disciplina coreografiada en la que guía y animal se mueven al compás de la música, ataviados con vestuarios que dialogan con la pieza elegida.",
-    "start_time": "11:00:00",
-    "url": "https://phe.es/exposicion/everybody-loves-to-cha-cha-cha/",
-    "price": "Gratis",
-    "image": "images/events/367d9af4d15e.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/qwvR1tGMh3LTub7uA66RiEppsPEKiN0YF2zs9Schp68/mtime:1777392732/sites/default/files/eventos/eventos/cha.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/EqQ69JGCk2-c-Vp0HknkDDU8de9v8U6oiJOw_Mo6IvU/mtime:1777392809/sites/default/files/eventos/eventos/cha_cha.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/UO7z9Cp8kfYZJ-vMkzjaH_3mvkW0fZkDRj0On0ICFMY/mtime:1777392795/sites/default/files/eventos/eventos/cha_cha_2.png"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/everybody-loves-cha-cha-cha-bego-anton-casa-america",
-    "source": "esmadrid",
-    "categories": [
-      "exposiciones",
-      "fotografía",
-      "gratis"
-    ],
-    "is_multi_event": true,
-    "formato": "exposicion",
-    "lid": "9311565f"
   },
   "a94597c987883e82": {
     "title": "Dulce venganza. Felix González-Torres",
@@ -21546,23 +21717,6 @@
     "formato": "exposicion",
     "lid": "f019fdda"
   },
-  "a80e3900d8e5e0d6": {
-    "title": "Silvina Mizrahi. Ecos de un espíritu sefardí",
-    "description": "La exposición explora la memoria, la identidad y la herencia cultural sefardí a través de una propuesta interdisciplinaria que entrelaza tradiciones judías y raíces españolas. La muestra construye un diálogo entre pasado y presente mediante el uso de la escultura, la pintura y el símbolo.",
-    "start_time": "10:30:00",
-    "url": "https://www.sefarad-israel.es/exposiciones/silvina-mizrahi-ecos-de-un-espiritu-sefardi/",
-    "price": "Gratis",
-    "image": "images/events/5669e6373be0.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/silvina-mizrahi-ecos-espiritu-sefardi-centro-sefarad-israel",
-    "source": "esmadrid",
-    "categories": [
-      "exposiciones",
-      "fotografía",
-      "gratis"
-    ],
-    "formato": "exposicion",
-    "lid": "d3b83b90"
-  },
   "f81cb625732974cd": {
     "title": "Gutenberg, el mejor musical del mundo",
     "description": "Un montaje cómico-musical que relata las peripecias de dos autores inexpertos que intentan escribir una obra sobre el inventor de la imprenta. La pieza explora la ambición artística y el caos creativo a través de una puesta en escena frenética y llena de humor.",
@@ -21594,66 +21748,6 @@
     ],
     "formato": "exposicion",
     "lid": "38e0e792"
-  },
-  "64b8eeb61a549487": {
-    "title": "Democracia Americana: American Colors / American De­mocracy",
-    "description": "El colectivo PSJM presenta dos propuestas que reflexionan sobre la historia y la realidad sociopolítica de Estados Unidos mediante el uso de datos estadísticos y geometría. La muestra explora temas como la distribución racial y la evolución del sistema democrático estadounidense a través de instalaciones pictóricas.",
-    "start_time": "11:00:00",
-    "url": "https://www.casamerica.es/exposiciones/democracia-americana",
-    "price": "Gratis",
-    "image": "images/events/822bb82f5010.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/jcpHm1E6D4YE4JrZhp8TAMr6pbjP1jSMuqfrt_aO3K4/mtime:1778154922/sites/default/files/eventos/eventos/democracia_americana_american_colors_american_democracy.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/rRQC8r2ULqOz0rIg1a1TO_4HacPwN5b1kYUR6FnSWSM/mtime:1778155028/sites/default/files/eventos/eventos/american_democracy_4.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/qoKhoX-ySZAc_S_TyHHPvQmOtgvYj4_ZE3gO4N7WX7I/mtime:1778155040/sites/default/files/eventos/eventos/american_democracy_3.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/rPsrSF4LiNiDpi8QloxL9WB_VOXn3dHhrInm_WLVEJ0/mtime:1778155061/sites/default/files/eventos/eventos/american_democracy_2.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/democracia-americana-casa-america",
-    "source": "esmadrid",
-    "categories": [
-      "exposiciones",
-      "gratis"
-    ],
-    "formato": "exposicion",
-    "lid": "9311565f"
-  },
-  "1d9a8d7f4c9f354a": {
-    "title": "American latinos 1935 – 1945",
-    "description": "Exposición inmersiva que reúne cerca de 300 retratos fotográficos para documentar la vida cotidiana de las comunidades hispanas en Estados Unidos durante las décadas de 1930 y 1940. La muestra combina fotografía, música y narración para explorar las relaciones culturales entre América y España.",
-    "start_time": "11:00:00",
-    "url": "https://www.casamerica.es/exposiciones/american-latinos-1935-1945",
-    "price": "Gratis",
-    "image": "images/events/7a7c3909c2ba.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/A_-lCrp79fcM8UdumUj6qff9AhiHHbTXatzR1gH1Inc/mtime:1778155606/sites/default/files/eventos/eventos/un_trampero_espanol_colgando_ratas_almizcleras.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/nmoC8KNxaUrYIFVdPyMZgjur-VOZoqnie7tD0HFvm2Y/mtime:1778155460/sites/default/files/eventos/eventos/hija_de_un_trabajador_agricola_mexicano._chandler_arizona._dorothea_lange_1937.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/AcVTMa1_BlZj2HJFE-OwTY8NeHFg4vVYjPM08Kb2kDo/mtime:1778155416/sites/default/files/eventos/eventos/trabajadores_de_la_cana_de_azucar_en_una_plantacion.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/american-latinos-1935-1945-casa-america",
-    "source": "esmadrid",
-    "categories": [
-      "exposiciones",
-      "fotografía",
-      "gratis"
-    ],
-    "formato": "exposicion",
-    "lid": "9311565f"
-  },
-  "c92615848c53bff9": {
-    "title": "Tengo un coco contigo",
-    "description": "El artista Bernardo Medina presenta una exposición que reflexiona sobre los vínculos históricos, culturales y políticos entre Puerto Rico y Estados Unidos. La muestra utiliza elementos de la cultura popular caribeña bajo un estilo denominado \"pop caribeño\" para abordar cuestiones de identidad y dependencia cultural.",
-    "start_time": "11:00:00",
-    "url": "https://www.casamerica.es/exposiciones/tengo-un-coco-contigo",
-    "price": "Gratis",
-    "image": "images/events/388affddad68.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/tengo-coco-contigo-casa-america",
-    "source": "esmadrid",
-    "categories": [
-      "exposiciones",
-      "gratis"
-    ],
-    "formato": "exposicion",
-    "lid": "9311565f"
   },
   "a940fe937b38aa20": {
     "title": "La lentitud de la luz. María Lara",
@@ -22125,21 +22219,6 @@
     ],
     "formato": "exposicion",
     "lid": "879fc20a"
-  },
-  "9e48344ea90a69e8": {
-    "title": "Leiva",
-    "description": "El cantautor presenta su álbum más reciente en el marco de su gira Gigante. El artista realiza una serie de conciertos para poner el broche final a su actual propuesta musical.",
-    "start_time": "19:30:00",
-    "url": "https://www.movistararena.es/informacion?evento=leiva-fin-de-gira-tour-gigante",
-    "price": "Entradas agotadas",
-    "image": "images/events/a1b7eeeba768.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/leiva-movistar-arena",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "formato": "exposicion",
-    "lid": "1f1e0e14"
   },
   "f277aca315fc9156": {
     "title": "Las amistades peligrosas",
@@ -22768,43 +22847,6 @@
     ],
     "formato": "exposicion",
     "lid": "2472b01a"
-  },
-  "7ace478e3bccad76": {
-    "title": "Los Amados",
-    "description": "Un concierto teatral que combina música en vivo, humor y teatralidad para rendir homenaje a las icónicas composiciones de Carlos Gardel y Alfredo Le Pera. El espectáculo presenta un recorrido por clásicos del repertorio argentino con arreglos de ritmos latinoamericanos.",
-    "start_time": "20:00:00",
-    "url": "https://gruposmedia.com/cartelera/los-amados/",
-    "price": "Desde 23,43 €",
-    "image": "images/events/5a11eff14914.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/48izLBvWiSJchoQcaxVXTobQzJOelOOjBnAVcPpcXiY/mtime:1776698469/sites/default/files/eventos/eventos/los_amados.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/-qFchfWPDm-8rvJUfZEMd9jmt4wgyEXSsHsKF3hydPw/mtime:1776698515/sites/default/files/eventos/eventos/los_amados2.png"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/amados-pequeno-teatro-gran-via",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos",
-      "teatro",
-      "comedia"
-    ],
-    "formato": "puntual",
-    "lid": "7fb49dd2"
-  },
-  "323cd4ebdd6fbfb1": {
-    "title": "Zenet (Madrid Live Experience 2026)",
-    "description": "Zenet presenta su trabajo más íntimo, La voz y las manos, en un concierto que fusiona diversos géneros musicales como el jazz, la copla y el bolero. El artista despliega su reconocida calidad vocal en una propuesta que celebra la esencia de la canción.",
-    "start_time": "20:30:00",
-    "url": "https://zenetoficial.com/",
-    "price": "Desde 38,50 €",
-    "image": "images/events/dc43ba42ec76.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/zenet-teatro-circo-price",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos",
-      "infantil"
-    ],
-    "formato": "puntual",
-    "lid": "044f7fc6"
   },
   "a613948779eee4e9": {
     "title": "Cayetana. Grande de España",
@@ -27585,5 +27627,298 @@
     ],
     "formato": "puntual",
     "lid": "c9c45e0d"
+  },
+  "b4fdfe6d6a3dfec5": {
+    "title": "Javier Carvajal Ferrer. 100 aniversario de su nacimiento",
+    "description": "Exposición urbana sobre la figura y la obra del arquitecto Javier Carvajal Ferrer en el centenario de su nacimiento, figura fundamental en la transformación de la arquitectura moderna en España. La muestra reúne una selección de 13 edificios representativos de las distintas etapas de su trayectoria.",
+    "url": "https://www.coam.org/actualidad-agenda-coam-javier-carvajal-ferrer-100-aniversario-de-su-nacimiento/",
+    "price": "Gratis",
+    "image": "images/events/ad60b7332cc4.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/javier-carvajal-ferrer-100-aniversario-su-nacimiento-coam",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "patrimonio",
+      "gratis"
+    ],
+    "formato": "exposicion",
+    "lid": "1e352ee3"
+  },
+  "19f5b6b721686828": {
+    "title": "Arquitectura suiza contemporánea / SAY26 anuario suizo de arquitectura",
+    "description": "La exposición reúne 54 obras recientes que muestran diversas formas de hacer arquitectura en las distintas regiones de Suiza. La muestra recorre proyectos organizados en torno a ejes temáticos como equipamientos públicos, espacios públicos y nuevas maneras de habitar.",
+    "start_time": "20:00:00",
+    "url": "https://www.coam.org/actualidad-agenda-coam-arquitectura-suiza-contemporanea-say26-anuario-suizo-de-arquitectura/",
+    "price": "Gratis",
+    "image": "images/events/627e3c91cd0c.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/arquitectura-suiza-contemporanea-say26-anuario-suizo-arquitectura-coam",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "formato": "exposicion",
+    "lid": "1e352ee3"
+  },
+  "42892c9d8a98b132": {
+    "title": "Patricia Guerrero - Proceso eterno",
+    "description": "En esta nueva propuesta, Proceso Eterno representa la cadencia a la que precipita el artista. Ese largo caminar que solo acaba cuando la consciencia aparece.",
+    "start_time": "20:30:00",
+    "url": "https://www.madrid.org/sumaflamenca/2026/patricia-guerrero-proceso-eterno.html",
+    "price": "Desde 9 €",
+    "image": "images/events/62be2b299fff.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/patricia-guerrero-proceso-eterno-teatros-canal",
+    "source": "esmadrid",
+    "categories": [
+      "flamenco",
+      "danza",
+      "teatro"
+    ],
+    "formato": "puntual",
+    "lid": "027f0347"
+  },
+  "42e5da67388f29ba": {
+    "title": "Festival Cuerpo Romo",
+    "description": "El festival de danza contemporánea y música en directo celebra una nueva edición. Con Elías Aguirre en la dirección artística, este evento invita a coreógrafos, bailarines, músicos y creadores visuales a hacer de Matadero Madrid su territorio. La programación reúne espectáculos, talleres e iniciativas participativas para todos los públicos, incluyendo piezas breves de danza en la calle y actuaciones que exploran la masculinidad o las relaciones entre cuerpo, espacio, tiempo e identidad.",
+    "url": "https://www.centrodanzamatadero.es/ciclos/cuerpo-romo",
+    "price": "Gratis",
+    "image": "images/events/846d627b24d7.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/festival-cuerpo-romo-centro-danza-matadero-cdm",
+    "source": "esmadrid",
+    "categories": [
+      "danza",
+      "conciertos",
+      "talleres",
+      "aire libre",
+      "teatro",
+      "gratis",
+      "infantil"
+    ],
+    "is_multi_event": true,
+    "formato": "festival",
+    "lid": "4c99e2c3"
+  },
+  "1c2054bdf589bc4e": {
+    "title": "Simonsen + No Llores, Juanita",
+    "description": "La banda barcelonesa Simonsen y el grupo del barrio madrileño de Aluche No Llores, Juanita, presentan su pop rock en directo. La actuación reúne las propuestas de ambas bandas en una noche dedicada al género.",
+    "start_time": "21:00:00",
+    "url": "https://elperroclub.es/evento/simonsen-no-llores-juanita-pop-rock/",
+    "price": "Desde 9 €",
+    "image": "images/events/0001d3b44d56.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/simonsen-no-llores-juanita-perro-parte-atras-coche",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "0706fc4c"
+  },
+  "f94a1df9952960ce": {
+    "title": "Karime Amaya. Carmen",
+    "description": "La bailaora Karime Amaya estrena el espectáculo Carmen, un íntimo y personal homenaje a su tía abuela, la legendaria Carmen Amaya. A través del baile, el cante y la guitarra, el espectáculo dialoga con la memoria de esta mujer irrepetible cuyo espíritu revolucionario sigue vivo en cada compás.",
+    "start_time": "19:30:00",
+    "url": "https://www.madrid.org/sumaflamenca/2026/karime-amaya-carmen.html",
+    "price": "Desde 9 €",
+    "image": "images/events/2a930c572170.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/karime-amaya-carmen-teatros-canal",
+    "source": "esmadrid",
+    "categories": [
+      "flamenco",
+      "danza",
+      "teatro"
+    ],
+    "formato": "puntual",
+    "lid": "027f0347"
+  },
+  "0e293163179afe88": {
+    "title": "VIII Mercado de Artesanía de Madrid de Otoño",
+    "description": "Feria que reúne a artesanos de Madrid y otras regiones para exhibir y vender piezas únicas de oficios tradicionales. El evento incluye demostraciones en directo de los artesanos y diversas actividades culturales.",
+    "start_time": "11:00:00",
+    "url": "https://amoa.es/viii-edicion-de-la-feria-de-artesania-de-otono-2026-2/?srsltid=AU7gw4X4HP01w1XdO-K405FdYmqXGKxxyt-7BDDNQ6HMgUu6AjZIBmOe",
+    "price": "Gratis",
+    "image": "images/events/dfe11eeb6be9.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/mercado-artesania-madrid-feria-otono-paseo-recoletos",
+    "source": "esmadrid",
+    "categories": [
+      "ferias",
+      "mercados",
+      "gratis"
+    ],
+    "formato": "exposicion",
+    "lid": "52a7cbaa"
+  },
+  "3fb83e20fa6d88b3": {
+    "title": "La Carmela - V Aniversario",
+    "description": "El Tablao Flamenco La Carmela celebra su quinto aniversario con una gala única en el Teatro Calderón. Este espectáculo reúne a las máximas figuras del flamenco como José Mercé y Juana Amaya junto a talentos emergentes, en un homenaje al flamenco de verdad, sin guion ni adornos.",
+    "start_time": "21:00:00",
+    "url": "https://teatrocalderonmadrid.com/es/la-carmela",
+    "price": "Desde 42,12 €",
+    "image": "images/events/78dc3f0444dc.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/carmela-v-aniversario-teatro-calderon",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos",
+      "flamenco"
+    ],
+    "formato": "puntual",
+    "lid": "c05dd0a1"
+  },
+  "331618a24b6f18f1": {
+    "title": "IV DCOlimpiadas",
+    "description": "Más de 250 personas con daño neurológico compiten en una jornada deportiva que reúne a personas afectadas, familias y profesionales para visibilizar la actividad física como herramienta para mejorar su calidad de vida. La competición incluye cinco disciplinas deportivas adaptadas: boccia, tenis de mesa, tiro con arco, orientación y pádel.",
+    "start_time": "9:30:00",
+    "url": "https://fundacionsegundaparte.org/actividad-fisica/tengo-da%C3%B1o-neurologico/eventos",
+    "price": "5 €",
+    "image": "images/events/f18d6da12d92.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/dcolimpiadas-caja-magica",
+    "source": "esmadrid",
+    "categories": [
+      "deportes",
+      "accesible"
+    ],
+    "formato": "puntual",
+    "lid": "e42e9264"
+  },
+  "ab9f540824f28f2c": {
+    "title": "Gabriel Matías - Quitar lo superfluo",
+    "description": "Recital de baile flamenco que propone un regreso a los orígenes, a los inicios y al propio génesis de este arte. El espectáculo reivindica la vigencia del flamenco tradicional como herramienta de reflexión, emoción y transmisión.",
+    "start_time": "18:00:00",
+    "url": "https://www.madrid.org/sumaflamenca/2026/gabriel-matias-quitar-lo-superfluo.html",
+    "price": "Entradas agotadas",
+    "image": "images/events/0615b5ee4de6.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/gabriel-matias-quitar-lo-superfluo-teatros-canal",
+    "source": "esmadrid",
+    "categories": [
+      "danza",
+      "flamenco",
+      "teatro"
+    ],
+    "formato": "puntual",
+    "lid": "027f0347"
+  },
+  "d4dad8e04004a1db": {
+    "title": "44º Festival de Otoño",
+    "description": "El Festival de Otoño, considerado el mejor festival de arte escénico de España, celebra su 44º aniversario con una programación que destaca por su marcado sello internacional. Cuenta con las mejores propuestas de teatro, danza y performance que llenarán diversos espacios culturales de la ciudad.",
+    "latitude": 40.4167754,
+    "longitude": -3.7037902,
+    "url": "https://www.madrid.org/fo/",
+    "price": "Consultar página oficial",
+    "image": "images/events/2c0f19e9f09b.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/wsvsqlxz0BBC0-7hq4LVZNkiA_TNl_SefJIlwY1VCZc/mtime:1789737831/sites/default/files/eventos/eventos/44o_festival_de_otono.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/CN8RygyvrIYPdYArL0vVCeY8GYbWPQN_Tcv5TpeBoFw/mtime:1789738071/sites/default/files/eventos/eventos/pessoa_-_since_ive_been_me.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/1iBjFukM6E2f0Ej6wUKuGiMS0hYw52AP5Mjp1WsfwmI/mtime:1789738616/sites/default/files/eventos/eventos/yesterday_you_were_angry_in_green.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/gbqadeL9ROpz13aPdvoCMnbPJX3arY8rcjroL2V8teo/mtime:1789738506/sites/default/files/eventos/eventos/deserto.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/vs43rs1LWugYCRw3vpPSzqIv5HzYP8uBwlEmiOO9L8o/mtime:1789738569/sites/default/files/eventos/eventos/tambourines.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/wyyoa_5DT-_KtQVo8hX9CShoffg6aYj5bc0XWSfRtxU/mtime:1789738396/sites/default/files/eventos/eventos/la_ira_de_narciso.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/VJ-HL4yQvQynJU8QVus7-fOsRtYLXqxvRbevtG6aslI/mtime:1752224210/sites/default/files/eventos/eventos/1-festival-de-otono-madrid.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/festival-de-oto%C3%B1o",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "danza",
+      "destacado"
+    ],
+    "location_name": "Varios espacios",
+    "is_multi_event": true,
+    "formato": "festival"
+  },
+  "327e243a52a174ee": {
+    "title": "Madrid Hotel Week 2026",
+    "description": "La décima edición del evento que convierte a los hoteles en los protagonistas de la vida cultural y gastronómica de la ciudad (Varios espacios. 6 a 15 noviembre).",
+    "url": "https://www.madridhotelweek.com/",
+    "price": "Consultar página oficial",
+    "image": "images/events/9d0b29d0037b.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/VLK0qd33suCQnw4epHpwAo57_IwH7I7Ehed1j1q323o/mtime:1791204966/sites/default/files/eventos/eventos/madrid_hotel_week_2026.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/9jz2PhCWOuCRGhqPs2RrXjyomUKSDpbqnQoQ5VXZiuY/mtime:1738919002/sites/default/files/recursosturisticos/alojamientos/hotel_umusic_6.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/madrid-hotel-week",
+    "source": "esmadrid",
+    "categories": [
+      "otros"
+    ],
+    "formato": "exposicion"
+  },
+  "777fed0253b4e473": {
+    "title": "This is Michael",
+    "description": "Un espectacular tributo musical a Michael Jackson interpretado por el artista Lenny Jay junto a una selección de bailarines, cantantes y músicos. El montaje recrea las actuaciones del rey del pop con coreografías originales, vestuario icónico y sus temas más emblemáticos.",
+    "start_time": "21:00:00",
+    "url": "https://www.palaciovistalegre.com/event/this-is-michael-2026/",
+    "price": "Desde 55 €",
+    "image": "images/events/8d95988dcce1.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/8asXL1KYzkqGxWGRMJwYA0im1bVvPuPwgmm_W4u2H6g/mtime:1778081776/sites/default/files/eventos/eventos/this_is_michael.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/LYSLN8H5AQvNTbFXRLVr5YgWuBEA8vzlgFng6lkWE-o/mtime:1778081872/sites/default/files/eventos/eventos/this_is_michael_palacio_vistalegre_arena_2026.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/michael-palacio-vistalegre-arena",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "9a5be362"
+  },
+  "b4a636aff5a3757c": {
+    "title": "Ben Yart",
+    "description": "El cantante de música urbana presenta su nuevo álbum en una actuación que explora influencias flamencas, árabes y bizantinas. El artista destaca por su voz inconfundible y un repertorio que combina provocación, humor y vulnerabilidad.",
+    "start_time": "20:00:00",
+    "url": "https://www.movistararena.es/programacion/evento/ben-yart",
+    "price": "Desde 22 €",
+    "image": "images/events/0855509070e2.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/ben-yart-sala-movistar-arena",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "1f1e0e14"
+  },
+  "0c30036326b41c1f": {
+    "title": "Duran Duran",
+    "description": "La banda británica de pop rock presenta su gira Free to Love Tour repasando sus cuatro décadas de éxitos musicales. El concierto ofrece un recorrido por temas emblemáticos de la trayectoria del grupo y nuevas composiciones.",
+    "start_time": "21:00:00",
+    "url": "https://www.movistararena.es/programacion/evento/duran-duran-free-to-love-tour/6-11-2026/21:00",
+    "price": "Desde 82,50 €",
+    "image": "images/events/cfffdb5bb653.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/duran-duran-movistar-arena",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "1f1e0e14"
+  },
+  "ba55625fdb154f5b": {
+    "title": "James Carter Organ Trio",
+    "description": "El músico y compositor estadounidense James Carter presenta una actuación de jazz en formato trío junto al baterista Alex White y el organista Gerard Gibbs. El concierto se enmarca dentro de la programación del festival internacional JAZZMADRID26.",
+    "start_time": "20:00:00",
+    "url": "https://festivaldejazzmadrid.com/actividad/james-carter-organ-trio-trane-a-centennial-supremejames-carter-organ-trio-trane-a-centennial-supreme/",
+    "price": "Desde 38 €",
+    "image": "images/events/0de09f7ca19b.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/james-carter-organ-trio-teatro-fernan-gomez-centro-cultural-villa",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "c9c45e0d"
+  },
+  "f3ad98e1666dec28": {
+    "title": "PESSOA - Since I’ve Been Me",
+    "description": "El director Robert Wilson homenajea al poeta Fernando Pessoa a través de sus textos y heterónimos en una reflexión sobre la multiplicidad del yo. La propuesta escénica se articula como una sucesión de cuadros visuales y sonoros con una estética hipnótica y precisa.",
+    "start_time": "20:00:00",
+    "url": "https://www.teatroscanal.com/espectaculo/pessoa-since-ive-been-me-robert-wilson/",
+    "price": "Entradas agotadas",
+    "image": "images/events/a613d3972150.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/pessoa-ive-been-me-teatros-canal",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "danza"
+    ],
+    "formato": "puntual",
+    "lid": "027f0347"
   }
 }
