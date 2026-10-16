@@ -19,8 +19,8 @@
     "latitude": 40.44864332758775,
     "longitude": -3.704513191828797
   },
-  "d6969a3d": {
-    "location_name": "Centro de Información y Educación Ambiental El Retiro",
+  "02e88678": {
+    "location_name": "Centro de Educación Ambiental El Retiro",
     "address": "PASEO FERNAN NUÑEZ 2",
     "district": "Retiro",
     "latitude": 40.40943503279114,
@@ -780,11 +780,10 @@
     "longitude": -3.6972067902718897
   },
   "38e0e792": {
-    "location_name": "Casa del Lector",
-    "address": "PASEO CHOPERA 14",
-    "district": "Arganzuela",
-    "latitude": 40.39245798191536,
-    "longitude": -3.6972067902718897
+    "location_name": "Casa del Lector (Matadero)",
+    "address": "de la Chopera, 14",
+    "latitude": 40.3914147,
+    "longitude": -3.6972004
   },
   "0402c527": {
     "location_name": "Aula ambiental La Cabaña del Retiro",
@@ -1815,11 +1814,11 @@
     "latitude": 40.4239695,
     "longitude": -3.6985835
   },
-  "1e8020f3": {
-    "location_name": "Teatro Bellas Artes",
-    "address": "del Marqués de Casa Riera, 2",
-    "latitude": 40.418335878681,
-    "longitude": -3.69638979435
+  "5f3f83ad": {
+    "location_name": "Círculo de Bellas Artes",
+    "address": "de Alcalá, 42",
+    "latitude": 40.4186631,
+    "longitude": -3.6964944
   },
   "9d15f421": {
     "location_name": "Estadio Bernabéu",
@@ -1847,12 +1846,6 @@
     "address": "de Serrano , 61",
     "latitude": 40.4319053,
     "longitude": -3.6874425
-  },
-  "971e403e": {
-    "location_name": "Pequeño Cine Estudio",
-    "address": "de Magallanes, 1",
-    "latitude": 40.4323809,
-    "longitude": -3.7054967
   },
   "60383778": {
     "location_name": "Teatro La Latina",
@@ -2008,18 +2001,6 @@
     "address": "De Castilla, km. 2",
     "latitude": 40.438618529975,
     "longitude": -3.742475509644
-  },
-  "884c022f": {
-    "location_name": "Sala Wagon",
-    "address": "de Agustín de Foxa, s/n",
-    "latitude": 40.4760991,
-    "longitude": -3.6820196
-  },
-  "9d5eb577": {
-    "location_name": "La Riviera",
-    "address": "Bajo de la Virgen del Puerto, s/n",
-    "latitude": 40.4133013,
-    "longitude": -3.7219371
   },
   "24d0cdde": {
     "location_name": "C Arte C",
@@ -2207,6 +2188,12 @@
     "latitude": 40.4392262,
     "longitude": -3.7008285
   },
+  "9d5eb577": {
+    "location_name": "La Riviera",
+    "address": "Bajo de la Virgen del Puerto, s/n",
+    "latitude": 40.4133013,
+    "longitude": -3.7219371
+  },
   "0d7b035c": {
     "location_name": "Teatro Rialto",
     "address": "Gran Vía, 54",
@@ -2235,12 +2222,6 @@
     "address": "del Payaso Fofó, s/n",
     "latitude": 40.3875992,
     "longitude": -3.6602826
-  },
-  "dd26025d": {
-    "location_name": "El Pasillo Verde Teatro",
-    "address": "de la Esperanza, 23 - 25",
-    "latitude": 40.4006906,
-    "longitude": -3.7040473
   },
   "9b2ba2ac": {
     "location_name": "La Usina",
@@ -2439,6 +2420,12 @@
     "latitude": 40.4361479,
     "longitude": -3.7163204
   },
+  "4da9be7c": {
+    "location_name": "Autocine Madrid",
+    "address": "de la Isla de Java, 2",
+    "latitude": 40.4868805,
+    "longitude": -3.6779757
+  },
   "9d984b5f": {
     "location_name": "Casa Museo Lope de Vega",
     "address": "de Cervantes, 11",
@@ -2468,5 +2455,23 @@
     "address": "Cifuentes, 5",
     "latitude": 40.3474905,
     "longitude": -3.6959936
+  },
+  "6824619c": {
+    "location_name": "Réplika Teatro",
+    "address": "de la Explanada, 14",
+    "latitude": 40.4482718,
+    "longitude": -3.7116787
+  },
+  "e9af25a5": {
+    "location_name": "Museo ICO",
+    "address": "de Zorrilla, 3",
+    "latitude": 40.416864,
+    "longitude": -3.6977864
+  },
+  "f497a8a8": {
+    "location_name": "Café Berlín Club Madrid",
+    "address": "de los Ángeles, 20",
+    "latitude": 40.4187596,
+    "longitude": -3.7082033
   }
 }

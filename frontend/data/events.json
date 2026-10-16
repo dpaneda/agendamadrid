@@ -101,7 +101,7 @@
     "description": "Exposición conmemorativa que pone en valor la importancia histórica y patrimonial del Parque del Retiro en su 90 aniversario como BIC.",
     "price": "0",
     "formato": "exposicion",
-    "lid": "d6969a3d"
+    "lid": "02e88678"
   },
   "750a9e88355f4895": {
     "title": "A fishy tale",
@@ -1541,6 +1541,18 @@
     "formato": "exposicion",
     "lid": "c4d94593"
   },
+  "7148780c7da885f2": {
+    "title": "Caminero Cuarteto en JAZZMADRID",
+    "description": "Concierto de jazz de Caminero Cuarteto dentro del prestigioso festival JAZZMADRID. Una oportunidad para escuchar figuras destacadas del panorama musical actual.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=6cab4d88848d0a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "destacado"
+    ],
+    "formato": "puntual",
+    "lid": "bb29009c"
+  },
   "c237ec41e876f761": {
     "title": "Canciones para recordar",
     "description": "Marta Sanley y Gabriel Peso ofrecen un repertorio nostálgico enfocado al público mayor. Un concierto dedicado a revivir temas inolvidables.",
@@ -2609,6 +2621,19 @@
     "formato": "puntual",
     "lid": "ccc906e4"
   },
+  "4ed43847be94dfbf": {
+    "title": "Clausura y entrega de premios: Reinas del Tablero",
+    "description": "Ceremonia de cierre del torneo de ajedrez femenino con entrega de trofeos y medallas a las ganadoras.",
+    "start_time": "13:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=012d97aa2a021a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "deportes",
+      "gratis"
+    ],
+    "price": "gratis",
+    "formato": "puntual"
+  },
   "6d7ccb5a8f1f67f6": {
     "title": "Taller: Claves para sanar mi autoestima",
     "start_time": "12:00:00",
@@ -3610,7 +3635,7 @@
     ],
     "price": "gratis",
     "formato": "puntual",
-    "lid": "d6969a3d"
+    "lid": "02e88678"
   },
   "76dee3900cf9efaf": {
     "title": "Taller: Conectar contigo misma a través del cuerpo",
@@ -5986,6 +6011,27 @@
     "formato": "puntual",
     "lid": "0745535a"
   },
+  "5fe126d051ec0d59": {
+    "title": "Ruta guiada: Encinar de San Pedro",
+    "description": "Itinerario circular de 8 kilómetros por la Casa de Campo para descubrir la biodiversidad de sus ecosistemas. Un recorrido por la zona de Reserva Integral.",
+    "start_time": "10:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=55c76081f5f92910VgnVCM1000001d4a900aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "naturaleza",
+      "gratis",
+      "visitas guiadas",
+      "deportes",
+      "aire libre"
+    ],
+    "dates": [
+      "2026-11-15",
+      "2026-12-05"
+    ],
+    "price": "0",
+    "formato": "puntual",
+    "lid": "02b25093"
+  },
   "01871018f5ce5bf4": {
     "title": "Encontrados - Teatro Silfo",
     "description": "Exposición inédita equipada con códigos QR accesibles (NaviLens) para facilitar el acceso autónomo a la información. Una muestra inclusiva diseñada para todo tipo de público.",
@@ -6300,7 +6346,7 @@
     ],
     "price": "gratis",
     "formato": "puntual",
-    "lid": "d6969a3d"
+    "lid": "02e88678"
   },
   "097de276ef49077e": {
     "title": "Entrega del XVIII Premio de Microrrelatos",
@@ -6774,6 +6820,21 @@
     ],
     "formato": "puntual",
     "lid": "95a62894"
+  },
+  "fc6db8ba4b900d81": {
+    "title": "Exhibición: El Madrid islámico",
+    "description": "Taller didáctico que explora el uso de la cerámica, los candiles y la caligrafía en la época andalusí de Madrid.",
+    "start_time": "12:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d426b21f95931a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "exposiciones",
+      "gratis"
+    ],
+    "price": "Gratis",
+    "formato": "puntual",
+    "lid": "0d332ccb"
   },
   "f4c4a03d8169a5b3": {
     "title": "Exhibición: Roma, ingeniería y artesanía",
@@ -7411,7 +7472,7 @@
     "price": "gratis",
     "is_multi_event": true,
     "formato": "puntual",
-    "lid": "d6969a3d"
+    "lid": "02e88678"
   },
   "09d4c3680502f3c3": {
     "title": "Festival 4 estaciones: Edición Primavera",
@@ -10199,7 +10260,7 @@
     ],
     "description": "Taller práctico de jardinería y concienciación ambiental diseñado para niños.",
     "formato": "puntual",
-    "lid": "d6969a3d"
+    "lid": "02e88678"
   },
   "0b55481dc4707354": {
     "title": "Cine: Los misteriosos cuentos del manzano",
@@ -10565,6 +10626,21 @@
     "description": "Ciclo de marchas nórdicas programadas para las temporadas 2026-2027 en diversos puntos de la ciudad. Fomento del bienestar y el ejercicio saludable.",
     "is_multi_event": true,
     "formato": "festival"
+  },
+  "ef6bb11db0324170": {
+    "title": "Teatro infantil: Mari la mariquita",
+    "start_time": "11:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=53cdb2de0feee910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "gratis",
+      "infantil"
+    ],
+    "description": "Representación teatral dirigida al público infantil con entrada gratuita.",
+    "price": "0",
+    "formato": "puntual",
+    "lid": "02e88678"
   },
   "6d528d83792b36e3": {
     "title": "Marnie, la ladrona",
@@ -11320,7 +11396,7 @@
     "description": "Exposición de las originales calabazas participantes en el XII Concurso de Calabazas Gigantes y Raras. Un evento visualmente divertido para todos los públicos, ideal para disfrutar en familia.",
     "price": "Gratis",
     "formato": "exposicion",
-    "lid": "d6969a3d"
+    "lid": "02e88678"
   },
   "8415bd080f001248": {
     "title": "Taller: Muévete al ritmo del barrio",
@@ -11488,7 +11564,7 @@
     ],
     "price": "gratis",
     "formato": "puntual",
-    "lid": "d6969a3d"
+    "lid": "02e88678"
   },
   "1cfdb94a7019262a": {
     "title": "XXXII Semana Cultural: Música Tradicional Española",
@@ -12103,6 +12179,23 @@
       "2026-10-31"
     ],
     "price": "0",
+    "formato": "puntual"
+  },
+  "02272ad639fda525": {
+    "title": "Visita guiada: Paseando por Chamberí",
+    "description": "Recorrido histórico por el barrio de Chamberí explorando su comercio tradicional desde Fuencarral a Santa Engracia.",
+    "start_time": "12:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=cb03f6c77bcf0a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "patrimonio",
+      "gratis"
+    ],
+    "dates": [
+      "2026-11-15",
+      "2026-11-22"
+    ],
     "formato": "puntual"
   },
   "132aa2eb412fbe69": {
@@ -13322,6 +13415,20 @@
     "formato": "puntual",
     "lid": "95a62894"
   },
+  "fbdee632aaaaeed8": {
+    "title": "Rincón creativo: Taller de manualidades",
+    "description": "Espacio paralelo al torneo de ajedrez donde los participantes pueden dibujar, colorear y realizar manualidades.",
+    "start_time": "10:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8cae97aa2a021a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "infantil",
+      "gratis"
+    ],
+    "price": "gratis",
+    "formato": "puntual"
+  },
   "c4aabba7f3048a2f": {
     "title": "Cine infantil: Robotia",
     "start_time": "12:00:00",
@@ -14200,15 +14307,18 @@
     "lid": "3262edc1"
   },
   "e9e1921d51cd6489": {
-    "title": "Súper letras",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=efe6ae84d5b01a10VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
+    "title": "Súper Letras",
+    "description": "Exposición que transforma letras y números en materia plástica y visual para explorar los límites del lenguaje gráfico contemporáneo. La muestra reúne diversas técnicas artísticas que reinventan el alfabeto más allá de su función lectora habitual.",
+    "start_time": "16:00:00",
+    "url": "https://www.mataderomadrid.org/programacion/exposicion-grafica-super-letras",
+    "price": "Gratis",
+    "image": "images/events/7ddd917cc48b.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/super-letras-casa-lector-matadero",
+    "source": "esmadrid,madrid_agenda",
     "categories": [
-      "conciertos",
+      "exposiciones",
       "gratis"
     ],
-    "description": "Evento musical con actuaciones en directo.",
-    "price": "Gratis",
     "formato": "exposicion",
     "lid": "38e0e792"
   },
@@ -14377,7 +14487,7 @@
     "description": "Participa en un taller práctico en el Parque de El Retiro centrado en la construcción de cajas nido para aves. Incluye una visita guiada para conocer más sobre la fauna y flora local.",
     "price": "gratis",
     "formato": "puntual",
-    "lid": "d6969a3d"
+    "lid": "02e88678"
   },
   "73ca97798d9df400": {
     "title": "Taller de collage analógico",
@@ -14392,6 +14502,26 @@
     "description": "Sesión práctica de artes plásticas para crear obras mediante la técnica del collage manual.",
     "formato": "puntual",
     "lid": "f754924c"
+  },
+  "e52c9e37c16fa01d": {
+    "title": "Taller de creación de comederos para aves",
+    "description": "Taller práctico sobre cómo construir comederos para ayudar a las aves insectívoras urbanas.",
+    "start_time": "11:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=ba51ef951fa33810VgnVCM1000001d4a900aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "naturaleza",
+      "gratis"
+    ],
+    "dates": [
+      "2026-11-15",
+      "2026-12-13",
+      "2026-12-27"
+    ],
+    "price": "0€",
+    "formato": "puntual",
+    "lid": "02e88678"
   },
   "4c22d488bb1f22ce": {
     "title": "Taller de conservas de otoño",
@@ -14552,7 +14682,7 @@
     ],
     "price": "0€",
     "formato": "puntual",
-    "lid": "d6969a3d"
+    "lid": "02e88678"
   },
   "b29589dd6b2a715c": {
     "title": "Taller de iniciación a castañuelas (tarde)",
@@ -14800,7 +14930,7 @@
     ],
     "price": "gratis",
     "formato": "puntual",
-    "lid": "d6969a3d"
+    "lid": "02e88678"
   },
   "b2f3f547e91075ca": {
     "title": "Taller familiar inclusivo: Relieves con R de Ramón",
@@ -16225,6 +16355,19 @@
     ],
     "formato": "puntual",
     "lid": "1b70d3a3"
+  },
+  "22dd49c1d10817a6": {
+    "title": "Torneo Reinas del Tablero",
+    "description": "Competición de ajedrez abierta a jugadoras de diferentes edades y niveles para disfrutar del juego.",
+    "start_time": "10:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=9c7b97aa2a021a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "deportes",
+      "gratis"
+    ],
+    "price": "gratis",
+    "formato": "puntual"
   },
   "ced7f61501284263": {
     "title": "Tramas que nos unen",
@@ -21716,7 +21859,7 @@
       "accesible"
     ],
     "formato": "exposicion",
-    "lid": "1e8020f3"
+    "lid": "5f3f83ad"
   },
   "dbdc6cc8236f168e": {
     "title": "José Manuel Ballester (PHotoESPAÑA 2026)",
@@ -21824,23 +21967,6 @@
     ],
     "formato": "exposicion",
     "lid": "72c7b587"
-  },
-  "9b9f6d7967bb3491": {
-    "title": "La brecha de lo real",
-    "description": "Ciclo de cine y pensamiento que propone cinco sesiones de proyección de películas clásicas acompañadas de coloquios con expertos. Es un formato de encuentro diseñado para profundizar en la experiencia cinematográfica a través de la conversación abierta.",
-    "start_time": "20:00:00",
-    "url": "https://www.labrechadeloreal.com/",
-    "price": "35 €",
-    "image": "images/events/558275684e6b.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/brecha-lo-real-pequeno-cine-estudio",
-    "source": "esmadrid",
-    "categories": [
-      "cine",
-      "conferencias"
-    ],
-    "is_multi_event": true,
-    "formato": "festival",
-    "lid": "971e403e"
   },
   "9ba700eb1d4a252b": {
     "title": "El club de los poetas muertos",
@@ -22719,28 +22845,6 @@
     "formato": "exposicion",
     "lid": "d2e1acfd"
   },
-  "7ef3fac850c31e05": {
-    "title": "Fruit Attraction 2026",
-    "description": "Feria internacional que reúne a profesionales del sector hortofrutícola para compartir novedades, tecnologías y servicios del mercado. El evento actúa como punto de encuentro comercial y marco de innovación para toda la cadena de valor de frutas y hortalizas.",
-    "start_time": "09:30:00",
-    "url": "https://www.ifema.es/fruit-attraction",
-    "price": "Consultar página oficial",
-    "image": "images/events/fa21d42ae339.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/cPT2l0rgDbG5X03D6y7tmyMcASazIswLBxSdt0T0Ohk/mtime:1771843599/sites/default/files/eventos/eventos/fruit_attraction.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/BUZ6nenk-rSte2PIeVsM1AD6K8sWtxslEq4ta1V_-YM/mtime:1596100166/sites/default/files/eventos/eventos/fruit_attraction_2020_1.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/DPJfZrUN8EFHDI-Ek5nKEuiTuAOQ36XHAkllORjsycw/mtime:1596100080/sites/default/files/eventos/eventos/fruit_attraction_2020_2.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/fruit-attraction-ifema-madrid",
-    "source": "esmadrid",
-    "categories": [
-      "ferias",
-      "gastronomía"
-    ],
-    "is_multi_event": true,
-    "formato": "festival",
-    "lid": "ed301dfc"
-  },
   "44311dfd70e09dc5": {
     "title": "Seba Calfuqueo. Cautín",
     "description": "La artista mapuche presenta su primera exposición individual en Europa con obras que exploran la relación con la naturaleza y la historia del río Cautín. La muestra invita a reflexionar sobre la convivencia entre humanos y el entorno natural a través de una perspectiva de reciprocidad.",
@@ -22857,40 +22961,6 @@
     "formato": "puntual",
     "lid": "e3ef2343"
   },
-  "430b4b59d2422d35": {
-    "title": "Primal Fear",
-    "description": "La banda alemana de power metal presenta en directo los temas de su nuevo álbum junto a los éxitos de sus más de veinticinco años de carrera. La actuación destaca por su combinación de riffs demoledores y melodías contundentes propias del heavy metal internacional.",
-    "start_time": "19:00:00",
-    "url": "https://primalfear.de/",
-    "price": "33 €",
-    "image": "images/events/2a3f6290691f.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/primal-fear-sala-wagon",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "formato": "puntual",
-    "lid": "884c022f"
-  },
-  "4b75653e0b41678f": {
-    "title": "El Tri",
-    "description": "La legendaria banda mexicana de rock celebra su trayectoria con un potente directo en su nueva gira internacional. El grupo repasa sus más de cinco décadas de carrera interpretando sus grandes éxitos y temas emblemáticos del rock en español.",
-    "start_time": "20:00:00",
-    "url": "https://www.eltri.com.mx/",
-    "price": "Desde 44 €",
-    "image": "images/events/78da8a710992.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/fugfmkR0ldF8ZfGjGMSA35PgzBCyFNybmMXL4u1xOsk/mtime:1777391877/sites/default/files/eventos/eventos/el_tri.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/m7DEkUMsnd0TPA6O-jhj5AKjYU_g24ODFKPtq1fFZ6A/mtime:1777391954/sites/default/files/eventos/eventos/dragon.png"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/tri-riviera",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "formato": "puntual",
-    "lid": "9d5eb577"
-  },
   "af8cc33eec2f1cad": {
     "title": "César Fernández Arias. Laboratorio de creación",
     "description": "Retrospectiva que recorre cinco décadas de producción artística de César Fernández Arias a través de pinturas, esculturas, dibujos y otros objetos. La muestra explora el universo creativo y la faceta pedagógica de uno de los referentes del arte español contemporáneo.",
@@ -22913,21 +22983,6 @@
     ],
     "formato": "exposicion",
     "lid": "24d0cdde"
-  },
-  "38e19c8bcdb18071": {
-    "title": "Real Madrid - Partizán de Belgrado (Euroliga. Jornada 4)",
-    "description": "El Partizán de Belgrado, club histórico del baloncesto serbio y europeo, se enfrenta al Real Madrid en la competición de la Euroliga. Un encuentro deportivo de alto nivel que reúne a dos de los equipos más laureados del continente.",
-    "start_time": "20:45:00",
-    "url": "https://www.realmadrid.com/es-ES/baloncesto/partidos/euroliga/real-madrid-partizan-mozzart-bet-belgrade/08-10-2026",
-    "price": "Consultar página oficial",
-    "image": "images/events/3da27e7f82e0.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/real-madrid-partizan-belgrado-euroliga-jornada-4-movistar-arena",
-    "source": "esmadrid",
-    "categories": [
-      "deportes"
-    ],
-    "formato": "puntual",
-    "lid": "1f1e0e14"
   },
   "e7ad93c0375a39c0": {
     "title": "ICTUS (Anatomía de «La última lección» de Castelao)",
@@ -23363,7 +23418,7 @@
       "comedia"
     ],
     "formato": "exposicion",
-    "lid": "1e8020f3"
+    "lid": "5f3f83ad"
   },
   "12b8787a0d216745": {
     "title": "Real Madrid - Villarreal CF (LALIGA EA SPORTS)",
@@ -23884,7 +23939,7 @@
       "teatro"
     ],
     "formato": "puntual",
-    "lid": "1e8020f3"
+    "lid": "5f3f83ad"
   },
   "fd8b7f62dfdc6145": {
     "title": "Bambú y Jardín: El Arte de Encontrarse",
@@ -24727,7 +24782,7 @@
     ],
     "is_multi_event": true,
     "formato": "festival",
-    "lid": "1e8020f3"
+    "lid": "5f3f83ad"
   },
   "b9222c455e710263": {
     "title": "The King: Michael Jackson Live Tribute",
@@ -24894,22 +24949,6 @@
     ],
     "formato": "puntual",
     "lid": "2b9a4735"
-  },
-  "9047ac5a67e716e5": {
-    "title": "El dichoso porvenir",
-    "description": "Una propuesta teatral que utiliza la lírica como herramienta de lucha, crítica y reflexión sobre la pérdida y la resistencia. La obra combina humor y tragedia para explorar la lucha de tres personajes por su identidad y su derecho a recordar frente al despojo.",
-    "start_time": "20:00:00",
-    "url": "https://elpasilloverdeteatro.com/entradas/el-dichoso-porvenir/",
-    "price": "12 €",
-    "image": "images/events/e0e8541d25bd.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/dichoso-porvenir-pasillo-verde-teatro",
-    "source": "esmadrid",
-    "categories": [
-      "teatro",
-      "comedia"
-    ],
-    "formato": "exposicion",
-    "lid": "dd26025d"
   },
   "8db94f563ddb417f": {
     "title": "La imagen olvidada",
@@ -25173,7 +25212,7 @@
       "danza",
       "teatro"
     ],
-    "formato": "puntual",
+    "formato": "exposicion",
     "lid": "027f0347"
   },
   "ece0e9111adcbbd1": {
@@ -25361,7 +25400,7 @@
       "conciertos"
     ],
     "formato": "puntual",
-    "lid": "1e8020f3"
+    "lid": "5f3f83ad"
   },
   "f2852cff57fed21c": {
     "title": "¿Quieres pecar conmigo?",
@@ -25394,7 +25433,7 @@
       "accesible"
     ],
     "formato": "exposicion",
-    "lid": "1e8020f3"
+    "lid": "5f3f83ad"
   },
   "c6378fd286350305": {
     "title": "Unarmoured. Clara Furey",
@@ -27701,14 +27740,14 @@
     "start_time": "19:30:00",
     "url": "https://www.movistararena.es/informacion?evento=miranda",
     "price": "Desde 49,50 €",
-    "image": "images/events/f37d0e43df8b.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/miranda-movistar-arena",
+    "image": "images/events/a86cbbf5651f.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/miranda-lenovo-garage",
     "source": "esmadrid",
     "categories": [
       "conciertos"
     ],
     "formato": "puntual",
-    "lid": "1f1e0e14"
+    "lid": "4da9be7c"
   },
   "ec29fb63e019a060": {
     "title": "SIMO Educación 2026",
@@ -28113,7 +28152,7 @@
       "flamenco",
       "teatro"
     ],
-    "formato": "puntual",
+    "formato": "exposicion",
     "lid": "1c1d2b48"
   },
   "22db61194f0b5ac0": {
@@ -28339,5 +28378,413 @@
     ],
     "formato": "puntual",
     "lid": "4eb3f73b"
+  },
+  "8f5280822eb0960d": {
+    "title": "Carteles sin palabras (Madrid Gráfica)",
+    "description": "La exposición reúne obras de diseñadores iberoamericanos que exploran la capacidad de comunicar exclusivamente a través de la imagen y el lenguaje gráfico, prescindiendo de la tipografía. La muestra pone a prueba los recursos visuales y la fuerza conceptual de autores que interpretan conceptos a través de ilustraciones y composiciones fotográficas.",
+    "start_time": "16:00:00",
+    "url": "https://casalector.fundaciongsr.org/carteles-sin-palabras/",
+    "price": "Gratis",
+    "image": "images/events/60939bc56329.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/carteles-palabras-madrid-grafica-casa-lector-matadero",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "formato": "exposicion",
+    "lid": "38e0e792"
+  },
+  "411026010d85837a": {
+    "title": "Internalities",
+    "description": "La exposición analiza cómo la arquitectura contemporánea puede reducir el impacto ambiental mediante el uso de materiales locales y técnicas de baja huella de carbono. El recorrido incluye una instalación central y diversas áreas de investigación aplicada sobre el ciclo de vida de los edificios.",
+    "start_time": "11:00:00",
+    "url": "https://lacasadelaarquitectura.es/recurso/internalities-internalities/6f5ce310-cd14-4534-a2d9-a01ba07c07e7",
+    "price": "Gratis",
+    "image": "images/events/99e091883961.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/internalities-casa-arquitectura",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "formato": "exposicion",
+    "lid": "d700ab39"
+  },
+  "6cc6596169bfeaa0": {
+    "title": "Recursos naturales",
+    "description": "Exposición fotográfica de Juan Rodríguez que documenta la relación entre la extracción de materias primas y la industria de la construcción. El proyecto examina tanto los paisajes transformados por la actividad extractiva como el componente humano y artesanal del oficio.",
+    "start_time": "11:00:00",
+    "url": "https://lacasadelaarquitectura.es/recurso/recursos-naturales-recursos-naturales/937a16e9-8bd2-4d12-9d72-0f57a0d57038",
+    "price": "Gratis",
+    "image": "images/events/2147fe754920.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/recursos-naturales-casa-arquitectura-arqueria-nuevos-ministerios",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "fotografía",
+      "gratis"
+    ],
+    "formato": "exposicion",
+    "lid": "d700ab39"
+  },
+  "c631903165f4c3b2": {
+    "title": "La mecánica de la verdad",
+    "description": "Esta propuesta artística multidisciplinar analiza cómo las herramientas digitales y la inteligencia artificial transforman nuestra percepción de la realidad. La muestra reúne instalaciones interactivas y piezas audiovisuales que examinan los métodos actuales de simulación y fabricación de relatos.",
+    "start_time": "17:00:00",
+    "url": "https://www.medialab-matadero.es/actividades/la-mecanica-de-la-verdad-exposicion",
+    "price": "Gratis",
+    "image": "images/events/916bcd8504fd.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/mecanica-verdad-medialab-matadero",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "formato": "exposicion",
+    "lid": "cf38b0cd"
+  },
+  "787f1357d9ffae99": {
+    "title": "Arquitectura en fiesta",
+    "description": "La exposición es un recorrido dedicado a las construcciones efímeras ligadas a las celebraciones populares y festejos comunitarios. La muestra analiza cómo toldos, escenarios, carrozas y otras estructuras temporales transforman la calle para resolver necesidades de reunión y celebración.",
+    "start_time": "11:00:00",
+    "url": "https://lacasadelaarquitectura.es/recurso/arquitectura-en-fiesta-arquitectura-en-fiesta/d63aabf1-0859-42a1-808c-d48645456bef",
+    "price": "Gratis",
+    "image": "images/events/5741467e730d.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/arquitectura-fiesta-casa-arquitectura-arqueria-nuevos-ministerios",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "formato": "exposicion",
+    "lid": "d700ab39"
+  },
+  "94e8b842ab836b3d": {
+    "title": "La cabaña de ámbar. Miguel Ángel Blanco",
+    "description": "Muestra de Miguel Ángel Blanco dedicada a la historia natural, simbólica y cultural del ámbar a través de piezas históricas procedentes de diversos museos. Profundiza en la fascinación ancestral por este material, apreciado desde la Antigüedad por su belleza y sus usos medicinales, espirituales y suntuarios.",
+    "start_time": "09:30:00",
+    "url": "https://www.cultura.gob.es/cultura/creacion-contemporanea/exposiciones/exposiciones-temporales/mab-mnad.html",
+    "price": "Consultar página oficial",
+    "image": "images/events/2d32ab1c86e7.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/cabana-ambar-miguel-angel-blanco-museo-nacional-artes-decorativas",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "patrimonio"
+    ],
+    "formato": "exposicion",
+    "lid": "8ca210f1"
+  },
+  "90cd288696bcb8fa": {
+    "title": "Vitrina cero. Volver a la infancia. Prehistoria y Antigüedad",
+    "description": "Exposición que analiza el papel cotidiano de los niños en la antigüedad desde la Prehistoria hasta la Edad Antigua. La muestra combina restos materiales y piezas de uso diario con indumentarias históricas para explorar cómo era la vida infantil en las primeras sociedades humanas.",
+    "start_time": "09:30:00",
+    "url": "https://www.man.es/man/exposiciones/vitrina0/20261020-infancia.html",
+    "price": "3 €",
+    "image": "images/events/66cad890017c.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/vitrina-cero-volver-infancia-prehistoria-antiguedad-museo-arqueologico-nacional",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones"
+    ],
+    "formato": "exposicion",
+    "lid": "df925a11"
+  },
+  "acc15c5197a3c8f8": {
+    "title": "HÄXAN",
+    "description": "Espectáculo que transita entre la coreografía, la performance y la teatralidad para explorar los imaginarios de la brujería y lo sobrenatural. La pieza reflexiona sobre los mecanismos de poder y la representación del cuerpo femenino a partir del filme mudo homónimo de 1922.",
+    "start_time": "21:00:00",
+    "url": "https://replikateatro.com/evento/haxan-george-marinov/",
+    "price": "Desde 7,17 €",
+    "image": "images/events/69a573fdc8cd.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/haxan-replika-teatro",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "danza"
+    ],
+    "formato": "puntual",
+    "lid": "6824619c"
+  },
+  "4debd66a8267999f": {
+    "title": "Twanguero",
+    "description": "El guitarrista y compositor Diego García ofrece un espectáculo donde fusiona ritmos latinos con sonidos americanos, destacando por su técnica de fingerpicking. El concierto celebra su 50 cumpleaños repasando los temas más emblemáticos de su trayectoria musical.",
+    "start_time": "21:30:00",
+    "url": "https://festivaldejazzmadrid.com/actividad/twanguero/",
+    "price": "Desde 20 €",
+    "image": "images/events/513a2293fd16.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/twanguero-sala-villanos",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "0d71ace6"
+  },
+  "5e168aea9287f8c0": {
+    "title": "Imagen y memoria. Argentina 1976-2003. Fotografías de Eduardo Longoni",
+    "description": "El Museo de América acoge una exposición del fotógrafo Eduardo Longoni, mostrando su proyecto que recorre casi tres décadas clave de la historia reciente de Argentina. A través de imágenes documentales, aborda desde la represión de la dictadura militar hasta la consolidación de la democracia.",
+    "start_time": "09:30:00",
+    "url": "https://www.cultura.gob.es/museodeamerica/exposiciones/exposiciones-temporales/2026-fotografia-argentina-longoni.html",
+    "price": "Exposición visitable con la entrada al recorrido permanente\nConsultar página oficial",
+    "image": "images/events/678f04cee8b2.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/imagen-memoria-argentina-1976-2003-fotografias-eduardo-longoni-museo-america",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "fotografía"
+    ],
+    "formato": "exposicion",
+    "lid": "58d00754"
+  },
+  "7ad4a7804e5a9925": {
+    "title": "Anupama Kundoo. Construyendo conocimiento",
+    "description": "Exposición monográfica que explora la trayectoria y el proceso de investigación de la arquitecta Anupama Kundoo a través de maquetas, planos y materiales constructivos. La muestra analiza una práctica arquitectónica centrada en la sostenibilidad, el respeto al clima y el uso responsable de los recursos locales.",
+    "start_time": "11:00:00",
+    "url": "https://www.fundacionico.es/pr%C3%B3xima-exposicion",
+    "price": "Consultar página oficial",
+    "image": "images/events/63dd05fa7651.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/nL2PL4oKZEtJSk9bvX3nsh-nHB6LahzNg5SmfwNLRrA/mtime:1792067632/sites/default/files/eventos/eventos/anupama_kundoo._construyendo_conocimiento.jpeg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/INHPFlISopFBkXEOnLsi-O07LyKHGXUoJ1IkWVmrj0w/mtime:1792067370/sites/default/files/eventos/eventos/retrato_de_anupama_kundoo_en_su_estudio_c_marina_denisova.jpeg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/anupama-kundoo-construyendo-conocimiento-museo-ico",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones"
+    ],
+    "formato": "exposicion",
+    "lid": "e9af25a5"
+  },
+  "4e13f32fdda8a93c": {
+    "title": "Ibrahim Maalouf & The Trumpets of Michel-Ange Vol. 2",
+    "description": "El trompetista y compositor franco-libanés presenta su nuevo proyecto discográfico fusionando jazz, escalas orientales, rock y ritmos latinos. El músico actuará acompañado de una gran orquesta de trompetistas y una sección rítmica completa.",
+    "start_time": "20:30:00",
+    "url": "https://festivaldejazzmadrid.com/actividad/ibrahim-maalouf-the-trumpets-of-michel-ange-vol-2/",
+    "price": "Desde 28 €",
+    "image": "images/events/a8e417faaa65.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/ibrahim-maalouf-trumpets-michel-ange-vol-2-riviera",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "9d5eb577"
+  },
+  "12a7f664e2214b8a": {
+    "title": "Lizz Wright",
+    "description": "La aclamada vocalista y compositora estadounidense ofrece una actuación que recorre el jazz vocal, el góspel, el blues tradicional y el soul sureño. La artista presenta un repertorio centrado en estándares del cancionero clásico y espirituales negros en formato a dúo junto al pianista Kenny Banks Sr.",
+    "start_time": "20:30:00",
+    "url": "https://festivaldejazzmadrid.com/actividad/lizz-wright/",
+    "price": "Desde 25 €",
+    "image": "images/events/1b8cae024d4d.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/lizz-wright-umusic-hotel-teatro-albeniz",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "22fd9956"
+  },
+  "f5af88bbb1fcda14": {
+    "title": "Noche de muertos y brujas 2026",
+    "description": "Una fiesta inspirada en la tradición mexicana que fusiona lo festivo con lo místico a través de música, baile y performances. El evento cuenta con una propuesta musical variada a cargo de diversos DJs en un entorno decorado para la ocasión.",
+    "start_time": "22:30:00",
+    "url": "https://www.circulobellasartes.com/eventos/noche-de-muertos-y-brujas-2026/",
+    "price": "Desde 42,50 €",
+    "image": "images/events/4d05ff8797d6.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/Oy-quGV9uXLccNyU5qisW0QmBqOea9L4bJ2TVVJ0v7o/mtime:1792062291/sites/default/files/eventos/eventos/noche_de_muertos_y_brujas_2026.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/xNqf6yR77KBmvqG0flSUQy2PvqIS-IP56nA4bUQ_h7o/mtime:1792062327/sites/default/files/eventos/eventos/noche.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/noche-muertos-circulo-bellas-artes",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos",
+      "fiestas"
+    ],
+    "formato": "puntual",
+    "lid": "5f3f83ad"
+  },
+  "743bc199ebb80676": {
+    "title": "Alfa Mist",
+    "description": "El pianista, compositor y productor británico presenta un universo sonoro que fusiona jazz, soul y hip hop. Su propuesta destaca por atmósferas cinematográficas, improvisación y una marcada sensibilidad melancólica.",
+    "start_time": "20:30:00",
+    "url": "https://festivaldejazzmadrid.com/actividad/alfa-mist/",
+    "price": "Desde 28 €",
+    "image": "images/events/e67aeaa51569.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/alfa-mist-umusic-hotel-teatro-albeniz",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "22fd9956"
+  },
+  "b495b3403652f2bd": {
+    "title": "Gustavo Díaz Quartet",
+    "description": "El saxofonista y compositor toledano presenta su propuesta de jazz contemporáneo en formato cuarteto. El grupo ofrece un directo basado en el diálogo instrumental y la improvisación sobre temas propios.",
+    "start_time": "17:30:00",
+    "url": "https://festivaldejazzmadrid.com/actividad/gustavo-diaz-quartet/",
+    "price": "Desde 15 €",
+    "image": "images/events/a4868055f06d.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/gustavo-diaz-quartet-sala-villanos",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "0d71ace6"
+  },
+  "4f12c85343750d18": {
+    "title": "Israel Fernández",
+    "description": "El cantaor manchego Israel Fernández presenta su nuevo espectáculo de flamenco fusión 'Recital de Cante', un recorrido profundo por la extensión de este arte. En este proyecto, propone un viaje de estilos que muestra su extenso conocimiento y amor incondicional por el flamenco.",
+    "start_time": "19:30:00",
+    "url": "https://www.madrid.org/sumaflamenca/2026/israel-fernandez-recital-flamenco.html",
+    "price": "Entradas agotadas",
+    "image": "images/events/cce69a7abc8a.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/israel-fernandez-teatros-canal",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos",
+      "flamenco"
+    ],
+    "formato": "puntual",
+    "lid": "027f0347"
+  },
+  "be8bf4a7abc5a782": {
+    "title": "Sumrrá",
+    "description": "El concierto reúne sobre el escenario a uno de los tríos más estables y representativos de la escena jazzística contemporánea nacional. La banda, con 25 años de trayectoria ininterrumpida, ha consolidado su música en composiciones originales, la búsqueda de nuevos sonidos acústicos y la improvisación constante en directo.",
+    "start_time": "19:00:00",
+    "url": "https://festivaldejazzmadrid.com/actividad/sumrra/",
+    "price": "Desde 20 €",
+    "image": "images/events/00c79898fd4a.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/sumrra-centrocentro",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "bb29009c"
+  },
+  "032b12b544e39213": {
+    "title": "Daniel García Sextet",
+    "description": "El pianista y compositor Daniel García lidera un sexteto internacional para presentar el proyecto 'The Shape of Fire'. El concierto explora las conexiones entre el jazz contemporáneo, la música clásica y el flamenco.",
+    "start_time": "20:00:00",
+    "url": "https://festivaldejazzmadrid.com/actividad/daniel-garcia-sextet-the-shape-of-fire/",
+    "price": "Desde 30 €",
+    "image": "images/events/e91a7fdd4916.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/daniel-garcia-sextet-teatro-fernan-gomez-centro-cultural-villa",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos",
+      "flamenco"
+    ],
+    "formato": "puntual",
+    "lid": "4eb3f73b"
+  },
+  "63ad4151dadc1795": {
+    "title": "Aruán Ortiz",
+    "description": "El pianista y compositor cubano ofrece un recital a piano solo que integra la técnica clásica con el folclore cubano y la improvisación. La actuación forma parte de la programación del festival JAZZMADRID.",
+    "start_time": "19:00:00",
+    "url": "https://festivaldejazzmadrid.com/actividad/aruan-ortiz/",
+    "price": "Desde 25 €",
+    "image": "images/events/6f2edc5ffbe7.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/aruan-ortiz-centrocentro",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "bb29009c"
+  },
+  "9a40cd52171d940f": {
+    "title": "Erik Truffaz & Antonio Lizana",
+    "description": "El músico suizo y el cantaor gaditano presentan una relectura actual del icónico disco de Miles Davis. El espectáculo combina jazz con elementos electrónicos y flamenco en un diálogo musical multidisciplinar.",
+    "start_time": "20:00:00",
+    "url": "https://festivaldejazzmadrid.com/actividad/erik-truffaz-antonio-lizana-new-sketches-of-spain/",
+    "price": "Desde 22 €",
+    "image": "images/events/d0e9164cbde8.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/erik-truffaz-antonio-lizana-conde-duque",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos",
+      "flamenco"
+    ],
+    "formato": "puntual",
+    "lid": "41cfd2ba"
+  },
+  "993cf66cf1a96299": {
+    "title": "Amon Amarth",
+    "description": "La banda sueca de death metal melódico presenta su gira The Allfather Awakens Tour. El espectáculo destaca por su intensidad escénica y una estética inspirada en la mitología vikinga.",
+    "start_time": "21:00:00",
+    "url": "https://www.palaciovistalegre.com/event/amon-amarth-2/   ",
+    "price": "Desde 68,80 €",
+    "image": "images/events/107ff0cd1226.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/amon-amarth-palacio-vistalegre-arena",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "9a5be362"
+  },
+  "35e2d6c8e9132f5b": {
+    "title": "Tambourines",
+    "description": "El coreógrafo Trajal Harrell presenta una pieza que revisita la novela La letra escarlata a través de la danza contemporánea, el voguing y el butoh. La obra explora conceptos como la identidad, el deseo y la mirada social sobre los cuerpos.",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.org/fo/2026/tambourines.html",
+    "price": "Desde 9 €",
+    "image": "images/events/fcdbff3bb852.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/JzPp7JRn6cK7RWx26L32nA8hx643czIL77QrHAjIzQI/mtime:1790569825/sites/default/files/eventos/eventos/tambourines.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/LRqtPPLo98yl7SA4IdR6bS8Kx4zXqL2jOcVu46qJ48Q/mtime:1790569854/sites/default/files/eventos/eventos/tambourines-2.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/majuVblQ0PmmD-UD9MAX5EVFErzqi7HCuLyU2uc0XS8/mtime:1790569870/sites/default/files/eventos/eventos/tambourines-3.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/tambourines-teatros-canal",
+    "source": "esmadrid",
+    "categories": [
+      "danza",
+      "teatro"
+    ],
+    "formato": "puntual",
+    "lid": "027f0347"
+  },
+  "a6890f4d52a66c9c": {
+    "title": "Mastretta",
+    "description": "La veterana orquesta dirigida por Ignacio Mastretta presenta un repertorio que fusiona jazz, rock, folk y sonidos mediterráneos. Sus actuaciones se caracterizan por la improvisación grupal y un dinámico diálogo entre sus solistas.",
+    "start_time": "20:00:00",
+    "url": "https://festivaldejazzmadrid.com/actividad/mastretta/",
+    "price": "Desde 18 €",
+    "image": "images/events/324b465a66dd.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/mastretta-cafe-berlin-club-madrid",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "f497a8a8"
+  },
+  "e0ebecf9d85dab48": {
+    "title": "Nachtland",
+    "description": "El colectivo teatral belga tg STAN presenta una comedia negra que utiliza el humor y la provocación para explorar las contradicciones de la sociedad europea. La obra reflexiona sobre la memoria, las convicciones personales y la gestión del pasado a través de un hallazgo inesperado en una casa familiar.",
+    "start_time": "20:00:00",
+    "url": "https://www.madrid.org/fo/2026/nachtland.html",
+    "price": "Entradas agotadas",
+    "image": "images/events/8d0c40bfd0d6.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/RSpapaHZg9hTN8D_MCWL2CUDBRYrRZx28qn_a_EV3PE/mtime:1790754192/sites/default/files/eventos/eventos/nachtland.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/1zvHxyuDtXzTOP3js3CGPdeEmgUN-NTXl13tQhLigdo/mtime:1790754213/sites/default/files/eventos/eventos/nachtland-2.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/ZzUd_I_MoMH1AlaLbCs0l0DbCAGxccGpgmXK-yEYAFA/mtime:1790754230/sites/default/files/eventos/eventos/nachtland-3.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/nachtland-teatros-canal",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "comedia"
+    ],
+    "formato": "puntual",
+    "lid": "027f0347"
   }
 }
