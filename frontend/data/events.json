@@ -3325,6 +3325,21 @@
     "formato": "festival",
     "lid": "127a1864"
   },
+  "ad94ad2216d2867e": {
+    "title": "Conferencia: En el fondo del mar",
+    "description": "Exploración divulgativa sobre los misterios y la geografía oculta bajo los océanos terrestres. Un viaje al fondo del mar.",
+    "start_time": "11:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=cd2ea0fc32c11a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conferencias",
+      "naturaleza",
+      "gratis"
+    ],
+    "price": "0€",
+    "formato": "puntual",
+    "lid": "aed4d982"
+  },
   "1ac291d9a98013c4": {
     "title": "Conferencia: Frank Sinatra y Ava Gardner",
     "description": "Ponencia a cargo de Eva M.ª Mera Jiménez que explora la historia de Frank Sinatra y Ava Gardner. Entrada libre hasta completar aforo.",
@@ -6042,6 +6057,22 @@
     "price": "Gratis",
     "formato": "puntual",
     "lid": "02b25093"
+  },
+  "37e6cef8081f336d": {
+    "title": "Experiencia Inmersiva: Crononautas de la Tierra",
+    "description": "Taller familiar que ofrece una experiencia inmersiva sobre la historia del planeta Tierra. Aventura, ciencia y misterio en una actividad educativa.",
+    "start_time": "17:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=ba8ea0fc32c11a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "infantil",
+      "naturaleza",
+      "gratis"
+    ],
+    "price": "0€",
+    "formato": "puntual",
+    "lid": "aed4d982"
   },
   "a3f1c351e271c026": {
     "title": "Exposición de acuarela y pintura: trabajos de alumnos",
@@ -9939,15 +9970,24 @@
     "lid": "c8b2fc5c"
   },
   "7736c404978105ac": {
-    "title": "Teatro: Mi madre y el dinero",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=75f61862ec580a10VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
+    "title": "Mi madre y el dinero",
+    "description": "El actor y director Anacarsis Ramos presenta una pieza escénica que entrelaza la historia familiar con cuestiones como el trabajo, la precariedad y las transformaciones sociales. Es una obra que conecta la memoria personal con la realidad económica y social entre México y España.",
+    "start_time": "19:30:00",
+    "url": "https://www.madrid.org/fo/2026/mimadre.html",
+    "price": "14 €",
+    "image": "images/events/c71446ac2e69.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/1ToY5J7tk3mmcsNM5D4B_kT9G5ctZmbJK93grV5fRy8/mtime:1790738603/sites/default/files/eventos/eventos/mi-madre-y-el-dinero.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/PYBof2Ujlz18OLGcnSND7WFTEOjng2vkmn5nW9lvQ-M/mtime:1790738626/sites/default/files/eventos/eventos/mi-madre-y-el-dinero-2.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/YxOn3PygfZjSMjyC1YWheJny4Ef83dpqC6OdgQ-vmQY/mtime:1790738642/sites/default/files/eventos/eventos/mi-madre-y-el-dinero-3.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/mi-madre-dinero-conde-duque",
+    "source": "esmadrid,madrid_agenda",
     "categories": [
       "teatro"
     ],
-    "description": "Representación teatral que aborda la relación entre la familia y la economía personal.",
     "formato": "puntual",
-    "lid": "824774c3"
+    "lid": "41cfd2ba"
   },
   "ff1de97302308752": {
     "title": "Ciclo Mudanza: Mi tierra",
@@ -10838,6 +10878,22 @@
     "description": "Recorrido interpretativo por el Parque de Berlín para conocer su historia y valor botánico.",
     "formato": "puntual",
     "lid": "868d318d"
+  },
+  "9a81a5d0be041a0d": {
+    "title": "Actividades en el Parque de la Vaguada",
+    "start_time": "10:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=e79c09340f270910VgnVCM1000001d4a900aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "naturaleza",
+      "aire libre",
+      "gratis"
+    ],
+    "description": "Programación cultural y recreativa desarrollada en el entorno del Parque de la Vaguada.",
+    "price": "0",
+    "is_multi_event": true,
+    "formato": "puntual",
+    "lid": "9a81a5d0"
   },
   "36e0c181fccb0408": {
     "title": "Visita guiada: Parque del Oeste (Tramo I)",
@@ -13690,6 +13746,20 @@
     "price": "gratis",
     "formato": "puntual",
     "lid": "97507349"
+  },
+  "5269c273242ff790": {
+    "title": "Taller 'Imaginar con máquinas' - Biblioteca Miguel Delibes",
+    "description": "Taller sobre inteligencia artificial junto a 'Cápsula Cultura' para explorar la tecnología de forma práctica.",
+    "start_time": "17:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=2f212ecb63660a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "price": "gratis",
+    "formato": "puntual",
+    "lid": "867ee94b"
   },
   "5f8e1ae083f64359": {
     "title": "Taller 'Tejiendo Redes'",
@@ -16742,6 +16812,21 @@
     "formato": "puntual",
     "lid": "12355570"
   },
+  "1fdbd5604ed9b7f3": {
+    "title": "Conferencia: Penélope, la urdidora",
+    "start_time": "18:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d687e2c5e70eb910VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conferencias",
+      "literatura",
+      "gratis"
+    ],
+    "description": "Análisis sobre la importancia de los tejidos en la épica homérica y la civilización micénica. Conferencia gratuita sobre literatura y arqueología.",
+    "price": "0",
+    "formato": "puntual",
+    "lid": "0d332ccb"
+  },
   "0370dc20705c7ae1": {
     "title": "Bebecuentos: 'Perrito se va de paseo' con Nelson Calderón",
     "description": "Sesión de cuentacuentos para bebés diseñada para estimular los sentidos y fortalecer el vínculo afectivo. Iniciación al maravilloso mundo del libro y la lectura.",
@@ -16809,6 +16894,20 @@
     ],
     "formato": "puntual",
     "lid": "97507349"
+  },
+  "5312302d118ddc58": {
+    "title": "Cinefórum: Grease",
+    "description": "Proyección de la película 'Grease' seguida de un debate psicológico dirigido por expertos.",
+    "start_time": "11:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=20ce641fe1760a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "gratis"
+    ],
+    "price": "0",
+    "formato": "puntual",
+    "lid": "439b2cee"
   },
   "955895f632988334": {
     "title": "Cinefórum: Harriet, en busca de la libertad",
@@ -17117,6 +17216,19 @@
     "price": "0€",
     "formato": "puntual",
     "lid": "bb95d4b7"
+  },
+  "926044d4faf41b3f": {
+    "title": "A un día luz. Ciencia y música para la sonda Voyager 1",
+    "start_time": "17:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=53f0a4f877a80a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conferencias",
+      "conciertos"
+    ],
+    "description": "Una propuesta divulgativa que explora la misión de la sonda Voyager 1 mediante una fusión de ciencia y música. Un evento que conecta la exploración espacial con el lenguaje artístico.",
+    "formato": "puntual",
+    "lid": "824774c3"
   },
   "6f505cb0012d96c2": {
     "title": "Ciclo de conferencias: «Escucha Jonda»",
@@ -18529,32 +18641,6 @@
     "formato": "exposicion",
     "lid": "12f732ab"
   },
-  "46fc8c3c3585e245": {
-    "title": "Mercado Productores Alcobendas",
-    "description": "Mercado que reúne a productores artesanos de la Comunidad de Madrid con una selección de alimentos de proximidad, ecológicos y de calidad. El evento cuenta además con música en vivo y animación infantil.",
-    "start_time": "10:00:00",
-    "address": "Paseo de Valdelasfuentes",
-    "latitude": 40.550215,
-    "longitude": -3.6532028,
-    "url": "https://www.instagram.com/madrid_productores/?hl=es",
-    "price": "Gratis",
-    "image": "images/events/35635a99b8ef.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/-rDVEqJLGDejFqpZ36LetP4JGLmuwSJ7ASOI5HigExo/mtime:1570108787/sites/default/files/eventos/eventos/cartel-mercado-productores-web.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/T25R2VRGdNNuWOFtulIuQ4C9e88G6BqrWvZ9eIsHB6M/mtime:1648469017/sites/default/files/eventos/eventos/mercado_productores_alcobendas.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/GtBRd4NpeINWQ_cNgUUDehpo3Qo6Z9CXmdmXR5rN4zQ/mtime:1648469073/sites/default/files/eventos/eventos/mercado_productores_alcobendas1_0.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/VhEVbGq-iSrjBFw-_hsTDIseZQRmsUNmp5EiMAkCgE0/mtime:1648469112/sites/default/files/eventos/eventos/mercado_productores_alcobendas2.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/mercado-productores-alcobendas",
-    "source": "esmadrid",
-    "categories": [
-      "gastronomía",
-      "otros",
-      "gratis"
-    ],
-    "is_multi_event": true,
-    "formato": "festival"
-  },
   "d382c368cc555fa6": {
     "title": "Flamenco Real",
     "description": "Ciclo que presenta grandes artistas del baile y del cante flamenco en el Salón de Baile del Teatro Real. La programación incluye diversas propuestas que ponen en diálogo a bailaores, cantaores y guitarristas de referencia.",
@@ -18977,22 +19063,6 @@
     ],
     "is_multi_event": true,
     "formato": "exposicion"
-  },
-  "6cd7d93d1d740143": {
-    "title": "Revolución cuántica",
-    "description": "La exposición explora los principios de la mecánica y la computación cuántica, analizando su impacto tecnológico, cultural y filosófico. El recorrido desentraña el funcionamiento de esta disciplina y los desafíos que plantea de cara al futuro.",
-    "start_time": "10:00:00",
-    "url": "https://espacio.fundaciontelefonica.com/evento/revolucion-cuantica/",
-    "price": "Gratis",
-    "image": "images/events/14b2dd08244b.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/revolucion-cuantica-espacio-fundacion-telefonica",
-    "source": "esmadrid",
-    "categories": [
-      "exposiciones",
-      "gratis"
-    ],
-    "formato": "exposicion",
-    "lid": "868a1c03"
   },
   "20c46fceae1c170b": {
     "title": "Ahora la chunga soy yo - Palo Capilla",
@@ -19575,38 +19645,6 @@
     "formato": "exposicion",
     "lid": "824774c3"
   },
-  "414215caa243cdcc": {
-    "title": "El encanto de la ilusión. Un puente entre realidad y percepción",
-    "description": "Exposición colectiva que reflexiona sobre cómo percibimos, construimos y transformamos la realidad a través del arte. La muestra reúne a más de 30 artistas con y sin discapacidad en el marco de la X Bienal de Arte Contemporáneo de Fundación ONCE.",
-    "start_time": "10:00:00",
-    "url": "https://www.centrocentro.org/exposicion/x-bienal-de-arte-contemporaneo-de-fundacion-once",
-    "price": "Gratis",
-    "image": "images/events/ca70fcac73a9.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/encanto-ilusion-puente-realidad-percepcion-centrocentro",
-    "source": "esmadrid",
-    "categories": [
-      "exposiciones",
-      "gratis"
-    ],
-    "formato": "exposicion",
-    "lid": "bb29009c"
-  },
-  "949049ecb86e4ca6": {
-    "title": "Materia viva. Un recorrido por la botánica, el arte y la memoria andalusí",
-    "description": "Exposición que explora las conexiones entre la naturaleza y la sociedad de al-Ándalus mediante un recorrido por plantas, objetos y espacios históricos. La muestra permite experimentar el paisaje cultural andalusí a través de los sentidos y el ritmo de las estaciones.",
-    "start_time": "09:30:00",
-    "url": "https://www.man.es/man/exposiciones/exposiciones-temporales-en-exposicion-permanente/20260605-materia-viva.html",
-    "price": "3 €",
-    "image": "images/events/b6eb890e6092.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/materia-viva-recorrido-botanica-arte-memoria-andalusi-museo-arqueologico-nacional",
-    "source": "esmadrid",
-    "categories": [
-      "exposiciones",
-      "naturaleza"
-    ],
-    "formato": "exposicion",
-    "lid": "df925a11"
-  },
   "8e0133dad86e250a": {
     "title": "El artista en Italia",
     "description": "La exposición muestra los dibujos realizados por Federico de Madrazo, Luis de Madrazo y Vicente Palmaroli durante sus estancias de formación en Italia. La muestra explora el aprendizaje artístico de estos autores antes de la creación de la Academia de España en Roma.",
@@ -20104,22 +20142,6 @@
     "formato": "exposicion",
     "lid": "eec48cba"
   },
-  "3c0ce8c124555d1d": {
-    "title": "LIBRES!!!",
-    "description": "Obra teatral dirigida por Andrés Lima que homenajea la lucha y emancipación de las mujeres durante la Guerra Civil española. El montaje combina rigor histórico con ironía y humor a través de personajes audaces y música en directo.",
-    "start_time": "18:30:00",
-    "url": "https://www.teatroabadia.com/espectaculo/libres/",
-    "price": "25 €",
-    "image": "images/events/aaed4489b521.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/libres-teatro-abadia",
-    "source": "esmadrid",
-    "categories": [
-      "teatro",
-      "comedia"
-    ],
-    "formato": "exposicion",
-    "lid": "b7019de4"
-  },
   "f96797bf60354d51": {
     "title": "SIX, el musical",
     "description": "Las seis esposas de Enrique VIII se presentan como divas del pop para contar su versión de la historia en una batalla musical llena de ritmo e ironía. La obra transforma el drama histórico en un concierto contemporáneo con coreografías electrizantes y música cargada de energía.",
@@ -20159,22 +20181,6 @@
     ],
     "formato": "exposicion",
     "lid": "d2e1acfd"
-  },
-  "9ef91ee12e6a88ce": {
-    "title": "Surge Madrid 2026",
-    "description": "Festival de creación de artes escénicas dedicado al circuito alternativo y la investigación de nuevas tendencias. El certamen pone en valor la escena off madrileña mediante la presentación de trabajos emergentes y propuestas de estreno en diversos formatos.",
-    "url": "https://www.madrid.org/surgemadrid/2025/",
-    "price": "Consultar página oficial",
-    "image": "images/events/5ea84a79f93d.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/surge-madrid",
-    "source": "esmadrid",
-    "categories": [
-      "teatro",
-      "danza"
-    ],
-    "is_multi_event": true,
-    "formato": "festival",
-    "lid": "c60cef6f"
   },
   "b4f130fa58963430": {
     "title": "La Familia Addams, el musical",
@@ -20304,26 +20310,6 @@
     "is_multi_event": true,
     "formato": "festival",
     "lid": "027f0347"
-  },
-  "82f00951190c9361": {
-    "title": "Manon Lescaut",
-    "description": "La ópera de Giacomo Puccini narra la trágica historia de amor entre una joven francesa y el caballero Des Grieux en una puesta en escena que utiliza un espacio giratorio. La obra destaca por su exigente nivel vocal y dramático, siendo un referente del repertorio operístico italiano.",
-    "start_time": "19:30:00",
-    "url": "https://www.teatroreal.es/es/espectaculo/manon-lescaut",
-    "price": "Desde 19 €",
-    "image": "images/events/93bb3d48399d.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/O3ZdX1nHqUFtqdb-3s3ez2H64LD1TwdujeViSaEMgrY/mtime:1776933553/sites/default/files/eventos/eventos/manon_lescaut_c_sandra_then_oper_koln.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/d_LqCX089igm45sPHPJ4qnqfv54Qz09xrZBKEK4b62w/mtime:1776933570/sites/default/files/eventos/eventos/manon_lescaut_2_c_sandra_then_oper_koln.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/manon-lescaut-teatro-real",
-    "source": "esmadrid",
-    "categories": [
-      "ópera",
-      "teatro"
-    ],
-    "formato": "exposicion",
-    "lid": "50107e1c"
   },
   "459a825cd7e8a48e": {
     "title": "Chano Domínguez",
@@ -20698,21 +20684,6 @@
     "formato": "exposicion",
     "lid": "70e71b4a"
   },
-  "fd990c068f035440": {
-    "title": "Valeria Lynch",
-    "description": "La cantante argentina ofrece un concierto repasando los grandes éxitos de su extensa trayectoria musical. El espectáculo destaca por la potencia vocal de la artista y la fuerza de su interpretación en directo.",
-    "start_time": "21:00:00",
-    "url": "https://www.valerialynch.com.ar/",
-    "price": "44 €",
-    "image": "images/events/4372741d0636.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/valeria-lynch-sala-wagon",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "formato": "exposicion",
-    "lid": "b1ac68ff"
-  },
   "94b8302bf4140d43": {
     "title": "Hispanidad 2026",
     "description": "Celebración de la lengua y las culturas hispanas a través de una amplia programación cultural. Incluye actividades de música, literatura, cine, folclore, arte y gastronomía distribuidas por toda la región.",
@@ -20863,21 +20834,6 @@
     "formato": "festival",
     "lid": "61c10e5d"
   },
-  "546a8085b9e38f47": {
-    "title": "Baco polaco",
-    "description": "Una reinterpretación de Las bacantes de Eurípides ambientada en la Argentina rural de la década de 1930. La obra fusiona el imaginario mitológico con el folclore rioplatense para explorar temas como el deseo, el poder y la tragedia.",
-    "start_time": "18:00:00",
-    "url": "https://www.teatroscanal.com/espectaculo/baco-polaco-mauricio-kartun/",
-    "price": "Desde 9 €",
-    "image": "images/events/dcc7ac47b23f.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/baco-polaco-teatros-canal",
-    "source": "esmadrid",
-    "categories": [
-      "teatro"
-    ],
-    "formato": "exposicion",
-    "lid": "027f0347"
-  },
   "889c91c8ba7e11c9": {
     "title": "El flautista de Hamelin",
     "description": "Una versión del célebre cuento de los hermanos Grimm que plantea una visión renovada sobre la infancia, el poder y la relación entre el mundo adulto y los niños. La obra propone una reflexión sobre el arte y la necesidad de escuchar la voz infantil a través de un montaje teatral.",
@@ -20899,23 +20855,6 @@
     ],
     "formato": "exposicion",
     "lid": "fc2a84be"
-  },
-  "2d04998c43f725a9": {
-    "title": "CantaJuego: El payaso Tallarín - Su gran circo",
-    "description": "El conjunto musical infantil presenta un espectáculo que combina canciones, bailes, juegos y acrobacias en una historia sobre payasos. La propuesta busca fomentar valores como la amistad, el respeto y la creatividad a través de un proyecto pedagógico-musical.",
-    "start_time": "12:00:00",
-    "url": "https://www.cantajuego.com/conciertos/tallarin/",
-    "price": "Desde 19,50 €",
-    "image": "images/events/1be0be1cd6ef.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/cantajuego-payaso-tallarin-su-gran-circo-gran-teatro-pavon",
-    "source": "esmadrid",
-    "categories": [
-      "infantil",
-      "teatro",
-      "circo"
-    ],
-    "formato": "exposicion",
-    "lid": "d2e1acfd"
   },
   "44311dfd70e09dc5": {
     "title": "Seba Calfuqueo. Cautín",
@@ -21011,27 +20950,6 @@
     ],
     "formato": "exposicion",
     "lid": "fc2a84be"
-  },
-  "6eb67477025e5060": {
-    "title": "Open de España presented by Madrid 2026",
-    "description": "El Open de España es uno de los torneos de golf con más tradición de Europa que forma parte del circuito PGA European Tour. El evento reúne a profesionales y aficionados en una competición de primer nivel en el Club de Campo Villa de Madrid.",
-    "url": "https://opendeespana.com/",
-    "price": "Consultar página oficial",
-    "image": "images/events/d8829014f0cb.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/2Ti9rV6gAcCJDx3_JDFom91XIEwzi6XAiBq37YKTJjk/mtime:1761142179/sites/default/files/eventos/eventos/open_de_espana_presented_by_madrid_2026.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/FoJDR0zMOtr0bGUQ1JKS5myKSCfpoxIwv_SiSM5fpms/mtime:1570448721/sites/default/files/eventos/eventos/sergiogarcia_clubcampo_villa_madrid_open_espana_2019.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/PxRdwl4G8cQ6Jok1RhCrNrzcd00ebbMac4qQ9o54n2Y/mtime:1727423561/sites/default/files/eventos/eventos/john_rahm_acciona_open_de_espana_2024.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/umhyFJS9Av1rzODcI2kKLaKlS6f3PVvuaH9qlI4apks/mtime:1761136467/sites/default/files/eventos/eventos/marco_penge_open_de_espana_2025.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/NPKdsagW-rbtL74yxncSNq7Wy6HpvyiIpmTZdPFDxgk/mtime:1570448611/sites/default/files/eventos/eventos/club_campo_villa_madrid_golf.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/open-espana-golf-club-campo-villa-madrid",
-    "source": "esmadrid",
-    "categories": [
-      "deportes"
-    ],
-    "formato": "puntual",
-    "lid": "e3ef2343"
   },
   "af8cc33eec2f1cad": {
     "title": "César Fernández Arias. Laboratorio de creación",
@@ -21236,22 +21154,6 @@
     "formato": "exposicion",
     "lid": "266b092b"
   },
-  "ff8fd4815ba6f0cd": {
-    "title": "Ferial de Calaveras - ¡Entre Calaveras y Canciones!",
-    "description": "Un homenaje escénico a la identidad mexicana y al legado artístico del grabador José Guadalupe Posada. El espectáculo combina danza, música y narrativa en una producción de gran formato que celebra el sincretismo cultural y la memoria colectiva.",
-    "start_time": "20:00:00",
-    "url": "https://www.teatroscanal.com/espectaculo/ferial-calaveras/",
-    "price": "Desde 9 €",
-    "image": "images/events/1b4c8ff8237f.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/ferial-calaveras-calaveras-canciones-teatros-canal",
-    "source": "esmadrid",
-    "categories": [
-      "danza",
-      "teatro"
-    ],
-    "formato": "puntual",
-    "lid": "027f0347"
-  },
   "2360844416160963": {
     "title": "Prácticas de re-existencia",
     "description": "La exposición colectiva reúne una treintena de piezas en diversos formatos fotográficos, vídeo y arte sonoro que exploran la diáspora mexicana a través de temas como la identidad, la memoria y el territorio. Las obras profundizan en la reexistencia como una estrategia creativa para reinventar la vida frente a los cambios y adversidades.",
@@ -21333,38 +21235,6 @@
     "formato": "exposicion",
     "lid": "31e63917"
   },
-  "3faacec310d50782": {
-    "title": "La razón sensible",
-    "description": "El coreógrafo mexicano Shantí Vera presenta una pieza de danza moderna que utiliza el cuerpo como un territorio de descubrimiento y el movimiento como origen del pensamiento. La obra propone una reflexión sobre la experiencia humana, la vulnerabilidad y la capacidad de resistencia a través de una mirada sensible al entorno.",
-    "start_time": "18:30:00",
-    "url": "https://www.teatroscanal.com/espectaculo/cuatro-x-cuatro-shanti-vera/",
-    "price": "20 €",
-    "image": "images/events/0a50ffb0b1c9.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/razon-sensible-teatros-canal",
-    "source": "esmadrid",
-    "categories": [
-      "danza",
-      "teatro"
-    ],
-    "formato": "puntual",
-    "lid": "027f0347"
-  },
-  "26db834fc2550ecb": {
-    "title": "Biblioteca de ruidos y sonidos",
-    "description": "Una instalación inmersiva de teatro de objetos que invita a descubrir cómo comprender el mundo a través de la escucha. Los artistas exploran la dimensión sonora de elementos cotidianos transformándolos en una experiencia artística y sensorial.",
-    "start_time": "11:00:00",
-    "url": "https://dramatico.inaem.gob.es/evento/biblioteca-de-ruidos-y-sonidos/",
-    "price": "Entradas agotadas",
-    "image": "images/events/529f7ddf98b9.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/biblioteca-ruidos-sonidos-teatro-valle-inclan",
-    "source": "esmadrid",
-    "categories": [
-      "infantil",
-      "teatro"
-    ],
-    "formato": "puntual",
-    "lid": "e42e13eb"
-  },
   "be8beb8bef718335": {
     "title": "Turismo Rural",
     "description": "Una comedia de enredo escrita por Jordi Galcerán que satiriza las clásicas películas de terror de serie B. La trama sigue a un matrimonio cuyo fin de semana romántico en una casa rural se complica ante la inesperada actitud de los anfitriones.",
@@ -21400,60 +21270,6 @@
     ],
     "formato": "exposicion",
     "lid": "5f3f83ad"
-  },
-  "12b8787a0d216745": {
-    "title": "Real Madrid - Villarreal CF (LALIGA EA SPORTS)",
-    "description": "El Real Madrid recibe al Villarreal CF en un enfrentamiento correspondiente a la jornada liguera. El encuentro se disputa en el Estadio Bernabéu.",
-    "url": "https://www.realmadrid.com/es-ES/futbol/partidos/la-liga/real-madrid-villarreal/05-10-2025",
-    "price": "Consultar página oficial",
-    "image": "images/events/0561470a5f45.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/real-madrid-villarreal-cf-laliga-ea-sports-estadio-bernabeu",
-    "source": "esmadrid",
-    "categories": [
-      "deportes"
-    ],
-    "formato": "puntual",
-    "lid": "9d15f421"
-  },
-  "f0d053653430e87d": {
-    "title": "Real Madrid - Kids&Us Manresa (Liga Endesa. Jornada 3)",
-    "description": "El equipo madrileño se enfrenta al conjunto catalán en un partido correspondiente a la Liga Endesa. El encuentro deportivo tendrá lugar en el Movistar Arena.",
-    "start_time": "12:00:00",
-    "url": "https://www.realmadrid.com/es-ES/baloncesto/partidos/liga-endesa/real-madrid-kids-and-us-manresa/11-10-2026",
-    "price": "Consultar página oficial",
-    "image": "images/events/90bfc4aabd82.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/real-madrid-kidsus-manresa-liga-endesa-jornada-3-movistar-arena",
-    "source": "esmadrid",
-    "categories": [
-      "deportes"
-    ],
-    "formato": "puntual",
-    "lid": "1f1e0e14"
-  },
-  "b4d2142bad41dce5": {
-    "title": "Gitana en Nueva York (Flamenco sin fronteras)",
-    "description": "La coreógrafa y bailarina cubana Lorena Flores presenta un espectáculo que fusiona flamenco, herencia afrocubana y danza urbana y contemporánea. La propuesta explora la identidad y el éxodo humano a través de una puesta en escena con once bailarines y música original.",
-    "start_time": "20:00:00",
-    "url": "https://tickets.oneboxtds.com/gts/events/58030",
-    "price": "Desde 30 €",
-    "image": "images/events/8f843a209fd7.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/U0Tq5s1sGBwwVjhTyFLJ-zvV4Sb13VzMORRsqXnlaCM/mtime:1786013720/sites/default/files/eventos/eventos/gitana_en_new_york.jpeg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/StYNBZYXgCp6eA_gkdWyhdhGb3JudLNJMz-4vL9Mx3g/mtime:1786014246/sites/default/files/eventos/eventos/gitana.jpeg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/DgdKloa5E5_j2G4NppWW1nBjU9mGIQON-HPdkzwgtQA/mtime:1786014288/sites/default/files/eventos/eventos/gitana_en_new_york4.jpeg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/rwf8ielBVTFuPACR8vWKMqxq0zWo1kuRVwTT83Y3IwA/mtime:1786014310/sites/default/files/eventos/eventos/gitana_en_new_york3.jpeg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/XsVyEwfI2uVwFvwBrsW8zawyFO4d3xVORMur9iZlkMo/mtime:1786014331/sites/default/files/eventos/eventos/gitana_en_new_york1.jpeg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/gitana-nueva-york-flamenco-fronteras-umusic-hotel-teatro-albeniz",
-    "source": "esmadrid",
-    "categories": [
-      "teatro",
-      "danza",
-      "flamenco",
-      "conciertos"
-    ],
-    "formato": "puntual",
-    "lid": "22fd9956"
   },
   "bd6e75b77ab99295": {
     "title": "Rayo Vallecano - Athletic Club Bilbao (LALIGA EA SPORTS)",
@@ -23851,26 +23667,6 @@
     "formato": "exposicion",
     "lid": "9b2ba2ac"
   },
-  "6dbee82f9fe3da52": {
-    "title": "Estebanillo González, soldado y bufón",
-    "description": "La obra narra las aventuras de un bufón profesional que escenifica sus peripecias en la Guerra de los Treinta Años ante los clientes de una taberna en Nápoles. A través de la trama, se revela la faceta oculta del protagonista como espía al servicio de un poderoso duque.",
-    "start_time": "20:00:00",
-    "url": "https://teatrolagrada.com/estebanillo-gonzalez-soldado-y-bufon/",
-    "price": "Desde 15 €",
-    "image": "images/events/5b8fcca770ab.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/I3-xxz-rKCHzg8a2_vFIi7nUWJhdEYUdbU02aRSh_uc/mtime:1790937006/sites/default/files/eventos/eventos/01_.estebanillo_guirigai.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/VYFTdKwtCtVukc8j5pCjrF_ubt7RaRVrlDGpc0wGKsk/mtime:1790937032/sites/default/files/eventos/eventos/05_.estebanillo_guirigai.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/estebanillo-gonzalez-soldado-bufon-teatro-lagrada",
-    "source": "esmadrid",
-    "categories": [
-      "teatro",
-      "comedia"
-    ],
-    "formato": "puntual",
-    "lid": "a39a77f1"
-  },
   "b255fa3dcfb61e91": {
     "title": "Madrid Urban Fest 2026",
     "description": "Festival dedicado a la cultura urbana que reúne a diversos artistas del hip hop a través de conciertos, exhibiciones de danza y otras disciplinas. La programación pone el foco en el carácter mestizo de esta corriente artística con actividades que incluyen graffiti y arte visual.",
@@ -24216,22 +24012,6 @@
     "is_multi_event": true,
     "formato": "festival",
     "lid": "2c3a5fbc"
-  },
-  "6970e333c7949f59": {
-    "title": "Pajarito",
-    "description": "Alberto José Lucena presenta un solo híbrido de danza y palabra donde un bailarín cis apuesta por un formato cómico de movimiento no binario. Este proyecto nace del deseo de hacer una sola acción: contar un cuento que nunca acaba.",
-    "url": "https://www.teatropradillo.com/pajarito/",
-    "price": "12 €",
-    "image": "images/events/a009c8248c9c.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/pajarito-teatro-pradillo",
-    "source": "esmadrid",
-    "categories": [
-      "danza",
-      "teatro",
-      "comedia"
-    ],
-    "formato": "puntual",
-    "lid": "4b4d8238"
   },
   "4da09ec1ecff2be6": {
     "title": "Epílogo",
@@ -24933,20 +24713,6 @@
     ],
     "formato": "exposicion",
     "lid": "1e352ee3"
-  },
-  "45ff3a7b3a43691c": {
-    "title": "Hyatlon Ambar Tour",
-    "description": "Nueva disciplina deportiva híbrida que combina carreras a pie con estaciones de alta intensidad. El evento integra competición, esfuerzo y espectáculo en diversas modalidades como individual, dobles, relevos y paraHyatlón.",
-    "url": "https://hyatlon.org/event/madrid",
-    "price": "Consultar página oficial",
-    "image": "images/events/0732a8f0fde4.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/hyatlon-ambar-tour-httpstriatlonorgnoticiasmadrid-presenta-hyatlon-ambar-tour-arranca-fin",
-    "source": "esmadrid",
-    "categories": [
-      "deportes"
-    ],
-    "formato": "puntual",
-    "lid": "644d0204"
   },
   "c57c696ce141f52d": {
     "title": "Jorge Astyaro - La realidad es una ilusión",
@@ -26978,5 +26744,275 @@
     ],
     "formato": "puntual",
     "lid": "6b08727e"
+  },
+  "6339fecd7b4fd5d6": {
+    "title": "II Ciclo de Creación Emergente, organizado por el Colectivo La Nevera",
+    "description": "Este ciclo presenta una selección de propuestas de danza contemporánea, performance y creación interdisciplinar. El programa busca dar visibilidad a artistas emergentes y fomentar el encuentro entre creadores de diversos territorios.",
+    "start_time": "20:30:00",
+    "url": "https://dtespacioescenico.com/temporada-2026-2027/ii-ciclo-de-creacion-emergente/",
+    "price": "Consultar página oficial",
+    "image": "images/events/bbd2821e64c7.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/N67fWjXGYLHnj8hTHt7fPkjFvrKaOIwoxXmU6W7vYf4/mtime:1792395270/sites/default/files/eventos/eventos/9._natalia.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/Ve_1VUGY9IqmpatUSQvKyA9qDYjQbJmDD4KDElMY7xY/mtime:1792395299/sites/default/files/eventos/eventos/12_2._col_dexeito.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/ciclo-creacion-emergente-organizado-colectivo-nevera-dt-espacio-escenico",
+    "source": "esmadrid",
+    "categories": [
+      "danza",
+      "teatro"
+    ],
+    "is_multi_event": true,
+    "formato": "festival",
+    "lid": "2c118b55"
+  },
+  "10008c7220814fd2": {
+    "title": "Galicia, verano 2006",
+    "description": "Diego Beares crea y dirige esta obra teatral que adentra al espectador en esos días de calor, deseo y emociones al límite, donde el tedio es solo la antesala de lo inesperado. Explora un verano en un pequeño pueblo gallego que lo cambiará todo para siempre.",
+    "start_time": "20:30:00",
+    "url": "https://www.lausina.es/sala/programacion/6aad8dc2da4c37de9a6b4cfa/1792089000000",
+    "price": "Desde 13 €",
+    "image": "images/events/1c4aa9f66386.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/galicia-verano-2006-usina",
+    "source": "esmadrid",
+    "categories": [
+      "teatro"
+    ],
+    "formato": "exposicion",
+    "lid": "9b2ba2ac"
+  },
+  "eb3f50f5e8d6dd3d": {
+    "title": "Palabra Alada",
+    "description": "Propuesta escénica que explora la esencia de las palabras a través de cuentos, mitos y microrrelatos. El espectáculo presenta personajes que se ven profundamente transformados por el lenguaje y sus múltiples significados.",
+    "start_time": "20:30:00",
+    "url": "https://teatro.bululu2120.com/palabra-alada-sala-bululu/",
+    "price": "Desde 12 €",
+    "image": "images/events/01a2811f2e45.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/palabra-alada-bululu-2120",
+    "source": "esmadrid",
+    "categories": [
+      "teatro"
+    ],
+    "formato": "exposicion",
+    "lid": "db7a4d60"
+  },
+  "a6dd069727949a1c": {
+    "title": "Cualquier tiempo pasado",
+    "description": "Una comedia de ciencia ficción que explora las dificultades de adaptación de dos ancianos en un mundo futuro donde la tecnología permite vivir 200 años. La obra combina creación escénica y audiovisual para abordar temas como la soledad, los cambios sociales y la brecha generacional.",
+    "start_time": "20:00:00",
+    "url": "https://teatrolagrada.com/cualquier-tiempo-pasado/",
+    "price": "Desde 15 €",
+    "image": "images/events/6b708ff678f4.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/cualquier-tiempo-pasado-teatro-lagrada",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "comedia"
+    ],
+    "formato": "exposicion",
+    "lid": "a39a77f1"
+  },
+  "eed42db4601151a1": {
+    "title": "El Lugar de lo Inservible",
+    "description": "Proyecto vivo que fusiona teatro, danza y música para reflexionar sobre el consumo y la memoria. La obra sumerge al espectador en una historia conmovedora donde la naturaleza y los recuerdos cobran vida propia.",
+    "start_time": "17:30:00",
+    "url": "https://www.teatropradillo.com/el-lugar-de-lo-inservible/",
+    "price": "6,15 €",
+    "image": "images/events/c1f19f3354b5.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/lugar-lo-inservible-teatro-pradillo",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "danza",
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "4b4d8238"
+  },
+  "b51917a7161aa024": {
+    "title": "Helena Rohner. La forma sostenida",
+    "description": "Una muestra que repasa tres décadas de trayectoria de una de las diseñadoras de joyas más destacadas del panorama español. La exposición reúne piezas emblemáticas, objetos decorativos, cuadernos de trabajo y prototipos que ilustran la evolución creativa de la artista.",
+    "start_time": "09:30:00",
+    "url": "https://www.cultura.gob.es/mnartesdecorativas/exposiciones/proximas-exposiciones.html",
+    "price": "3 €",
+    "image": "images/events/bf8f59e243ad.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/helena-rohner-forma-sostenida-museo-nacional-artes-decorativas",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones"
+    ],
+    "formato": "exposicion",
+    "lid": "8ca210f1"
+  },
+  "e4c993ae98d04c48": {
+    "title": "Mark Guiliana Beat Music",
+    "description": "El reputado baterista Mark Guiliana ofrece un concierto que combina la tradición del jazz con la experimentación electrónica y ritmos contemporáneos. La actuación destaca por su virtuosismo técnico y su capacidad para fusionar la improvisación jazzística con bases sonoras innovadoras.",
+    "start_time": "20:00:00",
+    "url": "https://festivaldejazzmadrid.com/actividad/mark-guiliana-beat-music/",
+    "price": "Desde 22 €",
+    "image": "images/events/dfcb06ffbca2.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/mark-guiliana-beat-music-sala-villanos",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "0d71ace6"
+  },
+  "143f72f7566a9eed": {
+    "title": "Judith Hill",
+    "description": "La cantautora estadounidense, considerada una de las grandes voces del soul, presenta su álbum más reciente combinando soul, funk, rock y R&B. El concierto se enmarca dentro del ciclo Villanos del Jazz en Madrid.",
+    "start_time": "20:30:00",
+    "url": "https://festivaldejazzmadrid.com/actividad/judith-hill/",
+    "price": "Desde 20 €",
+    "image": "images/events/4afce35b174e.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/judith-hill-umusic-hotel-teatro-albeniz",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "22fd9956"
+  },
+  "4956a5f8830dfbce": {
+    "title": "Vincen García",
+    "description": "El bajista valenciano presenta su nuevo álbum, VIVACE, en una de sus tres fechas exclusivas en España (Sala Villanos. 6 noviembre).",
+    "start_time": "21:00:00",
+    "url": "https://festivaldejazzmadrid.com/actividad/vincen-garcia/",
+    "price": "Desde 20 €",
+    "image": "images/events/b99deecddbdc.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/vincen-garcia-sala-villanos",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "0d71ace6"
+  },
+  "5ebfab6e1e4a4ecc": {
+    "title": "Dave Lee (FKA Joey Negro) + Javi Frias",
+    "description": "El DJ y productor británico fusiona los sonidos del disco, house y funk en una sesión que repasa tres décadas de trayectoria musical. La propuesta destaca por integrar líneas de bajo vibrantes y melodías con alma soul a través de una perspectiva contemporánea.",
+    "start_time": "23:59:00",
+    "url": "https://festivaldejazzmadrid.com/actividad/dave-lee-fka-joey-negro-javi-frias/",
+    "price": "Desde 19,80 €",
+    "image": "images/events/b59e9f064411.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/dave-lee-fka-joey-negro-javi-frias-sala-villanos",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "0d71ace6"
+  },
+  "49158f782da48f30": {
+    "title": "Leonor Watling & Leo Sidran",
+    "description": "La actriz y cantante Leonor Watling une su talento al del compositor, músico y productor estadounidense Leo Sidran para presentar su álbum conjunto, Leo & Leo. Acompañados por The Groovy French Band, fusionan jazz, folk acústico y pop en una propuesta musical llena de sensibilidad y elegancia.",
+    "start_time": "20:30:00",
+    "url": "https://festivaldejazzmadrid.com/actividad/leonor-watling-leo-sidran-leo-leo/",
+    "price": "Desde 20 €",
+    "image": "images/events/f5447d8f9e1d.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/leonor-watling-leo-sidran-umusic-hotel-teatro-albeniz",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "22fd9956"
+  },
+  "23069a15de0a0369": {
+    "title": "Al Di Meola Acoustic Trio",
+    "description": "El reconocido compositor y guitarrista estadounidense presenta un concierto que fusiona jazz, flamenco, tango y músicas del mundo. El artista demuestra en directo su extraordinaria técnica y su capacidad para explorar diferentes estilos musicales.",
+    "start_time": "20:30:00",
+    "url": "https://festivaldejazzmadrid.com/actividad/al-di-meola-acustic-trio/",
+    "price": "Desde 30 €",
+    "image": "images/events/197c48039d40.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/di-meola-acoustic-trio-umusic-hotel-teatro-albeniz",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "22fd9956"
+  },
+  "87072056ade3f6f4": {
+    "title": "Raffaele Casarano",
+    "description": "El saxofonista italiano presenta sus composiciones más destacadas y un adelanto de su próximo álbum. Su propuesta musical fusiona raíces del sur de Italia con influencias de la tradición afroamericana y sonidos contemporáneos.",
+    "start_time": "13:00:00",
+    "url": "https://festivaldejazzmadrid.com/actividad/raffaele-casarano/",
+    "price": "Desde 18 €",
+    "image": "images/events/3bdee211adee.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/raffaele-casarano-sala-villanos",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "0d71ace6"
+  },
+  "c4bbf2bef75bdc05": {
+    "title": "Abe Rábade",
+    "description": "El pianista y compositor presenta su proyecto Nova Botánica, una propuesta que fusiona la música tradicional gallega con el jazz y la música de cámara. La obra establece un diálogo entre la música y textos populares para explorar conexiones entre diferentes tradiciones y lenguajes artísticos.",
+    "start_time": "17:30:00",
+    "url": "https://festivaldejazzmadrid.com/actividad/abe-rabade-nova-botanica/",
+    "price": "Desde 20 €",
+    "image": "images/events/b378dd5da94a.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/abe-rabade-sala-villanos",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "0d71ace6"
+  },
+  "dd3bd3b208f63fab": {
+    "title": "Munir Hossn",
+    "description": "El multiinstrumentista, compositor y productor brasileño Munir Hossn presenta su proyecto MysticSamba, que revisita la samba tradicional combinándola con esquemas del jazz contemporáneo y cadencias de origen afrobrasileño. Se acompaña de una banda internacional y cuenta con la invitada especial Nella, vocalista reconocida con el Latin Grammy a Mejor Nuevo Artista, que aporta folclore venezolano, flamenco, música latinoamericana y jazz.",
+    "start_time": "20:30:00",
+    "url": "https://festivaldejazzmadrid.com/actividad/munir-hossns-mysticsamba/",
+    "price": "Desde 20 €",
+    "image": "images/events/3cab7c6162cd.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/munir-hossn-sala-villanos",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos",
+      "flamenco"
+    ],
+    "formato": "puntual",
+    "lid": "0d71ace6"
+  },
+  "d05b9a8a05e8e436": {
+    "title": "Rilke y el arte español",
+    "description": "Con motivo del centenario del fallecimiento del escritor Rainer Maria Rilke, el Museo del Prado le dedica esta exposición. La muestra explora la importancia de la pintura española en la obra del autor, destacando su viaje por España y su admiración por El Greco, Goya y Velázquez.",
+    "start_time": "10:00:00",
+    "url": "https://www.museodelprado.es/actualidad/exposicion/rilke-y-el-arte-espaol/b639276f-a9d7-7523-6880-b6d049edf03e",
+    "price": "15 €",
+    "image": "images/events/05e40bd4b1f0.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/rilke-arte-espanol-museo-prado",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones"
+    ],
+    "formato": "exposicion",
+    "lid": "54913fe0"
+  },
+  "032dedce8ca0ac06": {
+    "title": "Carne y arena. Alejandro G. Iñárritu",
+    "description": "Esta premiada instalación de realidad virtual, creada por el director mexicano Alejandro G. Iñárritu, sitúa a los visitantes en el centro del viaje de personas migrantes y refugiadas. La obra difumina los límites entre espectador y protagonista, invitando a una reflexión profunda sobre la empatía y la condición humana.",
+    "start_time": "10:00:00",
+    "url": "https://espacio.fundaciontelefonica.com/evento/carne-y-arena-alejandro-g-inarritu/",
+    "price": "Gratis",
+    "image": "images/events/c29d72c6f208.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/lBuDBrQ5eHND4P-DvSsbASx7k1Y2k5l-YBGlnavqMrA/mtime:1790768455/sites/default/files/eventos/eventos/carne_y_arena.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/cR_aOuwdc_0ZA4vfZWPXANsgk7zqPxQQpTQ_zTx2Sz0/mtime:1790768495/sites/default/files/eventos/eventos/carne_y_arena_2.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/carne-arena-alejandro-g-inarritu-espacio-fundacion-telefonica",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "formato": "exposicion",
+    "lid": "868a1c03"
   }
 }
