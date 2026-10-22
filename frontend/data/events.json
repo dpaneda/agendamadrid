@@ -443,6 +443,21 @@
     "price": "0€",
     "formato": "puntual"
   },
+  "b5cb0f5bb13ad3d9": {
+    "title": "Alicia en el País de las Maravillas - Cía. La Maleta de Los Cuentos",
+    "start_time": "12:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=e125fa46443b0a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "teatro",
+      "gratis"
+    ],
+    "description": "Espectáculo infantil donde Alicia vive aventuras alocadas junto a personajes fantásticos. Una adaptación teatral que sumerge a los más pequeños en un mundo mágico.",
+    "price": "0",
+    "formato": "puntual",
+    "lid": "07486b5c"
+  },
   "18fb7ab9187ef68f": {
     "title": "Alto y claro: herramientas para comunicarnos mejor",
     "start_time": "18:00:00",
@@ -509,6 +524,19 @@
     ],
     "description": "Actividad creativa de artesanía y elaboración manual organizada en el distrito de Villa de Vallecas.",
     "price": "0",
+    "formato": "puntual"
+  },
+  "8afe67fea4788229": {
+    "title": "Actuación infantil: Anatola Karakola",
+    "description": "Espectáculo infantil diseñado para los más pequeños. Se llevará a cabo en el Mercado municipal Guillermo de Osma.",
+    "start_time": "11:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=0d856f8d05341a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "gratis"
+    ],
+    "price": "0€",
     "formato": "puntual"
   },
   "6d4b7d9cd220f7cd": {
@@ -1048,6 +1076,21 @@
     "price": "0€",
     "formato": "exposicion",
     "lid": "b0b9722e"
+  },
+  "eaf716c54bf6469b": {
+    "title": "Concierto: Bandas sonoras de cine",
+    "description": "Un recorrido musical por las grandes bandas sonoras de John Williams, Hans Zimmer y Ennio Morricone. Incluye temas de películas como Star Wars y Gladiator.",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=11e63893f4ba0a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "cine",
+      "gratis"
+    ],
+    "price": "gratis",
+    "formato": "puntual",
+    "lid": "f07e42d3"
   },
   "e23e0cc6ccca3eae": {
     "title": "Ruta Barranco de la Zorra",
@@ -5268,6 +5311,22 @@
     "formato": "puntual",
     "lid": "0d332ccb"
   },
+  "e0d1b68f89ddbc0f": {
+    "title": "Exhibición: Tres culturas, tres escrituras",
+    "description": "Actividad educativa sobre la convivencia medieval de musulmanes, cristianos y judíos, con práctica de caligrafía histórica.",
+    "start_time": "11:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=62650b1fa4931a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "exposiciones",
+      "patrimonio",
+      "gratis"
+    ],
+    "price": "Gratis",
+    "formato": "puntual",
+    "lid": "0d332ccb"
+  },
   "f4c4a03d8169a5b3": {
     "title": "Exhibición: Roma, ingeniería y artesanía",
     "description": "Taller centrado en la construcción romana mediante arcos de medio punto y el estudio de artesanías domésticas de la época.",
@@ -6714,6 +6773,21 @@
     "formato": "exposicion",
     "lid": "040b80fc"
   },
+  "b323d7552da8b6b7": {
+    "title": "Cine: Heidi, el rescate del lince",
+    "start_time": "12:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=3fd9fe4db7cf0a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "infantil",
+      "gratis"
+    ],
+    "description": "Película de animación que narra las aventuras de Heidi en los Alpes suizos. Una historia sobre la naturaleza y la amistad.",
+    "price": "gratis",
+    "formato": "puntual",
+    "lid": "61a0fba7"
+  },
   "ba20f331a0849173": {
     "title": "Héroes vs Villanos: Taller de cómic",
     "description": "Taller formativo para aprender técnicas profesionales de diseño de personajes. Descubre cómo la psicología influye en la creación de héroes y villanos.",
@@ -6942,6 +7016,21 @@
     "is_multi_event": true,
     "formato": "festival",
     "lid": "4c99e2c3"
+  },
+  "a6cbe2f7124c56a6": {
+    "title": "Imaginar con máquinas en Puente de Vallecas",
+    "start_time": "11:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a4d2001a92f00a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "infantil",
+      "gratis"
+    ],
+    "description": "Taller creativo de tecnología y exploración digital para fomentar la imaginación. Actividad educativa orientada a descubrir nuevas formas de creación mediante máquinas.",
+    "price": "gratis",
+    "formato": "puntual",
+    "lid": "398d56b6"
   },
   "e5a67b8226d7ac88": {
     "title": "In the sentimental Lugo",
@@ -7550,14 +7639,18 @@
   },
   "535dd00a49d52191": {
     "title": "La forma humana",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=bc58482a9cb50a10VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
+    "description": "Evento cultural destacado en la agenda de la ciudad.",
+    "start_time": "19:30:00",
+    "url": "https://www.nave10matadero.es/actividades/la-forma-humana",
+    "price": "15,75 - 21 €",
+    "image": "images/events/1cce85bbe662.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/forma-humana-nave-10-matadero",
+    "source": "esmadrid,madrid_agenda",
     "categories": [
       "teatro"
     ],
-    "description": "Evento cultural destacado en la agenda de la ciudad.",
     "formato": "exposicion",
-    "lid": "4c99e2c3"
+    "lid": "cf38b0cd"
   },
   "fbfa7b6f959ed41e": {
     "title": "Cine: La Gradiva",
@@ -7947,6 +8040,20 @@
     "price": "0",
     "formato": "exposicion",
     "lid": "08cc2680"
+  },
+  "f938e695925e1916": {
+    "title": "Danza contemporánea: Las almejas que hablan",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=2a682f401838f910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "danza",
+      "gratis"
+    ],
+    "description": "Pieza de danza experimental que juega con el absurdo y la expresión corporal. Un evento artístico integrado en la programación cultural de Usera.",
+    "price": "0",
+    "formato": "puntual",
+    "lid": "74b38acb"
   },
   "91d4d636c212c794": {
     "title": "Obra de Teatro 'Las brujas de Salem' (CANCELADA)",
@@ -9140,6 +9247,21 @@
     "formato": "puntual",
     "lid": "c3355e2c"
   },
+  "d1e9fda1c78a4360": {
+    "title": "Misterios inmersivos: los casos del dragón",
+    "description": "Actividad inmersiva para resolver enigmas y casos misteriosos.",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=d2d2ea4110e10a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "otros"
+    ],
+    "dates": [
+      "2026-11-21",
+      "2026-12-12"
+    ],
+    "formato": "puntual",
+    "lid": "95a62894"
+  },
   "a6d3df78ee2ac686": {
     "title": "Proyección: Mitología de barrio + Quién vio los templos caer",
     "description": "Programa doble de cine que explora narrativas de periferia y reflexiones sobre el patrimonio.",
@@ -9640,6 +9762,20 @@
     "formato": "puntual",
     "lid": "6d0e53b1"
   },
+  "36cb6a6572b7962d": {
+    "title": "Observatorio de juego y taller Los caminos del agua",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c31cdd4116441a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "infantil",
+      "talleres",
+      "naturaleza"
+    ],
+    "description": "Actividades lúdicas y educativas enfocadas en la infancia y el medio ambiente.",
+    "is_multi_event": true,
+    "formato": "exposicion",
+    "lid": "cfdf6f71"
+  },
   "4ba8ae6cc14dad0f": {
     "title": "Of Mud and Blood",
     "description": "Documental sobre la extracción de coltán en el Congo y cómo este mineral conecta las minas con nuestra tecnología diaria. Muestra la realidad de quienes habitan el terreno.",
@@ -9878,6 +10014,19 @@
     ],
     "description": "Actividad lúdica basada en juegos de rol con temática temática de terror para celebrar Halloween.",
     "price": "Gratis",
+    "formato": "puntual",
+    "lid": "5b0073c9"
+  },
+  "0ab90ff1f407e5b6": {
+    "title": "Partida de rol para adultos",
+    "start_time": "11:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=a8748da6016ae910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "description": "Sesión de juego de rol interactivo diseñada para adultos. Una aventura inmersiva para poner a prueba tu imaginación.",
     "formato": "puntual",
     "lid": "5b0073c9"
   },
@@ -10293,6 +10442,19 @@
     "is_multi_event": true,
     "formato": "festival",
     "lid": "9dd69f2b"
+  },
+  "35af9300a40a0591": {
+    "title": "Concierto: Zambomba Navideña en Plaza de Cascorro",
+    "description": "Celebración de la tradicional Zambomba Navideña organizada por FECACE.",
+    "start_time": "18:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=73cb20e8bf3dd910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "price": "gratis",
+    "formato": "puntual"
   },
   "33b571baff38a033": {
     "title": "Programación POM CondeDuque 2026-27",
@@ -11521,6 +11683,21 @@
     "formato": "exposicion",
     "lid": "a0c50125"
   },
+  "46079f986297cdea": {
+    "title": "Exposición: Stranger things: Líquenes y contaminación",
+    "start_time": "11:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=4b9fa108091f0a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "exposiciones",
+      "naturaleza",
+      "gratis"
+    ],
+    "description": "Estudio visual mediante líquenes sobre la calidad del aire y la contaminación.",
+    "price": "gratis",
+    "formato": "puntual",
+    "lid": "1a7c6818"
+  },
   "83fc612e0ba117c4": {
     "title": "Deporte: Súbete al bote contra el cáncer de mama",
     "description": "Sesión deportiva de remo destinada a mejorar la salud cardiovascular y sensibilizar sobre el cáncer de mama.",
@@ -12280,6 +12457,20 @@
     "price": "gratis",
     "formato": "puntual"
   },
+  "5b08cdf54757d56a": {
+    "title": "Taller práctico de bateo de oro",
+    "description": "Aprende las técnicas tradicionales de los antiguos buscadores de oro en esta actividad práctica de prospección aluvial. Una inmersión en la geología y la historia de la minería.",
+    "start_time": "11:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=33e9aab953b31a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "price": "Gratis",
+    "formato": "puntual",
+    "lid": "aed4d982"
+  },
   "a0d27d964e4174ff": {
     "title": "Taller de preparación de castings",
     "description": "Taller especializado dirigido a jóvenes y adultos para adquirir herramientas y confianza ante las pruebas de selección. Sesión orientada a la mejora del perfil profesional en el sector artístico.",
@@ -12334,6 +12525,20 @@
     "price": "gratis",
     "formato": "exposicion",
     "lid": "80116606"
+  },
+  "fe9597f6ff587e0d": {
+    "title": "Taller: La domesticación del fuego en la Prehistoria",
+    "description": "Taller sobre las técnicas prehistóricas para encender y controlar el fuego, realizado durante la Semana de la Ciencia. Aprende sobre los grandes hitos de la evolución humana.",
+    "start_time": "11:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=4da0246bfeb01a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "price": "0",
+    "formato": "puntual",
+    "lid": "0d332ccb"
   },
   "c7b130bfb3c3d84b": {
     "title": "Taller 'Fanzineitor' - Biblioteca Francisco Ayala",
@@ -22506,23 +22711,6 @@
     "formato": "exposicion",
     "lid": "1e352ee3"
   },
-  "42892c9d8a98b132": {
-    "title": "Patricia Guerrero - Proceso eterno",
-    "description": "En esta nueva propuesta, Proceso Eterno representa la cadencia a la que precipita el artista. Ese largo caminar que solo acaba cuando la consciencia aparece.",
-    "start_time": "20:30:00",
-    "url": "https://www.madrid.org/sumaflamenca/2026/patricia-guerrero-proceso-eterno.html",
-    "price": "Desde 9 €",
-    "image": "images/events/62be2b299fff.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/patricia-guerrero-proceso-eterno-teatros-canal",
-    "source": "esmadrid",
-    "categories": [
-      "flamenco",
-      "danza",
-      "teatro"
-    ],
-    "formato": "puntual",
-    "lid": "027f0347"
-  },
   "42e5da67388f29ba": {
     "title": "Festival Cuerpo Romo",
     "description": "El festival de danza contemporánea y música en directo celebra una nueva edición. Con Elías Aguirre en la dirección artística, este evento invita a coreógrafos, bailarines, músicos y creadores visuales a hacer de Matadero Madrid su territorio. La programación reúne espectáculos, talleres e iniciativas participativas para todos los públicos, incluyendo piezas breves de danza en la calle y actuaciones que exploran la masculinidad o las relaciones entre cuerpo, espacio, tiempo e identidad.",
@@ -25568,5 +25756,201 @@
     ],
     "formato": "puntual",
     "lid": "7399986c"
+  },
+  "7e2bd61e852d076c": {
+    "title": "Smithsonian Entre Estrellas",
+    "description": "Una experiencia inmersiva e interactiva en 3D y realidad virtual que permite explorar el cosmos y viajar por el espacio. Los participantes utilizan visores para caminar entre estrellas y observar fenómenos astronómicos como agujeros negros y llamaradas solares.",
+    "url": "https://smithsonianstarstruck.com/madrid/",
+    "price": "Desde 17 €",
+    "image": "images/events/103f50e1546c.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/jYX6aFg2yQl_wAYg4xg1GaasgQMXo4QwiHzbTMQVK3o/mtime:1792654410/sites/default/files/eventos/eventos/smithsonian_entre_estrellas.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/aU7YK19EbxGQHRVMB5IrOLrFNz3GuuJ486G_usrWukQ/mtime:1792654706/sites/default/files/eventos/eventos/smithsonian_starstruck.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/5uNfisAL7L-wKAJRilf7YVWfsvwcUJzD1MAUPu1vy_Y/mtime:1792654677/sites/default/files/eventos/eventos/smithsonian.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/x0PNp1UbY_r8lnWrD6mbhd0NJy01uqdFaLPAQRah9cg/mtime:1792654694/sites/default/files/eventos/eventos/estrellas_0.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/smithsonian-estrellas-fever-immersive-center",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones"
+    ],
+    "formato": "exposicion",
+    "lid": "4abde3ad"
+  },
+  "0fa4ac834ecb2b4c": {
+    "title": "Madrid Otaku 2026",
+    "description": "Este evento reúne a aficionados al universo del manga, el anime, el cosplay, los videojuegos y la cultura popular japonesa. Ofrece exposiciones, concursos de baile y karaoke, así como stands de editoriales y autores del manga.",
+    "url": "https://madridotaku.com/",
+    "price": "Desde 14 €",
+    "image": "images/events/54f44993371d.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/rI2KFZLkuKnTWzM9b7vEU3y5plHBvevPuy1AeX-rD80/mtime:1792656427/sites/default/files/eventos/eventos/madrid_otaku_2026.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/qcCFcF95v4P0UOi0_31hnPs7i5AqVp5u-o05pyw8LJE/mtime:1750147505/sites/default/files/eventos/eventos/madrid_otaku.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/OfBdOTf03xx5yxIRE08ysegoYnggerXdmCs8_kjjKrY/mtime:1638451744/sites/default/files/eventos/eventos/otaku_1.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/madrid-otaku-caja-magica",
+    "source": "esmadrid",
+    "categories": [
+      "ferias",
+      "exposiciones",
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "e42e9264"
+  },
+  "4521928f7d6466a4": {
+    "title": "Vikxie",
+    "description": "El cantante presenta su trabajo 'Eclipse solar' acompañado de su banda y diversos invitados especiales. El espectáculo recorre canciones de sus siete discos destacando su faceta más guitarrera.",
+    "start_time": "21:30:00",
+    "url": "https://www.mobydickclub.com/vikxie29octubre2026.php",
+    "price": "Desde 16,50 €",
+    "image": "images/events/6acb5d9b5a06.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/vikxie-moby-dick",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "98f49d45"
+  },
+  "0033926db3a193f8": {
+    "title": "GENA",
+    "description": "La banda coreana GENA acerca la herencia musical de Corea al público madrileño a través de una propuesta contemporánea y abierta. Despliega un repertorio que une melodías tradicionales de su país de origen y la energía directa de formatos instrumentales actuales.",
+    "start_time": "12:30:00",
+    "url": "https://salavillanos.es/evento/gena/",
+    "price": "Gratis",
+    "image": "images/events/d8776a0efc98.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/gena-sala-villanos",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "formato": "puntual",
+    "lid": "0d71ace6"
+  },
+  "dc7217d82f1e43ce": {
+    "title": "Pyramidiacs",
+    "description": "La veterana banda australiana de power-pop visita Madrid dentro de su nueva gira (El Sol. 2 noviembre).",
+    "start_time": "20:30:00",
+    "url": "https://salaelsol.com/eventos/pyramidiacs/",
+    "price": "Desde 20 €",
+    "image": "images/events/e17eaf271307.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/pyramidiacs-sol",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "8e9bc286"
+  },
+  "257bd3f44ea2d43b": {
+    "title": "Chameleons",
+    "description": "La banda británica de post-punk regresa a los escenarios para presentar su trabajo más reciente y repasar los temas más destacados de su trayectoria. El grupo, referente del rock alternativo, ofrecerá un directo encabezado por sus miembros fundadores Mark Burgess y Reg Smithies.",
+    "start_time": "21:15:00",
+    "url": "https://chameleonsband.com/event/6545726/760376304/chameleons",
+    "price": "Desde 33 €",
+    "image": "images/events/f7cdd08cd874.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/chameleons-sala-mon-live",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "871b85d1"
+  },
+  "49ceb7bfd7cece4f": {
+    "title": "flesh chariot, chariot of flesh",
+    "description": "La coreógrafa Faye Driscoll y la compañía Cullberg Ballet presentan una pieza de danza que explora la percepción y las posibilidades expresivas del cuerpo. El espectáculo analiza la presencia y la conexión humana en la era de las pantallas mediante una puesta en escena con 15 bailarines.",
+    "start_time": "20:00:00",
+    "url": "https://www.madrid.org/fo/2026/flesh.html",
+    "price": "Desde 9 €",
+    "image": "images/events/79e2c1727c50.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/flesh-chariot-chariot-flesh-teatros-canal",
+    "source": "esmadrid",
+    "categories": [
+      "danza",
+      "teatro"
+    ],
+    "formato": "puntual",
+    "lid": "027f0347"
+  },
+  "91b433043dcb6530": {
+    "title": "El corazón de Ester",
+    "description": "Alberto Cortés presenta un ritual escénico que explora el amor, la dependencia emocional y la vulnerabilidad a través de una confesión abierta ante el público. La obra reflexiona sobre la identidad y la mercantilización del cuerpo en el sistema actual combinando poesía, música en directo y teatro.",
+    "start_time": "19:30:00",
+    "url": "https://www.madrid.org/fo/2026/elcorazon.html",
+    "price": "Desde 18 €",
+    "image": "images/events/16e678712fde.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/iyq7LqdYxDCazJeiW-QIqTYv_oUJvq1W6MPaX45WAaQ/mtime:1791262774/sites/default/files/eventos/eventos/el-corazon-de-ester.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/SKxirH3FQ7BrBMFUF1Zv9Gv6w7-_-6lQsHr-sb_WIsQ/mtime:1791262875/sites/default/files/eventos/eventos/el-corazon-de-ester-2.jpg",
+      "https://estaticos.esmadrid.com/cdn/farfuture/pac7BiiPlhBy8vlO7p--xxSnGTVKcQMwXENLapMoQsI/mtime:1791263130/sites/default/files/eventos/eventos/el-corazon-de-ester-3.jpg"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/corazon-ester-conde-duque",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "danza"
+    ],
+    "formato": "puntual",
+    "lid": "41cfd2ba"
+  },
+  "f1dc6f1ff7b09b45": {
+    "title": "Hans Baldung Grien",
+    "description": "Breve muestra compuesta por dos obras del destacado pintor renacentista alemán (Museo del Prado. 20 nov a 7 mar).",
+    "start_time": "10:00:00",
+    "url": "https://www.museodelprado.es/actualidad/exposicion/hans-baldung-grien/018c21be-a8af-b025-8145-bee1b7a4799c",
+    "price": "Entrada general: 15 €\nEntrada reducida: 7,50 €\nCon audioguía: Entrada + 5 €\nGratuita:  todos los visitantes, de lunes - sábado: 18:00 - 20:00 h / domingos y festivos: 17:00 - 19:00 h\nConsultar página oficial",
+    "image": "images/events/c46d4a234b5b.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/hans-baldung-grien-museo-prado",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "formato": "exposicion",
+    "lid": "54913fe0"
+  },
+  "027587c7bc2d44ac": {
+    "title": "Miki Leal. La corriente del confort. De lo cotidiano a lo heroico",
+    "description": "La exposición reúne más de 120 piezas del artista sevillano que combinan pintura, grabado, cerámica, escultura y diseño de mobiliario. El autor transforma vivencias personales y pasiones cotidianas en escenas llenas de humor, nostalgia y fantasía mediante una intervención espacial inspirada en el cine.",
+    "start_time": "11:00:00",
+    "url": "https://www.comunidad.madrid/actividades/2026/exposicion-miki-leal",
+    "price": "Gratis",
+    "image": "images/events/ace67cedfba7.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/kRsZ83uDynKvpH2jOdJB4ZKiX9OyRsY8BGRqo6MoXJI/mtime:1792418665/sites/default/files/eventos/eventos/miki_leal.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/XTa82FoCnAjcCvKbze-q1kk-0yxOyiXZuu8rVvP4Q6E/mtime:1792418685/sites/default/files/eventos/eventos/miki_leal2.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/miki-leal-corriente-confort-lo-ordinario-lo-heroico-sala-alcala-31-comunidad-madrid",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones",
+      "gratis"
+    ],
+    "formato": "exposicion",
+    "lid": "e7a6dc9e"
+  },
+  "0f4abbe55db1f8bf": {
+    "title": "Circo Price en Navidad - Circo Raluy Legacy",
+    "description": "El clásico montaje navideño del Teatro Circo Price presenta este año a la compañía Circo Raluy Legacy en un espectáculo lleno de acrobacias, malabares y humor. Es una propuesta artística que combina la tradición circense familiar con la innovación técnica para todos los públicos.",
+    "start_time": "18:30:00",
+    "url": "https://www.teatrocircoprice.es/programacion/circo-price-en-navidad-3",
+    "price": "Desde 14 €",
+    "image": "images/events/98a3a139a6a2.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/Xp4-PzETAhK8GodR7tOkzZmHxotIiFaJRVGQ2S0KBm4/mtime:1792581747/sites/default/files/eventos/eventos/circo_price.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/wgDg8AVjs9cDJHEs8DWIm3EywU9k7ogrF9T6rRxatNw/mtime:1792581818/sites/default/files/eventos/eventos/circo_price_2026.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/circo-price-navidad-teatro-circo-price",
+    "source": "esmadrid",
+    "categories": [
+      "circo",
+      "infantil",
+      "teatro"
+    ],
+    "formato": "exposicion",
+    "lid": "e411800a"
   }
 }

@@ -131,6 +131,13 @@
     "latitude": 40.45224710166,
     "longitude": -3.658029027767765
   },
+  "07486b5c": {
+    "location_name": "Teatro de Títeres de El Retiro",
+    "address": "AVENIDA MÉXICO 4",
+    "district": "Retiro",
+    "latitude": 40.41878362561595,
+    "longitude": -3.6866519471003647
+  },
   "4eb3f73b": {
     "location_name": "Teatro Fernán Gómez. Centro Cultural de la Villa",
     "address": "de Colón , 4",
@@ -986,13 +993,6 @@
     "latitude": 40.38903628994235,
     "longitude": -3.6665321826830297
   },
-  "07486b5c": {
-    "location_name": "Teatro de Títeres de El Retiro",
-    "address": "AVENIDA MÉXICO 4",
-    "district": "Retiro",
-    "latitude": 40.41878362561595,
-    "longitude": -3.6866519471003647
-  },
   "a0680ced": {
     "location_name": "Junta Municipal del Distrito de Tetuán",
     "address": "CALLE BRAVO MURILLO 357",
@@ -1006,6 +1006,12 @@
     "district": "Moncloa-Aravaca",
     "latitude": 40.45867841791346,
     "longitude": -3.7863499043313373
+  },
+  "cf38b0cd": {
+    "location_name": "Nave 10 Matadero (antes Naves del Español)",
+    "address": "de la Chopera, 14",
+    "latitude": 40.3914147,
+    "longitude": -3.6972004
   },
   "32296fa0": {
     "location_name": "Espacio de Igualdad María Moliner. Villa de Vallecas",
@@ -1083,6 +1089,13 @@
     "district": "Moncloa-Aravaca",
     "latitude": 40.432243310641894,
     "longitude": -3.7366613378902462
+  },
+  "cfdf6f71": {
+    "location_name": "Espacio Abierto Quinta de los Molinos",
+    "address": "CALLE JUAN IGNACIO LUCA DE TENA 20",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.44774002225867,
+    "longitude": -3.6292874542291638
   },
   "9068c482": {
     "location_name": "Centro Deportivo Municipal Plata y Castañar",
@@ -1181,25 +1194,12 @@
     "latitude": 40.39928542551079,
     "longitude": -3.636600379403484
   },
-  "cfdf6f71": {
-    "location_name": "Espacio Abierto Quinta de los Molinos",
-    "address": "CALLE JUAN IGNACIO LUCA DE TENA 20",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.44774002225867,
-    "longitude": -3.6292874542291638
-  },
   "ee60944b": {
     "location_name": "Centro Deportivo Municipal Estanque del Retiro",
     "address": "PASEO COLOMBIA 2",
     "district": "Retiro",
     "latitude": 40.41840451709118,
     "longitude": -3.68434349797176
-  },
-  "cf38b0cd": {
-    "location_name": "Nave 10 Matadero (antes Naves del Español)",
-    "address": "de la Chopera, 14",
-    "latitude": 40.3914147,
-    "longitude": -3.6972004
   },
   "e7c7e926": {
     "location_name": "Biblioteca Pública Municipal Victoria Prego (Carabanchel)",
@@ -2449,5 +2449,17 @@
     "address": "Paseo de la Venta, 66",
     "latitude": 40.4120772,
     "longitude": -3.7511242
+  },
+  "98f49d45": {
+    "location_name": "Moby Dick",
+    "address": "de Brasil, 5",
+    "latitude": 40.454490836811,
+    "longitude": -3.693975806236
+  },
+  "871b85d1": {
+    "location_name": "Sala Mon Live",
+    "address": "de Hilarión Eslava, 36",
+    "latitude": 40.4359056,
+    "longitude": -3.7164565
   }
 }
