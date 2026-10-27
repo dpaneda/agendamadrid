@@ -237,6 +237,19 @@
     "is_multi_event": true,
     "formato": "exposicion"
   },
+  "f56374432cd26f7a": {
+    "title": "Actuación musical de África Rove",
+    "description": "Concierto de música en vivo a cargo de la artista África Rove. Actividad gratuita de una hora de duración.",
+    "start_time": "12:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=fc1344264a511a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "gratis"
+    ],
+    "formato": "puntual",
+    "lid": "910ecd38"
+  },
   "fae6c6ef265654dd": {
     "title": "Concierto de Cintia Rosado: Clásicos de Jazz y Soul",
     "description": "La cantante principal del musical Malinche presenta un espectáculo en formato dúo recorriendo grandes clásicos del jazz y el soul.",
@@ -514,6 +527,18 @@
     ],
     "price": "0€",
     "formato": "puntual"
+  },
+  "74bc8215d2c450a3": {
+    "title": "Andrea Jiménez: Contra Antígona",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c9f3e1e34fa80a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "destacado"
+    ],
+    "description": "Versión contemporánea y teatral del mito clásico de Antígona. Una propuesta escénica de Andrea Jiménez centrada en la revisión de los clásicos.",
+    "formato": "exposicion",
+    "lid": "824774c3"
   },
   "828c5d33f88910da": {
     "title": "Andrés Coll Cosmic Trio",
@@ -1755,6 +1780,20 @@
     "description": "Víctor es un niño solitario que decide resucitar a su mascota Sparky tras su fallecimiento. Una historia tierna y creativa sobre la amistad.",
     "start_time": "18:00:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=80a1724b972dc910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "infantil",
+      "gratis"
+    ],
+    "formato": "puntual",
+    "lid": "1d11f16a"
+  },
+  "884c6506aaec3156": {
+    "title": "Cine infantil: Shrek 2",
+    "description": "Shrek y Fiona visitan al reino de sus suegros tras regresar de su luna de miel.",
+    "start_time": "18:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8e0cc232982dc910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "cine",
@@ -6416,6 +6455,21 @@
     "formato": "puntual",
     "lid": "0d332ccb"
   },
+  "89418bfb23f1792e": {
+    "title": "JRJ: 100 años de poesía y de belleza",
+    "description": "Acción escénica que fusiona la literatura de Juan Ramón Jiménez con la música en directo. Una propuesta cultural enfocada al público adulto.",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=ee83ca854786e910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "literatura",
+      "conciertos",
+      "gratis"
+    ],
+    "price": "0€",
+    "formato": "puntual",
+    "lid": "7b2029f7"
+  },
   "b85b1bc893c4b58c": {
     "title": "Juan Carlos ‘El Niño’: Cuerpo y alma flamenca",
     "description": "Demostración didáctica del arte tradicional del flamenco dirigida a todos los públicos. Actividad ideal para iniciarse en los ritmos y movimientos de este género.",
@@ -6572,6 +6626,21 @@
     ],
     "formato": "puntual",
     "lid": "95a62894"
+  },
+  "59f55acaa88f56e3": {
+    "title": "Concierto de Kiki Morente",
+    "description": "El artista flamenco visita el ciclo Los Acústicos del Buenavista. Una oportunidad para disfrutar de una de las figuras más carismáticas del género.",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5a4ee13798a11a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "flamenco",
+      "gratis"
+    ],
+    "price": "Gratis",
+    "formato": "puntual",
+    "lid": "5673f627"
   },
   "3a227ef0eff8e82b": {
     "title": "Danza: Kilogramos de Ángela Chica",
@@ -10344,6 +10413,19 @@
     "price": "gratis",
     "formato": "puntual"
   },
+  "193db9c8b3bf4850": {
+    "title": "Taller de Collage para adultos",
+    "start_time": "17:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=787c9c8872361a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "description": "Sesión creativa coordinada por Luisa Moreno para aprender técnicas de collage. Dirigido al público adulto.",
+    "formato": "puntual",
+    "lid": "439b2cee"
+  },
   "e52c9e37c16fa01d": {
     "title": "Taller de creación de comederos para aves",
     "description": "Taller práctico sobre cómo construir comederos para ayudar a las aves insectívoras urbanas.",
@@ -10751,6 +10833,20 @@
     "price": "gratis",
     "formato": "puntual",
     "lid": "02e88678"
+  },
+  "3ea19d856cbf4eaa": {
+    "title": "Taller de Robótica: RoboRetos mBot 2.0",
+    "description": "Taller de iniciación a la programación de robots para desarrollar la creatividad mediante la resolución de retos técnicos. Actividad práctica para aprender a controlar máquinas de forma divertida.",
+    "start_time": "09:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=203fd43821f31a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "talleres",
+      "gratis"
+    ],
+    "price": "Gratis",
+    "formato": "puntual",
+    "lid": "aed4d982"
   },
   "cbb36d76f1e783ac": {
     "title": "Taller de Rope Flow en CDM La Elipa",
@@ -12045,6 +12141,20 @@
     "is_multi_event": true,
     "formato": "exposicion",
     "lid": "5b0073c9"
+  },
+  "faf431dd2d4e63d9": {
+    "title": "Conferencia: El cine en silencio",
+    "start_time": "19:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=87fcb82db9761a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conferencias",
+      "gratis",
+      "cine"
+    ],
+    "description": "Charla divulgativa centrada en el estudio y análisis del cine mudo y su importancia histórica. Una oportunidad para profundizar en los inicios del séptimo arte.",
+    "formato": "puntual",
+    "lid": "395f476b"
   },
   "ce98f2c5c4699c33": {
     "title": "The Bewilderment of Chile - Presentación",
@@ -13387,6 +13497,19 @@
     "price": "gratis",
     "formato": "puntual",
     "lid": "12355570"
+  },
+  "df77179760891d7d": {
+    "title": "Conferencia: El nacimiento del vocabulario científico griego (Ciclo de Otoño)",
+    "description": "Análisis sobre el desarrollo del lenguaje científico en la Grecia antigua y su importancia en la historia del saber. Parte del XXXIV Ciclo de Conferencias de Otoño.",
+    "start_time": "18:30:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=e2005578b28c0a10VgnVCM100000891ecb1aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conferencias",
+      "gratis"
+    ],
+    "formato": "festival",
+    "lid": "0d332ccb"
   },
   "312c13cc77f4a140": {
     "title": "Cuentacuentos: 'Cuentos bajo el ala' con Margalida Albertí",
@@ -16035,20 +16158,6 @@
     "formato": "exposicion",
     "lid": "d2e1acfd"
   },
-  "e215bcfe44bb4337": {
-    "title": "Getafe CF - Rayo Vallecano (LALIGA EA SPORTS)",
-    "description": "Azulones y franjirrojos se miden en este derbi madrileño correspondiente a la temporada liguera. El encuentro enfrenta a ambos equipos en el Coliseum.",
-    "url": "https://www.getafecf.com/partidos/temporada-2025-2026-laliga-ea-sports-34-getafe-cf-vs-rayo-vallecano",
-    "price": "Consultar página oficial",
-    "image": "images/events/84c364c73398.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/getafe-cf-rayo-vallecano-laliga-ea-sports-coliseum",
-    "source": "esmadrid",
-    "categories": [
-      "deportes"
-    ],
-    "formato": "exposicion",
-    "lid": "d0b9c3cf"
-  },
   "85c4718b704bcfef": {
     "title": "[The Festival] by SALESAS",
     "description": "Un street market cosmopolita que reúne moda, arte, joyería, complementos y gastronomía al aire libre. Es un espacio de encuentro que combina compras con exposiciones, música y propuestas de diseño independiente.",
@@ -16145,23 +16254,6 @@
     ],
     "is_multi_event": true,
     "formato": "exposicion"
-  },
-  "20c46fceae1c170b": {
-    "title": "Ahora la chunga soy yo - Palo Capilla",
-    "description": "La comediante presenta un espectáculo de improvisación cargado de humor y situaciones inesperadas. Un show fresco donde la artista reflexiona con ironía sobre su vida cotidiana y el concepto de ser una \"chunga\".",
-    "start_time": "22:30:00",
-    "url": "https://www.capitolgranvia.com/es/espectaculos/ahora-la-chunga-soy-yo-palo-capilla/",
-    "price": "Desde 18 €",
-    "image": "images/events/a46b581fb070.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/ahora-chunga-soy-yo-palo-capilla-capitol-gran-via",
-    "source": "esmadrid",
-    "categories": [
-      "teatro",
-      "comedia"
-    ],
-    "is_multi_event": true,
-    "formato": "festival",
-    "lid": "f019fdda"
   },
   "eb5c227eb6e3cb2d": {
     "title": "Tría Áurea",
@@ -17676,28 +17768,6 @@
     "formato": "exposicion",
     "lid": "3f39be02"
   },
-  "23d2d1dc1cbc3daa": {
-    "title": "Dreaming Bubbles",
-    "description": "El artista italiano Pierpaolo Laconi presenta un espectáculo visual centrado en la creación y manipulación de burbujas de jabón junto a la bailarina Gessica Alfieri. Una obra que combina trucos y una banda sonora diseñada para cautivar tanto a adultos como a niños.",
-    "start_time": "12:30:00",
-    "url": "https://gruposmedia.com/cartelera/dreaming-bubbles/#sinopsis",
-    "price": "Desde 19,17 €",
-    "image": "images/events/0d2c3c2605bf.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/LeSGkhbVmc3RoRBjSXdDdNMmE4v_yOC-37HdCMpRY10/mtime:1788949852/sites/default/files/eventos/eventos/bubbles.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/EkUAfz7Oq2xcFYqMiq9XoRxM3kbbzP_IPT48W9tqt94/mtime:1788949735/sites/default/files/eventos/eventos/dreaming.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/P_mapSmdxQSUENQGvl30rIXh0YC9Ouvkt7LHSLe0E0I/mtime:1788949782/sites/default/files/eventos/eventos/dream.png"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/dreaming-bubbles-teatro-figaro",
-    "source": "esmadrid",
-    "categories": [
-      "infantil",
-      "teatro",
-      "comedia"
-    ],
-    "formato": "exposicion",
-    "lid": "fc2a84be"
-  },
   "af8cc33eec2f1cad": {
     "title": "César Fernández Arias. Laboratorio de creación",
     "description": "Retrospectiva que recorre cinco décadas de producción artística de César Fernández Arias a través de pinturas, esculturas, dibujos y otros objetos. La muestra explora el universo creativo y la faceta pedagógica de uno de los referentes del arte español contemporáneo.",
@@ -18017,25 +18087,6 @@
     "formato": "exposicion",
     "lid": "54913fe0"
   },
-  "c1f0fc615b4923fd": {
-    "title": "La mujer fascista",
-    "description": "Un monólogo dramático que explora las contradicciones, los miedos y la violencia que pueden surgir durante el ejercicio del poder. La pieza reflexiona sobre el vértigo de la exposición pública y las tensiones que surgen ante una investidura política.",
-    "start_time": "19:30:00",
-    "url": "https://teatrodelbarrio.com/la-mujer-fascista/",
-    "price": "16 €",
-    "image": "images/events/035833363eec.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/cgE8QtR1NZZGjb_2QxRKXkH_njnMTbCMVJDwrJdXuFs/mtime:1789443706/sites/default/files/eventos/eventos/la-mujer-fascista.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/C9D38o2LAO5gdPVo2sOyJ72Sa4RfLBDBslEsd7Rtm7A/mtime:1789443721/sites/default/files/eventos/eventos/la-mujer-fascista-2.jpg"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/mujer-fascista-teatro-barrio",
-    "source": "esmadrid",
-    "categories": [
-      "teatro"
-    ],
-    "formato": "exposicion",
-    "lid": "f9c4232a"
-  },
   "0c6ff38d30c32892": {
     "title": "Três Filhas - Filipa Sáragga d'Orey",
     "description": "La artista explora temas como la infancia, la familia y la identidad a través de una serie de pinturas, estudios a lápiz y una pieza escultórica. Su obra combina abstracción geométrica y figuración narrativa para transformar experiencias personales en arquitectura emocional.",
@@ -18242,25 +18293,6 @@
     ],
     "formato": "exposicion",
     "lid": "8a44a3a4"
-  },
-  "2cc5cf62522436e5": {
-    "title": "Luciano Pereyra",
-    "description": "El cantante argentino visita Madrid para presentar su nueva gira Te Sigo Amando. Se trata de un espectáculo que fusiona folclore sudamericano con ritmos pop y urbanos.",
-    "start_time": "21:00:00",
-    "url": "https://rooftoplirico.com/es/cartelera/luciano-pereyra",
-    "price": "Desde 34,56 €",
-    "image": "images/events/e18d33029729.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/pFYogQvezkxxGRbkFzJsIr4zjM4NeIflzleXsXRq394/mtime:1775572264/sites/default/files/eventos/eventos/luciano_pereyra_2026.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/77D78-T-vWr_n_8sId1t8pYSfvESa7w-kEhgtJse2VI/mtime:1775572346/sites/default/files/eventos/eventos/luciano.png"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/luciano-pereyra-teatro-calderon",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "formato": "puntual",
-    "lid": "c05dd0a1"
   },
   "97cd868bee41b556": {
     "title": "Arte en familia",
@@ -19583,21 +19615,6 @@
     ],
     "formato": "exposicion",
     "lid": "c559b35b"
-  },
-  "fa514a292233f066": {
-    "title": "Jordi Savall Dirige a Johannes Brahms. Canto del Destino & Un Réquiem Alemán",
-    "description": "Recital dedicado a las obras de Johannes Brahms, incluyendo Un réquiem alemán y Canto del destino, bajo la dirección de Jordi Savall. El concierto cuenta con la participación de Le Concert des Nations y La Capella Nacional de Catalunya para explorar el lado más íntimo y espiritual del compositor.",
-    "start_time": "19:30:00",
-    "url": "https://auditorionacional.inaem.gob.es/es/programacion/jordi-savall-dirige-a-johannes-brahms-canto-del-destino-un-requiem-aleman",
-    "price": "Desde 35 €",
-    "image": "images/events/2d1bd92c0ba7.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/jordi-savall-dirige-johannes-brahms-auditorio-nacional-musica",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "formato": "puntual",
-    "lid": "94a66118"
   },
   "a83e18dae2812f52": {
     "title": "KURIOS. Gabinete de Curiosidades - Cirque du Soleil",
@@ -24112,5 +24129,244 @@
     ],
     "formato": "puntual",
     "lid": "4eb3f73b"
+  },
+  "3d198743ebc77137": {
+    "title": "La moda a tus pies",
+    "description": "La exposición establece un diálogo entre la historia de la moda española y el calzado contemporáneo a través de creaciones que reinterpretan piezas históricas. La muestra reúne diseños actuales junto a prendas de la colección del Museo del Traje para ofrecer un recorrido por la evolución del vestir en España.",
+    "start_time": "09:30:00",
+    "url": "https://www.cultura.gob.es/mtraje/exposicion/permanente/la-moda-a-tus-pies.html",
+    "price": "3 €",
+    "image": "images/events/0de4f21d2cdc.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/7R7O2K6tMeimT31BrpMPFJjMTuutBOpqLOcIKBYo0Ec/mtime:1793022052/sites/default/files/eventos/eventos/la_moda_a_tus_pies.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/EsGRWE3-pn12tDTBNxZFnwMSmU7EPU3KjMr7KahImzk/mtime:1793022100/sites/default/files/eventos/eventos/moda_0.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/j-OFSDqWbmubsJR3fqWt2BCQ1EoVnV5CcaJ-9HpIBH0/mtime:1793022167/sites/default/files/eventos/eventos/moda_pies.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/moda-tus-pies-museo-traje",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones"
+    ],
+    "formato": "exposicion",
+    "lid": "0f65d248"
+  },
+  "9b9d44bd63ff738e": {
+    "title": "Bendiciones desde abajo. Dima Srouji",
+    "description": "La artista palestina Dima Srouji presenta una muestra basada en piezas de vidrio inspiradas en la artesanía tradicional y motivos históricos. La intervención reflexiona sobre la capacidad de crear arte frente a contextos adversos mediante la escultura y la documentación.",
+    "start_time": "10:00:00",
+    "url": "https://www.lacasaencendida.es/exposiciones/bendiciones-desde-abajo-dima-srouji",
+    "price": "Consultar página oficial",
+    "image": "images/events/849b86f9145c.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/bendiciones-abajo-dima-srouji-casa-encendida",
+    "source": "esmadrid",
+    "categories": [
+      "exposiciones"
+    ],
+    "formato": "exposicion",
+    "lid": "31e63917"
+  },
+  "5351d7a1008fc7f2": {
+    "title": "The Gnomes",
+    "description": "La banda australiana presenta su primer álbum oficial con una propuesta que recupera la energía del beat, el garage rock y el power pop. El cuarteto combina influencias de grupos de los años sesenta con una actitud fresca y contemporánea.",
+    "start_time": "20:00:00",
+    "url": "https://www.funhousemusicbar.com/conciertos/the-gnomes/",
+    "price": "Desde 17 €",
+    "image": "images/events/eac536421236.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/gnomes-fun-house-music-bar",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "f6ba4628"
+  },
+  "f3adefea5731714f": {
+    "title": "St. Paul and The Broken Bones",
+    "description": "La banda estadounidense presenta su sexto álbum con un directo que combina la esencia del soul clásico con ritmos funk, psicodelia, gospel y rock. El grupo destaca por su potente sonido y actuaciones cargadas de intensidad y pasión.",
+    "start_time": "19:30:00",
+    "url": "https://stpaulandthebrokenbones.com/",
+    "price": "31,30 €",
+    "image": "images/events/ba76f086e34d.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/st-paul-and-broken-bones-sala-wagon",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "b1ac68ff"
+  },
+  "d6f60c8ece4523ad": {
+    "title": "Sun Kil Moon",
+    "description": "El proyecto musical liderado por el compositor Mark Kozelek ofrece un directo centrado en el folk intimista y la experimentación sonora. El artista presenta sus trabajos más recientes explorando sus características composiciones introspectivas.",
+    "start_time": "18:45:00",
+    "url": "https://salavillanos.es/evento/sun-kil-moon/",
+    "price": "Desde 28 €",
+    "image": "images/events/c0f9edc8b62d.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/sun-kil-moon-sala-villanos",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "0d71ace6"
+  },
+  "803aa71b3ff30ff6": {
+    "title": "Beth Orton",
+    "description": "La cantautora británica presenta en directo los temas de su último disco, The Ground Above. Su propuesta musical combina el folk con influencias de la electrónica y el pop alternativo.",
+    "start_time": "19:45:00",
+    "url": "https://salavillanos.es/evento/beth-orton/",
+    "price": "Desde 31,30 €",
+    "image": "images/events/93c929a88af3.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/beth-orton-sala-villanos",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "0d71ace6"
+  },
+  "521528233c80d57d": {
+    "title": "Clarent",
+    "description": "El artista puertorriqueño presenta su primer álbum de estudio en un concierto que recorre géneros como el reguetón, trap latino, R&B y pop. El repertorio destaca por su energía de club, combinando ritmos bailables con piezas melódicas.",
+    "start_time": "19:00:00",
+    "url": "https://www.palaciovistalegre.com/event/clarent/",
+    "price": "Desde 33 €",
+    "image": "images/events/1856afa08a1d.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/clarent-palacio-vistalegre-arena",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "9a5be362"
+  },
+  "297ea65486f6f805": {
+    "title": "Edwin Luna y La Trakalosa de Monterrey",
+    "description": "La popular formación de música tradicional mexicana ofrece un concierto centrado en sus temas más conocidos y la instrumentación norteña. El espectáculo combina baladas sentimentales con rancheras y corridos en su estreno en la capital.",
+    "start_time": "21:00:00",
+    "url": "https://www.palaciovistalegre.com/event/edwin-luna-y-la-trakalosa-de-monterrey/",
+    "price": "Desde 60 €",
+    "image": "images/events/49ea190c7e1e.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/edwin-luna-trakalosa-monterrey-palacio-vistalegre-arena",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "9a5be362"
+  },
+  "0d07d290959384d1": {
+    "title": "El Zorro, el musical",
+    "description": "David Bustamante protagoniza esta aventura teatral que traslada la historia del legendario héroe enmascarado al escenario. El espectáculo combina la narrativa teatral con una banda sonora que fusiona el sonido rumbero de los Gipsy Kings.",
+    "start_time": "16:30:00",
+    "url": "https://www.zorroelmusical.es/",
+    "price": "Desde 25 €",
+    "image": "images/events/78d35728cedd.jpg",
+    "_image_candidates": [
+      "https://estaticos.esmadrid.com/cdn/farfuture/_kLrsP8Uj2jYp6iF8OSbXM-jtXckERz5VarPTh58otg/mtime:1775560600/sites/default/files/eventos/eventos/el_zorro_el_musical1.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/otWE1tOu9-1SIwRD4aRBNv3qbbAXwNf3Q1olwe-zu-E/mtime:1775560621/sites/default/files/eventos/eventos/el_zorro_el_musical3.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/FupzkVhtu_vwdFLNoncxWOOUFbO2USUGKtoMyBpfLcE/mtime:1775560644/sites/default/files/eventos/eventos/el_zorro_el_musical2.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/4NTORz2TmqlYBw74bAJj6txZQCYanAAA4oHp56KaQ9E/mtime:1775560661/sites/default/files/eventos/eventos/el_zorro_el_musical_0.png",
+      "https://estaticos.esmadrid.com/cdn/farfuture/x0-7cgbK9tSEcjqb0MGR1KMoL2Qsq0B_fgbZ5MwX1KA/mtime:1769008145/sites/default/files/eventos/eventos/el_zorro_el_musical.png"
+    ],
+    "source_url": "https://www.esmadrid.com/agenda/zorro-musical-teatro-latina",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "musicales"
+    ],
+    "formato": "exposicion",
+    "lid": "60383778"
+  },
+  "598c64de5f4052b0": {
+    "title": "Véronique Gens",
+    "description": "La soprano francesa ofrece un concierto acompañada por el Ensemble Les Surprises bajo la dirección de Louis-Noël Bestion de Camboulas. El recital forma parte del ciclo Voces del Real y presenta un programa dedicado a arias, danzas y coros del repertorio barroco y clásico.",
+    "start_time": "19:30:00",
+    "url": "https://www.teatroreal.es/es/espectaculo/veronique-gens",
+    "price": "Consultar página oficial",
+    "image": "images/events/395169717175.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/veronique-gens-teatro-real",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "50107e1c"
+  },
+  "1adf35d7cf717e8c": {
+    "title": "Museo de los relámpagos",
+    "description": "Un espectáculo que propone convertir el museo en un espacio de imaginación, memoria y crítica, cuestionando cómo las instituciones patrimoniales clasifican y presentan sus colecciones. A través de objetos que cobran vida, explora sus biografías y la relación entre las instituciones, el patrimonio y las personas.",
+    "start_time": "18:00:00",
+    "url": "https://dramatico.inaem.gob.es/evento/museo-de-los-relampagos/",
+    "price": "25 €",
+    "image": "images/events/8a2f0807ef9d.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/museo-relampagos-teatro-maria-guerrero",
+    "source": "esmadrid",
+    "categories": [
+      "teatro",
+      "patrimonio"
+    ],
+    "formato": "exposicion",
+    "lid": "266b092b"
+  },
+  "e29efb6406cc5d53": {
+    "title": "Atlético de Madrid - Viking FK (UEFA Champions League. Fase Liga. Jornada 5)",
+    "description": "El equipo madrileño se enfrenta al club noruego Viking FK en un encuentro correspondiente a la fase de liga de la UEFA Champions League. Se trata de un partido oficial de competición europea en el estadio local.",
+    "start_time": "21:00:00",
+    "url": "https://www.atleticodemadrid.com/",
+    "price": "Consultar página oficial",
+    "image": "images/events/9fda5500d209.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/atletico-madrid-viking-fk-uefa-champions-league-fase-liga-estadio-metropolitano",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "2b9a4735"
+  },
+  "b27ad601289a996b": {
+    "title": "Real Madrid - Zalgiris Kaunas (Euroliga. Jornada 14)",
+    "description": "Los blancos afrontan una nueva jornada correspondiente a la competición de Euroliga contra el club más prestigioso del baloncesto lituano. Se trata de un encuentro oficial de baloncesto de alto nivel en Madrid.",
+    "start_time": "20:45:00",
+    "url": "https://www.realmadrid.com/es-ES/baloncesto/partidos/euroliga/real-madrid-zalgiris-kaunas/25-11-2026",
+    "price": "Consultar página oficial",
+    "image": "images/events/a9987a49a3e5.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/real-madrid-zalgiris-kaunas-euroliga-jornada-14-movistar-arena",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "1f1e0e14"
+  },
+  "5001c3f804a6b0ff": {
+    "title": "Kingfishr",
+    "description": "El trío irlandés presenta su nuevo material en un concierto que destaca por su característico sonido folk y una cuidada instrumentación acústica. La actuación forma parte de su gira europea, consolidando su trayectoria ascendente tras años de intensa actividad en directo.",
+    "start_time": "20:30:00",
+    "url": "https://www.kingfishr.ie/",
+    "price": "36,50 €",
+    "image": "images/events/8fb8f431f5b4.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/kingfishr-sala-wagon",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "884c022f"
+  },
+  "ed313ecf913f3fcb": {
+    "title": "Cazzu",
+    "description": "La cantante, rapera y compositora argentina presenta en directo los temas de su cuarto álbum de estudio, Latinaje. El espectáculo destaca por integrar diversos géneros musicales urbanos como el trap, R&B, reguetón y folclore.",
+    "start_time": "21:00:00",
+    "url": "https://livelasventas.com/es/eventos/concierto-cazzu-latinaje/",
+    "price": "Desde 39,70 €",
+    "image": "images/events/c38301e56fa4.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/cazzu-live-ventas",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "3b56e983"
   }
 }
