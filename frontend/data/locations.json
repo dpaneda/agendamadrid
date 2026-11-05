@@ -82,13 +82,6 @@
     "latitude": 40.39307289237465,
     "longitude": -3.699005654074825
   },
-  "297b23a2": {
-    "location_name": "Espacio de Igualdad Lucía Sánchez Saornil. San Blas-Canillejas",
-    "address": "PLAZA EURIPIDES 1",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.449003967549075,
-    "longitude": -3.6069161377213526
-  },
   "6ba590e1": {
     "location_name": "Espacio de Igualdad Gloria Fuertes. Vicálvaro",
     "address": "CALLE CALAHORRA 11",
@@ -228,13 +221,6 @@
     "latitude": 40.3957812018463,
     "longitude": -3.6670346724676173
   },
-  "1b4b08af": {
-    "location_name": "Espacio de Igualdad Clara Campoamor. Villaverde",
-    "address": "CALLE MARIA MARTINEZ OVIOL 12",
-    "district": "Villaverde",
-    "latitude": 40.35087114162283,
-    "longitude": -3.691508909255186
-  },
   "bc288b4d": {
     "location_name": "Salas de exposiciones Conde Duque",
     "address": "CALLE CONDE DUQUE 9",
@@ -318,6 +304,13 @@
     "district": "VillaDeVallecas",
     "latitude": 40.37959032098656,
     "longitude": -3.62310875744905
+  },
+  "1b4b08af": {
+    "location_name": "Espacio de Igualdad Clara Campoamor. Villaverde",
+    "address": "CALLE MARIA MARTINEZ OVIOL 12",
+    "district": "Villaverde",
+    "latitude": 40.35087114162283,
+    "longitude": -3.691508909255186
   },
   "f6706f88": {
     "location_name": "Teatro Municipal de Vallecas",
@@ -500,6 +493,13 @@
     "latitude": 40.36691109856854,
     "longitude": -3.6164419466246676
   },
+  "4c99e2c3": {
+    "location_name": "Centro Danza Matadero - CDM",
+    "address": "PASEO CHOPERA 14",
+    "district": "Arganzuela",
+    "latitude": 40.39245798191536,
+    "longitude": -3.6972067902718897
+  },
   "a77bed0e": {
     "location_name": "Centro Cultural Príncipe de Asturias (Ciudad Lineal)",
     "address": "CALLE HERMANOS GARCIA NOBLEJAS 14",
@@ -654,13 +654,6 @@
     "latitude": 40.40529229274289,
     "longitude": -3.6086152959929514
   },
-  "4c99e2c3": {
-    "location_name": "Centro Danza Matadero - CDM",
-    "address": "PASEO CHOPERA 14",
-    "district": "Arganzuela",
-    "latitude": 40.39245798191536,
-    "longitude": -3.6972067902718897
-  },
   "77f82d83": {
     "location_name": "Centro Cultural El Pozo del tío Raimundo (Puente de Vallecas)",
     "address": "AVENIDA GLORIETAS 19",
@@ -703,13 +696,6 @@
     "latitude": 40.42802889001877,
     "longitude": -3.710182353581842
   },
-  "f14ce3db": {
-    "location_name": "Espacio de Igualdad Carme Chacón. Hortaleza",
-    "address": "CALLE MATAPOZUELOS 2",
-    "district": "Hortaleza",
-    "latitude": 40.46155641637237,
-    "longitude": -3.6501714580414126
-  },
   "850ad603": {
     "location_name": "Parroquia Santa Ana y La Esperanza",
     "address": "CALLE CAÑADA 35",
@@ -730,6 +716,12 @@
     "district": "Centro",
     "latitude": 40.413896825498995,
     "longitude": -3.7054692169323364
+  },
+  "3e02e24f": {
+    "location_name": "Parque Forestal Julio Alguacil Gómez",
+    "district": "Distrito",
+    "latitude": 40.36073540960827,
+    "longitude": -3.7177186736043275
   },
   "3166d913": {
     "location_name": "Silo de Hortaleza",
@@ -899,6 +891,13 @@
     "latitude": 40.39950355569066,
     "longitude": -3.775020201264123
   },
+  "61a0fba7": {
+    "location_name": "Centro Cultural Carril del Conde (Hortaleza)",
+    "address": "CALLE CARRIL DEL CONDE 57",
+    "district": "Hortaleza",
+    "latitude": 40.46089499555313,
+    "longitude": -3.654366821391548
+  },
   "7fb097ff": {
     "location_name": "Espacio de Igualdad María Telo. Moratalaz",
     "address": "CALLE CAMINO DE LOS VINATEROS 51",
@@ -927,6 +926,13 @@
     "latitude": 40.34852825960244,
     "longitude": -3.674819952829727
   },
+  "f14ce3db": {
+    "location_name": "Espacio de Igualdad Carme Chacón. Hortaleza",
+    "address": "CALLE MATAPOZUELOS 2",
+    "district": "Hortaleza",
+    "latitude": 40.46155641637237,
+    "longitude": -3.6501714580414126
+  },
   "cf403d6c": {
     "location_name": "Centro Sociocultural Marconi (Villaverde)",
     "address": "ACCESO COLONIA MARCONI 4",
@@ -940,13 +946,6 @@
     "district": "Usera",
     "latitude": 40.37893066302815,
     "longitude": -3.7158394380500623
-  },
-  "c2579d97": {
-    "location_name": "Centro Cultural Miguel Hernández (Latina)",
-    "address": "CALLE SERRADILLA 13",
-    "district": "Latina",
-    "latitude": 40.37881526578977,
-    "longitude": -3.7818814193235477
   },
   "2280f84e": {
     "location_name": "Centro Cultural Puerta de Toledo (Centro)",
@@ -982,13 +981,6 @@
     "district": "Moratalaz",
     "latitude": 40.40934483353835,
     "longitude": -3.653036718771371
-  },
-  "61a0fba7": {
-    "location_name": "Centro Cultural Carril del Conde (Hortaleza)",
-    "address": "CALLE CARRIL DEL CONDE 57",
-    "district": "Hortaleza",
-    "latitude": 40.46089499555313,
-    "longitude": -3.654366821391548
   },
   "9939bcd7": {
     "location_name": "Sala de Exposiciones Maruja Mallo (Retiro)",
@@ -1031,13 +1023,6 @@
     "district": "Salamanca",
     "latitude": 40.42299730556785,
     "longitude": -3.6625213630031794
-  },
-  "1a630411": {
-    "location_name": "Espacio de Igualdad Lourdes Hernández. Carabanchel",
-    "address": "CALLE COMANDANTE FONTANES 8",
-    "district": "Carabanchel",
-    "latitude": 40.395326406887946,
-    "longitude": -3.721622686264932
   },
   "eb5a720a": {
     "location_name": "Centro Sociocultural Rosario de Acuña (Latina)",
@@ -1135,12 +1120,26 @@
     "latitude": 40.3507522003116,
     "longitude": -3.677296127414198
   },
+  "1a630411": {
+    "location_name": "Espacio de Igualdad Lourdes Hernández. Carabanchel",
+    "address": "CALLE COMANDANTE FONTANES 8",
+    "district": "Carabanchel",
+    "latitude": 40.395326406887946,
+    "longitude": -3.721622686264932
+  },
   "d8052c1c": {
     "location_name": "Centro Cultural José Luis Sampedro (Latina)",
     "address": "CALLE CASTROSERNA 4",
     "district": "Latina",
     "latitude": 40.40159394334669,
     "longitude": -3.749110841406562
+  },
+  "297b23a2": {
+    "location_name": "Espacio de Igualdad Lucía Sánchez Saornil. San Blas-Canillejas",
+    "address": "PLAZA EURIPIDES 1",
+    "district": "SanBlas-Canillejas",
+    "latitude": 40.449003967549075,
+    "longitude": -3.6069161377213526
   },
   "cfdf6f71": {
     "location_name": "Espacio Abierto Quinta de los Molinos",
@@ -1344,6 +1343,13 @@
     "latitude": 40.45907909580629,
     "longitude": -3.7002532146213043
   },
+  "c2579d97": {
+    "location_name": "Centro Cultural Miguel Hernández (Latina)",
+    "address": "CALLE SERRADILLA 13",
+    "district": "Latina",
+    "latitude": 40.37881526578977,
+    "longitude": -3.7818814193235477
+  },
   "c6d98224": {
     "location_name": "Centro Cultural Usera 2",
     "address": "CALLE FELIPE CASTRO 30",
@@ -1364,13 +1370,6 @@
     "district": "Barajas",
     "latitude": 40.46301382809657,
     "longitude": -3.587693324074623
-  },
-  "4890119b": {
-    "location_name": "Biblioteca Pública Municipal Aluche (Latina)",
-    "address": "CALLE CAMARENA 10",
-    "district": "Latina",
-    "latitude": 40.39597072367931,
-    "longitude": -3.7562716852987847
   },
   "d90efab0": {
     "location_name": "Ermita de San Antonio de la Florida",
@@ -1406,6 +1405,13 @@
     "district": "Vicalvaro",
     "latitude": 40.405283650744316,
     "longitude": -3.6086278232922804
+  },
+  "4890119b": {
+    "location_name": "Biblioteca Pública Municipal Aluche (Latina)",
+    "address": "CALLE CAMARENA 10",
+    "district": "Latina",
+    "latitude": 40.39597072367931,
+    "longitude": -3.7562716852987847
   },
   "09e2acfe": {
     "location_name": "Biblioteca Pública Municipal Ciudad Lineal (Ciudad Lineal)",
@@ -2352,12 +2358,6 @@
     "latitude": 40.4149623,
     "longitude": -3.6953722
   },
-  "01edb9c5": {
-    "location_name": "Independance Club",
-    "address": "de Atocha, 127",
-    "latitude": 40.4096803,
-    "longitude": -3.6930103
-  },
   "9311565f": {
     "location_name": "Casa de América",
     "address": "de Cibeles, 2",
@@ -2488,5 +2488,11 @@
     "address": "del Prado, 3",
     "latitude": 40.4178665,
     "longitude": -3.6926342
+  },
+  "8c9213a0": {
+    "location_name": "Plaza de Pontejos",
+    "address": "de Pontejos",
+    "latitude": 40.4158633,
+    "longitude": -3.7043273
   }
 }
