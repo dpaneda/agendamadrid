@@ -193,20 +193,6 @@
     "latitude": 40.41789950036311,
     "longitude": -3.7309390858931137
   },
-  "314b42da": {
-    "location_name": "Espacio de Igualdad María de Maeztu. Latina",
-    "address": "CALLE MARCELINO CASTILLO 29",
-    "district": "Latina",
-    "latitude": 40.39420907754556,
-    "longitude": -3.744687315765447
-  },
-  "b0b9722e": {
-    "location_name": "Espacio de Igualdad Hermanas Mirabal. Tetuán",
-    "address": "CALLE BRAVO MURILLO 133",
-    "district": "Tetuan",
-    "latitude": 40.45012255255781,
-    "longitude": -3.7037047897267947
-  },
   "fef6f71f": {
     "location_name": "Jardín del Bulevar de Peña Gorbea",
     "address": "CALLE PEÑA GORBEA 17",
@@ -248,20 +234,6 @@
     "district": "Salamanca",
     "latitude": 40.4293927571053,
     "longitude": -3.664846244443566
-  },
-  "ccc906e4": {
-    "location_name": "Auditorio y sala de exposiciones Paco de Lucía (Latina)",
-    "address": "AVENIDA LAS AGUILAS 2",
-    "district": "Latina",
-    "latitude": 40.38493929920335,
-    "longitude": -3.7641963952601154
-  },
-  "06e5ef28": {
-    "location_name": "Junta Municipal del Distrito de Usera",
-    "address": "AVENIDA RAFAELA YBARRA 41",
-    "district": "Usera",
-    "latitude": 40.3823867401053,
-    "longitude": -3.710861696949648
   },
   "fdc5567c": {
     "location_name": "Centro Sociocultural Alberto Sánchez (Puente de Vallecas)",
@@ -354,13 +326,6 @@
     "latitude": 40.460889951689694,
     "longitude": -3.6700725698826675
   },
-  "ca84f24f": {
-    "location_name": "Biblioteca Pública Municipal Pablo Neruda (Ciudad Lineal)",
-    "address": "CALLE ASCAO 4",
-    "district": "CiudadLineal",
-    "latitude": 40.42941133441142,
-    "longitude": -3.6416899839787695
-  },
   "9b3eae76": {
     "location_name": "Espacio de Igualdad Dulce Chacón. Villaverde",
     "address": "CALLE TORDEGRILLOS 32",
@@ -408,13 +373,6 @@
     "district": "Usera",
     "latitude": 40.371654294908154,
     "longitude": -3.692056897625109
-  },
-  "e2457581": {
-    "location_name": "Biblioteca Musical Víctor Espinós",
-    "address": "CALLE CONDE DUQUE 9",
-    "district": "Centro",
-    "latitude": 40.42737760210632,
-    "longitude": -3.7106116887809817
   },
   "4ec30898": {
     "location_name": "Centro Cultural Las Californias (Retiro)",
@@ -605,26 +563,12 @@
     "latitude": 40.455320740232835,
     "longitude": -3.5876301858469386
   },
-  "3262edc1": {
-    "location_name": "Centro Cultural - Centro Socio Cultural Villa de Barajas",
-    "address": "CALLE BOTICA 7",
-    "district": "Barajas",
-    "latitude": 40.47324881250678,
-    "longitude": -3.5784908616003723
-  },
   "9335e955": {
     "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
     "address": "CALLE DOCTOR TOLOSA LATOUR 16",
     "district": "Usera",
     "latitude": 40.374166248648216,
     "longitude": -3.7032220308808577
-  },
-  "9c4ab070": {
-    "location_name": "Centro Cultural el Madroño (Vicálvaro)",
-    "address": "CALLE VILLARDONDIEGO 36",
-    "district": "Vicalvaro",
-    "latitude": 40.40529229274289,
-    "longitude": -3.6086152959929514
   },
   "e232e586": {
     "location_name": "Espacio de Igualdad María Zambrano. Chamberí",
@@ -646,13 +590,6 @@
     "district": "Arganzuela",
     "latitude": 40.40242416544921,
     "longitude": -3.6954440062549017
-  },
-  "08cc2680": {
-    "location_name": "Centro Sociocultural Alfonso XII (Fuencarral - El Pardo)",
-    "address": "CALLE MIRA EL RIO 4",
-    "district": "Fuencarral-ElPardo",
-    "latitude": 40.519673311658686,
-    "longitude": -3.7779055687726535
   },
   "127a1864": {
     "location_name": "Centro Cultural La Vaguada (Fuencarral - El Pardo)",
@@ -716,13 +653,6 @@
     "latitude": 40.47682410775741,
     "longitude": -3.6420497457238
   },
-  "b470f69d": {
-    "location_name": "Centro Cultural Federico Chueca (Hortaleza)",
-    "address": "CALLE BENITA AVILA 23",
-    "district": "Hortaleza",
-    "latitude": 40.465513265035874,
-    "longitude": -3.650585652034587
-  },
   "77b83e41": {
     "location_name": "Parque Santa Eugenia",
     "address": "CALLE Puentelarra 13",
@@ -736,6 +666,13 @@
     "district": "Salamanca",
     "latitude": 40.42206923419431,
     "longitude": -3.6629608041639368
+  },
+  "314b42da": {
+    "location_name": "Espacio de Igualdad María de Maeztu. Latina",
+    "address": "CALLE MARCELINO CASTILLO 29",
+    "district": "Latina",
+    "latitude": 40.39420907754556,
+    "longitude": -3.744687315765447
   },
   "38e0e792": {
     "location_name": "Casa del Lector",
@@ -771,13 +708,6 @@
     "district": "Usera",
     "latitude": 40.36969488211539,
     "longitude": -3.7081179166391824
-  },
-  "a9658da7": {
-    "location_name": "Centro Sociocultural Almirante Churruca (Latina)",
-    "address": "CALLE FUENTE DEL TIRO 72",
-    "district": "Latina",
-    "latitude": 40.38300898983613,
-    "longitude": -3.7799602354152393
   },
   "4417d2f9": {
     "location_name": "Centro Sociocultural Oporto (Carabanchel)",
@@ -856,26 +786,12 @@
     "latitude": 40.446826729909155,
     "longitude": -3.5727382893523254
   },
-  "5e1a70e3": {
-    "location_name": "Centro Cultural Sara Montiel (Latina)",
-    "address": "CARRETERA BOADILLA DEL MONTE 40",
-    "district": "Latina",
-    "latitude": 40.39950355569066,
-    "longitude": -3.775020201264123
-  },
   "61a0fba7": {
     "location_name": "Centro Cultural Carril del Conde (Hortaleza)",
     "address": "CALLE CARRIL DEL CONDE 57",
     "district": "Hortaleza",
     "latitude": 40.46089499555313,
     "longitude": -3.654366821391548
-  },
-  "7fb097ff": {
-    "location_name": "Espacio de Igualdad María Telo. Moratalaz",
-    "address": "CALLE CAMINO DE LOS VINATEROS 51",
-    "district": "Moratalaz",
-    "latitude": 40.41087442118042,
-    "longitude": -3.6538891267077664
   },
   "57f49789": {
     "location_name": "Biblioteca Pública Municipal José Hierro (San Blas-Canillejas)",
@@ -919,26 +835,19 @@
     "latitude": 40.40741060830642,
     "longitude": -3.7119168856897677
   },
-  "ab545dfb": {
-    "location_name": "Centro Cultural Alfredo Kraus (Fuencarral - El Pardo)",
-    "address": "GLORIETA PRADERA DE VAQUERIZAS 9",
-    "district": "Fuencarral-ElPardo",
-    "latitude": 40.49082275610172,
-    "longitude": -3.7216054330053647
-  },
-  "36a8a46c": {
-    "location_name": "Centro Sociocultural San Cristóbal de los Ángeles (Villaverde)",
-    "address": "PLAZA PINAZO 9",
-    "district": "Villaverde",
-    "latitude": 40.34268360439146,
-    "longitude": -3.6914402549812873
-  },
   "3182d5e2": {
     "location_name": "Centro Sociocultural Eduardo Chillida (Moratalaz)",
     "address": "CALLE ARROYO BELINCOSO 9",
     "district": "Moratalaz",
     "latitude": 40.40934483353835,
     "longitude": -3.653036718771371
+  },
+  "e2457581": {
+    "location_name": "Biblioteca Musical Víctor Espinós",
+    "address": "CALLE CONDE DUQUE 9",
+    "district": "Centro",
+    "latitude": 40.42737760210632,
+    "longitude": -3.7106116887809817
   },
   "9939bcd7": {
     "location_name": "Sala de Exposiciones Maruja Mallo (Retiro)",
@@ -968,13 +877,6 @@
     "latitude": 40.49319040214108,
     "longitude": -3.606390228323425
   },
-  "13dc04c6": {
-    "location_name": "Centro Cultural Usera 1",
-    "address": "AVENIDA RAFAELA YBARRA 49",
-    "district": "Usera",
-    "latitude": 40.381114597104194,
-    "longitude": -3.711149675992656
-  },
   "af116271": {
     "location_name": "Quinta de la Fuente del Berro",
     "address": "CALLE ENRIQUE D'ALMONTE 1",
@@ -989,19 +891,19 @@
     "latitude": 40.39164455403764,
     "longitude": -3.717137582860074
   },
+  "4f409aab": {
+    "location_name": "Salón y sala de exposiciones en Junta Municipal de Usera",
+    "address": "AVENIDA RAFAELA YBARRA 41",
+    "district": "Usera",
+    "latitude": 40.3823867401053,
+    "longitude": -3.710861696949648
+  },
   "c6c5db82": {
     "location_name": "Centro Cultural Sanchinarro - Hispanidad (Hortaleza)",
     "address": "CALLE PRINCESA DE EBOLI 29",
     "district": "Hortaleza",
     "latitude": 40.49042200599307,
     "longitude": -3.6553467891079854
-  },
-  "eb5a720a": {
-    "location_name": "Centro Sociocultural Rosario de Acuña (Latina)",
-    "address": "CALLE MARIA DEL CARMEN 65",
-    "district": "Latina",
-    "latitude": 40.40647389284976,
-    "longitude": -3.7327010920242043
   },
   "9f9324a7": {
     "location_name": "Auditorio Carmen Laforet (Ciudad Lineal)",
@@ -1023,6 +925,13 @@
     "district": "CiudadLineal",
     "latitude": 40.44071019620189,
     "longitude": -3.652412289521502
+  },
+  "ccc906e4": {
+    "location_name": "Auditorio y sala de exposiciones Paco de Lucía (Latina)",
+    "address": "AVENIDA LAS AGUILAS 2",
+    "district": "Latina",
+    "latitude": 40.38493929920335,
+    "longitude": -3.7641963952601154
   },
   "398d56b6": {
     "location_name": "Centro Intergeneracional Río Esmeralda",
@@ -1099,20 +1008,6 @@
     "latitude": 40.40159394334669,
     "longitude": -3.749110841406562
   },
-  "297b23a2": {
-    "location_name": "Espacio de Igualdad Lucía Sánchez Saornil. San Blas-Canillejas",
-    "address": "PLAZA EURIPIDES 1",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.449003967549075,
-    "longitude": -3.6069161377213526
-  },
-  "1a630411": {
-    "location_name": "Espacio de Igualdad Lourdes Hernández. Carabanchel",
-    "address": "CALLE COMANDANTE FONTANES 8",
-    "district": "Carabanchel",
-    "latitude": 40.395326406887946,
-    "longitude": -3.721622686264932
-  },
   "cfdf6f71": {
     "location_name": "Espacio Abierto Quinta de los Molinos",
     "address": "CALLE JUAN IGNACIO LUCA DE TENA 20",
@@ -1167,6 +1062,13 @@
     "district": "Moncloa-Aravaca",
     "latitude": 40.445355536117184,
     "longitude": -3.7399742609916697
+  },
+  "1a630411": {
+    "location_name": "Espacio de Igualdad Lourdes Hernández. Carabanchel",
+    "address": "CALLE COMANDANTE FONTANES 8",
+    "district": "Carabanchel",
+    "latitude": 40.395326406887946,
+    "longitude": -3.721622686264932
   },
   "a2cd4cc7": {
     "location_name": "Parque Tecnológico Valdemingómez",
@@ -1301,19 +1203,12 @@
     "latitude": 40.45836469361315,
     "longitude": -3.5932763223327178
   },
-  "ff4b611f": {
-    "location_name": "Centro Sociocultural Tetuán",
-    "address": "CALLE BRAVO MURILLO 251",
-    "district": "Tetuan",
-    "latitude": 40.45907909580629,
-    "longitude": -3.7002532146213043
-  },
-  "c2579d97": {
-    "location_name": "Centro Cultural Miguel Hernández (Latina)",
-    "address": "CALLE SERRADILLA 13",
-    "district": "Latina",
-    "latitude": 40.37881526578977,
-    "longitude": -3.7818814193235477
+  "ca84f24f": {
+    "location_name": "Biblioteca Pública Municipal Pablo Neruda (Ciudad Lineal)",
+    "address": "CALLE ASCAO 4",
+    "district": "CiudadLineal",
+    "latitude": 40.42941133441142,
+    "longitude": -3.6416899839787695
   },
   "c6d98224": {
     "location_name": "Centro Cultural Usera 2",
@@ -1336,12 +1231,26 @@
     "latitude": 40.46301382809657,
     "longitude": -3.587693324074623
   },
+  "9c4ab070": {
+    "location_name": "Centro Cultural el Madroño (Vicálvaro)",
+    "address": "CALLE VILLARDONDIEGO 36",
+    "district": "Vicalvaro",
+    "latitude": 40.40529229274289,
+    "longitude": -3.6086152959929514
+  },
   "d90efab0": {
     "location_name": "Ermita de San Antonio de la Florida",
     "address": "GLORIETA SAN ANTONIO DE LA FLORIDA 5",
     "district": "Moncloa-Aravaca",
     "latitude": 40.425256682855846,
     "longitude": -3.725725718176111
+  },
+  "13dc04c6": {
+    "location_name": "Centro Cultural Usera 1",
+    "address": "AVENIDA RAFAELA YBARRA 49",
+    "district": "Usera",
+    "latitude": 40.381114597104194,
+    "longitude": -3.711149675992656
   },
   "6284509f": {
     "location_name": "Parque de Pradolongo",
@@ -1384,13 +1293,6 @@
     "district": "CiudadLineal",
     "latitude": 40.43644651057092,
     "longitude": -3.6372924261150033
-  },
-  "3fa55718": {
-    "location_name": "Biblioteca Pública Municipal Ana María Matute (Carabanchel)",
-    "address": "CALLE ISAAC ALBENIZ 1",
-    "district": "Carabanchel",
-    "latitude": 40.39786734087938,
-    "longitude": -3.720088245008897
   },
   "108da3ee": {
     "location_name": "Biblioteca Pública Municipal Huerta de la Salud (Hortaleza)",
@@ -1664,12 +1566,6 @@
     "address": "del Arenal, 11",
     "latitude": 40.4171056,
     "longitude": -3.7065076
-  },
-  "3a82f95a": {
-    "location_name": "Jardín Banca March",
-    "address": "de Castelló, 75",
-    "latitude": 40.4305839,
-    "longitude": -3.6814985
   },
   "f23f45f9": {
     "location_name": "Teatro Muñoz Seca",
@@ -2000,12 +1896,6 @@
     "latitude": 40.4348973,
     "longitude": -3.6906978
   },
-  "8a44a3a4": {
-    "location_name": "Salto Escénico",
-    "address": "de Granada, 10",
-    "latitude": 40.4048908,
-    "longitude": -3.6799369
-  },
   "6c1458c6": {
     "location_name": "Gran Carpa junto al Palacio de Hielo",
     "address": "de Silvano, 77",
@@ -2084,12 +1974,6 @@
     "latitude": 40.4039502,
     "longitude": -3.7002267
   },
-  "aea6de31": {
-    "location_name": "Palacio de Longoria",
-    "address": "de Fernando VI, 4",
-    "latitude": 40.4254774,
-    "longitude": -3.6966741
-  },
   "26613e22": {
     "location_name": "Sala Berlanga",
     "address": "de Andrés Mellado, 53",
@@ -2114,11 +1998,11 @@
     "latitude": 40.416926850471,
     "longitude": -3.727669715881
   },
-  "9d5eb577": {
-    "location_name": "La Riviera",
-    "address": "Bajo de la Virgen del Puerto, s/n",
-    "latitude": 40.4133013,
-    "longitude": -3.7219371
+  "8a44a3a4": {
+    "location_name": "Salto Escénico",
+    "address": "de Granada, 10",
+    "latitude": 40.4048908,
+    "longitude": -3.6799369
   },
   "811d8b33": {
     "location_name": "Centro cultural Pilar Miró",
@@ -2194,6 +2078,12 @@
   },
   "2f73d4ee": {
     "location_name": "Sede pendiente de confirmación"
+  },
+  "9d5eb577": {
+    "location_name": "La Riviera",
+    "address": "Bajo de la Virgen del Puerto, s/n",
+    "latitude": 40.4133013,
+    "longitude": -3.7219371
   },
   "a0e7ae45": {
     "location_name": "IFEMA Palacio Municipal",
