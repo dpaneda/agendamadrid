@@ -152,13 +152,6 @@
     "latitude": 40.41878362561595,
     "longitude": -3.6866519471003647
   },
-  "bb29009c": {
-    "location_name": "CentroCentro",
-    "address": "PLAZA CIBELES 1",
-    "district": "Retiro",
-    "latitude": 40.41902261618159,
-    "longitude": -3.692188193693138
-  },
   "4eb3f73b": {
     "location_name": "Teatro Fernán Gómez. Centro Cultural de la Villa",
     "address": "de Colón , 4",
@@ -171,6 +164,12 @@
     "district": "Retiro",
     "latitude": 40.41817872037522,
     "longitude": -3.677376337125393
+  },
+  "bb29009c": {
+    "location_name": "CentroCentro",
+    "address": "de Cibeles, 1",
+    "latitude": 40.4192369,
+    "longitude": -3.6920395
   },
   "fef6f71f": {
     "location_name": "Jardín del Bulevar de Peña Gorbea",
@@ -332,12 +331,6 @@
     "district": "Usera",
     "latitude": 40.36902428128397,
     "longitude": -3.710212677306876
-  },
-  "1a7c6818": {
-    "location_name": "Centro de Información y Educación Ambiental de Dehesa de la Villa",
-    "district": "Moncloa-Aravaca",
-    "latitude": 40.45914104116349,
-    "longitude": -3.718270563679269
   },
   "6ebb77f9": {
     "location_name": "Auditorio Municipal al aire libre Lola Camarena",
@@ -521,6 +514,12 @@
     "latitude": 40.374166248648216,
     "longitude": -3.7032220308808577
   },
+  "1a7c6818": {
+    "location_name": "Centro de Información y Educación Ambiental de Dehesa de la Villa",
+    "district": "Moncloa-Aravaca",
+    "latitude": 40.45914104116349,
+    "longitude": -3.718270563679269
+  },
   "e232e586": {
     "location_name": "Espacio de Igualdad María Zambrano. Chamberí",
     "address": "CALLE ANDRES MELLADO 44",
@@ -535,19 +534,19 @@
     "latitude": 40.37381624358889,
     "longitude": -3.6599325731670977
   },
-  "0418b21d": {
-    "location_name": "Centro Cultural Casa del Reloj (Arganzuela)",
-    "address": "PASEO CHOPERA 6",
-    "district": "Arganzuela",
-    "latitude": 40.39466755008527,
-    "longitude": -3.700396761468562
-  },
   "395f476b": {
     "location_name": "Centro Dotacional Integrado Arganzuela Ángel del Río",
     "address": "CALLE CANARIAS 17",
     "district": "Arganzuela",
     "latitude": 40.40242416544921,
     "longitude": -3.6954440062549017
+  },
+  "0418b21d": {
+    "location_name": "Centro Cultural Casa del Reloj (Arganzuela)",
+    "address": "PASEO CHOPERA 6",
+    "district": "Arganzuela",
+    "latitude": 40.39466755008527,
+    "longitude": -3.700396761468562
   },
   "73b313ed": {
     "location_name": "Jardines de El Buen Retiro",
@@ -1382,6 +1381,12 @@
     "latitude": 40.471827591892,
     "longitude": -3.682526214322
   },
+  "1f1e0e14": {
+    "location_name": "Movistar Arena (WiZink Center)",
+    "address": "de Felipe II, s/n",
+    "latitude": 40.42,
+    "longitude": -3.67
+  },
   "0e7756d3": {
     "location_name": "Museo del Ferrocarril",
     "address": "de las Delicias, 61",
@@ -1496,12 +1501,6 @@
     "latitude": 40.4154432,
     "longitude": -3.6979046
   },
-  "868a1c03": {
-    "location_name": "Espacio Fundación Telefónica",
-    "address": "de Fuencarral, 3",
-    "latitude": 40.4204426,
-    "longitude": -3.7017177
-  },
   "c6461f0c": {
     "location_name": "Teatro Sofía",
     "address": "Gran Via, 70",
@@ -1513,6 +1512,12 @@
     "address": "del Prado, 36",
     "latitude": 40.4111951,
     "longitude": -3.693625
+  },
+  "e9c8b9e8": {
+    "location_name": "Nomad Museo Inmersivo",
+    "address": "Gran Vía, 78",
+    "latitude": 40.42353,
+    "longitude": -3.7096604
   },
   "4d6147eb": {
     "location_name": "Biblioteca Histórica UCM Marqués de Valdecilla",
@@ -1537,12 +1542,6 @@
     "address": "Gran Vía, 41",
     "latitude": 40.4204502,
     "longitude": -3.7066308
-  },
-  "0f65d248": {
-    "location_name": "Museo del Traje",
-    "address": "de Juan de Herrera, 2",
-    "latitude": 40.4400973,
-    "longitude": -3.7289688
   },
   "dc35bc1f": {
     "location_name": "Real Academia de Bellas Artes de San Fernando",
@@ -1573,12 +1572,6 @@
     "address": "de Alfonso XII, 68",
     "latitude": 40.4077713,
     "longitude": -3.6890236
-  },
-  "e9c8b9e8": {
-    "location_name": "Nomad Museo Inmersivo",
-    "address": "Gran Vía, 78",
-    "latitude": 40.4235445,
-    "longitude": -3.7096594
   },
   "c60cef6f": {
     "location_name": "Varios espacios de Madrid"
@@ -1693,12 +1686,6 @@
     "latitude": 40.424982,
     "longitude": -3.6898922
   },
-  "fc2a84be": {
-    "location_name": "Teatro Fígaro",
-    "address": "del Doctor Cortezo, 5",
-    "latitude": 40.413466,
-    "longitude": -3.7036766
-  },
   "622c74d4": {
     "location_name": "Fundación Canal Sala Castellana 214",
     "address": "de la Castellana, 214",
@@ -1758,12 +1745,6 @@
     "address": "Arquitectura, s/n",
     "latitude": 40.3394716,
     "longitude": -3.7627478
-  },
-  "027f0347": {
-    "location_name": "Teatros del Canal",
-    "address": "de Cea Bermúdez, 1",
-    "latitude": 40.438572,
-    "longitude": -3.7050356
   },
   "989001cc": {
     "location_name": "Galería Jorge Alcolea",
@@ -1837,23 +1818,11 @@
     "latitude": 40.4392262,
     "longitude": -3.7008285
   },
-  "b7019de4": {
-    "location_name": "Teatro de La Abadía",
-    "address": "de Fernández de los Ríos, 42",
-    "latitude": 40.4354489,
-    "longitude": -3.7095712
-  },
   "0d7b035c": {
     "location_name": "Teatro Rialto",
     "address": "Gran Vía, 54",
     "latitude": 40.4206974,
     "longitude": -3.7073607
-  },
-  "4ab76119": {
-    "location_name": "Teatro de la Zarzuela",
-    "address": "de Jovellanos, 4",
-    "latitude": 40.417129,
-    "longitude": -3.6973724
   },
   "9b2ba2ac": {
     "location_name": "La Usina",
@@ -1867,6 +1836,12 @@
     "latitude": 40.4188408,
     "longitude": -3.7216859
   },
+  "027f0347": {
+    "location_name": "Teatros del Canal",
+    "address": "de Cea Bermúdez, 1",
+    "latitude": 40.4382782,
+    "longitude": -3.705182
+  },
   "26613e22": {
     "location_name": "Sala Berlanga",
     "address": "de Andrés Mellado, 53",
@@ -1878,6 +1853,12 @@
     "address": "de San Bernardo , 5",
     "latitude": 40.421083,
     "longitude": -3.7083874
+  },
+  "b7019de4": {
+    "location_name": "Teatro de La Abadía",
+    "address": "de Fernández de los Ríos, 42",
+    "latitude": 40.4354489,
+    "longitude": -3.7095712
   },
   "c559b35b": {
     "location_name": "Leica Gallery Madrid",
@@ -1902,42 +1883,6 @@
     "address": "Antonio María Segovia, s/n",
     "latitude": 40.3813807,
     "longitude": -3.6133904
-  },
-  "db7a4d60": {
-    "location_name": "Bululú 2120",
-    "address": "de Canarias, 16",
-    "latitude": 40.4019632,
-    "longitude": -3.6964943
-  },
-  "d4e8a4c2": {
-    "location_name": "Live Las Ventas",
-    "address": "de Alcalá , 237",
-    "latitude": 40.4322427,
-    "longitude": -3.6633773
-  },
-  "1f1e0e14": {
-    "location_name": "Movistar Arena (WiZink Center)",
-    "address": "de Felipe II, s/n",
-    "latitude": 40.4238597,
-    "longitude": -3.6718421
-  },
-  "109271c3": {
-    "location_name": "Campo de Fútbol Fernando Torres",
-    "address": "Campo de Fútbol Fernando Torres",
-    "latitude": 40.2912539,
-    "longitude": -3.8266366
-  },
-  "d0b9c3cf": {
-    "location_name": "Coliseum",
-    "address": "Teresa de Calcuta, s/n",
-    "latitude": 40.325730691238,
-    "longitude": -3.714945316315
-  },
-  "d197c111": {
-    "location_name": "Campo de Fútbol de Vallecas",
-    "address": "del Payaso Fofó, s/n",
-    "latitude": 40.3875992,
-    "longitude": -3.6602826
   },
   "a9858871": {
     "location_name": "Central de diseño (Matadero)",
@@ -1990,6 +1935,12 @@
     "latitude": 40.462266409026,
     "longitude": -3.616358041763
   },
+  "d0b9c3cf": {
+    "location_name": "Coliseum",
+    "address": "Teresa de Calcuta, s/n",
+    "latitude": 40.3239098,
+    "longitude": -3.713966
+  },
   "1e352ee3": {
     "location_name": "COAM",
     "address": "de Hortaleza, 63",
@@ -2001,6 +1952,12 @@
     "address": "de Recoletos, s/n",
     "latitude": 40.4198298,
     "longitude": -3.6928418
+  },
+  "d4e8a4c2": {
+    "location_name": "Live Las Ventas",
+    "address": "de Alcalá , 237",
+    "latitude": 40.4322427,
+    "longitude": -3.6633773
   },
   "53628655": {
     "location_name": "Museo Sorolla",
@@ -2041,12 +1998,6 @@
     "latitude": 40.41491,
     "longitude": -3.702704
   },
-  "a5caa848": {
-    "location_name": "Centro Cultural Paco Rabal",
-    "address": "de Felipe de Diego, 13",
-    "latitude": 40.3794678,
-    "longitude": -3.6612928
-  },
   "3fa2d178": {
     "location_name": "La Nave (antigua Fábrica Boetticher)",
     "address": "Cifuentes, 5",
@@ -2071,12 +2022,6 @@
     "latitude": 40.3997348,
     "longitude": -3.6906652
   },
-  "22fd9956": {
-    "location_name": "UMusic Hotel Teatro Albéniz",
-    "address": "de la Paz, 11",
-    "latitude": 40.4153478,
-    "longitude": -3.7041116
-  },
   "1253542e": {
     "location_name": "Plaza de Colón",
     "address": "de Colón",
@@ -2089,11 +2034,17 @@
     "latitude": 40.2892501,
     "longitude": -3.8250646
   },
-  "a39a77f1": {
-    "location_name": "Teatro Lagrada",
-    "address": "de Ercilla, 20",
-    "latitude": 40.4026932,
-    "longitude": -3.7029826
+  "22fd9956": {
+    "location_name": "UMusic Hotel Teatro Albéniz",
+    "address": "de la Paz, 11",
+    "latitude": 40.4153478,
+    "longitude": -3.7041116
+  },
+  "868a1c03": {
+    "location_name": "Espacio Fundación Telefónica",
+    "address": "de Fuencarral, 3",
+    "latitude": 40.4204426,
+    "longitude": -3.7017177
   },
   "ccabc517": {
     "location_name": "Sala But",
@@ -2190,6 +2141,12 @@
     "latitude": 40.4767085,
     "longitude": -3.687918
   },
+  "d197c111": {
+    "location_name": "Campo de Fútbol de Vallecas",
+    "address": "del Payaso Fofó, s/n",
+    "latitude": 40.3875992,
+    "longitude": -3.6602826
+  },
   "e795bdd1": {
     "location_name": "Parroquia de Santa Cruz",
     "address": "de Atocha, 6",
@@ -2201,6 +2158,12 @@
     "address": "Complutense, s/n",
     "latitude": 40.4483832,
     "longitude": -3.7276368
+  },
+  "0f65d248": {
+    "location_name": "Museo del Traje",
+    "address": "de Juan de Herrera, 2",
+    "latitude": 40.4400973,
+    "longitude": -3.7289688
   },
   "f6ba4628": {
     "location_name": "Fun House Music Bar",
@@ -2237,6 +2200,12 @@
     "address": "de Portugal, s/n",
     "latitude": 40.4125009,
     "longitude": -3.7346275
+  },
+  "4ab76119": {
+    "location_name": "Teatro de la Zarzuela",
+    "address": "de Jovellanos, 4",
+    "latitude": 40.417129,
+    "longitude": -3.6973724
   },
   "c729b104": {
     "location_name": "Museo Naval",
