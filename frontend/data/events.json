@@ -303,19 +303,6 @@
     "formato": "exposicion",
     "lid": "6d0e53b1"
   },
-  "46ab7c5b4ff7c29c": {
-    "title": "Adeternum: Visitas guiadas en el Cementerio Sacramental de San Isidro",
-    "description": "Recorridos guiados especiales con motivo de la festividad de Todos los Santos. Un acercamiento histórico a la memoria de nuestros antepasados.",
-    "start_time": "11:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=464e84b840861a10VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "patrimonio",
-      "visitas guiadas"
-    ],
-    "formato": "puntual",
-    "lid": "bf528159"
-  },
   "428aa865c0906bec": {
     "title": "Proyección de cine: Ah Girl",
     "description": "Película ambientada en Singapur de 1994 que explora la vida familiar de una niña de siete años tras la separación de sus padres.",
@@ -856,6 +843,19 @@
     ],
     "formato": "puntual",
     "lid": "58c0410c"
+  },
+  "5afe4c239bbad8cc": {
+    "title": "Ballet Flamenco de Andalucía",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=c25a40d979bdf910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "teatro",
+      "danza",
+      "flamenco"
+    ],
+    "description": "Espectáculo de danza flamenca a cargo del Ballet Flamenco de Andalucía. Una muestra del arte tradicional andaluz.",
+    "formato": "exposicion",
+    "lid": "4c99e2c3"
   },
   "7be098a6bb074305": {
     "title": "Cine infantil: Bambi, una vida en el bosque",
@@ -1799,6 +1799,20 @@
     "description": "Shrek y Fiona visitan al reino de sus suegros tras regresar de su luna de miel.",
     "start_time": "18:00:00",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=8e0cc232982dc910VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "cine",
+      "infantil",
+      "gratis"
+    ],
+    "formato": "puntual",
+    "lid": "1d11f16a"
+  },
+  "1dbf191170625e21": {
+    "title": "Cine infantil: Shreketefeliz Navidad",
+    "description": "Shrek se esfuerza por organizar una gran sorpresa navideña para Fiona y sus hijos a pesar de sus reticencias.",
+    "start_time": "18:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=6d0cc232982dc910VgnVCM200000f921e388RCRD",
     "source": "madrid_agenda",
     "categories": [
       "cine",
@@ -3645,20 +3659,6 @@
     "formato": "puntual",
     "lid": "5b0073c9"
   },
-  "fee56c0367a6ee3f": {
-    "title": "Representación de Don Juan Tenorio",
-    "description": "La compañía Ópera Nova Producciones lleva a escena el clásico de José Zorrilla con una puesta en escena fiel a la época. Un drama teatral emblemático del repertorio español.",
-    "start_time": "18:30:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=617edc6638361a10VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "teatro",
-      "gratis"
-    ],
-    "price": "gratis",
-    "formato": "puntual",
-    "lid": "79c2f491"
-  },
   "e1077eb31f660163": {
     "title": "Donde viven los comelibros: Taller de animación a la lectura",
     "description": "Una divertida misión donde los niños se convierten en Guardianes de Bibliotecas a través de juegos y cuentacuentos. Actividad participativa con álbumes ilustrados.",
@@ -5034,6 +5034,19 @@
     "is_multi_event": true,
     "formato": "festival",
     "lid": "523428da"
+  },
+  "06102262dc143a9c": {
+    "title": "Festival Coros en el Barrio 2026",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=bc9306e84e580a10VgnVCM200000f921e388RCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "conciertos",
+      "destacado"
+    ],
+    "description": "Ciclo musical que recorre diferentes barrios de Madrid con la participación de diversos coros locales.",
+    "is_multi_event": true,
+    "formato": "festival",
+    "lid": "824774c3"
   },
   "e187cfa2ceaf2b07": {
     "title": "Festival de literatura fantástica 'Sui Generis Madrid'",
@@ -7706,19 +7719,6 @@
     "price": "0",
     "formato": "puntual"
   },
-  "6f9ea1b33574f84f": {
-    "title": "Misa y procesión por los fieles difuntos",
-    "description": "Acto religioso tradicional celebrado en la Ermita del Santo. Incluye la misa presidida por el párroco y la posterior procesión.",
-    "start_time": "12:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=141284b840861a10VgnVCM200000f921e388RCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "patrimonio",
-      "otros"
-    ],
-    "formato": "puntual",
-    "lid": "bf528159"
-  },
   "d1e9fda1c78a4360": {
     "title": "Misterios inmersivos: los casos del dragón",
     "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5b0084f3da0df910VgnVCM200000f921e388RCRD",
@@ -8312,6 +8312,23 @@
     "is_multi_event": true,
     "formato": "festival",
     "lid": "9068c482"
+  },
+  "7abe081d7eaf2f92": {
+    "title": "Visita guiada: Parque de Berlín",
+    "start_time": "11:00:00",
+    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=7d6276bd693f3910VgnVCM1000001d4a900aRCRD",
+    "source": "madrid_agenda",
+    "categories": [
+      "visitas guiadas",
+      "gratis"
+    ],
+    "dates": [
+      "2026-10-31",
+      "2026-12-10"
+    ],
+    "description": "Recorrido interpretativo por el Parque de Berlín para conocer su historia y valor botánico.",
+    "formato": "puntual",
+    "lid": "868d318d"
   },
   "9a81a5d0be041a0d": {
     "title": "Actividades en el Parque de la Vaguada",
@@ -11382,22 +11399,6 @@
     "formato": "exposicion",
     "lid": "4eb3f73b"
   },
-  "f837a2f35243c71d": {
-    "title": "Teatro familiar: Trovadora de Cía. Bicicleta Verde Teatro",
-    "description": "Disfruta de 'Trovadora', una divertida comedia de teatro, música y sombras de la Cía. Bicicleta Verde Teatro, ideal para público a partir de 6 años. La entrada es libre hasta completar aforo.",
-    "start_time": "12:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=b696cabb7654e910VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "teatro",
-      "gratis",
-      "infantil",
-      "comedia"
-    ],
-    "price": "gratis",
-    "formato": "puntual",
-    "lid": "7b2029f7"
-  },
   "360a7596853764ba": {
     "title": "Taller de Teatro Feminista para la igualdad",
     "start_time": "17:00:00",
@@ -12609,22 +12610,6 @@
     "price": "gratis",
     "formato": "puntual",
     "lid": "e232e586"
-  },
-  "98931b3b650b8597": {
-    "title": "Visita científica interactiva: Un paseo por las estrellas",
-    "description": "Sesión guiada por Bienvenido Alcántara que explora el cosmos. Actividad recomendada para mayores de 7 años.",
-    "start_time": "11:00:00",
-    "url": "https://www.madrid.es/sites/v/index.jsp?vgnextoid=5a4f5295412f0a10VgnVCM100000891ecb1aRCRD",
-    "source": "madrid_agenda",
-    "categories": [
-      "visitas guiadas",
-      "conferencias",
-      "gratis",
-      "infantil"
-    ],
-    "price": "gratis",
-    "formato": "puntual",
-    "lid": "bebd45c9"
   },
   "c01fea70c02925f8": {
     "title": "Visita comentada y taller: Biodiversidad Doméstica",
@@ -17272,27 +17257,6 @@
     "formato": "exposicion",
     "lid": "2fd09bb6"
   },
-  "d451230e4e29ae04": {
-    "title": "Rumores infundados. Javier y Rafa Forteza",
-    "description": "Exposición de pinturas y esculturas que sumerge al público en un universo visual donde lo figurativo dialoga con la materia. La muestra explora la ambigüedad de la imagen y la introspección a través de un lenguaje poético y simbólico.",
-    "start_time": "10:00:00",
-    "url": "https://caixaforum.org/es/madrid/p/rumores-infundados-madrid",
-    "price": "Gratis",
-    "image": "images/events/dfc474a0ebc7.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/8DFQWNcAuQSG_TcHg1SBzzQeSzCZ8xVjYUpu1TaSLfc/mtime:1788968734/sites/default/files/eventos/eventos/rafa_forteza.jpg",
-      "https://estaticos.esmadrid.com/cdn/farfuture/uzQNv2CSkDl47_KbeOgSUxChnWiyaU1Ep5EqNaupyIM/mtime:1788968780/sites/default/files/eventos/eventos/rafa_forteza_osadia_2022-2023.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/9OtNQIRfEoxKfLazqiUahS8IeDbrQnhOFXxgBkmADkU/mtime:1788968694/sites/default/files/eventos/eventos/rumores_infundados._javier_y_rafa_forteza.png"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/rumores-infundados-javier-rafa-forteza-caixaforum-madrid",
-    "source": "esmadrid",
-    "categories": [
-      "exposiciones",
-      "gratis"
-    ],
-    "formato": "exposicion",
-    "lid": "3c29714c"
-  },
   "52c65d8b9df92c35": {
     "title": "Entre la retícula y la vida",
     "description": "Exposición de esculturas al aire libre que analiza la relación entre los sistemas de orden geométrico y la experiencia orgánica de la existencia. La muestra reúne obras de trece artistas iberoamericanos que exploran las tensiones entre la estructura y lo vital.",
@@ -18162,29 +18126,6 @@
     "formato": "exposicion",
     "lid": "d2add564"
   },
-  "04a217a2fbc67867": {
-    "title": "MadHorror 2026",
-    "description": "MadHorror es un festival internacional de terror que combina cine, convención, feria experiencial y una gran celebración popular de Halloween. El evento ofrece cine, videojuegos, cómic, pasajes del terror, exposiciones, clases magistrales, talleres, concursos y una invasión zombie en directo.",
-    "url": "https://www.ifema.es/madhorror",
-    "price": "Desde 26 €",
-    "image": "images/events/a881da7de628.jpg",
-    "_image_candidates": [
-      "https://estaticos.esmadrid.com/cdn/farfuture/VDR-e0I94q0wDxrOEQB-5txSj5z-zkcn0rzF3v1-ifM/mtime:1779895956/sites/default/files/eventos/eventos/madhorror2.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/pnoMNWZGXH-4b7yCxhGAFrP0r0awNLmaJ5_BzsZQ0qQ/mtime:1779896281/sites/default/files/eventos/eventos/mad_horror_expo.png",
-      "https://estaticos.esmadrid.com/cdn/farfuture/GE9SQOdhSdOcGy8nMlb2LdeBdT6e4HPCkCkFC2Q26UI/mtime:1779895795/sites/default/files/eventos/eventos/madhorror.png"
-    ],
-    "source_url": "https://www.esmadrid.com/agenda/madhorror-ifema-madrid",
-    "source": "esmadrid",
-    "categories": [
-      "cine",
-      "exposiciones",
-      "ferias",
-      "talleres"
-    ],
-    "is_multi_event": true,
-    "formato": "puntual",
-    "lid": "ed301dfc"
-  },
   "f3caca7399afb021": {
     "title": "Circlassica: Extraordinarios",
     "description": "Un montaje que reúne lo mejor del circo, la música y la danza para toda la familia con la participación de más de 30 artistas internacionales. La historia sigue a una soñadora que recorre el mundo en busca de artistas capaces de devolver al público su capacidad de asombro.",
@@ -18643,23 +18584,6 @@
     ],
     "formato": "exposicion",
     "lid": "1e352ee3"
-  },
-  "0e293163179afe88": {
-    "title": "VIII Mercado de Artesanía de Madrid de Otoño",
-    "description": "Feria que reúne a artesanos de Madrid y otras regiones para exhibir y vender piezas únicas de oficios tradicionales. El evento incluye demostraciones en directo de los artesanos y diversas actividades culturales.",
-    "start_time": "11:00:00",
-    "url": "https://amoa.es/viii-edicion-de-la-feria-de-artesania-de-otono-2026-2/?srsltid=AU7gw4X4HP01w1XdO-K405FdYmqXGKxxyt-7BDDNQ6HMgUu6AjZIBmOe",
-    "price": "Gratis",
-    "image": "images/events/dfe11eeb6be9.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/mercado-artesania-madrid-feria-otono-paseo-recoletos",
-    "source": "esmadrid",
-    "categories": [
-      "ferias",
-      "mercados",
-      "gratis"
-    ],
-    "formato": "exposicion",
-    "lid": "52a7cbaa"
   },
   "d4dad8e04004a1db": {
     "title": "44º Festival de Otoño",
@@ -20148,21 +20072,6 @@
     "formato": "exposicion",
     "lid": "dab2e412"
   },
-  "ba6f58a3df11fc89": {
-    "title": "Tom Ribeira",
-    "description": "El artista brasileño presenta su EP debut Pedaço, una propuesta que fusiona la música brasileña y latinoamericana con sonidos contemporáneos. Un concierto que conecta la tradición con la modernidad a través de un estilo personal e íntimo.",
-    "start_time": "19:30:00",
-    "url": "https://festivaldejazzmadrid.com/actividad/tom-ribeira/",
-    "price": "Desde 13 €",
-    "image": "images/events/6c6db1a872c2.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/tom-ribeira-sala-villanos",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "formato": "puntual",
-    "lid": "0d71ace6"
-  },
   "90e6d39e1efb5514": {
     "title": "Bernabéu Sky by Cirque du Soleil",
     "description": "Un recorrido inmersivo e interactivo inspirado en el universo creativo del espectáculo KURIOS, donde la estética retrofuturista cobra vida en la planta 10 del estadio. Los visitantes exploran diversos mundos temáticos y disfrutan de vistas panorámicas 360° de la ciudad con sorpresas en directo.",
@@ -20955,21 +20864,6 @@
     ],
     "formato": "exposicion",
     "lid": "4abde3ad"
-  },
-  "dc7217d82f1e43ce": {
-    "title": "Pyramidiacs",
-    "description": "La banda australiana de power-pop ofrece un concierto basado en melodías luminosas y armonías vocales cuidadas. El repertorio combina temas de su discografía con guitarras energéticas y medios tiempos melódicos.",
-    "start_time": "20:30:00",
-    "url": "https://salaelsol.com/eventos/pyramidiacs/",
-    "price": "Desde 20 €",
-    "image": "images/events/e17eaf271307.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/pyramidiacs-sol",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "formato": "puntual",
-    "lid": "8e9bc286"
   },
   "257bd3f44ea2d43b": {
     "title": "Chameleons",
@@ -21871,21 +21765,6 @@
     ],
     "formato": "puntual",
     "lid": "d4e8a4c2"
-  },
-  "8b65b4c943b43bfd": {
-    "title": "Excelentia. Réquiem de Mozart",
-    "description": "La Sociedad Coral Excelentia de Madrid y la Orquesta Clásica Santa Cecilia interpretan un programa compuesto por la Sinfonía n.º 3 “Renana” de Schumann y el Réquiem de Mozart. El concierto cuenta con la dirección de Kynan Johns y la participación de destacados solistas vocales.",
-    "start_time": "19:30:00",
-    "url": "https://auditorionacional.inaem.gob.es/es/programacion/excelentia-requiem-de-mozart-9",
-    "price": "Desde 44 €",
-    "image": "images/events/7863fdc61a64.jpg",
-    "source_url": "https://www.esmadrid.com/agenda/excelentia-requiem-mozart-auditorio-nacional-musica",
-    "source": "esmadrid",
-    "categories": [
-      "conciertos"
-    ],
-    "formato": "puntual",
-    "lid": "94a66118"
   },
   "eb9b56f75b23ed10": {
     "title": "Debajo de todo",
@@ -23052,5 +22931,48 @@
     ],
     "formato": "puntual",
     "lid": "1f1e0e14"
+  },
+  "ff573f8e44f7512a": {
+    "title": "Real Madrid CF - Madrid CFF (Liga F Moeve)",
+    "description": "Nuevo derbi madrileño que enfrenta a las merengues con las jugadoras del Madrid CFF.",
+    "url": "https://www.realmadrid.com/es-ES/futbol/primer-equipo-femenino/inicio",
+    "price": "Consultar página oficial",
+    "image": "images/events/3551eec1fca4.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/real-madrid-cf-madrid-cff-liga-f-moeve-estadio-alfredo-di-stefano",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "4ff22a87"
+  },
+  "d0a55e4fe6e31865": {
+    "title": "Atlético de Madrid Femenino - Costa Adeje Tenerife (Liga F Moeve)",
+    "description": "La rojiblancas entrenadas por el técnico David González reciben en su terreno al conjunto tinerfeño.",
+    "url": "https://www.atleticodemadrid.com/atm/atletico-de-madrid-femenino",
+    "price": "Consultar página oficial",
+    "image": "images/events/c4816bdf0359.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/atletico-madrid-femenino-costa-adeje-tenerife-liga-f-moeve-centro-deportivo-alcala-henares",
+    "source": "esmadrid",
+    "categories": [
+      "deportes"
+    ],
+    "formato": "puntual",
+    "lid": "c3c68494"
+  },
+  "6a75575048621d9b": {
+    "title": "Clásica Inmersiva",
+    "description": "Música clásica en directo combinada con proyecciones visuales de gran formato y un cuidado diseño de iluminación. El recital transforma el espacio en un entorno visual dinámico, ofreciendo una experiencia sensorial completa al espectador.",
+    "start_time": "20:00:00",
+    "url": "https://teatrocalderonmadrid.com/es/clasica-inmersiva",
+    "price": "Desde 22,68 €",
+    "image": "images/events/c37827c5f8fb.jpg",
+    "source_url": "https://www.esmadrid.com/agenda/clasica-inmersiva-teatro-calderon",
+    "source": "esmadrid",
+    "categories": [
+      "conciertos"
+    ],
+    "formato": "puntual",
+    "lid": "c05dd0a1"
   }
 }

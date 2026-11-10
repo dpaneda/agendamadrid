@@ -124,13 +124,6 @@
     "latitude": 40.386296991431074,
     "longitude": -3.671858416387963
   },
-  "bf528159": {
-    "location_name": "Cementerio Sacramental de San Isidro",
-    "address": "PASEO ERMITA DEL SANTO 72",
-    "district": "Carabanchel",
-    "latitude": 40.40061741587043,
-    "longitude": -3.725670113017977
-  },
   "3c67bbc4": {
     "location_name": "Centro Cultural San Francisco La Prensa (Carabanchel)",
     "address": "CALLE ALISEDA 4",
@@ -262,6 +255,13 @@
     "latitude": 40.37762362093048,
     "longitude": -3.6229095774784765
   },
+  "4c99e2c3": {
+    "location_name": "Centro Danza Matadero - CDM",
+    "address": "PASEO CHOPERA 14",
+    "district": "Arganzuela",
+    "latitude": 40.39245798191536,
+    "longitude": -3.6972067902718897
+  },
   "402a0176": {
     "location_name": "Centro Cultural Julio Cortázar (Moncloa - Aravaca)",
     "address": "CALLE ANTONIO MACHADO 20",
@@ -380,13 +380,6 @@
     "district": "VillaDeVallecas",
     "latitude": 40.36691109856854,
     "longitude": -3.6164419466246676
-  },
-  "4c99e2c3": {
-    "location_name": "Centro Danza Matadero - CDM",
-    "address": "PASEO CHOPERA 14",
-    "district": "Arganzuela",
-    "latitude": 40.39245798191536,
-    "longitude": -3.6972067902718897
   },
   "a77bed0e": {
     "location_name": "Centro Cultural Príncipe de Asturias (Ciudad Lineal)",
@@ -950,6 +943,13 @@
     "district": "Villaverde",
     "latitude": 40.34998997348078,
     "longitude": -3.7178413073202856
+  },
+  "868d318d": {
+    "location_name": "Parque de Berlín",
+    "address": "AVENIDA RAMON Y CAJAL 2",
+    "district": "Chamartin",
+    "latitude": 40.45150372849227,
+    "longitude": -3.6760645355093797
   },
   "9a81a5d0": {
     "location_name": "Parque de la Vaguada",
@@ -1947,12 +1947,6 @@
     "latitude": 40.4239695,
     "longitude": -3.6985835
   },
-  "52a7cbaa": {
-    "location_name": "Paseo de Recoletos",
-    "address": "de Recoletos, s/n",
-    "latitude": 40.4198298,
-    "longitude": -3.6928418
-  },
   "d4e8a4c2": {
     "location_name": "Live Las Ventas",
     "address": "de Alcalá , 237",
@@ -2081,12 +2075,6 @@
     "latitude": 40.4385159,
     "longitude": -3.7096388
   },
-  "8e9bc286": {
-    "location_name": "El Sol",
-    "address": "de los Jardines, 3",
-    "latitude": 40.4190862,
-    "longitude": -3.7014813
-  },
   "871b85d1": {
     "location_name": "Sala Mon Live",
     "address": "de Hilarión Eslava, 36",
@@ -2206,6 +2194,18 @@
     "address": "de Jovellanos, 4",
     "latitude": 40.417129,
     "longitude": -3.6973724
+  },
+  "52a7cbaa": {
+    "location_name": "Paseo de Recoletos",
+    "address": "de Recoletos, s/n",
+    "latitude": 40.4197774,
+    "longitude": -3.6928866
+  },
+  "8e9bc286": {
+    "location_name": "El Sol",
+    "address": "de los Jardines, 3",
+    "latitude": 40.4190862,
+    "longitude": -3.7014813
   },
   "c729b104": {
     "location_name": "Museo Naval",
