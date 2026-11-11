@@ -325,13 +325,6 @@
     "latitude": 40.41410290844665,
     "longitude": -3.7098591212735883
   },
-  "65a790aa": {
-    "location_name": "Espacio de Igualdad Berta Cáceres. Usera",
-    "address": "CALLE GRAN AVENIDA 14",
-    "district": "Usera",
-    "latitude": 40.36902428128397,
-    "longitude": -3.710212677306876
-  },
   "6ebb77f9": {
     "location_name": "Auditorio Municipal al aire libre Lola Camarena",
     "address": "AVENIDA LA GAVIA 13",
@@ -749,6 +742,13 @@
     "district": "Tetuan",
     "latitude": 40.46903299144094,
     "longitude": -3.6976620067964996
+  },
+  "65a790aa": {
+    "location_name": "Espacio de Igualdad Berta Cáceres. Usera",
+    "address": "CALLE GRAN AVENIDA 14",
+    "district": "Usera",
+    "latitude": 40.36902428128397,
+    "longitude": -3.710212677306876
   },
   "dac4ad46": {
     "location_name": "Instalación Deportiva Municipal Básica Pump Track de Butarque",
@@ -1459,17 +1459,17 @@
     "latitude": 40.422464774016,
     "longitude": -3.703680038452
   },
-  "d5e60251": {
-    "location_name": "Teatro Alcázar",
-    "address": "de Alcalá, 20",
-    "latitude": 40.4177853,
-    "longitude": -3.6990893
-  },
   "9d15f421": {
     "location_name": "Estadio Bernabéu",
     "address": "de Concha Espina, 1",
     "latitude": 40.4524318,
     "longitude": -3.6868084
+  },
+  "d5e60251": {
+    "location_name": "Teatro Alcázar",
+    "address": "de Alcalá, 20",
+    "latitude": 40.4177853,
+    "longitude": -3.6990893
   },
   "d4736963": {
     "location_name": "Teatro Eslava",
@@ -1746,12 +1746,6 @@
     "latitude": 40.3394716,
     "longitude": -3.7627478
   },
-  "989001cc": {
-    "location_name": "Galería Jorge Alcolea",
-    "address": "de Claudio Coello, 28",
-    "latitude": 40.4237054,
-    "longitude": -3.6866459
-  },
   "ce6a0c87": {
     "location_name": "Real Jardín Botánico",
     "address": "de Murillo, 2",
@@ -1896,18 +1890,6 @@
     "latitude": 40.4119879,
     "longitude": -3.7058726
   },
-  "0d71ace6": {
-    "location_name": "Sala Villanos",
-    "address": "de Bernardino Obregón, 18",
-    "latitude": 40.4039502,
-    "longitude": -3.7002267
-  },
-  "2b9a4735": {
-    "location_name": "Estadio Riyadh Air Metropolitano",
-    "address": "de Luis Aragonés, s/n",
-    "latitude": 40.4422045,
-    "longitude": -3.6029759
-  },
   "2c3a5fbc": {
     "location_name": "Teatro Monumental",
     "address": "de Atocha, 65",
@@ -1941,6 +1923,12 @@
     "latitude": 40.3239098,
     "longitude": -3.713966
   },
+  "0d71ace6": {
+    "location_name": "Sala Villanos",
+    "address": "de Bernardino Obregón, 18",
+    "latitude": 40.403949,
+    "longitude": -3.7002218
+  },
   "1e352ee3": {
     "location_name": "COAM",
     "address": "de Hortaleza, 63",
@@ -1958,6 +1946,12 @@
     "address": "del General Martínez Campos, 37",
     "latitude": 40.4354401,
     "longitude": -3.6925117
+  },
+  "2b9a4735": {
+    "location_name": "Estadio Riyadh Air Metropolitano",
+    "address": "de Luis Aragonés, s/n",
+    "latitude": 40.436299422388,
+    "longitude": -3.599481582642
   },
   "c3c68494": {
     "location_name": "Centro Deportivo Alcalá de Henares",
