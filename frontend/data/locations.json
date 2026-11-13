@@ -674,13 +674,6 @@
     "latitude": 40.38024953878224,
     "longitude": -3.6175290483217055
   },
-  "22840c10": {
-    "location_name": "Espacio de Igualdad Lucrecia Pérez. Fuencarral-El Pardo",
-    "address": "CALLE MANRESA 1",
-    "district": "Fuencarral-ElPardo",
-    "latitude": 40.49120609425076,
-    "longitude": -3.6916379633219116
-  },
   "33f7f327": {
     "location_name": "Instalación Deportiva Municipal Básica Colonia Marconi",
     "address": "CALLE PRINCIPAL 1",
@@ -750,13 +743,6 @@
     "district": "Tetuan",
     "latitude": 40.46903299144094,
     "longitude": -3.6976620067964996
-  },
-  "65a790aa": {
-    "location_name": "Espacio de Igualdad Berta Cáceres. Usera",
-    "address": "CALLE GRAN AVENIDA 14",
-    "district": "Usera",
-    "latitude": 40.36902428128397,
-    "longitude": -3.710212677306876
   },
   "dac4ad46": {
     "location_name": "Instalación Deportiva Municipal Básica Pump Track de Butarque",
@@ -856,19 +842,19 @@
     "latitude": 40.39164455403764,
     "longitude": -3.717137582860074
   },
-  "69c139db": {
-    "location_name": "Auditorio Canal de Panamá (Ciudad Lineal)",
-    "address": "CALLE PADRE COLOMA 2",
-    "district": "CiudadLineal",
-    "latitude": 40.44071019620189,
-    "longitude": -3.652412289521502
-  },
   "398d56b6": {
     "location_name": "Centro Intergeneracional Río Esmeralda",
     "address": "CALLE RIO ESMERALDA 15",
     "district": "PuenteDeVallecas",
     "latitude": 40.382903228859135,
     "longitude": -3.6520658390631127
+  },
+  "69c139db": {
+    "location_name": "Auditorio Canal de Panamá (Ciudad Lineal)",
+    "address": "CALLE PADRE COLOMA 2",
+    "district": "CiudadLineal",
+    "latitude": 40.44071019620189,
+    "longitude": -3.652412289521502
   },
   "74ef50ff": {
     "location_name": "El Capricho de la Alameda Osuna",
@@ -965,6 +951,13 @@
     "district": "Moncloa-Aravaca",
     "latitude": 40.43179642724134,
     "longitude": -3.7281634896577027
+  },
+  "53979c9c": {
+    "location_name": "Parque Enrique Tierno Galván",
+    "address": "CALLE MENESES 4",
+    "district": "Arganzuela",
+    "latitude": 40.39210151448589,
+    "longitude": -3.681620654746187
   },
   "a4ed4ef4": {
     "location_name": "Centro Municipal de Mayores Villalonso",
@@ -1118,6 +1111,13 @@
     "district": "Barajas",
     "latitude": 40.45836469361315,
     "longitude": -3.5932763223327178
+  },
+  "65a790aa": {
+    "location_name": "Espacio de Igualdad Berta Cáceres. Usera",
+    "address": "CALLE GRAN AVENIDA 14",
+    "district": "Usera",
+    "latitude": 40.36902428128397,
+    "longitude": -3.710212677306876
   },
   "ca84f24f": {
     "location_name": "Biblioteca Pública Municipal Pablo Neruda (Ciudad Lineal)",
@@ -1876,26 +1876,11 @@
     "latitude": 40.415652573463,
     "longitude": -3.714559078217
   },
-  "2f73d4ee": {
-    "location_name": "Sede pendiente de confirmación"
-  },
   "a0e7ae45": {
     "location_name": "IFEMA Palacio Municipal",
     "address": "de la Capital de España, 7",
     "latitude": 40.462266409026,
     "longitude": -3.616358041763
-  },
-  "d0b9c3cf": {
-    "location_name": "Coliseum",
-    "address": "Teresa de Calcuta, s/n",
-    "latitude": 40.3239098,
-    "longitude": -3.713966
-  },
-  "0d71ace6": {
-    "location_name": "Sala Villanos",
-    "address": "de Bernardino Obregón, 18",
-    "latitude": 40.403949,
-    "longitude": -3.7002218
   },
   "1e352ee3": {
     "location_name": "COAM",
@@ -1920,6 +1905,12 @@
     "address": "de Luis Aragonés, s/n",
     "latitude": 40.436299422388,
     "longitude": -3.599481582642
+  },
+  "0d71ace6": {
+    "location_name": "Sala Villanos",
+    "address": "de Bernardino Obregón, 18",
+    "latitude": 40.403949,
+    "longitude": -3.7002218
   },
   "c3c68494": {
     "location_name": "Centro Deportivo Alcalá de Henares",
@@ -2008,12 +1999,6 @@
     "latitude": 40.4204426,
     "longitude": -3.7017177
   },
-  "ccabc517": {
-    "location_name": "Sala But",
-    "address": "de Barceló, 11, local B",
-    "latitude": 40.426975,
-    "longitude": -3.699763
-  },
   "b9af583f": {
     "location_name": "27 Club (The Palace, a Luxury Collection Hotel, Madrid)",
     "address": "de las Cortes, 7",
@@ -2061,12 +2046,6 @@
     "latitude": 40.4259204,
     "longitude": -3.6987727
   },
-  "98f49d45": {
-    "location_name": "Moby Dick",
-    "address": "de Brasil, 5",
-    "latitude": 40.4543434,
-    "longitude": -3.6940523
-  },
   "1f1d6ca1": {
     "location_name": "Clamores",
     "address": "de Alburquerque, 14",
@@ -2096,6 +2075,12 @@
     "address": "de la Castellana",
     "latitude": 40.4767085,
     "longitude": -3.687918
+  },
+  "d0b9c3cf": {
+    "location_name": "Coliseum",
+    "address": "Teresa de Calcuta, s/n",
+    "latitude": 40.325730691238,
+    "longitude": -3.714945316315
   },
   "d197c111": {
     "location_name": "Campo de Fútbol de Vallecas",
@@ -2144,6 +2129,12 @@
     "address": "del Príncipe de Vergara, 146",
     "latitude": 40.4459662,
     "longitude": -3.6776947
+  },
+  "ccabc517": {
+    "location_name": "Sala But",
+    "address": "de Barceló, 11, local B",
+    "latitude": 40.426975,
+    "longitude": -3.699763
   },
   "8777ce47": {
     "location_name": "Espacio Ventas",
