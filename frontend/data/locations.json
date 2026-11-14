@@ -82,13 +82,6 @@
     "latitude": 40.4068543436,
     "longitude": -3.612732759798518
   },
-  "7c1958bc": {
-    "location_name": "Edificio Sociocultural Marta Escudero Díaz-Tejeiro (Villaverde)",
-    "address": "CALLE CALCIO 1",
-    "district": "Villaverde",
-    "latitude": 40.35118703272002,
-    "longitude": -3.679345889376551
-  },
   "a2c18109": {
     "location_name": "Instalación Deportiva Municipal Básica María de Villota",
     "address": "CALLE ESTEFANITA 3",
@@ -410,13 +403,6 @@
     "latitude": 40.49041562546542,
     "longitude": -3.655356751728003
   },
-  "5435f959": {
-    "location_name": "Centro Sociocultural Santa Petronila (Villaverde)",
-    "address": "CALLE MARIA MARTINEZ OVIOL 12",
-    "district": "Villaverde",
-    "latitude": 40.350886994103284,
-    "longitude": -3.6914981254409645
-  },
   "1c1352bf": {
     "location_name": "Biblioteca Pública Municipal David Gistau (Salamanca)",
     "address": "AVENIDA TOREROS 5",
@@ -494,13 +480,6 @@
     "latitude": 40.42299730556785,
     "longitude": -3.6625213630031794
   },
-  "28cc7d13": {
-    "location_name": "Biblioteca Pública Municipal Francisco Umbral (Villaverde)",
-    "address": "CALLE CALCIO 1",
-    "district": "Villaverde",
-    "latitude": 40.35118703272002,
-    "longitude": -3.679345889376551
-  },
   "9335e955": {
     "location_name": "Centro de Educación Ambiental y Cultural Maris Stella (Usera)",
     "address": "CALLE DOCTOR TOLOSA LATOUR 16",
@@ -528,19 +507,19 @@
     "latitude": 40.37381624358889,
     "longitude": -3.6599325731670977
   },
+  "7c1958bc": {
+    "location_name": "Edificio Sociocultural Marta Escudero Díaz-Tejeiro (Villaverde)",
+    "address": "CALLE CALCIO 1",
+    "district": "Villaverde",
+    "latitude": 40.35118703272002,
+    "longitude": -3.679345889376551
+  },
   "395f476b": {
     "location_name": "Centro Dotacional Integrado Arganzuela Ángel del Río",
     "address": "CALLE CANARIAS 17",
     "district": "Arganzuela",
     "latitude": 40.40242416544921,
     "longitude": -3.6954440062549017
-  },
-  "0418b21d": {
-    "location_name": "Centro Cultural Casa del Reloj (Arganzuela)",
-    "address": "PASEO CHOPERA 6",
-    "district": "Arganzuela",
-    "latitude": 40.39466755008527,
-    "longitude": -3.700396761468562
   },
   "73b313ed": {
     "location_name": "Jardines de El Buen Retiro",
@@ -876,6 +855,13 @@
     "latitude": 40.427887,
     "longitude": -3.710802
   },
+  "5435f959": {
+    "location_name": "Centro Sociocultural Santa Petronila (Villaverde)",
+    "address": "CALLE MARIA MARTINEZ OVIOL 12",
+    "district": "Villaverde",
+    "latitude": 40.350886994103284,
+    "longitude": -3.6914981254409645
+  },
   "0f73d594": {
     "location_name": "Centro Cultural Valdebernardo (Vicálvaro)",
     "address": "BULEVAR INDALECIO PRIETO 21",
@@ -966,6 +952,13 @@
     "latitude": 40.34958362533649,
     "longitude": -3.709073393125563
   },
+  "0418b21d": {
+    "location_name": "Centro Cultural Casa del Reloj (Arganzuela)",
+    "address": "PASEO CHOPERA 6",
+    "district": "Arganzuela",
+    "latitude": 40.39466755008527,
+    "longitude": -3.700396761468562
+  },
   "9dd69f2b": {
     "location_name": "Instalación Deportiva Municipal Básica Parque Juan Carlos I - Embarcadero",
     "district": "Distrito",
@@ -1048,6 +1041,13 @@
     "district": "Carabanchel",
     "latitude": 40.36161849969019,
     "longitude": -3.7537019050296867
+  },
+  "28cc7d13": {
+    "location_name": "Biblioteca Pública Municipal Francisco Umbral (Villaverde)",
+    "address": "CALLE CALCIO 1",
+    "district": "Villaverde",
+    "latitude": 40.35118703272002,
+    "longitude": -3.679345889376551
   },
   "627cc312": {
     "location_name": "Agencia Estatal Consejo Superior de Investigaciones Científicas (CSIC)",
@@ -1439,6 +1439,12 @@
     "latitude": 40.422464774016,
     "longitude": -3.703680038452
   },
+  "0d7b035c": {
+    "location_name": "Teatro Rialto",
+    "address": "Gran Vía, 54",
+    "latitude": 40.421345790817,
+    "longitude": -3.707231283188
+  },
   "9d15f421": {
     "location_name": "Estadio Bernabéu",
     "address": "de Concha Espina, 1",
@@ -1786,12 +1792,6 @@
     "latitude": 40.4392262,
     "longitude": -3.7008285
   },
-  "0d7b035c": {
-    "location_name": "Teatro Rialto",
-    "address": "Gran Vía, 54",
-    "latitude": 40.4206974,
-    "longitude": -3.7073607
-  },
   "9b2ba2ac": {
     "location_name": "La Usina",
     "address": "de Palos de la Frontera, 4",
@@ -1875,12 +1875,6 @@
     "address": "de Bailén, 10",
     "latitude": 40.415652573463,
     "longitude": -3.714559078217
-  },
-  "a0e7ae45": {
-    "location_name": "IFEMA Palacio Municipal",
-    "address": "de la Capital de España, 7",
-    "latitude": 40.462266409026,
-    "longitude": -3.616358041763
   },
   "1e352ee3": {
     "location_name": "COAM",
