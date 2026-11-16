@@ -1353,12 +1353,6 @@
     "latitude": 40.42,
     "longitude": -3.67
   },
-  "0e7756d3": {
-    "location_name": "Museo del Ferrocarril",
-    "address": "de las Delicias, 61",
-    "latitude": 40.398749783694,
-    "longitude": -3.691465258598
-  },
   "4549d7e6": {
     "location_name": "Recinto Ferial Casa de Campo",
     "address": "de Portugal, s/n",
@@ -1388,12 +1382,6 @@
     "address": "Calle del Petirrojo, 34",
     "latitude": 40.3907951,
     "longitude": -3.7462663
-  },
-  "2f59b0c5": {
-    "location_name": "Estadio Ontime Butarque",
-    "address": "Arquitectura, s/n",
-    "latitude": 40.340302,
-    "longitude": -3.760473
   },
   "9a5be362": {
     "location_name": "Palacio Vistalegre Arena",
@@ -1491,12 +1479,6 @@
     "latitude": 40.4254782,
     "longitude": -3.7078981
   },
-  "8ca210f1": {
-    "location_name": "Museo Nacional de Artes Decorativas",
-    "address": "de Montalbán, 12",
-    "latitude": 40.4177983,
-    "longitude": -3.6897806
-  },
   "df925a11": {
     "location_name": "Museo Arqueológico Nacional",
     "address": "de Serrano, 13",
@@ -1559,12 +1541,6 @@
     "address": "de Serrano , 61",
     "latitude": 40.4319053,
     "longitude": -3.6874425
-  },
-  "60383778": {
-    "location_name": "Teatro La Latina",
-    "address": "de la Cebada, 2",
-    "latitude": 40.411436,
-    "longitude": -3.7087536
   },
   "4869348f": {
     "location_name": "Teatro Serrano",
@@ -1632,32 +1608,17 @@
     "latitude": 40.3910873,
     "longitude": -3.6981435
   },
-  "a6035e83": {
-    "location_name": "Sala de Arte Joven de la Comunidad de Madrid",
-    "address": "de América, 13",
-    "latitude": 40.4385164,
-    "longitude": -3.6764022
-  },
   "2fd09bb6": {
     "location_name": "Museo Reina Sofía",
     "address": "de Santa Isabel, 52",
     "latitude": 40.4084389,
     "longitude": -3.6941036
   },
-  "0717a59e": {
-    "location_name": "Capilla de Palacio Real y Teatro Real Carlos III, Aranjuez"
-  },
   "04ac1adc": {
     "location_name": "Centro Cultural Coreano en España",
     "address": "de la Castellana, 15",
     "latitude": 40.4281099,
     "longitude": -3.6901699
-  },
-  "438080e7": {
-    "location_name": "Fundación Casa de México en España",
-    "address": "de Alberto Aguilera, 20",
-    "latitude": 40.4301378,
-    "longitude": -3.7092035
   },
   "61c10e5d": {
     "location_name": "Varios locales",
@@ -1682,11 +1643,11 @@
     "latitude": 40.4400973,
     "longitude": -3.7289688
   },
-  "e42e13eb": {
-    "location_name": "Teatro Valle-Inclán",
-    "address": "de Ana Diosdado, s/n",
-    "latitude": 40.4083829,
-    "longitude": -3.7006353
+  "438080e7": {
+    "location_name": "Fundación Casa de México en España",
+    "address": "de Alberto Aguilera, 20",
+    "latitude": 40.4301378,
+    "longitude": -3.7092035
   },
   "50b7e303": {
     "location_name": "Biblioteca Regional de la Comunidad de Madrid Joaquín Leguina",
@@ -1784,12 +1745,6 @@
     "latitude": 40.4025525,
     "longitude": -3.6999978
   },
-  "7505ff95": {
-    "location_name": "Explanada Puente del Rey",
-    "address": "del Rey",
-    "latitude": 40.4188408,
-    "longitude": -3.7216859
-  },
   "027f0347": {
     "location_name": "Teatros del Canal",
     "address": "de Cea Bermúdez, 1",
@@ -1838,12 +1793,6 @@
     "latitude": 40.3813807,
     "longitude": -3.6133904
   },
-  "bff01189": {
-    "location_name": "Sala Equis",
-    "address": "del Duque de Alba, 4",
-    "latitude": 40.4119879,
-    "longitude": -3.7058726
-  },
   "2c3a5fbc": {
     "location_name": "Teatro Monumental",
     "address": "de Atocha, 65",
@@ -1868,24 +1817,6 @@
     "latitude": 40.4354401,
     "longitude": -3.6925117
   },
-  "3b56e983": {
-    "location_name": "Plaza de toros Monumental de Las Ventas",
-    "address": "de Alcalá , 237",
-    "latitude": 40.4322742,
-    "longitude": -3.6632745
-  },
-  "2b9a4735": {
-    "location_name": "Estadio Riyadh Air Metropolitano",
-    "address": "de Luis Aragonés, s/n",
-    "latitude": 40.436299422388,
-    "longitude": -3.599481582642
-  },
-  "0d71ace6": {
-    "location_name": "Sala Villanos",
-    "address": "de Bernardino Obregón, 18",
-    "latitude": 40.403949,
-    "longitude": -3.7002218
-  },
   "c3c68494": {
     "location_name": "Centro Deportivo Alcalá de Henares",
     "address": "de Gustavo Adolfo Bécquer, 64",
@@ -1901,6 +1832,12 @@
     "latitude": 40.4817285,
     "longitude": -3.6112151
   },
+  "0d71ace6": {
+    "location_name": "Sala Villanos",
+    "address": "de Bernardino Obregón, 18",
+    "latitude": 40.4039502,
+    "longitude": -3.7002267
+  },
   "4da9be7c": {
     "location_name": "Autocine Madrid",
     "address": "de la Isla de Java, 2",
@@ -1913,17 +1850,41 @@
     "latitude": 40.4144227,
     "longitude": -3.697431
   },
+  "0e7756d3": {
+    "location_name": "Museo del Ferrocarril",
+    "address": "de las Delicias, 61",
+    "latitude": 40.3978281,
+    "longitude": -3.6900165
+  },
   "1c1d2b48": {
     "location_name": "Tablao Flamenco Torero",
     "address": "de la Cruz, 26",
     "latitude": 40.41491,
     "longitude": -3.702704
   },
+  "d4e8a4c2": {
+    "location_name": "Live Las Ventas",
+    "address": "de Alcalá , 237",
+    "latitude": 40.4322427,
+    "longitude": -3.6633773
+  },
   "3fa2d178": {
     "location_name": "La Nave (antigua Fábrica Boetticher)",
     "address": "Cifuentes, 5",
     "latitude": 40.3474905,
     "longitude": -3.6959936
+  },
+  "e42e13eb": {
+    "location_name": "Teatro Valle-Inclán",
+    "address": "de Ana Diosdado, s/n",
+    "latitude": 40.4083829,
+    "longitude": -3.7006353
+  },
+  "8ca210f1": {
+    "location_name": "Museo Nacional de Artes Decorativas",
+    "address": "de Montalbán, 12",
+    "latitude": 40.4177983,
+    "longitude": -3.6897806
   },
   "e9af25a5": {
     "location_name": "Museo ICO",
@@ -1961,11 +1922,17 @@
     "latitude": 40.2892501,
     "longitude": -3.8250646
   },
-  "22fd9956": {
-    "location_name": "UMusic Hotel Teatro Albéniz",
-    "address": "de la Paz, 11",
-    "latitude": 40.4153478,
-    "longitude": -3.7041116
+  "2f59b0c5": {
+    "location_name": "Estadio Ontime Butarque",
+    "address": "Arquitectura, s/n",
+    "latitude": 40.340302,
+    "longitude": -3.760473
+  },
+  "2b9a4735": {
+    "location_name": "Estadio Riyadh Air Metropolitano",
+    "address": "de Luis Aragonés, s/n",
+    "latitude": 40.4422045,
+    "longitude": -3.6029759
   },
   "868a1c03": {
     "location_name": "Espacio Fundación Telefónica",
@@ -2050,6 +2017,12 @@
     "latitude": 40.3875992,
     "longitude": -3.6602826
   },
+  "3b56e983": {
+    "location_name": "Plaza de toros Monumental de Las Ventas",
+    "address": "de Alcalá , 237",
+    "latitude": 40.43,
+    "longitude": -3.66
+  },
   "e795bdd1": {
     "location_name": "Parroquia de Santa Cruz",
     "address": "de Atocha, 6",
@@ -2080,6 +2053,12 @@
     "latitude": 40.4760991,
     "longitude": -3.6820196
   },
+  "60383778": {
+    "location_name": "Teatro La Latina",
+    "address": "de la Cebada, 2",
+    "latitude": 40.411436,
+    "longitude": -3.7087536
+  },
   "884c022f": {
     "location_name": "Sala Wagon",
     "address": "de Agustín de Foxa, s/n",
@@ -2103,6 +2082,12 @@
     "address": "Alcalá, 182",
     "latitude": 40.4290176,
     "longitude": -3.6655073
+  },
+  "a6035e83": {
+    "location_name": "Sala de Arte Joven de la Comunidad de Madrid",
+    "address": "de América, 13",
+    "latitude": 40.4385164,
+    "longitude": -3.6764022
   },
   "08bcb7a8": {
     "location_name": "Pabellón Multiusos Madrid Arena (Casa de Campo)",
