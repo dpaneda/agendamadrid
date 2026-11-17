@@ -548,13 +548,6 @@
     "latitude": 40.47508343631223,
     "longitude": -3.645482
   },
-  "77b83e41": {
-    "location_name": "Parque Santa Eugenia",
-    "address": "CALLE Puentelarra 13",
-    "district": "VillaDeVallecas",
-    "latitude": 40.38131130575197,
-    "longitude": -3.608459149580722
-  },
   "314b42da": {
     "location_name": "Espacio de Igualdad María de Maeztu. Latina",
     "address": "CALLE MARCELINO CASTILLO 29",
@@ -888,6 +881,13 @@
     "district": "SanBlas-Canillejas",
     "latitude": 40.44774002225867,
     "longitude": -3.6292874542291638
+  },
+  "77b83e41": {
+    "location_name": "Parque Santa Eugenia",
+    "address": "CALLE Puentelarra 13",
+    "district": "VillaDeVallecas",
+    "latitude": 40.38131130575197,
+    "longitude": -3.608459149580722
   },
   "9068c482": {
     "location_name": "Centro Deportivo Municipal Plata y Castañar",
@@ -1817,12 +1817,6 @@
     "latitude": 40.4354401,
     "longitude": -3.6925117
   },
-  "c3c68494": {
-    "location_name": "Centro Deportivo Alcalá de Henares",
-    "address": "de Gustavo Adolfo Bécquer, 64",
-    "latitude": 40.5082938,
-    "longitude": -3.3608554
-  },
   "65fc56fa": {
     "location_name": "Varias sedes (Comunidad de Madrid)"
   },
@@ -2124,5 +2118,11 @@
     "address": "de Pontejos",
     "latitude": 40.4158633,
     "longitude": -3.7043273
+  },
+  "c3c68494": {
+    "location_name": "Centro Deportivo Alcalá de Henares",
+    "address": "Gustavo Adolfo Bécquer, 64",
+    "latitude": 40.5082938,
+    "longitude": -3.3608554
   }
 }
