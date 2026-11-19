@@ -263,13 +263,6 @@
     "latitude": 40.41789950036311,
     "longitude": -3.7309390858931137
   },
-  "9b3eae76": {
-    "location_name": "Espacio de Igualdad Dulce Chacón. Villaverde",
-    "address": "CALLE TORDEGRILLOS 32",
-    "district": "Villaverde",
-    "latitude": 40.344107374451525,
-    "longitude": -3.7166081132911537
-  },
   "5b0073c9": {
     "location_name": "Biblioteca Pública Municipal Iván de Vargas (Centro)",
     "address": "CALLE SAN JUSTO 5",
@@ -493,13 +486,6 @@
     "latitude": 40.40242416544921,
     "longitude": -3.6954440062549017
   },
-  "73b313ed": {
-    "location_name": "Jardines de El Buen Retiro",
-    "address": "PLAZA INDEPENDENCIA 7",
-    "district": "Retiro",
-    "latitude": 40.41964087412762,
-    "longitude": -3.68793370943788
-  },
   "8ef7add6": {
     "location_name": "Hemeroteca Municipal",
     "address": "CALLE CONDE DUQUE 11",
@@ -596,6 +582,13 @@
     "district": "Villaverde",
     "latitude": 40.343480612836665,
     "longitude": -3.6889961753443936
+  },
+  "9b3eae76": {
+    "location_name": "Espacio de Igualdad Dulce Chacón. Villaverde",
+    "address": "CALLE TORDEGRILLOS 32",
+    "district": "Villaverde",
+    "latitude": 40.344107374451525,
+    "longitude": -3.7166081132911537
   },
   "17475429": {
     "location_name": "Colegio Público República de Brasil",
@@ -979,13 +972,6 @@
     "latitude": 40.44245748722783,
     "longitude": -3.6217095632137375
   },
-  "8d347f8b": {
-    "location_name": "Quinta de Torre Arias",
-    "address": "CALLE ALCALA 551",
-    "district": "SanBlas-Canillejas",
-    "latitude": 40.443385945708435,
-    "longitude": -3.6182513751654133
-  },
   "7f7d0281": {
     "location_name": "Centro Deportivo Municipal Estadio de Atletismo Vallehermoso (Dirección General de Deporte)",
     "address": "CALLE MELQUIADES ALVAREZ 10",
@@ -1175,13 +1161,6 @@
     "latitude": 40.39597072367931,
     "longitude": -3.7562716852987847
   },
-  "09e2acfe": {
-    "location_name": "Biblioteca Pública Municipal Ciudad Lineal (Ciudad Lineal)",
-    "address": "CALLE HERMANOS GARCIA NOBLEJAS 14",
-    "district": "CiudadLineal",
-    "latitude": 40.43644651057092,
-    "longitude": -3.6372924261150033
-  },
   "f14ce3db": {
     "location_name": "Espacio de Igualdad Carme Chacón. Hortaleza",
     "address": "CALLE MATAPOZUELOS 2",
@@ -1304,12 +1283,6 @@
     "latitude": 40.4193745,
     "longitude": -3.7107696
   },
-  "8c5e05a1": {
-    "location_name": "Teatro Infanta Isabel",
-    "address": "del Barquillo, 24",
-    "latitude": 40.422252413672,
-    "longitude": -3.695547580719
-  },
   "296a3885": {
     "location_name": "AC Recoletos",
     "address": "Recoletos, 18",
@@ -1357,12 +1330,6 @@
     "address": "del Prado, s/n",
     "latitude": 40.41381,
     "longitude": -3.692524
-  },
-  "5cb800a8": {
-    "location_name": "Movistar Academy Magariños",
-    "address": "de Serrano, 129",
-    "latitude": 40.44255,
-    "longitude": -3.6862379
   },
   "8fbe5662": {
     "location_name": "Centro de Arte Dos de Mayo (CA2M) / Móstoles",
@@ -1435,6 +1402,12 @@
     "address": "Raimundo Fernández Villaverde, 57",
     "latitude": 40.4470496,
     "longitude": -3.696194
+  },
+  "8c5e05a1": {
+    "location_name": "Teatro Infanta Isabel",
+    "address": "del Barquillo, 24",
+    "latitude": 40.42223,
+    "longitude": -3.6954356
   },
   "d700ab39": {
     "location_name": "La Casa de la Arquitectura (Arquería de Nuevos Ministerios)",
@@ -1702,12 +1675,6 @@
     "latitude": 40.4204973,
     "longitude": -3.717292
   },
-  "85837ec0": {
-    "location_name": "La Gran Vía",
-    "address": "Gran Vía, s/n",
-    "latitude": 40.4203254,
-    "longitude": -3.7059304
-  },
   "5e67a282": {
     "location_name": "Fundación Canal. Sala Mateo Inurria",
     "address": "de Mateo Inurria, 2",
@@ -1800,12 +1767,6 @@
   },
   "65fc56fa": {
     "location_name": "Varias sedes (Comunidad de Madrid)"
-  },
-  "4da9be7c": {
-    "location_name": "Autocine Madrid",
-    "address": "de la Isla de Java, 2",
-    "latitude": 40.4868805,
-    "longitude": -3.6779757
   },
   "9d984b5f": {
     "location_name": "Casa Museo Lope de Vega",
@@ -2105,5 +2066,11 @@
     "address": "Gustavo Adolfo Bécquer, 64",
     "latitude": 40.5082938,
     "longitude": -3.3608554
+  },
+  "5cb800a8": {
+    "location_name": "Movistar Academy Magariños",
+    "address": "de Serrano, 129",
+    "latitude": 40.4426067,
+    "longitude": -3.6861442
   }
 }
