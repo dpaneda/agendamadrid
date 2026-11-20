@@ -19,13 +19,6 @@
     "latitude": 40.39130985242181,
     "longitude": -3.6958028442054074
   },
-  "12355570": {
-    "location_name": "Biblioteca Pública Municipal Eugenio Trías. Casa de Fieras de El Retiro (Retiro)",
-    "address": "PASEO FERNÁN NÚÑEZ 24",
-    "district": "Retiro",
-    "latitude": 40.4166091081099,
-    "longitude": -3.6795930368034804
-  },
   "aa25e685": {
     "location_name": "Centro Cultural Fuente de San Pedro - Valderrivas (Vicálvaro)",
     "address": "CALLE TITANIO 5",
@@ -157,13 +150,6 @@
     "district": "Arganzuela",
     "latitude": 40.392279999540044,
     "longitude": -3.684956957448299
-  },
-  "c2271205": {
-    "location_name": "Espacio de Igualdad Emilia Pardo Bazán. Ciudad Lineal",
-    "address": "AVENIDA BADAJOZ 60",
-    "district": "CiudadLineal",
-    "latitude": 40.442311100791215,
-    "longitude": -3.6534806246311913
   },
   "a3d5cce9": {
     "location_name": "Centro Sociocultural Bohemios (Villaverde)",
@@ -423,6 +409,13 @@
     "district": "Tetuan",
     "latitude": 40.45749513485957,
     "longitude": -3.710539712535917
+  },
+  "12355570": {
+    "location_name": "Biblioteca Pública Municipal Eugenio Trías. Casa de Fieras de El Retiro (Retiro)",
+    "address": "PASEO FERNÁN NÚÑEZ 24",
+    "district": "Retiro",
+    "latitude": 40.4166091081099,
+    "longitude": -3.6795930368034804
   },
   "4bb15957": {
     "location_name": "Centro Sociocultural Blasco Ibáñez (Carabanchel)",
@@ -1112,13 +1105,6 @@
     "latitude": 40.46301382809657,
     "longitude": -3.587693324074623
   },
-  "9e757641": {
-    "location_name": "Centro Sociocultural Aula de Aire Libre (Puente de Vallecas)",
-    "address": "CALLE SIERRA CARBONERA 74",
-    "district": "PuenteDeVallecas",
-    "latitude": 40.39010138870244,
-    "longitude": -3.6653235716960015
-  },
   "d90efab0": {
     "location_name": "Ermita de San Antonio de la Florida",
     "address": "GLORIETA SAN ANTONIO DE LA FLORIDA 5",
@@ -1153,13 +1139,6 @@
     "district": "PuenteDeVallecas",
     "latitude": 40.393189968014696,
     "longitude": -3.6554147649183943
-  },
-  "4890119b": {
-    "location_name": "Biblioteca Pública Municipal Aluche (Latina)",
-    "address": "CALLE CAMARENA 10",
-    "district": "Latina",
-    "latitude": 40.39597072367931,
-    "longitude": -3.7562716852987847
   },
   "f14ce3db": {
     "location_name": "Espacio de Igualdad Carme Chacón. Hortaleza",
@@ -1378,12 +1357,6 @@
     "address": "de Alcalá, 20",
     "latitude": 40.4177853,
     "longitude": -3.6990893
-  },
-  "d4736963": {
-    "location_name": "Teatro Eslava",
-    "address": "del Arenal, 11",
-    "latitude": 40.4171056,
-    "longitude": -3.7065076
   },
   "d2e1acfd": {
     "location_name": "Gran Teatro Pavón",
@@ -1816,6 +1789,12 @@
     "latitude": 40.4039502,
     "longitude": -3.7002267
   },
+  "d4736963": {
+    "location_name": "Teatro Eslava",
+    "address": "del Arenal, 11",
+    "latitude": 40.4171085,
+    "longitude": -3.7062942
+  },
   "8ca210f1": {
     "location_name": "Museo Nacional de Artes Decorativas",
     "address": "de Montalbán, 12",
@@ -2001,12 +1980,6 @@
     "latitude": 40.4760991,
     "longitude": -3.6820196
   },
-  "94a66118": {
-    "location_name": "Auditorio Nacional de Música",
-    "address": "del Príncipe de Vergara, 146",
-    "latitude": 40.4459662,
-    "longitude": -3.6776947
-  },
   "ccabc517": {
     "location_name": "Sala But",
     "address": "de Barceló, 11, local B",
@@ -2072,5 +2045,11 @@
     "address": "de Serrano, 129",
     "latitude": 40.4426067,
     "longitude": -3.6861442
+  },
+  "fddc208c": {
+    "location_name": "Estación de Príncipe Pío",
+    "address": "de La Florida, 2",
+    "latitude": 40.421704983309,
+    "longitude": -3.720283817992
   }
 }
