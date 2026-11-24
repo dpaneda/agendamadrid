@@ -26,13 +26,6 @@
     "latitude": 40.43200001609297,
     "longitude": -3.670904677285496
   },
-  "9c620465": {
-    "location_name": "Espacio de Igualdad Juana Doña. Arganzuela",
-    "address": "PASEO CHOPERA 10",
-    "district": "Arganzuela",
-    "latitude": 40.39307289237465,
-    "longitude": -3.699005654074825
-  },
   "6ba590e1": {
     "location_name": "Espacio de Igualdad Gloria Fuertes. Vicálvaro",
     "address": "CALLE CALAHORRA 11",
@@ -264,13 +257,6 @@
     "latitude": 40.346369432374594,
     "longitude": -3.7085146991266473
   },
-  "7b2029f7": {
-    "location_name": "Centro Cultural Nicolás Salmerón (Chamartín)",
-    "address": "CALLE MANTUANO 51",
-    "district": "Chamartin",
-    "latitude": 40.44834125150792,
-    "longitude": -3.6761992414203526
-  },
   "bfbdbd85": {
     "location_name": "Instituto de Educación Secundaria (IES) Ramiro de Maeztu",
     "address": "CALLE SERRANO 127",
@@ -430,6 +416,13 @@
     "district": "Arganzuela",
     "latitude": 40.40242416544921,
     "longitude": -3.6954440062549017
+  },
+  "7b2029f7": {
+    "location_name": "Centro Cultural Nicolás Salmerón (Chamartín)",
+    "address": "CALLE MANTUANO 51",
+    "district": "Chamartin",
+    "latitude": 40.44834125150792,
+    "longitude": -3.6761992414203526
   },
   "8ef7add6": {
     "location_name": "Hemeroteca Municipal",
@@ -646,13 +639,6 @@
     "district": "Moratalaz",
     "latitude": 40.40934483353835,
     "longitude": -3.653036718771371
-  },
-  "a172fa00": {
-    "location_name": "Centro Sociocultural Montecarmelo (Fuencarral - El Pardo)",
-    "address": "Carretera M-607 Km 13 L-10",
-    "district": "Fuencarral-ElPardo",
-    "latitude": 40.515712291624084,
-    "longitude": -3.6860532895354448
   },
   "cf403d6c": {
     "location_name": "Centro Sociocultural Marconi (Villaverde)",
@@ -1028,6 +1014,13 @@
     "district": "Usera",
     "latitude": 40.371654294908154,
     "longitude": -3.692056897625109
+  },
+  "a2e904a5": {
+    "location_name": "Nave de Terneras del Centro Cultural Casa del Reloj",
+    "address": "PASEO CHOPERA 10",
+    "district": "Arganzuela",
+    "latitude": 40.39307289237465,
+    "longitude": -3.699005654074825
   },
   "ca84f24f": {
     "location_name": "Biblioteca Pública Municipal Pablo Neruda (Ciudad Lineal)",
@@ -1722,12 +1715,6 @@
     "latitude": 40.3997348,
     "longitude": -3.6906652
   },
-  "9d5eb577": {
-    "location_name": "La Riviera",
-    "address": "Bajo de la Virgen del Puerto, s/n",
-    "latitude": 40.4133013,
-    "longitude": -3.7219371
-  },
   "868a1c03": {
     "location_name": "Espacio Fundación Telefónica",
     "address": "de Fuencarral, 3",
@@ -1830,12 +1817,6 @@
     "latitude": 40.4400973,
     "longitude": -3.7289688
   },
-  "0d71ace6": {
-    "location_name": "Sala Villanos",
-    "address": "de Bernardino Obregón, 18",
-    "latitude": 40.4039502,
-    "longitude": -3.7002267
-  },
   "60383778": {
     "location_name": "Teatro La Latina",
     "address": "de la Cebada, 2",
@@ -1854,12 +1835,6 @@
     "latitude": 40.4760991,
     "longitude": -3.6820196
   },
-  "ccabc517": {
-    "location_name": "Sala But",
-    "address": "de Barceló, 11, local B",
-    "latitude": 40.426975,
-    "longitude": -3.699763
-  },
   "e42e13eb": {
     "location_name": "Teatro Valle-Inclán",
     "address": "de Ana Diosdado, s/n",
@@ -1871,6 +1846,18 @@
     "address": "Alcalá, 182",
     "latitude": 40.4290176,
     "longitude": -3.6655073
+  },
+  "9d5eb577": {
+    "location_name": "La Riviera",
+    "address": "Bajo de la Virgen del Puerto, s/n",
+    "latitude": 40.4133013,
+    "longitude": -3.7219371
+  },
+  "0d71ace6": {
+    "location_name": "Sala Villanos",
+    "address": "de Bernardino Obregón, 18",
+    "latitude": 40.4039502,
+    "longitude": -3.7002267
   },
   "a6035e83": {
     "location_name": "Sala de Arte Joven de la Comunidad de Madrid",
@@ -1931,6 +1918,12 @@
     "address": "de Pontejos",
     "latitude": 40.4158633,
     "longitude": -3.7043273
+  },
+  "ccabc517": {
+    "location_name": "Sala But",
+    "address": "de Barceló, 11, local B",
+    "latitude": 40.4270765,
+    "longitude": -3.6997316
   },
   "c3c68494": {
     "location_name": "Centro Deportivo Alcalá de Henares",
